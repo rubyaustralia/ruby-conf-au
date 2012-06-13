@@ -25,7 +25,7 @@ $ ->
 
     _handleSubmission: ->
       if @isEmailValid()
-        @inputEl.removeClass('error').attr('readonly', 'readonly')
+        @inputEl.removeClass('error').attr('readonly', 'readonly').blur()
         @buttonEl.hide()
         @successEl.hide()
         @progressEl.show()
@@ -34,7 +34,6 @@ $ ->
           url: "/subscribe"
           data: {'email': @email()}
           success: =>
-            console.log 'success'
             @progressEl.hide()
             @successEl.show()
 

@@ -39,7 +39,7 @@
       Form.prototype._handleSubmission = function() {
         var _this = this;
         if (this.isEmailValid()) {
-          this.inputEl.removeClass('error').attr('readonly', 'readonly');
+          this.inputEl.removeClass('error').attr('readonly', 'readonly').blur();
           this.buttonEl.hide();
           this.successEl.hide();
           this.progressEl.show();
@@ -50,7 +50,6 @@
               'email': this.email()
             },
             success: function() {
-              console.log('success');
               _this.progressEl.hide();
               return _this.successEl.show();
             }

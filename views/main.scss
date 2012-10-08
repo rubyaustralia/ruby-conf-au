@@ -1,0 +1,39 @@
+@import "compass/reset";
+@import "compass/layout/sticky-footer";
+@import "compass/css3";
+@import "1140-24";
+
+// Mixins
+@mixin clearfix {
+  &:before, &:after {
+    content: "";
+    display: table;
+  }
+  &:after { clear: both };
+}
+
+
+// Genral Site Layout conducive to a sticky footer
+@include sticky-footer(328px);
+
+body { background-color: #EDECE6; }
+
+#root {
+  header {
+    height: 282px;
+    background: black url('/images/header.jpg') center no-repeat;
+    @include eleven40-container;
+    .inner { @include eleven40-row; }
+  }
+}
+
+#content { @include eleven40-container; }
+
+#footer {
+  @include eleven40-container;
+  height: 328px;
+  background: black url('/images/footer.jpg') center no-repeat;
+  footer {
+    @include eleven40-row;
+  }
+}

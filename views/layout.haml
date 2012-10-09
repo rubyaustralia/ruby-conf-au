@@ -12,7 +12,8 @@
     %section#root
       %header
         .inner
-          %h1 Ruby Conf Australia
+          %h1
+            %img{alt: "Ruby Conf Australia 2013", src: "/images/ruby_conf_logo.svg", height: "220px"}
           %nav
             %ul
               %li
@@ -23,6 +24,9 @@
                 %a{href: "#"} Sponsors
               %li
                 %a{href: "#"} News
+          %hgroup
+            %h2 20-22 February 2013
+            %h2 Melbourne, Australia
 
       %section#content
         != yield
@@ -31,4 +35,29 @@
 
     %section#footer
       %footer
+        %img{alt: "Ruby Australia Logo", src: "/images/ruby_au_red_logo.svg", height: "50px"}
+        %hgroup
+          %h2
+            Proudly Organised by
+            %a.red{href: "http://ruby.org.au"} Ruby Australia
+          %h2
+            In partnership with
+            %a.blue{href: "http://www.yowconference.com.au"} YOW! Conference
+        .sponsors
+          %a{href: "#"}
+            %img{alt: "ilisys"}
+          %a{href: "#"}
+            %img{alt: "silverstripe"}
 
+        %nav
+          %ul
+            %li
+              %a.on{href: "#"} Home
+            %li
+              %a{href: "#"} Speakers
+            %li
+              %a{href: "#"} Sessions
+            %li
+              %a{href: "#"} Sponsors
+            %li
+              %a{href: "#"} News

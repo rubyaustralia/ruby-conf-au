@@ -35,7 +35,10 @@ body { background-color: #EDECE6; }
     height: 282px;
     background: black url('/images/header.jpg') center no-repeat;
     @include eleven40-container;
-    .inner { @include eleven40-row; }
+    .inner {
+      @include eleven40-row;
+      padding-top: 30px;
+    }
   }
 }
 
@@ -47,5 +50,63 @@ body { background-color: #EDECE6; }
   background: black url('/images/footer.jpg') center no-repeat;
   footer {
     @include eleven40-row;
+    padding-top: 40px;
+  }
+}
+
+// Commmon Colors
+$red: #f4323c;
+
+// Common Header and Footer Styles
+#root header, #footer {
+  font-family: 'SUFFIX-monoSUFFIX-mono', Arial, sans-serif;
+  font-size: 18px;
+  line-height: 36px;
+  color: white;
+  text-transform: uppercase;
+  a {
+    color: white;
+    text-decoration: none;
+    &.red, &.on { color: $red; }
+    &.blue { color: #21adc3; }
+  }
+}
+
+// Header Layout
+#root header {
+  h1 {
+    @include eleven40-column(5);
+    img { opacity: 0.45; }
+  }
+  nav {
+    @include eleven40-column(3);
+    @include eleven40-push(2);
+    padding-top: 40px;
+  }
+  hgroup {
+    @include eleven40-column(7);
+    @include eleven40-push(6);
+    padding-top: 40 + (36px * 2);
+  }
+}
+
+// Footer Layout
+#footer {
+  img {
+    @include eleven40-column(2);
+    padding-top: 10px;
+  }
+  hgroup {
+    @include eleven40-column(6);
+    h2 { margin-bottom: 20px; }
+    a { display: inline-block; }
+  }
+  .sponsors {
+    @include eleven40-column(8);
+    @include eleven40-push(3);
+  }
+  nav {
+    @include eleven40-column(3);
+    @include eleven40-push(1);
   }
 }

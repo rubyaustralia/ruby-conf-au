@@ -3,7 +3,7 @@
 @import "compass/css3";
 @import "1140-24";
 
-// Mixins
+// Custom Mixins
 @mixin clearfix {
   &:before, &:after {
     content: "";
@@ -12,8 +12,20 @@
   &:after { clear: both };
 }
 
+// Fonts
+@font-face {
+    font-family: 'SUFFIX-monoSUFFIX-mono';
+    src: url('/fonts/suffix-mono-webfont.eot');
+    src: url('/fonts/suffix-mono-webfont.eot?#iefix') format('embedded-opentype'),
+         url('/fonts/suffix-mono-webfont.woff') format('woff'),
+         url('/fonts/suffix-mono-webfont.ttf') format('truetype'),
+         url('/fonts/suffix-mono-webfont.svg#SUFFIX-monoSUFFIX-mono') format('svg');
+    font-weight: normal;
+    font-style: normal;
 
-// Genral Site Layout conducive to a sticky footer
+}
+
+// General Site Layout conducive to a sticky footer
 @include sticky-footer(328px);
 
 body { background-color: #EDECE6; }

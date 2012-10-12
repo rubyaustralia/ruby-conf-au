@@ -17,6 +17,10 @@
   &:after { clear: both };
 }
 
+@mixin suffix-font {
+  font-family: 'SUFFIX-monoSUFFIX-mono', Arial, sans-serif;
+}
+
 // Fonts
 @font-face {
     font-family: 'SUFFIX-monoSUFFIX-mono';
@@ -67,7 +71,7 @@ $default_text_color: #575757;
 
 // Common Header and Footer Styles
 #root header, #footer {
-  font-family: 'SUFFIX-monoSUFFIX-mono', Arial, sans-serif;
+  @include suffix-font;
   font-size: 18px;
   line-height: 36px;
   color: white;

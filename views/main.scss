@@ -83,7 +83,7 @@ $default_text_color: #575757;
 }
 
 // Common Main Content Styles
-#home, #speakers, #sessions, #sponsons {
+section#root > section {
   padding-top: 50px;
   padding-bottom: 80px;
 

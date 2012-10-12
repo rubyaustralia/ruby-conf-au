@@ -84,7 +84,7 @@ $red: #f4323c;
     padding-top: 40px;
   }
   hgroup {
-    @include eleven40-column(7);
+    @include eleven40-column(8, true);
     @include eleven40-push(6);
     padding-top: 40 + (36px * 2);
   }

@@ -1,22 +1,9 @@
 @import "compass/reset";
-@import "compass/layout/sticky-footer";
 @import "compass/css3";
 @import "1140-24";
-
-// Border box everything
-* {
-  @include box-sizing(border-box);
-}
+@import "layout";
 
 // Custom Mixins
-@mixin clearfix {
-  &:before, &:after {
-    content: "";
-    display: table;
-  }
-  &:after { clear: both };
-}
-
 @mixin suffix-font {
   font-family: 'SUFFIX-monoSUFFIX-mono', Arial, sans-serif;
 }
@@ -31,36 +18,10 @@
          url('/fonts/suffix-mono-webfont.svg#SUFFIX-monoSUFFIX-mono') format('svg');
     font-weight: normal;
     font-style: normal;
-
-}
-
-// General Site Layout conducive to a sticky footer
-@include sticky-footer(328px);
-
-body { background-color: #EDECE6; }
-
-#root {
-  header {
-    min-height: 282px;
-    background: black url('/images/header.jpg') center no-repeat;
-    @include eleven40-container;
-    .inner {
-      @include eleven40-row;
-      padding-top: 30px;
-    }
-  }
-}
-
-#footer {
-  @include eleven40-container;
-  background: black url('/images/footer.jpg') center no-repeat;
-  footer {
-    @include eleven40-row;
-    padding-top: 40px;
-  }
 }
 
 // Commmon Colors
+body { background-color: #EDECE6; }
 $red: #f4323c;
 $blue: #27b2d2;
 $green: #0eb942;
@@ -269,6 +230,7 @@ $default_text_color: #575757;
         border-left: none;
       }
     }
+
     div.networks {
       @include eleven40-column(9);
       @include eleven40-push(2);
@@ -311,6 +273,4 @@ $default_text_color: #575757;
       font-size: 14px;
     }
   }
-
-
 }

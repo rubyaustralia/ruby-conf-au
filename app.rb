@@ -13,6 +13,7 @@ configure do
 end
 
 get '/' do
+  @title = "home"
   haml :home
 end
 

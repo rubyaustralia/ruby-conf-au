@@ -51,8 +51,6 @@ body { background-color: #EDECE6; }
   }
 }
 
-#content { @include eleven40-container; }
-
 #footer {
   @include eleven40-container;
   height: 328px;

@@ -3,6 +3,11 @@
 @import "compass/css3";
 @import "1140-24";
 
+// Border box everything
+* {
+  @include box-sizing(border-box);
+}
+
 // Custom Mixins
 @mixin clearfix {
   &:before, &:after {

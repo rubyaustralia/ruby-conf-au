@@ -1,0 +1,54 @@
+// Common Header and Footer Styles
+#root header, #footer {
+  @include suffix-font;
+  font-size: 18px;
+  line-height: 36px;
+  color: white;
+  text-transform: uppercase;
+  a {
+    color: white;
+    text-decoration: none;
+    &.red, &.on { color: $red; }
+    &.blue { color: #21adc3; }
+  }
+}
+
+// Header Layout
+#root header {
+  h1 {
+    @include eleven40-column(5);
+    img { opacity: 0.45; }
+  }
+  nav {
+    @include eleven40-column(3);
+    @include eleven40-push(2);
+    padding-top: 40px;
+  }
+  hgroup {
+    @include eleven40-column(8, true);
+    @include eleven40-push(6);
+    padding-top: 40 + (36px * 2);
+    opacity: 0.8;
+  }
+}
+
+// Footer Layout
+#footer {
+  img {
+    @include eleven40-column(2);
+    padding-top: 10px;
+  }
+  hgroup {
+    @include eleven40-column(6);
+    h2 { margin-bottom: 20px; }
+    a { display: inline-block; }
+  }
+  .sponsors {
+    @include eleven40-column(8);
+    @include eleven40-push(3);
+  }
+  nav {
+    @include eleven40-column(3);
+    @include eleven40-push(1);
+  }
+}

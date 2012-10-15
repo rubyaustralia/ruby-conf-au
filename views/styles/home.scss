@@ -1,0 +1,128 @@
+#home {
+  @include eleven40-container;
+
+  section.speakers {
+    @include eleven40-row;
+    margin: 0 auto 60px auto;
+
+
+    a.speaker {
+      @include eleven40-column(4);
+      color: $default_text_color;
+      text-decoration: none;
+      img { margin-bottom: 10px; }
+      figcaption {
+        font-size: 18px;
+        text-align: center;
+      }
+    }
+
+    aside {
+      @include eleven40-column(6);
+      @include eleven40-push(1);
+      margin-top: 40px;
+    }
+  }
+
+  section.sponsors {
+    @include eleven40-row;
+    margin: 0 auto 60px auto;
+    border: 1px solid #D3D3D3;
+    border-left: none;
+    h3 {
+      @include eleven40-column(3);
+      border-left: 1px solid #D3D3D3;
+      border-right: 1px solid #D3D3D3;
+      line-height: 26px;
+      padding: 30px 0 30px 15px;
+    }
+    .ruby {
+      @include eleven40-column(6);
+    }
+    .emerald {
+      @include eleven40-column(12, true);
+    }
+    img {
+      margin: 30px 10px 0 10px;
+    }
+  }
+
+  section.social {
+    @include eleven40-row;
+    margin: 0 auto 100px auto;
+    h4 { text-align: center; }
+    form {
+      @include eleven40-column(9);
+      @include eleven40-push(2);
+      position: relative;
+      input, .button {
+        background-color: #F5F5F3;
+        border: 1px solid #FDBFC2;
+        height: 40px;
+        font-size: 16px;
+      }
+      input {
+        font-weight: 300;
+        width: 80%;
+        padding: 5px 10px;
+        &:focus { outline: none; }
+      }
+      .button {
+        display: block;
+        position: absolute;
+        width: 20%;
+        bottom: 0;
+        left: 80%;
+        @include suffix-font;
+        line-height: 40px;
+        text-align: center;
+        color: $red;
+        text-transform: uppercase;
+        text-decoration: none;
+        border-left: none;
+      }
+    }
+
+    div.networks {
+      @include eleven40-column(9);
+      @include eleven40-push(2);
+      img { opacity: 0.2; }
+      span {
+        font-size: 18px;
+        height: 40px;
+        line-height: 40px;
+        color: $default_text_color;
+        text-decoration: none;
+      }
+      a.twitter {
+        float: left;
+        img {
+          float: left;
+          margin-right: 10px;
+        }
+        span { float: left; }
+      }
+      a.facebook {
+        float: right;
+        img {
+          float: right;
+          margin-left: 10px;
+        }
+        span { float: right; }
+      }
+    }
+  }
+
+  section.news {
+    @include eleven40-row;
+    article {
+      @include eleven40-column(6);
+      &:last-child {
+        @include eleven40-column(6, true);
+      }
+    }
+    p {
+      font-size: 14px;
+    }
+  }
+}

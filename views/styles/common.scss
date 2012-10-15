@@ -1,0 +1,89 @@
+// Custom Mixins
+@mixin suffix-font {
+  font-family: 'SUFFIX-monoSUFFIX-mono', Arial, sans-serif;
+}
+
+// Fonts
+@font-face {
+    font-family: 'SUFFIX-monoSUFFIX-mono';
+    src: url('/fonts/suffix-mono-webfont.eot');
+    src: url('/fonts/suffix-mono-webfont.eot?#iefix') format('embedded-opentype'),
+         url('/fonts/suffix-mono-webfont.woff') format('woff'),
+         url('/fonts/suffix-mono-webfont.ttf') format('truetype'),
+         url('/fonts/suffix-mono-webfont.svg#SUFFIX-monoSUFFIX-mono') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+// Commmon Colors
+body { background-color: #EDECE6; }
+$red: #f4323c;
+$blue: #27b2d2;
+$green: #0eb942;
+$default_text_color: #575757;
+
+
+
+// Common Main Content Styles
+section#root > section {
+  padding-top: 50px;
+  padding-bottom: 80px;
+
+  font-family: 'Source Sans Pro', sans-serif;
+  font-weight: 300;
+  font-size: 16px;
+  color: $default_text_color;
+
+  hgroup {
+    @include eleven40-row;
+    margin-bottom: 50px;
+    h1 {
+      font-size: 32px;
+      line-height: 36px;
+    }
+  }
+
+  h3 {
+    @include suffix-font;
+    font-size: 18px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    &.blue { color: $blue; }
+    &.red { color: $red; }
+    &.green { color: $green; }
+  }
+
+  h4 {
+    @include suffix-font;
+    font-size: 15px;
+    letter-spacing: 1px;
+    line-height: 20px;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    &.blue { color: $blue; }
+    &.red { color: $red; }
+    &.green { color: $green; }
+  }
+
+  h5 {
+    font-size: 12px;
+    line-height: 14px;
+    margin-bottom: 8px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: #959494;
+  }
+
+  p {
+    line-height: 20px;
+  }
+
+  a {
+    color: $red;
+  }
+
+  img.speaker {
+    @include border-radius(50%);
+  }
+
+}

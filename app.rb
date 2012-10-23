@@ -17,6 +17,11 @@ get '/' do
   haml :home
 end
 
+get '/speakers' do
+  @title = "speakers"
+  haml :speakers
+end
+
 post '/subscribe' do
   content_type :json
 

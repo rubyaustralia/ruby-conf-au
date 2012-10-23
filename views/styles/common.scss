@@ -22,8 +22,6 @@ $blue: #27b2d2;
 $green: #0eb942;
 $default_text_color: #575757;
 
-
-
 // Common Main Content Styles
 section#root > section {
   padding-top: 50px;
@@ -41,6 +39,15 @@ section#root > section {
       font-size: 32px;
       line-height: 36px;
     }
+    h2 {
+      font-size: 22px;
+      color: #acaba8;
+    }
+  }
+
+  h2 {
+    font-size: 22px;
+    line-height: 34px;
   }
 
   h3 {

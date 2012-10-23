@@ -43,12 +43,13 @@
     h2 { margin-bottom: 20px; }
     a { display: inline-block; }
   }
-  .sponsors {
-    @include eleven40-column(8);
-    @include eleven40-push(3);
-  }
+  // .sponsors {
+  //   @include eleven40-column(8);
+  //   @include eleven40-push(3);
+  // }
   nav {
     @include eleven40-column(3);
-    @include eleven40-push(1);
+    // @include eleven40-push(1);
+    @include eleven40-push(12);
   }
 }

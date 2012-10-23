@@ -1,7 +1,10 @@
 !!! 5
 %html{lang: 'en'}
   %head
-    %title Ruby Conf Australia 2013
+    - if @title == :home
+      %title Ruby Conf Australia 2013
+    - else
+      %title= "#{@title.to_s.titleize} - Ruby Conf Australia 2013"
     %meta{charset: "utf-8"}
     %meta{name: "author", content: "Ruby Australia"}
     %meta{name: "copyright", content: "Copyright Ruby Australia 2012-2013. All Rights Reserved."}

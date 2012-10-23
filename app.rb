@@ -13,12 +13,12 @@ configure do
 end
 
 get '/' do
-  @title = "home"
+  @title = :home
   haml :home
 end
 
 get '/speakers' do
-  @title = "speakers"
+  @title = :speakers
   haml :speakers
 end
 

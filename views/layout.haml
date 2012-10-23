@@ -18,13 +18,13 @@
           %nav
             %ul
               %li
-                %a{href: "/speakers"} Speakers
+                %a{href: "/speakers", class: @title == :speakers ? "on" : nil} Speakers
               %li
-                %a{href: "/sessions"} Sessions
+                %a{href: "/sessions", class: @title == :sessions ? "on" : nil} Sessions
               %li
-                %a{href: "/sponsors"} Sponsors
+                %a{href: "/sponsors", class: @title == :sponsors ? "on" : nil} Sponsors
               %li
-                %a{href: "/news"} News
+                %a{href: "/news", class: @title == :news ? "on" : nil} News
           %hgroup
             %h2 20-22 February 2013
             %h2 Melbourne, Australia
@@ -53,12 +53,12 @@
         %nav
           %ul
             %li
-              %a.on{href: "/"} Home
+              %a{href: "/", class: @title == :home ? "on" : nil} Home
             %li
-              %a{href: "/speakers"} Speakers
+              %a{href: "/speakers", class: @title == :speakers ? "on" : nil} Speakers
             %li
-              %a{href: "/sessions"} Sessions
+              %a{href: "/sessions", class: @title == :sessions ? "on" : nil} Sessions
             %li
-              %a{href: "/sponsors"} Sponsors
+              %a{href: "/sponsors", class: @title == :sponsors ? "on" : nil} Sponsors
             %li
-              %a{href: "/news"} News
+              %a{href: "/news", class: @title == :news ? "on" : nil} News

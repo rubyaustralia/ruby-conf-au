@@ -89,6 +89,11 @@ section#root > section {
     color: $red;
   }
 
+  a.wrap {
+    color: $default_text_color;
+    text-decoration: none;
+  }
+
   img.speaker {
     @include border-radius(50%);
   }

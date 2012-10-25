@@ -1,0 +1,30 @@
+#sponsors {
+  @include eleven40-container;
+
+  section {
+    @include eleven40-row;
+    margin-bottom: 60px;
+
+    h3 {
+      @include eleven40-column(3);
+    }
+    img {
+      margin-bottom: 20px;
+    }
+
+    &.ruby div {
+      @include eleven40-push(1);
+      @include eleven40-column(19);
+      p {
+        font-size: 20px;
+        line-height: 24px;
+      }
+    }
+
+    &.emerald div {
+      @include eleven40-push(1);
+      @include eleven40-column(9);
+    }
+  }
+
+}

@@ -43,6 +43,17 @@ section#root > section {
       font-size: 22px;
       color: #acaba8;
     }
+    &.inline {
+
+      h1 {
+        @include eleven40-column(4);
+      }
+      h2 {
+        @include eleven40-column(20, true);
+        position: relative;
+        top: 4px;
+      }
+    }
   }
 
   h2 {

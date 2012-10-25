@@ -1,17 +1,6 @@
 #speakers {
   @include eleven40-container;
 
-  hgroup {
-    h1 {
-      @include eleven40-column(4);
-    }
-    h2 {
-      @include eleven40-column(20, true);
-      position: relative;
-      top: 4px;
-    }
-  }
-
   section.speakers {
     @include eleven40-row;
     margin-bottom: 40px;

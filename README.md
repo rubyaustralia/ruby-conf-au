@@ -1,6 +1,6 @@
-# Ruby Conf AU One Page Holding Site
+# Ruby Conf AU Site
 
-A temporary site to get the conference on people's radars. The full conference site will be developed in late July.
+The full conference site is being delivered iteratively.
 
 ## Running locally
 
@@ -28,7 +28,7 @@ Site is hosted on Heroku.
 
 The staging site for the full site is hosted at
 
-    http://rubyconf-staging.herokuapp.com/speakers
+    http://rubyconf-staging.herokuapp.com
 
 Add the remote to your git config
 

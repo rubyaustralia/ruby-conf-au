@@ -108,5 +108,27 @@ section#root > section {
   img.speaker {
     @include border-radius(50%);
   }
+}
 
+// Common Tickets Call to Action
+section#root > section#tickets-call-to-action {
+  padding-top: 15px;
+  padding-bottom: 15px;
+  background-color: #FF324B;
+  h4, p {
+    color: white;
+    line-height: 50px;
+  }
+  h4 {
+    @include eleven40-column(5);
+    margin-bottom: 0;
+    &.last {
+      text-align: center;
+      border: 1px solid rgba(255,255,255,0.5);
+    }
+  }
+  p {
+    @include eleven40-column(12);
+    @include eleven40-push(1);
+  }
 }

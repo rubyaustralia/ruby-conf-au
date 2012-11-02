@@ -132,5 +132,7 @@ section#root > section#tickets-call-to-action {
   p {
     @include eleven40-column(12);
     @include eleven40-push(1);
+    position: relative;
+    top: -2px;
   }
 }

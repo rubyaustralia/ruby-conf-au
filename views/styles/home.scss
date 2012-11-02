@@ -81,6 +81,24 @@
         text-decoration: none;
         border-left: none;
       }
+      span {
+        display: none;
+        font-size: 30px;
+        position: absolute;
+        width: 30px;
+        height: 40px;
+        line-height: 40px;
+        left: -30px;
+        &.success { color: $green; }
+        &.error { color: $red; }
+      }
+      .progress {
+        height: 40px;
+        position: absolute;
+        bottom: -20px;
+        width: 40px;
+        left: -30px;
+      }
     }
 
     div.networks {

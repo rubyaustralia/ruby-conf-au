@@ -2,10 +2,12 @@ $ ->
   class Form
     constructor: ->
       @el = $('form')
+      @open = yes
       @inputEl = @el.find('input').first()
-      @buttonEl = @el.find('input.button')
-      @progressEl = @el.find('.progress')
+      @buttonEl = @el.find('a.button')
       @successEl = @el.find('.success')
+      @errorEl = @el.find('.error')
+      @spinner = null
       @_initHandlers()
 
     email: ->
@@ -14,30 +16,35 @@ $ ->
     isEmailValid: ->
       @email().match(/^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,4}$/i) != null
 
+    _startSpinner: ->
+      progressEl = @el.find('.progress')
+      opts = {length: 6, width: 3, radius: 8}
+      @spinner = new Spinner(opts).spin()
+      progressEl.append @spinner.el
+
     _initHandlers: ->
       @el.submit =>
-        @_handleSubmission()
+        @_handleSubmission() if @open
         false
 
       @buttonEl.click =>
-        @_handleSubmission()
+        @_handleSubmission() if @open
         false
 
     _handleSubmission: ->
       if @isEmailValid()
-        @inputEl.removeClass('error').attr('readonly', 'readonly').blur()
-        @buttonEl.hide()
-        @successEl.hide()
-        @progressEl.show()
+        @inputEl.attr('readonly', 'readonly').blur()
+        @errorEl.hide()
+        @_startSpinner()
         $.ajax
           type: "POST"
           url: "/subscribe"
           data: {'email': @email()}
           success: =>
-            @progressEl.hide()
+            @spinner.stop()
             @successEl.show()
-
+            @open = no
       else
-        @inputEl.addClass('error')
+        @errorEl.show()
 
   new Form()

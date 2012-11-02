@@ -5,7 +5,6 @@
     @include eleven40-row;
     margin: 0 auto 60px auto;
 
-
     a.speaker {
       @include eleven40-column(4);
       color: $default_text_color;
@@ -15,12 +14,6 @@
         font-size: 18px;
         text-align: center;
       }
-    }
-
-    aside {
-      @include eleven40-column(6);
-      @include eleven40-push(1);
-      margin-top: 40px;
     }
   }
 

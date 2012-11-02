@@ -98,6 +98,8 @@ section#root > section {
 
   a {
     color: $red;
+    @include transition-property(color);
+    @include transition-duration(3s);
   }
 
   a.wrap {

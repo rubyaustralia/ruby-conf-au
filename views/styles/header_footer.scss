@@ -11,6 +11,12 @@
     &.red, &.on { color: $red; }
     &.blue { color: #21adc3; }
   }
+  nav a {
+    @include transition-property(color);
+    @include transition-duration(0.1s);
+    &:hover { color: #21adc3; }
+    &.on:hover { color: $red; }
+  }
 }
 
 // Header Layout

@@ -9,7 +9,10 @@
       @include eleven40-column(4);
       color: $default_text_color;
       text-decoration: none;
-      img { margin-bottom: 10px; }
+      img {
+        margin-bottom: 10px;
+        @include eleven40-column(4, true, 4);
+      }
       figcaption {
         font-size: 18px;
         text-align: center;

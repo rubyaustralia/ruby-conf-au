@@ -1,0 +1,20 @@
+#speakers {
+  @include eleven40-container;
+
+  section.speakers {
+    @include eleven40-row;
+    margin-bottom: 40px;
+
+    article:last-child img.speaker {
+      @include eleven40-column(4);
+      @include eleven40-push(1);
+    }
+    img.speaker {
+      @include eleven40-column(4);
+    }
+    div {
+      @include eleven40-column(7);
+      margin-top: 10px;
+    }
+  }
+}

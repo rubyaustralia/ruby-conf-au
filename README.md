@@ -1,6 +1,6 @@
-# Ruby Conf AU One Page Holding Site
+# Ruby Conf AU Site
 
-A temporary site to get the conference on people's radars. The full conference site will be developed in late July.
+The full conference site is being delivered iteratively.
 
 ## Running locally
 
@@ -18,8 +18,24 @@ If your're working on the app JS then watch and and compile the CoffeeScript as 
     coffee -cw public/javascripts/*.coffee
 
 
-## Deploy
+## Deploy to Production
 
 Site is hosted on Heroku.
 
     git push heroku master
+
+## Deploy to WIP Full Site to Staging
+
+The staging site for the full site is hosted at
+
+    http://rubyconf-staging.herokuapp.com
+
+Add the remote to your git config
+
+    [remote "staging"]
+        url = git@heroku.com:rubyconf-staging.git
+        fetch = +refs/heads/*:refs/remotes/staging/*
+
+Deploy to staging with the command
+
+    git push staging full-site:master

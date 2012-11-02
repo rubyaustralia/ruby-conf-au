@@ -9,11 +9,22 @@ configure do
     config.sass_dir = 'views'
   end
 
-  set :sass, Compass.sass_engine_options
+  set :scss, Compass.sass_engine_options
 end
 
 get '/' do
+  @title = :home
   haml :home
+end
+
+get '/speakers' do
+  @title = :speakers
+  haml :speakers
+end
+
+get '/sponsors' do
+  @title = :sponsors
+  haml :sponsors
 end
 
 post '/subscribe' do
@@ -35,5 +46,5 @@ end
 
 get "/stylesheets/:name.css" do
   content_type 'text/css', :charset => 'utf-8'
-  sass :"#{params[:name]}"
+  scss :"#{params[:name]}"
 end

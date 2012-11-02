@@ -1,0 +1,83 @@
+!!! 5
+%html{lang: 'en'}
+  %head
+    - if @title == :home
+      %title Ruby Conf Australia 2013
+    - else
+      %title= "#{@title.to_s.titleize} - Ruby Conf Australia 2013"
+    %meta{charset: "utf-8"}
+    %meta{name: "author", content: "Ruby Australia"}
+    %meta{name: "copyright", content: "Copyright Ruby Australia 2012-2013. All Rights Reserved."}
+    %link{rel: "stylesheet", href: "/stylesheets/main.css"}
+    %script{src: "https://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"}
+    %script{src: "/javascripts/spin.min.js"}
+    %script{src: "/javascripts/main.js"}
+    %link{rel: "stylesheet", href: 'http://fonts.googleapis.com/css?family=Source+Sans+Pro:300'}
+  %body
+
+    %section#root
+      %header
+        .inner
+          %h1
+            %a{href: "/"}
+              %img{alt: "Ruby Conf Australia 2013", src: "/images/ruby_conf_logo.svg", height: "220px"}
+          %nav
+            %ul
+              %li
+                %a{href: "/speakers", class: @title == :speakers ? "on" : nil} Speakers
+              / %li
+              /   %a{href: "/sessions", class: @title == :sessions ? "on" : nil} Sessions
+              %li
+                %a{href: "/sponsors", class: @title == :sponsors ? "on" : nil} Sponsors
+              / %li
+              /   %a{href: "/news", class: @title == :news ? "on" : nil} News
+          %hgroup
+            %h2 20-22 February 2013
+            %h2 Melbourne, Australia
+
+      %section#tickets-call-to-action
+        .inner
+
+          / Enable this block tickets go on sale
+          / %a{href: "http://rubyconfau2013.eventbrite.com"}
+          /   %h4 Registration is open
+          /   %p The early bird catches the cheap tickets! Register now for $395.
+          /   %h4.last Buy Tickets Now
+
+          / Delete this block when ticket sales are announced
+          %h4 Register from Nov 5
+          %p Get ready to secure a limited early bird ticket for $495
+
+      %section{id: @title}
+        != yield
+
+      #root_footer
+
+    %section#footer
+      %footer
+        %img{alt: "Ruby Australia Logo", src: "/images/ruby_au_red_logo.svg"}
+        %hgroup
+          %h2
+            Proudly Organised by
+            %a.red{href: "http://ruby.org.au"} Ruby Australia
+          %h2
+            In partnership with
+            %a.blue{href: "http://www.yowconference.com.au"} YOW! Conference
+        / .sponsors
+        /   %a{href: "#"}
+        /     %img{alt: "ilisys"}
+        /   %a{href: "#"}
+        /     %img{alt: "silverstripe"}
+
+        %nav
+          %ul
+            %li
+              %a{href: "/", class: @title == :home ? "on" : nil} Home
+            %li
+              %a{href: "/speakers", class: @title == :speakers ? "on" : nil} Speakers
+            / %li
+            /   %a{href: "/sessions", class: @title == :sessions ? "on" : nil} Sessions
+            %li
+              %a{href: "/sponsors", class: @title == :sponsors ? "on" : nil} Sponsors
+            / %li
+            /   %a{href: "/news", class: @title == :news ? "on" : nil} News

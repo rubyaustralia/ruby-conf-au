@@ -9,10 +9,12 @@
 
       function Form() {
         this.el = $('form');
+        this.open = true;
         this.inputEl = this.el.find('input').first();
-        this.buttonEl = this.el.find('input.button');
-        this.progressEl = this.el.find('.progress');
+        this.buttonEl = this.el.find('a.button');
         this.successEl = this.el.find('.success');
+        this.errorEl = this.el.find('.error');
+        this.spinner = null;
         this._initHandlers();
       }
 
@@ -24,14 +26,30 @@
         return this.email().match(/^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,4}$/i) !== null;
       };
 
+      Form.prototype._startSpinner = function() {
+        var opts, progressEl;
+        progressEl = this.el.find('.progress');
+        opts = {
+          length: 6,
+          width: 3,
+          radius: 8
+        };
+        this.spinner = new Spinner(opts).spin();
+        return progressEl.append(this.spinner.el);
+      };
+
       Form.prototype._initHandlers = function() {
         var _this = this;
         this.el.submit(function() {
-          _this._handleSubmission();
+          if (_this.open) {
+            _this._handleSubmission();
+          }
           return false;
         });
         return this.buttonEl.click(function() {
-          _this._handleSubmission();
+          if (_this.open) {
+            _this._handleSubmission();
+          }
           return false;
         });
       };
@@ -39,10 +57,9 @@
       Form.prototype._handleSubmission = function() {
         var _this = this;
         if (this.isEmailValid()) {
-          this.inputEl.removeClass('error').attr('readonly', 'readonly').blur();
-          this.buttonEl.hide();
-          this.successEl.hide();
-          this.progressEl.show();
+          this.inputEl.attr('readonly', 'readonly').blur();
+          this.errorEl.hide();
+          this._startSpinner();
           return $.ajax({
             type: "POST",
             url: "/subscribe",
@@ -50,12 +67,13 @@
               'email': this.email()
             },
             success: function() {
-              _this.progressEl.hide();
-              return _this.successEl.show();
+              _this.spinner.stop();
+              _this.successEl.show();
+              return _this.open = false;
             }
           });
         } else {
-          return this.inputEl.addClass('error');
+          return this.errorEl.show();
         }
       };
 

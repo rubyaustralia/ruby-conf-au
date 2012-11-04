@@ -20,22 +20,10 @@ If your're working on the app JS then watch and and compile the CoffeeScript as 
 
 ## Deploy to Production
 
-Site is hosted on Heroku.
+Site is hosted on Heroku
+
+    git@heroku.com:ruby-conf-au.git
+
+Deploy with command
 
     git push heroku master
-
-## Deploy to WIP Full Site to Staging
-
-The staging site for the full site is hosted at
-
-    http://rubyconf-staging.herokuapp.com
-
-Add the remote to your git config
-
-    [remote "staging"]
-        url = git@heroku.com:rubyconf-staging.git
-        fetch = +refs/heads/*:refs/remotes/staging/*
-
-Deploy to staging with the command
-
-    git push staging full-site:master

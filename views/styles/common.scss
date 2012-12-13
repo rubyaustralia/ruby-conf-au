@@ -136,3 +136,28 @@ section#root > section#tickets-call-to-action {
     top: -2px;
   }
 }
+
+.hr {
+  border-bottom: 1px #e2e0d2 solid;
+  clear: both;
+  padding-top:   1.4em;
+  margin-bottom: 2em;
+  hr { display: none; }
+}
+
+
+// Generic page
+
+.page {
+  @include eleven40-container;
+}
+  .page-content {
+    @include eleven40-row;
+  }
+  .page-block {
+    @include eleven40-column(20);
+    @include eleven40-push(4);
+    & > * {
+      margin: 0 0 .8em 0;  
+    }
+  }

@@ -27,6 +27,11 @@ get '/sponsors' do
   haml :sponsors
 end
 
+get '/page' do
+  @title = :page
+  haml :page
+end
+
 post '/subscribe' do
   content_type :json
 

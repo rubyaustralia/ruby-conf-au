@@ -6,7 +6,11 @@
 }
 
 // General Site Layout conducive to a sticky footer
-@include sticky-footer(328px);
+// @include sticky-footer(328px);
+
+body {
+  min-width: 768px;
+}
 
 #root {
   header {

@@ -160,4 +160,12 @@ section#root > section#tickets-call-to-action {
     & > * {
       margin: 0 0 .8em 0;  
     }
+    ul {
+      list-style-type: circle;
+      list-style-position: inside; 
+    }
+    ol {
+      list-style-type: decimal;
+      list-style-position: inside;
+    }
   }

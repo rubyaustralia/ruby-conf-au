@@ -27,9 +27,9 @@ get '/sponsors' do
   haml :sponsors
 end
 
-get '/page' do
-  @title = :page
-  haml :page
+get '/:news' do
+  @title = :news
+  haml :news
 end
 
 post '/subscribe' do

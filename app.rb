@@ -27,7 +27,7 @@ get '/sponsors' do
   haml :sponsors
 end
 
-get '/:news' do
+get '/news' do
   @title = :news
   haml :news
 end

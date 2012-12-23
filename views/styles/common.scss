@@ -162,10 +162,12 @@ section#root > section#tickets-call-to-action {
     }
     ul {
       list-style-type: circle;
-      list-style-position: inside; 
+      list-style-position: inside;
+      line-height: 20px;
     }
     ol {
       list-style-type: decimal;
       list-style-position: inside;
+      line-height: 20px;
     }
   }

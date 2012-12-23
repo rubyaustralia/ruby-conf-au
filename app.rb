@@ -22,6 +22,11 @@ get '/speakers' do
   haml :speakers
 end
 
+get '/sessions' do
+  @title = :sessions
+  haml :sessions
+end
+
 get '/workshops' do
   @title = :workshops
   haml :workshops

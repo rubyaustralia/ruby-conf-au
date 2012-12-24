@@ -22,9 +22,29 @@ get '/speakers' do
   haml :speakers
 end
 
+get '/sessions' do
+  @title = :sessions
+  haml :sessions
+end
+
+get '/workshops' do
+  @title = :workshops
+  haml :workshops
+end
+
 get '/sponsors' do
   @title = :sponsors
   haml :sponsors
+end
+
+get '/news' do
+  @title = :news
+  haml :news
+end
+
+get '/policies' do
+  @title = :policies
+  haml :policies
 end
 
 post '/subscribe' do

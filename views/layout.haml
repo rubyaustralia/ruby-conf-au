@@ -25,12 +25,14 @@
             %ul
               %li
                 %a{href: "/speakers", class: @title == :speakers ? "on" : nil} Speakers
-              / %li
-              /   %a{href: "/sessions", class: @title == :sessions ? "on" : nil} Sessions
+              %li
+                %a{href: "/sessions", class: @title == :sessions ? "on" : nil} Sessions
+              %li
+                %a{href: "/workshops", class: @title == :workshops ? "on" : nil} Workshops
               %li
                 %a{href: "/sponsors", class: @title == :sponsors ? "on" : nil} Sponsors
-              / %li
-              /   %a{href: "/news", class: @title == :news ? "on" : nil} News
+              %li
+                %a{href: "/news", class: @title == :news ? "on" : nil} News
           %hgroup
             %h2 20-22 February 2013
             %h2 Melbourne, Australia
@@ -73,9 +75,19 @@
               %a{href: "/", class: @title == :home ? "on" : nil} Home
             %li
               %a{href: "/speakers", class: @title == :speakers ? "on" : nil} Speakers
-            / %li
-            /   %a{href: "/sessions", class: @title == :sessions ? "on" : nil} Sessions
+            %li
+              %a{href: "/sessions", class: @title == :sessions ? "on" : nil} Sessions
+            %li
+              %a{href: "/workshops", class: @title == :workshops ? "on" : nil} Workshops
             %li
               %a{href: "/sponsors", class: @title == :sponsors ? "on" : nil} Sponsors
+            %li
+              %a{href: "/news", class: @title == :news ? "on" : nil} News
+        %nav.fine-print
+          %ul
+            %li
+              %a{href: "/policies#anti-harrassment"} Anti-harassment policy
             / %li
-            /   %a{href: "/news", class: @title == :news ? "on" : nil} News
+            /   %a{href: "/privacy-policy"} Anti-discrimination policy
+            / %li
+            /   %a{href: "/legalese"} Legalese

@@ -171,3 +171,13 @@ section#root > section#tickets-call-to-action {
       line-height: 20px;
     }
   }
+
+// Micro Clearfix
+.cf:before, .cf:after {
+  content: " ";
+  display: table;
+}
+
+.cf:after {
+  clear: both;
+}

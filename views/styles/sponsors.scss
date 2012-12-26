@@ -14,7 +14,7 @@
 
     &.ruby div {
       @include eleven40-push(1);
-      @include eleven40-column(19);
+      @include eleven40-column(20, true);
       p {
         font-size: 20px;
         line-height: 24px;
@@ -24,6 +24,17 @@
     &.emerald div {
       @include eleven40-push(1);
       @include eleven40-column(9);
+    }
+
+    &.sapphire div {
+      @include eleven40-push(1);
+      @include eleven40-column(6);
+      &.last {
+        @include eleven40-column(6, true);
+      }
+      img.flippa {
+        margin: 15px 0;
+      }
     }
   }
 

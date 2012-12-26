@@ -145,32 +145,30 @@ section#root > section#tickets-call-to-action {
   hr { display: none; }
 }
 
-
 // Generic page
-
 .page {
   @include eleven40-container;
 }
-  .page-content {
-    @include eleven40-row;
+.page-content {
+  @include eleven40-row;
+}
+.page-block {
+  @include eleven40-column(20);
+  @include eleven40-push(4);
+  & > * {
+    margin: 0 0 .8em 0;
   }
-  .page-block {
-    @include eleven40-column(20);
-    @include eleven40-push(4);
-    & > * {
-      margin: 0 0 .8em 0;  
-    }
-    ul {
-      list-style-type: circle;
-      list-style-position: inside;
-      line-height: 20px;
-    }
-    ol {
-      list-style-type: decimal;
-      list-style-position: inside;
-      line-height: 20px;
-    }
+  ul {
+    list-style-type: circle;
+    list-style-position: inside;
+    line-height: 20px;
   }
+  ol {
+    list-style-type: decimal;
+    list-style-position: inside;
+    line-height: 20px;
+  }
+}
 
 // Micro Clearfix
 .cf:before, .cf:after {

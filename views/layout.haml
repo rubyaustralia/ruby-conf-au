@@ -52,7 +52,7 @@
 
     %section#footer
       %footer
-        %img{alt: "Ruby Australia Logo", src: "/images/ruby_au_red_logo.svg"}
+        %img.logo{alt: "Ruby Australia Logo", src: "/images/ruby_au_red_logo.svg"}
         %hgroup
           %h2
             Proudly Organised by
@@ -63,11 +63,22 @@
           %h2
             Located at the
             %a.red{href: "http://www.jasperhotel.com.au/"} Jasper Hotel
-        / .sponsors
-        /   %a{href: "#"}
-        /     %img{alt: "ilisys"}
-        /   %a{href: "#"}
-        /     %img{alt: "silverstripe"}
+        .sponsors
+          .cf
+            %a{href: "http://www.thoughtworks.com"}
+              %img.thoughtworks{alt: "Thoughtworks", src: "/images/sponsors/mono/thoughtworks.svg"}
+            %a{href: "http://envato.com/"}
+              %img.envato{alt: "Envato", src: "/images/sponsors/mono/envato.svg"}
+          .cf
+            %a{href: "http://www.realestate.com.au"}
+              %img.rea{alt: "Real Estate Australia", src: "/images/sponsors/mono/rea.svg"}
+            %a{href: "http://icelab.com.au"}
+              %img.icelab{alt: "Ice Lab", src: "/images/sponsors/mono/icelab.svg"}
+          .cf
+            %a{href: "https://flippa.com"}
+              %img.flippa{alt: "Flippa", src: "/images/sponsors/mono/flippa.svg"}
+            %a{href: "http://www.fairfax.com.au"}
+              %img.fairfax{alt: "Fairfax", src: "/images/sponsors/mono/fairfax.svg"}
 
         %nav
           %ul

@@ -42,7 +42,7 @@
 #footer {
   footer {
     position: relative;
-    padding-bottom: 100px;
+    padding-bottom: 20px;
   }
   img.logo {
     @include eleven40-column(2);
@@ -66,11 +66,11 @@
         opacity: 0.6;
         &.thoughtworks { width: 90%; margin-top: 2px;}
         &.envato { width: 70%; }
-        &.rea { width: 90%; margin-top: 12px; }
-        &.icelab { width: 70%; }
-        &.flippa { width: 60%; margin-top: 11px;}
-        &.fairfax { width: 50%; }
-        &.edh, &.ninefold { width: 30%; margin-top: 5px; }
+        &.rea { width: 80%; margin-top: 9px; }
+        &.icelab { width: 60%; }
+        &.flippa { width: 50%; margin-top: 11px;}
+        &.fairfax { width: 40%; }
+        &.edh, &.ninefold { width: 25%;}
         &.newrelic { width: 70%; }
       }
       &:hover img { opacity: 1; }
@@ -86,7 +86,7 @@
     display: block;
     width: auto;
     position: absolute;
-    bottom: 15px;
+    bottom: 0;
     ul {
       display: block;
       width: auto;

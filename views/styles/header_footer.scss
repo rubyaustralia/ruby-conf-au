@@ -28,7 +28,6 @@
   nav {
     @include eleven40-column(3);
     @include eleven40-push(2);
-    padding-top: 40px;
   }
   hgroup {
     @include eleven40-column(8, true);

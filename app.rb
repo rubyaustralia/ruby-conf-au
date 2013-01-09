@@ -47,6 +47,11 @@ get '/policies' do
   haml :policies
 end
 
+get '/venue' do
+  @title = :venue
+  haml :venue
+end
+
 post '/subscribe' do
   content_type :json
 

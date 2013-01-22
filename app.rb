@@ -69,7 +69,7 @@ post '/subscribe' do
   {success: true}.to_json
 end
 
-get "/stylesheets/:name.css" do
+get "/stylesheets/main.css" do
   content_type 'text/css', :charset => 'utf-8'
-  scss :"#{params[:name]}"
+  scss :"styles/main"
 end

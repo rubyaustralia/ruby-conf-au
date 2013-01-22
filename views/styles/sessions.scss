@@ -1,0 +1,10 @@
+#sessions {
+  .app.ios {
+    @include eleven40-column(6, false, 20);
+  }
+  .app.open-web {
+    @include eleven40-column(6, false, 20);
+    @include eleven40-push(1);
+    margin-top: 3px;
+  }
+}

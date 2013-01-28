@@ -26,7 +26,7 @@
       @include eleven40-column(9);
     }
 
-    &.sapphire {
+    &.sapphire, &.other {
       &.headless h3 { text-indent: -9999px; }
       div {
         @include eleven40-push(1);

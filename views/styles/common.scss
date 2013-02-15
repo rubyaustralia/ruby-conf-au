@@ -158,6 +158,12 @@ section#root > section#tickets-call-to-action {
   & > * {
     margin: 0 0 .8em 0;
   }
+  .indent {
+    padding-left: 2em;
+    p {
+      padding-bottom: 1em;
+    }
+  }
   ul {
     list-style-type: circle;
     list-style-position: inside;

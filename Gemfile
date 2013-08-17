@@ -1,4 +1,4 @@
-source :rubygems
+source 'https://rubygems.org'
 
 gem "compass"
 gem "sinatra"
@@ -12,4 +12,3 @@ group :development do
   gem "foreman"
   gem "heroku"
 end
-

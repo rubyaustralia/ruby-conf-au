@@ -14,8 +14,6 @@ $header-font-family: 'Source Sans Pro', sans-serif;
 @import "foundation";
 @import "ss-social-regular";
 
-
-
 // Fonts
 @font-face {
     font-family: 'SUFFIX-mono';
@@ -88,10 +86,13 @@ section#page {
     color: $default_text_color;
   }
 }
-// -----------------------------------------
 
-header#header { margin-top: 1%;
-  h1 { display: inline-block; width: 20%; margin-right: 4%; } // ruby conf logo
+// @end */
+
+// @group header
+// -----------------------------------------
+header#header { margin-top: 2%;
+  h1 { display: inline-block; width: 17%; margin-right: 3%; } // ruby conf logo
   hgroup { display: inline-block; width: 75%; vertical-align: middle; }
 }
 
@@ -168,3 +169,4 @@ section.social { margin-top: 5%;
     }
   }
 }
+// @end */

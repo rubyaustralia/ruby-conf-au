@@ -1,0 +1,164 @@
+// Commmon Colors
+$red: #f4323c;
+$green: #0eb942;
+$blue: #27b2d2;
+$pink: #FDBFC2;
+$page_bkg: #EDECE6;
+$default_text_color: #575757;
+
+// Foundation classes
+$anchor-font-color: $red;
+$anchor-font-color-hover: darken($red, 15%);
+$header-font-family: 'Source Sans Pro', sans-serif;
+
+@import "foundation";
+
+// Fonts
+@font-face {
+    font-family: 'SUFFIX-mono';
+    src: url('/fonts/suffix-mono-webfont.eot');
+    src: url('/fonts/suffix-mono-webfont.eot?#iefix') format('embedded-opentype'),
+         url('/fonts/suffix-mono-webfont.woff') format('woff'),
+         url('/fonts/suffix-mono-webfont.ttf') format('truetype'),
+         url('/fonts/suffix-mono-webfont.svg#SUFFIX-monoSUFFIX-mono') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@mixin suffix-font { font-family: 'SUFFIX-mono', Arial, sans-serif; }
+
+
+html, body { height: 100%; }
+
+body {
+  font-family: 'Source Sans Pro', sans-serif;
+  color: $default_text_color;
+  background: $page_bkg;
+}
+
+h1, h2, h3, h4 {
+  font-weight: normal;
+  text-shadow: 1px 0 1px #fff;
+}
+
+h2 {
+  font-size: 1.2em;
+  line-height: 1em;
+}
+
+h4 {
+  color: $red;
+  @include suffix-font;
+  font-size: 15px;
+  letter-spacing: 1px;
+  line-height: 20px;
+  margin-bottom: 10px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+section#page {
+  height: 75%;
+  background: url(/images/2014/harbour_bw.jpg) center 70% no-repeat;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+// check background for mobiles as well
+
+// @group footer
+// -----------------------------------------
+#footer {
+  padding-top: 4%;
+}
+
+.credit { height: 29%;
+  img { width: 50px; } // ruby au logo
+}
+
+.acionables {
+  a {
+    display: block;
+    line-height: 2em;
+    color: $default_text_color;
+  }
+}
+// -----------------------------------------
+
+header#header { margin-top: 1%;
+  h1 { display: inline-block; width: 20%; margin-right: 4%; } // ruby conf logo
+  hgroup { display: inline-block; width: 75%; vertical-align: middle; }
+}
+
+section.social { margin-top: 5%;
+  form {
+    position: relative;
+    width: 90%;
+    margin-right: 1.587%;
+    margin-left: 8.466%;
+
+    input, .button {
+      display: block;
+      position: absolute;
+      height: 40px;
+      background: #F5F5F3;
+      border: 1px solid $pink;
+    }
+
+    input {
+      left: 0;
+      width: 80%;
+      padding: 5px 10px;
+      font-weight: 300;
+      &:focus { outline: none; }
+    }
+
+    .button {
+      width: 20%;
+      left: 80%;
+      padding: 0;
+      @include suffix-font;
+      line-height: 40px;
+      text-align: center;
+      color: $red;
+      text-transform: uppercase;
+      text-decoration: none;
+      border-left: none;
+    }
+
+    span {
+      display: none;
+      font-size: 30px;
+      position: absolute;
+      width: 30px;
+      height: 40px;
+      line-height: 40px;
+      left: -30px;
+      &.success { color: $green; }
+      &.error { color: $red; }
+    }
+
+    .progress {
+      height: 40px;
+      position: absolute;
+      bottom: -20px;
+      width: 40px;
+      left: -30px;
+    }
+  }
+
+  .networks {
+    padding-top: 50px;
+    a {
+      display: block;
+      text-align: center;
+      line-height: 1.2em;
+      font-weight: 300;
+      color: #ddd;
+      text-shadow: 1px 0 1px #666;
+      text-decoration: none;
+    }
+  }
+}

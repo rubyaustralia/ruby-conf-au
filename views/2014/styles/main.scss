@@ -69,33 +69,57 @@ section#page {
 
 // check background for mobiles as well
 
-// @group footer
-// -----------------------------------------
-#footer {
-  padding-top: 4%;
-}
-
-.credit { height: 29%;
-  img { width: 50px; } // ruby au logo
-}
-
-.acionables {
-  a {
-    display: block;
-    margin-bottom: 1em;
-    color: $default_text_color;
-  }
-}
-// @end */
 
 // @group header
 // -----------------------------------------
 header#header { margin-top: 2%;
-  h1 { display: inline-block; width: 17%; margin-right: 3%; } // ruby conf logo
-  hgroup { display: inline-block; width: 75%; vertical-align: middle; }
+  h1 {
+    display: inline-block;
+    width: 17%; // ruby conf logo
+    margin-right: 3%;
+  }
+
+  hgroup {
+    display: inline-block;
+    width: 75%;
+    vertical-align: middle;
+  }
 }
 
-section.social { margin-top: 5%;
+.acionables { margin-top: 6%;
+  a {
+    display: inline-block;
+    color: #222;
+    background: #fff;
+    margin-bottom: 0.5em;
+    padding: 0.5em;
+  }
+
+  .eventbrite {
+    background: $red;
+    color: #fff;
+  }
+}
+// @end */
+
+.location {
+  background: rgba(255, 255, 255, 0.35);
+  padding: 0.5em;
+  text-align: center;
+}
+
+// @group footer
+// -----------------------------------------
+#footer {
+  padding-top: 1%;
+}
+
+.credit { margin-top: 4%;
+  hgroup { display: inline-block; }
+  img { width: 50px; } // ruby au logo
+}
+
+section.social { padding-bottom: 4%;
   form {
     position: relative;
     width: 90%;
@@ -153,19 +177,33 @@ section.social { margin-top: 5%;
   }
 
   .networks {
-    padding-top: 50px;
+    h4 {
+      margin-bottom: 25px;
+    }
     a {
-      display: block;
-      text-align: center;
-      line-height: 2em;
       font-weight: 300;
-      text-shadow: 1px 0 1px #fff;
       text-decoration: none;
-    }
-    .icon, span {
       display: inline-block;
-      margin-right: 10px;
+      margin: 0 10px 0 0;
+      padding-right: 10px;
+      color: #999;
+      border-right: 1px solid #aaa;
     }
+
+    .icon {
+      display: inline-block;
+      margin-right: 5px;
+    }
+
+    span {
+      vertical-align: top;
+    }
+
+    .lanyrd {
+      border-right: none;
+    }
+
   }
 }
 // @end */
+

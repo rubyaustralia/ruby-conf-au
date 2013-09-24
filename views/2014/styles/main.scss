@@ -5,10 +5,11 @@ $blue: #27b2d2;
 $pink: #FDBFC2;
 $page_bkg: #EDECE6;
 $default_text_color: #575757;
+$dark_red: darken($red, 15%);
 
 // Foundation classes
 $anchor-font-color: $red;
-$anchor-font-color-hover: darken($red, 15%);
+$anchor-font-color-hover: $dark_red;
 $header-font-family: 'Source Sans Pro', sans-serif;
 
 @import "foundation";
@@ -59,15 +60,13 @@ h4 {
 }
 
 section#page {
-  height: 75%;
+  height: 65%;
   background: url(/images/2014/harbour_bw.jpg) center 70% no-repeat;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
 }
-
-// check background for mobiles as well
 
 
 // @group header
@@ -106,20 +105,16 @@ header#header { margin-top: 2%;
   background: rgba(255, 255, 255, 0.35);
   padding: 0.5em;
   text-align: center;
+
+  a {
+    color: $default_text_color;
+    &:hover { color: $dark_red; }
+  }
 }
 
-// @group footer
+// @group social
 // -----------------------------------------
-#footer {
-  padding-top: 1%;
-}
-
-.credit { margin-top: 4%;
-  hgroup { display: inline-block; }
-  img { width: 50px; } // ruby au logo
-}
-
-section.social { padding-bottom: 4%;
+section.social { padding: 2% 0 5%;
   form {
     position: relative;
     width: 90%;
@@ -188,6 +183,7 @@ section.social { padding-bottom: 4%;
       padding-right: 10px;
       color: #999;
       border-right: 1px solid #aaa;
+      &:hover { color: $dark_red; }
     }
 
     .icon {
@@ -195,15 +191,21 @@ section.social { padding-bottom: 4%;
       margin-right: 5px;
     }
 
-    span {
-      vertical-align: top;
-    }
-
     .lanyrd {
       border-right: none;
     }
-
   }
 }
-// @end */
 
+// @group footer
+// -----------------------------------------
+#footer { padding-bottom: 5%; }
+
+.sponsors { padding-left: 50px;
+  img { width: 30%;}
+}
+
+.credit {
+  img { width: 50px; } // ruby au logo
+}
+// @end */

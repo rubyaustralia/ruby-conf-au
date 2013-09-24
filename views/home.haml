@@ -21,4 +21,28 @@
         Become a sponsor
 
 %p.location
-  Location: Luna Park Crystal Palace, 1 Olympic Drive, Milsons Point, 2061
+  %a{href: 'http://goo.gl/maps/2NQra'}
+    Location: Luna Park Crystal Palace, 1 Olympic Drive, Milsons Point, 2061
+
+%section.row.social
+  .large-5.columns
+    %form
+      %h4.red Join our mailing list
+      %span.success ✔
+      %span.error ✗
+      %div.progress_indicator
+      %input{placeholder: "you@email.com", type: "text"}
+      %a{class: "button", href: "#"} Join
+  %div.networks.large-7.columns
+    %h4.red Find us elsewhere
+    %a.twitter{href: "http://twitter.com/rubyconf_au"}
+      .icon.ss-twitter
+      %span @rubyconf_au
+    %a.facebook{href: "http://facebook.com/RubyConfAustralia"}
+      .icon.ss-facebook
+      %span RubyConfAustralia
+    %a.vimeo{href: "https://vimeo.com/channels/486849"}
+      .icon.ss-vimeo
+      %span Last Year's Talks
+    %a.lanyrd{href: "http://lanyrd.com/2014/rubyconf-au/"}
+      %span Lanyrd

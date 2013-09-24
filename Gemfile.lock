@@ -14,9 +14,9 @@ GEM
       chunky_png (~> 1.2)
       fssm (>= 0.2.7)
       sass (~> 3.1)
-    createsend (3.4.0)
-      hashie (>= 1.2, < 3)
-      httparty (~> 0.10)
+    createsend (1.0.4)
+      hashie (~> 1.0)
+      httparty (~> 0.8)
       json
     dotenv (0.9.0)
     excon (0.25.3)
@@ -26,7 +26,7 @@ GEM
     fssm (0.2.10)
     haml (4.0.3)
       tilt
-    hashie (2.0.5)
+    hashie (1.2.0)
     heroku (2.40.0)
       heroku-api (~> 0.3.7)
       launchy (>= 0.3.2)
@@ -72,7 +72,7 @@ PLATFORMS
 DEPENDENCIES
   activesupport
   compass
-  createsend
+  createsend (= 1.0.4)
   foreman
   haml
   heroku

@@ -4,7 +4,7 @@ gem "compass"
 gem "zurb-foundation"
 gem "sinatra"
 gem "haml"
-gem "createsend"
+gem "createsend", "1.0.4"
 gem "json"
 gem "activesupport", require: "active_support/inflector"
 

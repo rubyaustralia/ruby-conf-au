@@ -1,0 +1,108 @@
+!!! 5
+%html{lang: 'en'}
+  %head
+    - if @title == :home
+      %title Ruby Conf Australia 2013
+    - else
+      %title= "#{@title.to_s.titleize} - Ruby Conf Australia 2013"
+    %meta{charset: "utf-8"}
+    %meta{name: "author", content: "Ruby Australia"}
+    %meta{name: "copyright", content: "Copyright Ruby Australia 2012-2013. All Rights Reserved."}
+    %link{rel: "stylesheet", href: "/2013/stylesheets/main.css"}
+    %script{src: "https://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"}
+    %script{src: "/javascripts/spin.min.js"}
+    %script{src: "/javascripts/main.js"}
+    %link{rel: "stylesheet", href: 'http://fonts.googleapis.com/css?family=Source+Sans+Pro:300'}
+  %body
+
+    %section#root
+      %header
+        .inner
+          %h1
+            %a{href: "/2013/"}
+              %img{alt: "Ruby Conf Australia 2013", src: "/images/ruby_conf_logo.svg", height: "220px"}
+          %nav
+            %ul
+              %li
+                %a{href: "/2013/speakers", class: @title == :speakers ? "on" : nil} Speakers
+              %li
+                %a{href: "/2013/sessions", class: @title == :sessions ? "on" : nil} Sessions
+              %li
+                %a{href: "/2013/workshops", class: @title == :workshops ? "on" : nil} Workshops
+              %li
+                %a{href: "/2013/sponsors", class: @title == :sponsors ? "on" : nil} Sponsors
+              %li
+                %a{href: "/2013/news", class: @title == :news ? "on" : nil} News
+              %li
+                %a{href: "/2013/venue", class: @title == :venue ? "on" : nil} Venue
+          %hgroup
+            %h2 20-22 February 2013
+            %h2 Melbourne, Australia
+
+      %section#tickets-call-to-action
+        .inner
+
+          %h4 Conference is over
+          %p Until next time, happy programming!
+
+      %section{id: @title}
+        != yield
+
+      #root_footer
+
+    %section#footer
+      %footer
+        %img.logo{alt: "Ruby Australia Logo", src: "/images/ruby_au_red_logo.svg"}
+        %hgroup
+          %h2
+            Proudly Organised by
+            %a.red{href: "http://ruby.org.au"} Ruby Australia
+          %h2
+            In partnership with
+            %a.blue{href: "http://www.yowconference.com.au"} YOW! Conference
+
+        .sponsors
+          .cf
+            %a{href: "http://www.thoughtworks.com"}
+              %img.thoughtworks{alt: "Thoughtworks", src: "/images/sponsors/mono/thoughtworks.svg"}
+            %a{href: "http://envato.com/"}
+              %img.envato{alt: "Envato", src: "/images/sponsors/mono/envato.svg"}
+          .cf
+            %a{href: "http://www.realestate.com.au"}
+              %img.rea{alt: "Real Estate Australia", src: "/images/sponsors/mono/rea.svg"}
+            %a{href: "http://icelab.com.au"}
+              %img.icelab{alt: "Ice Lab", src: "/images/sponsors/mono/icelab.svg"}
+          .cf
+            %a{href: "https://flippa.com"}
+              %img.flippa{alt: "Flippa", src: "/images/sponsors/mono/flippa.svg"}
+            %a{href: "http://www.fairfax.com.au"}
+              %img.fairfax{alt: "Fairfax", src: "/images/sponsors/mono/fairfax.svg"}
+          .cf
+            %a{href: "http://ninefold.com"}
+              %img.ninefold{alt: "Ninefold", src: "/images/sponsors/mono/ninefold.png"}
+            %a{href: "http://www.everydayhero.com.au"}
+              %img.edh{alt: "Everyday Hero", src: "/images/sponsors/mono/edh.svg"}
+          .cf
+            %a{href: "http://newrelic.com"}
+              %img.newrelic{alt: "New Relic", src: "/images/sponsors/mono/newrelic.svg"}
+
+        %nav
+          %ul
+            %li
+              %a{href: "/2013/", class: @title == :home ? "on" : nil} Home
+            %li
+              %a{href: "/2013/speakers", class: @title == :speakers ? "on" : nil} Speakers
+            %li
+              %a{href: "/2013/sessions", class: @title == :sessions ? "on" : nil} Sessions
+            %li
+              %a{href: "/2013/workshops", class: @title == :workshops ? "on" : nil} Workshops
+            %li
+              %a{href: "/2013/sponsors", class: @title == :sponsors ? "on" : nil} Sponsors
+            %li
+              %a{href: "/2013/news", class: @title == :news ? "on" : nil} News
+            %li
+              %a{href: "/2013/venue", class: @title == :venue ? "on" : nil} Venue
+        %nav.fine-print
+          %ul
+            %li
+              %a{href: "/2013/policies#anti-harrassment"} Anti-harassment policy

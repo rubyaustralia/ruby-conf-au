@@ -17,39 +17,16 @@ get '/' do
   haml :home
 end
 
-get '/speakers' do
-  @title = :speakers
-  haml :speakers
+# Handling last year's conf website
+get '/2013/' do
+  @title = :home
+  haml :"2013/home", :layout => :"2013/layout"
 end
 
-get '/sessions' do
-  @title = :sessions
-  haml :sessions
-end
-
-get '/workshops' do
-  @title = :workshops
-  haml :workshops
-end
-
-get '/sponsors' do
-  @title = :sponsors
-  haml :sponsors
-end
-
-get '/news' do
-  @title = :news
-  haml :news
-end
-
-get '/policies' do
-  @title = :policies
-  haml :policies
-end
-
-get '/venue' do
-  @title = :venue
-  haml :venue
+get '/2013/:page_name' do
+  page_name = params[:page_name]
+  @title = page_name
+  haml :"2013/#{page_name}", :layout => :"2013/layout"
 end
 
 post '/subscribe' do
@@ -69,7 +46,7 @@ post '/subscribe' do
   {success: true}.to_json
 end
 
-get "/stylesheets/main.css" do
+get "/:year/stylesheets/main.css" do
   content_type 'text/css', :charset => 'utf-8'
-  scss :"styles/main"
+  scss :"#{params[:year]}/styles/main"
 end

@@ -1,78 +1,48 @@
-%hgroup
-  %h1 It’s time to bring the leading developers from around the region and beyond together for the first ever Ruby conference to be held in Australia.
+%section#page
+  .row
+    %header#header.large-7.columns
+      %h1
+        %a{href: "/"}
+          %img{alt: "Ruby Conf Australia 2014", src: "/images/ruby_conf_logo.svg", height: "220px"}
+      %hgroup
+        %h2 19-21 February 2014
+        %h2 Sydney, Australia
 
-%section.speakers
-  %a.speaker{href: "/speakers#corey_haines"}
-    %figure
-      %img.speaker{src: "/images/speakers/corey_haines.jpg", width: "174px"}
-      %figcaption Corey Haines
+    %section.acionables.large-5.columns
+      %a.eventbrite{href: 'https://rubyconfau2014.eventbrite.com.au/'}
+        Early bird tickets
+      %a.calendar{href: '/calendar/iCal.ics'}
+        Add dates to your calendar
+      %a.cft{href: 'https://github.com/rubyaustralia/rubyconfau-2014-cfp'}
+        Call for proposals is open
+      %a.scholarship{href: 'https://rubyconfau.typeform.com/to/IZJpw4'}
+        Apply for scholarship
+      %a.sponsorship{href: 'mailto:sponsors@rubyconf.org.au'}
+        Become a sponsor
 
-  %a.speaker{href: "/speakers#aaron_patterson"}
-    %figure
-      %img.speaker{src: "/images/speakers/aaron_patterson.jpg", width: "174px"}
-      %figcaption Aaron Patterson
+%p.location
+  %a{href: 'http://goo.gl/maps/2NQra'}
+    Location: Luna Park Crystal Palace, 1 Olympic Drive, Milsons Point, 2061
 
-  %a.speaker{href: "/speakers#dave_thomas"}
-    %figure
-      %img.speaker{src: "/images/speakers/dave_thomas.jpg", width: "174px"}
-      %figcaption Dave Thomas
-
-  %a.speaker{href: "/speakers#mikel_lindsaar"}
-    %figure
-      %img.speaker{src: "/images/speakers/mikel_lindsaar.jpg", width: "174px"}
-      %figcaption Mikel Lindsaar
-
-%section.sponsors
-  %h3.red Ruby Sponsor
-  .ruby
-    %a{href: "http://envato.com"}
-      %img{src: "/images/sponsors/envato.svg", alt: "Envato", width: "228px"}
-  %h3.green Emerald Sponsors
-  .emerald
-    %a{href: "http://www.thoughtworks.com/"}
-      %img{src: "/images/sponsors/thoughtworks.svg", alt: "Thoughtworks", width: "220px"}
-    %a{href: "http://www.realestate.com.au/"}
-      %img{src: "/images/sponsors/rea.svg", alt: "REA", width: "220px"}
-
-%section.social
-  %form
-    %h4.red Join our mailing list
-    %span.success ✔
-    %span.error ✗
-    %div.progress
-    %input{placeholder: "you@email.com", type: "text"}
-    %a{class: "button", href: "#"} Join
-  %div.networks
+%section.row.social
+  .newsletter.large-5.columns
+    %form
+      %h4.red Join our mailing list
+      %span.success ✔
+      %span.error ✗
+      %div.progress_indicator
+      %input{placeholder: "you@email.com", type: "text"}
+      %a{class: "button", href: "#"} Join
+  .networks.large-7.columns
     %h4.red Find us elsewhere
     %a.twitter{href: "http://twitter.com/rubyconf_au"}
-      %img{src: "/images/icons/twitter.svg", alt: "Twitter", height: "40px"}
+      .icon.ss-twitter
       %span @rubyconf_au
-    %a.facebook{href: "http://www.facebook.com/RubyConfAustralia"}
-      %img{src: "/images/icons/facebook.svg", alt: "Facebook", height: "40px"}
+    %a.facebook{href: "http://facebook.com/RubyConfAustralia"}
+      .icon.ss-facebook
       %span RubyConfAustralia
-
-%section.news
-  %article
-    %a.wrap{href: "/news#20130219"}
-      %h5 February 19, 2013
-      %h4.blue RubyConfAU Social Events
-      %p
-        As delegates gather, we have news of social events for Wednesday, Thursday and Friday evenings.
-  %article
-    %a.wrap{href: "/news#20130215"}
-      %h5 February 15, 2013
-      %h4.blue Envato, our Ruby Sponsor
-      %p
-        A few words from our principal and Ruby Level Sponsor - Envato.
-  %article
-    %a.wrap{href: "/news#20130212"}
-      %h5 February 12, 2013
-      %h4.blue Rails Girls
-      %p
-        Find out details of the Rails Girls event and register for free!
-  %article
-    %a.wrap{href: "/news#20130203"}
-      %h5 February 3, 2013
-      %h4.blue Releasing More Tickets
-      %p
-        We've figured out how to make Ruby Conf available to more attendees.
+    %a.vimeo{href: "https://vimeo.com/channels/486849"}
+      .icon.ss-vimeo
+      %span Last Year's Talks
+    %a.lanyrd{href: "http://lanyrd.com/2014/rubyconf-au/"}
+      %span Lanyrd

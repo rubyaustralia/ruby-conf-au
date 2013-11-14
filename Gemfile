@@ -12,5 +12,6 @@ gem "activesupport", require: "active_support/inflector"
 
 group :development do
   gem "foreman"
+  gem 'debugger'
   gem "heroku"
 end

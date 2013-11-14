@@ -48,6 +48,12 @@ h2 {
   line-height: 1em;
 }
 
+h3 {
+  font-size: 1em;
+  line-height: 1.2em;
+}
+
+
 h4 {
   color: $red;
   @include suffix-font;

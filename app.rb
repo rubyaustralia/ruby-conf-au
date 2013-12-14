@@ -1,6 +1,8 @@
 require "bundler"
 Bundler.require(:default)
 
+# before { request.path_info.sub! %r{/$}, '' }
+
 configure do
   set :haml, :format => :html5
 
@@ -18,7 +20,7 @@ get '/' do
 end
 
 # Handling last year's conf website
-get '/2013/' do
+get '/2013/?' do
   @title = :home
   haml :"2013/home", :layout => :"2013/layout"
 end

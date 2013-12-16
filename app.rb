@@ -16,7 +16,13 @@ end
 
 get '/' do
   @title = :home
-  haml :home
+  haml :"2014/home", :layout => :"2014/layout"
+end
+
+get ':page_name' do
+  page_name = params[:page_name]
+  @title = page_name
+  haml :"2014/#{page_name}", :layout => :"2014/layout"
 end
 
 # Handling last year's conf website

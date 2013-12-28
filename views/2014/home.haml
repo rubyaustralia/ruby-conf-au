@@ -1,6 +1,6 @@
 %section#page
   .row
-    %header#header.large-7.columns
+    %header#header
       %h1
         %a{href: "/"}
           %img{alt: "Ruby Conf Australia 2014", src: "/images/ruby_conf_logo.svg", height: "220px"}
@@ -13,10 +13,10 @@
 
 %section#intro
   .row
-    .logo
-      %img{alt: "Ruby Conf Australia 2014", src: "/images/ruby_conf_logo.svg", height: "220px"}
     .nav.large-offset-1(data-magellan-expedition="fixed")
       %dl.sub-nav
+        %dd.logo
+          %img{alt: "Ruby Conf Australia 2014", src: "/images/ruby_conf_logo.svg", height: "220px"}
         %dd(data-magellan-arrival="speakers")
           %a(href="#speakers") Speakers
         %dd(data-magellan-arrival="sessions")
@@ -27,20 +27,22 @@
           %a(href="#venue") Venue
         %dd(data-magellan-arrival="sponsors")
           %a(href="#sponsors") Sponsors
-        %dd(data-magellan-arrival="contact")
-          %a(href="#contact") Contact
+        %dd(data-magellan-arrival="footer")
+          %a(href="#footer") Contact
     %hgroup.large-offset-1.large-8.columns
-      It's time to bring the leading developers from around the region and beyond together for the second Ruby conference to be held in Australia.
-      %br
-      %a(href="http://lanyrd.com/2014/rubyconf-au/")
-        See who's speaking
-      or
-      %a(href="http://rubyconfau2014.eventbrite.com.au")
-        get your ticket now.
+      %h2
+        It's time to bring the leading developers from around the region and beyond together for the second Ruby conference to be held in Australia.
+        %br
+        %a(href="http://lanyrd.com/2014/rubyconf-au/")
+          See who's speaking
+        or
+        %a(href="http://rubyconfau2014.eventbrite.com.au")
+          get your ticket now.
 
 %section#speakers
   .row
-    %h2 Speakers
+    %a(name="speakers")
+    %h1(data-magellan-destination="speakers") Speakers
     %a.speakers-list(href="http://lanyrd.com/2014/rubyconf-au/") View full speakers list
     %article.speaker.large-5.columns
       %img(alt="Envato" src="/images/2014/speakers/cambarrie.jpg")
@@ -71,47 +73,49 @@
 
 %section#sessions
   .row
+    %a(name="sessions")
+    %h1(data-magellan-destination="session") Sessions
     %hgroup
-      RubyConfAU sessions will run across two days: February 20-21 at the Luna Park Crystal Palace.
+      %h2
+        RubyConfAU sessions will run across two days: February 20-21 at the Luna Park Crystal Palace.
 
-      %a(href="http://lanyrd.com/2014/rubyconf-au/schedule/")
-        Full session details are available on Lanyrd.
+        %a(href="http://lanyrd.com/2014/rubyconf-au/schedule/")
+          Full session details are available on Lanyrd.
 
-    %p
-      %a(href="#") Download the Lanyrd iPhone app
-      to use on the day, or use the
-      %a(href="#") Lanyrd HTML5 site.
+      %p
+        %a(href="#") Download the Lanyrd iPhone app
+        to use on the day, or use the
+        %a(href="#") Lanyrd HTML5 site.
 
 %section#workshops
   .row
-    %h2 Workshops
+    %a(name="workshops")
+    %h1(data-magellan-destination="workshops") Workshops
     %article.workshop
       .icon
-      %h3 Security Practicum
-      %p Believe it or not, proper application security isn't just for banks! Recent high-profile attacks have cost web companies millions of dollars and thousands of users. To protect your users, you must learn how attackers would exploit your application. You will learn about the most prevalent attack methods used to exploit Ruby applications by hacking demo apps. There will be no theory and no fancy-talk--just hacking. For each attack method we cover, I will take you through three steps--detection, exploitation, and patching. We will also learn about tools to automate the detection process.
+      %h3 Testing Zero to Hero
+      %p So testing&hellip; How does it work? What is a unit test? Why is that an integration test, should I even bother with acceptance tests?
 
-      %p Some attack methods you will learn more about:
-      %ul
-        %li Cross-site request forgery
-        %li Social engineering
-        %li Cross-site-scripting
-        %li Password attacks
-        %li Rails-specific attacks
+      %p Let's work through the differences between the various types of testing, look at differing strategies for tackling problems and how they can be solved. Try doing things with TDD, try doing things building tests after.
 
-      %p This workshop is aimed at Ruby developers of any skill-level who want to learn how to better secure their applications. I will use Rails and Sinatra as mediums, but the attack methods learned will apply to any Ruby application.
+      %p Let's use RSpec, TestUnit and MiniSpec to test different techniques and perfect our tests. And we will look at how we can apply these to our real world problems to make our lives easier and our software better!
 
       .bio
-        %img(src="" alt="Neal Kemp")
-        %em Workshop run by Neal Kemp
-        %p Neal is an independent consultant who slings Ruby code for a variety of clients. In the past, he has worked as a developer at Thoughtbot and ZURB. He has been developing on the web since marquees were cool.
+        %img(src="" alt="Jon Rowe")
+        %em Workshop run by Jon Rowe
+        %p Who is Jon Rowe? Tinker. Sailor. Developer. Spy? Originally from a tiny cold island nation, Britain, Jon now lives in Sydney where he spends time sailing the high seas, plotting and working as a gun for hire, I mean freelance Ruby developer.
+
+        %p When not working on client work you can find Jon hacking on RSpec, helping other open source projects and working on his own little side project(s).
+
         %p.links
-          %a(href="http://nealke.mp" class="website") nealke.mp
-          %a(href="http://twitter.com/Neal_Kemp" class="twitter") @Neal_Kemp
-          %a(href="https://github.com/NealKemp" class="github") github.com/NealKemp
+          %a(href="http://jonrowe.co.uk" class="website") jonrowe.co.uk
+          %a(href="http://twitter.com/JonRowe" class="twitter") @JonRowe
+          %a(href="https://github.com/JonRowe" class="github") github.com/JonRowe
 
 %section#venue
   .row
-    %h2 Our Venue
+    %a(name="venue")
+    %h1(data-magellan-destination="venue") Our Venue
     %p RubyConfAU is being held at the Crystal Palace at Luna Park, right on Sydney Harbour and under the shadow of the Sydney Harbour Bridge.
 
     %a(href="http://goo.gl/maps/2NQra" class="map")
@@ -132,7 +136,8 @@
 
 %section#sponsors
   .row
-    %h2 Sponsors
+    %a(name="sponsors")
+    %h1(data-magellan-destination="sponsors") Sponsors
     %p RubyConfAU Sydney 2014 is made possible through the generous support of our sponsors.
     %article.sponsors.ruby
       %h3 Ruby Sponsor:
@@ -150,6 +155,8 @@
       %h3 Opal Sponsor:
       %a.fairfax(href="http://www.fairfax.com.au/")
         %img(alt="Fairfax Media" src="/images/sponsors/fairfax.svg")
+      %a.thoughtworks(href="http://www.thoughtworks.com/")
+        %img(alt="ThoughtWorks" src="/images/sponsors/thoughtworks.svg")
     %article.sponsors.misc
       .article
         %p Rides+Drinks Sponsor
@@ -159,7 +166,3 @@
         %p Coffee Sponsor
         %a.lookahead(href="http://www.lookahead.com.au/")
           %img(alt="Lookahead Search" src="/images/sponsors/lookahead.png")
-      .article
-        %p Scholarship Sponsor
-        %a.thoughtworks(href="http://www.thoughtworks.com/")
-          %img(alt="ThoughtWorks" src="/images/sponsors/thoughtworks.svg")

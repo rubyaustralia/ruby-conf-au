@@ -40,26 +40,26 @@
 
   %footer#footer
     .row
-      %a{href: "/"}
-        %img{alt: "Ruby Conf Australia 2014", src: "/images/ruby_conf_white_logo.svg", height: "220px"}
-      %h2 Excited? We are!
-      %p We can't wait to shareRubyConfAU 2014 with you.
-      %p
-        If you've got questions, get in touch by
-        %a(href="mailto:organisers@rubyconf.org.au") email
-        or tweet
-        %a(href="https://twitter.com/rubyconf_au") @rubyconf_au
+      %a(name="footer")
+      %hgroup.ruby-conf-au(data-magellan-destination="footer")
+        %a(href="/")
+          %img(alt="Ruby Conf Australia 2014" src="/images/ruby_conf_white_logo.svg" height="220px")
+        %h2 Excited? We are!
 
-      %a.red{href: "http://ruby.org.au"}
-        %img.logo{alt: "Ruby Australia Logo", src: "/images/ruby_au_white_logo.svg"}
-      %p
-        Proudly Organised by
-        %a.red{href: "http://ruby.org.au"} Ruby Australia
+        %p We can't wait to share RubyConfAU 2014 with you.
+        %p
+          If you've got questions, get in touch by
+          %a(href="mailto:organisers@rubyconf.org.au") email
+          or tweet
+          %a(href="https://twitter.com/rubyconf_au") @rubyconf_au
+
+      %section.ruby-au
+        %a(href="http://ruby.org.au")
+          %img.logo(alt="Ruby Australia Logo" src="/images/ruby_au_white_logo.svg")
+        %p
+          Proudly Organised by
+          %a(href="http://ruby.org.au") Ruby Australia
 
       %section.extras
-        %a.calendar{href: '/calendar/iCal.ics'}
-          Add dates to your calendar
-        %a.anti-harrasement{href: 'http://lanyrd.com/2014/rubyconf-au/schedule/'}
-          Anti-harrassment Policy
-        %a.coc{href: '#'}
-          Code of Conduct
+        %a.calendar(href='/calendar/iCal.ics') Add dates to your calendar
+        %a.policies(href='/policies') Policies

@@ -1,0 +1,88 @@
+
+section#social {padding: 2% 0 5%;
+  form {
+    position: relative;
+    width: 90%;
+    margin-right: 1.587%;
+    margin-left: 8.466%;
+
+    input, .button {
+      display: block;
+      position: absolute;
+      height: 40px;
+      background: #F5F5F3;
+      border: 1px solid $pink;
+    }
+
+    input {
+      left: 0;
+      width: 80%;
+      padding: 5px 10px;
+      font-weight: 300;
+      &:focus { outline: none; }
+    }
+
+    .button {
+      width: 20%;
+      left: 80%;
+      padding: 0;
+      line-height: 40px;
+      text-align: center;
+      color: $red;
+      text-transform: uppercase;
+      text-decoration: none;
+      border-left: none;
+    }
+
+    span {
+      display: none;
+      font-size: 30px;
+      position: absolute;
+      width: 30px;
+      height: 40px;
+      line-height: 40px;
+      left: -30px;
+      &.success { color: $green; }
+      &.error { color: $red; background: none; top: 57px; }
+    }
+
+    .progress {
+      height: 40px;
+      position: absolute;
+      bottom: -20px;
+      width: 40px;
+      left: -30px;
+    }
+  }
+
+  .networks {
+    h4 {
+      margin-bottom: 25px;
+    }
+    a {
+      font-weight: 300;
+      text-decoration: none;
+      display: inline-block;
+      margin: 0 10px 0 0;
+      padding-right: 10px;
+      color: #999;
+      border-right: 1px solid #aaa;
+      &:hover { color: $dark_red; }
+    }
+
+    .icon {
+      display: inline-block;
+      margin-right: 5px;
+    }
+
+    .lanyrd {
+      border-right: none;
+    }
+  }
+}
+
+#footer {
+  background: $red;
+  text-align: center;
+  * { color: #fff; }
+}

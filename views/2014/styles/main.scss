@@ -1,221 +1,18 @@
-// Commmon Colors
-$red: #f4323c;
-$green: #0eb942;
-$blue: #27b2d2;
-$pink: #FDBFC2;
-$page_bkg: #EDECE6;
-$default_text_color: #575757;
-$dark_red: darken($red, 15%);
-
-// Foundation classes
-$anchor-font-color: $red;
-$anchor-font-color-hover: $dark_red;
-$header-font-family: 'Source Sans Pro', sans-serif;
-
+@import "constants";
 @import "foundation";
 @import "ss-social-regular";
-
-// Fonts
-@font-face {
-    font-family: 'SUFFIX-mono';
-    src: url('/fonts/suffix-mono-webfont.eot');
-    src: url('/fonts/suffix-mono-webfont.eot?#iefix') format('embedded-opentype'),
-         url('/fonts/suffix-mono-webfont.woff') format('woff'),
-         url('/fonts/suffix-mono-webfont.ttf') format('truetype'),
-         url('/fonts/suffix-mono-webfont.svg#SUFFIX-monoSUFFIX-mono') format('svg');
-    font-weight: normal;
-    font-style: normal;
-}
-
-@mixin suffix-font { font-family: 'SUFFIX-mono', Arial, sans-serif; }
-
-
-html, body { height: 100%; }
-
-body {
-  font-family: 'Source Sans Pro', sans-serif;
-  color: $default_text_color;
-  background: $page_bkg;
-}
-
-h1, h2, h3, h4 {
-  font-weight: normal;
-  text-shadow: 1px 0 1px #fff;
-}
-
-h2 {
-  font-size: 1.2em;
-  line-height: 1em;
-}
-
-h3 {
-  font-size: 1em;
-  line-height: 1.2em;
-}
-
-
-h4 {
-  color: $red;
-  @include suffix-font;
-  font-size: 15px;
-  letter-spacing: 1px;
-  line-height: 20px;
-  margin-bottom: 10px;
-  text-align: center;
-  text-transform: uppercase;
-}
-
-section#page {
-  height: 65%;
-  background: url(/images/2014/harbour_bw.jpg) center 70% no-repeat;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-}
-
-
-// @group header
-// -----------------------------------------
-header#header { margin-top: 2%;
-  h1 {
-    display: inline-block;
-    width: 17%; // ruby conf logo
-    margin-right: 3%;
-  }
-
-  hgroup {
-    display: inline-block;
-    width: 75%;
-    vertical-align: middle;
-  }
-}
-
-.acionables { margin-top: 6%;
-  a {
-    display: inline-block;
-    color: #222;
-    background: #fff;
-    margin-bottom: 0.5em;
-    padding: 0.5em;
-  }
-
-  .eventbrite {
-    background: $red;
-    color: #fff;
-  }
-}
-// @end */
-
-.location {
-  background: rgba(255, 255, 255, 0.35);
-  padding: 0.5em;
-  text-align: center;
-
-  a {
-    color: $default_text_color;
-    &:hover { color: $dark_red; }
-  }
-}
-
-// @group social
-// -----------------------------------------
-section.social { padding: 2% 0 5%;
-  form {
-    position: relative;
-    width: 90%;
-    margin-right: 1.587%;
-    margin-left: 8.466%;
-
-    input, .button {
-      display: block;
-      position: absolute;
-      height: 40px;
-      background: #F5F5F3;
-      border: 1px solid $pink;
-    }
-
-    input {
-      left: 0;
-      width: 80%;
-      padding: 5px 10px;
-      font-weight: 300;
-      &:focus { outline: none; }
-    }
-
-    .button {
-      width: 20%;
-      left: 80%;
-      padding: 0;
-      @include suffix-font;
-      line-height: 40px;
-      text-align: center;
-      color: $red;
-      text-transform: uppercase;
-      text-decoration: none;
-      border-left: none;
-    }
-
-    span {
-      display: none;
-      font-size: 30px;
-      position: absolute;
-      width: 30px;
-      height: 40px;
-      line-height: 40px;
-      left: -30px;
-      &.success { color: $green; }
-      &.error { color: $red; background: none; top: 57px; }
-    }
-
-    .progress {
-      height: 40px;
-      position: absolute;
-      bottom: -20px;
-      width: 40px;
-      left: -30px;
-    }
-  }
-
-  .networks {
-    h4 {
-      margin-bottom: 25px;
-    }
-    a {
-      font-weight: 300;
-      text-decoration: none;
-      display: inline-block;
-      margin: 0 10px 0 0;
-      padding-right: 10px;
-      color: #999;
-      border-right: 1px solid #aaa;
-      &:hover { color: $dark_red; }
-    }
-
-    .icon {
-      display: inline-block;
-      margin-right: 5px;
-    }
-
-    .lanyrd {
-      border-right: none;
-    }
-  }
-}
-
-// @group footer
-// -----------------------------------------
-#footer { padding-bottom: 5%; }
-
-.sponsors { padding-left: 50px;
-  img { width: 30%;}
-}
-
-.credit {
-  img { width: 50px; } // ruby au logo
-}
-// @end */
-
+@import "general";
+@import "header";
+@import "nav";
+@import "intro";
+@import "speakers";
+@import "sessions";
+@import "venue";
+@import "sponsors";
+@import "footer";
+@import "social";
+@import "news";
+@import "policies";
 
 @media only screen and (max-width: 768px) {
   section#page {
@@ -227,7 +24,7 @@ section.social { padding: 2% 0 5%;
     margin-bottom: 70px;
   }
 
-  section.social .networks {
+  section#social .networks {
     h4 { margin-bottom: 10px; }
     a {
       display: block;
@@ -239,10 +36,5 @@ section.social { padding: 2% 0 5%;
 
   #footer {
     h2 { font-size: 1em; }
-  }
-
-  .sponsors, .credit {
-    text-align: center;
-    padding: 0.9375em;
   }
 }

@@ -1,0 +1,30 @@
+section#page {
+  height: 65%;
+  background: url(/images/2014/harbour_yellow.jpg) center 70% no-repeat;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+header#header { margin-top: 2%;
+  h1 {
+    display: inline-block;
+    width: 17%; // ruby conf logo
+    margin-right: 3%;
+  }
+
+  hgroup {
+    display: inline-block;
+    width: 75%;
+    vertical-align: middle;
+  }
+
+  h3 a {
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    background: $purple;
+    color: #fff;
+    padding: 2px 10px;
+  }
+}

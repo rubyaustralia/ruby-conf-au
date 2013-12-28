@@ -1,0 +1,20 @@
+.nav {
+  position: relative;
+
+  .logo {
+    position: absolute;
+    width: 3em;
+  }
+
+  .sub-nav {
+    dd, dt {
+      margin-right: 1em;
+    }
+
+    a {
+      color: #000;
+      font-weight: 600;
+      text-transform: uppercase;
+    }
+  }
+}

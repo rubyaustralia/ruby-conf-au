@@ -1,0 +1,31 @@
+html, body { height: 100%; }
+
+body {
+  font-family: 'Source Sans Pro', sans-serif;
+  color: $default_text_color;
+  background: $page_bkg;
+}
+
+h1, h2, h3, h4 { font-weight: 200; }
+
+h2 {
+  font-size: 3rem;
+  line-height: 1rem;
+}
+
+section {
+  h1 {
+
+  }
+}
+
+hgroup {
+  padding: 4rem 0 8rem;
+  h2 {
+    font-size: 2rem;
+    font-weight: 200;
+  }
+  p {
+
+  }
+}

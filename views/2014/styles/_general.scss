@@ -8,22 +8,25 @@ body {
 
 h1, h2, h3, h4 { font-weight: 200; }
 
-h2 {
-  font-size: 3rem;
-  line-height: 1rem;
-}
+h2 { line-height: 2.5rem; }
 
 section {
+  .row {
+    position: relative;
+    left: $offset;
+    height: 100%;
+  }
   h1 {
 
   }
 }
 
 hgroup {
-  padding: 4rem 0 8rem;
+  position: relative;
+  @include grid-column(9);
+  padding: 4rem 0;
   h2 {
-    font-size: 2rem;
-    font-weight: 200;
+
   }
   p {
 

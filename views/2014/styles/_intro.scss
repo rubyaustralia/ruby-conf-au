@@ -1,3 +1,15 @@
 #intro {
   background: #fff;
+  a {
+    display: inline-block;
+    padding: 3px 4px;
+    color: #fff;
+  }
+
+  a.whos-speaking {
+    background: $mustard;
+  }
+  a.get-ticket {
+    background: $red;
+  }
 }

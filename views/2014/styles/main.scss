@@ -13,28 +13,3 @@
 @import "social";
 @import "news";
 @import "policies";
-
-@media only screen and (max-width: 768px) {
-  section#page {
-    height: 40%;
-    min-height: 270px;
-  }
-
-  .newsletter {
-    margin-bottom: 70px;
-  }
-
-  section#social .networks {
-    h4 { margin-bottom: 10px; }
-    a {
-      display: block;
-      border-right: none;
-      text-align: center;
-      margin-bottom: 10px;
-    }
-  }
-
-  #footer {
-    h2 { font-size: 1em; }
-  }
-}

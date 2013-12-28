@@ -1,22 +1,23 @@
-%section#page
+%section#header
   .row
-    %header#header
-      %h1
-        %a{href: "/"}
-          %img{alt: "Ruby Conf Australia 2014", src: "/images/ruby_conf_logo.svg", height: "220px"}
-      %hgroup
-        %h2 19-21 February 2014
-        %h2 Sydney, Australia
-        %p Workshops: Feb 19. Main Conference: Feb 20-21
-      %h3
-        %a(href="http://rubyconfau2014.eventbrite.com.au") Get your ticket now
+    %h1
+      %a{href: "/"}
+        %img{alt: "Ruby Conf Australia 2014", src: "/images/ruby_conf_logo.svg", height: "220px"}
+    %hgroup
+      %h2
+        19-21 February 2014
+        %br
+        Sydney, Australia
+      %p Workshops: Feb 19. Main Conference: Feb 20-21
+    %h3
+      %a(href="http://rubyconfau2014.eventbrite.com.au") Get your ticket now
 
 %section#intro
   .row
-    .nav.large-offset-1(data-magellan-expedition="fixed")
+    .nav(data-magellan-expedition="fixed")
       %dl.sub-nav
         %dd.logo
-          %img{alt: "Ruby Conf Australia 2014", src: "/images/ruby_conf_logo.svg", height: "220px"}
+          %img{alt: "Ruby Conf Australia 2014", src: "/images/ruby_conf_logo.svg"}
         %dd(data-magellan-arrival="speakers")
           %a(href="#speakers") Speakers
         %dd(data-magellan-arrival="sessions")
@@ -29,14 +30,14 @@
           %a(href="#sponsors") Sponsors
         %dd(data-magellan-arrival="footer")
           %a(href="#footer") Contact
-    %hgroup.large-offset-1.large-8.columns
+    %hgroup
       %h2
         It's time to bring the leading developers from around the region and beyond together for the second Ruby conference to be held in Australia.
         %br
-        %a(href="http://lanyrd.com/2014/rubyconf-au/")
+        %a.whos-speaking(href="http://lanyrd.com/2014/rubyconf-au/")
           See who's speaking
         or
-        %a(href="http://rubyconfau2014.eventbrite.com.au")
+        %a.get-ticket(href="http://rubyconfau2014.eventbrite.com.au")
           get your ticket now.
 
 %section#speakers
@@ -45,7 +46,7 @@
     %h1(data-magellan-destination="speakers") Speakers
     %a.speakers-list(href="http://lanyrd.com/2014/rubyconf-au/") View full speakers list
     %article.speaker.large-5.columns
-      %img(alt="Envato" src="/images/2014/speakers/cambarrie.jpg")
+      %img(alt="Envato" src="/images/2014/speakers/cambarrie.png")
       %h3 Cameron Barrie
       %p
         Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
@@ -60,7 +61,7 @@
         %a(href="https://github.com/whalec" class="github") github.com/whalec
 
     %article.speaker.large-5.columns
-      %img(alt="Envato" src="/images/2014/speakers/patallan.jpg")
+      %img(alt="Envato" src="/images/2014/speakers/patallan.png")
       %h3 Pat Allen
       %p
         Pat earns his keep as a freelance web and Ruby developer based in the coworking space of Inspire9 in Melbourne, Australia. Often, though, you'll find him travelling around the world, attending interesting events and meeting interesting people.

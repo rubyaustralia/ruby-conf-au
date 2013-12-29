@@ -1,3 +1,60 @@
 #workshops {
   background: $light_blue_bkg;
+
+  h1, h3 { color: $dark_blue; }
+
+  article.workshop {
+    position: relative;
+    width: percentage((7/12));
+    margin-bottom: 6rem;
+  }
+
+  img.icon {
+    position: absolute;
+    left: -9rem;
+  }
+
+  h3 {
+    font-size: 1.4rem;
+    font-weight: 600;
+    margin-bottom: 0;
+  }
+
+  h4 {
+    font-size: 1.1rem;
+    font-weight: 400;
+    margin: 0 0 0.5rem;
+    color: $default_text_color;
+  }
+
+  .bio {
+    position: absolute;
+    width: 41.666%;
+    right: -45%;
+    top: 0;
+    font-size: 0.8rem;
+
+    em {
+      color: #222;
+      font-style: normal;
+    }
+
+    img {
+      width: 30%;
+      float: right;
+    }
+
+    a.twitter {
+      color: $dark_blue;
+      display: block;
+      margin-bottom: 1rem;
+    }
+
+    a.get-ticket {
+      background: $orange;
+      color: #fff;
+      padding: 3px 6px;
+      font-size: 1rem;
+    }
+  }
 }

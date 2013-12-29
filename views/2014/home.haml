@@ -98,25 +98,43 @@
     %a(name="workshops")
     %h1(data-magellan-destination="workshops") Workshops
     %article.workshop
-      .icon
+      %img(src="/images/icons/lab.svg" class="icon")
       %h3 Testing Zero to Hero
-      %p So testing&hellip; How does it work? What is a unit test? Why is that an integration test, should I even bother with acceptance tests?
+      %h4 So testing&hellip; How does it work?
+
+      %p What is a unit test? Why is that an integration test, should I even bother with acceptance tests?
 
       %p Let's work through the differences between the various types of testing, look at differing strategies for tackling problems and how they can be solved. Try doing things with TDD, try doing things building tests after.
 
       %p Let's use RSpec, TestUnit and MiniSpec to test different techniques and perfect our tests. And we will look at how we can apply these to our real world problems to make our lives easier and our software better!
 
       .bio
-        %img(src="" alt="Jon Rowe")
+        %img(src="/images/2014/speakers/jonrowe.png" alt="Jon Rowe")
         %em Workshop run by Jon Rowe
         %p Who is Jon Rowe? Tinker. Sailor. Developer. Spy? Originally from a tiny cold island nation, Britain, Jon now lives in Sydney where he spends time sailing the high seas, plotting and working as a gun for hire, I mean freelance Ruby developer.
 
         %p When not working on client work you can find Jon hacking on RSpec, helping other open source projects and working on his own little side project(s).
 
-        %p.links
-          %a(href="http://jonrowe.co.uk" class="website") jonrowe.co.uk
-          %a(href="http://twitter.com/JonRowe" class="twitter") @JonRowe
-          %a(href="https://github.com/JonRowe" class="github") github.com/JonRowe
+        %a.twitter(href="http://twitter.com/JonRowe" class="twitter") @JonRowe
+        %a.get-ticket(href="http://rubyconfau2014.eventbrite.com.au") Buy workshop ticket
+
+    %article.workshop
+      %img(src="/images/icons/wrench.svg" class="icon")
+      %h3 Building C Extensions in Ruby
+      %h4 From time to time, when building Ruby apps, you realise there are no libraries available for what you need.
+      %p Even worse, Ruby doesn't quite perform as quickly as we would expect in certain areas. There are, however, a lot of high performance, mature technologies built in C that can easily be ported to be used with Ruby. By doing this, we get to keep using our favourite language, opening it to a plethora of applications that were not possible before, and still keep things snappy.
+
+      %p In this workshop, I will walk you through the ins and outs of building Spyglass, an OpenCV binding for Ruby. I will also talk in detail about some gotchas (memory management, lack of threading), good practices (C objects as first class citizens, how to properly test extensions), why mkmf needs to be retired and some great examples of extensions you probably already use and should be looking at.
+
+      .bio
+        %img(src="/images/2014/speakers/andremedeiros.png" alt="André Medeiros")
+        %em Workshop run by André Medeiros
+        %p André is a Ruby Ninja and self-confessed open-source evangelist at Quintel, Amsterdam. There he develops powerful applications for the renewable energy space.
+
+        %p Following his personal motto of "Let's make it cool", Andre loves providing innovation and style within disruptive tech industries. André is involved in a number of awesome projects, one of which is Spyglass, an amazing versatile computer vision enabler that allows anybody with a webcam and Ruby skills to create his/her own game rapidly using image recognition.
+
+        %a.twitter(href="http://twitter.com/superdealloc" class="twitter") @superdealloc
+        %a.get-ticket(href="http://rubyconfau2014.eventbrite.com.au") Buy workshop ticket
 
 %section#venue
   .row

@@ -16,7 +16,7 @@
 
 %section#social-networks
   .row
-    .newsletter.large-5.columns
+    .newsletter.large-6.columns
       %form
         %h4.red Join our mailing list
         %span.success ✔
@@ -24,7 +24,7 @@
         %div.progress_indicator
         %input{placeholder: "you@email.com", type: "text"}
         %a{class: "button", href: "#"} Join
-    .networks.large-7.columns
+    .networks.large-6.columns
       %h4.red Find us elsewhere
       %a.twitter{href: "http://twitter.com/rubyconf_au"}
         .icon.ss-twitter
@@ -38,28 +38,29 @@
       %a.lanyrd{href: "http://lanyrd.com/2014/rubyconf-au/"}
         %span Lanyrd
 
-  %footer#footer
-    .row
-      %a(name="footer")
-      %hgroup.ruby-conf-au(data-magellan-destination="footer")
-        %a(href="/")
-          %img(alt="Ruby Conf Australia 2014" src="/images/ruby_conf_white_logo.svg" height="220px")
-        %h2 Excited? We are!
+%footer#footer
+  .row
+    %a(name="footer")
+    %hgroup.ruby-conf-au(data-magellan-destination="footer")
+      %a(href="/")
+        %img(alt="Ruby Conf Australia 2014" src="/images/ruby_conf_white_logo.svg" height="220px")
+      %h2 Excited? We are!
 
-        %p We can't wait to share RubyConfAU 2014 with you.
-        %p
-          If you've got questions, get in touch by
-          %a(href="mailto:organisers@rubyconf.org.au") email
-          or tweet
-          %a(href="https://twitter.com/rubyconf_au") @rubyconf_au
+      %p
+        We can't wait to share RubyConfAU 2014 with you.
+        %br
+        If you've got questions, get in touch by
+        %a(href="mailto:organisers@rubyconf.org.au" class='inverted') email
+        or tweet
+        %a(href="https://twitter.com/rubyconf_au" class='inverted') @rubyconf_au
 
-      %section.ruby-au
-        %a(href="http://ruby.org.au")
-          %img.logo(alt="Ruby Australia Logo" src="/images/ruby_au_white_logo.svg")
-        %p
-          Proudly Organised by
-          %a(href="http://ruby.org.au") Ruby Australia
+    %section.ruby-au
+      %a(href="http://ruby.org.au")
+        %img.logo(alt="Ruby Australia Logo" src="/images/ruby_au_white_logo.svg")
+      %p
+        Proudly Organised by
+        %a(href="http://ruby.org.au" class='inverted') Ruby Australia
 
-      %section.extras
-        %a.calendar(href='/calendar/iCal.ics') Add dates to your calendar
-        %a.policies(href='/policies') Policies
+    %section.extras
+      %a.calendar(href='/calendar/iCal.ics') Add dates to your calendar
+      %a.policies(href='/policies') Policies

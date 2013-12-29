@@ -1,3 +1,40 @@
 #speakers {
   background: $xlight_blue_bkg;
+  padding-bottom: 2rem;
+
+  h1 { color: $purple; }
+
+  a.speakers-list {
+    position: absolute;
+    top: 2.5rem;
+    left: 60%;
+    background: $purple;
+    color: #fff;
+    padding: 6px;
+    font-size: 1.1rem;
+    font-weight: 200;
+  }
+
+  img {
+    position: absolute;
+    width: 25%;
+    left: -8rem;
+  }
+
+  h3 {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: $purple;
+  }
+
+  p.links {
+    opacity: 0.7;
+
+    span.icon {
+      position: relative;
+      top: 4px;
+      display: inline-block;
+      margin: 0 0.3rem 0 1.3rem;
+    }
+  }
 }

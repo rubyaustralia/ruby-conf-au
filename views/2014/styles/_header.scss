@@ -28,6 +28,21 @@ section#header {
   }
 }
 
+body#news, body#social, body#policies {
+  section#header {
+    height: 35%;
+    background-position: center top;
+
+    h1 {
+      width: 10%;
+      height: 10%;
+      left: -12%;
+    }
+
+    hgroup { padding-bottom: 0; } // or it interferes with the title position
+  }
+}
+
 @media only screen and (max-width: 768px) {
   section#header {
     height: 40%;

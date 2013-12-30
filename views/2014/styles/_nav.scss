@@ -1,21 +1,29 @@
-.nav {
-  position: relative;
+section#nav {
+  background: #fff;
 
-  .logo {
-    position: absolute;
-    width: 3em;
-    left: -5em;
-  }
+  .nav {
+    position: relative;
 
-  .sub-nav {
-    dd, dt {
-      margin-right: 1em;
+    .logo {
+      position: absolute;
+      width: 3em;
+      left: -5em;
     }
 
-    a {
-      color: #000;
-      font-weight: 600;
-      text-transform: uppercase;
+    .sub-nav {
+      dd, dt {
+        margin-right: 1em;
+      }
+
+      a {
+        color: #000;
+        font-weight: 600;
+        text-transform: uppercase;
+      }
+    }
+
+    .back a {
+      color: $light_grey;
     }
   }
 }

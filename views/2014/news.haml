@@ -1,20 +1,33 @@
-%hgroup
-  %h2 News
-
-.row
-  .nav.large-offset-1(data-magellan-expedition="fixed")
-    %dl.sub-nav
-      %dd.logo
+%section#header
+  .row
+    %h1
+      %a{href: "/"}
         %img{alt: "Ruby Conf Australia 2014", src: "/images/ruby_conf_logo.svg", height: "220px"}
-      %dd
-        %a(href="/") Back to Main Conference Page
+    %hgroup
+      %h2
+        19-21 February 2014, Sydney, Australia
 
-  %article
-    %h3 News article title
-    %p.date December 28, 2013
-    %p Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-    consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-    cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-    proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+%section#title
+  .row
+    %h1 News
+
+%section#nav
+  .row
+    .nav(data-magellan-expedition="fixed")
+      %dl.sub-nav
+        %dd.logo
+          %img{alt: "Ruby Conf Australia 2014", src: "/images/ruby_conf_logo.svg", height: "220px"}
+        %dd.back
+          %a(href="/") Back to Main Conference Page
+
+%section#main
+  .row
+    %article
+      %h2 News article title
+      %p.date December 28, 2013
+      %p Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+      tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+      quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+      consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+      cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+      proident, sunt in culpa qui officia deserunt mollit anim id est laborum.

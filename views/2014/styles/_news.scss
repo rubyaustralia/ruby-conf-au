@@ -1,0 +1,13 @@
+body#news {
+  background: #fff;
+
+  section#title {
+    background: $orange;
+
+    h1 {
+      color: #fff;
+      font-weight: 600;
+      margin: 1rem 0 0.5rem;
+    }
+  }
+}

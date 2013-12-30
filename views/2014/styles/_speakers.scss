@@ -7,7 +7,7 @@
   a.speakers-list {
     position: absolute;
     top: 2.5rem;
-    left: 60%;
+    left: 49%;
     background: $purple;
     color: #fff;
     padding: 6px;
@@ -15,10 +15,18 @@
     font-weight: 200;
   }
 
+  .speaker {
+    position: relative;
+    display: inline-block;
+    width: 34%;
+    margin-right: 15%;
+    vertical-align: top;
+  }
+
   img {
     position: absolute;
     width: 24%;
-    left: -9rem;
+    left: -7rem;
   }
 
   h3 {

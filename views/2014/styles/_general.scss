@@ -39,4 +39,6 @@ a.inverted {
   background: #fff;
   font-weight: 400;
   padding: 0 3px;
+
+  &:hover { color: $red !important; }
 }

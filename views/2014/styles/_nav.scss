@@ -19,6 +19,7 @@ section#nav {
         color: #000;
         font-weight: 600;
         text-transform: uppercase;
+        &:hover { color: $red; }
       }
     }
 

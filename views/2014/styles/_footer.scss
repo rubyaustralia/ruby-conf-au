@@ -44,6 +44,8 @@ section#social-networks {
       background: #ddd;
       text-decoration: none;
       border-left: none;
+
+      &:hover { color: $default_text_color; }
     }
 
     span {
@@ -120,9 +122,13 @@ section#social-networks {
 
   .extras {
     padding: 2rem 0;
-    opacity: 0.6;
 
-    a { margin: 0 1rem; }
+    a {
+      opacity: 0.6;
+      margin: 0 1rem;
+
+      &:hover { opacity: 1; }
+    }
   }
 }
 

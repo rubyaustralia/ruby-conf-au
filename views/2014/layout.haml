@@ -11,9 +11,6 @@
     %meta{name: "author", content: "Ruby Australia"}
     %meta{name: "copyright", content: "Copyright Ruby Australia 2012-2013. All Rights Reserved."}
     %link{rel: "stylesheet", href: "/2014/stylesheets/main.css"}
-    %script{src: "https://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"}
-    %script{src: "/javascripts/spin.min.js"}
-    %script{src: "/javascripts/main.js"}
     %link{rel: "stylesheet", href: 'http://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400,600,700,900'}
 
   %body{id: @title}
@@ -45,7 +42,6 @@
 
 %footer#footer
   .row
-    %a(name="footer")
     %hgroup.ruby-conf-au(data-magellan-destination="footer")
       %a(href="/")
         %img(alt="Ruby Conf Australia 2014" src="/images/ruby_conf_white_logo.svg" height="220px")
@@ -70,3 +66,10 @@
       %a.calendar(href='/calendar/iCal.ics') Add dates to your calendar
       %a.policies(href='/policies') Policies
 
+  %script{src: "https://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"}
+  %script{src: "/javascripts/spin.min.js"}
+  %script{src: "/javascripts/main.js"}
+  %script{src: "/javascripts/foundation.js"}
+  %script{src: "/javascripts/foundation.magellan.js"}
+  :javascript
+    $(document).foundation();

@@ -4,21 +4,33 @@ section#nav {
   .nav {
     position: relative;
 
-    .logo {
-      position: absolute;
-      width: 3em;
-      left: -5em;
+    &.fixed .sub-nav {
+      left: 8rem;
     }
 
     .sub-nav {
+      position: relative;
+      left: -3rem;
+
       dd, dt {
-        margin-right: 1em;
+        margin: 0 0 0.5rem;
+
+        &.logo {
+          width: 2rem;
+          margin-right: 1rem;
+        }
+
+        &.active a {
+          color: #fff;
+          border-radius: 0;
+        }
       }
 
       a {
         color: #000;
-        font-weight: 600;
+        font-weight: 400;
         text-transform: uppercase;
+        padding: 0.1875em 0.5625em;
         &:hover { color: $red; }
       }
     }
@@ -26,5 +38,17 @@ section#nav {
     .back a {
       color: $light_grey;
     }
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  section#nav .nav.fixed .sub-nav {
+    left: 5rem;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  section#nav .nav.fixed .sub-nav {
+    left: 1.8rem;
   }
 }

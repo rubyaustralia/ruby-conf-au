@@ -17,7 +17,8 @@
     .nav(data-magellan-expedition="fixed")
       %dl.sub-nav
         %dd.logo
-          %img{alt: "Ruby Conf Australia 2014", src: "/images/ruby_conf_logo.svg"}
+          %a(href="/")
+            %img{alt: "Ruby Conf Australia 2014", src: "/images/ruby_conf_logo.svg"}
         %dd(data-magellan-arrival="speakers")
           %a(href="#speakers") Speakers
         %dd(data-magellan-arrival="sessions")
@@ -45,7 +46,6 @@
 
 %section#speakers
   .row
-    %a(name="speakers")
     %h1(data-magellan-destination="speakers") Speakers
     %a.speakers-list(href="http://lanyrd.com/2014/rubyconf-au/") View full speakers list
     %article.speaker
@@ -82,7 +82,7 @@
 %section#sessions
   .row
     %a(name="sessions")
-    %h1(data-magellan-destination="session") Sessions
+    %h1(data-magellan-destination="sessions") Sessions
     %hgroup
       %h2
         RubyConfAU sessions will run across two days: February 20-21 at the Luna Park Crystal Palace.
@@ -98,7 +98,6 @@
 
 %section#workshops
   .row
-    %a(name="workshops")
     %h1(data-magellan-destination="workshops") Workshops
     %article.workshop
       %img(src="/images/icons/lab.svg" class="icon")
@@ -140,11 +139,10 @@
         %a.twitter(href="http://twitter.com/superdealloc" class="twitter") @superdealloc
         %a.get-ticket(href="http://rubyconfau2014.eventbrite.com.au") Buy workshop ticket
 
-%section#venue
+%section#venue(data-magellan-destination="venue")
   .row
     %div
-      %a(name="venue")
-      %h1(data-magellan-destination="venue") Our Venue
+      %h1 Our Venue
       %p RubyConfAU is being held at the Crystal Palace at Luna Park, right on Sydney Harbour and under the shadow of the Sydney Harbour Bridge.
 
       %a(href="http://goo.gl/maps/2NQra" class="inverted")
@@ -165,7 +163,6 @@
 
 %section#sponsors
   .row
-    %a(name="sponsors")
     %h1(data-magellan-destination="sponsors") Sponsors
     %p RubyConfAU Sydney 2014 is made possible through the generous support of our sponsors.
     %article.sponsors.ruby

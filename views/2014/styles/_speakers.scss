@@ -47,6 +47,14 @@
   }
 }
 
+@media only screen and (min-width: 1650px) {
+  section#speakers {
+    img {
+      left: -8rem;
+    }
+  }
+}
+
 @media only screen and (max-width: 767px) {
   section#speakers {
     img {

@@ -42,7 +42,26 @@
       position: relative;
       top: 4px;
       display: inline-block;
-      margin: 0 0.3rem 0 1.3rem;
+      margin: 0 0.2rem 0 1rem;
+    }
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  section#speakers {
+    img {
+      left: -4rem;
+    }
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  section#speakers {
+    .speaker {
+      width: 95%;
+      display: block;
+
+      img { width: 15%; }
     }
   }
 }

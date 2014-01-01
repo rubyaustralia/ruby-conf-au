@@ -21,3 +21,13 @@
  a.dius img         { width: 45%; }
  a.thoughtworks img { width: 80%; }
 }
+
+@media only screen and (max-width: 480px) {
+  #sponsors {
+    article.sponsors { width: 95%; }
+    article.sponsors.misc .article { width: 45%; }
+
+    a.thoughtworks img { width: 100%; }
+  }
+}
+

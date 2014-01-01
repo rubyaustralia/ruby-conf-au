@@ -1,6 +1,9 @@
 #venue {
   background: url(/images/2014/at_night.jpg) center 55% no-repeat;
-  background-size: 100%;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
   height: 100%;
   min-height: 800px;
   * { color: #fff; }
@@ -34,5 +37,21 @@
     font-weight: 400;
     margin-top: 3rem;
     letter-spacing: 1px;
+  }
+}
+
+
+@media only screen and (max-width: 1024px) {
+  #venue .row div {
+    width: 50%;
+
+    h3 { margin-top: 1.6rem; }
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  #venue .row div {
+    h1 { margin-bottom: 0.2rem; }
+    h1 + p { display: none; }
   }
 }

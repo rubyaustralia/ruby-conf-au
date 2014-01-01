@@ -16,7 +16,7 @@ section#header {
     a { display: block; }
   }
 
-  hgroup h2{ margin-bottom: 0; }
+  hgroup h2 { margin-bottom: 0; }
   p.dates { opacity: 0.6; }
 
   h3 a {
@@ -46,9 +46,25 @@ body#news, body#social, body#policies {
   }
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  section#header {
+    hgroup { padding-top: 3rem; }
+  }
+}
+
+@media only screen and (max-width: 767px) {
   section#header {
     height: 40%;
     min-height: 270px;
+
+    hgroup { padding-top: 2.7rem; }
+    hgroup h2 { line-height: 1; }
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  section#header {
+    hgroup { padding-top: 2rem; }
+    p.dates { width: 120%; }
   }
 }

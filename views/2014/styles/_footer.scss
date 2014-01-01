@@ -1,5 +1,7 @@
 
-section#social-networks {padding: 2% 0 5%;
+section#social-networks {
+  padding: 2% 0 5%;
+
   h4 {
     font-size: 1rem;
     text-align: center;
@@ -10,8 +12,7 @@ section#social-networks {padding: 2% 0 5%;
   form {
     position: relative;
     width: 90%;
-    margin-right: 1.587%;
-    margin-left: 8.466%;
+    margin: 0;
 
     input, .button {
       display: block;
@@ -63,7 +64,17 @@ section#social-networks {padding: 2% 0 5%;
     }
   }
 
+  .newsletter {
+    width: 40%;
+    display: inline-block;
+    vertical-align: top;
+  }
+
   .networks {
+    width: 59%;
+    display: inline-block;
+    vertical-align: top;
+
     h4 {
       margin-bottom: 1.2rem;
     }
@@ -71,7 +82,7 @@ section#social-networks {padding: 2% 0 5%;
       font-weight: 300;
       text-decoration: none;
       display: inline-block;
-      margin: 0 10px 0 0;
+      margin: 0 5px 0 0;
       padding-right: 10px;
       color: $light_grey;
       border-right: 1px solid #aaa;
@@ -82,7 +93,7 @@ section#social-networks {padding: 2% 0 5%;
       position: relative;
       top: 0.2rem;
       display: inline-block;
-      margin-right: 5px;
+      margin-right: 4px;
     }
 
     .lanyrd {
@@ -112,7 +123,33 @@ section#social-networks {padding: 2% 0 5%;
   }
 }
 
+@media only screen and (max-width: 1024px) {
+  section#social-networks {
+    .newsletter {
+      width: 30%;
+    }
 
-@media only screen and (max-width: 768px) {
+    .networks {
+      width: 69%;
+    }
+  }
+}
 
+@media only screen and (max-width: 480px) {
+  section#social-networks {
+    .newsletter { padding-bottom: 4rem; }
+
+    .newsletter, .networks {
+      width: 100%;
+      display: block;
+    }
+
+    .networks a { font-size: 0.9rem;
+      .icon { display: none; }
+    }
+  }
+  #footer {
+    hgroup { width: 95%; }
+    .ruby-au img { width: 20%; }
+  }
 }

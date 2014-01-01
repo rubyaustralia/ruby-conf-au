@@ -14,3 +14,15 @@
     background: $red;
   }
 }
+
+@media only screen and (max-width: 480px) {
+  section#intro {
+    hgroup {
+      width: 90%;
+    }
+    hgroup h2 {
+      font-size: 1.5rem;
+      line-height: 2rem;
+    }
+  }
+}

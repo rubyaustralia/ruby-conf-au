@@ -1,12 +1,13 @@
 #workshops {
   background: $light_blue_bkg;
+  padding-bottom: 2rem;
 
   h1, h3 { color: $dark_blue; }
 
   article.workshop {
     position: relative;
-    width: percentage((7/12));
-    margin-bottom: 6rem;
+    width: 55%;
+    padding-bottom: 6rem;
   }
 
   img.icon {
@@ -40,7 +41,7 @@
     }
 
     img {
-      width: 30%;
+      width: 28%;
       float: right;
     }
 
@@ -55,6 +56,41 @@
       color: #fff;
       padding: 3px 6px;
       font-size: 1rem;
+    }
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  section#workshops {
+    img.icon {
+      width: 25%;
+      height: 25%;
+      top: -1.5rem;
+      left: -7rem;
+    }
+
+    .bio a.get-ticket {
+      font-size: 0.8rem;
+    }
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  section#workshops {
+    article.workshop {
+      width: 95%;
+    }
+
+    img.icon {
+      width: 15%;
+      height: 15%;
+      top: -2rem;
+      left: -4rem;
+    }
+
+    .bio {
+      position: static;
+      width: 95%
     }
   }
 }

@@ -64,3 +64,22 @@ body#social {
     a { display: inline-block; color: #fff; background: $red; padding: 1px 3px; }
   }
 }
+
+@media only screen and (max-width: 767px) {
+  body#social {
+      img.icon {
+        width: 10%;
+        left: -5rem;
+      }
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  body#social {
+    img.icon { display: none; }
+    article { width: 90%; }
+    section#stay, section#bite, section#refuel, section#relax {
+      h3 { width: 90%; }
+    }
+  }
+}

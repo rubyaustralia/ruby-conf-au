@@ -24,3 +24,11 @@ body#policies {
     }
   }
 }
+
+@media only screen and (max-width: 767px) {
+  body#policies {
+    section#anti-harrasement, section#code-of-conduct {
+      .row { width: 80%; }
+    }
+  }
+}

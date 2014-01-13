@@ -19,11 +19,6 @@ get '/' do
   haml :"2014/home", :layout => :"2014/layout"
 end
 
-get '/:page_name' do
-  page_name = params[:page_name]
-  @title = page_name
-  haml :"2014/#{page_name}", :layout => :"2014/layout"
-end
 
 # Handling last year's conf website
 get '/2013/?' do
@@ -35,6 +30,12 @@ get '/2013/:page_name' do
   page_name = params[:page_name]
   @title = page_name
   haml :"2013/#{page_name}", :layout => :"2013/layout"
+end
+
+get '/:page_name' do
+  page_name = params[:page_name]
+  @title = page_name
+  haml :"2014/#{page_name}", :layout => :"2014/layout"
 end
 
 post '/subscribe' do

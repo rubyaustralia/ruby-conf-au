@@ -4,6 +4,17 @@
 
   h1, h3 { color: $dark_blue; }
 
+  a.location {
+    position: absolute;
+    top: 2.5rem;
+    left: 57%;
+    background: $dark_blue;
+    color: #fff;
+    padding: 6px;
+    font-size: 1.1rem;
+    font-weight: 200;
+  }
+
   article.workshop {
     position: relative;
     width: 55%;

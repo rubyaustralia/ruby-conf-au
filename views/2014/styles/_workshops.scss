@@ -1,4 +1,4 @@
-#workshops {
+.workshops-section {
   background: $light_blue_bkg;
   padding-bottom: 2rem;
 
@@ -72,7 +72,7 @@
 }
 
 @media only screen and (max-width: 767px) {
-  section#workshops {
+  .workshops-section {
     img.icon {
       width: 25%;
       height: 25%;
@@ -87,7 +87,7 @@
 }
 
 @media only screen and (max-width: 500px) {
-  section#workshops {
+  .workshops-section {
     article.workshop {
       width: 95%;
     }

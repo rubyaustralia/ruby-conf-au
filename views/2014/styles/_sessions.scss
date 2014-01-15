@@ -1,4 +1,4 @@
-#sessions {
+.sessions-section {
   background: $yellow;
 
   hgroup {
@@ -17,12 +17,12 @@
 }
 
 @media only screen and (max-width: 767px) {
-  section#sessions {
+  .sessions-section {
     hgroup { width: 85%; }
   }
 }
 @media only screen and (max-width: 480px) {
-  section#sessions {
+  .sessions-section {
     hgroup { width: 90%; }
   }
 }

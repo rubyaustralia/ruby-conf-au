@@ -1,4 +1,4 @@
-#venue {
+.venue-section {
   background: url(/images/2014/at_night.jpg) center 55% no-repeat;
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -41,14 +41,14 @@
 }
 
 @media only screen and (min-width: 1650px) {
-  #venue .row div {
+  .venue-section .row div {
     width: 20%;
     height: 70%;
   }
 }
 
 @media only screen and (max-width: 1024px) {
-  #venue .row div {
+  .venue-section .row div {
     width: 50%;
 
     h3 { margin-top: 1.6rem; }
@@ -56,7 +56,7 @@
 }
 
 @media only screen and (max-width: 480px) {
-  #venue .row div {
+  .venue-section .row div {
     h1 { margin-bottom: 0.2rem; }
     h1 + p { display: none; }
   }

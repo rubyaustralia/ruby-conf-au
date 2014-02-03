@@ -1,6 +1,8 @@
 body#news {
   background: #fff;
 
+  a { color: $red; }
+
   section#title {
     background: $orange;
 
@@ -13,7 +15,27 @@ body#news {
 
   section#main {
     padding-bottom: 3rem;
-
     .row { width: 75%; }
+  }
+
+  article {
+    width: 75%;
+    position: relative;
+    padding-bottom: 1rem;
+    margin-bottom: 1rem;
+    border-bottom: 1px solid #ccc;
+
+    h2 {
+      color: $red;
+      font-size: 1.5rem;
+      font-weight: 600;
+    }
+
+    p.date {
+      color: $light_grey;
+      position: absolute;
+      left: -14%;
+      top: 0.7rem;
+    }
   }
 }

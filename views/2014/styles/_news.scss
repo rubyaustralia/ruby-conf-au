@@ -43,3 +43,9 @@ body#news {
     }
   }
 }
+
+@media only screen and (max-width: 500px) {
+  section#news {
+    p.date { left: -18%; }
+  }
+}

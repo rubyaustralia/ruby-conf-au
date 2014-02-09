@@ -56,12 +56,24 @@ post '/subscribe' do
 end
 
 post '/talk-proposal' do
-  unless params['honeypot'].empty?
-    Pony.mail(to: 'elle.meredith@rubyconf.org.au',
+  if params[:honeypot].empty?
+    puts '***************'
+    puts "Sending proposal from #{params[:name]} | #{params[:email]}"
+    puts '***************'
+    Pony.mail(to: 'organisers@rubyconf.org.au',
               from: params[:email],
               subject: "Lightning talk proposal from #{params[:name]}",
-              body: haml(:"2014/email", layout: false)
-              )
+              body: haml(:"2014/email", layout: false),
+              via: :smtp,
+              via_options: {
+                address: 'smtp.sendgrid.net',
+                port: '587',
+                domain: ENV['SENDGRID_DOMAIN'],
+                user_name: ENV['SENDGRID_USERNAME'],
+                password: ENV['SENDGRID_PASSWORD'],
+                authentication: :plain,
+                enable_starttls_auto: true
+              })
   end
 
   { success: true }.to_json

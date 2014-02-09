@@ -8,7 +8,7 @@
       Form.name = 'Form';
 
       function Form() {
-        this.el = $('form');
+        this.el = $('.newsletter form');
         this.open = true;
         this.inputEl = this.el.find('input').first();
         this.buttonEl = this.el.find('a.button');

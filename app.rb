@@ -55,6 +55,18 @@ post '/subscribe' do
   {success: true}.to_json
 end
 
+post '/talk-proposal' do
+  unless params['honeypot'].empty?
+    Pony.mail(to: 'elle.meredith@rubyconf.org.au',
+              from: params[:email],
+              subject: "Lightning talk proposal from #{params[:name]}",
+              body: haml(:"2014/email", layout: false)
+              )
+  end
+
+  { success: true }.to_json
+end
+
 get "/:year/stylesheets/main.css" do
   content_type 'text/css', :charset => 'utf-8'
   scss :"#{params[:year]}/styles/main"

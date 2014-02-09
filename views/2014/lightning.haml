@@ -1,0 +1,43 @@
+%section#header
+  .row
+    %h1
+      %a{href: "/"}
+        %img{alt: "Ruby Conf Australia 2014", src: "/images/ruby_conf_logo.svg", height: "220px"}
+    %hgroup
+      %h2
+        19-21 February 2014, Sydney, Australia
+
+%section#title
+  .row
+    %h1 Submit lightning talk proposal
+
+%section#nav
+  .row
+    .nav(data-magellan-expedition="fixed")
+      %dl.sub-nav
+        %dd.logo
+          %a(href="/")
+            %img{alt: "Ruby Conf Australia 2014", src: "/images/ruby_conf_logo.svg"}
+        %dd.back
+          %a(href="/") Back to Main Conference Page
+
+%section#main
+  .row
+    #talk-proposal-success.hide
+      Talk Submitted - Thank you!
+    %article#talk-proposal
+      %form(action="/talk-proposal" method="post")
+        %p.name
+          %label(for="name") My name is
+          %input(type="text" name="name" id="name" required)
+        %p.email
+          %label(for="email") my email is
+          %input(type="email" name="email" required)
+        %p.proposal(class="required")
+          %label(for="proposal") and my talk proposal is
+          %textarea(name="proposal" required)
+        %input.honeycomb(type="hidden" name="honeypot")
+        %button.button(type="submit") Submit proposal
+
+%script{src: "https://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"}
+%script{src: "/javascripts/proposal.js"}

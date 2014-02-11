@@ -8,7 +8,7 @@
   margin-bottom: 2em;
 
   &.misc { border-bottom: none;
-    .article { display: inline-block;  width: 30%; }
+    .article { display: inline-block; vertical-align: top; width: 24%; }
     a { width: 60%; }
     a.braintree { position: relative; top: -7px; }
   }

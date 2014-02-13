@@ -57,3 +57,12 @@ section#nav {
     left: 1.8rem;
   }
 }
+
+// account for fixed header
+a[name] {
+  position: relative;
+  top: -60px;
+  display: block;
+  width: 0;
+  height: 0;
+}

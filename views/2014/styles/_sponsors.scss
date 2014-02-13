@@ -1,4 +1,4 @@
-#sponsors {
+.sponsors-section {
  background: #fff;
 
  article.sponsors {
@@ -24,7 +24,7 @@
 }
 
 @media only screen and (max-width: 480px) {
-  #sponsors {
+  .sponsors-section {
     article.sponsors { width: 95%; }
     article.sponsors.misc .article { width: 45%; }
 

@@ -44,8 +44,9 @@
         %a.get-ticket(href="http://rubyconfau2014.eventbrite.com.au")
           get your ticket now.
 
-%section#speakers
+%section.speakers-section
   .row
+    %a(name="speakers")
     %h1(data-magellan-destination="speakers") Speakers
     %a.speakers-list(href="http://lanyrd.com/2014/rubyconf-au/") View full speakers list
     %article.speaker
@@ -106,7 +107,7 @@
           %span.icon.ss-twitter
           @dymaxion
 
-%section#sessions
+%section.sessions-section
   .row
     %a(name="sessions")
     %h1(data-magellan-destination="sessions") Sessions
@@ -123,8 +124,9 @@
         to use on the day, or use the
         %a(href="https://m.lanyrd.com/2014/rubyconf-au/") Lanyrd mobile HTML5 site.
 
-%section#workshops
+%section.workshops-section
   .row
+    %a(name="workshops")
     %h1(data-magellan-destination="workshops") Workshops
     %a(href='http://goo.gl/maps/lxpO8' class='location') Location: Vibe Hotel North Sydney
     %article.workshop
@@ -187,9 +189,10 @@
         %a.twitter(href="https://twitter.com/railsgirlsau" class="twitter") @railsgirlsau
         %a.get-ticket(href="http://rubyconfau2014.eventbrite.com.au") Sign up for the workshop
 
-%section#venue(data-magellan-destination="venue")
+%section.venue-section
   .row
-    %div
+    %a(name="venue")
+    %div(data-magellan-destination="venue")
       %h1 Our Venue
       %p RubyConfAU is being held at the Crystal Palace at Luna Park, right on Sydney Harbour and under the shadow of the Sydney Harbour Bridge.
 
@@ -209,8 +212,9 @@
         %a(href="/social" class='inverted') handy list
         to help you out.
 
-%section#sponsors
+%section.sponsors-section
   .row
+    %a(name="sponsors")
     %h1(data-magellan-destination="sponsors") Sponsors
     %p RubyConfAU Sydney 2014 is made possible through the generous support of our sponsors.
     %article.sponsors.ruby

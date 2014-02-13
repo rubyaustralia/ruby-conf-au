@@ -4,7 +4,7 @@
 
   h1 { color: $purple; }
 
-  a.speakers-list {
+  a.speakers {
     position: absolute;
     top: 2.5rem;
     left: 49%;
@@ -13,13 +13,10 @@
     padding: 6px;
     font-size: 1.1rem;
     font-weight: 200;
+
+    &.interviews { left: 65%; }
   }
 
-  h2 a {
-    background: $purple;
-    color: white;
-    padding: 6px;
-  }
 
   .speaker {
     position: relative;

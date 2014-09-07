@@ -27,3 +27,15 @@ Site is hosted on Heroku
 Deploy with command
 
     git push heroku master
+
+
+## Deploy the WIP site
+
+Set up the remote:
+
+    git remote add heroku-wip git@heroku.com:rubyconf15wip.git
+
+
+Push the 2015 branch as the master on Heroku:
+
+    git push heroku-wip 2015:master

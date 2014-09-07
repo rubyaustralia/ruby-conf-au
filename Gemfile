@@ -9,8 +9,10 @@ gem "haml"
 gem "pony"
 gem "sinatra"
 gem "zurb-foundation"
+gem "thin"
 
 group :development do
   gem "foreman"
   gem "heroku"
+  gem "sinatra-contrib", require: false
 end

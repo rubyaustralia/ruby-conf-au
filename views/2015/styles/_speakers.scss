@@ -1,0 +1,66 @@
+.speakers-section {
+  background: $xlight_blue_bkg;
+  padding-bottom: 2rem;
+
+  h1 { color: $purple; }
+
+  a.speakers {
+    position: absolute;
+    top: 2.5rem;
+    left: 49%;
+    background: $purple;
+    color: #fff;
+    padding: 6px;
+    font-size: 1.1rem;
+    font-weight: 200;
+
+    &.interviews { left: 65%; }
+  }
+
+
+  .speaker {
+    position: relative;
+    display: inline-block;
+    width: 34%;
+    margin-right: 15%;
+    vertical-align: top;
+  }
+
+  img {
+    position: absolute;
+    width: 24%;
+    left: -26%;
+  }
+
+  h3 {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: $purple;
+  }
+
+  p.links {
+    opacity: 0.7;
+
+    span.icon {
+      position: relative;
+      top: 4px;
+      display: inline-block;
+      margin: 0 0.2rem 0 1rem;
+    }
+  }
+}
+
+
+@media only screen and (max-width: 500px) {
+  .speakers-section {
+    .speaker {
+      width: 95%;
+      display: block;
+
+      img {
+        width: 15%;
+        left: -17%;
+      }
+    }
+  }
+}

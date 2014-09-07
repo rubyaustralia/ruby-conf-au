@@ -1,0 +1,28 @@
+.sessions-section {
+  background: $yellow;
+
+  hgroup {
+    @include grid-column(8);
+    padding: 0 0 4rem;
+
+    a {
+      background: $orange;
+      color: #fff;
+      padding: 0 3px;
+      line-height: 1.3;
+    }
+
+    p { color: #000; }
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .sessions-section {
+    hgroup { width: 85%; }
+  }
+}
+@media only screen and (max-width: 480px) {
+  .sessions-section {
+    hgroup { width: 90%; }
+  }
+}

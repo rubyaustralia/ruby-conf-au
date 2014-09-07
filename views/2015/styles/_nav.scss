@@ -1,0 +1,68 @@
+section#nav {
+  background: #fff;
+
+  .nav {
+    position: relative;
+
+    &.fixed .sub-nav {
+      left: 8rem;
+    }
+
+    .sub-nav {
+      position: relative;
+      left: -3rem;
+
+      dd, dt {
+        margin: 0 0 0.5rem;
+
+        &.logo {
+          width: 2rem;
+          height: 2rem;
+          margin-right: 1rem;
+        }
+
+        &.active a {
+          color: #fff;
+          border-radius: 0;
+        }
+
+        img {
+          height: 100%;
+        }
+      }
+
+      a {
+        color: #000;
+        font-weight: 400;
+        text-transform: uppercase;
+        padding: 0.1875em 0.5625em;
+        &:hover { color: $red; }
+      }
+    }
+
+    .back a {
+      color: $light_grey;
+    }
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  section#nav .nav.fixed .sub-nav {
+    left: 5rem;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  section#nav .nav.fixed .sub-nav {
+    left: 1.8rem;
+  }
+}
+
+// account for fixed header
+a[name] {
+  position: relative;
+  top: -60px;
+  display: block;
+  width: 0;
+  height: 0;
+}

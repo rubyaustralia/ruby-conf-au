@@ -1,7 +1,5 @@
 Bundler.require(:default)
 
-require 'sinatra/reloader'
-
 configure do
   set :haml, :format => :html5
 
@@ -11,6 +9,10 @@ configure do
   end
 
   set :scss, Compass.sass_engine_options
+end
+
+configure :development do
+  require 'sinatra/reloader'
 end
 
 # 2013

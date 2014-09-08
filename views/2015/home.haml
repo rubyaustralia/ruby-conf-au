@@ -3,7 +3,7 @@
     %hgroup
       %h1
         %a{href: "/"}
-          <span class="rubyconf">RubyConf</span><span class="space"> </span><span class="date">2015</span>
+          <span class="rubyconf">RubyConf</span><span class="space"> </span><span class="rubyconf">AU</span><span class="space"> </span><span class="date">2015</span>
       %h2
         <span class="date">4-7 February 2015</span> <span class="city">Melbourne, Australia</span>
       %p.dates Workshops <strong>Feb 4</strong><br>Main Conference <strong>Feb 5-6</strong><br>Special Events <strong>Feb 7</strong>
@@ -23,7 +23,9 @@
         %dd(data-magellan-arrival="venue")
           %a(href="#venue") Venue
         %dd(data-magellan-arrival="sponsors")
-          %a(href="#sponsors") Sponsors
+          %a(href="#sponsors") Sponsorship
+        %dd(data-magellan-arrival="code")
+          %a(href="#code") Code of Conduct
         %dd(data-magellan-arrival="footer")
           %a(href="#footer") Contact
 
@@ -44,62 +46,58 @@
     %h1(data-magellan-destination="speakers") Speakers
     %a.speakers.list(href="http://hub.rubyconf.org.au/speakers" target="_blank") View full speakers list
     %article.speaker
-      %img(src="/images/2014/speakers/cambarrie.png")
-      %h3 Cameron Barrie
-      %p
-        Cameron Barrie is a long time lover of Ruby and the Managing Director of Bilue, a team of Sydney based folks focused on helping organisations transition to mobile first. Cameron also runs Geek Breakfast, a monthly Sydney meet up for geeks to hear about topics ranging from accountancy to product design.
+      %img(src="/images/2015/speakers/collistaeed.jpg")
+      %h3 Collis Ta'eed
+      %p CEO of Envato
 
       %p.links
-        %a(href="http://www.bilue.com.au/") bilue.com.au
-        %a(href="http://twitter.com/whalec" class="twitter")
+        %a(href="http://www.envato.com") envato.com
+        %a(href="http://twitter.com/collis" class="twitter")
           %span.icon.ss-twitter
-          @whalec
-        %a(href="https://github.com/whalec" class="github")
-          %span.icon.ss-octocat
-          github.com/whalec
+          @collis
 
     %article.speaker
-      %img(src="/images/2014/speakers/patallan.png")
-      %h3 Pat Allan
-      %p
-        Pat earns his keep as a freelance web and Ruby developer based in the coworking space of Inspire9 in Melbourne, Australia. Often, though, you'll find him travelling around the world, attending interesting events and meeting interesting people.
+      %img(src="/images/2015/speakers/lindaliukas.png")
+      %h3 Linda Liukas
+      %p RailsGirls Co-founder
 
-        As well as working with talented development teams and writing open source Ruby libraries, he's a fan of bringing people together for gatherings small and large, including Trampoline and Rails Camp. And if you ask him nicely, he might even cook you a pancake.
       %p.links
-        %a(href="http://freelancing-gods.com/" class="website") freelancing-gods.com
-        %a(href="http://twitter.com/pat" class="twitter")
+        %a(href="http://lindaliukas.fi/" class="website") lindaliukas.fi
+        %a(href="http://twitter.com/lindaliukas" class="twitter")
           %span.icon.ss-twitter
-          @pat
-        %a(href="http://github.com/pat" class="github")
-          %span.icon.ss-octocat
-          github.com/pat
+          @lindaliukas
 
     %article.speaker
-      %img(src="/images/2014/speakers/gregbrockman.png")
-      %h3 Greg Brockman
-      %p
-        Greg is Stripe's CTO. He has been helping build out Stripe's technology stack since joining as the second employee. He built the initial infrastructure powering the Stripe API and these days works primarily on scaling the team and architecture. Greg studied mathematics at Harvard and computer science at MIT.
+      %img(src="/images/2015/speakers/tstuart.jpg")
+      %h3 Tom Stuart
+      %p Monad Master
 
-        Greg enjoys all things that involve computers and spends most of his time working with them..
       %p.links
-        %a(href="http://gregbrockman.com" class="website") gregbrockman.com
-        %a(href="https://twitter.com/thegdb" class="twitter")
+        %a(href="http://codon.com" class="website") codon.com
+        %a(href="https://twitter.com/tomstuart" class="twitter")
           %span.icon.ss-twitter
-          @thegdb
-        %a(href="https://github.com/gdb" class="github")
-          %span.icon.ss-octocat
-          github.com/gdb
+          @tomstuart
 
     %article.speaker
-      %img(src="/images/2014/speakers/eleanorsaitta.png")
-      %h3 Eleanor Saitta
-      %p
-        Eleanor is a hacker, designer, artist, writer, and barbarian. She makes a living and a vocation of understanding how complex systems operate and redesigning them to work, or at least fail, better. Her work is transdisciplinary, using everything from electronics, software, and paint to social rules and words as media with which to explore and shape our interactions with the world.  Her focuses include the seamless integration of technology into the lived experience, the humanity of objects and the built environment, and systemic resilience and conviviality.
+      %img(src="/images/2015/speakers/rachelmyers.jpg")
+      %h3 Rachel Myers
+      %p Rubyist and Whiskey drinker
+
       %p.links
-        %a(href="http://dymaxion.org/" class="website") dymaxion.org
-        %a(href="https://twitter.com/dymaxion" class="twitter")
+        %a(href="https://twitter.com/rachelmyers" class="twitter")
           %span.icon.ss-twitter
-          @dymaxion
+          @rachelmyers
+
+    %article.speaker
+      %img(src="/images/2015/speakers/steveklabnik.jpg")
+      %h3 Steve Klabnik
+      %p Philosopher Coder
+
+      %p.links
+        %a(href="http://steveklabnik.com" class="website") steveklabnik.com
+        %a(href="https://twitter.com/steveklabnik" class="twitter")
+          %span.icon.ss-twitter
+          @steveklabnik
 
 %section.sessions-section
   .row
@@ -108,6 +106,9 @@
     %hgroup
       %h2
         RubyConf AU sessions will run across two days: February 5-6 at Deakin Edge, Federation Square, in the heart of Melbourne.
+
+      %p
+        The call for proposals is currently open - we would love to have you submit a talk for consideration.
 
         / Full session details are available on
         / %a(href="http://lanyrd.com/2015/rubyconf-au/schedule/" target="_blank") Lanyrd.
@@ -122,48 +123,15 @@
   .row
     %a(name="workshops")
     %h1(data-magellan-destination="workshops") Workshops
-    %a(href='http://goo.gl/maps/lxpO8' class='location') Location: TBC
-    %article.workshop
-      %img(src="/images/icons/lab.svg" class="icon")
-      %h3 Testing Zero to Hero
-      %h4 So testing&hellip; How does it work?
-
-      %p What is a unit test? Why is that an integration test, should I even bother with acceptance tests?
-
-      %p Let's work through the differences between the various types of testing, look at differing strategies for tackling problems and how they can be solved. Try doing things with TDD, try doing things building tests after.
-
-      %p Let's use RSpec, TestUnit and MiniSpec to test different techniques and perfect our tests. And we will look at how we can apply these to our real world problems to make our lives easier and our software better!
-
-      .bio
-        %img(src="/images/2014/speakers/jonrowe.png" alt="Jon Rowe")
-        %em Workshop run by Jon Rowe
-        %p Who is Jon Rowe? Tinker. Sailor. Developer. Spy? Originally from a tiny cold island nation, Britain, Jon now lives in Sydney where he spends time sailing the high seas, plotting and working as a gun for hire, I mean freelance Ruby developer.
-
-        %p When not working on client work you can find Jon hacking on RSpec, helping other open source projects and working on his own little side project(s).
-
-        %a.twitter(href="http://twitter.com/JonRowe" class="twitter") @JonRowe
-        %a.get-ticket(href="http://rubyconfau2014.eventbrite.com.au") Buy workshop ticket
 
     %article.workshop
-      %img(src="/images/icons/wrench.svg" class="icon")
-      %h3 Building C Extensions in Ruby
-      %h4 You will learn how amazingly simple it is to build high-performance extensions that leverage existing C libraries.
+      %h3 Workshops to be confirmed
 
-      %p You’ll receive a basic notion of the C language, and then you will dive into the various Ruby APIs that allow you to bridge C code to our favourite language.
-
-      %p We will also go through a heavy testing component that will help you ensure that your extension works as intended, and remains as bulletproof as possible.
-
-      .bio
-        %img(src="/images/2014/speakers/andremedeiros.png" alt="André Medeiros")
-        %em Workshop run by André Medeiros
-        %p André is a Ruby Ninja and self-confessed open-source evangelist at Quintel, Amsterdam. There he develops powerful applications for the renewable energy space. Following his personal motto of "Let's make it cool", Andre loves providing innovation and style within  tech industries and is involved in a number of awesome projects, one of which is Spyglass.
-
-        %a.twitter(href="http://twitter.com/superdealloc" class="twitter") @superdealloc
-        %a.get-ticket(href="http://rubyconfau2014.eventbrite.com.au") Buy workshop ticket
+      %p Workshops will occur on the 4th of February, and tickets will be separate from the conference sessions. The line-up is not yet confirmed, beyond our regular RailsGirls event.
 
     %article.workshop
       %img(src="/images/icons/railsgirls.svg" class="icon")
-      %h3 Rails Girls Next
+      %h3 RailsGirls Next
       %h4 Take the next step in your coding journey!
 
       %p Join us and continue the learning you started at Rails Girls. Since you have Ruby installed already, we can jump right in!
@@ -177,11 +145,9 @@
         %p Our mentors have about three hundred years of combined awesomeness! They've wrestled furious dragons with code and walked away un-charred.
 
         %p
-          Seriously though, our mentors are professional developers. They'll be on hand to answer all of your questions and help you out of tricky spots. See the list at the
-          %a(href="http://railsgirls.com/sydney") Rails Girls website.
+          Seriously though, our mentors are professional developers. They'll be on hand to answer all of your questions and help you out of tricky spots.
 
         %a.twitter(href="https://twitter.com/railsgirlsau" class="twitter") @railsgirlsau
-        %a.get-ticket(href="http://rubyconfau2014.eventbrite.com.au") Sign up for the workshop
 
 %section.venue-section
   .row
@@ -190,7 +156,7 @@
       %h1 Our Venue
       %p RubyConf AU is being held at Deakin Edge, at Federation Square alongside the Yarra River in the centre of Melbourne.
 
-      %a(href="http://goo.gl/maps/2NQra" class="inverted")
+      %a(href="https://goo.gl/maps/yE1eX" class="inverted")
         Deakin Edge,
         %br
         Federation Square,
@@ -210,41 +176,10 @@
   .row
     %a(name="sponsors")
     %h1(data-magellan-destination="sponsors") Sponsors
-    %p RubyConf AU Melbourne 2015 is made possible through the generous support of our sponsors.
-    %article.sponsors.ruby
-      %h3 Ruby Sponsor:
-      %a.envato(href="http://www.envato.com/")
-        %img(alt="Envato" src="/images/sponsors/2013-envato.svg")
-    %article.sponsors.emerald
-      %h3 Emerald Sponsor:
-      %a.job-ready(href="http://www.jobready.com.au/")
-        %img(alt="Job Ready" src="/images/sponsors/jobready.svg")
-      %a.red-ant(href="http://redant.com.au/")
-        %img(alt="Red Ant" src="/images/sponsors/redant.jpg")
-      %a.dius(href="http://dius.com.au/")
-        %img(alt="Dius" src="/images/sponsors/dius.svg")
-    %article.sponsors.opal
-      %h3 Opal Sponsor:
-      %a.thoughtworks(href="http://www.thoughtworks.com/")
-        %img(alt="ThoughtWorks" src="/images/sponsors/thoughtworks.svg")
-      %a.fairfax(href="http://www.fairfax.com.au/")
-        %img(alt="Fairfax Media" src="/images/sponsors/fairfax.svg")
-      %a.ninefold(href="http://ninefold.com/")
-        %img(alt="Ninefold" src="/images/sponsors/ninefold.svg")
-    %article.sponsors.misc
-      .article
-        %p Rides+Drinks Sponsor
-        %a.braintree(href="https://www.braintreepayments.com/")
-          %img(alt="Braintree Payments" src="/images/sponsors/braintree.png")
-      .article
-        %p Coffee Sponsor
-        %a.lookahead(href="http://www.lookahead.com.au/")
-          %img(alt="Lookahead Search" src="/images/sponsors/lookahead.png")
-      .article
-        %p Lanyards Sponsor
-        %a.lookahead(href="http://saucelabs.com/")
-          %img(alt="Sauce Labs" src="/images/sponsors/saucelabs.svg")
-      .article
-        %p Scholarship Sponsor
-        %a.lookahead(href="https://travis-ci.org/")
-          %img(alt="Travis CI" src="/images/sponsors/travisci.svg")
+    %p RubyConf AU Melbourne 2015 is made possible through the generous support of our sponsors. If you are interested in being one of these sponsors, here's what you need to do.
+
+%section.code-section
+  .row
+    %a(name="code")
+    %h1(data-magellan-destination="code") Code of Conduct
+    %p RubyConf Australia is run under the auspices of Ruby Australia. You can view their <a href="http://ruby.org.au/code-of-conduct.html">code of conduct</a> (which applies to this event) and <a href="/policies">our anti-harrassment policy</a>. These rules must be followed by all attendees to all conference-related events.

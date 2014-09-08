@@ -1,23 +1,20 @@
 %section#header
   .row
-    %h1
-      %a{href: "/"}
-        %img{alt: "Ruby Conf Australia 2015", src: "/images/ruby_conf_logo.svg", height: "220px"}
     %hgroup
+      %h1
+        %a{href: "/"}
+          <span class="rubyconf">RubyConf</span><span class="space"> </span><span class="date">2015</span>
       %h2
-        4-7 February 2015
-        %br
-        Melbourne, Australia
-      %p.dates Workshops Feb 4, Main Conference Feb 5-6, Special Events Feb 7
-    %h3
-      %a(href="http://tickets.rubyconf.org.au") Get your ticket now
+        <span class="date">4-7 February 2015</span> <span class="city">Melbourne, Australia</span>
+      %p.dates Workshops <strong>Feb 4</strong><br>Main Conference <strong>Feb 5-6</strong><br>Special Events <strong>Feb 7</strong>
+      %h3
+        %a(href="http://tickets.rubyconf.org.au") Get your ticket now
+    .logo
+      %img{alt: "Ruby Conf Australia 2015", src: "/images/ruby_conf_white_logo.svg", height: "220px"}
 %section#nav
   .row
     .nav(data-magellan-expedition="fixed")
       %dl.sub-nav
-        %dd.logo
-          %a(href="/")
-            %img{alt: "Ruby Conf Australia 2015", src: "/images/ruby_conf_logo.svg"}
         %dd(data-magellan-arrival="speakers")
           %a(href="#speakers") Speakers
         %dd(data-magellan-arrival="sessions")

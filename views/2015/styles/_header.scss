@@ -9,7 +9,7 @@ section#header {
   h1, h2, h3 { color: inherit; }
 
   hgroup {
-    padding-bottom: 5rem;
+    padding: 5rem 0 6rem 0;
   }
 
   .logo {
@@ -73,7 +73,6 @@ section#header {
   h3 {
     display: inline-block;
     font-size: 1.5rem;
-    text-transform: uppercase;
     background: $red;
     color: #fff;
     padding: 2px 10px;
@@ -81,41 +80,22 @@ section#header {
       color: inherit;
     }
   }
-}
 
-body#news, body#social, body#policies {
-  section#header {
-    height: 28%;
-    background-position: center top;
-
-    h1 {
-      width: 10%;
-      height: 10%;
-      left: -12%;
+  @media only screen and (max-width: 767px) {
+    hgroup {
+      padding: 2rem 0;
+      h1 {
+        font-size: 30px;
+      }
+      h2 {
+        font-size: 18px;
+        line-height: 1.3;
+        span { display: block; }
+        .date { border: none; }
+      }
+      h3 {
+        font-size: 1.1rem;
+      }
     }
-
-    hgroup { padding-bottom: 0; } // or it interferes with the title position
-  }
-}
-
-@media only screen and (min-width: 768px) and (max-width: 1024px) {
-  section#header {
-    hgroup { padding-top: 3rem; }
-  }
-}
-
-@media only screen and (max-width: 767px) {
-  section#header {
-    min-height: 40%;
-
-    hgroup { padding-top: 2.7rem; }
-    hgroup h2 { line-height: 1; }
-  }
-}
-
-@media only screen and (max-width: 480px) {
-  section#header {
-    hgroup { padding-top: 2rem; }
-    p.dates { width: 120%; }
   }
 }

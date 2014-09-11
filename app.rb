@@ -45,15 +45,22 @@ end
 
 # 2015
 
-get '/' do
+get '/2015' do
   @title = :home
   haml :"2015/home", :layout => :"2015/layout"
 end
 
-get '/:page_name' do
+get '/2015/:page_name' do
   page_name = params[:page_name]
   @title = page_name
   haml :"2015/#{page_name}", :layout => :"2015/layout"
+end
+
+# Generic
+
+get '/' do
+  status_code 302
+  redirect '/2015'
 end
 
 post '/subscribe' do

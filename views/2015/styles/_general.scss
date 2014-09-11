@@ -33,15 +33,23 @@ section {
   }
 }
 
-hgroup {
+hgroup, article.section-content {
   @include grid-column(9);
-  padding: 6rem 0;
+  padding: 3rem 0;
+}
+
+article.section-content {
+  > h1:first-child { margin-top: 0; }
 }
 
 *, *:before, *:after {
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
+}
+
+a {
+  font-weight: 400;
 }
 
 a.inverted {

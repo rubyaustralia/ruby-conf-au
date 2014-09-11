@@ -8,6 +8,10 @@ section#header {
 
   h1, h2, h3 { color: inherit; }
 
+  hgroup {
+    padding-bottom: 5rem;
+  }
+
   .logo {
     position: absolute;
     width: 300px;
@@ -33,7 +37,7 @@ section#header {
     line-height: 1;
     a { color: inherit; }
     .space {
-      font-size: 25%;
+      font-size: 40%;
     }
     .date {
       color: rgba(255,200,200,1);
@@ -53,7 +57,7 @@ section#header {
     }
     .city {
       text-transform: uppercase;
-      font-size: 78%;
+      font-size: 85%;
       letter-spacing: 2px;
     }
   }
@@ -67,7 +71,6 @@ section#header {
   }
 
   h3 {
-    margin-top: 80px;
     display: inline-block;
     font-size: 1.5rem;
     text-transform: uppercase;

@@ -79,6 +79,7 @@ section#social-networks {
     width: 59%;
     display: inline-block;
     vertical-align: top;
+    text-align: center;
 
     h4 {
       margin-bottom: 1.2rem;
@@ -123,11 +124,17 @@ section#social-networks {
   .extras {
     padding: 2rem 0;
 
-    a {
-      opacity: 0.6;
+    .item {
+      display: inline;
       margin: 0 1rem;
-
-      &:hover { opacity: 1; }
+      a {
+        opacity: 0.6;
+        &:hover { opacity: 1; }
+      }
+      &.previous {
+        .previous { opacity: .8; }
+        a { margin-left: .25em; }
+      }
     }
   }
 }

@@ -1,5 +1,12 @@
 .sponsors-section {
- background: #fff;
+  background: #fff;
+  
+  a.more, p a {
+    background: $red;
+    color: #fff;
+    padding: 6px;
+    font-size: 1.1rem;
+  }
 
  article.sponsors {
   @include grid-column(9);
@@ -14,15 +21,15 @@
   }
  }
 
- a { display: inline-block; width: 32%; }
- a.envato           { width: 40%; }
- a.envato img       { width: 100%; }
- a.job-ready img    { width: 90%; }
- a.red-ant img      { width: 90%; }
- a.dius img         { width: 45%; }
- a.thoughtworks img { width: 90%; }
- a.fairfax          { width: 13%; }
- a.ninefold img     { width: 89%; }
+ a.sponsor { display: inline-block; width: 32%; }
+ a.sponsor.envato           { width: 40%; }
+ a.sponsor.envato img       { width: 100%; }
+ a.sponsor.job-ready img    { width: 90%; }
+ a.sponsor.red-ant img      { width: 90%; }
+ a.sponsor.dius img         { width: 45%; }
+ a.sponsor.thoughtworks img { width: 90%; }
+ a.sponsor.fairfax          { width: 13%; }
+ a.sponsor.ninefold img     { width: 89%; }
 }
 
 @media only screen and (max-width: 480px) {
@@ -33,4 +40,3 @@
     a.thoughtworks img { width: 100%; }
   }
 }
-

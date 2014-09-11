@@ -1,8 +1,12 @@
 %section#header
   .row
-    %h1
-      %a{href: "/"}
-        %img{alt: "Ruby Conf Australia 2015", src: "/images/ruby_conf_logo.svg", height: "220px"}
     %hgroup
+      %h1
+        %a{href: "/"}
+          <span class="rubyconf">RubyConf</span><span class="space"> </span><span class="rubyconf">AU</span><span class="space"> </span><span class="date">2015</span>
       %h2
-        4-7 February 2015, Melbourne, Australia
+        <span class="date">4-7 February 2015</span> <span class="city">Melbourne, Australia</span>
+      - if locals[:dates]
+        %p.dates Workshops <strong>Feb 4</strong><br>Main Conference <strong>Feb 5-6</strong><br>Special Events <strong>Feb 7</strong>
+      %h3
+        %a(href="http://tickets.rubyconf.org.au") Get your ticket now

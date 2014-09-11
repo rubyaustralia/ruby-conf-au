@@ -1,14 +1,4 @@
-%section#header
-  .row
-    %hgroup
-      %h1
-        %a{href: "/"}
-          <span class="rubyconf">RubyConf</span><span class="space"> </span><span class="rubyconf">AU</span><span class="space"> </span><span class="date">2015</span>
-      %h2
-        <span class="date">4-7 February 2015</span> <span class="city">Melbourne, Australia</span>
-      %p.dates Workshops <strong>Feb 4</strong><br>Main Conference <strong>Feb 5-6</strong><br>Special Events <strong>Feb 7</strong>
-      %h3
-        %a(href="http://tickets.rubyconf.org.au") Get your ticket now
+= haml :'2015/_header', locals: {dates: true}
 
 %section#nav
   .row
@@ -41,14 +31,14 @@
           get your ticket now.
 
 %section.speakers-section
-  .row
-    %a(name="speakers")
+  .row#speakers
     %h1(data-magellan-destination="speakers") Speakers
 
     %article.speaker
-      %img(src="/images/2015/speakers/collistaeed.jpg")
+      .photo
+        %img(src="/images/2015/speakers/collistaeed.jpg")
       %h3 Collis Ta'eed
-      %p CEO of Envato
+      %p CEO of Envato. Linda is the author and illustrator of Hello Ruby, Linda is the author and illustrator of Hello Ruby, Linda is the author and illustrator of Hello Ruby. Linda is the author and illustrator of Hello Ruby, Linda is the author and illustrator of Hello Ruby, Linda is the author and illustrator of Hello Ruby.
 
       %p.links
         %a(href="http://www.envato.com") envato.com
@@ -57,7 +47,8 @@
           @collis
 
     %article.speaker
-      %img(src="/images/2015/speakers/lindaliukas.png")
+      .photo
+        %img(src="/images/2015/speakers/lindaliukas.png")
       %h3 Linda Liukas
       %p Linda is the author and illustrator of Hello Ruby, a childrens picture book about the whimsical world of computers, as well as the founder of Rails Girls, a global movement to teach young women programming in over 220 cities. She loves Muji, Zelda Fitzgerald, software and sparkly things.
 
@@ -68,7 +59,8 @@
           @lindaliukas
 
     %article.speaker
-      %img(src="/images/2015/speakers/tomstuart.png")
+      .photo
+        %img(src="/images/2015/speakers/tomstuart.png")
       %h3 Tom Stuart
       %p Tom is a computer scientist and programmer. He has lectured on optimising compilers at the University of Cambridge, co-organises the Ruby Manor conference, and is a member of the London Ruby User Group. His latest book, Understanding Computation, was published by O'Reilly in 2013.
 
@@ -79,9 +71,10 @@
           @tomstuart
 
     %article.speaker
-      %img(src="/images/2015/speakers/rachelmyers.jpg")
+      .photo
+        %img(src="/images/2015/speakers/rachelmyers.jpg")
       %h3 Rachel Myers
-      %p Rubyist and Whiskey drinker
+      %p Rubyist and Whiskey drinker. Linda is the author and illustrator of Hello Ruby, Linda is the author and illustrator of Hello Ruby, Linda is the author and illustrator of Hello Ruby.
 
       %p.links
         %a(href="https://twitter.com/rachelmyers" class="twitter")
@@ -89,7 +82,8 @@
           @rachelmyers
 
     %article.speaker
-      %img(src="/images/2015/speakers/steveklabnik.jpg")
+      .photo
+        %img(src="/images/2015/speakers/steveklabnik.jpg")
       %h3 Steve Klabnik
       %p Steve has a voracious appetite for writing, reading, programming and philosophy. You can find his prints on a large number of Ruby gems - from Ruby on Rails to Hackety Hack - and suffers from what seems to be permanent jetlag.
 
@@ -99,19 +93,26 @@
           %span.icon.ss-twitter
           @steveklabnik
 
+    %article.speaker
+      .photo
+        %span.tbd
+          %span …
+      %h3 More to be announced
+      %p Something about submitting a call for proposal with a link and things. Linda is the author and illustrator of Hello Ruby, Linda is the author and illustrator of Hello Ruby, Linda is the author and illustrator of Hello Ruby.
+
 %section.sessions-section
-  .row
-    %a(name="sessions")
-    %h1(data-magellan-destination="sessions") Sessions
-    %hgroup
-      %h2
-        RubyConf AU sessions will run across two days: February 5-6 at Deakin Edge, Federation Square, in the heart of Melbourne.
-
+  .row#sessions
+    %article.section-content
+      %h1(data-magellan-destination="sessions") Sessions
       %p
-        The call for proposals is currently open - we would love to have you submit a talk for consideration.
+        RubyConf AU sessions will run across two days: February 5-6 at Deakin Edge, Federation Square, in the heart of Melbourne. <strong>The call for proposals is currently open!</strong>
+      %p
+        If you have a talk idea we’d love to hear it. Check out <a href="http://weareallaweso.me/">weareallaweso.me</a> and <a href="http://speaking.io/">speaking.io</a> for ideas, advice and inspiration for giving a talk.
+      %p
+        Ready to jump in? <a href="/2015/cfp">Submit a talk proposal</a>
 
-        / Full session details are available on
-        / %a(href="http://lanyrd.com/2015/rubyconf-au/schedule/" target="_blank") Lanyrd.
+      / Full session details are available on
+      / %a(href="http://lanyrd.com/2015/rubyconf-au/schedule/" target="_blank") Lanyrd.
 
       / %p
       /   On your mobile, you can
@@ -120,14 +121,12 @@
       /   %a(href="https://m.lanyrd.com/2015/rubyconf-au/schedule/") Lanyrd.
 
 %section.workshops-section
-  .row
-    %a(name="workshops")
+  .row#workshops
     %h1(data-magellan-destination="workshops") Workshops
 
     %article.workshop
-      %h3 Workshops to be confirmed
-
-      %p Workshops will occur on the 4th of February, and tickets will be separate from the conference sessions. The line-up is not yet confirmed, beyond our regular Rails Girls event.
+      %h3 Coming soon…
+      %p Workshops will be on the 4th of February, and tickets will be separate from the conference sessions. Rails Girls will be one of the workshops, but the rest of the line-up is still to be announced.
 
     %article.workshop
       %img(src="/images/icons/railsgirls.svg" class="icon")
@@ -150,8 +149,7 @@
         %a.twitter(href="https://twitter.com/railsgirlsau" class="twitter") @railsgirlsau
 
 %section.venue-section
-  .row
-    %a(name="venue")
+  .row#venue
     %div(data-magellan-destination="venue")
       %h1 Our Venue
       %p RubyConf AU is being held at Deakin Edge, at Federation Square alongside the Yarra River in the centre of Melbourne.
@@ -173,16 +171,14 @@
       /   to help you out.
 
 %section.sponsors-section
-  .row
-    %a(name="sponsors")
-    %h1(data-magellan-destination="sponsors") Sponsors
-    %p RubyConf AU Melbourne 2015 is made possible through the generous support of our sponsors. If your company is interested in sponsoring this conference, have a read of <a href="/sponsorship">what's involved</a> and then get in touch.
+  .row#sponsors
+    %article.section-content
+      %h1(data-magellan-destination="sponsors") Sponsors
+      %p RubyConf AU Melbourne 2015 is made possible through the generous support of our sponsors. If your company is interested in sponsoring this conference, have a read of what's involved and then get in touch.
+      %p <a href="/2015/sponsorship">Sponsorship details</a>
 
-    %p
-      %a(href="/sponsorship") Read more
-
-%section.code-section
-  .row
-    %a(name="code")
-    %h1(data-magellan-destination="code") Code of Conduct
-    %p RubyConf Australia is run under the auspices of Ruby Australia. You can view their <a href="http://ruby.org.au/code-of-conduct.html">code of conduct</a> (which applies to this event) and <a href="/policies">our anti-harrassment policy</a>. These rules must be followed by all attendees to all conference-related events.
+%section.code-of-conduct-section
+  .row#code
+    %article.section-content
+      %h1(data-magellan-destination="code") Code of Conduct
+      %p RubyConf Australia is run under the auspices of Ruby Australia. You can view their <a href="http://ruby.org.au/code-of-conduct.html">code of conduct</a> (which applies to this event) and <a href="/policies">our anti-harrassment policy</a>. These rules must be followed by all attendees to all conference-related events.

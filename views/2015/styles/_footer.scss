@@ -1,4 +1,3 @@
-
 section#social-networks {
   background: $page_bkg;
   clear: both;
@@ -81,6 +80,10 @@ section#social-networks {
     vertical-align: top;
     text-align: center;
 
+    @media only screen and (max-width: 500px) {
+      margin-top: 40px;
+    }
+
     h4 {
       margin-bottom: 1.2rem;
     }
@@ -106,6 +109,25 @@ section#social-networks {
       border-right: none;
     }
   }
+
+  .networks, .newsletter {
+    @media only screen and (max-width: 500px) {
+      display: block;
+      width: 100%;
+      text-align: left;
+      padding-top: 20px;
+      padding-bottom: 20px;
+
+      h4 {
+        text-align: left;
+      }
+      a.network {
+        display: block;
+        margin: 1rem 0;
+        border: none;
+      }
+    }
+  }
 }
 
 #footer {
@@ -113,6 +135,14 @@ section#social-networks {
   text-align: center;
 
   * { color: #fff; }
+
+  .row {
+    @media only screen and (max-width: 500px) {
+      width: 85%;
+      margin-left: auto;
+      margin-right: auto;
+    }
+  }
 
   hgroup { width: 100%; }
 
@@ -135,37 +165,10 @@ section#social-networks {
         .previous { opacity: .8; }
         a { margin-left: .25em; }
       }
+      @media only screen and (max-width: 500px) {
+        display: block;
+        margin: 1rem 0;
+      }
     }
-  }
-}
-
-@media only screen and (max-width: 1024px) {
-  section#social-networks {
-    .newsletter {
-      width: 30%;
-    }
-
-    .networks {
-      width: 69%;
-    }
-  }
-}
-
-@media only screen and (max-width: 500px) {
-  section#social-networks {
-    .newsletter { padding-bottom: 4rem; }
-
-    .newsletter, .networks {
-      width: 100%;
-      display: block;
-    }
-
-    .networks a { font-size: 0.9rem;
-      .icon { display: none; }
-    }
-  }
-  #footer {
-    hgroup { width: 95%; }
-    .ruby-au img { width: 20%; }
   }
 }

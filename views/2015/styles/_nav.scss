@@ -52,8 +52,8 @@ section#nav {
 }
 
 @media only screen and (max-width: 480px) {
-  section#nav .nav.fixed .sub-nav {
-    left: 1.8rem;
+  section#nav .nav.fixed {
+    display: none;
   }
 }
 

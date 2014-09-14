@@ -1,4 +1,4 @@
-!!! 5
+!!!
 %html{lang: 'en'}
   %head
     /
@@ -9,8 +9,13 @@
     %meta{name: "author", content: "Ruby Australia"}
     %meta{content:'width=device-width, initial-scale=1.0', name:'viewport'}
     %meta{name: "copyright", content: "Copyright Ruby Australia 2012-2014. All Rights Reserved."}
-    %link{rel: "stylesheet", href: "/2015/stylesheets/main.css"}
-    %link{rel: "stylesheet", href: 'http://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400,600,700,900'}
+    %link{rel: "stylesheet", href: asset_path('2015/styles/all.css')}
+    :javascript
+      (function(d) {
+        var config = { kitId: 'pcd5kcy', scriptTimeout: 3000 },
+        h=d.documentElement,t=setTimeout(function(){h.className=h.className.replace(/\bwf-loading\b/g,"")+" wf-inactive";},config.scriptTimeout),tk=d.createElement("script"),f=false,s=d.getElementsByTagName("script")[0],a;h.className+=" wf-loading";tk.src='//use.typekit.net/'+config.kitId+'.js';tk.async=true;tk.onload=tk.onreadystatechange=function(){a=this.readyState;if(f||a&&a!="complete"&&a!="loaded")return;f=true;clearTimeout(t);try{Typekit.load(config)}catch(e){}};s.parentNode.insertBefore(tk,s)
+      })(document);
+    %script{src:"https://js.tito.io/v1", async: true}
 
   %body{id: @title}
     != yield
@@ -71,13 +76,3 @@
             %span.previous Previous years:
             %a(href='/2014') 2014
             %a(href='/2013') 2013
-          .item.credit
-            %span Header photo by <a href="https://www.flickr.com/photos/melburnian/10874906865">Steve Davidson</a>
-
-      %script{src: "https://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"}
-      %script{src: "/javascripts/spin.min.js"}
-      %script{src: "/javascripts/main.js"}
-      %script{src: "/javascripts/foundation.js"}
-      %script{src: "/javascripts/foundation.magellan.js"}
-      :javascript
-        $(document).foundation();

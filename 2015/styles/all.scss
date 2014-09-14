@@ -1,0 +1,9 @@
+@import "fonts";
+
+html {
+  font: 14px/1 $body-font;
+}
+
+h1, h2, h3 {
+  font-family: $display-font;
+}

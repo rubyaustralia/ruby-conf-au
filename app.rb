@@ -15,6 +15,15 @@ configure :development do
   require 'sinatra/reloader'
 end
 
+helpers do
+  def file_digest(file)
+    File.read("#{file}.md5")
+  end
+  def asset_path(file)
+    "/#{file}?#{file_digest('public/' + file)}"
+  end
+end
+
 # 2013
 
 get '/2013/?' do

@@ -1,5 +1,6 @@
 {
   "devDependencies": {
-    "autoprefixer": "3.x"
+    "autoprefixer": "3.x",
+    "watching": "x"
   }
 }

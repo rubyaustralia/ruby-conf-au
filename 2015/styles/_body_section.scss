@@ -1,0 +1,146 @@
+.body-section {
+  padding-left: 1rem;
+  padding-right: 1rem;
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+  background: $background-color;
+  color: $text-color;
+  text-align: center;
+
+  @media only screen and (min-width: 500px) { padding-top: 2rem; padding-bottom: 2rem; }
+  @media only screen and (min-width: 700px) { padding-top: 3rem; padding-bottom: 3rem; }
+  @media only screen and (min-width: 900px) { padding-top: 5rem; padding-bottom: 5rem; }
+
+  h1 { font-size: 2rem; font-weight: 800; line-height: 1.1; }
+  h2 { font-size: 2rem; font-weight: 800; line-height: 1.1; margin-bottom: 1rem; margin-top: 1.5rem; }
+  h3 { font-size: 1.5rem; font-weight: 800; line-height: 1.1; }
+
+  h2 {
+    /* Always the same as the container padding */
+    @media only screen and (min-width: 500px) { margin-bottom: 2rem; }
+    @media only screen and (min-width: 700px) { font-size: 2.5rem; margin-bottom: 3rem; }
+    @media only screen and (min-width: 900px) { font-size: 3rem; margin-bottom: 3rem; margin-top: 3rem; }
+  }
+
+  hgroup, h3, p {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    margin-left: auto;
+    margin-right: auto;
+    @media only screen and (min-width: 500px) { margin-top: 1.5rem; margin-bottom: 1.5rem; }
+    @media only screen and (min-width: 700px) { margin-top: 2rem; margin-bottom: 2rem; }
+    &:first-child { margin-top: 0; }
+    &:last-child  { margin-bottom: 0; }
+  }
+
+  p {
+    max-width: 30rem;
+  }
+}
+
+.body-section--reversed {
+  @extend .body-section;
+  background: $reversed-background-color;
+  color: $reversed-text-color;
+  h1, h2, h3 {
+    /* 800 is too heavy reversed, so we 600 instead */
+    font-weight: 600;
+  }
+}
+
+@keyframes down-arrow-animation {
+  from { transform: translateY(0);    }
+  to  { transform: translateY(10px); }
+}
+
+.body-section--event-header {
+  @extend .body-section--reversed;
+  h1 { font-size: 2.5rem; }
+  h2 { font-size: 1.5rem; margin-bottom: 0; }
+  h3 { font-size: 1rem; margin-top: 0; color: $reversed-faded-text-color; }
+  h1, h2, h3 { span { display: block; } }
+  h2, h3 { font-family: inherit; line-height: inherit; text-transform: inherit; font-weight: inherit; }
+  @media only screen and (min-width: 900px) {
+    min-height: 100vh;
+    display: flex;
+    flex-flow: center;
+    align-items: center;
+    .body-section--event-header__inner {
+      margin-left: auto;
+      margin-right: auto;
+    }
+    h1 { font-size: 3rem; }
+    h2 { font-size: 2rem; margin-bottom: 0; margin-top: 2rem; }
+    h3 { font-size: 1.5rem; }
+    h1, h2, h3 { span { display: inline; } }
+    h2 span:first-child:after { content: ', '; }
+  }
+  @media only screen and (min-width: 900px) and (min-height: 50rem) {
+    &:after {
+      content: ' ';
+      background: transparent url('/images/2015/down-arrow.svg') bottom center no-repeat;
+      width: 20%;
+      padding-bottom: 77%;
+      position: absolute;
+      bottom: 2rem;
+      left: 50%;
+      margin-left: -10%;
+      animation: .75s down-arrow-animation infinite alternate;
+    }
+  }
+}
+
+.body-section--event-footer {
+  @extend .body-section--reversed;
+  h3 { font-size: 1rem; margin-bottom: 1rem; }
+  p { margin-top: 1rem; }
+}
+
+.body-section--event-footer__links {
+  @media only screen and (min-width: 500px) { font-size: 1rem; }
+  @media only screen and (min-width: 700px) { font-size: 2rem; }
+  font-family: $display-font;
+  text-transform: uppercase;
+  a + a {
+    margin-left: .25rem;
+  }
+}
+
+.body-section--content {
+  @extend .body-section;
+  padding-top: 0;
+  &:before {
+    content: ' ';
+    display: block;
+    background: url(/images/2015/heart-separator.svg) center center no-repeat;
+    width: 100%;
+    padding-bottom: 5rem;
+    margin-left: auto;
+    margin-right: auto;
+    @media only screen and (min-width: 700px) { padding-bottom: 3rem; }
+  }
+}
+
+.body-section--venue {
+  @extend .body-section;
+  h2 { margin-bottom: 2rem; }
+}
+
+.body-section__header-image {
+  width: 100%;
+  opacity: .6;
+  margin-left: -1rem;
+  margin-right: -1rem;
+}
+
+
+.body-section--event-footer__mailing-list {
+  input, button {
+    @extend .button;
+    height: 3rem;
+    :-webkit-input-placeholder { color: rgba(255,255,255,.5); }
+    :-moz-placeholder { color: rgba(255,255,255,.5); }
+    ::-moz-placeholder { color: rgba(255,255,255,.5); }
+    :-ms-placeholder { color: rgba(255,255,255,.5); }
+  }
+}

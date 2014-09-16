@@ -1,188 +1,81 @@
-= haml :'2015/_header', locals: {dates: true}
-
-%tito-button{event:"ruby-australia/rubyconf-au"}
-
-%section#nav
-  .row
-    .nav(data-magellan-expedition="fixed")
-      %dl.sub-nav
-        %dd(data-magellan-arrival="speakers")
-          %a(href="#speakers") Speakers
-        %dd(data-magellan-arrival="sessions")
-          %a(href="#sessions") Sessions
-        %dd(data-magellan-arrival="workshops")
-          %a(href="#workshops") Workshops
-        %dd(data-magellan-arrival="venue")
-          %a(href="#venue") Venue
-        %dd(data-magellan-arrival="sponsors")
-          %a(href="#sponsors") Sponsorship
-        %dd(data-magellan-arrival="code")
-          %a(href="#code") Code of Conduct
-        %dd(data-magellan-arrival="footer")
-          %a(href="#footer") Contact
-
-%section#intro
-  .row
+%section.body-section--event-header
+  .body-section--event-header__inner
     %hgroup
-      %h2
-        It's time to bring the leading developers from around the region and beyond together for the third Ruby conference to be held in Australia.
-        %a.whos-speaking(href="#speakers")
-          See who's speaking
-        / or
-        / %a.get-ticket(href="#tickets")
-        /   get your ticket now.
+      %h1 <span>RubyConf</span> <span>Australia</span> <span>2015</span>
+      %p On the 5—6th February leading Ruby developers from around the world will come together to share, inspire and learn.
+      %h2 <span>Melbourne</span> <span>Australia</span>
+      %h3 4-7 February 2015
+    .tickets
+      %button(disabled) Tickets on sale September 19 at 10AM (AEST)
+      / %tito-button{event:"ruby-australia/rubyconf-au", releases:"1rt-ryyxglu"} Buy your ticket
 
-%section.speakers-section
-  .row#speakers
-    %h1(data-magellan-destination="speakers") Speakers
+%section.site-nav
+  %a(href="#venue") Venue
+  %a(href="#speakers") Speakers
+  %a(href="#schedule") Schedule
+  %a(href="#workshops") Workshops
+  %a(href="#sponsors") Sponsors
+  %a(href="#news") News
+  %a(href="#contact") Contact
 
-    %article.speaker
-      .photo
-        %img(src="/images/2015/speakers/collistaeed.png")
-      %h3 Collis Ta'eed
-      %p Collis is the CEO and co-founder of Australian startup Envato. A designer by trade, Collis is also an avid writer, entrepreneur and product guy. Together with his cofounders, Collis has bootstrapped Envato all the way to 250 staff and more than $200m paid out to designers and developers all around the world.
+%section#venue.body-section--venue
+  %h2 Venue
+  %img.body-section__header-image{src:'/images/2015/deakin-edge.jpg'}
+  %p All the conference sessions will be held at the amazing Deakin Edge theatre in Federation Square Melbourne CBD, 1 minute walk from Flinders St station.
+  %p <a href="" class="button">Directions</a>
 
-      %p.links
-        %a(href="http://www.envato.com") envato.com
-        %a(href="http://twitter.com/collis" class="twitter")
-          %span.icon.ss-twitter
-          @collis
+%section#speakers.body-section--content
+  %h2 Speakers
+  %div.grid
+    - 6.times do
+      %div.grid__cell.speaker
+        %h3.speaker__name Collis Ta’eed
+        %p.speaker__photo
+          %img(src="/images/2015/speakers/collistaeed.png" alt="Photo of Collis")
+        %div.speaker__bio
+          %p Collis is the CEO and co-founder of Australian startup Envato. A designer by trade, Collis is also an avid writer, entrepreneur and product guy. Together with his cofounders, Collis has bootstrapped Envato all the way to 250 staff and more than $200m paid out to designers and developers all around the world.
+        %ol.speaker__links
+          %li
+            %a(href="http://envato.com/" am-Speaker-Link) envato.com
+          %li
+            %a(href="https://twitter.com/collis" am-Speaker-Link) @collis
 
-    %article.speaker
-      .photo
-        %img(src="/images/2015/speakers/lindaliukas.png")
-      %h3 Linda Liukas
-      %p Linda is the author and illustrator of Hello Ruby, a childrens picture book about the whimsical world of computers, as well as the founder of Rails Girls, a global movement to teach young women programming in over 220 cities. She loves Muji, Zelda Fitzgerald, software and sparkly things.
+%section#schedule.body-section--content
+  %h2 Schedule
+  %p Conference sessions are yet to be announced, but will be February 5 and 6.
+  %p If you have a talk idea we’d love to hear it.
+  %p Check out weareallaweso.me and speaking.io for ideas, advice and inspiration for giving a talk.
 
-      %p.links
-        %a(href="http://lindaliukas.fi/" class="website") lindaliukas.fi
-        %a(href="http://twitter.com/lindaliukas" class="twitter")
-          %span.icon.ss-twitter
-          @lindaliukas
+%section#workshops.body-section--content
+  %h2 Workshops
+  %p ...
 
-    %article.speaker
-      .photo
-        %img(src="/images/2015/speakers/tomstuart.png")
-      %h3 Tom Stuart
-      %p Tom is a computer scientist and programmer. He has lectured on optimising compilers at the University of Cambridge, co-organises the Ruby Manor conference, and is a member of the London Ruby User Group. His latest book, Understanding Computation, was published by O'Reilly in 2013.
+%section#sponsors.body-section--content
+  %h2 Sponsors
+  %p ...
 
-      %p.links
-        %a(href="http://codon.com" class="website") codon.com
-        %a(href="https://twitter.com/tomstuart" class="twitter")
-          %span.icon.ss-twitter
-          @tomstuart
+%section#news.body-section--content
+  %h2 News
+  %p ...
 
-    %article.speaker
-      .photo
-        %img(src="/images/2015/speakers/rachelmyers.png")
-      %h3 Rachel Myers
-      %p Rachel’s a developer at GitHub who loves Ruby, JavaScript, RailsBridge, and monitoring all the things!
+%section#contact.body-section--content
+  %h2 Code of Conduct
+  %p ...
 
-      %p.links
-        %a(href="https://twitter.com/rachelmyers" class="twitter")
-          %span.icon.ss-twitter
-          @rachelmyers
-
-    %article.speaker
-      .photo
-        %img(src="/images/2015/speakers/steveklabnik.jpg")
-      %h3 Steve Klabnik
-      %p Steve has a voracious appetite for writing, reading, programming and philosophy. You can find his prints on a large number of Ruby gems - from Ruby on Rails to Hackety Hack - and suffers from what seems to be permanent jetlag.
-
-      %p.links
-        %a(href="http://steveklabnik.com" class="website") steveklabnik.com
-        %a(href="https://twitter.com/steveklabnik" class="twitter")
-          %span.icon.ss-twitter
-          @steveklabnik
-
-    %article.speaker
-      .photo
-        %span.tbd
-          %span …
-      %h3 More to be announced
-      %p Keen to speak at RubyConf AU? We'd love you to <a href="#sessions">submit a talk proposal</a>!
-
-%section.sessions-section
-  .row#sessions
-    %article.section-content
-      %h1(data-magellan-destination="sessions") Sessions
-      %p
-        RubyConf AU sessions will run across two days: February 5-6 at Deakin Edge, Federation Square, in the heart of Melbourne. <strong>The call for proposals is currently open!</strong>
-      %p
-        If you have a talk idea we’d love to hear it. Check out <a href="http://weareallaweso.me/">weareallaweso.me</a> and <a href="http://speaking.io/">speaking.io</a> for ideas, advice and inspiration for giving a talk.
-      %p
-        Ready to jump in? <a href="http://cfp.rubyconf.org.au">Submit a talk proposal</a>
-
-      / Full session details are available on
-      / %a(href="http://lanyrd.com/2015/rubyconf-au/schedule/" target="_blank") Lanyrd.
-
-      / %p
-      /   On your mobile, you can
-      /   %a(href="https://itunes.apple.com/us/app/lanyrd/id467652813?mt=8" target="_blank") download the Lanyrd iPhone app
-      /   or use the mobile web version of
-      /   %a(href="https://m.lanyrd.com/2015/rubyconf-au/schedule/") Lanyrd.
-
-%section.workshops-section
-  .row#workshops
-    %h1(data-magellan-destination="workshops") Workshops
-
-    %article.workshop
-      %h3 Coming soon…
-      %p Workshops will be on the 4th of February, and tickets will be separate from the conference sessions. Rails Girls will be one of the workshops, but the rest of the line-up is still to be announced.
-
-    %article.workshop
-      %img(src="/images/icons/railsgirls.svg" class="icon")
-      %h3 Rails Girls Next
-      %h4 Take the next step in your coding journey!
-
-      %p Join us and continue the learning you started at Rails Girls. Since you have Ruby installed already, we can jump right in!
-
-      %p We've organised three mentor-led tutorials that will help you dive deeper into the world of professional development with Ruby. Tutorials include a look at some of Ruby's more advanced features and syntax, building a Sinatra app and deploying it, test-driven development and more.
-
-      %p Lastly, you will gain a greater appreciation of development work procedures by pairing up to solve coding challenges and using Git for version control.
-
-      .bio
-        %em Workshop run by awesome volunteers!
-        %p Our mentors have about three hundred years of combined awesomeness! They've wrestled furious dragons with code and walked away un-charred.
-
-        %p
-          Seriously though, our mentors are professional developers. They'll be on hand to answer all of your questions and help you out of tricky spots.
-
-        %a.twitter(href="https://twitter.com/railsgirlsau" class="twitter") @railsgirlsau
-
-%section.venue-section
-  .row#venue
-    %div(data-magellan-destination="venue")
-      %h1 Our Venue
-      %p RubyConf AU is being held at Deakin Edge, at Federation Square alongside the Yarra River in the centre of Melbourne.
-
-      %a(href="https://goo.gl/maps/yE1eX" class="inverted")
-        Deakin Edge,
-        %br
-        Federation Square,
-        %br
-        Corner Swanston and Flinders Streets, Melbourne 3000
-
-      %h3 Getting There:
-      %p Federation Square is across the road from Flinders Street Station, Melbourne's transport hub, plus there are trams along both Swanston and Flinders Streets. Deakin Edge is located on the eastern side of the complex (away from Flinders Street Station), at the far end of the Atrium.
-
-      %p Photo courtesy of <a href="http://www.fedsquare.com">Federation Square</a>.
-
-      / %h3 Accommodation & Social:
-      / %p
-      /   Looking for sowewhere to stay or places to go? We've made
-      /   %a(href="/social" class='inverted') handy list
-      /   to help you out.
-
-%section.sponsors-section
-  .row#sponsors
-    %article.section-content
-      %h1(data-magellan-destination="sponsors") Sponsors
-      %p RubyConf AU Melbourne 2015 is made possible through the generous support of our sponsors. If your company is interested in sponsoring this conference, have a read of what's involved and then get in touch.
-      %p <a href="/2015/sponsorship">Sponsorship details</a>
-
-%section.code-of-conduct-section
-  .row#code
-    %article.section-content
-      %h1(data-magellan-destination="code") Code of Conduct
-      %p RubyConf Australia is run under the auspices of Ruby Australia. You can view their <a href="http://ruby.org.au/code-of-conduct.html">code of conduct</a> (which applies to this event) and <a href="/policies">our anti-harrassment policy</a>. These rules must be followed by all attendees to all conference-related events.
+%section.body-section--event-footer
+  %h2 Contact Us
+  %h3 Send us an email
+  %p.body-section--event-footer__links
+    %a(href="mailto:hello@rubyconf.org.au") hello@rubyconf.org.au
+  %h3 Elsewhere
+  %ul.body-section--event-footer__links
+    %li
+      %a(href="") Twitter
+      %a(href="") Facebook
+      %a(href="") Vimeo
+      %a(href="") Lanyrd
+  %h3 Mailing List
+  %form.body-section--event-footer__mailing-list(action="")
+    %p
+      %input(type="email" placeholder="Your email address")
+      %button Join

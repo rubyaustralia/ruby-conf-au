@@ -1,0 +1,26 @@
+.site-nav {
+  background: $dark-reversed-background-color;
+  padding: 1rem;
+  a {
+    @extend .button;
+    display: block;
+    width: 100%;
+    + a { margin-top: .5rem; }
+  }
+  @media only screen and (min-width: 900px) {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1;
+    text-align: center;
+    padding: 0;
+    a {
+      display: inline;
+      border: none;
+      font-size: .75rem;
+      padding-left: .5rem;
+      padding-right: .5rem;
+    }
+  }
+}

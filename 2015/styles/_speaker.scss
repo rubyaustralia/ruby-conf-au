@@ -1,0 +1,20 @@
+.speaker {
+  + .speaker {
+    margin-top: 4rem;
+  }
+}
+
+.speaker__name {
+}
+
+.speaker__bio {
+  margin-top: -1rem;
+}
+
+.speaker__photo {
+  img { border-radius: 50%; filter: brightness(80%) sepia(90%) hue-rotate(-10deg); opacity: .8; }
+}
+
+.speaker__links {
+  margin-top: 1rem;
+}

@@ -6,73 +6,13 @@
       https://github.com/rubyaustralia/ruby-conf-au
     %title RubyConf Australia 2015
     %meta{charset: "utf-8"}
-    %meta{name: "author", content: "Ruby Australia"}
     %meta{content:'width=device-width, initial-scale=1.0', name:'viewport'}
-    %meta{name: "copyright", content: "Copyright Ruby Australia 2012-2014. All Rights Reserved."}
     %link{rel: "stylesheet", href: asset_path('2015/styles/all.css')}
     :javascript
       (function(d) {
         var config = { kitId: 'pcd5kcy', scriptTimeout: 3000 },
         h=d.documentElement,t=setTimeout(function(){h.className=h.className.replace(/\bwf-loading\b/g,"")+" wf-inactive";},config.scriptTimeout),tk=d.createElement("script"),f=false,s=d.getElementsByTagName("script")[0],a;h.className+=" wf-loading";tk.src='//use.typekit.net/'+config.kitId+'.js';tk.async=true;tk.onload=tk.onreadystatechange=function(){a=this.readyState;if(f||a&&a!="complete"&&a!="loaded")return;f=true;clearTimeout(t);try{Typekit.load(config)}catch(e){}};s.parentNode.insertBefore(tk,s)
       })(document);
-    %script{src:"https://js.tito.io/v1", async: true}
-
-  %body{id: @title}
+    %script{src:"https://tito-javascript.s3.amazonaws.com/v1", async: true}
+  %body
     != yield
-
-    %section#social-networks
-      .row
-        .inner
-          .newsletter
-            %form
-              %h4.red Join our mailing list
-              %span.success ✔
-              %span.error ✗
-              %div.progress_indicator
-              %input{placeholder: "you@email.com", type: "text"}
-              %a{class: "button", href: "#"} Join
-          .networks
-            %h4.red Find us elsewhere
-            %a.network.twitter{href: "http://twitter.com/rubyconf_au"}
-              .icon.ss-twitter
-              %span @rubyconf_au
-            %a.network.facebook{href: "http://facebook.com/RubyConfAustralia"}
-              .icon.ss-facebook
-              %span RubyConfAustralia
-            %a.network.vimeo{href: "https://vimeo.com/channels/486849"}
-              .icon.ss-vimeo
-              %span Past Talks
-            %a.network.lanyrd{href: "http://lanyrd.com/2015/rubyconf-au/"}
-              %span Lanyrd
-
-    %footer#footer
-      .row
-        %hgroup.ruby-conf-au(data-magellan-destination="footer")
-          %a(href="/")
-            %img(alt="Ruby Conf Australia 2015" src="/images/ruby_conf_white_logo.svg" height="220px")
-          %h2 Excited? We are!
-
-          %p
-            We can't wait to share RubyConf AU 2015 with you.
-            %br
-            If you've got questions, get in touch by
-            %a(href="mailto:organisers@rubyconf.org.au" class='inverted') email
-            or tweet
-            %a(href="https://twitter.com/rubyconf_au" class='inverted') @rubyconf_au
-
-        %section.ruby-au
-          %a(href="http://ruby.org.au")
-            %img.logo(alt="Ruby Australia Logo" src="/images/ruby_au_white_logo.svg")
-          %p
-            Proudly Organised by
-            %a(href="http://ruby.org.au" class='inverted') Ruby Australia
-
-        %section.extras
-          .item.calendar
-            %a(href='/calendar/iCal.ics') Add dates to your calendar
-          .item.policies
-            %a(href='/policies') Policies
-          .item.previous
-            %span.previous Previous years:
-            %a(href='/2014') 2014
-            %a(href='/2013') 2013

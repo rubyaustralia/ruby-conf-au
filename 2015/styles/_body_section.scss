@@ -12,14 +12,14 @@
   @media only screen and (min-width: 900px) { padding-top: 5rem; padding-bottom: 5rem; }
 
   h1 { font-size: 2rem; font-weight: 800; line-height: 1.1; }
-  h2 { font-size: 2rem; font-weight: 800; line-height: 1.1; margin-bottom: 1rem; margin-top: 1.5rem; }
+  h2 { font-size: 2rem; font-weight: 800; line-height: 1.1; margin-bottom: 1rem; }
   h3 { font-size: 1.5rem; font-weight: 800; line-height: 1.1; }
 
   h2 {
     /* Always the same as the container padding */
     @media only screen and (min-width: 500px) { margin-bottom: 2rem; }
     @media only screen and (min-width: 700px) { font-size: 2.5rem; margin-bottom: 3rem; }
-    @media only screen and (min-width: 900px) { font-size: 3rem; margin-bottom: 3rem; margin-top: 3rem; }
+    @media only screen and (min-width: 900px) { font-size: 3rem; margin-bottom: 3rem; }
   }
 
   hgroup, h3, p {
@@ -60,6 +60,21 @@
   h3 { font-size: 1rem; margin-top: 0; color: $reversed-faded-text-color; }
   h1, h2, h3 { span { display: block; } }
   h2, h3 { font-family: inherit; line-height: inherit; text-transform: inherit; font-weight: inherit; }
+  .skip-nav {
+    width: 63px;
+    height: 48px;
+    position: absolute;
+    text-indent: -1000px;
+    overflow: hidden;
+    background: transparent url('/images/2015/down-arrow.svg') bottom center no-repeat;
+    bottom: 2rem;
+    left: 50%;
+    margin-left: (-63px / 2);
+    opacity: 0;
+    animation: .75s down-arrow-animation infinite alternate;
+    animation-play-state: paused;
+  }
+  .skip-nav:focus { opacity: 1; animation-play-state: running; }
   @media only screen and (min-width: 900px) {
     min-height: 100vh;
     display: flex;
@@ -76,16 +91,9 @@
     h2 span:first-child:after { content: ', '; }
   }
   @media only screen and (min-width: 900px) and (min-height: 50rem) {
-    &:after {
-      content: ' ';
-      background: transparent url('/images/2015/down-arrow.svg') bottom center no-repeat;
-      width: 20%;
-      padding-bottom: 77%;
-      position: absolute;
-      bottom: 2rem;
-      left: 50%;
-      margin-left: -10%;
-      animation: .75s down-arrow-animation infinite alternate;
+    .skip-nav {
+      opacity: 1;
+      animation-play-state: running;
     }
   }
 }
@@ -102,13 +110,14 @@
   font-family: $display-font;
   text-transform: uppercase;
   a + a {
-    margin-left: .25rem;
+    margin-left: .75rem;
   }
 }
 
 .body-section--content {
   @extend .body-section;
   padding-top: 0;
+  h2 { margin-top: 3rem; }
   &:before {
     content: ' ';
     display: block;
@@ -138,9 +147,19 @@
   input, button {
     @extend .button;
     height: 3rem;
-    :-webkit-input-placeholder { color: rgba(255,255,255,.5); }
-    :-moz-placeholder { color: rgba(255,255,255,.5); }
-    ::-moz-placeholder { color: rgba(255,255,255,.5); }
-    :-ms-placeholder { color: rgba(255,255,255,.5); }
+    line-height: 3rem;
+    display: inline-block;
+    vertical-align: middle;
+    padding-top: 0;
+    padding-bottom: 0;
   }
+  input {
+    font-family: $body-font;
+    text-transform: none;
+    font-weight: normal;
+  }
+  ::-webkit-input-placeholder { color: rgba(255,255,255,.5); font-family: $body-font; text-transform: none; }
+  :-moz-placeholder { color: rgba(255,255,255,.5); font-family: $body-font; text-transform: none; }
+  ::-moz-placeholder { color: rgba(255,255,255,.5); font-family: $body-font; text-transform: none; }
+  :-ms-placeholder { color: rgba(255,255,255,.5); font-family: $body-font; text-transform: none; }
 }

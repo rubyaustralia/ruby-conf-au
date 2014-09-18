@@ -105,6 +105,7 @@
   @extend .body-section--reversed;
   h3 { font-size: 1rem; margin-bottom: 1rem; }
   p { margin-top: 1rem; }
+  .body-section--event-footer__links { max-width: none; }
 }
 
 .body-section--event-footer__links {
@@ -112,8 +113,9 @@
   @media only screen and (min-width: 700px) { font-size: 2rem; }
   font-family: $display-font;
   text-transform: uppercase;
-  a + a {
-    margin-left: .75rem;
+  a { word-wrap: break-word; }
+  a {
+    margin-left: .75rem; margin-right: .75rem;
   }
 }
 

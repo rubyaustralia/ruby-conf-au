@@ -221,6 +221,8 @@
   margin-bottom: 1rem; }
 .body-section--event-footer p {
   margin-top: 1rem; }
+.body-section--event-footer .body-section--event-footer__links {
+  max-width: none; }
 
 .body-section--event-footer__links {
   font-family: "futura-pt", Futura, sans-serif;
@@ -231,8 +233,11 @@
   @media only screen and (min-width: 700px) {
     .body-section--event-footer__links {
       font-size: 2rem; } }
-  .body-section--event-footer__links a + a {
-    margin-left: .75rem; }
+  .body-section--event-footer__links a {
+    word-wrap: break-word; }
+  .body-section--event-footer__links a {
+    margin-left: .75rem;
+    margin-right: .75rem; }
 
 .body-section--content {
   padding-top: 0; }

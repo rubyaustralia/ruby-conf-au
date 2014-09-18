@@ -16,3 +16,18 @@
     %script{src:"https://tito-javascript.s3.amazonaws.com/v1", async: true}
   %body
     != yield
+    %section#contact.body-section--event-footer
+      %h2 Contact Us
+      %h3 Send us an email
+      %p.body-section--event-footer__links
+        %a(href="mailto:organisers@rubyconf.org.au") organisers@rubyconf.org.au
+      %h3 Elsewhere
+      %ul.body-section--event-footer__links
+        %li
+          %a(href="") Twitter
+          %a(href="") Facebook
+          %a(href="") Vimeo
+          %a(href="") Lanyrd
+      %h3 Mailing List
+      %p.body-section--event-footer__links
+        %a(href="") Join the mailing list

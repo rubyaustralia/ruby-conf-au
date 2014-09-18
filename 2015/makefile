@@ -20,6 +20,6 @@ $(OUT_STYLES):
 	mkdir -p $(OUT_STYLES)
 
 $(OUT_STYLES)/all.css: $(AUTOPREFIXER) $(OUT_STYLES) $(IN_STYLES)/*.scss
-	scss $(IN_STYLES)/all.scss $@
+	scss --sourcemap=none $(IN_STYLES)/all.scss $@
 	$(AUTOPREFIXER) $@
 	md5 -q $@ > $(OUT_STYLES)/all.css.md5

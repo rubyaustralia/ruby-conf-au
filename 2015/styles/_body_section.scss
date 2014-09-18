@@ -103,7 +103,11 @@
 
 .body-section--event-footer {
   @extend .body-section--reversed;
-  h3 { font-size: 1rem; margin-bottom: 1rem; }
+  h3 {
+    font-size: 1rem;
+    margin-bottom: 1rem;
+    opacity: .5;
+  }
   p { margin-top: 1rem; }
   .body-section--event-footer__links { max-width: none; }
 }
@@ -113,9 +117,12 @@
   @media only screen and (min-width: 700px) { font-size: 2rem; }
   font-family: $display-font;
   text-transform: uppercase;
-  a { word-wrap: break-word; }
   a {
-    margin-left: .75rem; margin-right: .75rem;
+    display: block;
+    font-size: .75rem;
+    word-wrap: break-word;
+    margin-top: .5rem;
+    @media only screen and (min-width: 500px) { display: inline; margin: 0; font-size: 1.5rem; margin-top: 0; margin-left: .5rem; margin-right: .5rem; }
   }
 }
 
@@ -149,26 +156,4 @@
   opacity: .6;
   margin-left: -1rem;
   margin-right: -1rem;
-}
-
-
-.body-section--event-footer__mailing-list {
-  input, button {
-    @extend .button;
-    height: 3rem;
-    line-height: 3rem;
-    display: inline-block;
-    vertical-align: middle;
-    padding-top: 0;
-    padding-bottom: 0;
-  }
-  input {
-    font-family: $body-font;
-    text-transform: none;
-    font-weight: normal;
-  }
-  ::-webkit-input-placeholder { color: rgba(255,255,255,.5); font-family: $body-font; text-transform: none; }
-  :-moz-placeholder { color: rgba(255,255,255,.5); font-family: $body-font; text-transform: none; }
-  ::-moz-placeholder { color: rgba(255,255,255,.5); font-family: $body-font; text-transform: none; }
-  :-ms-placeholder { color: rgba(255,255,255,.5); font-family: $body-font; text-transform: none; }
 }

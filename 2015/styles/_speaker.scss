@@ -1,11 +1,13 @@
 .speaker {
   + .speaker {
     margin-top: 4rem;
+    @media only screen and (min-width: 800px)  { margin-top: 2rem; }
   }
 }
 
 .speaker__name {
   margin-bottom: 1rem;
+  text-align: center;
 }
 
 .speaker__bio {
@@ -15,7 +17,8 @@
 }
 
 .speaker__photo {
-  img { border-radius: 50%; filter: brightness(80%) sepia(90%) hue-rotate(-10deg); opacity: .8; }
+  text-align: center;
+  img { width: 50%; border-radius: 50%; filter: brightness(80%) sepia(90%) hue-rotate(-10deg); opacity: .8; }
 }
 
 .speaker__links {

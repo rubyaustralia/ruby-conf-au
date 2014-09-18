@@ -9,6 +9,6 @@
   $two-col-width: 100% / 2 - $gutter * (2 + 2-1);
   $three-col-width: 100% / 3 - $gutter * (2 + 3-1);
 
-  @media only screen and (min-width: 800px)  { display: inline-block; width: $two-col-width;   margin-left: $gutter; margin-right: $gutter; }
-  @media only screen and (min-width: 1200px) { display: inline-block; width: $three-col-width; margin-left: $gutter; margin-right: $gutter; }
+  @media only screen and (min-width: 800px)  { display: inline-block; text-align: left; width: $two-col-width;   margin-left: $gutter; margin-right: $gutter; }
+  @media only screen and (min-width: 1200px) { display: inline-block; text-align: left; width: $three-col-width; margin-left: $gutter; margin-right: $gutter; }
 }

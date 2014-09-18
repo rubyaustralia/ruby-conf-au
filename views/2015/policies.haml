@@ -1,29 +1,11 @@
-%section#header
-  .row
-    %h1
-      %a{href: "/2014"}
-        %img{alt: "Ruby Conf Australia 2014", src: "/images/ruby_conf_logo.svg", height: "220px"}
-    %hgroup
-      %h2
-        19-21 February 2014, Sydney, Australia
+.content-page
+  = haml :'2015/_header'
 
-%section#title
-  .row
+  .content-page__header
     %h1 Policies
 
-%section#nav
-  .row
-    .nav(data-magellan-expedition="fixed")
-      %dl.sub-nav
-        %dd.logo
-          %a(href="/2014")
-            %img{alt: "Ruby Conf Australia 2014", src: "/images/ruby_conf_logo.svg"}
-        %dd.back
-          %a(href="/2014") Back to Main Conference Page
-
-%section#anti-harrasement
-  .row
-    %h3 Anti-harrassment Policy
+  %section.body-section--content
+    %h2 Anti-harrassment Policy
     %p
       RubyConf Australia is dedicated to providing a harassment-free conference experience for everyone, regardless of gender, sexual orientation, disability, physical appearance, body size, race, or religion. We do not tolerate harassment of conference participants in any form. Sexual language and imagery is not appropriate for any conference venue, including talks. Conference participants violating these rules may be sanctioned or expelled from the conference without a refund at the discretion of the conference organisers.
     %p
@@ -35,10 +17,8 @@
     %p
       We expect participants to follow these rules at the conference venue and conference-related social events.
 
-%section#code-of-conduct
-  .row
-    %h3 Code of Conduct
-
+  %section.body-section--content
+    %h2 Code of Conduct
     %p
       RubyConfAU is organised under the umbrella of
       %a(href="http://www.ruby.org.au/") Ruby Australia

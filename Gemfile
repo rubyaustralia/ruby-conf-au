@@ -1,5 +1,5 @@
 source 'https://rubygems.org'
-ruby '1.9.3'
+ruby '2.1.2'
 
 gem "activesupport", require: "active_support/inflector"
 gem "createsend", "1.0.4"
@@ -9,9 +9,10 @@ gem "haml"
 gem "pony"
 gem "sinatra"
 gem "zurb-foundation"
+gem "thin"
 
 group :development do
   gem "foreman"
-  gem 'debugger'
   gem "heroku"
+  gem "sinatra-contrib", require: false
 end

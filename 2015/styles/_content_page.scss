@@ -1,0 +1,31 @@
+.content-page__header {
+  @extend .body-section;
+  padding: 4rem 0 3rem 0;
+  h1 { font-size: 3rem; }
+}
+
+.content-page--event-header {
+  @extend .body-section--event-header;
+  min-height: 0;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  margin-top: 0;
+  .body-section--event-header__event { font-size: 2rem;  }
+  .body-section--event-header__city { font-size: 1.25rem; margin-top: 0; }
+  .body-section--event-header__date { font-size: 1rem; }
+}
+
+.content-page .body-section--content {
+  text-align: left;
+  h2 {
+    text-align: center;
+    font-size: 1.5rem;
+  }
+}
+
+.content-page__sponsorship-form {
+  background-color: white;
+  width: 100%;
+  padding: 2rem 0;
+  text-align: center;
+}

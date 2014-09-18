@@ -1,7 +1,4 @@
-require "bundler"
 Bundler.require(:default)
-
-# before { request.path_info.sub! %r{/$}, '' }
 
 configure do
   set :haml, :format => :html5
@@ -14,13 +11,21 @@ configure do
   set :scss, Compass.sass_engine_options
 end
 
-get '/' do
-  @title = :home
-  haml :"2014/home", :layout => :"2014/layout"
+configure :development do
+  require 'sinatra/reloader'
 end
 
+helpers do
+  def file_digest(file)
+    File.read("#{file}.md5")
+  end
+  def asset_path(file)
+    "/#{file}?#{file_digest('public/' + file)}"
+  end
+end
 
-# Handling last year's conf website
+# 2013
+
 get '/2013/?' do
   @title = :home
   haml :"2013/home", :layout => :"2013/layout"
@@ -32,10 +37,39 @@ get '/2013/:page_name' do
   haml :"2013/#{page_name}", :layout => :"2013/layout"
 end
 
-get '/:page_name' do
+# 2014
+
+get '/2014/?' do
+  page_name = params[:page_name]
+  @title = page_name
+  haml :"2014/home", :layout => :"2014/layout"
+end
+
+get '/2014/:page_name' do
   page_name = params[:page_name]
   @title = page_name
   haml :"2014/#{page_name}", :layout => :"2014/layout"
+end
+
+
+# 2015
+
+get '/2015' do
+  @title = :home
+  haml :"2015/home", :layout => :"2015/layout"
+end
+
+get '/2015/:page_name' do
+  page_name = params[:page_name]
+  @title = page_name
+  haml :"2015/#{page_name}", :layout => :"2015/layout"
+end
+
+# Generic
+
+get '/' do
+  status_code 302
+  redirect '/2015'
 end
 
 post '/subscribe' do
@@ -55,29 +89,29 @@ post '/subscribe' do
   {success: true}.to_json
 end
 
-post '/talk-proposal' do
-  if params[:honeypot].empty?
-    puts '***************'
-    puts "Sending proposal from #{params[:name]} | #{params[:email]}"
-    puts '***************'
-    Pony.mail(to: 'organisers@rubyconf.org.au',
-              from: params[:email],
-              subject: "Lightning talk proposal from #{params[:name]}",
-              body: haml(:"2014/email", layout: false),
-              via: :smtp,
-              via_options: {
-                address: 'smtp.sendgrid.net',
-                port: '587',
-                domain: ENV['SENDGRID_DOMAIN'],
-                user_name: ENV['SENDGRID_USERNAME'],
-                password: ENV['SENDGRID_PASSWORD'],
-                authentication: :plain,
-                enable_starttls_auto: true
-              })
-  end
-
-  { success: true }.to_json
-end
+# post '/talk-proposal' do
+#   if params[:honeypot].empty?
+#     puts '***************'
+#     puts "Sending proposal from #{params[:name]} | #{params[:email]}"
+#     puts '***************'
+#     Pony.mail(to: 'organisers@rubyconf.org.au',
+#               from: params[:email],
+#               subject: "Lightning talk proposal from #{params[:name]}",
+#               body: haml(:"2014/email", layout: false),
+#               via: :smtp,
+#               via_options: {
+#                 address: 'smtp.sendgrid.net',
+#                 port: '587',
+#                 domain: ENV['SENDGRID_DOMAIN'],
+#                 user_name: ENV['SENDGRID_USERNAME'],
+#                 password: ENV['SENDGRID_PASSWORD'],
+#                 authentication: :plain,
+#                 enable_starttls_auto: true
+#               })
+#   end
+#
+#   { success: true }.to_json
+# end
 
 get "/:year/stylesheets/main.css" do
   content_type 'text/css', :charset => 'utf-8'

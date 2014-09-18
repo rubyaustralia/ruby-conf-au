@@ -2,7 +2,7 @@
 
 The full conference site is being delivered iteratively.
 
-## Running locally
+## Developing
 
 If this is this first time you are running the app:
 
@@ -13,12 +13,19 @@ Then start the app with:
 
     foreman start
 
-If your're working on the app JS then watch and and compile the CoffeeScript as changes are made with:
+### 2015
 
-    coffee -cw public/javascripts/*.coffee
+The 2015 styles are compiled and checked in. To recompile them:
 
+    cd 2015
 
-## Deploy to Production
+    # Compile the assets
+    make
+
+    # Watch assets for change and automatically recompile
+    make watch
+
+## Deploying
 
 Site is hosted on Heroku
 

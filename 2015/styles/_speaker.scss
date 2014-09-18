@@ -5,10 +5,13 @@
 }
 
 .speaker__name {
+  margin-bottom: 1rem;
 }
 
 .speaker__bio {
   margin-top: -1rem;
+  @media only screen and (min-width: 800px)  { font-size: 1rem * .925; }
+  @media only screen and (min-width: 1200px) { font-size: 1rem * .85; }
 }
 
 .speaker__photo {

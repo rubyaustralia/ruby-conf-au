@@ -27,6 +27,24 @@
   .button[disabled]:hover, .body-section--event-footer__mailing-list input[disabled]:hover, .site-nav a[disabled]:hover, button[disabled]:hover {
     cursor: default; }
 
+.grid {
+  font-size: 0; }
+
+.grid__cell {
+  font-size: 1rem; }
+  @media only screen and (min-width: 800px) {
+    .grid__cell {
+      display: inline-block;
+      width: 41%;
+      margin-left: 3%;
+      margin-right: 3%; } }
+  @media only screen and (min-width: 1200px) {
+    .grid__cell {
+      display: inline-block;
+      width: 21.33333%;
+      margin-left: 3%;
+      margin-right: 3%; } }
+
 .body-section, .body-section--reversed, .body-section--event-header, .body-section--event-footer, .body-section--content, .body-section--venue {
   padding-left: 1rem;
   padding-right: 1rem;
@@ -283,8 +301,17 @@
 .speaker + .speaker {
   margin-top: 4rem; }
 
+.speaker__name {
+  margin-bottom: 1rem; }
+
 .speaker__bio {
   margin-top: -1rem; }
+  @media only screen and (min-width: 800px) {
+    .speaker__bio {
+      font-size: 0.925rem; } }
+  @media only screen and (min-width: 1200px) {
+    .speaker__bio {
+      font-size: 0.85rem; } }
 
 .speaker__photo img {
   border-radius: 50%;

@@ -7,8 +7,11 @@
       %h2.body-section--event-header__city <span>Melbourne</span> <span>Australia</span>
       %h3.body-section--event-header__date 4-7 February 2015
     .tickets
-      %tito-button{event:"ruby-australia/rubyconf-au", releases:"herg0clnoma"} Buy your ticket
-      -# %a.button(href="https://ti.to/ruby-australia/rubyconf-au") Buy your ticket
+      - if Time.now.utc >= Time.gm(2014, 9, 19, 1, 0)
+        -# %tito-button{event:"ruby-australia/rubyconf-au"} Buy your ticket
+        %a.button(href="https://ti.to/ruby-australia/rubyconf-au") Buy your ticket
+      - else
+        .button Tickets available 10:00AM AEST 19th September.
 
 %section.site-nav
   %a(href="#venue") Venue

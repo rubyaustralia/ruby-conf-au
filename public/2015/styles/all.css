@@ -277,6 +277,21 @@
   margin-left: -1rem;
   margin-right: -1rem; }
 
+.body-section--previous-years {
+  color: white;
+  text-align: center;
+  padding: 2rem 0; }
+  .body-section--previous-years h2 {
+    opacity: .5;
+    margin-bottom: .5rem; }
+  .body-section--previous-years h2, .body-section--previous-years p {
+    font-family: "futura-pt", Futura, sans-serif;
+    font-size: 1rem;
+    text-transform: uppercase; }
+  .body-section--previous-years a {
+    margin-left: .25rem;
+    margin-right: .25rem; }
+
 .site-nav {
   background: #AB3030;
   padding: 1rem; }

@@ -157,3 +157,13 @@
   margin-left: -1rem;
   margin-right: -1rem;
 }
+
+
+.body-section--previous-years {
+  color: white;
+  text-align: center;
+  padding: 2rem 0;
+  h2 { opacity: .5; margin-bottom: .5rem; }
+  h2, p { font-family: $display-font; font-size: 1rem; text-transform: uppercase; }
+  a { margin-left: .25rem; margin-right: .25rem; }
+}

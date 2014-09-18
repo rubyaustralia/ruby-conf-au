@@ -1,9 +1,11 @@
 .grid {
   font-size: 0;
+  vertical-align: top;
 }
 
 .grid__cell {
   font-size: 1rem;
+  vertical-align: top;
 
   $gutter: 3%;
   $two-col-width: 100% / 2 - $gutter * (2 + 2-1);

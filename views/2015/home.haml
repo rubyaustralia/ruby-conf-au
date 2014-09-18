@@ -16,7 +16,7 @@
   %a(href="#schedule") Schedule
   %a(href="#workshops") Workshops
   %a(href="#sponsors") Sponsors
-  %a(href="#news") News
+  -# %a(href="#news") News
   %a(href="#contact") Contact
 
 #after-nav
@@ -25,47 +25,105 @@
   %h2 Venue
   %img.body-section__header-image{src:'/images/2015/deakin-edge.jpg'}
   %p All the conference sessions will be held at the amazing Deakin Edge theatre in Federation Square Melbourne CBD, 1 minute walk from Flinders St station.
-  %p <a href="" class="button">Directions</a>
+  %p <a href="https://goo.gl/maps/yE1eX" class="button">Directions</a>
 
 %section#speakers.body-section--content
   %h2 Speakers
   %div.grid
-    - 6.times do
-      %div.grid__cell.speaker
-        %h3.speaker__name Collis Ta’eed
-        %p.speaker__photo
-          %img(src="/images/2015/speakers/collistaeed.png" alt="Photo of Collis")
-        %div.speaker__bio
-          %p Collis is the CEO and co-founder of Australian startup Envato. A designer by trade, Collis is also an avid writer, entrepreneur and product guy. Together with his cofounders, Collis has bootstrapped Envato all the way to 250 staff and more than $200m paid out to designers and developers all around the world.
-        %ol.speaker__links
-          %li
-            %a(href="http://envato.com/" am-Speaker-Link) envato.com
-          %li
-            %a(href="https://twitter.com/collis" am-Speaker-Link) @collis
+    %div.grid__cell.speaker
+      %h3.speaker__name Collis Ta’eed
+      %p.speaker__photo
+        %img.speaker__photo__image(src="/images/2015/speakers/collistaeed.png" alt="Photo of Collis")
+      %div.speaker__bio
+        %p Collis is the CEO and co-founder of Australian startup Envato. A designer by trade, Collis is also an avid writer, entrepreneur and product guy. Together with his co-founders, Collis has bootstrapped Envato all the way to 250 staff and more than $200m paid out to designers and developers all around the world.
+      %ol.speaker__links
+        %li
+          %a(href="http://envato.com/") envato.com
+        %li
+          %a(href="https://twitter.com/collis") @collis
+    %div.grid__cell.speaker
+      %h3.speaker__name Linda Liukas
+      %p.speaker__photo
+        %img.speaker__photo__image(src="/images/2015/speakers/lindaliukas.png" alt="Photo of Linda")
+      %div.speaker__bio
+        %p Linda is the author and illustrator of Hello Ruby, a childrens picture book about the whimsical world of computers, as well as the founder of Rails Girls, a global movement to teach young women programming in over 220 cities. She loves Muji, Zelda Fitzgerald, software and sparkly things.
+      %ol.speaker__links
+        %li
+          %a(href="http://lindaliukas.fi/") lindaliukas.fi
+        %li
+          %a(href="https://twitter.com/lindaliukas") @lindaliukas
+    %div.grid__cell.speaker
+      %h3.speaker__name Tom Stuart
+      %p.speaker__photo
+        %img.speaker__photo__image(src="/images/2015/speakers/tomstuart.png" alt="Photo of Linda")
+      %div.speaker__bio
+        %p Tom is a computer scientist and programmer. He has lectured on optimising compilers at the University of Cambridge, co-organises the Ruby Manor conference, and is a member of the London Ruby User Group. His latest book, Understanding Computation, was published by O'Reilly in 2013.
+      %ol.speaker__links
+        %li
+          %a(href="http://lindaliukas.fi/") codon.com
+        %li
+          %a(href="https://twitter.com/tomstuart") @tomstuart
+    %div.grid__cell.speaker
+      %h3.speaker__name Rachel Myers
+      %p.speaker__photo
+        %img.speaker__photo__image(src="/images/2015/speakers/rachelmyers.png" alt="Photo of Rachel")
+      %div.speaker__bio
+        %p Rachel’s a developer at GitHub who loves Ruby, JavaScript, RailsBridge, and monitoring all the things!
+      %ol.speaker__links
+        %li
+          %a(href="https://twitter.com/rachelmyers") @rachelmyers
+    %div.grid__cell.speaker
+      %h3.speaker__name Steve Klabnik
+      %p.speaker__photo
+        %img.speaker__photo__image(src="/images/2015/speakers/steveklabnik.jpg" alt="Photo of Steve")
+      %div.speaker__bio
+        %p Steve has a voracious appetite for writing, reading, programming and philosophy. You can find his prints on a large number of Ruby gems—from Ruby on Rails to Hackety Hack—and suffers from what seems to be permanent jetlag.
+      %ol.speaker__links
+        %li
+          %a(href="http://steveklabnik.com") steveklabnik.com
+        %li
+          %a(href="https://twitter.com/steveklabnik") @steveklabnik
+    %div.grid__cell.speaker--more-to-come
+      %h3.speaker__name More to come
+      %p.speaker__photo
+        %span.speaker__photo__image
+          %span.speaker--more-to-come__question-mark ?
+      %div.speaker__bio
+        %p Keen to speak at RubyConf AU? We'd love you to submit a talk proposal!
+      %ol.speaker__links
+        %li
+          %a.small-button(href="http://cfp.rubyconf.org.au/") Submit a talk proposal
 
 %section#schedule.body-section--content
   %h2 Schedule
   %p Conference sessions are yet to be announced, but will be February 5 and 6.
   %p If you have a talk idea we’d love to hear it.
-  %p Check out weareallaweso.me and speaking.io for ideas, advice and inspiration for giving a talk.
+  %p Check out <a href="http://weareallaweso.me/">weareallaweso.me</a> and <a href="http://speaking.io">speaking.io</a> for ideas, advice and inspiration for giving a talk.
+  %p <a href="http://cfp.rubyconf.org.au/" class="button">Submit a talk proposal</a>
 
 %section#workshops.body-section--content
   %h2 Workshops
-  %p ...
+  %p Workshops will be on the 4th of February, and tickets will be separate from the conference sessions. Rails Girls will be one of the workshops, but the rest of the line-up is still to be announced.
+  %h3 Rails Girls Next
+  %p Join us and continue the learning you started at Rails Girls. Since you have Ruby installed already, we can jump right in!
+  %p We've organised three mentor-led tutorials that will help you dive deeper into the world of professional development with Ruby. Tutorials include a look at some of Ruby's more advanced features and syntax, building a Sinatra app and deploying it, test-driven development and more.
+  %p Lastly, you will gain a greater appreciation of development work procedures by pairing up to solve coding challenges and using Git for version control.
+  %p To read more check out <a href="https://twitter.com/railsgirlsau">@railsgirlsau</a>
 
 %section#sponsors.body-section--content
   %h2 Sponsors
-  %p ...
+  %p RubyConf AU Melbourne 2015 is made possible through the generous support of our sponsors. If your company is interested in sponsoring this conference, have a read of what's involved and then get in touch.
+  %p <a class="button" href="/2015/sponsorship">Sponsorship details</a>
 
-%section#news.body-section--content
-  %h2 News
-  %p ...
+-# %section#news.body-section--content
+-#   %h2 News
+-#   %p ...
 
-%section#contact.body-section--content
+%section.body-section--content
   %h2 Code of Conduct
-  %p ...
+  %p RubyConf Australia is run under the auspices of Ruby Australia. You can view their <a href="http://ruby.org.au/code-of-conduct.html">code of conduct</a> (which applies to this event) and <a href="/2015/policies">our anti-harrassment policy</a>. These rules must be followed by all attendees to all conference-related events.
 
-%section.body-section--event-footer
+%section#contact.body-section--event-footer
   %h2 Contact Us
   %h3 Send us an email
   %p.body-section--event-footer__links

@@ -27,9 +27,3 @@ a {
 button {
   @extend .button;
 }
-
-body {
-  @media only screen and (min-width: 900px) {
-    padding-top: 1rem;
-  }
-}

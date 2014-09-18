@@ -1,13 +1,10 @@
-%section#header
-  .row
-    %hgroup
-      %h1
-        %a{href: "/"}
-          <span class="rubyconf">RubyConf</span><span class="space"> </span><span class="rubyconf">AU</span><span class="space"> </span><span class="date">2015</span>
-      %h2
-        <span class="date">4-7 February 2015</span> <span class="city">Melbourne, Australia</span>
-      - if locals[:dates]
-        %p.dates Workshops <strong>Feb 4</strong><br>Main Conference <strong>Feb 5-6</strong><br>Special Events <strong>Feb 7</strong>
-      %h3
-        Tickets available 10:00AM AEST 19th September.
-        / %a(href="http://tickets.rubyconf.org.au") Get your ticket now
+.content-page--event-header
+  %a.skip-nav(href="#after-nav") Skip navigation
+
+  .body-section--event-header__inner
+    .body-section--event-header__event
+      %a(href="/2015") <span>RubyConf</span> <span>Australia</span> <span>2015</span>
+    .body-section--event-header__city <span>Melbourne</span> <span>Australia</span>
+    .body-section--event-header__date 4-7 February 2015
+
+#after-nav

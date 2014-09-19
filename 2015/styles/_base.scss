@@ -27,3 +27,9 @@ a {
 button {
   @extend .button;
 }
+
+/* Fix kerning of 2015 in Futura */
+.two-oh-one-five {
+  .oh  { letter-spacing: -.09em; }
+  .one { letter-spacing: -.13em; }
+}

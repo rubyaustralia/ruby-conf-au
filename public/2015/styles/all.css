@@ -4,7 +4,7 @@
   line-height: 1;
   font-family: "futura-pt", Futura, sans-serif;
   font-weight: 600;
-  color: inherit;
+  color: currentColor;
   text-transform: uppercase;
   background-color: transparent;
   border: 4px solid currentColor;
@@ -155,7 +155,7 @@
   font-size: 1rem;
   margin-top: 0;
   color: rgba(255, 255, 255, 0.8); }
-.body-section--event-header .body-section--event-header__event span, .content-page--event-header .body-section--event-header__event span, .body-section--event-header .body-section--event-header__city span, .content-page--event-header .body-section--event-header__city span, .body-section--event-header .body-section--event-header__date span, .content-page--event-header .body-section--event-header__date span {
+.body-section--event-header .body-section--event-header__event > span, .content-page--event-header .body-section--event-header__event > span, .body-section--event-header .body-section--event-header__city > span, .content-page--event-header .body-section--event-header__city > span, .body-section--event-header .body-section--event-header__date > span, .content-page--event-header .body-section--event-header__date > span {
   display: block; }
 .body-section--event-header .body-section--event-header__city, .content-page--event-header .body-section--event-header__city, .body-section--event-header .body-section--event-header__date, .content-page--event-header .body-section--event-header__date {
   font-family: inherit;
@@ -206,9 +206,9 @@
       margin-top: 2rem; }
     .body-section--event-header .body-section--event-header__date, .content-page--event-header .body-section--event-header__date {
       font-size: 1.5rem; }
-    .body-section--event-header .body-section--event-header__event span, .content-page--event-header .body-section--event-header__event span, .body-section--event-header .body-section--event-header__city span, .content-page--event-header .body-section--event-header__city span, .body-section--event-header .body-section--event-header__date span, .content-page--event-header .body-section--event-header__date span {
+    .body-section--event-header .body-section--event-header__event > span, .content-page--event-header .body-section--event-header__event > span, .body-section--event-header .body-section--event-header__city > span, .content-page--event-header .body-section--event-header__city > span, .body-section--event-header .body-section--event-header__date > span, .content-page--event-header .body-section--event-header__date > span {
       display: inline; }
-    .body-section--event-header .body-section--event-header__city span:first-child:after, .content-page--event-header .body-section--event-header__city span:first-child:after {
+    .body-section--event-header .body-section--event-header__city > span:first-child:after, .content-page--event-header .body-section--event-header__city > span:first-child:after {
       content: ', '; } }
 @media only screen and (min-width: 900px) and (min-height: 50rem) {
   .body-section--event-header .skip-nav, .content-page--event-header .skip-nav {
@@ -249,27 +249,20 @@
         margin-right: .5rem; } }
 
 .body-section--content {
-  padding-top: 0; }
-  .body-section--content h2 {
-    margin-top: 3rem; }
+  padding-bottom: 4rem; }
   .body-section--content:before {
     content: ' ';
     display: block;
     background: url(/images/2015/heart-separator.svg) center center no-repeat;
     width: 100%;
     padding-top: 32px;
-    padding-bottom: 32px;
-    position: relative;
-    top: -32px;
-    margin-bottom: -32px;
-    margin-left: auto;
-    margin-right: auto; }
-    @media only screen and (min-width: 700px) {
-      .body-section--content:before {
-        padding-bottom: 3rem; } }
+    margin-top: -32px;
+    margin-bottom: 3rem; }
 
-.body-section--venue h2 {
-  margin-bottom: 2rem; }
+.body-section--venue {
+  padding-bottom: 4rem; }
+  .body-section--venue h2 {
+    margin-bottom: 2rem; }
 
 .body-section__header-image {
   width: 100%;
@@ -322,12 +315,11 @@
     margin-bottom: 1rem; }
   .speaker .speaker__photo, .speaker--more-to-come .speaker__photo {
     margin-top: 1rem; }
+  .speaker:last-of-type, .speaker--more-to-come:last-of-type {
+    margin-bottom: 0; }
 
 .speaker__name {
   text-align: center; }
-
-.speaker__bio {
-  margin-top: -1rem; }
 
 @media only screen and (min-width: 800px) {
   .speaker__bio, .speaker__links {
@@ -433,3 +425,16 @@ a {
     outline: 1px dotted currentColor; }
   a:hover {
     text-decoration: underline; }
+
+/* Fix kerning of 2015 in Futura */
+.two-oh-one-five .oh {
+  letter-spacing: -.09em; }
+.two-oh-one-five .one {
+  letter-spacing: -.13em; }
+
+/* iOS Safari border doesnt pick up currentColor properly. Have to set explicitly */
+.body-section .button, .body-section--reversed .button, .body-section--event-header .button, .content-page--event-header .button, .body-section--event-footer .button, .body-section--content .button, .body-section--venue .button, .content-page__header .button, .body-section .small-button, .body-section--reversed .small-button, .body-section--event-header .small-button, .content-page--event-header .small-button, .body-section--event-footer .small-button, .body-section--content .small-button, .body-section--venue .small-button, .content-page__header .small-button, .body-section .site-nav a, .site-nav .body-section a, .body-section--reversed .site-nav a, .site-nav .body-section--reversed a, .body-section--event-header .site-nav a, .site-nav .body-section--event-header a, .content-page--event-header .site-nav a, .site-nav .content-page--event-header a, .body-section--event-footer .site-nav a, .site-nav .body-section--event-footer a, .body-section--content .site-nav a, .site-nav .body-section--content a, .body-section--venue .site-nav a, .site-nav .body-section--venue a, .content-page__header .site-nav a, .site-nav .content-page__header a, .body-section button, .body-section--reversed button, .body-section--event-header button, .content-page--event-header button, .body-section--event-footer button, .body-section--content button, .body-section--venue button, .content-page__header button {
+  border-color: #743C00; }
+
+.body-section--reversed .button, .body-section--event-header .button, .content-page--event-header .button, .body-section--event-footer .button, .body-section--reversed .small-button, .body-section--event-header .small-button, .content-page--event-header .small-button, .body-section--event-footer .small-button, .body-section--reversed .site-nav a, .site-nav .body-section--reversed a, .body-section--event-header .site-nav a, .site-nav .body-section--event-header a, .content-page--event-header .site-nav a, .site-nav .content-page--event-header a, .body-section--event-footer .site-nav a, .site-nav .body-section--event-footer a, .body-section--reversed button, .body-section--event-header button, .content-page--event-header button, .body-section--event-footer button {
+  border-color: white; }

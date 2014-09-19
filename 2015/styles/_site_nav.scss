@@ -1,5 +1,5 @@
 .site-nav {
-  background: $dark-reversed-background-color;
+  background: $blood-red;
   padding: 1rem;
   a {
     @extend .button;
@@ -15,12 +15,16 @@
     z-index: 1;
     text-align: center;
     padding: 0;
+    background: rgba($summer-fruits-red,.8);
+    border-bottom: 1px solid rgba(white, .1);
     a {
       display: inline;
       border: none;
       font-size: .75rem;
-      padding-left: .5rem;
-      padding-right: .5rem;
+      padding-left: .25rem;
+      padding-right: .25rem;
+      color: rgba(white, .9);
+      &:hover, &:active, &:focus { color: white; }
     }
   }
 }

@@ -8,8 +8,7 @@
       %h3.body-section--event-header__date 4-7 February 2015
     .tickets
       - if Time.now.utc >= Time.gm(2014, 9, 19, 1, 0)
-        -# %tito-button{event:"ruby-australia/rubyconf-au"} Buy your ticket
-        %a.button(href="http://tickets.rubyconf.org.au") Buy your ticket
+        %tito-button{event:"ruby-australia/rubyconf-au"} Buy your ticket
       - else
         .button Tickets available 11:00AM AEST 19th September.
 

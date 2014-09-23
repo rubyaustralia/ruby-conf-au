@@ -58,9 +58,10 @@
 
   .body-section--event-header__event { font-size: 2.5rem; font-family: $display-font; text-transform: uppercase; }
   .body-section--event-header__city { font-size: 1.5rem; margin-bottom: 0; }
-  .body-section--event-header__date { font-size: 1rem; margin-top: 0; color: $reversed-faded-text-color; }
+  .body-section--event-header__date { font-size: 1rem; margin-top: 1rem; margin-bottom: 1.5rem; color: $reversed-faded-text-color; }
   .body-section--event-header__event, .body-section--event-header__city, .body-section--event-header__date { > span { display: block; } }
-  .body-section--event-header__city, .body-section--event-header__date { font-family: inherit; line-height: inherit; text-transform: inherit; font-weight: inherit; }
+  .body-section--event-header__city, .body-section--event-header__date { font-family: inherit; line-height: 1; text-transform: inherit; font-weight: inherit; }
+  .body-section--event-header__tickets { margin-top: 1.5rem; }
   .skip-nav {
     width: 63px;
     height: 48px;

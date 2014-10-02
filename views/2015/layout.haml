@@ -16,6 +16,7 @@
     %script{src:"https://js.tito.io/v1?v2", async: true}
   %body
     != yield
+
     %section#contact.body-section--event-footer
       %h2 Contact Us
       %h3 Send us an email
@@ -31,8 +32,13 @@
       %h3 Mailing List
       %p.body-section--event-footer__links
         %a(href="https://confirmsubscription.com/h/j/F0AA131FF2C0F0B0") Join the mailing list
+
     %section#contact.body-section--previous-years
       %h2 Previous Years
       %ul
         %li <a href="/2013">2013</a>
         %li <a href="/2014">2014</a>
+
+    - # Fix for iOS vh/vw units
+    %script(src="/2015/javascripts/viewport-units-buggyfill.js")
+    %script window.viewportUnitsBuggyfill.init();

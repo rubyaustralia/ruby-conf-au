@@ -56,6 +56,7 @@ end
 
 get '/2015' do
   @title = :home
+  @speaker = %w( keithpitty.jpg ).sample
   haml :"2015/home", :layout => :"2015/layout"
 end
 

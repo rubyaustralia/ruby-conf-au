@@ -22,7 +22,7 @@
     @media only screen and (min-width: 900px) { font-size: 3rem; margin-bottom: 3rem; }
   }
 
-  hgroup, h3, p {
+  hgroup, h3, p, ul {
     margin-top: 1rem;
     margin-bottom: 1rem;
     margin-left: auto;
@@ -33,8 +33,12 @@
     &:last-child  { margin-bottom: 0; }
   }
 
-  p {
+  p, ul {
     max-width: 30rem;
+  }
+
+  li {
+    list-style-type: circle;
   }
 }
 
@@ -125,6 +129,12 @@
   }
 }
 
+.body-section--attending {
+  @extend .body-section;
+  padding-top: 3rem;
+  padding-bottom: 4rem;
+}
+
 .body-section--content {
   @extend .body-section;
   padding-bottom: 4rem;
@@ -145,9 +155,18 @@
 
 .body-section--venue {
   @extend .body-section;
-  padding-top: 3rem;
   padding-bottom: 4rem;
   h2 { margin-bottom: 2rem; }
+
+  &:before {
+    content: ' ';
+    display: block;
+    background: url(/images/2015/heart-separator.svg) center center no-repeat;
+    width: 100%;
+    padding-top: 32px;
+    margin-top: -32px;
+    margin-bottom: 3rem;
+  }
 }
 
 .body-section__header-image {

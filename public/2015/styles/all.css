@@ -53,7 +53,7 @@
       margin-left: 3%;
       margin-right: 3%; } }
 
-.body-section, .body-section--reversed, .body-section--event-header, .content-page--event-header, .body-section--event-footer, .body-section--content, .body-section--venue, .content-page__header {
+.body-section, .body-section--reversed, .body-section--event-header, .content-page--event-header, .body-section--event-footer, .body-section--attending, .body-section--content, .body-section--venue, .content-page__header {
   padding-left: 1rem;
   padding-right: 1rem;
   padding-top: 1.5rem;
@@ -62,62 +62,64 @@
   color: #743C00;
   text-align: center; }
   @media only screen and (min-width: 500px) {
-    .body-section, .body-section--reversed, .body-section--event-header, .content-page--event-header, .body-section--event-footer, .body-section--content, .body-section--venue, .content-page__header {
+    .body-section, .body-section--reversed, .body-section--event-header, .content-page--event-header, .body-section--event-footer, .body-section--attending, .body-section--content, .body-section--venue, .content-page__header {
       padding-top: 2rem;
       padding-bottom: 2rem; } }
   @media only screen and (min-width: 700px) {
-    .body-section, .body-section--reversed, .body-section--event-header, .content-page--event-header, .body-section--event-footer, .body-section--content, .body-section--venue, .content-page__header {
+    .body-section, .body-section--reversed, .body-section--event-header, .content-page--event-header, .body-section--event-footer, .body-section--attending, .body-section--content, .body-section--venue, .content-page__header {
       padding-top: 2rem;
       padding-bottom: 3rem; } }
   @media only screen and (min-width: 900px) {
-    .body-section, .body-section--reversed, .body-section--event-header, .content-page--event-header, .body-section--event-footer, .body-section--content, .body-section--venue, .content-page__header {
+    .body-section, .body-section--reversed, .body-section--event-header, .content-page--event-header, .body-section--event-footer, .body-section--attending, .body-section--content, .body-section--venue, .content-page__header {
       padding-top: 2rem;
       padding-bottom: 5rem; } }
-  .body-section h1, .body-section--reversed h1, .body-section--event-header h1, .content-page--event-header h1, .body-section--event-footer h1, .body-section--content h1, .body-section--venue h1, .content-page__header h1 {
+  .body-section h1, .body-section--reversed h1, .body-section--event-header h1, .content-page--event-header h1, .body-section--event-footer h1, .body-section--attending h1, .body-section--content h1, .body-section--venue h1, .content-page__header h1 {
     font-size: 2rem;
     font-weight: 800;
     line-height: 1.1; }
-  .body-section h2, .body-section--reversed h2, .body-section--event-header h2, .content-page--event-header h2, .body-section--event-footer h2, .body-section--content h2, .body-section--venue h2, .content-page__header h2 {
+  .body-section h2, .body-section--reversed h2, .body-section--event-header h2, .content-page--event-header h2, .body-section--event-footer h2, .body-section--attending h2, .body-section--content h2, .body-section--venue h2, .content-page__header h2 {
     font-size: 2rem;
     font-weight: 800;
     line-height: 1.1;
     margin-bottom: 1rem; }
-  .body-section h3, .body-section--reversed h3, .body-section--event-header h3, .content-page--event-header h3, .body-section--event-footer h3, .body-section--content h3, .body-section--venue h3, .content-page__header h3 {
+  .body-section h3, .body-section--reversed h3, .body-section--event-header h3, .content-page--event-header h3, .body-section--event-footer h3, .body-section--attending h3, .body-section--content h3, .body-section--venue h3, .content-page__header h3 {
     font-size: 1.5rem;
     font-weight: 800;
     line-height: 1.1; }
-  .body-section h2, .body-section--reversed h2, .body-section--event-header h2, .content-page--event-header h2, .body-section--event-footer h2, .body-section--content h2, .body-section--venue h2, .content-page__header h2 {
+  .body-section h2, .body-section--reversed h2, .body-section--event-header h2, .content-page--event-header h2, .body-section--event-footer h2, .body-section--attending h2, .body-section--content h2, .body-section--venue h2, .content-page__header h2 {
     /* Always the same as the container padding */ }
     @media only screen and (min-width: 500px) {
-      .body-section h2, .body-section--reversed h2, .body-section--event-header h2, .content-page--event-header h2, .body-section--event-footer h2, .body-section--content h2, .body-section--venue h2, .content-page__header h2 {
+      .body-section h2, .body-section--reversed h2, .body-section--event-header h2, .content-page--event-header h2, .body-section--event-footer h2, .body-section--attending h2, .body-section--content h2, .body-section--venue h2, .content-page__header h2 {
         margin-bottom: 2rem; } }
     @media only screen and (min-width: 700px) {
-      .body-section h2, .body-section--reversed h2, .body-section--event-header h2, .content-page--event-header h2, .body-section--event-footer h2, .body-section--content h2, .body-section--venue h2, .content-page__header h2 {
+      .body-section h2, .body-section--reversed h2, .body-section--event-header h2, .content-page--event-header h2, .body-section--event-footer h2, .body-section--attending h2, .body-section--content h2, .body-section--venue h2, .content-page__header h2 {
         font-size: 2.5rem;
         margin-bottom: 3rem; } }
     @media only screen and (min-width: 900px) {
-      .body-section h2, .body-section--reversed h2, .body-section--event-header h2, .content-page--event-header h2, .body-section--event-footer h2, .body-section--content h2, .body-section--venue h2, .content-page__header h2 {
+      .body-section h2, .body-section--reversed h2, .body-section--event-header h2, .content-page--event-header h2, .body-section--event-footer h2, .body-section--attending h2, .body-section--content h2, .body-section--venue h2, .content-page__header h2 {
         font-size: 3rem;
         margin-bottom: 3rem; } }
-  .body-section hgroup, .body-section--reversed hgroup, .body-section--event-header hgroup, .content-page--event-header hgroup, .body-section--event-footer hgroup, .body-section--content hgroup, .body-section--venue hgroup, .content-page__header hgroup, .body-section h3, .body-section--reversed h3, .body-section--event-header h3, .content-page--event-header h3, .body-section--event-footer h3, .body-section--content h3, .body-section--venue h3, .content-page__header h3, .body-section p, .body-section--reversed p, .body-section--event-header p, .content-page--event-header p, .body-section--event-footer p, .body-section--content p, .body-section--venue p, .content-page__header p {
+  .body-section hgroup, .body-section--reversed hgroup, .body-section--event-header hgroup, .content-page--event-header hgroup, .body-section--event-footer hgroup, .body-section--attending hgroup, .body-section--content hgroup, .body-section--venue hgroup, .content-page__header hgroup, .body-section h3, .body-section--reversed h3, .body-section--event-header h3, .content-page--event-header h3, .body-section--event-footer h3, .body-section--attending h3, .body-section--content h3, .body-section--venue h3, .content-page__header h3, .body-section p, .body-section--reversed p, .body-section--event-header p, .content-page--event-header p, .body-section--event-footer p, .body-section--attending p, .body-section--content p, .body-section--venue p, .content-page__header p, .body-section ul, .body-section--reversed ul, .body-section--event-header ul, .content-page--event-header ul, .body-section--event-footer ul, .body-section--attending ul, .body-section--content ul, .body-section--venue ul, .content-page__header ul {
     margin-top: 1rem;
     margin-bottom: 1rem;
     margin-left: auto;
     margin-right: auto; }
     @media only screen and (min-width: 500px) {
-      .body-section hgroup, .body-section--reversed hgroup, .body-section--event-header hgroup, .content-page--event-header hgroup, .body-section--event-footer hgroup, .body-section--content hgroup, .body-section--venue hgroup, .content-page__header hgroup, .body-section h3, .body-section--reversed h3, .body-section--event-header h3, .content-page--event-header h3, .body-section--event-footer h3, .body-section--content h3, .body-section--venue h3, .content-page__header h3, .body-section p, .body-section--reversed p, .body-section--event-header p, .content-page--event-header p, .body-section--event-footer p, .body-section--content p, .body-section--venue p, .content-page__header p {
+      .body-section hgroup, .body-section--reversed hgroup, .body-section--event-header hgroup, .content-page--event-header hgroup, .body-section--event-footer hgroup, .body-section--attending hgroup, .body-section--content hgroup, .body-section--venue hgroup, .content-page__header hgroup, .body-section h3, .body-section--reversed h3, .body-section--event-header h3, .content-page--event-header h3, .body-section--event-footer h3, .body-section--attending h3, .body-section--content h3, .body-section--venue h3, .content-page__header h3, .body-section p, .body-section--reversed p, .body-section--event-header p, .content-page--event-header p, .body-section--event-footer p, .body-section--attending p, .body-section--content p, .body-section--venue p, .content-page__header p, .body-section ul, .body-section--reversed ul, .body-section--event-header ul, .content-page--event-header ul, .body-section--event-footer ul, .body-section--attending ul, .body-section--content ul, .body-section--venue ul, .content-page__header ul {
         margin-top: 1.5rem;
         margin-bottom: 1.5rem; } }
     @media only screen and (min-width: 700px) {
-      .body-section hgroup, .body-section--reversed hgroup, .body-section--event-header hgroup, .content-page--event-header hgroup, .body-section--event-footer hgroup, .body-section--content hgroup, .body-section--venue hgroup, .content-page__header hgroup, .body-section h3, .body-section--reversed h3, .body-section--event-header h3, .content-page--event-header h3, .body-section--event-footer h3, .body-section--content h3, .body-section--venue h3, .content-page__header h3, .body-section p, .body-section--reversed p, .body-section--event-header p, .content-page--event-header p, .body-section--event-footer p, .body-section--content p, .body-section--venue p, .content-page__header p {
+      .body-section hgroup, .body-section--reversed hgroup, .body-section--event-header hgroup, .content-page--event-header hgroup, .body-section--event-footer hgroup, .body-section--attending hgroup, .body-section--content hgroup, .body-section--venue hgroup, .content-page__header hgroup, .body-section h3, .body-section--reversed h3, .body-section--event-header h3, .content-page--event-header h3, .body-section--event-footer h3, .body-section--attending h3, .body-section--content h3, .body-section--venue h3, .content-page__header h3, .body-section p, .body-section--reversed p, .body-section--event-header p, .content-page--event-header p, .body-section--event-footer p, .body-section--attending p, .body-section--content p, .body-section--venue p, .content-page__header p, .body-section ul, .body-section--reversed ul, .body-section--event-header ul, .content-page--event-header ul, .body-section--event-footer ul, .body-section--attending ul, .body-section--content ul, .body-section--venue ul, .content-page__header ul {
         margin-top: 2rem;
         margin-bottom: 2rem; } }
-    .body-section hgroup:first-child, .body-section--reversed hgroup:first-child, .body-section--event-header hgroup:first-child, .content-page--event-header hgroup:first-child, .body-section--event-footer hgroup:first-child, .body-section--content hgroup:first-child, .body-section--venue hgroup:first-child, .content-page__header hgroup:first-child, .body-section h3:first-child, .body-section--reversed h3:first-child, .body-section--event-header h3:first-child, .content-page--event-header h3:first-child, .body-section--event-footer h3:first-child, .body-section--content h3:first-child, .body-section--venue h3:first-child, .content-page__header h3:first-child, .body-section p:first-child, .body-section--reversed p:first-child, .body-section--event-header p:first-child, .content-page--event-header p:first-child, .body-section--event-footer p:first-child, .body-section--content p:first-child, .body-section--venue p:first-child, .content-page__header p:first-child {
+    .body-section hgroup:first-child, .body-section--reversed hgroup:first-child, .body-section--event-header hgroup:first-child, .content-page--event-header hgroup:first-child, .body-section--event-footer hgroup:first-child, .body-section--attending hgroup:first-child, .body-section--content hgroup:first-child, .body-section--venue hgroup:first-child, .content-page__header hgroup:first-child, .body-section h3:first-child, .body-section--reversed h3:first-child, .body-section--event-header h3:first-child, .content-page--event-header h3:first-child, .body-section--event-footer h3:first-child, .body-section--attending h3:first-child, .body-section--content h3:first-child, .body-section--venue h3:first-child, .content-page__header h3:first-child, .body-section p:first-child, .body-section--reversed p:first-child, .body-section--event-header p:first-child, .content-page--event-header p:first-child, .body-section--event-footer p:first-child, .body-section--attending p:first-child, .body-section--content p:first-child, .body-section--venue p:first-child, .content-page__header p:first-child, .body-section ul:first-child, .body-section--reversed ul:first-child, .body-section--event-header ul:first-child, .content-page--event-header ul:first-child, .body-section--event-footer ul:first-child, .body-section--attending ul:first-child, .body-section--content ul:first-child, .body-section--venue ul:first-child, .content-page__header ul:first-child {
       margin-top: 0; }
-    .body-section hgroup:last-child, .body-section--reversed hgroup:last-child, .body-section--event-header hgroup:last-child, .content-page--event-header hgroup:last-child, .body-section--event-footer hgroup:last-child, .body-section--content hgroup:last-child, .body-section--venue hgroup:last-child, .content-page__header hgroup:last-child, .body-section h3:last-child, .body-section--reversed h3:last-child, .body-section--event-header h3:last-child, .content-page--event-header h3:last-child, .body-section--event-footer h3:last-child, .body-section--content h3:last-child, .body-section--venue h3:last-child, .content-page__header h3:last-child, .body-section p:last-child, .body-section--reversed p:last-child, .body-section--event-header p:last-child, .content-page--event-header p:last-child, .body-section--event-footer p:last-child, .body-section--content p:last-child, .body-section--venue p:last-child, .content-page__header p:last-child {
+    .body-section hgroup:last-child, .body-section--reversed hgroup:last-child, .body-section--event-header hgroup:last-child, .content-page--event-header hgroup:last-child, .body-section--event-footer hgroup:last-child, .body-section--attending hgroup:last-child, .body-section--content hgroup:last-child, .body-section--venue hgroup:last-child, .content-page__header hgroup:last-child, .body-section h3:last-child, .body-section--reversed h3:last-child, .body-section--event-header h3:last-child, .content-page--event-header h3:last-child, .body-section--event-footer h3:last-child, .body-section--attending h3:last-child, .body-section--content h3:last-child, .body-section--venue h3:last-child, .content-page__header h3:last-child, .body-section p:last-child, .body-section--reversed p:last-child, .body-section--event-header p:last-child, .content-page--event-header p:last-child, .body-section--event-footer p:last-child, .body-section--attending p:last-child, .body-section--content p:last-child, .body-section--venue p:last-child, .content-page__header p:last-child, .body-section ul:last-child, .body-section--reversed ul:last-child, .body-section--event-header ul:last-child, .content-page--event-header ul:last-child, .body-section--event-footer ul:last-child, .body-section--attending ul:last-child, .body-section--content ul:last-child, .body-section--venue ul:last-child, .content-page__header ul:last-child {
       margin-bottom: 0; }
-  .body-section p, .body-section--reversed p, .body-section--event-header p, .content-page--event-header p, .body-section--event-footer p, .body-section--content p, .body-section--venue p, .content-page__header p {
+  .body-section p, .body-section--reversed p, .body-section--event-header p, .content-page--event-header p, .body-section--event-footer p, .body-section--attending p, .body-section--content p, .body-section--venue p, .content-page__header p, .body-section ul, .body-section--reversed ul, .body-section--event-header ul, .content-page--event-header ul, .body-section--event-footer ul, .body-section--attending ul, .body-section--content ul, .body-section--venue ul, .content-page__header ul {
     max-width: 30rem; }
+  .body-section li, .body-section--reversed li, .body-section--event-header li, .content-page--event-header li, .body-section--event-footer li, .body-section--attending li, .body-section--content li, .body-section--venue li, .content-page__header li {
+    list-style-type: circle; }
 
 .body-section--reversed, .body-section--event-header, .content-page--event-header, .body-section--event-footer {
   background: #E74141;
@@ -248,6 +250,10 @@
         margin-left: .5rem;
         margin-right: .5rem; } }
 
+.body-section--attending {
+  padding-top: 3rem;
+  padding-bottom: 4rem; }
+
 .body-section--content {
   padding-bottom: 4rem; }
   .body-section--content:before {
@@ -262,10 +268,17 @@
     width: 100%; }
 
 .body-section--venue {
-  padding-top: 3rem;
   padding-bottom: 4rem; }
   .body-section--venue h2 {
     margin-bottom: 2rem; }
+  .body-section--venue:before {
+    content: ' ';
+    display: block;
+    background: url(/images/2015/heart-separator.svg) center center no-repeat;
+    width: 100%;
+    padding-top: 32px;
+    margin-top: -32px;
+    margin-bottom: 3rem; }
 
 .body-section__header-image {
   width: 100%;
@@ -449,7 +462,7 @@ a {
   letter-spacing: -.13em; }
 
 /* iOS Safari border doesnt pick up currentColor properly. Have to set explicitly */
-.body-section .button, .body-section--reversed .button, .body-section--event-header .button, .content-page--event-header .button, .body-section--event-footer .button, .body-section--content .button, .body-section--venue .button, .content-page__header .button, .body-section .small-button, .body-section--reversed .small-button, .body-section--event-header .small-button, .content-page--event-header .small-button, .body-section--event-footer .small-button, .body-section--content .small-button, .body-section--venue .small-button, .content-page__header .small-button, .body-section .site-nav a, .site-nav .body-section a, .body-section--reversed .site-nav a, .site-nav .body-section--reversed a, .body-section--event-header .site-nav a, .site-nav .body-section--event-header a, .content-page--event-header .site-nav a, .site-nav .content-page--event-header a, .body-section--event-footer .site-nav a, .site-nav .body-section--event-footer a, .body-section--content .site-nav a, .site-nav .body-section--content a, .body-section--venue .site-nav a, .site-nav .body-section--venue a, .content-page__header .site-nav a, .site-nav .content-page__header a, .body-section button, .body-section--reversed button, .body-section--event-header button, .content-page--event-header button, .body-section--event-footer button, .body-section--content button, .body-section--venue button, .content-page__header button {
+.body-section .button, .body-section--reversed .button, .body-section--event-header .button, .content-page--event-header .button, .body-section--event-footer .button, .body-section--attending .button, .body-section--content .button, .body-section--venue .button, .content-page__header .button, .body-section .small-button, .body-section--reversed .small-button, .body-section--event-header .small-button, .content-page--event-header .small-button, .body-section--event-footer .small-button, .body-section--attending .small-button, .body-section--content .small-button, .body-section--venue .small-button, .content-page__header .small-button, .body-section .site-nav a, .site-nav .body-section a, .body-section--reversed .site-nav a, .site-nav .body-section--reversed a, .body-section--event-header .site-nav a, .site-nav .body-section--event-header a, .content-page--event-header .site-nav a, .site-nav .content-page--event-header a, .body-section--event-footer .site-nav a, .site-nav .body-section--event-footer a, .body-section--attending .site-nav a, .site-nav .body-section--attending a, .body-section--content .site-nav a, .site-nav .body-section--content a, .body-section--venue .site-nav a, .site-nav .body-section--venue a, .content-page__header .site-nav a, .site-nav .content-page__header a, .body-section button, .body-section--reversed button, .body-section--event-header button, .content-page--event-header button, .body-section--event-footer button, .body-section--attending button, .body-section--content button, .body-section--venue button, .content-page__header button {
   border-color: #743C00; }
 
 .body-section--reversed .button, .body-section--event-header .button, .content-page--event-header .button, .body-section--event-footer .button, .body-section--reversed .small-button, .body-section--event-header .small-button, .content-page--event-header .small-button, .body-section--event-footer .small-button, .body-section--reversed .site-nav a, .site-nav .body-section--reversed a, .body-section--event-header .site-nav a, .site-nav .body-section--event-header a, .content-page--event-header .site-nav a, .site-nav .content-page--event-header a, .body-section--event-footer .site-nav a, .site-nav .body-section--event-footer a, .body-section--reversed button, .body-section--event-header button, .content-page--event-header button, .body-section--event-footer button {

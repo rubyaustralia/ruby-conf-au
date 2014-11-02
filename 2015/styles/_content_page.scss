@@ -4,6 +4,14 @@
   h1 { font-size: 3rem; }
 }
 
+.content-page__header--accessibility h1 {
+  @media (max-width: 400px) { font-size: 1.6rem; }
+}
+
+.content-page__header--accommodation h1 {
+  @media (max-width: 400px) { font-size: 1.6rem; }
+}
+
 .content-page--event-header {
   @extend .body-section--event-header;
   min-height: 0;

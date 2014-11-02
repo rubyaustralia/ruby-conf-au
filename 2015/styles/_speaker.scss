@@ -13,8 +13,8 @@
 }
 
 .speaker__bio, .speaker__links {
-  @media only screen and (min-width: 800px)  { font-size: 1rem * .925; }
-  @media only screen and (min-width: 1200px) { font-size: 1rem * .85; }
+  @media (min-width: 800px)  { font-size: 1rem * .925; }
+  @media (min-width: 1200px) { font-size: 1rem * .85; }
 }
 
 .speaker__photo {

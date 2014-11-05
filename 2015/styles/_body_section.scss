@@ -96,7 +96,8 @@
     .body-section--event-header__event, .body-section--event-header__city, .body-section--event-header__date { > span { display: inline; } }
     .body-section--event-header__city > span:first-child:after { content: ', '; }
   }
-  @media (min-width: 900px) and (min-height: 50rem) {
+  @media (min-width: 900px) and (min-height: 30rem) {
+    padding-top: 15vh;
     .skip-nav {
       opacity: 1;
       animation-play-state: running;

@@ -170,6 +170,17 @@
   }
 }
 
+.body-section--sponsors {
+  @extend .body-section--content;
+  h3 { margin-bottom: 1rem; }
+  .sponsors__sponsor {
+    display: inline-block;
+    padding: 1rem .5rem;
+    img { width: 100%; max-width: 250px; vertical-align: middle; filter: brightness(140%) sepia(90%) hue-rotate(-10deg); }
+  }
+  .sponsors__sponsor--jobready img { max-width: 200px; }
+}
+
 .body-section__header-image {
   width: 100%;
   opacity: .6;

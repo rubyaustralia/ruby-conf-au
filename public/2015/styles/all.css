@@ -353,13 +353,13 @@
         .site-nav a:hover, .site-nav a:active, .site-nav a:focus {
           color: white; } }
 
-.speaker, .speaker--more-to-come {
+.speaker, .speaker--more-to-come, .speaker--and-more {
   margin-bottom: 3rem; }
-  .speaker .speaker__name, .speaker--more-to-come .speaker__name {
+  .speaker .speaker__name, .speaker--more-to-come .speaker__name, .speaker--and-more .speaker__name {
     margin-bottom: 1rem; }
-  .speaker .speaker__photo, .speaker--more-to-come .speaker__photo {
+  .speaker .speaker__photo, .speaker--more-to-come .speaker__photo, .speaker--and-more .speaker__photo {
     margin-top: 1rem; }
-  .speaker:last-of-type, .speaker--more-to-come:last-of-type {
+  .speaker:last-of-type, .speaker--more-to-come:last-of-type, .speaker--and-more:last-of-type {
     margin-bottom: 0; }
 
 .speaker__name {
@@ -410,6 +410,16 @@
   margin-top: -.6em;
   left: 0;
   width: 100%; }
+
+.speaker--and-more {
+  text-align: center; }
+  .speaker--and-more .speaker__photo__image {
+    background-color: #ccc;
+    vertical-align: middle;
+    font-size: 48px;
+    opacity: .3; }
+  .speaker--and-more .speaker__links {
+    text-align: center; }
 
 .content-page__header {
   padding: 4rem 0 3rem 0; }

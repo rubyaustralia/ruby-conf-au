@@ -24,6 +24,11 @@ helpers do
   end
 end
 
+# Haml file-not-found exception bubbling up from the depths.
+error Errno::ENOENT do
+  halt(404)
+end
+
 # 2013
 
 get '/2013/?' do

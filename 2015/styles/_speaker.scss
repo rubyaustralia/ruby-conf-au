@@ -45,3 +45,10 @@
   left: 0;
   width: 100%;
 }
+
+.speaker--and-more {
+  @extend .speaker;
+  text-align: center;
+  .speaker__photo__image { background-color: #ccc; vertical-align: middle; font-size: 48px; opacity: .3; }
+  .speaker__links { text-align: center; }
+}

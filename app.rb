@@ -62,7 +62,7 @@ end
 get '/2015' do
   @title = :home
   @speaker = %w( keithpitty.jpg laurenvoswinkel.jpg philiparndt.jpg konstantingredeskoul.png johndalton.jpg shevauncoker.jpg seanmarcia.jpg josspaling.jpg erikmichaelsober.jpg johnbarton.jpg ).sample
-    # scottfeinberg.jpg sabrinaleandro.jpg ).sample
+    # scottfeinberg.jpg sabrinaleandro.jpg amywibowo.jpg ).sample
   haml :"2015/home", :layout => :"2015/layout"
 end
 

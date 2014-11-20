@@ -142,7 +142,53 @@
 
 %section#workshops.body-section--content
   %h2 Workshops
-  %p Workshops will be on the 4th of February, and tickets will be separate from the conference sessions. Rails Girls will be one of the workshops, but the rest of the line-up is still to be announced.
+
+  %div.grid
+    %div.grid__cell.speaker#paoloperrotta
+      %h3.speaker__name Paolo Perrotta
+      %p.speaker__photo
+        %img.speaker__photo__image(src="/images/2015/speakers/paoloperrotta.jpg" alt="Photo of Paolo")
+      %div.speaker__bio
+        %p Paolo "Nusco" Perrotta is the author of Metaprogramming Ruby. He has fifteen years of experience as a developer, ranging from embedded to enterprise software, computer games, and web applications. Paolo lives a nomadic life, mentoring agile teams throughout Europe. He has a base camp in Bologna, Italy. He loves Ruby.
+      %ol.speaker__links
+        %li
+          %a(href="http://lanyrd.com/2015/rubyconf-au/sdgqxp/") Workshop: Crash Into Ruby
+        %li
+          %a(href="http://ducktypo.blogspot.com") ducktypo.blogspot.com
+        %li
+          %a(href="https://twitter.com/nusco") @nusco
+    / %div.grid__cell.speaker#jonrowe
+    /   %h3.speaker__name Jon Rowe
+    /   %p.speaker__photo
+    /     %img.speaker__photo__image(src="/images/2015/speakers/jonrowe.jpg" alt="Photo of Jon")
+    /   %div.speaker__bio
+    /     %p Tinker. Sailor. Developer. Spy? Originally from a tiny cold island nation, Britain, Jon now lives in Sydney where he spends time sailing the high seas, plotting and working as a gun for hire, I mean freelance Ruby developer. When not working on client work you can find Jon hacking on RSpec (as a core team member), helping other open source projects and working on his own little side project(s).
+    /   %ol.speaker__links
+    /     %li
+    /       %a(href="http://lanyrd.com/2015/rubyconf-au/") Workshop: RSpec++
+    /     %li
+    /       %a(href="http://jonrowe.co.uk") jonrowe.co.uk
+    /     %li
+    /       %a(href="https://twitter.com/JonRowe") @JonRowe
+    / %div.grid__cell.speaker#christophephilemotte
+    /   %h3.speaker__name Christophe Philemotte
+    /   %p.speaker__photo
+    /     %img.speaker__photo__image(src="/images/2015/speakers/christophephilemotte.jpg" alt="Photo of Christophe")
+    /   %div.speaker__bio
+    /     %p Christophe is the founder of PullReview, an automated code review for Ruby and Rails developers. He is a Ruby and C++ developer. When he's not code disease simulators or PullReview, Christophe helps others with development challenges, writes at the PullReview blog, (co)organises several Belgian Ruby events (Belgian Ruby User Group, Ruby Burgers, Rails Girls Brussels), and likes to talk at conferences and user groups.
+    /   %ol.speaker__links
+    /     %li
+    /       %a(href="http://lanyrd.com/2015/rubyconf-au/") Workshop: Static Analysis Driven Refactoring
+    /     %li
+    /       %a(href="https://about.me/toch") about.me/toch
+    /     %li
+    /       %a(href="https://twitter.com/_toch") @_toch
+
+  %p The workshops will be all-day sessions on the 4th of February (so, you can't attend more than one), and tickets are separate from the conference sessions (and will be released soon).
+
+  / %tito-button{event:"ruby-australia/rubyconf-au-2015-workshops"} Buy workshop tickets
+
+  %p Alongside these three workshops, we will also be running a Rails Girls event.
 
   %h3 Rails Girls Next
   %p Join us and continue the learning you started at Rails Girls. Since you have Ruby installed already, we can jump right in!

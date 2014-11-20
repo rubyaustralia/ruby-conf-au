@@ -36,6 +36,7 @@
   vertical-align: top; }
 
 .grid__cell {
+  display: block;
   font-size: 1rem;
   vertical-align: top; }
   @media (min-width: 800px) {
@@ -463,14 +464,81 @@
   margin-top: 75px; }
 
 .event-grid__day {
-  height: 10em;
-  background-color: #743C00;
+  position: relative;
+  height: 12em;
   margin-bottom: 2rem;
   text-align: center;
-  padding: 2rem;
-  color: white; }
+  padding: 1rem 2rem;
+  color: white;
+  background-color: #743C00;
+  background-size: cover;
+  background-blend-mode: multiply;
+  background-position: center center;
+  -webkit-transition: all 200ms;
+          transition: all 200ms; }
+  .event-grid__day h3 {
+    font-size: 1.65rem;
+    font-weight: 400;
+    line-height: 1.1;
+    margin: 0; }
   .event-grid__day p {
-    font-size: .9rem; }
+    font-size: .9rem;
+    margin: 0;
+    margin-top: 10px;
+    color: #ed6e6e; }
+    .event-grid__day p, .event-grid__day p sup {
+      font-weight: bold; }
+  .event-grid__day:hover {
+    opacity: 1;
+    text-decoration: none;
+    background-color: #8e4900; }
+
+.event-grid__day--party {
+  background-image: url("/images/2015/events/trunk-town.jpg"); }
+
+.event-grid__day--by-night {
+  background-image: url("/images/2015/events/rooftop-cinema.jpg"); }
+
+.event-grid__day--fri-dinner {
+  background-image: url("/images/2015/events/hutong.jpg"); }
+
+.event-grid__day--healesville {
+  background-image: url("/images/2015/events/healesville.jpg"); }
+
+.event-grid__day--bike {
+  background-image: url("/images/2015/events/bike-ride.jpg"); }
+
+.event-grid__day--city-tour {
+  background-image: url("/images/2015/events/city-tour.jpg"); }
+
+.event-grid__day--hack-day {
+  background-image: url("/images/2015/events/hack-day.jpg"); }
+
+.event-grid__day--picnic {
+  background-image: url("/images/2015/events/picnic.jpg"); }
+
+.event-grid__day--after-party {
+  background-image: url("/images/2015/events/after-party.jpg"); }
+
+.event-grid__day__inner {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100%; }
 
 * {
   -moz-box-sizing: border-box;

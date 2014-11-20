@@ -1,0 +1,13 @@
+.events-page {
+}
+
+.events-page__event {
+  h2 { font-size: 44px; margin-bottom: 0; }
+  .sponsor { margin-top: 15px; font-size: 1.1rem; text-transform: uppercase; }
+  .when { margin-top: 30px; font-weight: bold; }
+  .photo {
+    img { max-width: 600px; filter: brightness(80%) sepia(90%) hue-rotate(-10deg); opacity: .8; }
+    .credit { margin-top: 5px; font-size: .7rem; opacity: .7; }
+  }
+}
+

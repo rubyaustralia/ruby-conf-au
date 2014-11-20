@@ -474,8 +474,8 @@
   background-size: cover;
   background-blend-mode: multiply;
   background-position: center center;
-  -webkit-transition: all 200ms;
-          transition: all 200ms; }
+  -webkit-transition: all 100ms;
+          transition: all 100ms; }
   .event-grid__day h3 {
     font-size: 1.65rem;
     font-weight: 400;
@@ -539,6 +539,26 @@
       -ms-flex-align: center;
           align-items: center;
   height: 100%; }
+
+.events-page__event h2 {
+  font-size: 44px;
+  margin-bottom: 0; }
+.events-page__event .sponsor {
+  margin-top: 15px;
+  font-size: 1.1rem;
+  text-transform: uppercase; }
+.events-page__event .when {
+  margin-top: 30px;
+  font-weight: bold; }
+.events-page__event .photo img {
+  max-width: 600px;
+  -webkit-filter: brightness(80%) sepia(90%) hue-rotate(-10deg);
+          filter: brightness(80%) sepia(90%) hue-rotate(-10deg);
+  opacity: .8; }
+.events-page__event .photo .credit {
+  margin-top: 5px;
+  font-size: .7rem;
+  opacity: .7; }
 
 * {
   -moz-box-sizing: border-box;

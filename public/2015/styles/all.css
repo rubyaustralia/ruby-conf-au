@@ -459,6 +459,19 @@
   padding: 2rem 0;
   text-align: center; }
 
+.event-grid {
+  margin-top: 75px; }
+
+.event-grid__day {
+  height: 10em;
+  background-color: #743C00;
+  margin-bottom: 2rem;
+  text-align: center;
+  padding: 2rem;
+  color: white; }
+  .event-grid__day p {
+    font-size: .9rem; }
+
 * {
   -moz-box-sizing: border-box;
        box-sizing: border-box;
@@ -489,6 +502,17 @@ a {
     outline: 1px dotted currentColor; }
   a:hover {
     text-decoration: underline; }
+
+sup {
+  position: relative;
+  top: -0.3em;
+  font-size: 75%;
+  vertical-align: baseline; }
+
+h3 sup {
+  font-size: 66%;
+  top: -0.35em;
+  left: .1em; }
 
 /* Fix kerning of 2015 in Futura */
 .two-oh-one-five .oh {

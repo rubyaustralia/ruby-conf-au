@@ -5,7 +5,7 @@
       %h1.body-section--event-header__event <span>RubyConf</span> <span>Australia</span> <span class="two-oh-one-five"><span class="two">2</span><span class="oh">0</span><span class="one">1</span><span class="five">5</span></span>
       %p On the 4th to 7th February 2015, leading Ruby developers from around the world will come together to share, inspire and learn.
       %h2.body-section--event-header__city <span>Melbourne</span> <span>Australia</span>
-      %h3.body-section--event-header__date 4-7 February 2015
+      %h3.body-section--event-header__date 4-7<sup>th</sup> February 2015
     .body-section--event-header__tickets
       - if Time.now.utc >= Time.gm(2014, 9, 19, 1, 0)
         %tito-button{event:"ruby-australia/rubyconf-au"} Buy your ticket
@@ -16,9 +16,9 @@
   %a(href="#attending") Attending
   %a(href="#venue") Location
   %a(href="#speakers") Speakers
-  %a(href="#schedule") Schedule
+  %a(href="#conference") Conference
+  %a(href="#events") Social Events
   %a(href="#workshops") Workshops
-  %a(href="#sponsors") Sponsors
   %a(href="#conduct") Code of Conduct
   -# %a(href="#news") News
   %a(href="#contact") Contact
@@ -135,10 +135,36 @@
       %div.speaker__bio
         %p <a href="/2015/speakers" class="button">See them all</a>
 
-%section#schedule.body-section--content
-  %h2 Schedule
-  %p The full conference schedule is yet to be announced, but will be held on February 5th and 6th.
-  %p Our <a href="/2015/speakers">speakers</a> are now confirmed, but the times of each session aren't yet locked in.
+%section#conference.body-section--content
+  %h2 Conference
+  %p Thursday 5<sup>th</sup> &amp; 6<sup>th</sup> Feb at the Deakin Edge Theatre, Federation Square.
+  %p Schedule to be be announced!
+
+%section#events.body-section--content
+  %h2 Social Events
+  %p We’ve organised a raft of events to see Melbourne and enjoy quality time with your fellow Rubyists.
+  %p The first event is the opening party on Wednesday 6th, and the last events the closing picnic and after party on Saturday 7th.
+  %p <strong>Booking will be required</strong> and you’ll get an email soon etc etc.
+
+  .event-grid.grid
+    %a.event-grid__day.grid__cell(href="/2015/events#party")
+      %p Opening Party
+    %a.event-grid__day.grid__cell(href="/2015/events#melb-by-night")
+      %p Melbourne by Night
+    %a.event-grid__day.grid__cell(href="/2015/events#fri-night-dinner")
+      %p Friday Night Dinner
+    %a.event-grid__day.grid__cell(href="/2015/events#healesville")
+      %p Healesville Sanctuary
+    %a.event-grid__day.grid__cell(href="/2015/events#bike-ride")
+      %p Melbourne Bike Ride
+    %a.event-grid__day.grid__cell(href="/2015/events#city-tour")
+      %p Melbourne City Tour
+    %a.event-grid__day.grid__cell(href="/2015/events#hack-day")
+      %p Hack Day
+    %a.event-grid__day.grid__cell(href="/2015/events#picnic")
+      %p Closing Picnic
+    %a.event-grid__day.grid__cell(href="/2015/events#after-party")
+      %p After Party
 
 %section#workshops.body-section--content
   %h2 Workshops

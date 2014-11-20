@@ -1,0 +1,17 @@
+.event-grid {
+  margin-top: 75px;
+}
+
+.event-grid__day {
+  height: 10em;
+  background-color: $dark-brown;
+  margin-bottom: 2rem;
+  text-align: center;
+  padding: 2rem;
+  color: white;
+  h3 {
+  }
+  p {
+    font-size: .9rem;
+  }
+}

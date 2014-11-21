@@ -544,14 +544,16 @@
   font-size: 44px;
   margin-bottom: 0; }
 .events-page__event .sponsor {
-  margin-top: 15px;
-  font-size: 1.1rem;
+  margin-top: 20px;
+  font-size: 1.2rem;
+  letter-spacing: 1px;
   text-transform: uppercase; }
 .events-page__event .when {
   margin-top: 30px;
   font-weight: bold; }
 .events-page__event .photo img {
-  max-width: 600px;
+  width: 100%;
+  max-width: 700px;
   -webkit-filter: brightness(80%) sepia(90%) hue-rotate(-10deg);
           filter: brightness(80%) sepia(90%) hue-rotate(-10deg);
   opacity: .8; }
@@ -559,6 +561,25 @@
   margin-top: 5px;
   font-size: .7rem;
   opacity: .7; }
+.events-page__event .description {
+  text-align: left;
+  font-size: .85rem;
+  line-height: 1.4; }
+.events-page__event .cost, .events-page__event .where {
+  font-size: .85rem;
+  text-align: left; }
+  .events-page__event .cost:before, .events-page__event .where:before {
+    text-transform: uppercase;
+    font-size: .9em;
+    display: block;
+    margin-bottom: 10px;
+    font-weight: bold; }
+.events-page__event .where:before {
+  content: 'Where'; }
+.events-page__event .cost:before {
+  content: 'Cost'; }
+.events-page__event .book {
+  margin-top: 50px; }
 
 * {
   -moz-box-sizing: border-box;

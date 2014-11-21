@@ -3,11 +3,25 @@
 
 .events-page__event {
   h2 { font-size: 44px; margin-bottom: 0; }
-  .sponsor { margin-top: 15px; font-size: 1.1rem; text-transform: uppercase; }
+  .sponsor { margin-top: 20px; font-size: 1.2rem; letter-spacing: 1px; text-transform: uppercase; }
   .when { margin-top: 30px; font-weight: bold; }
   .photo {
-    img { max-width: 600px; filter: brightness(80%) sepia(90%) hue-rotate(-10deg); opacity: .8; }
+    img { width: 100%; max-width: 700px; filter: brightness(80%) sepia(90%) hue-rotate(-10deg); opacity: .8; }
     .credit { margin-top: 5px; font-size: .7rem; opacity: .7; }
+  }
+  .description { text-align: left; font-size: .85rem; line-height: 1.4; }
+  .cost, .where {
+    font-size: .85rem; text-align: left;
+    &:before { text-transform: uppercase; font-size: .9em; display: block; margin-bottom: 10px; font-weight: bold; }
+  }
+  .where {
+    &:before { content: 'Where'; }
+  }
+  .cost {
+    &:before { content: 'Cost'; }
+  }
+  .book {
+    margin-top: 50px;
   }
 }
 

@@ -24,6 +24,19 @@ a {
   &:hover { text-decoration: underline; }
 }
 
+sup {
+  position: relative;
+  top: -0.3em;
+  font-size: 75%;
+  vertical-align: baseline;
+}
+
+h3 sup {
+  font-size: 66%;
+  top: -0.35em;
+  left: .1em;
+}
+
 button {
   @extend .button;
 }

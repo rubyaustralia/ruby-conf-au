@@ -1,0 +1,49 @@
+.event-grid {
+  margin-top: 75px;
+}
+
+.event-grid__day {
+  position: relative;
+  height: 12em;
+  margin-bottom: 2rem;
+  text-align: center;
+  padding: 1rem 2rem;
+  color: white;
+  background-color: $dark-brown;
+  background-size: cover;
+  background-blend-mode: multiply;
+  background-position: center center;
+  transition: all 100ms;
+  h3 {
+    font-size: 1.65rem;
+    font-weight: 400;
+    line-height: 1.1;
+    margin: 0;
+  }
+  p {
+    font-size: .9rem;
+    margin: 0;
+    margin-top: 10px;
+    color: lighten($summer-fruits-red, 10%);
+    &, sup { font-weight: bold; }
+  }
+  &:hover { opacity: 1; text-decoration: none; background-color: lighten($dark-brown, 5%); }
+}
+
+.event-grid__day--party       { background-image: url('/images/2015/events/trunk-town.jpg'); }
+.event-grid__day--by-night    { background-image: url('/images/2015/events/rooftop-cinema.jpg'); }
+.event-grid__day--fri-dinner  { background-image: url('/images/2015/events/hutong.jpg'); }
+.event-grid__day--healesville { background-image: url('/images/2015/events/healesville.jpg'); }
+.event-grid__day--bike        { background-image: url('/images/2015/events/bike-ride.jpg'); }
+.event-grid__day--city-tour   { background-image: url('/images/2015/events/city-tour.jpg'); }
+.event-grid__day--hack-day    { background-image: url('/images/2015/events/hack-day.jpg'); }
+.event-grid__day--picnic      { background-image: url('/images/2015/events/picnic.jpg'); }
+.event-grid__day--after-party { background-image: url('/images/2015/events/after-party.jpg'); }
+
+.event-grid__day__inner {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}

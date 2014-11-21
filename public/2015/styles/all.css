@@ -551,16 +551,26 @@
 .events-page__event .when {
   margin-top: 30px;
   font-weight: bold; }
-.events-page__event .photo img {
+.events-page__event .photo {
+  position: relative;
   width: 100%;
   max-width: 700px;
-  -webkit-filter: brightness(80%) sepia(90%) hue-rotate(-10deg);
-          filter: brightness(80%) sepia(90%) hue-rotate(-10deg);
-  opacity: .8; }
-.events-page__event .photo .credit {
-  margin-top: 5px;
-  font-size: .7rem;
-  opacity: .7; }
+  margin-left: auto;
+  margin-right: auto; }
+  .events-page__event .photo img {
+    width: 100%;
+    -webkit-filter: brightness(80%) sepia(90%) hue-rotate(-10deg);
+            filter: brightness(80%) sepia(90%) hue-rotate(-10deg);
+    opacity: .8; }
+  .events-page__event .photo .credit {
+    font-size: .5rem;
+    text-align: right;
+    position: absolute;
+    bottom: 20px;
+    right: 20px; }
+    .events-page__event .photo .credit, .events-page__event .photo .credit a {
+      color: #FFF5E8;
+      text-shadow: 0 1px 2px #743C00; }
 .events-page__event .description {
   text-align: left;
   font-size: .85rem;

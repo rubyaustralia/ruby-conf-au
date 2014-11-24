@@ -314,6 +314,8 @@
   max-width: 80px;
   position: relative;
   top: -2px; }
+.body-section--sponsors .sponsors__sponsor--lookahead img {
+  max-width: 205px; }
 .body-section--sponsors .sponsors__sponsor-blurb {
   margin-top: 20px; }
   .body-section--sponsors .sponsors__sponsor-blurb p {

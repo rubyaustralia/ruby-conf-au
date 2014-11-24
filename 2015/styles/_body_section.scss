@@ -178,7 +178,18 @@
     padding: 1rem .5rem;
     img { width: 100%; max-width: 250px; vertical-align: middle; filter: brightness(140%) sepia(90%) hue-rotate(-10deg); }
   }
-  .sponsors__sponsor--jobready img { max-width: 200px; }
+  .sponsors__sponsor--envato img { max-width: 350px; }
+  .sponsors__sponsor--redbubble img { max-width: 240px; }
+  .sponsors__sponsor--rea img { max-width: 300px; }
+  .sponsors__sponsor--reinteractive img { max-width: 230px; }
+  .sponsors__sponsor--digitalocean img { max-width: 220px; }
+  .sponsors__sponsor--jobready img { max-width: 150px; }
+
+  .sponsors__sponsor-blurb {
+    margin-top: 20px;
+    p { font-size: .8rem; text-align: left; margin-top: 1.5rem; margin-bottom: 1.5rem; }
+  }
+  .sponsors__sponsor-blurb--ruby { }
 }
 
 .body-section__header-image {

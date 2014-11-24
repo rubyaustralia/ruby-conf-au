@@ -294,8 +294,25 @@
     vertical-align: middle;
     -webkit-filter: brightness(140%) sepia(90%) hue-rotate(-10deg);
             filter: brightness(140%) sepia(90%) hue-rotate(-10deg); }
+.body-section--sponsors .sponsors__sponsor--envato img {
+  max-width: 350px; }
+.body-section--sponsors .sponsors__sponsor--redbubble img {
+  max-width: 240px; }
+.body-section--sponsors .sponsors__sponsor--rea img {
+  max-width: 300px; }
+.body-section--sponsors .sponsors__sponsor--reinteractive img {
+  max-width: 230px; }
+.body-section--sponsors .sponsors__sponsor--digitalocean img {
+  max-width: 220px; }
 .body-section--sponsors .sponsors__sponsor--jobready img {
-  max-width: 200px; }
+  max-width: 150px; }
+.body-section--sponsors .sponsors__sponsor-blurb {
+  margin-top: 20px; }
+  .body-section--sponsors .sponsors__sponsor-blurb p {
+    font-size: .8rem;
+    text-align: left;
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem; }
 
 .body-section__header-image {
   width: 100%;

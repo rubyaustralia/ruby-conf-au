@@ -306,6 +306,14 @@
   max-width: 220px; }
 .body-section--sponsors .sponsors__sponsor--jobready img {
   max-width: 150px; }
+.body-section--sponsors .sponsors__sponsor--buildbox img {
+  max-width: 175px;
+  position: relative;
+  top: 1px; }
+.body-section--sponsors .sponsors__sponsor--torii img {
+  max-width: 80px;
+  position: relative;
+  top: -2px; }
 .body-section--sponsors .sponsors__sponsor-blurb {
   margin-top: 20px; }
   .body-section--sponsors .sponsors__sponsor-blurb p {

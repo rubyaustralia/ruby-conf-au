@@ -7,10 +7,7 @@
       %h2.body-section--event-header__city <span>Melbourne</span> <span>Australia</span>
       %h3.body-section--event-header__date 4-7<sup>th</sup> February 2015
     .body-section--event-header__tickets
-      - if Time.now.utc >= Time.gm(2014, 9, 19, 1, 0)
-        %tito-button{event:"ruby-australia/rubyconf-au"} Buy your ticket
-      - else
-        .button Tickets available 11:00AM AEST 19th September.
+      %a.button(href="#attending") Sold Out!
 
 %section.site-nav
   %a(href="#attending") Attending
@@ -28,8 +25,10 @@
 %section#attending.body-section--attending
   %h2 Attending
 
-  %p RubyConf Australia is an inclusive conference and as such strives to be <a href="/2015/policies#code">welcoming</a> and <a href="/2015/accessibility">accessible</a> to as many people as possible. If you're keen to attend, you can purchase a ticket right now!
-  %tito-button{event:"ruby-australia/rubyconf-au"} Buy your ticket
+  %p RubyConf Australia is an inclusive conference and as such strives to be <a href="/2015/policies#code">welcoming</a> and <a href="/2015/accessibility">accessible</a> to as many people as possible.
+
+  %p We have now <strong>sold out</strong> - but if you're keen to join us, let us know and we'll put you on our waiting list.
+  %a.button(href="mailto:organisers@rubyconf.org.au?subject=Waiting List") Join the Waiting List
 
 %section#venue.body-section--venue
   %h2 Location

@@ -314,6 +314,12 @@
   max-width: 80px;
   position: relative;
   top: -2px; }
+.body-section--sponsors .sponsors__sponsor--github img {
+  max-width: 130px;
+  position: relative;
+  top: -1px; }
+.body-section--sponsors .sponsors__sponsor--pluralsight img {
+  max-width: 240px; }
 .body-section--sponsors .sponsors__sponsor--lookahead img {
   max-width: 205px; }
 .body-section--sponsors .sponsors__sponsor-blurb {
@@ -619,8 +625,7 @@
   margin-top: 50px; }
 
 * {
-  -moz-box-sizing: border-box;
-       box-sizing: border-box;
+  box-sizing: border-box;
   margin: 0;
   padding: 0;
   list-style: none; }

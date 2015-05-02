@@ -1,5 +1,5 @@
 source 'https://rubygems.org'
-ruby '2.2.0'
+ruby '2.2.2'
 
 gem "activesupport", require: "active_support/inflector"
 gem "createsend", "1.0.4"
@@ -13,6 +13,5 @@ gem "thin"
 
 group :development do
   gem "foreman"
-  gem "heroku"
   gem "sinatra-contrib", require: false
 end

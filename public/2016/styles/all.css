@@ -37,17 +37,17 @@
   text-decoration: none;
   cursor: pointer; }
 
-.body-section, .body-section--event-header, .body-section--content, .body-section--event-footer {
+.body-section, .body-section--event-header, .content-page--event-header, .body-section--content, .body-section--event-footer, .content-page__header {
   padding-left: 1rem;
   text-align: center; }
-  .body-section p, .body-section--event-header p, .body-section--content p, .body-section--event-footer p, .body-section ul, .body-section--event-header ul, .body-section--content ul, .body-section--event-footer ul {
+  .body-section p, .body-section--event-header p, .content-page--event-header p, .body-section--content p, .body-section--event-footer p, .content-page__header p, .body-section ul, .body-section--event-header ul, .content-page--event-header ul, .body-section--content ul, .body-section--event-footer ul, .content-page__header ul {
     max-width: 30rem;
     margin: auto;
     padding-bottom: 1rem; }
 
-.body-section--event-header {
+.body-section--event-header, .content-page--event-header {
   background: url("/images/2016/background.png") top center no-repeat; }
-  .body-section--event-header .skip-nav {
+  .body-section--event-header .skip-nav, .content-page--event-header .skip-nav {
     width: 63px;
     height: 48px;
     position: absolute;
@@ -61,22 +61,22 @@
             animation: .75s down-arrow-animation infinite alternate;
     -webkit-animation-play-state: paused;
             animation-play-state: paused; }
-  .body-section--event-header .skip-nav:focus {
+  .body-section--event-header .skip-nav:focus, .content-page--event-header .skip-nav:focus {
     opacity: 1;
     -webkit-animation-play-state: running;
             animation-play-state: running; }
   @media (min-width: 900px) and (min-height: 30rem) {
-    .body-section--event-header {
+    .body-section--event-header, .content-page--event-header {
       padding-top: 4rem; }
-      .body-section--event-header .skip-nav {
+      .body-section--event-header .skip-nav, .content-page--event-header .skip-nav {
         opacity: 1;
         -webkit-animation-play-state: running;
                 animation-play-state: running; } }
-  .body-section--event-header .body-section--event-header__logo {
+  .body-section--event-header .body-section--event-header__logo, .content-page--event-header .body-section--event-header__logo {
     padding: 2rem 0 1rem; }
-  .body-section--event-header .body-section--event-header__city {
+  .body-section--event-header .body-section--event-header__city, .content-page--event-header .body-section--event-header__city {
     padding: 0.75rem 0; }
-  .body-section--event-header .body-section--event-header__date {
+  .body-section--event-header .body-section--event-header__date, .content-page--event-header .body-section--event-header__date {
     padding: 0 0 2rem; }
 
 .body-section--content, .body-section--event-footer {
@@ -126,6 +126,19 @@
     font-size: 0.65rem;
     letter-spacing: 0.1rem;
     color: #5fb2d9; }
+
+.content-page__header {
+  padding: 4rem 0 3rem 0; }
+  .content-page__header h1 {
+    font-size: 3rem; }
+
+@media (max-width: 400px) {
+  .content-page__header--accessibility h1 {
+    font-size: 1.6rem; } }
+
+@media (max-width: 400px) {
+  .content-page__header--accommodation h1 {
+    font-size: 1.6rem; } }
 
 .event {
   text-align: center;

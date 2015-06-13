@@ -1,0 +1,58 @@
+.body-section {
+  padding-left: 1rem;
+  text-align: center;
+  p, ul {
+    max-width: 30rem;
+    margin: auto;
+    padding-bottom: 1rem;
+  }
+}
+
+.body-section--event-header {
+  @extend .body-section;
+  background: url('/images/2016/background.png') top center no-repeat;
+  .skip-nav {
+    width: 63px;
+    height: 48px;
+    position: absolute;
+    text-indent: -1000px;
+    overflow: hidden;
+    bottom: 2rem;
+    left: 50%;
+    margin-left: (-63px / 2);
+    opacity: 0;
+    animation: .75s down-arrow-animation infinite alternate;
+    animation-play-state: paused;
+  }
+  .skip-nav:focus { opacity: 1; animation-play-state: running; }
+  @media (min-width: 900px) and (min-height: 30rem) {
+    padding-top: 4rem;
+    .skip-nav {
+      opacity: 1;
+      animation-play-state: running;
+    }
+  }
+  .body-section--event-header__logo {
+    padding: 2rem 0 1rem;
+  }
+}
+
+.body-section--content {
+  @extend .body-section;
+  padding: 2rem 0;
+
+  h2 {
+    font-size: $section-heading-size;
+    padding-bottom: 1rem;
+  }
+  p, li {
+    font-size: $paragraph-size;
+  }
+  &:nth-child(even) {
+    background: $grey-very-light;
+  }
+}
+
+.body-section--event-footer {
+  @extend .body-section--content;
+}

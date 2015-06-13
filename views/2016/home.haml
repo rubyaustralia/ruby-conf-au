@@ -2,8 +2,9 @@
   %a.skip-nav(href="#after-nav") Skip navigation
   .body-section--event-header__inner
     %hgroup
-      %h1.body-section--event-header__event RubyConf Australia 2016
-      %p On the 10th - 13th February 2016, leading Ruby developers from around the world will come together to share, inspire and learn.
+      %img.body-section--event-header__logo{ src: 'images/2016/logo.png' }
+      -# %h1.body-section--event-header__event RubyConf Australia 2016
+      -# %p On the 10th - 13th February 2016, leading Ruby developers from around the world will come together to share, inspire and learn.
       %h2.body-section--event-header__city Gold Coast, Australia
       %h3.body-section--event-header__date 10 - 13 February 2016
 
@@ -19,16 +20,38 @@
 
 #after-nav
 
-%section#venue.body-section--venue
-  %h2 Location
-  %p Join us at Sea World.
-  %p
-    %a.button Directions
+%section#conference.body-section--content
+  %h2 Ruby Conference Australia 2016
+  %p 10 - 13 February at Sea World, Gold Coast
+
+%section#venue.body-section--content.grid
+  .grid__cell
+    %h2 Location
+    %p Join us at Sea World.
+    %p
+      %a.button Get Directions
+  .grid__cell
+    Map
 
 %section#speakers.body-section--content
   %h2 Speakers
   %div.grid
     %div.grid__cell.speaker
+      %h3.speaker__name Katrina Owen
+      %p.speaker__photo
+        %img.speaker__photo__image(src="/images/2016/speakers/katrina-owen.png" alt="Photo of Katrina")
+      %div.speaker__bio
+        %p
+          Katrina accidentally became a developer while pursuing a degree in molecular biology. When programming, her focus is on automation, workflow optimization, and refactoring.
+          She works primarily in Go and Ruby, contributes to several open source projects, and is the creator of
+          %a{ href: 'tobe added' }
+            exercism.io.
+      %ol.speaker__links
+        %li
+          %a(href="#") ?
+        %li
+          %a(href="https://twitter.com/") @?
+    .grid__cell.speaker
       %h3.speaker__name Katrina Owen
       %p.speaker__photo
         %img.speaker__photo__image(src="/images/2016/speakers/katrina-owen.png" alt="Photo of Katrina")
@@ -45,10 +68,30 @@
   %p We’ve organised a raft of events to enjoy The Gold Coast and spend quality time with your fellow Rubyists.
 
   .event-grid.grid
-    %a.event-grid__day.event-grid__day--party.grid__cell(href="/2016/events#party")
-      .event-grid__day__inner
-        %h3 Opening Party
-        %p Wed 4<sup>th</sup> Feb
+    .grid__cell.event
+      %img{ src: '/images/2016/opening-party-at-q1.png' }
+      %h3
+        Opening Party at Q1
+    .grid__cell.event
+      %img{ src: '/images/2016/dinner-at-four-winds.png' }
+      %h3
+        Dinner at Four Winds Revolving Restaurant
+    .grid__cell.event
+      %img{ src: '/images/2016/friday-night-at-movie-world.png' }
+      %h3
+        Friday Night Party at Movie World
+    .grid__cell.event
+      %img{ src: '/images/2016/community-day.png' }
+      %h3
+        Community Day with a choice of activities
+    .grid__cell.event
+      %img{ src: '/images/2016/beach-bbq.png' }
+      %h3
+        Beach BBQ
+    .grid__cell.event
+      %img{ src: '/images/2016/closing-party-at-kurrawa-surf-club.png' }
+      %h3
+        Closing Party at Kurrawa Surf Club
 
 %section#workshops.body-section--content
   %h2 Workshops
@@ -63,4 +106,5 @@
     %a{ href: "/2016/policies#code" } code of conduct
     and
     %a{ href: "/2016/policies#anti-harassment" } our anti-harrassment policy.
+  %p
     These rules must be followed by all attendees at all conference-related events.

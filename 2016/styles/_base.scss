@@ -6,7 +6,8 @@
 }
 
 html {
-  font: 200 18px/1.3 $body-font;
+  font: 100 18px/1.3 $body-font;
+  letter-spacing: $body-letter-spacing;
   @media (min-width: 500px) { font-size: 16px; }
   @media (min-width: 700px) { font-size: 21px; }
 }
@@ -33,4 +34,8 @@ h3 sup {
   font-size: 66%;
   top: -0.35em;
   left: .1em;
+}
+
+p {
+  letter-spacing: $body-letter-spacing-small;
 }

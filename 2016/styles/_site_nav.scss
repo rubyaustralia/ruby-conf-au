@@ -16,13 +16,14 @@
     a {
       display: inline-block;
       border: none;
-      font-size: .65rem;
+      font-size: $nav-links-size;
       color: $grey-dark;
       text-transform: uppercase;
       width: auto;
       padding: 0.75rem 0.25rem;
       box-sizing: border-box;
       border-bottom: 2px solid $grey-light;
+      font-weight: bold;
 
       &:hover, &:active, &:focus {
         color: $black;

@@ -1,3 +1,90 @@
+.grid {
+  font-size: 0;
+  vertical-align: top; }
+
+.grid__cell {
+  display: block;
+  font-size: 1rem;
+  vertical-align: top; }
+  @media (min-width: 800px) {
+    .grid__cell {
+      display: inline-block;
+      text-align: left;
+      width: 41%;
+      margin-left: 3%;
+      margin-right: 3%; } }
+  @media (min-width: 1200px) {
+    .grid__cell {
+      display: inline-block;
+      text-align: left;
+      width: 21.33333%;
+      margin-left: 3%;
+      margin-right: 3%; } }
+
+.button {
+  display: inline-block;
+  font-size: 0.65rem;
+  line-height: 1;
+  color: white;
+  text-transform: uppercase;
+  background-color: #5fb2d9;
+  border: 4px solid #5fb2d9;
+  border-radius: 4px;
+  padding: .75rem 1rem;
+  margin: 1.5rem 0; }
+
+.button:hover {
+  text-decoration: none;
+  cursor: pointer; }
+
+.body-section, .body-section--event-header, .body-section--content, .body-section--event-footer {
+  padding-left: 1rem;
+  text-align: center; }
+  .body-section p, .body-section--event-header p, .body-section--content p, .body-section--event-footer p, .body-section ul, .body-section--event-header ul, .body-section--content ul, .body-section--event-footer ul {
+    max-width: 30rem;
+    margin: auto;
+    padding-bottom: 1rem; }
+
+.body-section--event-header {
+  background: url("/images/2016/background.png") top center no-repeat; }
+  .body-section--event-header .skip-nav {
+    width: 63px;
+    height: 48px;
+    position: absolute;
+    text-indent: -1000px;
+    overflow: hidden;
+    bottom: 2rem;
+    left: 50%;
+    margin-left: -31.5px;
+    opacity: 0;
+    -webkit-animation: .75s down-arrow-animation infinite alternate;
+            animation: .75s down-arrow-animation infinite alternate;
+    -webkit-animation-play-state: paused;
+            animation-play-state: paused; }
+  .body-section--event-header .skip-nav:focus {
+    opacity: 1;
+    -webkit-animation-play-state: running;
+            animation-play-state: running; }
+  @media (min-width: 900px) and (min-height: 30rem) {
+    .body-section--event-header {
+      padding-top: 4rem; }
+      .body-section--event-header .skip-nav {
+        opacity: 1;
+        -webkit-animation-play-state: running;
+                animation-play-state: running; } }
+  .body-section--event-header .body-section--event-header__logo {
+    padding: 2rem 0 1rem; }
+
+.body-section--content, .body-section--event-footer {
+  padding: 2rem 0; }
+  .body-section--content h2, .body-section--event-footer h2 {
+    font-size: 0.75rem;
+    padding-bottom: 1rem; }
+  .body-section--content p, .body-section--event-footer p, .body-section--content li, .body-section--event-footer li {
+    font-size: 0.65rem; }
+  .body-section--content:nth-child(even), .body-section--event-footer:nth-child(even) {
+    background: #f9f9f9; }
+
 .site-nav {
   background: #fafafa;
   padding: 1rem; }
@@ -16,17 +103,34 @@
       .site-nav a {
         display: inline-block;
         border: none;
-        font-size: .65rem;
+        font-size: 0.65rem;
         color: #666666;
         text-transform: uppercase;
         width: auto;
         padding: 0.75rem 0.25rem;
         box-sizing: border-box;
-        border-bottom: 2px solid #fafafa; }
+        border-bottom: 2px solid #fafafa;
+        font-weight: bold; }
         .site-nav a:hover, .site-nav a:active, .site-nav a:focus {
           color: #000;
           border-bottom: 2px solid #9299a7;
           text-decoration: none; } }
+
+.footer__link {
+  text-align: center; }
+  .footer__link a {
+    font-size: 0.65rem;
+    letter-spacing: 0.1rem;
+    color: #5fb2d9; }
+
+.event {
+  text-align: center;
+  padding: 0.25rem; }
+  .event h3 {
+    text-transform: uppercase;
+    font-size: 0.75rem; }
+  .event img {
+    width: 100%; }
 
 * {
   box-sizing: border-box;
@@ -35,7 +139,8 @@
   list-style: none; }
 
 html {
-  font: 200 18px/1.3 "roboto", "Roboto", sans-serif; }
+  font: 100 18px/1.3 "roboto", "Roboto", sans-serif;
+  letter-spacing: 0.25rem; }
   @media (min-width: 500px) {
     html {
       font-size: 16px; } }
@@ -66,3 +171,6 @@ h3 sup {
   font-size: 66%;
   top: -0.35em;
   left: .1em; }
+
+p {
+  letter-spacing: 0.1rem; }

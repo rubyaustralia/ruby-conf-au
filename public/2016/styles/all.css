@@ -1,6 +1,9 @@
 .site-nav {
   background: #fafafa;
   padding: 1rem; }
+  .site-nav a {
+    display: block;
+    width: 100%; }
   @media (min-width: 900px) {
     .site-nav {
       position: fixed;
@@ -11,14 +14,19 @@
       text-align: center;
       padding: 0; }
       .site-nav a {
-        display: inline;
+        display: inline-block;
         border: none;
-        font-size: .75rem;
-        padding-left: .25rem;
-        padding-right: .25rem;
-        color: rgba(255, 255, 255, 0.9); }
+        font-size: .65rem;
+        color: #666666;
+        text-transform: uppercase;
+        width: auto;
+        padding: 0.75rem 0.25rem;
+        box-sizing: border-box;
+        border-bottom: 2px solid #fafafa; }
         .site-nav a:hover, .site-nav a:active, .site-nav a:focus {
-          color: white; } }
+          color: #000;
+          border-bottom: 2px solid #9299a7;
+          text-decoration: none; } }
 
 * {
   box-sizing: border-box;

@@ -2,6 +2,8 @@
   background: $grey-light;
   padding: 1rem;
   a {
+    display: block;
+    width: 100%;
   }
   @media (min-width: 900px) {
     position: fixed;
@@ -12,13 +14,22 @@
     text-align: center;
     padding: 0;
     a {
-      display: inline;
+      display: inline-block;
       border: none;
-      font-size: .75rem;
-      padding-left: .25rem;
-      padding-right: .25rem;
-      color: rgba(white, .9);
-      &:hover, &:active, &:focus { color: white; }
+      font-size: .65rem;
+      color: $grey-dark;
+      text-transform: uppercase;
+      width: auto;
+      padding: 0.75rem 0.25rem;
+      box-sizing: border-box;
+      border-bottom: 2px solid $grey-light;
+
+      &:hover, &:active, &:focus {
+        color: $black;
+        border-bottom: 2px solid $blue-grey;
+        text-decoration: none;
+
+      }
     }
   }
 }

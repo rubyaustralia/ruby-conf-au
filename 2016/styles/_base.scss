@@ -1,0 +1,36 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+html {
+  font: 200 18px/1.3 $body-font;
+  @media (min-width: 500px) { font-size: 16px; }
+  @media (min-width: 700px) { font-size: 21px; }
+}
+
+h1, h2, h3 {
+  font-family: $body-font;
+  text-transform: uppercase;
+}
+
+a {
+  text-decoration: none; color: currentColor; font-weight: bold;
+  &:focus { outline: 1px dotted currentColor; }
+  &:hover { text-decoration: underline; }
+}
+
+sup {
+  position: relative;
+  top: -0.3em;
+  font-size: 75%;
+  vertical-align: baseline;
+}
+
+h3 sup {
+  font-size: 66%;
+  top: -0.35em;
+  left: .1em;
+}

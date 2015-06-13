@@ -72,6 +72,20 @@ get '/2015/:page_name' do
   haml :"2015/#{page_name}", :layout => :"2015/layout"
 end
 
+# 2016
+
+get '/2016' do
+  @title = :home
+  @speaker = %w().sample
+  haml :"2016/home", :layout => :"2016/layout"
+end
+
+get '/2016/:page_name' do
+  page_name = params[:page_name]
+  @title = page_name
+  haml :"2016/#{page_name}", :layout => :"2016/layout"
+end
+
 # Generic
 
 get '/' do

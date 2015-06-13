@@ -1,0 +1,24 @@
+.site-nav {
+  background: $grey-light;
+  padding: 1rem;
+  a {
+  }
+  @media (min-width: 900px) {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1;
+    text-align: center;
+    padding: 0;
+    a {
+      display: inline;
+      border: none;
+      font-size: .75rem;
+      padding-left: .25rem;
+      padding-right: .25rem;
+      color: rgba(white, .9);
+      &:hover, &:active, &:focus { color: white; }
+    }
+  }
+}

@@ -1,0 +1,44 @@
+!!!
+%html{lang: 'en'}
+  %head
+    /
+      Hello! This code is open-source, and MIT licensed. Go here to check out da code:
+      https://github.com/rubyaustralia/ruby-conf-au
+    %title= @page_title || "RubyConf Australia 2016"
+    %meta{charset: "utf-8"}
+    %meta{content:'width=device-width, initial-scale=1.0', name:'viewport'}
+    %link{rel: "stylesheet", href: asset_path('2016/styles/all.css')}
+    %link{rel:'shortcut icon', href:'/images/2016/favicon.png'}
+    :javascript
+      (function(d) {
+        var config = { kitId: 'pcd5kcy', scriptTimeout: 3000 },
+        h=d.documentElement,t=setTimeout(function(){h.className=h.className.replace(/\bwf-loading\b/g,"")+" wf-inactive";},config.scriptTimeout),tk=d.createElement("script"),f=false,s=d.getElementsByTagName("script")[0],a;h.className+=" wf-loading";tk.src='//use.typekit.net/'+config.kitId+'.js';tk.async=true;tk.onload=tk.onreadystatechange=function(){a=this.readyState;if(f||a&&a!="complete"&&a!="loaded")return;f=true;clearTimeout(t);try{Typekit.load(config)}catch(e){}};s.parentNode.insertBefore(tk,s)
+      })(document);
+    %script{src:"https://js.tito.io/v1?v2", async: true}
+  %body
+    != yield
+
+    %section#contact.body-section--event-footer
+      %h2 Contact Us
+      %h3 Send us an email
+      %p.body-section--event-footer__links
+        %a(href="mailto:organisers@rubyconf.org.au") organisers@rubyconf.org.au
+      %h3 Elsewhere
+      %ul.body-section--event-footer__links
+        %li
+          %a(href="https://twitter.com/rubyconf_au") Twitter
+          %a(href="https://www.facebook.com/RubyConfAustralia") Facebook
+      %h3 Mailing List
+      %p.body-section--event-footer__links
+        %a(href="https://confirmsubscription.com/h/j/F0AA131FF2C0F0B0") Join the mailing list
+
+    %section#contact.body-section--previous-years
+      %h2 Previous Years
+      %ul
+        %li <a href="/2013">2013</a>
+        %li <a href="/2014">2014</a>
+        %li <a href="/2015">2015</a>
+
+    - # Fix for iOS vh/vw units
+    %script(src="/2016/javascripts/viewport-units-buggyfill.js")
+    %script window.viewportUnitsBuggyfill.init();

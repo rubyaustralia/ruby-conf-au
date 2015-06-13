@@ -13,11 +13,11 @@ Then start the app with:
 
     foreman start
 
-### 2015
+### 2016
 
-The 2015 styles are compiled and checked in. To recompile them:
+2016 follows the same pattern as 2015. To update styles: 
 
-    cd 2015
+    cd 2016
 
     # Compile the assets
     make

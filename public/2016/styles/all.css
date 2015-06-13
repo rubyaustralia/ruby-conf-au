@@ -1,0 +1,60 @@
+.site-nav {
+  background: #fafafa;
+  padding: 1rem; }
+  @media (min-width: 900px) {
+    .site-nav {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      z-index: 1;
+      text-align: center;
+      padding: 0; }
+      .site-nav a {
+        display: inline;
+        border: none;
+        font-size: .75rem;
+        padding-left: .25rem;
+        padding-right: .25rem;
+        color: rgba(255, 255, 255, 0.9); }
+        .site-nav a:hover, .site-nav a:active, .site-nav a:focus {
+          color: white; } }
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  list-style: none; }
+
+html {
+  font: 200 18px/1.3 "roboto", "Roboto", sans-serif; }
+  @media (min-width: 500px) {
+    html {
+      font-size: 16px; } }
+  @media (min-width: 700px) {
+    html {
+      font-size: 21px; } }
+
+h1, h2, h3 {
+  font-family: "roboto", "Roboto", sans-serif;
+  text-transform: uppercase; }
+
+a {
+  text-decoration: none;
+  color: currentColor;
+  font-weight: bold; }
+  a:focus {
+    outline: 1px dotted currentColor; }
+  a:hover {
+    text-decoration: underline; }
+
+sup {
+  position: relative;
+  top: -0.3em;
+  font-size: 75%;
+  vertical-align: baseline; }
+
+h3 sup {
+  font-size: 66%;
+  top: -0.35em;
+  left: .1em; }

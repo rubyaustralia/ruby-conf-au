@@ -124,7 +124,7 @@
   text-align: center; }
   .footer__link a {
     font-size: 0.65rem;
-    letter-spacing: 0.1rem;
+    letter-spacing: 0.05rem;
     color: #5fb2d9; }
 
 .content-page__header {
@@ -148,6 +148,17 @@
     font-size: 0.75rem; }
   .event img {
     width: 100%; }
+
+.map {
+  width: 800px;
+  height: 400px; }
+
+.speaker__photo__image {
+  width: 250px;
+  height: 250px; }
+
+.speaker__name {
+  font-size: 0.65rem; }
 
 * {
   box-sizing: border-box;
@@ -190,4 +201,4 @@ h3 sup {
   left: .1em; }
 
 p {
-  letter-spacing: 0.1rem; }
+  letter-spacing: 0.05rem; }

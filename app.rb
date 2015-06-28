@@ -90,7 +90,7 @@ end
 
 get '/' do
   status_code 302
-  redirect '/2015'
+  redirect '/2016'
 end
 
 post '/subscribe' do

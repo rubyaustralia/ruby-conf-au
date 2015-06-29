@@ -76,7 +76,7 @@ end
 
 get '/2016' do
   @title = :home
-  @speaker = %w().sample
+  @speaker = %w(katrina-owen.jpg senator-scott-ludlam.jpg).sample
   haml :"2016/home", :layout => :"2016/layout"
 end
 

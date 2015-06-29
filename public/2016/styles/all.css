@@ -9,21 +9,35 @@
   @media (min-width: 800px) {
     .grid__cell {
       display: inline-block;
-      text-align: left;
+      text-align: center;
       width: 41%;
       margin-left: 3%;
       margin-right: 3%; } }
   @media (min-width: 1200px) {
     .grid__cell {
       display: inline-block;
-      text-align: left;
+      text-align: center;
       width: 21.33333%;
+      margin-left: 3%;
+      margin-right: 3%; } }
+  @media (min-width: 800px) {
+    .grid__cell.event, .grid__cell.two-col {
+      display: inline-block;
+      text-align: center;
+      width: 94%;
+      margin-left: 3%;
+      margin-right: 3%; } }
+  @media (min-width: 1200px) {
+    .grid__cell.event, .grid__cell.two-col {
+      display: inline-block;
+      text-align: center;
+      width: 41%;
       margin-left: 3%;
       margin-right: 3%; } }
 
 .button {
   display: inline-block;
-  font-size: 0.65rem;
+  font-size: 0.75rem;
   line-height: 1;
   color: white;
   text-transform: uppercase;
@@ -80,12 +94,12 @@
     padding: 0 0 2rem; }
 
 .body-section--content, .body-section--event-footer {
-  padding: 2rem 0; }
+  padding: 4rem 0 2rem; }
   .body-section--content h2, .body-section--event-footer h2 {
     font-size: 0.75rem;
     padding-bottom: 1rem; }
   .body-section--content p, .body-section--event-footer p, .body-section--content li, .body-section--event-footer li {
-    font-size: 0.65rem; }
+    font-size: 0.75rem; }
   .body-section--content:nth-child(even), .body-section--event-footer:nth-child(even) {
     background: #f9f9f9; }
 
@@ -107,7 +121,7 @@
       .site-nav a {
         display: inline-block;
         border: none;
-        font-size: 0.65rem;
+        font-size: 0.75rem;
         color: #666666;
         text-transform: uppercase;
         width: auto;
@@ -123,7 +137,7 @@
 .footer__link {
   text-align: center; }
   .footer__link a {
-    font-size: 0.65rem;
+    font-size: 0.75rem;
     letter-spacing: 0.05rem;
     color: #5fb2d9; }
 
@@ -150,15 +164,58 @@
     width: 100%; }
 
 .map {
-  width: 800px;
+  width: 100%;
   height: 400px; }
 
-.speaker__photo__image {
-  width: 250px;
-  height: 250px; }
+.speaker, .speaker--more-to-come, .speaker--and-more {
+  margin-bottom: 3rem; }
+  .speaker .speaker__name, .speaker--more-to-come .speaker__name, .speaker--and-more .speaker__name {
+    margin-bottom: 1rem; }
+  .speaker .speaker__photo, .speaker--more-to-come .speaker__photo, .speaker--and-more .speaker__photo {
+    margin-top: 1rem; }
+  .speaker:last-of-type, .speaker--more-to-come:last-of-type, .speaker--and-more:last-of-type {
+    margin-bottom: 0; }
+
+.speaker__photo {
+  text-align: center; }
+  .speaker__photo .speaker__photo__image {
+    width: 250px;
+    height: 250px; }
+
+.speaker__bio {
+  text-align: left; }
+
+.speaker__links {
+  text-align: left; }
 
 .speaker__name {
-  font-size: 0.65rem; }
+  font-size: 0.75rem;
+  text-align: center; }
+
+.speaker--more-to-come .speaker__photo__image {
+  background-color: #ccc;
+  vertical-align: middle;
+  font-size: 48px;
+  opacity: .3; }
+.speaker--more-to-come .speaker__links {
+  text-align: center; }
+
+.speaker--more-to-come__question-mark {
+  position: absolute;
+  top: 50%;
+  margin-top: -.6em;
+  left: 0;
+  width: 100%; }
+
+.speaker--and-more {
+  text-align: center; }
+  .speaker--and-more .speaker__photo__image {
+    background-color: #ccc;
+    vertical-align: middle;
+    font-size: 48px;
+    opacity: .3; }
+  .speaker--and-more .speaker__links {
+    text-align: center; }
 
 * {
   box-sizing: border-box;

@@ -25,14 +25,14 @@
   %p Join us from 10 - 13 February at the brand new, world class conference centre at the Sea World Resort, Gold Coast
 
 %section#venue.body-section--content.grid
-  .grid__cell
+  .grid__cell.two-col{style: 'text-align: left'}
     %h2 Location
     %p Sea World's brand new conference centre is due to open in winter 2015. Boasting a stunning Broadwater location, large veranda, and plenty of space for Ruby developers!
     %p Only a monorail ride away from special encounters with Sea World’s wonderful marine life. Start your day with an exclusive behind the scenes tour at Shark Bay or learn more about the beautiful dolphins at the Dolphin Discovery presentation.
     %p
       %a.button Get Directions
-  .grid__cell
-    Map
+  .grid__cell.two-col
+    %h2 Map
     #map.map
 
 %section#speakers.body-section--content
@@ -49,14 +49,27 @@
           = succeed '.' do
             %a{ href: 'http://exercism.io/' } exercism.io
       %ol.speaker__links
-    .grid__cell.speaker
+        %li
+          %a(href="http://www.kytrinyx.com/") www.kytrinyx.com
+        %li
+          %a(href="https://twitter.com/kytrinyx") @kytrinyx
+    %div.grid__cell.speaker
       %p.speaker__photo
         %img.speaker__photo__image(src="/images/2016/speakers/senator-scott-ludlam.jpg" alt="Photo of Senator Scott Ludlam")
       %h3.speaker__name Senator Scott Ludlam
       %div.speaker__bio
         %p Scott Ludlam is the Deputy Leader of the Australian Greens and spokesperson for Communications, Broadband and the Digital Economy, Housing, Nuclear Issues, and Sustainable Cities and is currently one of 11 Australian Greens members of parliament. He was elected to Parliament in November 2007 and again in April 2014.
-        %p Scott was a leading voice against the Federal Government's attempt to censor the internet with its mandatory net filter, moved amendments to better secure public ownership of the National Broadband Network and has been a strong advocate for a diverse, accessible communications sector. He is campaigning against the Government ‘reforms’ of security legislation to boost ASIO’s data capture and retention powers.
       %ol.speaker__links
+        %li
+          %a(href="http://www.scottludlam.org.au/") www.scottludlam.org.au
+        %li
+          %a(href="https://twitter.com/SenatorLudlam") @SenatorLudlam
+    %div.grid__cell.speaker--and-more
+      %div.speaker__photo{style: 'padding-bottom: 1rem;'}
+        %div.speaker__photo__image{style: 'font-size: 6em; line-height: 250px; margin: 0 auto 5px;'} ?
+      %h3.speaker__name More to be announced!
+      %div.speaker__bio
+        -#%p <a href="/2016/speakers" class="button">See them all</a>
 
 %section#events.body-section--content
   %h2 Social Events
@@ -64,29 +77,29 @@
 
   .event-grid.grid
     .grid__cell.event
-      %img{ src: '/images/2016/opening-party-at-q1.png' }
+      %img{ src: '/images/2016/events/q1.jpg' }
       %h3
-        Opening Party at Q1
+        %a(href="http://www.skypoint.com.au/" target="_blank") Opening Party at SkyPoint in Q1
     .grid__cell.event
-      %img{ src: '/images/2016/dinner-at-four-winds.png' }
+      %img{ src: '/images/2016/events/four-winds.jpg' }
       %h3
-        Dinner at Four Winds Revolving Restaurant
+        %a(href="http://www.fourwindsrestaurant.com.au/" target="_blank") Dinner at Four Winds Revolving Restaurant
     .grid__cell.event
-      %img{ src: '/images/2016/friday-night-at-movie-world.png' }
+      %img{ src: '/images/2016/events/movieworld.jpg' }
       %h3
-        Friday Night Party at Movie World
+        %a(href="http://movieworld.com.au/" target="_blank") Friday Night Party at Movie World
     .grid__cell.event
-      %img{ src: '/images/2016/community-day.png' }
+      %img{ src: '/images/2016/events/hinterland.jpg' }
       %h3
         Community Day with a choice of activities
     .grid__cell.event
-      %img{ src: '/images/2016/beach-bbq.png' }
+      %img{ src: '/images/2016/events/kurrawa-beach.jpg' }
       %h3
-        Beach BBQ
+        %a(href="http://kurrawasurf.com.au/surfclub/" target="_blank") Beach BBQ
     .grid__cell.event
-      %img{ src: '/images/2016/closing-party-at-kurrawa-surf-club.png' }
+      %img{ src: '/images/2016/events/kurrawa-surf-club.jpg' }
       %h3
-        Closing Party at Kurrawa Surf Club
+        %a(href="http://kurrawasurf.com.au/supportersclub/" target="_blank") Closing Party at Kurrawa Surf Club
 
 %section#workshops.body-section--content
   %h2 Workshops

@@ -7,9 +7,16 @@
 
 .speaker__photo {
   text-align: center;
+  background-color: #bfd0d8;
+  padding-top: 10px;
+  margin-bottom: 20px;
+
   .speaker__photo__image {
-    width: 250px;
-    height: 250px;
+    width: 285px;
+    height: 285px;
+    font-size: 5rem;
+    line-height: 250px;
+    margin: 0 auto 5px;
   }
 }
 
@@ -43,6 +50,6 @@
 .speaker--and-more {
   @extend .speaker;
   text-align: center;
-  .speaker__photo__image { background-color: #ccc; vertical-align: middle; font-size: 48px; opacity: .3; }
+  .speaker__photo__image { background-color: #ccc; vertical-align: middle; opacity: .3; }
   .speaker__links { text-align: center; }
 }

@@ -180,9 +180,11 @@
   padding: 0.25rem; }
   .event h3 {
     text-transform: uppercase;
-    font-size: 0.75rem; }
+    font-size: 0.75rem;
+    margin-bottom: 40px; }
   .event img {
-    width: 100%; }
+    width: 100%;
+    border: 5px solid #bfd0d8; }
 
 .map {
   width: 100%;
@@ -198,10 +200,16 @@
     margin-bottom: 0; }
 
 .speaker__photo {
-  text-align: center; }
+  text-align: center;
+  background-color: #bfd0d8;
+  padding-top: 10px;
+  margin-bottom: 20px; }
   .speaker__photo .speaker__photo__image {
-    width: 250px;
-    height: 250px; }
+    width: 285px;
+    height: 285px;
+    font-size: 5rem;
+    line-height: 250px;
+    margin: 0 auto 5px; }
 
 .speaker__bio {
   text-align: left; }
@@ -233,7 +241,6 @@
   .speaker--and-more .speaker__photo__image {
     background-color: #ccc;
     vertical-align: middle;
-    font-size: 48px;
     opacity: .3; }
   .speaker--and-more .speaker__links {
     text-align: center; }
@@ -256,9 +263,13 @@ html {
 
 h1, h2, h3 {
   font-family: "roboto", "Roboto", sans-serif;
-  text-transform: uppercase; }
+  text-transform: uppercase;
+  color: black; }
   h1 a, h2 a, h3 a {
     color: currentColor; }
+
+body {
+  color: #848484; }
 
 a {
   text-decoration: none;

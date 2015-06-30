@@ -1,12 +1,14 @@
 .event {
   text-align: center;
   padding: 0.25rem;
-  
+
   h3 {
     text-transform: uppercase;
     font-size: $section-heading-size;
+    margin-bottom: 40px;
   }
   img {
     width: 100%;
+    border: 5px solid #bfd0d8;
   }
 }

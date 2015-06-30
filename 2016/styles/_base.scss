@@ -15,10 +15,14 @@ html {
 h1, h2, h3 {
   font-family: $body-font;
   text-transform: uppercase;
-
+  color: black;
   a {
     color: currentColor;
   }
+}
+
+body {
+  color: #848484;
 }
 
 a {

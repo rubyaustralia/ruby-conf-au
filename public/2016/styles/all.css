@@ -34,6 +34,22 @@
       width: 41%;
       margin-left: 3%;
       margin-right: 3%; } }
+  @media (min-width: 800px) {
+    .grid__cell.one-col {
+      display: inline-block;
+      text-align: center;
+      width: 94%;
+      margin-left: 3%;
+      margin-right: 3%; } }
+  @media (min-width: 1200px) {
+    .grid__cell.one-col {
+      display: inline-block;
+      text-align: center;
+      width: 94%;
+      margin-left: 3%;
+      margin-right: 3%; } }
+  .grid__cell p {
+    max-width: 100%; }
 
 .button {
   display: inline-block;
@@ -41,8 +57,8 @@
   line-height: 1;
   color: white;
   text-transform: uppercase;
-  background-color: #5fb2d9;
-  border: 4px solid #5fb2d9;
+  background-color: #40B2DC;
+  border: 4px solid #40B2DC;
   border-radius: 4px;
   padding: .75rem 1rem;
   margin: 1.5rem 0; }
@@ -102,9 +118,13 @@
     font-size: 0.75rem; }
   .body-section--content:nth-child(even), .body-section--event-footer:nth-child(even) {
     background: #f9f9f9; }
+  .body-section--content:nth-child(odd), .body-section--event-footer:nth-child(odd) {
+    background: #fefefe; }
+  .body-section--content .grid__cell p, .body-section--event-footer .grid__cell p {
+    max-width: 100%; }
 
 .site-nav {
-  background: #fafafa;
+  background: #fefefe;
   padding: 1rem; }
   .site-nav a {
     display: block;
@@ -121,14 +141,14 @@
       .site-nav a {
         display: inline-block;
         border: none;
-        font-size: 0.75rem;
+        font-size: 0.65rem;
         color: #666666;
         text-transform: uppercase;
         width: auto;
         padding: 0.75rem 0.25rem;
         box-sizing: border-box;
-        border-bottom: 2px solid #fafafa;
-        font-weight: bold; }
+        border-bottom: 2px solid #fefefe;
+        font-weight: normal; }
         .site-nav a:hover, .site-nav a:active, .site-nav a:focus {
           color: #000;
           border-bottom: 2px solid #9299a7;
@@ -139,7 +159,8 @@
   .footer__link a {
     font-size: 0.75rem;
     letter-spacing: 0.05rem;
-    color: #5fb2d9; }
+    color: #40B2DC;
+    font-weight: 200; }
 
 .content-page__header {
   padding: 4rem 0 3rem 0; }
@@ -236,10 +257,12 @@ html {
 h1, h2, h3 {
   font-family: "roboto", "Roboto", sans-serif;
   text-transform: uppercase; }
+  h1 a, h2 a, h3 a {
+    color: currentColor; }
 
 a {
   text-decoration: none;
-  color: currentColor;
+  color: #40B2DC;
   font-weight: bold; }
   a:focus {
     outline: 1px dotted currentColor; }

@@ -15,10 +15,14 @@ html {
 h1, h2, h3 {
   font-family: $body-font;
   text-transform: uppercase;
+
+  a {
+    color: currentColor;
+  }
 }
 
 a {
-  text-decoration: none; color: currentColor; font-weight: bold;
+  text-decoration: none; color: $link-text-color; font-weight: bold;
   &:focus { outline: 1px dotted currentColor; }
   &:hover { text-decoration: underline; }
 }

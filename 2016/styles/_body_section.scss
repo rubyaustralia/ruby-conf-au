@@ -57,6 +57,16 @@
   &:nth-child(even) {
     background: $grey-very-light;
   }
+
+  &:nth-child(odd) {
+    background: $grey-light;
+  }
+
+  .grid__cell {
+    p {
+      max-width: 100%;
+    }
+  }
 }
 
 .body-section--event-footer {

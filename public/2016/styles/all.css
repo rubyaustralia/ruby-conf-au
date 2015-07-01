@@ -204,8 +204,8 @@
 
 .speaker__photo {
   text-align: center;
-  background-color: #bfd0d8;
   padding-top: 10px;
+  margin: auto;
   margin-bottom: 20px;
   max-width: 305px; }
   .speaker__photo .speaker__photo__image {
@@ -213,7 +213,8 @@
     height: 285px;
     font-size: 5rem;
     line-height: 250px;
-    margin: 0 auto 5px; }
+    margin: 0 auto 5px;
+    border: 5px solid #bfd0d8; }
 
 .speaker__bio {
   text-align: left; }

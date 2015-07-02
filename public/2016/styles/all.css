@@ -140,6 +140,7 @@
 
 @media (min-width: 500px) {
   .site-nav {
+    display: block;
     background: #fefefe;
     padding: 1rem; }
     .site-nav a {

@@ -96,6 +96,12 @@
     opacity: 1;
     -webkit-animation-play-state: running;
             animation-play-state: running; }
+  @media (min-width: 1500px) {
+    .body-section--event-header, .content-page--event-header {
+      background-size: 100%; } }
+  @media (min-width: 2500px) {
+    .body-section--event-header, .content-page--event-header {
+      background-position-y: -200px; } }
   @media (min-width: 900px) and (min-height: 30rem) {
     .body-section--event-header, .content-page--event-header {
       padding-top: 4rem; }

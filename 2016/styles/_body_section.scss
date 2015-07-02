@@ -28,6 +28,9 @@
     animation-play-state: paused;
   }
   .skip-nav:focus { opacity: 1; animation-play-state: running; }
+  @media (min-width: 1500px) { background-size: 100%; }
+  @media (min-width: 2500px) { background-position-y: -200px; }
+
   @media (min-width: 900px) and (min-height: 30rem) {
     padding-top: 4rem;
     .skip-nav {

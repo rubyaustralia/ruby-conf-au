@@ -70,7 +70,6 @@
 .body-section, .body-section--event-header, .content-page--event-header, .body-section--content, .body-section--event-footer, .content-page__header {
   padding-left: 1rem;
   text-align: center;
-  max-width: 1700px;
   margin: auto; }
   .body-section p, .body-section--event-header p, .content-page--event-header p, .body-section--content p, .body-section--event-footer p, .content-page__header p, .body-section ul, .body-section--event-header ul, .content-page--event-header ul, .body-section--content ul, .body-section--event-footer ul, .content-page__header ul {
     max-width: 30rem;
@@ -105,14 +104,21 @@
         -webkit-animation-play-state: running;
                 animation-play-state: running; } }
   .body-section--event-header .body-section--event-header__logo, .content-page--event-header .body-section--event-header__logo {
-    padding: 2rem 0 1rem; }
+    padding: 2rem 0 1rem;
+    width: 50%; }
+    @media (min-width: 500px) {
+      .body-section--event-header .body-section--event-header__logo, .content-page--event-header .body-section--event-header__logo {
+        width: auto; } }
   .body-section--event-header .body-section--event-header__city, .content-page--event-header .body-section--event-header__city {
     padding: 0.75rem 0; }
   .body-section--event-header .body-section--event-header__date, .content-page--event-header .body-section--event-header__date {
     padding: 0 0 2rem; }
 
 .body-section--content, .body-section--event-footer {
-  padding: 4rem 0 2rem; }
+  padding: 1rem 0.5rem 2rem; }
+  @media (min-width: 500px) {
+    .body-section--content, .body-section--event-footer {
+      padding: 4rem 0 2rem; } }
   .body-section--content h2, .body-section--event-footer h2 {
     font-size: 0.75rem;
     padding-bottom: 1rem; }
@@ -125,13 +131,21 @@
   .body-section--content .grid__cell p, .body-section--event-footer .grid__cell p {
     max-width: 100%; }
 
+.body-section__container {
+  max-width: 1600px;
+  margin: auto; }
+
 .site-nav {
-  background: #fefefe;
-  padding: 1rem; }
-  .site-nav a {
-    display: block;
-    width: 100%; }
-  @media (min-width: 900px) {
+  display: none; }
+
+@media (min-width: 500px) {
+  .site-nav {
+    background: #fefefe;
+    padding: 1rem; }
+    .site-nav a {
+      display: block;
+      width: 100%; } }
+  @media (min-width: 500px) and (min-width: 900px) {
     .site-nav {
       position: fixed;
       top: 0;

@@ -27,84 +27,88 @@
   %h3 Tickets will be on sale from August 1st
 
 %section#venue.body-section--content.grid
-  .grid__cell.two-col{style: 'text-align: left'}
-    %h2 Location
-    %p Sea World's brand new conference centre is due to open in winter 2015. Boasting a stunning Broadwater location, large veranda, and plenty of space for Ruby developers!
-    %p Only a monorail ride away from special encounters with Sea World’s wonderful marine life. Start your day with an exclusive behind the scenes tour at Shark Bay or learn more about the beautiful dolphins at the Dolphin Discovery presentation.
-    %p
-      %a.button Get Directions
-  .grid__cell.two-col
-    %h2 Map
-    #map.map
+  .body-section__container
+    .grid__cell.two-col{style: 'text-align: left'}
+      %h2 Location
+      %p Sea World's brand new conference centre is due to open in winter 2015. Boasting a stunning Broadwater location, large veranda, and plenty of space for Ruby developers!
+      %p Only a monorail ride away from special encounters with Sea World’s wonderful marine life. Start your day with an exclusive behind the scenes tour at Shark Bay or learn more about the beautiful dolphins at the Dolphin Discovery presentation.
+      %p
+        %a.button Get Directions
+    .grid__cell.two-col
+      %h2 Map
+      #map.map
 
 %section#speakers.body-section--content
-  %h2 Speakers
-  %div.grid
-    %div.grid__cell.speaker
-      .speaker__photo
-        %img.speaker__photo__image(src="/images/2016/speakers/katrina-owen.jpg" alt="Photo of Katrina")
-      %h3.speaker__name Katrina Owen
-      %div.speaker__bio
-        %p
-          Katrina accidentally became a developer while pursuing a degree in molecular biology. When programming, her focus is on automation, workflow optimization, and refactoring.
-          She works primarily in Go and Ruby, contributes to several open source projects, and is the creator of
-          = succeed '.' do
-            %a{ href: 'http://exercism.io/' } exercism.io
-      %ol.speaker__links
-        %li
-          %a(href="http://www.kytrinyx.com/") www.kytrinyx.com
-        %li
-          %a(href="https://twitter.com/kytrinyx") @kytrinyx
-    %div.grid__cell.speaker
-      .speaker__photo
-        %img.speaker__photo__image(src="/images/2016/speakers/senator-scott-ludlam.jpg" alt="Photo of Senator Scott Ludlam")
-      %h3.speaker__name Senator Scott Ludlam
-      %div.speaker__bio
-        %p Scott Ludlam is the Deputy Leader of the Australian Greens and spokesperson for Communications, Broadband and the Digital Economy, Housing, Nuclear Issues, and Sustainable Cities and is currently one of 11 Australian Greens members of parliament. He was elected to Parliament in November 2007 and again in April 2014.
-      %ol.speaker__links
-        %li
-          %a(href="http://www.scottludlam.org.au/") www.scottludlam.org.au
-        %li
-          %a(href="https://twitter.com/SenatorLudlam") @SenatorLudlam
-    %div.grid__cell.speaker--and-more
-      .speaker__photo
-        %div.speaker__photo__image ?
-      %h3.speaker__name More to be announced!
-      %div.speaker__bio
-        %p Want to see your name here? Our call for proposals will open on August 1st!
-        -#%p <a href="/2016/speakers" class="button">See them all</a>
+  .body-section__container
+    %h2 Speakers
+    %div.grid
+      %div.grid__cell.speaker
+        .speaker__photo
+          %img.speaker__photo__image(src="/images/2016/speakers/katrina-owen.jpg" alt="Photo of Katrina")
+        %h3.speaker__name Katrina Owen
+        %div.speaker__bio
+          %p
+            Katrina accidentally became a developer while pursuing a degree in molecular biology. When programming, her focus is on automation, workflow optimization, and refactoring.
+            She works primarily in Go and Ruby, contributes to several open source projects, and is the creator of
+            = succeed '.' do
+              %a{ href: 'http://exercism.io/' } exercism.io
+        %ol.speaker__links
+          %li
+            %a(href="http://www.kytrinyx.com/") www.kytrinyx.com
+          %li
+            %a(href="https://twitter.com/kytrinyx") @kytrinyx
+      %div.grid__cell.speaker
+        .speaker__photo
+          %img.speaker__photo__image(src="/images/2016/speakers/senator-scott-ludlam.jpg" alt="Photo of Senator Scott Ludlam")
+        %h3.speaker__name Senator Scott Ludlam
+        %div.speaker__bio
+          %p Scott Ludlam is the Deputy Leader of the Australian Greens and spokesperson for Communications, Broadband and the Digital Economy, Housing, Nuclear Issues, and Sustainable Cities and is currently one of 11 Australian Greens members of parliament. He was elected to Parliament in November 2007 and again in April 2014.
+        %ol.speaker__links
+          %li
+            %a(href="http://www.scottludlam.org.au/") www.scottludlam.org.au
+          %li
+            %a(href="https://twitter.com/SenatorLudlam") @SenatorLudlam
+      %div.grid__cell.speaker--and-more
+        .speaker__photo
+          %div.speaker__photo__image ?
+        %h3.speaker__name More to be announced!
+        %div.speaker__bio
+          %p Want to see your name here? Our call for proposals will open on August 1st!
+          -#%p <a href="/2016/speakers" class="button">See them all</a>
 
 %section#events.body-section--content
-  %h2 Social Events
-  %p We’ve organised a raft of events to enjoy The Gold Coast and spend quality time with your fellow Rubyists.
+  .body-section__container
+    %h2 Social Events
+    %p We’ve organised a raft of events to enjoy The Gold Coast and spend quality time with your fellow Rubyists.
 
-  .event-grid.grid
-    .grid__cell.event
-      %img{ src: '/images/2016/events/q1.jpg' }
-      %h3
-        %a(href="http://www.skypoint.com.au/" target="_blank") Opening Party at SkyPoint in Q1
-    .grid__cell.event
-      %img{ src: '/images/2016/events/four-winds.jpg' }
-      %h3
-        %a(href="http://www.fourwindsrestaurant.com.au/" target="_blank") Dinner at Four Winds Revolving Restaurant
-    .grid__cell.event
-      %img{ src: '/images/2016/events/movieworld.jpg' }
-      %h3
-        %a(href="http://movieworld.com.au/" target="_blank") Friday Night Party at Movie World
-    .grid__cell.event
-      %img{ src: '/images/2016/events/hinterland.jpg' }
-      %h3
-        Community Day with a choice of activities
-    .grid__cell.event
-      %img{ src: '/images/2016/events/kurrawa-beach.jpg' }
-      %h3
-        %a(href="http://kurrawasurf.com.au/surfclub/" target="_blank") Beach BBQ
-    .grid__cell.event
-      %img{ src: '/images/2016/events/kurrawa-surf-club.jpg' }
-      %h3
-        %a(href="http://kurrawasurf.com.au/supportersclub/" target="_blank") Closing Party at Kurrawa Surf Club
+    .event-grid.grid
+      .grid__cell.event
+        %img{ src: '/images/2016/events/q1.jpg' }
+        %h3
+          %a(href="http://www.skypoint.com.au/" target="_blank") Opening Party at SkyPoint in Q1
+      .grid__cell.event
+        %img{ src: '/images/2016/events/four-winds.jpg' }
+        %h3
+          %a(href="http://www.fourwindsrestaurant.com.au/" target="_blank") Dinner at Four Winds Revolving Restaurant
+      .grid__cell.event
+        %img{ src: '/images/2016/events/movieworld.jpg' }
+        %h3
+          %a(href="http://movieworld.com.au/" target="_blank") Friday Night Party at Movie World
+      .grid__cell.event
+        %img{ src: '/images/2016/events/hinterland.jpg' }
+        %h3
+          Community Day with a choice of activities
+      .grid__cell.event
+        %img{ src: '/images/2016/events/kurrawa-beach.jpg' }
+        %h3
+          %a(href="http://kurrawasurf.com.au/surfclub/" target="_blank") Beach BBQ
+      .grid__cell.event
+        %img{ src: '/images/2016/events/kurrawa-surf-club.jpg' }
+        %h3
+          %a(href="http://kurrawasurf.com.au/supportersclub/" target="_blank") Closing Party at Kurrawa Surf Club
 
 %section#workshops.body-section--content
+
   %h2 Workshops
 
   %p Workshops will be announced shortly.
@@ -115,14 +119,13 @@
   %p Sponsors will be announced shortly.
 
 %section#conduct.body-section--content
-  %div.grid
-    .grid__cell.one-col
-      %h2 Code of Conduct
-      %p
-        RubyConf Australia is run under the auspices of Ruby Australia.
-        You can view our
-        %a{ href: "/2016/policies#code" } code of conduct
-        and
-        %a{ href: "/2016/policies#anti-harassment" } our anti-harrassment policy.
-      %p
-        These rules must be followed by all attendees at all conference-related events.
+  .body-section__container
+    %h2 Code of Conduct
+    %p
+      RubyConf Australia is run under the auspices of Ruby Australia.
+      You can view our
+      %a{ href: "/2016/policies#code" } code of conduct
+      and
+      %a{ href: "/2016/policies#anti-harassment" } our anti-harrassment policy.
+    %p
+      These rules must be followed by all attendees at all conference-related events.

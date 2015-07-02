@@ -1,7 +1,7 @@
 .body-section {
   padding-left: 1rem;
   text-align: center;
-  max-width: 1700px;
+  // max-width: 1700px;
   margin: auto;
 
   p, ul {
@@ -37,6 +37,8 @@
   }
   .body-section--event-header__logo {
     padding: 2rem 0 1rem;
+    width: 50%;
+    @media (min-width: 500px) { width: auto; }
   }
   .body-section--event-header__city {
     padding: 0.75rem 0;
@@ -48,7 +50,8 @@
 
 .body-section--content {
   @extend .body-section;
-  padding: 4rem 0 2rem;
+  padding: 1rem 0.5rem 2rem;
+  @media (min-width: 500px) { padding: 4rem 0 2rem; }
 
   h2 {
     font-size: $section-heading-size;
@@ -70,6 +73,11 @@
       max-width: 100%;
     }
   }
+}
+
+.body-section__container {
+  max-width: 1600px;
+  margin: auto;
 }
 
 .body-section--event-footer {

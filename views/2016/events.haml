@@ -3,7 +3,58 @@
 %div
   = haml :'2016/_header'
 
-  .content-page__header
-    %h1 Social Events
-    %p We’ve organised a raft of events to enjoy the Gold Coast and spend quality time with your fellow Rubyists.
-    %p To be added ...
+%section#conference.body-section--event
+  %h1 Social Events
+  %p We’ve organised a raft of events to enjoy the Gold Coast and spend quality time with your fellow Rubyists.
+
+%section.body-section--event
+  .body-section__container
+    #carousel-q1.carousel.slide.event__image-slide{ 'data-ride': 'carousel', 'data-interval': 'false' }
+      %ol.carousel-indicators
+        %li.active{ data: { target: '#carousel-q1', 'slide-to': 0 } }
+        %li{ data: { target: '#carousel-q1', 'slide-to': 1 } }
+      .carousel-inner{ role: 'listbox' }
+        .item.active
+          %img{ src: '/images/2016/events/q1/eastern-spire.jpg' }
+          .carousel-caption
+        .item
+          %img{ src: '/images/2016/events/q1/interior.jpg' }
+          .carousel-caption
+      %a.left.carousel-control{ href: '#carousel-q1', role: 'button', 'data-slide': 'prev' }
+        %span.icon-prev.event__control{ 'aria-hidden': 'true'}
+        %span.sr-only Previous
+      %a.right.carousel-control{ href: '#carousel-q1', role: 'button', 'data-slide': 'next' }
+        %span.icon-next.event__control{ 'aria-hidden': 'true'}
+        %span.sr-only Next
+    %h3
+      %a(href="http://www.skypoint.com.au/" target="_blank") Opening Party at SkyPoint in Q1
+
+%section.body-section--event
+  .body-section__container
+    %img{ src: '/images/2016/events/four-winds.jpg' }
+    %h3
+      %a(href="http://www.fourwindsrestaurant.com.au/" target="_blank") Dinner at Four Winds Revolving Restaurant
+
+%section.body-section--event
+  .body-section__container
+    %img{ src: '/images/2016/events/movieworld.jpg' }
+    %h3
+      %a(href="http://movieworld.com.au/" target="_blank") Friday Night Party at Movie World
+
+%section.body-section--event
+  .body-section__container
+    %img{ src: '/images/2016/events/hinterland.jpg' }
+    %h3
+      Community Day with a choice of activities
+
+%section.body-section--event
+  .body-section__container
+    %img{ src: '/images/2016/events/kurrawa-beach.jpg' }
+    %h3
+      %a(href="http://kurrawasurf.com.au/surfclub/" target="_blank") Beach BBQ
+
+%section.body-section--event
+  .body-section__container
+    %img{ src: '/images/2016/events/kurrawa-surf-club.jpg' }
+    %h3
+      %a(href="http://kurrawasurf.com.au/supportersclub/" target="_blank") Closing Party at Kurrawa Surf Club

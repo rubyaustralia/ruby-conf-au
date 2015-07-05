@@ -12,3 +12,16 @@
     border: 5px solid #bfd0d8;
   }
 }
+
+.event__image-slide {
+  max-width: 1000px;
+  margin: auto;
+}
+
+@media screen and (min-width: 768px) {
+  .carousel-control {
+    .icon-next.event__control, .icon-prev.event__control {
+      font-size: 100px;
+    }
+  }
+}

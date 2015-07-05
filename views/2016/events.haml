@@ -9,52 +9,69 @@
 
 %section.body-section--event
   .body-section__container
-    #carousel-q1.carousel.slide.event__image-slide{ 'data-ride': 'carousel', 'data-interval': 'false' }
-      %ol.carousel-indicators
-        %li.active{ data: { target: '#carousel-q1', 'slide-to': 0 } }
-        %li{ data: { target: '#carousel-q1', 'slide-to': 1 } }
-      .carousel-inner{ role: 'listbox' }
-        .item.active
-          %img{ src: '/images/2016/events/q1/eastern-spire.jpg' }
-          .carousel-caption
-        .item
-          %img{ src: '/images/2016/events/q1/interior.jpg' }
-          .carousel-caption
-      %a.left.carousel-control{ href: '#carousel-q1', role: 'button', 'data-slide': 'prev' }
-        %span.icon-prev.event__control{ 'aria-hidden': 'true'}
-        %span.sr-only Previous
-      %a.right.carousel-control{ href: '#carousel-q1', role: 'button', 'data-slide': 'next' }
-        %span.icon-next.event__control{ 'aria-hidden': 'true'}
-        %span.sr-only Next
-    %h3
-      %a(href="http://www.skypoint.com.au/" target="_blank") Opening Party at SkyPoint in Q1
+    .event
+      - q1_images = ['eastern-spire.jpg', 'air-morning.jpg', 'interior.jpg', 'interior-shot.jpg']
+      = haml :'2016/_carousel', locals: { name: 'q1', images: q1_images }
+
+      %h3
+        %a(href="http://www.skypoint.com.au/" target="_blank") Opening Party at SkyPoint in Q1
+        .event__date-time
+          7pm, Weds, 10 Feb - Skypoint Observation Deck
+      %p
+        SkyPoint Observation Deck, located on Levels 77 and 78 of the iconic Q1 residential tower, is the Gold Coast’s highest, most unique, conferencing and events venue. SkyPoint is conveniently situated by the beach, in Surfers Paradise, and provides spectacular 360 degree views of the regions famous coastline, the beachside city and the luscious green hinterland.
+      %a.button{ href: 'https://www.google.com.au/maps/place/SkyPoint+Observation+Deck/@-28.0064297,153.429721,15z/data=!4m2!3m1!1s0x0:0xbddff0023b586a04?sa=X&ei=0ZmYVbz1IYPDmwXl2oCYDw&ved=0CHgQ_BIwDQ' } Get Directions
 
 %section.body-section--event
   .body-section__container
-    %img{ src: '/images/2016/events/four-winds.jpg' }
-    %h3
-      %a(href="http://www.fourwindsrestaurant.com.au/" target="_blank") Dinner at Four Winds Revolving Restaurant
+    .event
+      .event__image-slide
+        %img{ src: '/images/2016/events/four-winds.jpg' }
+      %h3
+        %a(href="http://www.fourwindsrestaurant.com.au/" target="_blank") Dinner at Four Winds Revolving Restaurant
+        .event__date-time
+          7pm, Thurs, 11 Feb - Four Winds Revolving Restaurant
+      %a.button{ href: 'https://www.google.com.au/maps/place/Four+Winds+Revolving+Restaurant/@-28.0174005,153.4297264,15z/data=!4m2!3m1!1s0x0:0xd8ceda23ac334064?sa=X&ei=8aqYVYTTC4jM8gWCupWoAQ&ved=0CIsBEPwSMAw' } Get Directions
 
 %section.body-section--event
   .body-section__container
-    %img{ src: '/images/2016/events/movieworld.jpg' }
-    %h3
-      %a(href="http://movieworld.com.au/" target="_blank") Friday Night Party at Movie World
+    .event
+      - movieworld_images = ['movieworld.jpg', 'superman-night.jpg', 'green-lantern.jpg', 'coaster.jpg', 'batman.jpg', 'superman-escape.jpg', 'batman-ride.jpg', 'wild-west-falls.jpg']
+      = haml :'2016/_carousel', locals: { name: 'movieworld', images: movieworld_images }
+
+      %h3
+        %a(href="http://movieworld.com.au/" target="_blank") Friday Night Party at Movie World
+        .event__date-time
+          7pm, Fri, 12 Feb - Movie World
+      %p
+        Experience the magic and excitement of a world where movies come to life and EVERYONE’S A STAR - Warner Bros. Movie World! Become lost in a world full of fantasy and fun, meet your favourite stars and super heroes and experience the exhilaration of world-class adventure rides and movie attractions. Experience heart thumping thrill rides like the awesome Green Lantern Coaster, Batwing Spaceshot, Superman Escape, Arkham Asylum and Wild West Falls.
+      %p
+        For three hours on Friday evening, we'll have the park to ourselves with rides including Superman Escape and Green Lantern Roller Coaster available to ride as long as you can stomach them! Food and drink including cocktails and finger food will be available for all.
 
 %section.body-section--event
   .body-section__container
-    %img{ src: '/images/2016/events/hinterland.jpg' }
-    %h3
-      Community Day with a choice of activities
+    .event
+      %img{ src: '/images/2016/events/hinterland.jpg' }
+      %h3
+        Community Day with a choice of activities
+      .event__date-time
+
 
 %section.body-section--event
   .body-section__container
-    %img{ src: '/images/2016/events/kurrawa-beach.jpg' }
-    %h3
-      %a(href="http://kurrawasurf.com.au/surfclub/" target="_blank") Beach BBQ
+    .event
+      %img{ src: '/images/2016/events/kurrawa-beach.jpg' }
+      %h3
+        %a(href="http://kurrawasurf.com.au/surfclub/" target="_blank") Beach BBQ
+      .event__date-time
+
 
 %section.body-section--event
   .body-section__container
-    %img{ src: '/images/2016/events/kurrawa-surf-club.jpg' }
-    %h3
-      %a(href="http://kurrawasurf.com.au/supportersclub/" target="_blank") Closing Party at Kurrawa Surf Club
+    .event
+      - kurrawa_images = ['surf-club.jpg', 'kurrawa-park.jpg', 'kurrawa-beach.jpg']
+      = haml :'2016/_carousel', locals: { name: 'kurrawa', images: kurrawa_images }
+      %h3
+        %a(href="http://kurrawasurf.com.au/supportersclub/" target="_blank") Closing Party at Kurrawa Surf Club
+        .event__date-time
+          7pm, Sat 13 Feb - Kurrawa Surf Club
+      %a.button{ href: 'https://www.google.com.au/maps/place/Kurrawa+Surf+Club/@-28.029438,153.434876,17z/data=!3m1!4b1!4m2!3m1!1s0x6b9104fef3cae607:0x2ad30724fae59930' } Get Directions

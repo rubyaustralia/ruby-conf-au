@@ -13,15 +13,46 @@
   }
 }
 
-.event__image-slide {
-  max-width: 1000px;
-  margin: auto;
+.body-section--event {
+  .event {
+    max-width: 750px;
+    text-align: left;
+    margin: auto;
+  }
+
+  h3 {
+    text-transform: uppercase;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+
+  p {
+    margin: 0;
+    width: 100%;
+    max-width: 100%;
+  }
+
+  img {
+    border: 5px solid #bfd0d8;
+  }
+
+  .button {
+    display: block;
+    width: 12rem;
+    margin: 20px auto;
+    text-align: center;
+  }
+
+  .event__date-time {
+    color: $grey-light-text;
+  }
 }
 
 @media screen and (min-width: 768px) {
   .carousel-control {
     .icon-next.event__control, .icon-prev.event__control {
       font-size: 100px;
+      margin-top: -60px;
     }
   }
 }

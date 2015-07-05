@@ -1,5 +1,6 @@
 function initialize() {
   var mapCanvas = document.getElementById('map');
+  if (mapCanvas == null) { return; }
   var seaWorldLatLng = new google.maps.LatLng(-27.9575859, 153.4252022);
   var mapOptions = {
     center: seaWorldLatLng,

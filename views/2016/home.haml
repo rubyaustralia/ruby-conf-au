@@ -11,6 +11,7 @@
 
 %section.site-nav
   %a(href="#conference") Conference
+  %a(href="#attending") Attending
   %a(href="#venue") Location
   %a(href="#speakers") Speakers
   %a(href="#events") Social Events
@@ -22,9 +23,15 @@
 #after-nav
 
 %section#conference.body-section--content
-  %h2 Ruby Conference Australia 2016
-  %p Join us from 10 - 13 February at the brand new, world class conference centre at the Sea World Resort, Gold Coast
-  %h3 Tickets will be on sale from August 1st
+  .body-section__container
+    %h2 Ruby Conference Australia 2016
+    %p Join us from 10 - 13 February at the brand new, world class conference centre at the Sea World Resort, Gold Coast
+    %h3 Tickets will be on sale from August 1st
+
+%section#attending.body-section--content
+  .body-section__container
+    %h2 Attending
+    %p.lead RubyConf Australia is an inclusive conference and as such strives to be <a href="/2016/policies#code">welcoming</a> and <a href="/2016/accessibility">accessible</a> to as many people as possible.
 
 %section#venue.body-section--content.grid
   .body-section__container
@@ -33,7 +40,7 @@
       %p Sea World's brand new conference centre is due to open in winter 2015. Boasting a stunning Broadwater location, large veranda, and plenty of space for Ruby developers!
       %p Only a monorail ride away from special encounters with Sea World’s wonderful marine life. Start your day with an exclusive behind the scenes tour at Shark Bay or learn more about the beautiful dolphins at the Dolphin Discovery presentation.
       %p
-        %a.button Get Directions
+        %a.button{ href: 'https://www.google.com.au/maps/dir//Sea+World,+Sea+World+Dr,+Main+Beach+QLD+4217,+Australia/@-27.9572371,153.3886081,14z/data=!4m9!4m8!1m0!1m5!1m1!1s0x6b910fbcb65bf0db:0xfac5c569854751a0!2m2!1d153.425516!2d-27.957242!3e1' } Get Directions
     .grid__cell.two-col
       %h2 Map
       #map.map
@@ -108,15 +115,14 @@
           %a(href="http://kurrawasurf.com.au/supportersclub/" target="_blank") Closing Party at Kurrawa Surf Club
 
 %section#workshops.body-section--content
-
-  %h2 Workshops
-
-  %p Workshops will be announced shortly.
+  .body-section__container
+    %h2 Workshops
+    %p Workshops will be announced shortly.
 
 %section#sponsors.body-section--content
-  %h2 Sponsors
-
-  %p Sponsors will be announced shortly.
+  .body-section__container
+    %h2 Sponsors
+    %p Sponsors will be announced shortly.
 
 %section#conduct.body-section--content
   .body-section__container

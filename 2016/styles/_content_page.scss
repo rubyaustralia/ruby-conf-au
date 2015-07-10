@@ -1,6 +1,6 @@
 .content-page__header {
   @extend .body-section;
-  padding: 4rem 0 3rem 0;
+  padding: 2rem 0 1rem 0;
   h1 { font-size: 3rem; }
 }
 
@@ -14,4 +14,13 @@
 
 .content-page--event-header {
   @extend .body-section--event-header;
+}
+
+.content-page .body-section--content {
+  padding: 1rem 0.5rem 2rem;
+  text-align: left;
+  h2 {
+    text-align: center;
+    font-size: 1.5rem;
+  }
 }

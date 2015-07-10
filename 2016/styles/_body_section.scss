@@ -5,7 +5,7 @@
   margin: auto;
 
   p, ul {
-    max-width: 30rem;
+    max-width: 960px;
     margin: auto;
     padding-bottom: 1rem;
   }
@@ -63,11 +63,11 @@
   p, li {
     font-size: $paragraph-size;
   }
-  &:nth-child(even) {
+  &:nth-child(odd) {
     background: $grey-very-light;
   }
 
-  &:nth-child(odd) {
+  &:nth-child(even) {
     background: $grey-light;
   }
 
@@ -75,6 +75,15 @@
     p {
       max-width: 100%;
     }
+  }
+
+  ul li {
+    list-style: disc;
+    margin-left: 2rem;
+  }
+
+  .lead {
+    font-size: $lead-text-size;
   }
 }
 
@@ -85,4 +94,12 @@
 
 .body-section--event-footer {
   @extend .body-section--content;
+  ul li { display: inline; list-style: none; margin-left: 0; }
+  li + li:before { content: '\b7'; color: $blue; font-size: $footer-links-size; letter-spacing: $body-letter-spacing-small; }
+}
+
+.body-section--previous-years {
+  @extend .body-section--content;
+  ul li { display: inline; list-style: none; margin-left: 0; }
+  li + li:before { content: '\b7'; color: $blue; font-size: $footer-links-size; letter-spacing: $body-letter-spacing-small; }
 }

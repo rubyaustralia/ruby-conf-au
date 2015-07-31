@@ -235,6 +235,9 @@
   .content-page .body-section--content h2, .content-page .body-section--event h2, .content-page .body-section--event-footer h2, .content-page .body-section--previous-years h2 {
     text-align: center;
     font-size: 1.5rem; }
+  .content-page .body-section--content h3, .content-page .body-section--event h3, .content-page .body-section--event-footer h3, .content-page .body-section--previous-years h3 {
+    text-align: center;
+    padding-bottom: 1rem; }
 
 .event {
   text-align: center;

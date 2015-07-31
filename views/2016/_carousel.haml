@@ -1,0 +1,30 @@
+- carousel_id = "carousel-#{name}"
+- carousel_target = "##{carousel_id}"
+- folder = "/images/2016/events/#{name}/"
+- last_slide_index = images.size - 1
+- active_image = images.shift
+
+.carousel.slide.event__image-slide{ 'data-ride': 'carousel', 'data-interval': 'false', id: carousel_id }
+  %ol.carousel-indicators
+    %li.active{ data: { target: '#carousel-q1', 'slide-to': 0 } }
+    - (1..last_slide_index).each do |index|
+      %li{ data: { target: carousel_target, 'slide-to': index } }
+
+
+  .carousel-inner{ role: 'listbox' }
+    .item.active
+      %img{ src: "#{folder}#{active_image}" }
+      .carousel-caption
+
+
+    - images.each do |image|
+      .item
+        %img{ src: "#{folder}#{image}" }
+        .carousel-caption
+
+  %a.left.carousel-control{ href: carousel_target, role: 'button', 'data-slide': 'prev' }
+    %span.icon-prev.event__control{ 'aria-hidden': 'true'}
+    %span.sr-only Previous
+  %a.right.carousel-control{ href: carousel_target, role: 'button', 'data-slide': 'next' }
+    %span.icon-next.event__control{ 'aria-hidden': 'true'}
+    %span.sr-only Next

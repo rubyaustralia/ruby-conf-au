@@ -87,6 +87,15 @@
   }
 }
 
+.body-section--event {
+  @extend .body-section--content;
+
+  img {
+    width: 100%;
+    max-width: 1000px;
+  }
+}
+
 .body-section__container {
   max-width: 1600px;
   margin: auto;

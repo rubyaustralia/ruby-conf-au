@@ -27,20 +27,15 @@
     %h2 Ruby Conference Australia 2016
     %p Join us from 10 - 13 February at the brand new, world class conference centre at the Sea World Resort, Gold Coast
     %h3
-      %a{ href: 'https://ti.to/ruby-australia/rubyconf-au-2016' }
-        Tickets are on sale now
+      %a{ href: 'https://ti.to/ruby-australia/rubyconf-au-2016', target: '_blank', class: 'button' }
+        Buy Your Ticket
 
 %section#attending.body-section--content
   .body-section__container
     %h2 Attending
     %p.lead RubyConf Australia is an inclusive conference and as such strives to be <a href="/2016/policies#code">welcoming</a> and <a href="/2016/accessibility">accessible</a> to as many people as possible.
-
-%section#attending.body-section--content
-  .body-section__container
-    %h2 Speaking
-    %p.lead
-      %a{ href: 'http://cfp.rubyconf.org.au/events/2016' }
-        Our CFP is open until Sep 30th
+    %a{ href: 'http://cfp.rubyconf.org.au/events/2016', target: '_blank', class: 'button' }
+      Submit a Proposal
 
 %section#venue.body-section--content.grid
   .body-section__container
@@ -143,10 +138,11 @@
           %div.speaker__photo__image ?
         %h3.speaker__name More to be announced!
         %div.speaker__bio
-          %p
+          %p.lead{style: 'text-align: center;'}
             Want to see your name here?
-            %a{ href: 'http://cfp.rubyconf.org.au/events/2016' }
-              Our call for proposals is now open!
+        %a{ href: 'http://cfp.rubyconf.org.au/events/2016', target: '_blank', class: 'button' }
+          Submit a Proposal
+
           -#%p <a href="/2016/speakers" class="button">See them all</a>
 
 %section#events.body-section--content
@@ -184,12 +180,16 @@
 %section#workshops.body-section--content
   .body-section__container
     %h2 Workshops
-    %p Workshops will be announced shortly.
+    %p
+      Workshops will be on the 13th of February, and tickets will be separate from the conference sessions. Rails Girls
+      will be one of the workshops, but the rest of the line-up is still to be announced.
 
 %section#sponsors.body-section--content
   .body-section__container
     %h2 Sponsors
-    %p Sponsors will be announced shortly.
+    %p
+      RubyConf AU 2016 is made possible through the generous support of our sponsors. If your company is interested in
+      sponsoring this conference, get in touch.
 
 %section#conduct.body-section--content
   .body-section__container

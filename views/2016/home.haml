@@ -26,12 +26,21 @@
   .body-section__container
     %h2 Ruby Conference Australia 2016
     %p Join us from 10 - 13 February at the brand new, world class conference centre at the Sea World Resort, Gold Coast
-    %h3 Tickets will be on sale from August 1st
+    %h3
+      %a{ href: 'https://ti.to/ruby-australia/rubyconf-au-2016' }
+        Tickets are on sale now
 
 %section#attending.body-section--content
   .body-section__container
     %h2 Attending
     %p.lead RubyConf Australia is an inclusive conference and as such strives to be <a href="/2016/policies#code">welcoming</a> and <a href="/2016/accessibility">accessible</a> to as many people as possible.
+
+%section#attending.body-section--content
+  .body-section__container
+    %h2 Speaking
+    %p.lead
+      %a{ href: 'http://cfp.rubyconf.org.au/events/2016' }
+        Our CFP is open until Sep 30th
 
 %section#venue.body-section--content.grid
   .body-section__container
@@ -89,8 +98,46 @@
             %a(href="http://erniemiller.org/") erniemiller.org
           %li
             %a(href="https://twitter.com/erniemiller") @erniemiller
+
+      %div.grid__cell.speaker
+        %p.speaker__photo
+          %img.speaker__photo__image(src="/images/2016/speakers/saron-yitbarek.jpg" alt="Photo of Saron Yitbarek")
+        %h3.speaker__name Saron Yitbarek
+        %div.speaker__bio
+          %p
+            Saron Yitbarek is a developer, currently leading the Tech Jobs Academy program at Microsoft. She's also the founder of CodeNewbie, the most supportive community of programmers and people learning to code, and host of the weekly CodeNewbie Podcast, available on your favorite podcasting app.
         %ol.speaker__links
           %li
+            %a(href="http://bloggytoons.com/") bloggytoons.com
+          %li
+            %a(href="https://twitter.com/saronyitbarek") @saronyitbarek
+
+      %div.grid__cell.speaker
+        %p.speaker__photo
+          %img.speaker__photo__image(src="/images/2016/speakers/jeff-casimir.jpg" alt="Photo of Jeff Casimir")
+        %h3.speaker__name Jeff Casimir
+        %div.speaker__bio
+          %p
+            Jeff is the Executive Director at the Turing School of Software & Design where he works to open the world of programming to a wider, more diverse, more socially-minded slice of the world. He's been programming since 1999, teaching programming since 2003, co-founded a middle school, created three developer training programs, and dreams of one day being CTO of the United States.
+        %ol.speaker__links
+          %li
+            %a(href="https://twitter.com/j3") @j3
+
+
+      %div.grid__cell.speaker
+        %p.speaker__photo
+          %img.speaker__photo__image(src="/images/2016/speakers/dr-nic-williams.jpg" alt="Photo of Dr Nic Williams")
+        %h3.speaker__name Dr Nic Williams
+        %div.speaker__bio
+          %p
+            He writes blog posts for developers; creates tools, libraries and text editor extensions for developers; and speaks to developers at conferences. He’s the CEO of Stark & Wayne, a consultancy for people who love Cloud Foundry and Jenkins. He has contributed to over 300 open source projects. He is known for creating or curating projects such as Bosh, App Scrolls, Rails Installer, Composite Primary Keys, Choc Top, App Scrolls, Rails TextMate bundle, New Gem, Tab Tab, GitHub Badges, Install Theme for Rails, and Dr Nic’s Magic Models.
+        %ol.speaker__links
+          %li
+            %a(href="http://drnicwilliams.com/") drnicwilliams.com
+          %li
+            %a(href="https://twitter.com/drnic") @drnic
+
+
       %div.grid__cell.speaker--and-more
         .speaker__photo
           %div.speaker__photo__image ?
@@ -132,6 +179,7 @@
         %img{ src: '/images/2016/events/kurrawa-surf-club.jpg' }
         %h3
           %a(href="http://kurrawasurf.com.au/supportersclub/" target="_blank") Closing Party at Kurrawa Surf Club
+    %a.button{ href: '/2016/events' } More Info
 
 %section#workshops.body-section--content
   .body-section__container

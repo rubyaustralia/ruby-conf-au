@@ -29,7 +29,10 @@
   %section.body-section--content#get-around
     %h2 Where can I stay?
 
-    %p Conference delegates will receive a discounted rate when booking their accommodation at Sea World Resort – click here to find out more.
+    %p
+      Conference delegates will receive a discounted rate when booking their accommodation at Sea World Resort –
+      = succeed '.' do
+        %a{ href: 'http://www.seaworldresort.com.au/ruby', target: '_blank'} click here to find out more
 
     %p Our friends at <a href="https://aws.passkey.com/g/51603564" target="_blank">Crowne Plaza</a> and <a href="http://www.q1.com.au/" target="_blank">Q1 Resort & Spa</a> are also offering special discounts for conference delegates. When making your booking, make sure you quote “RUBYCONF2016” to receive your conference discount.
 

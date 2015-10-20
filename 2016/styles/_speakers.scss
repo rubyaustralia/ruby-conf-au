@@ -1,6 +1,5 @@
 .speaker {
   margin-bottom: 3rem;
-  .speaker__name { margin-bottom: 1rem; }
   .speaker__photo { margin-top: 1rem; }
   &:last-of-type { margin-bottom: 0; }
 }
@@ -33,6 +32,12 @@
 .speaker__name {
   font-size: $standard-text-size;
   text-align: center;
+}
+
+.speaker__talk {
+  font-size: $standard-text-size;
+  margin-bottom: 1rem;
+  letter-spacing: $body-letter-spacing-small;
 }
 
 .speaker--more-to-come {

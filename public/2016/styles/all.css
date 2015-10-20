@@ -282,8 +282,6 @@
 
 .speaker, .speaker--more-to-come, .speaker--and-more {
   margin-bottom: 3rem; }
-  .speaker .speaker__name, .speaker--more-to-come .speaker__name, .speaker--and-more .speaker__name {
-    margin-bottom: 1rem; }
   .speaker .speaker__photo, .speaker--more-to-come .speaker__photo, .speaker--and-more .speaker__photo {
     margin-top: 1rem; }
   .speaker:last-of-type, .speaker--more-to-come:last-of-type, .speaker--and-more:last-of-type {
@@ -312,6 +310,11 @@
 .speaker__name {
   font-size: 0.75rem;
   text-align: center; }
+
+.speaker__talk {
+  font-size: 0.75rem;
+  margin-bottom: 1rem;
+  letter-spacing: 0.05rem; }
 
 .speaker--more-to-come .speaker__photo__image {
   background-color: #ccc;

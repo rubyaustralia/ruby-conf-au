@@ -111,7 +111,8 @@
 %section.body-section--event
   .body-section__container
     .event
-      %img{ src: '/images/2016/events/kurrawa-beach.jpg' }
+      - currumbin_images = ['koala.jpg', 'kids-and-animals.jpg', 'wildlife-sanctuary.jpg', 'parrot-on-head.jpg']
+      = haml :'2016/_carousel', locals: { name: 'currumbin', images: currumbin_images }
       %h3
         %a(href="http://www.cws.org.au/" target="_blank") Currumbin Wildlife Sanctuary
         .event__date-time

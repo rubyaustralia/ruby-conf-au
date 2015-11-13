@@ -22,14 +22,14 @@
       margin-left: 3%;
       margin-right: 3%; } }
   @media (min-width: 800px) {
-    .grid__cell.event, .grid__cell.two-col {
+    .grid__cell.event, .grid__cell.workshop, .grid__cell.two-col {
       display: inline-block;
       text-align: center;
       width: 94%;
       margin-left: 3%;
       margin-right: 3%; } }
   @media (min-width: 1200px) {
-    .grid__cell.event, .grid__cell.two-col {
+    .grid__cell.event, .grid__cell.workshop, .grid__cell.two-col {
       display: inline-block;
       text-align: center;
       width: 41%;

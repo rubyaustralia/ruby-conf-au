@@ -16,7 +16,7 @@
   @media (min-width: 800px)  { display: inline-block; text-align: center; width: $two-col-width;   margin-left: $gutter; margin-right: $gutter; }
   @media (min-width: 1200px) { display: inline-block; text-align: center; width: $three-col-width; margin-left: $gutter; margin-right: $gutter; }
 
-  &.event, &.two-col {
+  &.event, &.workshop, &.two-col {
     @media (min-width: 800px)  { display: inline-block; text-align: center; width: $one-col-width; margin-left: $gutter; margin-right: $gutter; }
     @media (min-width: 1200px) { display: inline-block; text-align: center; width: $two-col-width; margin-left: $gutter; margin-right: $gutter; }
   }

@@ -340,6 +340,14 @@
   .speaker--and-more .speaker__links {
     text-align: center; }
 
+.sponsor-logo {
+  padding: 40px; }
+
+.sponsor-section {
+  display: block;
+  margin: auto;
+  padding-top: 40px; }
+
 .carousel {
   position: relative; }
 

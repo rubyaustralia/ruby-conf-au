@@ -351,12 +351,12 @@
 .schedule {
   display: table;
   width: 60%;
-  margin: auto; }
+  margin: auto;
+  background: white;
+  border: 3px solid #ccc; }
 
 .schedule__day {
   display: table-row; }
-  .schedule__day:first-child .schedule__date, .schedule__day:first-child .schedule__events {
-    border-top: 1px solid #ccc; }
 
 .schedule__date {
   display: table-cell;

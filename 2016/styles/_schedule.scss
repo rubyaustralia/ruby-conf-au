@@ -2,14 +2,13 @@
   display: table;
   width: 60%;
   margin: auto;
+  background: white;
+  border: 3px solid #ccc;
 }
 
 .schedule__day {
   display: table-row;
 
-  &:first-child {
-    .schedule__date, .schedule__events { border-top: 1px solid #ccc; }
-  }
 }
 
 .schedule__date

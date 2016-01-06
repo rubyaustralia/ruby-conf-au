@@ -11,8 +11,8 @@
 
 %section.site-nav
   %a(href="#conference") Conference
-  %a(href="#attending") Attending
   %a(href="#venue") Location
+  %a(href="#schedule") Schedule
   %a(href="#speakers") Speakers
   %a(href="#events") Social Events
   %a(href="#workshops") Workshops
@@ -39,8 +39,8 @@
       conference in February. The sponsored program offers financial support to people from underrepresented groups in
       our community (eg. women, minorities). The successful applicants will receive conference tickets and some travel
       expense assistance. Growing and fostering diversity in our community is a major focus of Ruby Australia.
-    %a{ href: 'http://goo.gl/forms/Rrx1vWTQVI', target: '_blank', class: 'button' }
-      Apply Here
+    %a{ href: '/rubyconf-assist', target: '_blank', class: 'button' }
+      More Information
 
 %section#attending.body-section--content
   .body-section__container
@@ -62,6 +62,83 @@
     .grid__cell.two-col
       %h2 Map
       #map.map
+
+%section#schedule.body-section--content
+  .body-section__container
+    %h2 Schedule
+    .schedule
+      .schedule__day
+        .schedule__date 10th Feb
+        .schedule__events
+          .day-events
+            .event-time 9am - 5pm
+            .event-title Workshops
+            .event-description
+              %p Alongside Rails Girls and Rails Girls Next, we'll be running three workshops: Trailblazer with Nick Sutterer and Nick Kirkwood, Tasteful Go with Katrina Owen, and Finding Developer Flow with Richie Khoo and Dan Draper.
+              %p
+                All
+                %a{ href: '#workshops'} workshops
+                will run all day and are ticketed separately to the conference.
+          .evening-events
+            .event-time 7pm - 11pm
+            .event-title Opening Party at Q1
+      .schedule__day
+        .schedule__date 11th Feb
+        .schedule__events
+          .day-events
+            .event-time 8am
+            .event-title Registration & Coffee
+            .event-description
+              %p
+                Registration will take place at Sea World from 8am, where we'll also have coffee to make sure you're awake at such an early hour.
+            .event-time 9am - 5:30pm
+            .event-title Conference Talks
+            .event-description
+              %p
+                Most talks will run for 20 minutes, with morning and afternoon breaks as well as lunch. Our
+                %a{ href: "http://lanyrd.com/2016/rubyconf-au/"} full schedule of talks and speakers
+                is published on Lanyrd.
+          .evening-events
+            .event-time 7pm - 11pm
+            .event-title Speaker Dinner at Four Winds
+      .schedule__day
+        .schedule__date 12th Feb
+        .schedule__events
+          .event-time 8am
+          .event-title Coffee
+          .event-description
+            %p
+              Because we want you awake and ready for the talks!
+          .event-time 9am - 5:30pm
+          .event-title Conference Talks
+          .event-description
+            %p
+              Most talks will run for 20 minutes, with morning and afternoon breaks as well as lunch. Our
+              %a{ href: "http://lanyrd.com/2016/rubyconf-au/"} full schedule of talks and speakers
+              is published on Lanyrd.
+          .evening-events
+            .event-time 7pm - 11pm
+            .event-title Movie World Party
+            .event-description
+              %p There will be a bus from Sea World to Movie World in time for the party, where we'll have exclusive use of several of the rides, as well as food and drink.
+      .schedule__day
+        .schedule__date 13th Feb
+        .schedule__events
+          .day-events
+            .event-time 9am - 1pm
+            .event-title Morning social events
+            .event-description
+              %p If you've chosen one of our social events, such as stand up paddle boarding, hack day or visiting the wildlife sanctuary, these will take place in the morning.
+
+            .event-time 2pm - 6pm
+            .event-title Beach BBQ
+            .event-description
+              %p We'll have games on the beach and a sausage sizzle at the surf club during the afternoon ...
+
+            .event-time 6pm until late
+            .event-title Evening drinks
+            .event-description
+              %p ... finally progressing to the verandah of Kurrawa Surf Club for a few final beers and goodbyes.
 
 %section#speakers.body-section--content
   .body-section__container

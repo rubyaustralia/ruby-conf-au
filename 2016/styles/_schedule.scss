@@ -1,0 +1,44 @@
+.schedule {
+  display: table;
+  width: 60%;
+  margin: auto;
+}
+
+.schedule__day {
+  display: table-row;
+
+  &:first-child {
+    .schedule__date, .schedule__events { border-top: 1px solid #ccc; }
+  }
+}
+
+.schedule__date
+ {
+  display: table-cell;
+  width: 25%;
+  border-bottom: 1px solid #ccc;
+  padding: 10px 0;
+  text-transform: uppercase;
+  color: black;
+  font-weight: bold;
+}
+
+.event-time {
+  font-weight: bold;
+}
+
+.event-title {
+  font-weight: bold;
+}
+
+.event-description {
+  p { margin: 0; }
+  padding: 10px 0 20px;
+}
+
+.schedule__events {
+  display: table-cell;
+  text-align: left;
+  border-bottom: 1px solid #ccc;
+  padding: 10px 0;
+}

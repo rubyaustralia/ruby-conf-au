@@ -5,34 +5,48 @@
 
 %section#conference.body-section--event
   %h1 Social Events
-  %p We’ve organised a raft of events to enjoy the Gold Coast and spend quality time with your fellow Rubyists.
+  %p We’ve organised a raft of events to enjoy the Gold Coast and spend quality time with your fellow Rubyists. Everything you need to know about where to go and when is here!
 
-%section.body-section--event
-  .body-section__container
-    .event
-      - q1_images = ['eastern-spire.jpg', 'air-morning.jpg', 'interior.jpg', 'interior-shot.jpg']
-      = haml :'2016/_carousel', locals: { name: 'q1', images: q1_images }
+  %h2
+    Important Information for all events:
+  .getting-there
+    %ul
+      %li Please check your ticket to see what you've booked!
+      %li
+        If you plan to get a bus or tram, you'll need to get a
+        %a{ href: 'http://translink.com.au/tickets-and-fares/go-card' } Go Card
+        \- you can buy these from 7-11 or newsagents.
+      %li Google Maps is your friend! Use our handy links below to find public transport links or directions from your accommodation.
 
+  .event-grid.grid
+    .grid__cell.event
+      %img{ src: '/images/2016/events/q1.jpg' }
       %h3
-        %a(href="http://www.skypoint.com.au/" target="_blank") Opening Party at SkyPoint in Q1
+        %a(href="http://www.skypoint.com.au/" target="_blank") Opening Party at SkyPoint Observation Deck in Q1
         .event__date-time
-          7pm, Wed, 10 Feb - Skypoint Observation Deck
+          7pm - 11pm, Wed, 10 Feb
       %p
         SkyPoint Observation Deck, located on Levels 77 and 78 of the iconic Q1 residential tower, is the Gold Coast’s
         highest and most unique, conferencing and events venue. SkyPoint is conveniently situated by the beach in Surfers
         Paradise, and provides spectacular 360 degree views of the region's famous coastline, the beachside city and the
         luscious green hinterland.
-      %a.button{ href: 'https://www.google.com.au/maps/place/SkyPoint+Observation+Deck/@-28.0064297,153.429721,15z/data=!4m2!3m1!1s0x0:0xbddff0023b586a04?sa=X&ei=0ZmYVbz1IYPDmwXl2oCYDw&ved=0CHgQ_BIwDQ' } Get Directions
+      .getting-there
+        %p Getting there:
+        %ul
+          %li Bus 705 goes from Sea World to Skypoint (get off at Remembrance Drive)
+          %li Grab an Uber or a taxi with some fellow Rubyists! (estimated cost from Sea World $15 - $20)
+          %li If you're driving, there is free undercover parking via Hamilton Avenue
+          %li If you're going to arrive late, please let us know!
 
-%section.body-section--event
-  .body-section__container
-    .event
-      .event__image-slide
-        %img{ src: '/images/2016/events/four-winds.jpg' }
+      %a.button{ href: 'https://www.google.com.au/maps/place/SkyPoint+Observation+Deck/@-28.0064297,153.429721,15z/data=!4m2!3m1!1s0x0:0xbddff0023b586a04?sa=X&ei=0ZmYVbz1IYPDmwXl2oCYDw&ved=0CHgQ_BIwDQ' } Get Directions
+      %a.button{ href: 'https://www.skypoint.com.au/skypoint-info/getting-here' } More info
+
+    .grid__cell.event
+      %img{ src: '/images/2016/events/four-winds.jpg' }
       %h3
         %a(href="http://www.fourwindsrestaurant.com.au/" target="_blank") Dinner at Four Winds Revolving Restaurant
         .event__date-time
-          8pm, Thurs, 11 Feb - Four Winds 360° Revolving Restaurant
+          7:30pm Thurs, 11 Feb
       %p
         Dine in Paradise at Four Winds 360°, Queensland’s only revolving restaurant, where you will soar above the
         Gold Coast with breathtaking views from our spectacular rooftop location at Crowne Plaza Surfers Paradise.
@@ -40,14 +54,21 @@
         Nestled between the beaches of Surfers Paradise and Broadbeach, Four Winds 360° is a feast for the senses.
         The lights of the Gold Coast are laid out for your viewing pleasure, while a delicious buffet is laid out
         for your dining pleasure.
+
+      .getting-there
+        %p Getting there:
+        %ul
+          %li Bus 705 goes from Sea World to Skypoint (get off at Surf Parade / First Avenue)
+          %li Grab an Uber or a taxi with some fellow Rubyists! (estimated cost from Sea World $25 - 35)
+          %li The G:Link station Florida Gardens is located on the doorstep of the Crowne Plaza.
+          %li There is car parking in the hotel basement.
+          %li Tables are booked for 7:30pm - please let us know if you'll be late!
+
       %a.button{ href: 'https://www.google.com.au/maps/place/Four+Winds+Revolving+Restaurant/@-28.0174005,153.4297264,15z/data=!4m2!3m1!1s0x0:0xd8ceda23ac334064?sa=X&ei=8aqYVYTTC4jM8gWCupWoAQ&ved=0CIsBEPwSMAw' } Get Directions
+      %a.button{ href: 'http://www.crowneplazasurfersparadise.com.au/surfers-paradise/location/' } More info
 
-%section.body-section--event
-  .body-section__container
-    .event
-      - movieworld_images = ['movieworld.jpg', 'superman-night.jpg', 'green-lantern.jpg', 'coaster.jpg', 'batman.jpg', 'superman-escape.jpg', 'batman-ride.jpg', 'wild-west-falls.jpg']
-      = haml :'2016/_carousel', locals: { name: 'movieworld', images: movieworld_images }
-
+    .grid__cell.event
+      %img{ src: '/images/2016/events/movieworld.jpg' }
       %h3
         %a(href="http://movieworld.com.au/" target="_blank") Friday Night Party at Movie World
         .event__date-time
@@ -61,42 +82,59 @@
         For three hours on Friday evening, we'll have the park to ourselves with rides including Superman Escape and
         Green Lantern Roller Coaster available to ride as long as you can stomach them! Food and drink including cocktails
         and finger food will be available for all.
+      .getting-there
+        %p Getting there:
+        %ul
+          %li There will be a bus for all attendees leaving from Sea World at 6pm on Friday after the close of the conference.
+          %li The bus will leave Movie World at 10:30pm to return to Sea World.
+          %li
+            If you wish to make your own way, there is additional information on the
+            %a{ href: 'http://movieworld.com.au/plan-your-day/getting-here.aspx'} Movie World website.
+
+
       %a.button{ href: 'https://www.google.com.au/maps/place/movie+world/@-27.906957,153.3131103,13z/data=!4m2!3m1!1s0x0:0xf02a35bd7207180?sa=X&ei=IK2YVejvJITymQWJ9LH4Bg&ved=0CI0BEPwSMBE' } Get Directions
-
-%section.body-section--event
-  .body-section__container
-    .event
-      %img{ src: '/images/2016/events/hinterland.jpg' }
-      %h3
-        Bush walking in the Hinterland
-        .event__date-time
-          10am - 2pm, Saturday, 13 Feb
-      %p
-        Providing the green behind the gold, the Gold Coast Hinterland is full of unspoilt National Parks and charming
-        mountain villages. Join us for a walk through the national park and get back to nature.
-
-
-%section.body-section--event
-  .body-section__container
-    .event
+    .grid__cell.event
       %img{ src: '/images/2016/events/kurrawa-beach.jpg' }
       %h3
         %a(href="http://kurrawasurf.com.au/surfclub/" target="_blank") Beach BBQ
-        .event__date-time
-          2pm - Late, Saturday, 13 Feb
+        .event__date-time From 2pm on Saturday
       %p
         There's nothing more iconic than a BBQ by the beach! After a jam packed morning exploring the Gold Coast, join
         us for a sausage sizzle at Kurrawa Surf Life Saving Club before saying your good-byes. All proceeds will go to
         the Nippers Club at Kurrawa. And if you still haven't had enough activity, there'll be some social beach
         volleyball games on at the club - feel free to join in or spectate!
-%section.body-section--event
-  .body-section__container
-    .event
-      %img{ src: '/images/2016/events/kurrawa-beach.jpg' }
+
+      .getting-there
+        %p Getting there
+        %ul
+          %li If you're spending Saturday morning at the wildlife sanctuary, stand up paddle boarding, or bushwalking, the bus will take you directly to Kurrawa.
+          %li Grab an Uber or a taxi with some fellow Rubyists! (estimated cost from Sea World $25 - 35)
+          %li Bus 705 stops close by (get off at Victoria Ave at Broadbeach Mall)
+          %li Get the tram to the Broadbeach North stop
+          %li There is free parking in front of the Surf Club, but avoid the yellow spaces - alternatively park in the Oasis Shopping Centre
+
+      %a.button{ href: 'https://goo.gl/maps/krVMRJNXxrC2' } Get Directions
+      %a.button{ href: 'http://kurrawasurf.com.au/surfclub/contact-us/' } More info
+
+    .grid__cell.event
+      %img{ src: '/images/2016/events/kurrawa-surf-club.jpg' }
       %h3
-        %a(href="http://kurrawasurf.com.au/surfclub/" target="_blank") Learn to Stand Up Paddle Board & Learn to Surf
-        .event__date-time
-          10am - 2pm, Saturday, 13 Feb
+        %a(href="http://kurrawasurf.com.au/supportersclub/" target="_blank") Closing Party at Kurrawa Surf Club
+        %p From 6pm on Saturday
+
+      .getting-there
+        %p Getting there - same as for the Beach BBQ!
+
+%section#conference.body-section--event
+  %h2 Saturday Morning Events
+  %p Spend your Saturday morning hanging out with your friends and bring your family along! Partners and kids are welcome. All events will take place between 10am and 1pm.
+
+  .event-grid.grid
+    .grid__cell.event
+      %img{ src: '/images/2016/events/stand-up-paddleboarding.jpg' }
+      %h3
+        %a(href="" target="_blank") Stand Up Paddle Boarding
+
       %p
         Stand Up Paddle boarding (SUP) on the Gold Coast is very quickly becoming one of the most popular daytime pastimes
         for many reasons. It activates muscles throughout the whole body (but in a very low impact way) and is great for core
@@ -104,39 +142,82 @@
         destination. Being relatively easy to learn, SUP is an excellent activity for the whole family, some
         people even have their dogs on the boards with them! The fun, laughter and smiles make for a great day out on
         the water.
+
+      .getting-there
+        %p Getting there
+        %ul
+          %li Meet at Sea World at 8:30am for the bus to the Stand Up Paddle Boarding centre.
+          %li The bus will drop you off at Kurrawa Surf Club after the lesson.
+          %li Your luggage can be left at Sea World - if you're going straight on to the airport, we can bring it to Kurrawa for you.
+          %li You will need to pay $45 for the lesson in cash.
+
+      %a.button{ href: 'http://www.supinparadise.com.au/lessons.php' } More info
+
+    .grid__cell.event
+      %img{ src: '/images/2016/events/hinterland.jpg' }
+      %h3
+        Bush walking in the hinterland
+        .event__date-time
+          8:30am - 2pm, Saturday, 13 Feb
+
       %p
-        There will be an additional cost for the tickets, estimated at $45.
+        Providing the green behind the gold, the Gold Coast Hinterland is full of unspoilt National Parks and charming
+        mountain villages. Join us for a walk through the national park and get back to nature.
+      .getting-there
+        %p Getting there
+        %ul
+          %li Meet at Sea World at 8:30am for the bus to the bush walk.
+          %li You can bring your luggage with you on the bus if you are going straight on to the airport on Saturday.
+          %li The bus will drop you off at Kurrawa Surf Club after the bushwalking.
+          %li Insect repellant and sun cream is recommended, thongs are not!
 
+    .grid__cell.event
+      %img{ src: '/images/2016/events/hack-day.jpg' }
+      %h3
+        %a(href="") Hack Day
+        .event__date-time
+          9am - 2pm, Saturday, 13 Feb
+      .getting-there
+        %p Getting there
+        %ul
+          %li Meet in the foyer at Sea World at 9am - the hack day will take place in one of the function rooms.
+          %li Bring a laptop!
 
-%section.body-section--event
-  .body-section__container
-    .event
-      - currumbin_images = ['koala.jpg', 'kids-and-animals.jpg', 'wildlife-sanctuary.jpg', 'parrot-on-head.jpg']
-      = haml :'2016/_carousel', locals: { name: 'currumbin', images: currumbin_images }
+    .grid__cell.event
+      %img{ src: '/images/2016/events/currumbin/wildlife-sanctuary.jpg' }
       %h3
         %a(href="http://www.cws.org.au/" target="_blank") Currumbin Wildlife Sanctuary
         .event__date-time
-          10am - 2pm, Saturday, 13 Feb
+          8:30am - 2pm, Saturday, 13 Feb
       %p
         With over 1000 native animals, Currumbin Wildlife Sanctuary is home to one of the largest collections of
         Australian wildlife in the world. Set amongst 28 hectares of lush Eucalyptus and rainforest, Currumbin Wildlife
         Sanctuary is famous for being the most natural and relaxed experience of the big attractions on the Gold Coast.
         While the rainbow lorikeets, koalas and kangaroos remain hallmark attractions, visitors can see many of Australia’s
         iconic species on display in their natural habitat.
-      %p
-        There will be an additional cost for the tickets, at a discounted group rate estimated at $25.
 
-%section.body-section--event
-  .body-section__container
-    .event
-      - kurrawa_images = ['surf-club.jpg', 'kurrawa-park.jpg', 'kurrawa-beach.jpg']
-      = haml :'2016/_carousel', locals: { name: 'kurrawa', images: kurrawa_images }
+      .getting-there
+        %p Getting there
+        %ul
+          %li Meet at Sea World at 8:30am for the bus to Currumbin centre.
+          %li The bus will drop you off at Kurrawa Surf Club after the visit.
+          %li Your luggage can be left at Sea World - if you're going straight on to the airport, we can bring it to Kurrawa for you.
+          %li
+            We have organised group tickets at $25 per person (kids under 4 can go free) - please
+            %a{ href: 'https://ti.to/ruby-australia/rubyconf-au-2016/with/onhegnfstwg'} pay for your tickets in advance
+
+    .grid__cell.event
+      %img{ src: '/images/2016/events/sea-world.jpg' }
       %h3
-        %a(href="http://kurrawasurf.com.au/supportersclub/" target="_blank") Closing Party at Kurrawa Surf Club
+        %a(href="http://seaworld.com.au/" target="_blank") Sea World Visit
         .event__date-time
-          7pm onwards, Sat 13 Feb - Kurrawa Surf Club
+          10am - 2pm, Saturday, 13 Feb
+
       %p
-        If you still can't bear to say good-bye after the BBQ, or maybe you're sticking around for a couple more days,
-        the hardcore Rubyists will be heading to the verandah of Kurrawa Surf Club for a few beers by the beach.
-        The sun might be gone, but we'll still be there!
-      %a.button{ href: 'https://www.google.com.au/maps/place/Kurrawa+Surf+Club/@-28.029438,153.434876,17z/data=!3m1!4b1!4m2!3m1!1s0x6b9104fef3cae607:0x2ad30724fae59930' } Get Directions
+        Sea World is the premier marine animal park in Australia, offering amazing attractions and rides for all ages.
+
+      .getting-there
+        %p Getting there
+        %ul
+          %li Meet at Sea World at 10am.
+

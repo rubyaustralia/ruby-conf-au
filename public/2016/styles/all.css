@@ -253,7 +253,8 @@
 .body-section--event .event {
   max-width: 750px;
   text-align: left;
-  margin: auto; }
+  margin: auto;
+  padding: 0 20px; }
 .body-section--event h3 {
   text-transform: uppercase;
   margin-top: 20px;
@@ -270,7 +271,18 @@
   margin: 20px auto;
   text-align: center; }
 .body-section--event .event__date-time {
-  color: #999999; }
+  color: #999999;
+  font-size: 0.75rem;
+  letter-spacing: 0.05rem; }
+
+.getting-there {
+  text-align: left; }
+  .getting-there p {
+    font-weight: bold;
+    padding-bottom: 0; }
+
+.event-divider {
+  padding: 20px; }
 
 @media screen and (min-width: 768px) {
   .carousel-control .icon-next.event__control, .carousel-control .icon-prev.event__control {

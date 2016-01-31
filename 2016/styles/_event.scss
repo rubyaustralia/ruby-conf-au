@@ -18,6 +18,7 @@
     max-width: 750px;
     text-align: left;
     margin: auto;
+    padding: 0 20px;
   }
 
   h3 {
@@ -45,7 +46,21 @@
 
   .event__date-time {
     color: $grey-light-text;
+    font-size: 0.75rem;
+    letter-spacing: $body-letter-spacing-small;
   }
+}
+
+.getting-there {
+  text-align: left;
+  p {
+    font-weight: bold;
+    padding-bottom: 0;
+  }
+}
+
+.event-divider {
+  padding: 20px;
 }
 
 @media screen and (min-width: 768px) {

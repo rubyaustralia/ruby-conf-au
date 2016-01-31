@@ -19,10 +19,11 @@
       %li Google Maps is your friend! Use our handy links below to find public transport links or directions from your accommodation.
 
   .event-grid.grid
+    %a{ name: 'q1' }
     .grid__cell.event
       %img{ src: '/images/2016/events/q1.jpg' }
       %h3
-        %a(href="http://www.skypoint.com.au/" target="_blank") Opening Party at SkyPoint Observation Deck in Q1
+        %a{ href: "http://www.skypoint.com.au/", target: "_blank" } Opening Party at SkyPoint Observation Deck in Q1
         .event__date-time
           7pm - 11pm, Wed, 10 Feb
       %p
@@ -41,6 +42,7 @@
       %a.button{ href: 'https://www.google.com.au/maps/place/SkyPoint+Observation+Deck/@-28.0064297,153.429721,15z/data=!4m2!3m1!1s0x0:0xbddff0023b586a04?sa=X&ei=0ZmYVbz1IYPDmwXl2oCYDw&ved=0CHgQ_BIwDQ' } Get Directions
       %a.button{ href: 'https://www.skypoint.com.au/skypoint-info/getting-here' } More info
 
+    %a{ name: 'fourwinds' }
     .grid__cell.event
       %img{ src: '/images/2016/events/four-winds.jpg' }
       %h3
@@ -67,6 +69,7 @@
       %a.button{ href: 'https://www.google.com.au/maps/place/Four+Winds+Revolving+Restaurant/@-28.0174005,153.4297264,15z/data=!4m2!3m1!1s0x0:0xd8ceda23ac334064?sa=X&ei=8aqYVYTTC4jM8gWCupWoAQ&ved=0CIsBEPwSMAw' } Get Directions
       %a.button{ href: 'http://www.crowneplazasurfersparadise.com.au/surfers-paradise/location/' } More info
 
+    %a{ name: 'movieworld' }
     .grid__cell.event
       %img{ src: '/images/2016/events/movieworld.jpg' }
       %h3
@@ -93,6 +96,8 @@
 
 
       %a.button{ href: 'https://www.google.com.au/maps/place/movie+world/@-27.906957,153.3131103,13z/data=!4m2!3m1!1s0x0:0xf02a35bd7207180?sa=X&ei=IK2YVejvJITymQWJ9LH4Bg&ved=0CI0BEPwSMBE' } Get Directions
+
+    %a{ name: 'beachbbq' }
     .grid__cell.event
       %img{ src: '/images/2016/events/kurrawa-beach.jpg' }
       %h3
@@ -103,6 +108,9 @@
         us for a sausage sizzle at Kurrawa Surf Life Saving Club before saying your good-byes. All proceeds will go to
         the Nippers Club at Kurrawa. And if you still haven't had enough activity, there'll be some social beach
         volleyball games on at the club - feel free to join in or spectate!
+
+      %p
+        Family and friends are welcome! We will have hotdogs and a drink for $5.50, and from 6pm we'll progress to the Surf Club itself for a few beers to close out the conference.
 
       .getting-there
         %p Getting there
@@ -130,6 +138,7 @@
   %p Spend your Saturday morning hanging out with your friends and bring your family along! Partners and kids are welcome. All events will take place between 10am and 1pm.
 
   .event-grid.grid
+    %a{ name: 'sup' }
     .grid__cell.event
       %img{ src: '/images/2016/events/stand-up-paddleboarding.jpg' }
       %h3
@@ -153,6 +162,7 @@
 
       %a.button{ href: 'http://www.supinparadise.com.au/lessons.php' } More info
 
+    %a{ name: 'bushwalking' }
     .grid__cell.event
       %img{ src: '/images/2016/events/hinterland.jpg' }
       %h3
@@ -171,6 +181,7 @@
           %li The bus will drop you off at Kurrawa Surf Club after the bushwalking.
           %li Insect repellant and sun cream is recommended, thongs are not!
 
+    %a{ name: 'hackday' }
     .grid__cell.event
       %img{ src: '/images/2016/events/hack-day.jpg' }
       %h3
@@ -183,6 +194,7 @@
           %li Meet in the foyer at Sea World at 9am - the hack day will take place in one of the function rooms.
           %li Bring a laptop!
 
+    %a{ name: 'currumbin' }
     .grid__cell.event
       %img{ src: '/images/2016/events/currumbin/wildlife-sanctuary.jpg' }
       %h3
@@ -206,6 +218,7 @@
             We have organised group tickets at $25 per person (kids under 4 can go free) - please
             %a{ href: 'https://ti.to/ruby-australia/rubyconf-au-2016/with/onhegnfstwg'} pay for your tickets in advance
 
+    %a{ name: 'seaworld' }
     .grid__cell.event
       %img{ src: '/images/2016/events/sea-world.jpg' }
       %h3

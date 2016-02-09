@@ -45,7 +45,7 @@
 
 %section#venue.body-section--content.grid
   .body-section__container
-    .grid__cell.two-col{style: 'text-align: left'}
+    .grid__cell.two-col.hidden-xs{style: 'text-align: left'}
       %h2 Location
       %p Sea World's brand new conference centre is due to open in winter 2015. Boasting a stunning Broadwater location, large veranda, and plenty of space for Ruby developers!
       %p Only a monorail ride away from special encounters with Sea World’s wonderful marine life. Start your day with an exclusive behind the scenes tour at Shark Bay or learn more about the beautiful dolphins at the Dolphin Discovery presentation.
@@ -155,11 +155,11 @@
             .event-title Evening drinks
             .event-description
               %p ... finally progressing to the verandah of Kurrawa Surf Club for a few final beers and goodbyes.
-    %a{ href: 'http://lanyrd.com/2016/rubyconf-au/', target: '_blank', class: 'button' }
+    %a{ href: 'http://lanyrd.com/2016/rubyconf-au#sessions', class: 'button' }
       Full Schedule
 
 
-%section#speakers.body-section--content
+%section#speakers.body-section--content.hidden-xs
   .body-section__container
     %h2 Speakers
     %div.grid
@@ -251,7 +251,7 @@
     %h2 Social Events
     %p We’ve organised a raft of events to enjoy The Gold Coast and spend quality time with your fellow Rubyists.
 
-    .event-grid.grid
+    .event-grid.grid.hidden-xs
       .grid__cell.event
         %a{ href: '/2016/events#q1' }
           %img{ src: '/images/2016/events/q1.jpg' }
@@ -282,8 +282,9 @@
           %h3
             Beach BBQ & Closing Party at Kurrawa Surf Club
             %p From 2pm on Saturday
+    %a.button.visible-xs-inline-block{ href: '/2016/events' } More Info
 
-%section#events.body-section--content
+%section#events.body-section--content.hidden-xs
   .body-section__container
     %h2 Saturday Morning Events
     %p Spend your Saturday morning hanging out with your friends and bring your family along! Partners and kids are welcome. All events will take place between 10am and 1pm.
@@ -323,7 +324,7 @@
             %p 8:30am - 2pm on Saturday
     %a.button{ href: '/2016/events' } More Info
 
-%section#workshops.body-section--content
+%section#workshops.body-section--content.hidden-xs
   .body-section__container
     %h2 Workshops
     %p Workshops will be on the 10th of February, and tickets will be separate from the conference sessions.

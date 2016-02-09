@@ -1,9 +1,17 @@
+@import 'bootstrap_vars';
+
 .schedule {
   display: table;
   width: 60%;
   margin: auto;
   background: white;
   border: 3px solid #ccc;
+}
+
+@media (max-width: $screen-xs-max) {
+  .schedule {
+    width: 100%;
+  }
 }
 
 .schedule__day {
@@ -39,5 +47,5 @@
   display: table-cell;
   text-align: left;
   border-bottom: 1px solid #ccc;
-  padding: 10px 0;
+  padding: 10px 10px 10px 0;
 }

@@ -1,0 +1,10 @@
+.footer__link {
+  text-align: center;
+
+  a {
+    font-size: $footer-links-size;
+    letter-spacing: $body-letter-spacing-small;
+    color: $link-text-color;
+    font-weight: 200;
+  }
+}

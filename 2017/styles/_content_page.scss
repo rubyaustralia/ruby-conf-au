@@ -1,0 +1,30 @@
+.content-page__header {
+  @extend .body-section;
+  padding: 2rem 0 1rem 0;
+  h1 { font-size: 3rem; }
+}
+
+.content-page__header--accessibility h1 {
+  @media (max-width: 400px) { font-size: 1.6rem; }
+}
+
+.content-page__header--accommodation h1 {
+  @media (max-width: 400px) { font-size: 1.6rem; }
+}
+
+.content-page--event-header {
+  @extend .body-section--event-header;
+}
+
+.content-page .body-section--content {
+  padding: 1rem 0.5rem 2rem;
+  text-align: left;
+  h2 {
+    text-align: center;
+    font-size: 1.5rem;
+  }
+  h3 {
+    text-align: center;
+    padding-bottom: 1rem;
+  }
+}

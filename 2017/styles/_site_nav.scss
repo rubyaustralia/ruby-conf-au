@@ -1,0 +1,44 @@
+.site-nav {
+  display: none;
+}
+
+@media (min-width: 500px) {
+  .site-nav {
+    display: block;
+    background: $grey-light;
+    padding: 1rem;
+    a {
+      display: block;
+      width: 100%;
+    }
+    @media (min-width: 900px) {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      z-index: 1;
+      text-align: center;
+      padding: 0;
+      a {
+        display: inline-block;
+        border: none;
+        font-size: $nav-links-size;
+        color: $grey-dark;
+        text-transform: uppercase;
+        width: auto;
+        padding: 0 0.25rem;
+        line-height: 51px;
+        box-sizing: border-box;
+        border-bottom: 2px solid $grey-light;
+        font-weight: normal;
+
+        &:hover, &:active, &:focus {
+          color: $black;
+          border-bottom: 2px solid $blue-grey;
+          text-decoration: none;
+
+        }
+      }
+    }
+  }
+}

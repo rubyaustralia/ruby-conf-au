@@ -1,0 +1,15 @@
+@import 'bootstrap_mixins';
+
+.sponsor-logo {
+  padding: 40px;
+  @include img-responsive;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.sponsor-section {
+  display: block;
+  margin: auto;
+  padding-top: 40px;
+}

@@ -1,0 +1,51 @@
+@import 'bootstrap_vars';
+
+.schedule {
+  display: table;
+  width: 60%;
+  margin: auto;
+  background: white;
+  border: 3px solid #ccc;
+}
+
+@media (max-width: $screen-xs-max) {
+  .schedule {
+    width: 100%;
+  }
+}
+
+.schedule__day {
+  display: table-row;
+
+}
+
+.schedule__date
+ {
+  display: table-cell;
+  width: 25%;
+  border-bottom: 1px solid #ccc;
+  padding: 10px 0;
+  text-transform: uppercase;
+  color: black;
+  font-weight: bold;
+}
+
+.event-time {
+  font-weight: bold;
+}
+
+.event-title {
+  font-weight: bold;
+}
+
+.event-description {
+  p { margin: 0; }
+  padding: 10px 0 20px;
+}
+
+.schedule__events {
+  display: table-cell;
+  text-align: left;
+  border-bottom: 1px solid #ccc;
+  padding: 10px 10px 10px 0;
+}

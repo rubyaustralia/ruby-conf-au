@@ -1,0 +1,20 @@
+#home {
+  max-width: 1200px;
+  margin: 1rem auto 0;
+
+  h1.hero {
+    color: white;
+  }
+
+  .splash-content {
+    position: absolute;
+    top: 6rem;
+    left: 4rem;
+
+    .button {
+      border: none;
+      font-size: 1.3rem;
+      margin-top: 3rem;
+    }
+  }
+}

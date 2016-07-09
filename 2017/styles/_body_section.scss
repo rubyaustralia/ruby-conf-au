@@ -1,13 +1,32 @@
 .body-section {
-  padding-left: 1rem;
   text-align: center;
   // max-width: 1700px;
   margin: auto;
+  position: relative;
 
   p, ul {
     max-width: 960px;
     margin: auto;
     padding-bottom: 1rem;
+  }
+
+  h1.hero {
+    font-size: 7.25rem;
+    letter-spacing: -0.35rem;
+    font-weight: 100;
+    line-height: 1.2;
+
+    small {
+      font-size: 2.35rem;
+      display: block;
+      text-transform: none;
+      font-weight: normal;
+      letter-spacing: -0.025rem;
+    }
+  }
+
+  h2 {
+    font-size: $section-heading-size;
   }
 }
 
@@ -64,11 +83,11 @@
     font-size: $paragraph-size;
   }
   &:nth-child(odd) {
-    background: $grey-very-light;
+    background: white;
   }
 
   &:nth-child(even) {
-    background: $grey-light;
+    background: $pink;
   }
 
   .grid__cell {
@@ -102,13 +121,31 @@
 }
 
 .body-section--event-footer {
-  @extend .body-section--content;
+  @extend .body-section;
+  margin-top: 3rem;
+  ul {
+    display: flex;
+    align-items: stretch; /* Default */
+    justify-content: space-between;
+    width: 10rem;
+  }
+  li { display: block; list-style: none; flex: 0 1 auto; }
+}
+
+.body-section--previous-years {
+  @extend .body-section;
   ul li { display: inline; list-style: none; margin-left: 0; }
   li + li:before { content: '\b7'; color: $blue; font-size: $footer-links-size; letter-spacing: $body-letter-spacing-small; }
 }
 
-.body-section--previous-years {
-  @extend .body-section--content;
-  ul li { display: inline; list-style: none; margin-left: 0; }
-  li + li:before { content: '\b7'; color: $blue; font-size: $footer-links-size; letter-spacing: $body-letter-spacing-small; }
+ul.flex {
+  display: flex;
+  align-items: stretch; /* Default */
+  justify-content: space-between;
+
+  li {
+    display: block;
+    list-style: none;
+    flex: 0 1 auto;
+  }
 }

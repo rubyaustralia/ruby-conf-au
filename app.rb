@@ -86,11 +86,25 @@ get '/2016/:page_name' do
   haml :"2016/#{page_name}", :layout => :"2016/layout"
 end
 
+# 2017
+
+get '/2017/?' do
+  @title = :home
+  @speaker = %w().sample
+  haml :"2017/home", :layout => :"2017/layout"
+end
+
+get '/2017/:page_name' do
+  page_name = params[:page_name]
+  @title = page_name
+  haml :"2017/#{page_name}", :layout => :"2017/layout"
+end
+
 # Generic
 
 get '/' do
   status_code 302
-  redirect '/2016'
+  redirect '/2017'
 end
 
 post '/subscribe' do

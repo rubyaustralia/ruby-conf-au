@@ -1,14 +1,19 @@
 .button {
+  font-family: $header-font;
   display: inline-block;
   font-size: $button-text-size;
   line-height: 1;
   color: $button-text-color;
   text-transform: uppercase;
   background-color: $button-color;
-  border: 4px solid $button-color;;
-  border-radius: 4px;
+  border: 4px solid white;
   padding: .75rem 1rem;
   margin: 1.5rem 0;
+
+  &.button-primary {
+    color: $grey-dark;
+    background-color: $yellow;
+  }
 }
 
 .button:hover {

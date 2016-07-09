@@ -13,16 +13,23 @@ html {
 }
 
 h1, h2, h3 {
-  font-family: $body-font;
+  font-family: $header-font;
   text-transform: uppercase;
-  color: black;
+  color: $heading-color;
+  font-style: italic;
   a {
     color: currentColor;
   }
 }
 
+h2.sub-heading {
+  color: $grey-dark;
+  font-style: normal;
+}
+
 body {
-  color: #848484;
+  color: $grey;
+  background-color: $grey-dark;
 }
 
 a {
@@ -45,7 +52,8 @@ h3 sup {
 }
 
 p, li {
-  letter-spacing: $body-letter-spacing-small;
+  letter-spacing: normal;
+  color: $text-color;
 }
 
 // Only display content to screen readers

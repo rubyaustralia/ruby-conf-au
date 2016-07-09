@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="1367px" height="724px" viewBox="0 0 1367 724" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 3.8.3 (29802) - http://www.bohemiancoding.com/sketch -->
+    <title>Rubies</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Desktop-HD" transform="translate(-46.000000, -70.000000)">
+            <g id="Rubies" transform="translate(-4.000000, -3.000000)">
+                <polygon id="Red_Ruby" fill="#DA4D3D" transform="translate(717.773580, 484.725076) rotate(23.000000) translate(-717.773580, -484.725076) " points="268.133614 346.172646 469.902116 558.548104 717.773579 819.450152 902.968521 625.036901 1167.41355 346.172646 982.218605 150.879698 453.328553 150"></polygon>
+                <polygon id="Blue_Ruby" fill="#6484DF" transform="translate(275.387444, 550.757244) rotate(-33.000000) translate(-275.387444, -550.757244) " points="50.3154303 484.989448 275.387444 709.643888 368.088719 617.360186 500.459458 484.989448 407.758183 392.288173 143.016705 391.8706"></polygon>
+                <polygon id="Pink_Ruby" fill="#FCDBDB" transform="translate(1197.138913, 659.778041) rotate(25.000000) translate(-1197.138913, -659.778041) " points="983.683557 597.404722 1197.13891 810.464056 1285.05559 722.9434 1410.59427 597.404722 1322.67759 509.488046 1071.60023 509.092025"></polygon>
+            </g>
+        </g>
+    </g>
+</svg>

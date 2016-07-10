@@ -23,6 +23,24 @@
       font-weight: normal;
       letter-spacing: -0.025rem;
     }
+
+    @media (min-width: 900px) and (max-width: 1200px) {
+      font-size: 5.25rem;
+    }
+    @media (min-width: 535px) and (max-width: 900px) {
+      font-size: 4.25rem;
+      small {
+        font-size: 1.75rem;
+      }
+    }
+    @media (max-width: 534px) {
+      font-size: 3.00rem;
+
+      small {
+        font-size: 1.5rem;
+      }
+    }
+
   }
 
   h2 {
@@ -31,8 +49,6 @@
 }
 
 .body-section--event-header {
-  @extend .body-section;
-  background: url('/images/2016/background.jpg') top center no-repeat;
   .skip-nav {
     width: 63px;
     height: 48px;
@@ -123,13 +139,18 @@
 .body-section--event-footer {
   @extend .body-section;
   margin-top: 3rem;
+
   ul {
     display: flex;
     align-items: stretch; /* Default */
     justify-content: space-between;
     width: 10rem;
   }
-  li { display: block; list-style: none; flex: 0 1 auto; }
+  li {
+    display: block;
+    list-style: none;
+    flex: 0 1 auto;
+  }
 }
 
 .body-section--previous-years {

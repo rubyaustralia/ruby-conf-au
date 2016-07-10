@@ -76,71 +76,82 @@
   max-width: 100%;
   height: auto; }
 
-.body-section, .body-section--event-header, .content-page--event-header, .body-section--content, .body-section--event, .body-section--event-footer, .body-section--previous-years, .content-page__header {
+.body-section, .body-section--content, .body-section--event, .body-section--event-footer, .body-section--previous-years, .content-page__header {
   text-align: center;
   margin: auto;
   position: relative; }
-  .body-section p, .body-section--event-header p, .content-page--event-header p, .body-section--content p, .body-section--event p, .body-section--event-footer p, .body-section--previous-years p, .content-page__header p, .body-section ul, .body-section--event-header ul, .content-page--event-header ul, .body-section--content ul, .body-section--event ul, .body-section--event-footer ul, .body-section--previous-years ul, .content-page__header ul {
+  .body-section p, .body-section--content p, .body-section--event p, .body-section--event-footer p, .body-section--previous-years p, .content-page__header p, .body-section ul, .body-section--content ul, .body-section--event ul, .body-section--event-footer ul, .body-section--previous-years ul, .content-page__header ul {
     max-width: 960px;
     margin: auto;
     padding-bottom: 1rem; }
-  .body-section h1.hero, .body-section--event-header h1.hero, .content-page--event-header h1.hero, .body-section--content h1.hero, .body-section--event h1.hero, .body-section--event-footer h1.hero, .body-section--previous-years h1.hero, .content-page__header h1.hero {
+  .body-section h1.hero, .body-section--content h1.hero, .body-section--event h1.hero, .body-section--event-footer h1.hero, .body-section--previous-years h1.hero, .content-page__header h1.hero {
     font-size: 7.25rem;
     letter-spacing: -0.35rem;
     font-weight: 100;
     line-height: 1.2; }
-    .body-section h1.hero small, .body-section--event-header h1.hero small, .content-page--event-header h1.hero small, .body-section--content h1.hero small, .body-section--event h1.hero small, .body-section--event-footer h1.hero small, .body-section--previous-years h1.hero small, .content-page__header h1.hero small {
+    .body-section h1.hero small, .body-section--content h1.hero small, .body-section--event h1.hero small, .body-section--event-footer h1.hero small, .body-section--previous-years h1.hero small, .content-page__header h1.hero small {
       font-size: 2.35rem;
       display: block;
       text-transform: none;
       font-weight: normal;
       letter-spacing: -0.025rem; }
-  .body-section h2, .body-section--event-header h2, .content-page--event-header h2, .body-section--content h2, .body-section--event h2, .body-section--event-footer h2, .body-section--previous-years h2, .content-page__header h2 {
+    @media (min-width: 900px) and (max-width: 1200px) {
+      .body-section h1.hero, .body-section--content h1.hero, .body-section--event h1.hero, .body-section--event-footer h1.hero, .body-section--previous-years h1.hero, .content-page__header h1.hero {
+        font-size: 5.25rem; } }
+    @media (min-width: 535px) and (max-width: 900px) {
+      .body-section h1.hero, .body-section--content h1.hero, .body-section--event h1.hero, .body-section--event-footer h1.hero, .body-section--previous-years h1.hero, .content-page__header h1.hero {
+        font-size: 4.25rem; }
+        .body-section h1.hero small, .body-section--content h1.hero small, .body-section--event h1.hero small, .body-section--event-footer h1.hero small, .body-section--previous-years h1.hero small, .content-page__header h1.hero small {
+          font-size: 1.75rem; } }
+    @media (max-width: 534px) {
+      .body-section h1.hero, .body-section--content h1.hero, .body-section--event h1.hero, .body-section--event-footer h1.hero, .body-section--previous-years h1.hero, .content-page__header h1.hero {
+        font-size: 3.00rem; }
+        .body-section h1.hero small, .body-section--content h1.hero small, .body-section--event h1.hero small, .body-section--event-footer h1.hero small, .body-section--previous-years h1.hero small, .content-page__header h1.hero small {
+          font-size: 1.5rem; } }
+  .body-section h2, .body-section--content h2, .body-section--event h2, .body-section--event-footer h2, .body-section--previous-years h2, .content-page__header h2 {
     font-size: 1.8rem; }
 
-.body-section--event-header, .content-page--event-header {
-  background: url("/images/2016/background.jpg") top center no-repeat; }
-  .body-section--event-header .skip-nav, .content-page--event-header .skip-nav {
-    width: 63px;
-    height: 48px;
-    position: absolute;
-    text-indent: -1000px;
-    overflow: hidden;
-    bottom: 2rem;
-    left: 50%;
-    margin-left: -31.5px;
-    opacity: 0;
-    -webkit-animation: .75s down-arrow-animation infinite alternate;
-            animation: .75s down-arrow-animation infinite alternate;
-    -webkit-animation-play-state: paused;
-            animation-play-state: paused; }
-  .body-section--event-header .skip-nav:focus, .content-page--event-header .skip-nav:focus {
-    opacity: 1;
-    -webkit-animation-play-state: running;
-            animation-play-state: running; }
-  @media (min-width: 1500px) {
-    .body-section--event-header, .content-page--event-header {
-      background-size: 100%; } }
-  @media (min-width: 2500px) {
-    .body-section--event-header, .content-page--event-header {
-      background-position-y: -200px; } }
-  @media (min-width: 900px) and (min-height: 30rem) {
-    .body-section--event-header, .content-page--event-header {
-      padding-top: 4rem; }
-      .body-section--event-header .skip-nav, .content-page--event-header .skip-nav {
-        opacity: 1;
-        -webkit-animation-play-state: running;
-                animation-play-state: running; } }
-  .body-section--event-header .body-section--event-header__logo, .content-page--event-header .body-section--event-header__logo {
-    padding: 2rem 0 1rem;
-    width: 50%; }
-    @media (min-width: 500px) {
-      .body-section--event-header .body-section--event-header__logo, .content-page--event-header .body-section--event-header__logo {
-        width: auto; } }
-  .body-section--event-header .body-section--event-header__city, .content-page--event-header .body-section--event-header__city {
-    padding: 0.75rem 0; }
-  .body-section--event-header .body-section--event-header__date, .content-page--event-header .body-section--event-header__date {
-    padding: 0 0 2rem; }
+.body-section--event-header .skip-nav, .content-page--event-header .skip-nav {
+  width: 63px;
+  height: 48px;
+  position: absolute;
+  text-indent: -1000px;
+  overflow: hidden;
+  bottom: 2rem;
+  left: 50%;
+  margin-left: -31.5px;
+  opacity: 0;
+  -webkit-animation: .75s down-arrow-animation infinite alternate;
+          animation: .75s down-arrow-animation infinite alternate;
+  -webkit-animation-play-state: paused;
+          animation-play-state: paused; }
+.body-section--event-header .skip-nav:focus, .content-page--event-header .skip-nav:focus {
+  opacity: 1;
+  -webkit-animation-play-state: running;
+          animation-play-state: running; }
+@media (min-width: 1500px) {
+  .body-section--event-header, .content-page--event-header {
+    background-size: 100%; } }
+@media (min-width: 2500px) {
+  .body-section--event-header, .content-page--event-header {
+    background-position-y: -200px; } }
+@media (min-width: 900px) and (min-height: 30rem) {
+  .body-section--event-header, .content-page--event-header {
+    padding-top: 4rem; }
+    .body-section--event-header .skip-nav, .content-page--event-header .skip-nav {
+      opacity: 1;
+      -webkit-animation-play-state: running;
+              animation-play-state: running; } }
+.body-section--event-header .body-section--event-header__logo, .content-page--event-header .body-section--event-header__logo {
+  padding: 2rem 0 1rem;
+  width: 50%; }
+  @media (min-width: 500px) {
+    .body-section--event-header .body-section--event-header__logo, .content-page--event-header .body-section--event-header__logo {
+      width: auto; } }
+.body-section--event-header .body-section--event-header__city, .content-page--event-header .body-section--event-header__city {
+  padding: 0.75rem 0; }
+.body-section--event-header .body-section--event-header__date, .content-page--event-header .body-section--event-header__date {
+  padding: 0 0 2rem; }
 
 .body-section--content, .body-section--event {
   padding: 1rem 0.5rem 2rem; }
@@ -406,9 +417,29 @@ ul.flex {
 .sponsor-section {
   display: block;
   margin: auto;
-  padding-top: 4rem; }
-  .sponsor-section ul {
+  padding-top: 4rem;
+  margin-bottom: 50px; }
+  .sponsor-section ul.sponsors {
     width: 55%; }
+    .sponsor-section ul.sponsors li {
+      margin: 0;
+      list-style: none;
+      width: 50%;
+      padding: 5px;
+      float: left; }
+      .sponsor-section ul.sponsors li img {
+        width: 100%; }
+  @media (max-width: 900px) {
+    .sponsor-section ul.sponsors {
+      width: 80%; }
+      .sponsor-section ul.sponsors li {
+        margin: auto;
+        max-width: 500px;
+        width: 100%;
+        display: block;
+        margin-bottom: 10px;
+        float: none;
+        text-align: center; } }
 
 .schedule {
   display: table;
@@ -872,14 +903,14 @@ p, li {
 
 #home {
   max-width: 1200px;
-  margin: 1rem auto 0; }
+  margin: 1rem auto 0;
+  padding: 6rem 0;
+  background: url("/images/2017/rubies.svg") top center no-repeat;
+  background-size: cover;
+  background-repeat: no-repeat; }
   #home h1.hero {
     color: white; }
-  #home .splash-content {
-    position: absolute;
-    top: 6rem;
-    left: 4rem; }
-    #home .splash-content .button {
-      border: none;
-      font-size: 1.3rem;
-      margin-top: 3rem; }
+  #home .splash-content .button {
+    border: none;
+    font-size: 1.3rem;
+    margin-top: 3rem; }

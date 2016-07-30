@@ -1,23 +1,17 @@
 #home
-  .body-section
-    .splash-content
-      %h1.hero
-        Ruby Conf AU
-        %small Melbourne 9&ndash;10 Feb 2017
+  %section.main-section
+    .overlay
+      .content
+        .row.button-content
+          .column.shrink
+            %a.button.large{href: 'https://ti.to/ruby-australia/rubyconf-au-2017', target: '_blank' }
+              Buy Super Early Bird Tickets
+        .transparent-overlay
+          .row.align-center
+            .column
+              %h1.hero.text-center
+                Ruby Conf AU 2017
+              %p.lead
+                RubyConf Australia is an inclusive conference that aims to bring together people from all walks of life to share knowledge and inspiration.
 
-      %a.button.button-primary{href: 'https://ti.to/ruby-australia/rubyconf-au-2017', target: '_blank' }
-        Buy Super Early Bird Tickets
-
-%section.body-section--event-footer
-  %ul
-    %li.footer__link
-      %a{href: 'mailto:organisers@rubyconf.org.au'}
-        %img{src: '/images/2017/envelope.svg'}
-    %li.footer__link
-      %a{href: 'https://twitter.com/rubyconf_au'}
-        %img{src: '/images/2017/twitter.svg'}
-    %li.footer__link
-      %a{href: 'https://www.facebook.com/RubyConfAustralia'}
-        %img{src: '/images/2017/facebook.svg'}
-
-= haml :'2017/_sponsors'
+= haml :'2017/home/_sponsors'

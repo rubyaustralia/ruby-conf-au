@@ -1,0 +1,15 @@
+footer {
+  background-color: $dark-gray;
+  padding: $topbar-padding;
+  padding-bottom: 5rem;
+
+  .menu {
+    justify-content: center;
+    > li {
+      > a {
+        color: $white;
+        line-height: 2.5;
+      }
+    }
+  }
+}

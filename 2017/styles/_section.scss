@@ -1,0 +1,70 @@
+section {
+
+  .transparent-overlay {
+    background-color: rgba(0, 0, 0, 0.3);
+    padding-top: 2rem;
+    margin-top: 11rem;
+
+    @include breakpoint(small only) {
+      margin-top: 2.5rem;
+    }
+  }
+
+  &.main-section {
+    background-image: url('/images/2017/splash.png');
+    height: 798px;
+
+    @include breakpoint(small only) {
+      height: auto;
+    }
+
+    .overlay {
+      padding-top: 0.5rem;
+      background-image: url('/images/2017/splash-overlay.svg');
+    }
+
+    .content {
+      padding-top: 3rem;
+      padding-bottom: 13rem;
+      background: url('/images/2017/rubies.svg') top center no-repeat;
+      background-size: cover;
+      background-repeat: no-repeat;
+
+      @include breakpoint(small only) {
+        padding-bottom: 6rem;
+      }
+    }
+
+    h1.hero {
+      color: $white;
+    }
+
+    p.lead {
+      color: $white;
+    }
+
+    .button-content {
+      @include flex-align(right, null);
+
+      @include breakpoint(small only) {
+        @include flex-align(center, null);
+      }
+    }
+  }
+
+  &.body-section {
+    padding: 2rem 0;
+
+    &:nth-child(odd) {
+      background: $white;
+    }
+
+    &:nth-child(even) {
+      background: map-get($foundation-palette, pink);
+    }
+  }
+
+  &.sponsor-section {
+    padding-top: 4rem;
+  }
+}

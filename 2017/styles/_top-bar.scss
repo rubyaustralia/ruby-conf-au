@@ -1,0 +1,47 @@
+.top-bar {
+  font-family: Verdana, sans-serif;
+
+  h3 {
+    font-weight: bold;
+    font-family: Verdana, sans-serif;
+    line-height: 0.8;
+    font-style: normal;
+    color: $black;
+
+    small {
+      color: $black;
+      font-size: 58%;
+      font-weight: normal;
+    }
+
+    @include hide-for-only(small);
+  }
+
+  .menu {
+    a {
+      color: $black;
+      font-weight: bold;
+      text-transform: uppercase;
+    }
+  }
+}
+
+@include breakpoint(small only) {
+  .top-bar {
+    padding: 0;
+  }
+}
+
+.no-js {
+  @include breakpoint(small only) {
+    .top-bar {
+      display: none;
+    }
+  }
+
+  @include breakpoint(medium) {
+    .title-bar {
+      display: none;
+    }
+  }
+}

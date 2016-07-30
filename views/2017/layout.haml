@@ -1,5 +1,5 @@
 !!!
-%html{lang: 'en'}
+%html.no-js{lang: 'en'}
   %head
     /
       Hello! This code is open-source, and MIT licensed. Go here to check out da code:
@@ -14,19 +14,17 @@
         var config = { kitId: 'pcd5kcy', scriptTimeout: 3000 },
         h=d.documentElement,t=setTimeout(function(){h.className=h.className.replace(/\bwf-loading\b/g,"")+" wf-inactive";},config.scriptTimeout),tk=d.createElement("script"),f=false,s=d.getElementsByTagName("script")[0],a;h.className+=" wf-loading";tk.src='//use.typekit.net/'+config.kitId+'.js';tk.async=true;tk.onload=tk.onreadystatechange=function(){a=this.readyState;if(f||a&&a!="complete"&&a!="loaded")return;f=true;clearTimeout(t);try{Typekit.load(config)}catch(e){}};s.parentNode.insertBefore(tk,s)
       })(document);
-    %script{src: "https://js.tito.io/v1?v2", async: true}
-    %script{src: "https://maps.googleapis.com/maps/api/js" }
-    %script{src: "/javascripts/jquery-2.1.4.min.js" }
-    %script{src: "/javascripts/map.js" }
-    %script{src: "/javascripts/bootstrap-transitions.js" }
-    %script{src: "/javascripts/bootstrap-carousel.js" }
   %body
     = haml :'2017/_header'
 
     != yield
 
-    -#= haml :'2017/_footer'
+    = haml :'2017/_footer'
 
+    %script{src: 'javascripts/jquery-2.1.4.min.js'}
+    %script{src: 'https://cdn.jsdelivr.net/foundation/6.2.3/foundation.min.js'}
+    %script{src: '2017/javascripts/all.js'}
+    %script{src: "https://js.tito.io/v1?v2", async: true}
     - # Fix for iOS vh/vw units
     %script{src: '/javascripts/viewport-units-buggyfill.js'}
     %script window.viewportUnitsBuggyfill.init();

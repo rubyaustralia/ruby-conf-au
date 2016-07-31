@@ -1,0 +1,5 @@
+.thumbnail {
+  &.speaker {
+    -webkit-filter: brightness(80%) grayscale(100%);
+  }
+}

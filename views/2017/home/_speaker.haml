@@ -1,0 +1,6 @@
+.column.text-center{style: 'margin-bottom: 1rem;'}
+  %img.thumbnail.speaker{src: "#{speaker[:image]}" }
+  %h5
+    = speaker[:name]
+  %a{href: "https://twitter.com/#{speaker[:twitter]}", target: '_blank'}
+    @#{speaker[:twitter]}

@@ -90,7 +90,14 @@ end
 
 get '/2017/?' do
   @title = :home
-  @speaker = %w().sample
+  @speakers = [
+    { name: 'Aja Hammerly', image: '/images/2017/speakers/aja_hammerly.jpeg', twitter: 'the_thagomizer' },
+    { name: 'Aaron Patterson', image: '/images/2017/speakers/aaron_patterson.jpg', twitter: 'tenderlove' },
+    { name: 'Karolina Szczur', image: '/images/2017/speakers/karolina_szczur.jpg', twitter: 'fox' },
+    { name: 'Tim Riley', image: '/images/2017/speakers/tim_riley.jpeg', twitter: 'timriley' },
+    { name: 'Piotr Solnica', image: '/images/2017/speakers/piotr_solnica.jpg', twitter: '_solnic_' },
+
+  ]
   haml :"2017/home", :layout => :"2017/layout"
 end
 

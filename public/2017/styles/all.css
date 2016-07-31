@@ -2979,7 +2979,7 @@ table.hover tr:nth-of-type(even):hover {
     display: block; }
 
 .thumbnail {
-  border: solid 4px #fefefe;
+  border: non;
   box-shadow: 0 0 0 1px rgba(10, 10, 10, 0.2);
   display: inline-block;
   line-height: 0;
@@ -3386,6 +3386,9 @@ h1.hero {
   .button {
     background-color: #6484DF; } }
 
+.thumbnail.speaker {
+  -webkit-filter: brightness(80%) grayscale(100%); }
+
 .top-bar {
   font-family: Verdana, sans-serif; }
   .top-bar h3 {
@@ -3404,7 +3407,8 @@ h1.hero {
   .top-bar .menu a {
     color: #0a0a0a;
     font-weight: bold;
-    text-transform: uppercase; }
+    text-transform: uppercase;
+    position: relative; }
 
 @media screen and (max-width: 39.9375em) {
   .top-bar {
@@ -3418,29 +3422,63 @@ h1.hero {
   .no-js .title-bar {
     display: none; } }
 
+@media screen and (max-width: 769px) {
+  .top-bar h3 {
+    font-size: 1.4rem; }
+  .top-bar .menu > li > a {
+    padding: 0.7rem 0.4rem; } }
+
 section .transparent-overlay {
   background-color: rgba(0, 0, 0, 0.3);
   padding-top: 2rem;
-  margin-top: 11rem; }
+  margin-top: 8rem; }
   @media screen and (max-width: 39.9375em) {
     section .transparent-overlay {
       margin-top: 2.5rem; } }
 
 section.main-section {
+  position: relative;
   background-image: url("/images/2017/splash.png");
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
   height: 798px; }
   @media screen and (max-width: 39.9375em) {
     section.main-section {
       height: auto; } }
   section.main-section .overlay {
     padding-top: 0.5rem;
-    background-image: url("/images/2017/splash-overlay.svg"); }
+    background-image: url("/images/2017/splash-overlay.svg");
+    -webkit-background-size: auto 100%;
+    -moz-background-size: auto 100%;
+    -o-background-size: auto 100%;
+    background-size: auto 100%;
+    background-position: center;
+    background-repeat: no-repeat; }
+    @media screen and (min-width: 40em) {
+      section.main-section .overlay {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        left: 0;
+        top: 0; } }
   section.main-section .content {
     padding-top: 3rem;
     padding-bottom: 13rem;
     background: url("/images/2017/rubies.svg") top center no-repeat;
-    background-size: cover;
+    -webkit-background-size: auto 90%;
+    -moz-background-size: auto 90%;
+    -o-background-size: auto 90%;
+    background-size: auto 90%;
     background-repeat: no-repeat; }
+    @media screen and (min-width: 40em) {
+      section.main-section .content {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        left: 0;
+        top: 0; } }
     @media screen and (max-width: 39.9375em) {
       section.main-section .content {
         padding-bottom: 6rem; } }
@@ -3463,6 +3501,10 @@ section.body-section {
 
 section.sponsor-section {
   padding-top: 4rem; }
+
+.map {
+  width: 100%;
+  height: 400px; }
 
 footer {
   background-color: #4a4a4a;

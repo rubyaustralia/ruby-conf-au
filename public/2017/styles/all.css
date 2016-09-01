@@ -3381,6 +3381,9 @@ h1.hero {
 .button {
   text-transform: uppercase;
   font-family: Futura, "Trebuchet MS", Arial, sans-serif; }
+  .button.secondary {
+    background-color: #6484DF;
+    color: #fefefe; }
 
 @media screen and (max-width: 39.9375em) {
   .button {

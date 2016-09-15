@@ -96,7 +96,8 @@ get '/2017/?' do
     { name: 'Karolina Szczur', image: '/images/2017/speakers/karolina_szczur.jpg', twitter: 'fox' },
     { name: 'Tim Riley', image: '/images/2017/speakers/tim_riley.jpeg', twitter: 'timriley' },
     { name: 'Piotr Solnica', image: '/images/2017/speakers/piotr_solnica.jpg', twitter: '_solnic_' },
-
+    { name: 'Katie McLaughlin', image: '/images/2017/speakers/katie_mclaughlin.png', twitter: 'glasnt' },
+    { name: 'Shana Moore', image: '/images/2017/speakers/shana_moore.png', twitter: 'Shay_nuh__' },
   ]
   haml :"2017/home", :layout => :"2017/layout"
 end

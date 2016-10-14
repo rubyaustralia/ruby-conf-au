@@ -1,3 +1,5 @@
+require 'active_support/core_ext/hash/indifferent_access'
+
 Bundler.require(:default)
 
 configure do
@@ -90,15 +92,16 @@ end
 
 get '/2017/?' do
   @title = :home
-  @speakers = [
-    { name: 'Aja Hammerly', image: '/images/2017/speakers/aja_hammerly.jpeg', twitter: 'the_thagomizer' },
-    { name: 'Aaron Patterson', image: '/images/2017/speakers/aaron_patterson.jpg', twitter: 'tenderlove' },
-    { name: 'Karolina Szczur', image: '/images/2017/speakers/karolina_szczur.jpg', twitter: 'fox' },
-    { name: 'Tim Riley', image: '/images/2017/speakers/tim_riley.jpeg', twitter: 'timriley' },
-    { name: 'Piotr Solnica', image: '/images/2017/speakers/piotr_solnica.jpg', twitter: '_solnic_' },
-    { name: 'Katie McLaughlin', image: '/images/2017/speakers/katie_mclaughlin.png', twitter: 'glasnt' },
-    { name: 'Shana Moore', image: '/images/2017/speakers/shana_moore.png', twitter: 'Shay_nuh__' },
-  ]
+  # @speakers = [
+  #   { name: 'Aja Hammerly', image: '/images/2017/speakers/aja_hammerly.jpeg', twitter: 'the_thagomizer' },
+  #   { name: 'Aaron Patterson', image: '/images/2017/speakers/aaron_patterson.jpg', twitter: 'tenderlove' },
+  #   { name: 'Karolina Szczur', image: '/images/2017/speakers/karolina_szczur.jpg', twitter: 'fox' },
+  #   { name: 'Tim Riley', image: '/images/2017/speakers/tim_riley.jpeg', twitter: 'timriley' },
+  #   { name: 'Piotr Solnica', image: '/images/2017/speakers/piotr_solnica.jpg', twitter: '_solnic_' },
+  #   { name: 'Katie McLaughlin', image: '/images/2017/speakers/katie_mclaughlin.png', twitter: 'glasnt' },
+  #   { name: 'Shana Moore', image: '/images/2017/speakers/shana_moore.png', twitter: 'Shay_nuh__' },
+  # ]
+  @speakers = YAML.load_file(File.join('2017', 'data', 'speakers.yml')).map(&:symbolize_keys)
   haml :"2017/home", :layout => :"2017/layout"
 end
 

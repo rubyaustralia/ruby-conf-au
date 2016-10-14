@@ -1,0 +1,50 @@
+section#sponsors {
+  h1 {
+    text-align: center;
+    color: $blue;
+    line-height: 8.0rem;
+
+    small {
+      color: $charcoal;
+    }
+  }
+
+  p.help {
+    text-align: center;
+    margin-bottom: 6.0rem;
+
+    a {
+      @include button($dark-red, white)
+    }
+  }
+
+  h3 {
+    font-size: 3.0rem;
+    text-align: center;
+  }
+
+  .sponsor-group {
+    @include clearfix;
+    margin-bottom: 6.0rem;
+
+    a {
+      @include span-columns(4);
+      text-align: center;
+      img {
+        @include filter(grayscale(100%));
+        max-width: 100%;
+      }
+
+      &:first-of-type{
+        @include shift(2);
+      }
+
+      &:hover {
+        img {
+          @include filter(none);
+        }
+      }
+    }
+
+  }
+}

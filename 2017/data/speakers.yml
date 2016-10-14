@@ -1,0 +1,29 @@
+- name: 'Aja Hammerly'
+  image: '/images/2017/speakers/aja_hammerly.jpeg'
+  twitter: 'the_thagomizer'
+  bio: |
+    Katie has worn many different hats over the years. She has been a software developer for many languages, systems administrator for multiple operating systems, and speaker on many different topics. When she's not changing the world, she enjoys cooking, making tapestries, and yelling at JavaScript and its attempt at global variables.
+
+- name: 'Aaron Patterson'
+  image: '/images/2017/speakers/aaron_patterson.jpg'
+  twitter: 'tenderlove'
+
+- name: 'Karolina Szczur'
+  image: '/images/2017/speakers/karolina_szczur.jpg'
+  twitter: 'fox'
+
+- name: 'Tim Riley'
+  image: '/images/2017/speakers/tim_riley.jpeg'
+  twitter: 'timriley'
+
+- name: 'Piotr Solnica'
+  image: '/images/2017/speakers/piotr_solnica.jpg'
+  twitter: '_solnic_'
+
+- name: 'Katie McLaughlin'
+  image: '/images/2017/speakers/katie_mclaughlin.png'
+  twitter: 'glasnt'
+
+- name: 'Shana Moore'
+  image: '/images/2017/speakers/shana_moore.png'
+  twitter: 'Shay_nuh__'

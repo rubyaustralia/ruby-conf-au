@@ -1,6 +1,6 @@
 %section.body-section#speakers{'data-magellan-target': 'speakers'}
-  .row.column
+  .column
     %h2 Meet our Speakers
-    .row.small-up-1.medium-up-3.large-up-4
+    .row
       - @speakers.each do |speaker|
         = haml :'2017/home/_speaker', locals: { speaker: speaker }

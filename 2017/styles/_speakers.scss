@@ -1,0 +1,24 @@
+.speaker {
+  @include span-columns(4);
+  @include omega(3n);
+
+  margin: 0 0 40px;
+  width: 33.33333%;
+  text-decoration: none;
+  color: black;
+
+  .about {
+    padding: 1.4rem 2rem;
+  }
+
+  img {
+    @include filter(grayscale(100%));
+    width: 100%;
+    position: relative;
+    opacity: 0.8;
+  }
+
+  h3 {
+    margin-bottom: 0;
+  }
+}

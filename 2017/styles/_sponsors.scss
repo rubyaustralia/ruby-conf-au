@@ -33,6 +33,7 @@ section#sponsors {
       img {
         @include filter(grayscale(100%));
         max-width: 100%;
+        opacity: 0.5;
       }
 
       &:first-of-type{
@@ -42,6 +43,7 @@ section#sponsors {
       &:hover {
         img {
           @include filter(none);
+          opacity: 0.9;
         }
       }
     }

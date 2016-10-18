@@ -46,8 +46,9 @@ h1 {
     display: block; }
 
 h2 {
-  font-size: 6.0rem;
+  font-size: 5.0rem;
   font-style: italic;
+  line-height: 5.0rem;
   text-transform: uppercase;
   color: #6484DF;
   margin: 0 0 4.0rem;
@@ -69,15 +70,14 @@ h3 {
 section {
   padding: 5rem 0; }
 
-section#speakers {
-  background: #FCDBDB; }
-
 section.billboard {
   background: url(/images/2017/billboard.jpg) no-repeat center center black;
   background-size: cover;
   text-align: center;
   color: white;
-  position: relative; }
+  position: relative;
+  border-top: 1px solid black;
+  border-bottom: 1px solid black; }
   section.billboard:before {
     content: "";
     position: absolute;
@@ -96,8 +96,8 @@ section.billboard {
     width: 100%;
     height: 100%;
     z-index: 2;
-    background: url("/images/2017/rubies.svg") top center no-repeat;
-    background-size: contain; }
+    background: url("/images/2017/rubies.svg") center center no-repeat;
+    background-size: 100% 90%; }
   section.billboard > .column {
     position: relative;
     z-index: 100; }
@@ -124,6 +124,11 @@ section.billboard {
     section.billboard a:hover {
       background: #ffcc0d; }
 
+section#speakers {
+  background: #FCDBDB;
+  border-top: 1px solid #DA4D3D;
+  border-bottom: 1px solid #DA4D3D; }
+
 .speaker {
   float: left;
   display: block;
@@ -140,15 +145,21 @@ section.billboard {
   .speaker:nth-child(3n+1) {
     clear: left; }
   .speaker .about {
-    padding: 1.4rem 2rem; }
+    padding: 1.4rem; }
   .speaker img {
     -webkit-filter: grayscale(100%);
     filter: grayscale(100%);
     width: 100%;
     position: relative;
-    opacity: 0.8; }
+    opacity: 0.6; }
   .speaker h3 {
     margin-bottom: 0; }
+  .speaker .twitter {
+    color: #6484DF; }
+  .speaker .bio {
+    color: #DA4D3D; }
+  .speaker:hover img {
+    opacity: 1.0; }
 
 section#sponsors h1 {
   text-align: center;
@@ -191,12 +202,14 @@ section#sponsors .sponsor-group {
     section#sponsors .sponsor-group a img {
       -webkit-filter: grayscale(100%);
       filter: grayscale(100%);
-      max-width: 100%; }
+      max-width: 100%;
+      opacity: 0.5; }
     section#sponsors .sponsor-group a:first-of-type {
       margin-left: 17.05961%; }
     section#sponsors .sponsor-group a:hover img {
       -webkit-filter: none;
-      filter: none; }
+      filter: none;
+      opacity: 0.9; }
 
 header {
   padding: 1.5rem 0; }

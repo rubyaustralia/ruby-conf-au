@@ -1,3 +1,9 @@
+section#speakers {
+  background: $light-red;
+  border-top: 1px solid $dark-red;
+  border-bottom: 1px solid $dark-red;
+}
+
 .speaker {
   @include span-columns(4);
   @include omega(3n);
@@ -8,17 +14,31 @@
   color: black;
 
   .about {
-    padding: 1.4rem 2rem;
+    padding: 1.4rem;
   }
 
   img {
     @include filter(grayscale(100%));
     width: 100%;
     position: relative;
-    opacity: 0.8;
+    opacity: 0.6;
   }
 
   h3 {
     margin-bottom: 0;
+  }
+
+  .twitter {
+    color: $blue;
+  }
+
+  .bio {
+    color: $dark-red;
+  }
+
+  &:hover {
+    img{
+      opacity: 1.0;
+    }
   }
 }

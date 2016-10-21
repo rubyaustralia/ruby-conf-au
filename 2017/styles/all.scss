@@ -1,5 +1,6 @@
 @import 'bourbon/bourbon';
 @import 'neat/neat';
+@import 'font-awesome/font-awesome.scss';
 
 @import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,700');
 @import url('https://fonts.googleapis.com/css?family=Lato:300,300i,400,400i,900');
@@ -28,6 +29,12 @@ $color-action: #FFD740;
   &:hover {
     background: darken($color, 10%);
   }
+}
+
+@mixin highlight-section($color: $light-red) {
+  background: $color;
+  border-top: 1px solid darken($color, 5%);
+  border-bottom: 1px solid darken($color, 5%);
 }
 
 body {
@@ -84,17 +91,23 @@ h3{
   font-size: 2.0rem;
 }
 
+a {
+  color: $dark-red;
+}
+
 .column {
   @include outer-container;
 }
 
-section {
+section,
+footer {
   padding: 5rem 0;
 }
 
 @import 'billboard';
 @import 'speakers';
 @import 'sponsors';
+@import 'attending';
 
 header {
   padding: 1.5rem 0;
@@ -163,5 +176,60 @@ header {
         }
       }
     }
+  }
+}
+
+footer {
+  @include highlight-section($color: $charcoal);
+
+  ul {
+    @include outer-container;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+  }
+
+  li {
+    display: inline-block;
+    text-align: center;
+    padding: 0 2rem;
+    margin: 0;
+
+    a{
+      color: darken(white, 15%);
+      text-decoration: none;
+
+      i {
+        padding-right: 0.3rem;
+      }
+
+      &:hover {
+        color: white;
+      }
+    }
+  }
+
+  .brand {
+    text-align: center;
+    margin-top: 6rem;
+  }
+
+  .fa-diamond{
+    font-size: 2rem;
+    color: lighten($charcoal, 15%);
+  }
+
+}
+
+
+section#location {
+  #map {
+    @include span-columns(5);
+    height: 20rem;
+  }
+
+  .description {
+    @include span-columns(7);
   }
 }

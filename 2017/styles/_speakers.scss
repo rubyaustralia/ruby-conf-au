@@ -1,7 +1,5 @@
 section#speakers {
-  background: $light-red;
-  border-top: 1px solid $dark-red;
-  border-bottom: 1px solid $dark-red;
+  @include highlight-section;
 }
 
 .speaker {

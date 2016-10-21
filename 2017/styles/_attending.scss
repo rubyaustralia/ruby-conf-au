@@ -1,0 +1,12 @@
+section#attending {
+  @include highlight-section;
+
+  .policies {
+    text-align: center;
+    margin-top: 1rem;
+    a {
+      @include button($color: $dark-red, $text-color: white);
+      margin: 0 1rem;
+    }
+  }
+}

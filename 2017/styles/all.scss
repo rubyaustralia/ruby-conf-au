@@ -231,5 +231,9 @@ section#location {
 
   .description {
     @include span-columns(7);
+
+    a {
+      text-decoration: none;
+    }
   }
 }

@@ -2526,3 +2526,5 @@ section#location .description {
   width: 57.35098%; }
   section#location .description:last-child {
     margin-right: 0; }
+  section#location .description a {
+    text-decoration: none; }

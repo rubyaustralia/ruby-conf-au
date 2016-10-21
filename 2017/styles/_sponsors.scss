@@ -48,5 +48,11 @@ section#sponsors {
       }
     }
 
+    &.assist {
+      a {
+        @include span-columns(2);
+        @include shift(5);
+      }
+    }
   }
 }

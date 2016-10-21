@@ -2397,6 +2397,14 @@ section#sponsors .sponsor-group {
       -webkit-filter: none;
       filter: none;
       opacity: 0.9; }
+  section#sponsors .sponsor-group.assist a {
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 14.70196%;
+    margin-left: 42.64902%; }
+    section#sponsors .sponsor-group.assist a:last-child {
+      margin-right: 0; }
 
 section#attending {
   background: #FCDBDB;

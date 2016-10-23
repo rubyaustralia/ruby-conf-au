@@ -2,7 +2,7 @@ section#sponsors {
   h1 {
     text-align: center;
     color: $blue;
-    line-height: 8.0rem;
+    line-height: modular-scale(8);
 
     small {
       color: $charcoal;
@@ -11,15 +11,15 @@ section#sponsors {
 
   p.help {
     text-align: center;
-    margin-bottom: 6.0rem;
+    margin-bottom: modular-scale(6);
 
     a {
-      @include button($dark-red, white)
+      @include button($dark-red, white);
+      margin-top: modular-scale(2);
     }
   }
 
   h3 {
-    font-size: 3.0rem;
     text-align: center;
   }
 
@@ -30,9 +30,12 @@ section#sponsors {
     a {
       @include span-columns(3);
       text-align: center;
+      height: modular-scale(6);
+
       img {
         @include filter(grayscale(100%));
         max-width: 100%;
+        max-height: 100%;
         opacity: 0.5;
       }
 

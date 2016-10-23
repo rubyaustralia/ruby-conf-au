@@ -1,4 +1,6 @@
 @charset "UTF-8";
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:300,400,700");
+@import url("https://fonts.googleapis.com/css?family=Lato:300,300i,400,400i,900");
 html {
   box-sizing: border-box; }
 
@@ -2215,36 +2217,36 @@ h3 {
   font-weight: 300; }
 
 h1 {
-  font-size: 8.0rem;
-  line-height: 6.0rem;
+  font-size: 8.22492rem;
+  line-height: 6.3541rem;
   font-weight: 400;
   padding: 0;
-  margin: 0 0 3.0rem 0; }
+  margin: 0 0 3.92705rem 0; }
   h1 small {
-    font-size: 3.5rem;
-    line-height: 3.5rem;
+    font-size: 3.92705rem;
+    line-height: 3.92705rem;
     font-weight: 300;
     display: block; }
 
 h2 {
-  font-size: 5.0rem;
+  font-size: 5.08328rem;
   font-style: italic;
-  line-height: 5.0rem;
+  line-height: 5.08328rem;
   text-transform: uppercase;
   color: #6484DF;
-  margin: 0 0 4.0rem;
+  margin: 0 0 3.14164rem;
   padding: 0; }
 
 h3 {
   color: #6484DF;
-  font-size: 2.0rem; }
+  font-size: 2.42705rem; }
 
 a {
   color: #DA4D3D; }
 
 section,
 footer {
-  padding: 5rem 0; }
+  padding: 3.92705rem 0; }
 
 .column {
   max-width: 1200px;
@@ -2378,16 +2380,6 @@ section.billboard {
   section.billboard > .column {
     position: relative;
     z-index: 100; }
-  section.billboard p {
-    float: left;
-    display: block;
-    margin-right: 2.35765%;
-    width: 65.88078%;
-    margin-left: 17.05961%;
-    font-size: 2.0rem;
-    line-height: 2.4rem; }
-    section.billboard p:last-child {
-      margin-right: 0; }
   section.billboard a {
     display: inline-block;
     background: #FFD740;
@@ -2460,12 +2452,12 @@ section#speakers {
 section#sponsors h1 {
   text-align: center;
   color: #6484DF;
-  line-height: 8.0rem; }
+  line-height: 8.22492rem; }
   section#sponsors h1 small {
     color: #4A4A4A; }
 section#sponsors p.help {
   text-align: center;
-  margin-bottom: 6.0rem; }
+  margin-bottom: 5.08328rem; }
   section#sponsors p.help a {
     display: inline-block;
     background: #DA4D3D;
@@ -2476,11 +2468,11 @@ section#sponsors p.help {
     text-decoration: none;
     font-weight: 400;
     text-transform: uppercase;
-    line-height: 1.7rem; }
+    line-height: 1.7rem;
+    margin-top: 1.94164rem; }
     section#sponsors p.help a:hover {
       background: #bf3425; }
 section#sponsors h3 {
-  font-size: 3.0rem;
   text-align: center; }
 section#sponsors .sponsor-group {
   margin-bottom: 6.0rem; }
@@ -2493,13 +2485,15 @@ section#sponsors .sponsor-group {
     display: block;
     margin-right: 2.35765%;
     width: 23.23176%;
-    text-align: center; }
+    text-align: center;
+    height: 5.08328rem; }
     section#sponsors .sponsor-group a:last-child {
       margin-right: 0; }
     section#sponsors .sponsor-group a img {
       -webkit-filter: grayscale(100%);
       filter: grayscale(100%);
       max-width: 100%;
+      max-height: 100%;
       opacity: 0.5; }
     section#sponsors .sponsor-group a:first-of-type {
       margin-left: 25.58941%; }

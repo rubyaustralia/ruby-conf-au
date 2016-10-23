@@ -1,0 +1,14 @@
+section#location {
+  #map {
+    @include span-columns(5);
+    height: 20rem;
+  }
+
+  .description {
+    @include span-columns(7);
+
+    a {
+      text-decoration: none;
+    }
+  }
+}

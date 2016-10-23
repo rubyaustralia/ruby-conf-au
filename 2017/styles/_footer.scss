@@ -1,0 +1,41 @@
+footer {
+  @include highlight-section($color: $charcoal);
+
+  ul {
+    @include outer-container;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+  }
+
+  li {
+    display: inline-block;
+    text-align: center;
+    padding: 0 2rem;
+    margin: 0;
+
+    a{
+      color: darken(white, 15%);
+      text-decoration: none;
+
+      i {
+        padding-right: 0.3rem;
+      }
+
+      &:hover {
+        color: white;
+      }
+    }
+  }
+
+  .brand {
+    text-align: center;
+    margin-top: 6rem;
+  }
+
+  .fa-diamond{
+    font-size: 2rem;
+    color: lighten($charcoal, 15%);
+  }
+}

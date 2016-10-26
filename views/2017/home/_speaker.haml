@@ -2,6 +2,8 @@
   %img.thumbnail{src: "#{speaker[:image]}" }
 
   .about
-    %h3= speaker[:name]
+    %h3
+      - speaker[:name].split(' ').each do |word|
+        %span.name= word
     %div.twitter @#{speaker[:twitter]}
     %p.bio= speaker[:bio]

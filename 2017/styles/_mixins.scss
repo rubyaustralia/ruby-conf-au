@@ -1,0 +1,42 @@
+@mixin button($color: $color-action, $text-color: $charcoal) {
+  display: inline-block;
+  background: $color;
+  color: $text-color;
+  font-size: 1.5rem;
+  padding: 1.0rem modular-scale(3);
+  text-align: center;
+  text-decoration: none;
+  font-weight: 400;
+  text-transform: uppercase;
+  line-height: 1.7rem;
+
+  &:hover {
+    background: darken($color, 10%);
+  }
+
+  @include mobile-portrait {
+    padding: 1.0rem modular-scale(1);
+  }
+}
+
+@mixin highlight-section($color: $light-red) {
+  background: $color;
+  border-top: 1px solid darken($color, 5%);
+  border-bottom: 1px solid darken($color, 5%);
+}
+
+@mixin mobile-portrait($total-columns: $grid-columns) {
+  @include media(max-width $responsive-mobile-portrait-max-width, $total-columns) {
+    @content;
+  }
+}
+
+@mixin responsive-pad {
+  padding-left: modular-scale(1);
+  padding-right: modular-scale(1);
+}
+
+@mixin omega-reset($nth) {
+  &:nth-child(#{$nth}) { margin-right: flex-gutter(); }
+  &:nth-child(#{$nth}+1) { clear: none }
+}

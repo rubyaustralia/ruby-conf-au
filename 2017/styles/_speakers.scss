@@ -13,6 +13,10 @@ section#speakers {
 
   .about {
     padding: 1.4rem;
+
+    @include mobile-portrait {
+      padding: 0.5rem 0;
+    }
   }
 
   img {
@@ -37,6 +41,20 @@ section#speakers {
   &:hover {
     img{
       opacity: 1.0;
+    }
+  }
+
+  @include mobile-portrait {
+    @include span-columns(6);
+    @include omega-reset(3n);
+    @include omega(2n);
+
+    width: 50% !important;
+    margin-right: 0 !important;
+    margin-bottom: modular-scale(0);
+
+    h3 .name {
+      display: block;
     }
   }
 }

@@ -2,6 +2,10 @@ section#location {
   #map {
     @include span-columns(5);
     height: 20rem;
+
+    @include mobile-portrait {
+      display: none;
+    }
   }
 
   .description {
@@ -9,6 +13,10 @@ section#location {
 
     a {
       text-decoration: none;
+    }
+
+    @include mobile-portrait {
+      @include span-columns(12);
     }
   }
 }

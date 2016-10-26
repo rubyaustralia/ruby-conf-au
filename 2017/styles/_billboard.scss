@@ -29,6 +29,10 @@ section.billboard {
     z-index: 2;
     background: url('/images/2017/rubies.svg') center center no-repeat;
     background-size: 100% 90%;
+
+    @include mobile-portrait {
+      background-size: 150%;
+    }
   }
 
   > .column {

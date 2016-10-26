@@ -34,6 +34,16 @@ h1 {
     line-height: modular-scale(5);
     font-weight: 300;
     display: block;
+
+    @include mobile-portrait {
+      font-size: modular-scale(4);
+      line-height: modular-scale(4);
+    }
+  }
+
+  @include mobile-portrait {
+    font-size: modular-scale(5);
+    line-height: modular-scale(4);
   }
 }
 
@@ -45,11 +55,22 @@ h2 {
   color: $blue;
   margin: 0 0 modular-scale(4);
   padding: 0;
+
+  @include mobile-portrait {
+    font-size: modular-scale(4);
+    line-height: modular-scale(4);
+    margin: 0 0 modular-scale(1);
+  }
 }
 
 h3{
   color: $blue;
   font-size: modular-scale(3);
+
+  @include mobile-portrait {
+    font-size: modular-scale(1);
+    line-height: modular-scale(1);
+  }
 }
 
 a {
@@ -59,6 +80,10 @@ a {
 section,
 footer {
   padding: modular-scale(5) 0;
+
+  @include mobile-portrait {
+    padding: modular-scale(2) modular-scale(1);
+  }
 }
 
 .column {

@@ -7,6 +7,10 @@ footer {
     padding: 0;
     margin: 0;
     text-align: center;
+
+    @include mobile-portrait {
+      text-align: left;
+    }
   }
 
   li {
@@ -27,11 +31,22 @@ footer {
         color: white;
       }
     }
+
+    @include mobile-portrait {
+      text-align: left;
+      font-size: modular-scale(0);
+      margin-bottom: modular-scale(0);
+      padding: 0;
+    }
   }
 
   .brand {
     text-align: center;
     margin-top: 6rem;
+
+    @include mobile-portrait {
+      margin-top: modular-scale(2);
+    }
   }
 
   .fa-diamond{

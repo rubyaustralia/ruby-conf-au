@@ -1,5 +1,9 @@
 header {
-  padding: 1.5rem 0;
+  padding: 1.5rem 0 1.3rem;
+
+  br {
+    display: none;
+  }
 
   & > a {
     @include span-columns(3);
@@ -16,6 +20,10 @@ header {
       font-weight: 300;
       font-size: 1.0rem;
       letter-spacing: 0.9px;
+    }
+
+    @include mobile-portrait {
+      @include span-columns(12);
     }
   }
 
@@ -64,6 +72,18 @@ header {
           background: $blue;
         }
       }
+    }
+
+    @include mobile-portrait {
+      display: none;
+    }
+  }
+
+  @include mobile-portrait {
+    @include responsive-pad;
+
+    br {
+      display: block;
     }
   }
 }

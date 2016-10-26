@@ -2227,6 +2227,14 @@ h1 {
     line-height: 3.92705rem;
     font-weight: 300;
     display: block; }
+    @media screen and (max-width: 414px) {
+      h1 small {
+        font-size: 3.14164rem;
+        line-height: 3.14164rem; } }
+  @media screen and (max-width: 414px) {
+    h1 {
+      font-size: 3.92705rem;
+      line-height: 3.14164rem; } }
 
 h2 {
   font-size: 5.08328rem;
@@ -2236,10 +2244,19 @@ h2 {
   color: #6484DF;
   margin: 0 0 3.14164rem;
   padding: 0; }
+  @media screen and (max-width: 414px) {
+    h2 {
+      font-size: 3.14164rem;
+      line-height: 3.14164rem;
+      margin: 0 0 1.5rem; } }
 
 h3 {
   color: #6484DF;
   font-size: 2.42705rem; }
+  @media screen and (max-width: 414px) {
+    h3 {
+      font-size: 1.5rem;
+      line-height: 1.5rem; } }
 
 a {
   color: #DA4D3D; }
@@ -2247,6 +2264,10 @@ a {
 section,
 footer {
   padding: 3.92705rem 0; }
+  @media screen and (max-width: 414px) {
+    section,
+    footer {
+      padding: 1.94164rem 1.5rem; } }
 
 .column {
   max-width: 1200px;
@@ -2258,7 +2279,9 @@ footer {
     display: block; }
 
 header {
-  padding: 1.5rem 0; }
+  padding: 1.5rem 0 1.3rem; }
+  header br {
+    display: none; }
   header > a {
     float: left;
     display: block;
@@ -2277,6 +2300,14 @@ header {
       font-weight: 300;
       font-size: 1.0rem;
       letter-spacing: 0.9px; }
+    @media screen and (max-width: 414px) {
+      header > a {
+        float: left;
+        display: block;
+        margin-right: 2.35765%;
+        width: 100%; }
+        header > a:last-child {
+          margin-right: 0; } }
   header nav {
     float: left;
     display: block;
@@ -2313,6 +2344,15 @@ header {
         left: 0;
         height: 3px;
         background: #6484DF; }
+    @media screen and (max-width: 414px) {
+      header nav {
+        display: none; } }
+  @media screen and (max-width: 414px) {
+    header {
+      padding-left: 1.5rem;
+      padding-right: 1.5rem; }
+      header br {
+        display: block; } }
 
 footer {
   background: #4A4A4A;
@@ -2330,6 +2370,9 @@ footer {
       clear: both;
       content: "";
       display: block; }
+    @media screen and (max-width: 414px) {
+      footer ul {
+        text-align: left; } }
   footer li {
     display: inline-block;
     text-align: center;
@@ -2342,9 +2385,18 @@ footer {
         padding-right: 0.3rem; }
       footer li a:hover {
         color: white; }
+    @media screen and (max-width: 414px) {
+      footer li {
+        text-align: left;
+        font-size: 1.2rem;
+        margin-bottom: 1.2rem;
+        padding: 0; } }
   footer .brand {
     text-align: center;
     margin-top: 6rem; }
+    @media screen and (max-width: 414px) {
+      footer .brand {
+        margin-top: 1.94164rem; } }
   footer .fa-diamond {
     font-size: 2rem;
     color: #707070; }
@@ -2377,6 +2429,9 @@ section.billboard {
     z-index: 2;
     background: url("/images/2017/rubies.svg") center center no-repeat;
     background-size: 100% 90%; }
+    @media screen and (max-width: 414px) {
+      section.billboard:after {
+        background-size: 150%; } }
   section.billboard > .column {
     position: relative;
     z-index: 100; }
@@ -2385,7 +2440,7 @@ section.billboard {
     background: #FFD740;
     color: #4A4A4A;
     font-size: 1.5rem;
-    padding: 1.0rem 4rem;
+    padding: 1rem 2.42705rem;
     text-align: center;
     text-decoration: none;
     font-weight: 400;
@@ -2393,6 +2448,9 @@ section.billboard {
     line-height: 1.7rem; }
     section.billboard a:hover {
       background: #ffcc0d; }
+    @media screen and (max-width: 414px) {
+      section.billboard a {
+        padding: 1rem 1.5rem; } }
 
 section#location #map {
   float: left;
@@ -2402,6 +2460,9 @@ section#location #map {
   height: 20rem; }
   section#location #map:last-child {
     margin-right: 0; }
+  @media screen and (max-width: 414px) {
+    section#location #map {
+      display: none; } }
 section#location .description {
   float: left;
   display: block;
@@ -2411,6 +2472,14 @@ section#location .description {
     margin-right: 0; }
   section#location .description a {
     text-decoration: none; }
+  @media screen and (max-width: 414px) {
+    section#location .description {
+      float: left;
+      display: block;
+      margin-right: 2.35765%;
+      width: 100%; }
+      section#location .description:last-child {
+        margin-right: 0; } }
 
 section#speakers {
   background: #FCDBDB;
@@ -2434,6 +2503,9 @@ section#speakers {
     clear: left; }
   .speaker .about {
     padding: 1.4rem; }
+    @media screen and (max-width: 414px) {
+      .speaker .about {
+        padding: 0.5rem 0; } }
   .speaker img {
     -webkit-filter: grayscale(100%);
     filter: grayscale(100%);
@@ -2448,6 +2520,27 @@ section#speakers {
     color: #DA4D3D; }
   .speaker:hover img {
     opacity: 1.0; }
+  @media screen and (max-width: 414px) {
+    .speaker {
+      float: left;
+      display: block;
+      margin-right: 2.35765%;
+      width: 48.82117%;
+      width: 50% !important;
+      margin-right: 0 !important;
+      margin-bottom: 1.2rem; }
+      .speaker:last-child {
+        margin-right: 0; }
+      .speaker:nth-child(3n) {
+        margin-right: 2.35765%; }
+      .speaker:nth-child(3n+1) {
+        clear: none; }
+      .speaker:nth-child(2n) {
+        margin-right: 0; }
+      .speaker:nth-child(2n+1) {
+        clear: left; }
+      .speaker h3 .name {
+        display: block; } }
 
 section#sponsors h1 {
   text-align: center;
@@ -2455,6 +2548,17 @@ section#sponsors h1 {
   line-height: 8.22492rem; }
   section#sponsors h1 small {
     color: #4A4A4A; }
+    @media screen and (max-width: 414px) {
+      section#sponsors h1 small {
+        font-size: 1.94164rem;
+        line-height: 1.94164rem; } }
+  @media screen and (max-width: 414px) {
+    section#sponsors h1 {
+      text-align: left;
+      line-height: 3.14164rem;
+      margin-bottom: 1.5rem; }
+      section#sponsors h1 br {
+        display: none; } }
 section#sponsors p.help {
   text-align: center;
   margin-bottom: 5.08328rem; }
@@ -2463,17 +2567,27 @@ section#sponsors p.help {
     background: #DA4D3D;
     color: white;
     font-size: 1.5rem;
-    padding: 1.0rem 4rem;
+    padding: 1rem 2.42705rem;
     text-align: center;
     text-decoration: none;
     font-weight: 400;
     text-transform: uppercase;
     line-height: 1.7rem;
-    margin-top: 1.94164rem; }
+    margin-top: 1.94164rem;
+    display: block; }
     section#sponsors p.help a:hover {
       background: #bf3425; }
+    @media screen and (max-width: 414px) {
+      section#sponsors p.help a {
+        padding: 1rem 1.5rem; } }
+  @media screen and (max-width: 414px) {
+    section#sponsors p.help {
+      text-align: left; } }
 section#sponsors h3 {
   text-align: center; }
+  @media screen and (max-width: 414px) {
+    section#sponsors h3 {
+      margin-bottom: 1.2rem; } }
 section#sponsors .sponsor-group {
   margin-bottom: 6.0rem; }
   section#sponsors .sponsor-group::after {
@@ -2501,6 +2615,17 @@ section#sponsors .sponsor-group {
       -webkit-filter: none;
       filter: none;
       opacity: 0.9; }
+    @media screen and (max-width: 414px) {
+      section#sponsors .sponsor-group a {
+        float: left;
+        display: block;
+        margin-right: 2.35765%;
+        width: 100%;
+        margin-bottom: 1.2rem; }
+        section#sponsors .sponsor-group a:last-child {
+          margin-right: 0; }
+        section#sponsors .sponsor-group a:first-of-type {
+          margin-left: 0%; } }
   section#sponsors .sponsor-group.assist a {
     float: left;
     display: block;
@@ -2509,20 +2634,41 @@ section#sponsors .sponsor-group {
     margin-left: 42.64902%; }
     section#sponsors .sponsor-group.assist a:last-child {
       margin-right: 0; }
+    @media screen and (max-width: 414px) {
+      section#sponsors .sponsor-group.assist a {
+        float: left;
+        display: block;
+        margin-right: 2.35765%;
+        width: 100%;
+        margin-bottom: 1.2rem; }
+        section#sponsors .sponsor-group.assist a:last-child {
+          margin-right: 0; }
+        section#sponsors .sponsor-group.assist a:first-of-type {
+          margin-left: 0%; } }
+  @media screen and (max-width: 414px) {
+    section#sponsors .sponsor-group {
+      margin-bottom: 1.94164rem; } }
 
 section#attending {
   background: #FCDBDB;
   border-top: 1px solid #fac3c3;
   border-bottom: 1px solid #fac3c3; }
   section#attending .policies {
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
     text-align: center;
     margin-top: 1rem; }
+    section#attending .policies::after {
+      clear: both;
+      content: "";
+      display: block; }
     section#attending .policies a {
       display: inline-block;
       background: #DA4D3D;
       color: white;
       font-size: 1.5rem;
-      padding: 1.0rem 4rem;
+      padding: 1rem 2.42705rem;
       text-align: center;
       text-decoration: none;
       font-weight: 400;
@@ -2531,3 +2677,15 @@ section#attending {
       margin: 0 1rem; }
       section#attending .policies a:hover {
         background: #bf3425; }
+      @media screen and (max-width: 414px) {
+        section#attending .policies a {
+          padding: 1rem 1.5rem; } }
+      @media screen and (max-width: 414px) {
+        section#attending .policies a {
+          float: left;
+          display: block;
+          margin-right: 2.35765%;
+          width: 100%;
+          margin: 0 0 1.2rem 0; }
+          section#attending .policies a:last-child {
+            margin-right: 0; } }

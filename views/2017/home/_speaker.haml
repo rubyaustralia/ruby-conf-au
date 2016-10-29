@@ -1,6 +1,9 @@
-.column.text-center{style: 'margin-bottom: 1rem;'}
-  %img.thumbnail.speaker{src: "#{speaker[:image]}" }
-  %h5
-    = speaker[:name]
-  %a{href: "https://twitter.com/#{speaker[:twitter]}", target: '_blank'}
-    @#{speaker[:twitter]}
+%a.speaker{href: "https://twitter.com/#{speaker[:twitter]}", target: '_blank'}
+  %img.thumbnail{src: "#{speaker[:image]}" }
+
+  .about
+    %h3
+      - speaker[:name].split(' ').each do |word|
+        %span.name= word
+    %div.twitter @#{speaker[:twitter]}
+    %p.bio= speaker[:bio]

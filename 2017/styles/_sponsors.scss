@@ -1,0 +1,112 @@
+section#sponsors {
+  h1 {
+    text-align: center;
+    color: $blue;
+    line-height: modular-scale(8);
+
+    small {
+      color: $charcoal;
+
+      @include mobile-portrait {
+        font-size: modular-scale(2);
+        line-height: modular-scale(2);
+      }
+    }
+
+    @include mobile-portrait {
+      text-align: left;
+      line-height: modular-scale(4);
+      margin-bottom: modular-scale(1);
+
+      br {
+        display: none;
+      }
+    }
+  }
+
+  p.help {
+    text-align: center;
+    margin-bottom: modular-scale(6);
+
+    a {
+      @include button($dark-red, white);
+      margin-top: modular-scale(2);
+
+      @include mobile-portrait {
+        display: block;
+      }
+    }
+
+    @include mobile-portrait {
+      text-align: left;
+    }
+  }
+
+  h3 {
+    text-align: center;
+
+    @include mobile-portrait {
+      margin-bottom: modular-scale(0);
+    }
+  }
+
+  .sponsor-group {
+    @include clearfix;
+    margin-bottom: 6.0rem;
+
+    a {
+      @include span-columns(3);
+      text-align: center;
+      height: modular-scale(6);
+
+      img {
+        @include filter(grayscale(100%));
+        max-width: 100%;
+        max-height: 100%;
+        opacity: 0.5;
+      }
+
+      &:first-of-type{
+        @include shift(3);
+      }
+
+      &:hover {
+        img {
+          @include filter(none);
+          opacity: 0.9;
+        }
+      }
+
+      @include mobile-portrait {
+        @include span-columns(12);
+
+        margin-bottom: modular-scale(0);
+
+        &:first-of-type{
+          @include shift(0);
+        }
+      }
+    }
+
+    &.assist {
+      a {
+        @include span-columns(2);
+        @include shift(5);
+
+        @include mobile-portrait {
+          @include span-columns(12);
+
+          margin-bottom: modular-scale(0);
+
+          &:first-of-type{
+            @include shift(0);
+          }
+        }
+      }
+    }
+
+    @include mobile-portrait {
+      margin-bottom: modular-scale(2);
+    }
+  }
+}

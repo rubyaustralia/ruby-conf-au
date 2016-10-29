@@ -1,31 +1,18 @@
 %header
-  .title-bar{'data-responsive-toggle': 'responsive-menu', 'data-hide-for': 'medium'}
-    %button.menu-icon{type: 'button', 'data-toggle': ''}
-    .title-bar-title
-      RUBY CONF AU
-  .column.row
-    .top-bar
-      .top-bar-title
-        %a{href: '/2017'}
-          %h3
-            RUBY CONF AU
-            %br
-            %small
-              MELBOURNE 9–10 FEB 2017
-      %div#responsive-menu
-        .top-bar-left
+  %a{ href: '/' }
+    RubyConf AU
+    %small
+      Melbourne 9-10 Feb 2017
 
-        .top-bar-right
-          %ul.menu.vertical.medium-horizontal
-            %li
-              %a{href: '/2017#location'}
-                Location
-            %li
-              %a{href: '/2017#speakers'}
-                Speakers
-            %li
-              %a{href: '/2017#sponsors'}
-                Sponsors
-            %li
-              %a{href: '/2017#attending'}
-                Attending
+  %nav
+    %ul
+      %li
+        %a{ href: '/2017#location' } Location
+      %li
+        %a{ href: '/2017#speakers' } Speakers
+      %li
+        %a{ href: '/2017#sponsors' } Sponsors
+      %li
+        %a{ href: '/2017#attending' } Attending
+      %li
+        %a{ href: 'https://ti.to/ruby-australia/rubyconf-au-2017', target: '_blank' } Tickets

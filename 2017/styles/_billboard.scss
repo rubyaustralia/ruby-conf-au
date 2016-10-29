@@ -1,0 +1,46 @@
+section.billboard {
+  background: url(/images/2017/billboard.jpg) no-repeat center center black;
+  background-size: cover;
+  text-align: center;
+  color: white;
+  position: relative;
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
+
+  &:before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: $dark-red;
+    opacity: 0.5;
+    z-index: 1;
+  }
+
+  &:after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 2;
+    background: url('/images/2017/rubies.svg') center center no-repeat;
+    background-size: 100% 90%;
+
+    @include mobile-portrait {
+      background-size: 150%;
+    }
+  }
+
+  > .column {
+    position: relative;
+    z-index: 100;
+  }
+
+  a {
+    @include button;
+  }
+}

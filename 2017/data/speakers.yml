@@ -1,0 +1,33 @@
+- name: 'Aja Hammerly'
+  image: '/images/2017/speakers/aja_hammerly.jpeg'
+  twitter: 'the_thagomizer'
+  bio: |
+
+
+- name: 'Aaron Patterson'
+  image: '/images/2017/speakers/aaron_patterson.jpg'
+  twitter: 'tenderlove'
+  bio: |
+
+
+- name: 'Karolina Szczur'
+  image: '/images/2017/speakers/karolina_szczur.jpg'
+  twitter: 'fox'
+  bio: |
+    
+
+- name: 'Tim Riley'
+  image: '/images/2017/speakers/tim_riley.jpeg'
+  twitter: 'timriley'
+
+- name: 'Piotr Solnica'
+  image: '/images/2017/speakers/piotr_solnica.jpg'
+  twitter: '_solnic_'
+
+- name: 'Katie McLaughlin'
+  image: '/images/2017/speakers/katie_mclaughlin.png'
+  twitter: 'glasnt'
+
+- name: 'Shana Moore'
+  image: '/images/2017/speakers/shana_moore.png'
+  twitter: 'Shay_nuh__'

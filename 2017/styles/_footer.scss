@@ -1,15 +1,56 @@
 footer {
-  background-color: $dark-gray;
-  padding: $topbar-padding;
-  padding-bottom: 5rem;
+  @include highlight-section($color: $charcoal);
 
-  .menu {
-    justify-content: center;
-    > li {
-      > a {
-        color: $white;
-        line-height: 2.5;
+  ul {
+    @include outer-container;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+
+    @include mobile-portrait {
+      text-align: left;
+    }
+  }
+
+  li {
+    display: inline-block;
+    text-align: center;
+    padding: 0 2rem;
+    margin: 0;
+
+    a{
+      color: darken(white, 15%);
+      text-decoration: none;
+
+      i {
+        padding-right: 0.3rem;
+      }
+
+      &:hover {
+        color: white;
       }
     }
+
+    @include mobile-portrait {
+      text-align: left;
+      font-size: modular-scale(0);
+      margin-bottom: modular-scale(0);
+      padding: 0;
+    }
+  }
+
+  .brand {
+    text-align: center;
+    margin-top: 6rem;
+
+    @include mobile-portrait {
+      margin-top: modular-scale(2);
+    }
+  }
+
+  .fa-diamond{
+    font-size: 2rem;
+    color: lighten($charcoal, 15%);
   }
 }

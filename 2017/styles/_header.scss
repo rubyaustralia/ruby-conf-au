@@ -1,0 +1,91 @@
+header {
+  padding: 1.5rem 0 1.3rem;
+
+  br {
+    display: none;
+  }
+
+  & > a {
+    @include span-columns(4);
+
+    font-family: $font-heading;
+    font-size: 2.0rem;
+    font-weight: 900;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: black;
+
+    small {
+      display: block;
+      font-weight: 300;
+      font-size: 1.0rem;
+      letter-spacing: 0.9px;
+    }
+
+    @include tablet-portrait {
+      @include span-columns(12);
+    }
+  }
+
+  nav {
+    @include span-columns(8);
+
+    text-align: right;
+    padding: 0.8rem 0;
+
+    ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+
+    li {
+      display: inline;
+      padding: 0 0.8rem;
+
+      &:last-of-type {
+        padding-right: 0;
+
+        a {
+          color: $dark-red;
+        }
+      }
+    }
+
+    a{
+      font-family: $font-body;
+      text-transform: uppercase;
+      color: black;
+      text-decoration: none;
+      font-weight: 700;
+      position: relative;
+      text-align: center;
+
+      &:hover{
+        &:after {
+          content: "";
+          position: absolute;
+          width: 100%;
+          bottom: -1px;
+          left: 0;
+          height: 3px;
+          background: $blue;
+        }
+      }
+    }
+
+    @include tablet-portrait {
+      display: none;
+    }
+  }
+
+  @include desktop-standard {
+    @include responsive-pad;
+  }
+
+  @include mobile-portrait {
+    br {
+      display: block;
+    }
+  }
+}

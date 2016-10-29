@@ -1,23 +1,16 @@
-#home
-  %section.main-section
-    .overlay
-      .content
-        .row.button-content
-          .column.shrink
-            %a.button.secondary.large{href: 'https://ti.to/ruby-australia/rubyconf-au-2017', target: '_blank' }
-              Buy Early Bird Tickets
-          .column.shrink
-            %a.button.large{href: 'http://cfp.rubyconf.org.au', target: '_blank' }
-              Submit to our CFP
-        .transparent-overlay
-          .row.align-center
-            .column
-              %h1.hero.text-center
-                Ruby Conf AU 2017
-              %h4.show-for-small-only.text-center
-                MELBOURNE 9–10 FEB 2017
-              %p.lead
-                RubyConf Australia is an inclusive conference that aims to bring together people from all walks of life to share knowledge and inspiration.
+%section.billboard
+  .column
+    %h1
+      RubyConf AU 2017
+      %small
+        Melbourne
+        %br
+        9-10 Feb
+
+
+    %p
+      %a{ href: 'https://ti.to/ruby-australia/rubyconf-au-2017', target: '_blank' }
+        Buy Early Bird Tickets
 
 = haml :'2017/home/_location'
 = haml :'2017/home/_speakers'

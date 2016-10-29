@@ -9,7 +9,7 @@ section#attending {
 
     a {
       @include button($color: $dark-red, $text-color: white);
-      margin: 0 1rem;
+      margin: 0 1rem modular-scale(0);
 
       @include mobile-portrait {
         @include span-columns(12);

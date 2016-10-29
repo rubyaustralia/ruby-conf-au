@@ -31,6 +31,24 @@
   }
 }
 
+@mixin tablet-portrait($total-columns: $grid-columns) {
+  @include media(max-width $responsive-tablet-portrait-max-width, $total-columns) {
+    @content;
+  }
+}
+
+@mixin desktop-small($total-columns: $grid-columns) {
+  @include media(max-width $responsive-desktop-small-max-width, $total-columns) {
+    @content;
+  }
+}
+
+@mixin desktop-standard($total-columns: $grid-columns) {
+  @include media(max-width $responsive-desktop-standard-max-width, $total-columns) {
+    @content;
+  }
+}
+
 @mixin responsive-pad {
   padding-left: modular-scale(1);
   padding-right: modular-scale(1);

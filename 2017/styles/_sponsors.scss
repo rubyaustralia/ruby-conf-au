@@ -31,7 +31,10 @@ section#sponsors {
     a {
       @include button($dark-red, white);
       margin-top: modular-scale(2);
-      display: block;
+
+      @include mobile-portrait {
+        display: block;
+      }
     }
 
     @include mobile-portrait {

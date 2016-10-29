@@ -2189,6 +2189,12 @@ html {
   overflow: visible;
   clip: auto; }
 
+html {
+  font-size: 1.0rem; }
+  @media screen and (max-width: 980px) {
+    html {
+      font-size: 0.8rem; } }
+
 body {
   font-family: "Open Sans", sans-serif;
   font-size: 1.2rem;
@@ -2227,11 +2233,11 @@ h1 {
     line-height: 3.92705rem;
     font-weight: 300;
     display: block; }
-    @media screen and (max-width: 414px) {
+    @media screen and (max-width: 530px) {
       h1 small {
         font-size: 3.14164rem;
         line-height: 3.14164rem; } }
-  @media screen and (max-width: 414px) {
+  @media screen and (max-width: 530px) {
     h1 {
       font-size: 3.92705rem;
       line-height: 3.14164rem; } }
@@ -2244,7 +2250,7 @@ h2 {
   color: #6484DF;
   margin: 0 0 3.14164rem;
   padding: 0; }
-  @media screen and (max-width: 414px) {
+  @media screen and (max-width: 530px) {
     h2 {
       font-size: 3.14164rem;
       line-height: 3.14164rem;
@@ -2253,7 +2259,7 @@ h2 {
 h3 {
   color: #6484DF;
   font-size: 2.42705rem; }
-  @media screen and (max-width: 414px) {
+  @media screen and (max-width: 530px) {
     h3 {
       font-size: 1.5rem;
       line-height: 1.5rem; } }
@@ -2264,7 +2270,7 @@ a {
 section,
 footer {
   padding: 3.92705rem 0; }
-  @media screen and (max-width: 414px) {
+  @media screen and (max-width: 1200px) {
     section,
     footer {
       padding: 1.94164rem 1.5rem; } }
@@ -2286,7 +2292,7 @@ header {
     float: left;
     display: block;
     margin-right: 2.35765%;
-    width: 23.23176%;
+    width: 31.76157%;
     font-family: "Lato", sans-serif;
     font-size: 2.0rem;
     font-weight: 900;
@@ -2300,7 +2306,7 @@ header {
       font-weight: 300;
       font-size: 1.0rem;
       letter-spacing: 0.9px; }
-    @media screen and (max-width: 414px) {
+    @media screen and (max-width: 800px) {
       header > a {
         float: left;
         display: block;
@@ -2312,7 +2318,7 @@ header {
     float: left;
     display: block;
     margin-right: 2.35765%;
-    width: 74.41059%;
+    width: 65.88078%;
     text-align: right;
     padding: 0.8rem 0; }
     header nav:last-child {
@@ -2344,15 +2350,16 @@ header {
         left: 0;
         height: 3px;
         background: #6484DF; }
-    @media screen and (max-width: 414px) {
+    @media screen and (max-width: 800px) {
       header nav {
         display: none; } }
-  @media screen and (max-width: 414px) {
+  @media screen and (max-width: 1200px) {
     header {
       padding-left: 1.5rem;
-      padding-right: 1.5rem; }
-      header br {
-        display: block; } }
+      padding-right: 1.5rem; } }
+  @media screen and (max-width: 530px) {
+    header br {
+      display: block; } }
 
 footer {
   background: #4A4A4A;
@@ -2370,7 +2377,7 @@ footer {
       clear: both;
       content: "";
       display: block; }
-    @media screen and (max-width: 414px) {
+    @media screen and (max-width: 530px) {
       footer ul {
         text-align: left; } }
   footer li {
@@ -2385,7 +2392,7 @@ footer {
         padding-right: 0.3rem; }
       footer li a:hover {
         color: white; }
-    @media screen and (max-width: 414px) {
+    @media screen and (max-width: 530px) {
       footer li {
         text-align: left;
         font-size: 1.2rem;
@@ -2394,7 +2401,7 @@ footer {
   footer .brand {
     text-align: center;
     margin-top: 6rem; }
-    @media screen and (max-width: 414px) {
+    @media screen and (max-width: 530px) {
       footer .brand {
         margin-top: 1.94164rem; } }
   footer .fa-diamond {
@@ -2429,7 +2436,7 @@ section.billboard {
     z-index: 2;
     background: url("/images/2017/rubies.svg") center center no-repeat;
     background-size: 100% 90%; }
-    @media screen and (max-width: 414px) {
+    @media screen and (max-width: 530px) {
       section.billboard:after {
         background-size: 150%; } }
   section.billboard > .column {
@@ -2448,7 +2455,7 @@ section.billboard {
     line-height: 1.7rem; }
     section.billboard a:hover {
       background: #ffcc0d; }
-    @media screen and (max-width: 414px) {
+    @media screen and (max-width: 530px) {
       section.billboard a {
         padding: 1rem 1.5rem; } }
 
@@ -2460,7 +2467,7 @@ section#location #map {
   height: 20rem; }
   section#location #map:last-child {
     margin-right: 0; }
-  @media screen and (max-width: 414px) {
+  @media screen and (max-width: 530px) {
     section#location #map {
       display: none; } }
 section#location .description {
@@ -2472,7 +2479,7 @@ section#location .description {
     margin-right: 0; }
   section#location .description a {
     text-decoration: none; }
-  @media screen and (max-width: 414px) {
+  @media screen and (max-width: 530px) {
     section#location .description {
       float: left;
       display: block;
@@ -2503,7 +2510,7 @@ section#speakers {
     clear: left; }
   .speaker .about {
     padding: 1.4rem; }
-    @media screen and (max-width: 414px) {
+    @media screen and (max-width: 530px) {
       .speaker .about {
         padding: 0.5rem 0; } }
   .speaker img {
@@ -2513,14 +2520,15 @@ section#speakers {
     position: relative;
     opacity: 0.6; }
   .speaker h3 {
-    margin-bottom: 0; }
+    margin-bottom: 0;
+    line-height: 1.94164rem; }
   .speaker .twitter {
     color: #6484DF; }
   .speaker .bio {
     color: #DA4D3D; }
   .speaker:hover img {
     opacity: 1.0; }
-  @media screen and (max-width: 414px) {
+  @media screen and (max-width: 530px) {
     .speaker {
       float: left;
       display: block;
@@ -2548,11 +2556,11 @@ section#sponsors h1 {
   line-height: 8.22492rem; }
   section#sponsors h1 small {
     color: #4A4A4A; }
-    @media screen and (max-width: 414px) {
+    @media screen and (max-width: 530px) {
       section#sponsors h1 small {
         font-size: 1.94164rem;
         line-height: 1.94164rem; } }
-  @media screen and (max-width: 414px) {
+  @media screen and (max-width: 530px) {
     section#sponsors h1 {
       text-align: left;
       line-height: 3.14164rem;
@@ -2573,19 +2581,21 @@ section#sponsors p.help {
     font-weight: 400;
     text-transform: uppercase;
     line-height: 1.7rem;
-    margin-top: 1.94164rem;
-    display: block; }
+    margin-top: 1.94164rem; }
     section#sponsors p.help a:hover {
       background: #bf3425; }
-    @media screen and (max-width: 414px) {
+    @media screen and (max-width: 530px) {
       section#sponsors p.help a {
         padding: 1rem 1.5rem; } }
-  @media screen and (max-width: 414px) {
+    @media screen and (max-width: 530px) {
+      section#sponsors p.help a {
+        display: block; } }
+  @media screen and (max-width: 530px) {
     section#sponsors p.help {
       text-align: left; } }
 section#sponsors h3 {
   text-align: center; }
-  @media screen and (max-width: 414px) {
+  @media screen and (max-width: 530px) {
     section#sponsors h3 {
       margin-bottom: 1.2rem; } }
 section#sponsors .sponsor-group {
@@ -2615,7 +2625,7 @@ section#sponsors .sponsor-group {
       -webkit-filter: none;
       filter: none;
       opacity: 0.9; }
-    @media screen and (max-width: 414px) {
+    @media screen and (max-width: 530px) {
       section#sponsors .sponsor-group a {
         float: left;
         display: block;
@@ -2634,7 +2644,7 @@ section#sponsors .sponsor-group {
     margin-left: 42.64902%; }
     section#sponsors .sponsor-group.assist a:last-child {
       margin-right: 0; }
-    @media screen and (max-width: 414px) {
+    @media screen and (max-width: 530px) {
       section#sponsors .sponsor-group.assist a {
         float: left;
         display: block;
@@ -2645,7 +2655,7 @@ section#sponsors .sponsor-group {
           margin-right: 0; }
         section#sponsors .sponsor-group.assist a:first-of-type {
           margin-left: 0%; } }
-  @media screen and (max-width: 414px) {
+  @media screen and (max-width: 530px) {
     section#sponsors .sponsor-group {
       margin-bottom: 1.94164rem; } }
 
@@ -2674,13 +2684,13 @@ section#attending {
       font-weight: 400;
       text-transform: uppercase;
       line-height: 1.7rem;
-      margin: 0 1rem; }
+      margin: 0 1rem 1.2rem; }
       section#attending .policies a:hover {
         background: #bf3425; }
-      @media screen and (max-width: 414px) {
+      @media screen and (max-width: 530px) {
         section#attending .policies a {
           padding: 1rem 1.5rem; } }
-      @media screen and (max-width: 414px) {
+      @media screen and (max-width: 530px) {
         section#attending .policies a {
           float: left;
           display: block;

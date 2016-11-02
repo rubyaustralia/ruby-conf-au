@@ -1,33 +1,70 @@
 - name: 'Aja Hammerly'
-  image: '/images/2017/speakers/aja_hammerly.jpeg'
   twitter: 'the_thagomizer'
+  featured: true
   bio: |
-
 
 - name: 'Aaron Patterson'
-  image: '/images/2017/speakers/aaron_patterson.jpg'
   twitter: 'tenderlove'
+  featured: true
   bio: |
-
 
 - name: 'Karolina Szczur'
-  image: '/images/2017/speakers/karolina_szczur.jpg'
   twitter: 'fox'
+  featured: true
   bio: |
-    
 
 - name: 'Tim Riley'
-  image: '/images/2017/speakers/tim_riley.jpeg'
   twitter: 'timriley'
+  featured: true
 
 - name: 'Piotr Solnica'
-  image: '/images/2017/speakers/piotr_solnica.jpg'
   twitter: '_solnic_'
+  featured: true
 
 - name: 'Katie McLaughlin'
-  image: '/images/2017/speakers/katie_mclaughlin.png'
   twitter: 'glasnt'
+  featured: true
 
 - name: 'Shana Moore'
-  image: '/images/2017/speakers/shana_moore.png'
   twitter: 'Shay_nuh__'
+  featured: true
+
+- name: 'Barrett Clark'
+
+- name: 'Alex coles'
+
+- name: 'Elle Meredith'
+
+- name: 'Colby Swandale'
+
+- name: 'Ron Krishna'
+
+- name: 'Erika Carlson'
+
+- name: 'Toby Hede'
+
+- name: 'Louis Simoneau'
+
+- name: 'Valerie Woolard Srinivasan'
+
+- name: 'Andre Arko'
+
+- name: 'Stella Cotton'
+
+- name: 'Marcos Castilho da Costa Matos'
+
+- name: 'Phiip Arndt'
+
+- name: 'Andy Nicholson'
+
+- name: 'Kate Deutscher'
+
+- name: 'Hiro Asari'
+
+- name: 'Kinsey Ann Durham'
+
+- name: 'Kylie Stradley'
+
+- name: 'Julian Doherty'
+
+- name: 'Prathmesh Ranaut'

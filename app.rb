@@ -90,11 +90,45 @@ end
 
 # 2017
 
+module TwentySeventeen
+  class Speaker
+    attr_reader :name, :featured, :bio, :twitter
+
+    def initialize(name:, featured: false, bio: nil, twitter: nil)
+      @name = name
+      @featured = featured
+      @bio = bio
+      @twitter = twitter
+    end
+
+    def slug
+      name.downcase.gsub(/[^A-Za-z]/, '-')
+    end
+  end
+
+  class SpeakerList
+    attr_reader :speakers
+
+    def initialize(speakers:)
+      @speakers = speakers.sort{ |s1, s2| s1.slug <=> s2.slug }
+    end
+
+    def all
+      speakers
+    end
+
+    def featured
+      all.select(&:featured)
+    end
+  end
+end
+
 get '/2017/?' do
   @title = :home
-  @speakers = YAML.load_file(File.join('2017', 'data', 'speakers.yml'))
-                .map(&:symbolize_keys)
-                .sort{ |s1, s2| s1[:name].downcase <=> s2[:name].downcase }
+  all_speakers = YAML.load_file(File.join('2017', 'data', 'speakers.yml'))
+                  .map{ |s| TwentySeventeen::Speaker.new(**s.symbolize_keys) }
+
+  @speakers = TwentySeventeen::SpeakerList.new(speakers: all_speakers)
   haml :"2017/home", :layout => :"2017/layout"
 end
 

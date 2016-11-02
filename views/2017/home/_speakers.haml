@@ -2,5 +2,5 @@
   .column
     %h2 Meet our Speakers
     .row
-      - @speakers.each do |speaker|
+      - @speakers.featured.each do |speaker|
         = haml :'2017/home/_speaker', locals: { speaker: speaker }

@@ -1,9 +1,9 @@
-%a.speaker{href: "https://twitter.com/#{speaker[:twitter]}", target: '_blank'}
-  %img.thumbnail{src: "#{speaker[:image]}" }
+%a.speaker{href: "https://twitter.com/#{speaker.twitter}", target: '_blank'}
+  %img.thumbnail{src: "#{speaker.slug}" }
 
   .about
     %h3
-      - speaker[:name].split(' ').each do |word|
+      - speaker.name.split(' ').each do |word|
         %span.name= word
-    %div.twitter @#{speaker[:twitter]}
-    %p.bio= speaker[:bio]
+    %div.twitter @#{speaker.twitter}
+    %p.bio= speaker.bio

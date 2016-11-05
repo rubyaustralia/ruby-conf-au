@@ -3,4 +3,7 @@
     %h2 Meet our Speakers
     .row
       - @speakers.featured.each do |speaker|
-        = haml :'2017/home/_speaker', locals: { speaker: speaker }
+        = haml :'2017/home/_speaker', locals: { speaker: speaker, show_bio: false }
+
+    .row.view-all
+      %a{ href: '/2017/speakers' } See All Our Speakers

@@ -2284,6 +2284,13 @@ footer {
     content: "";
     display: block; }
 
+.row {
+  display: block; }
+  .row::after {
+    clear: both;
+    content: "";
+    display: block; }
+
 header {
   padding: 1.5rem 0 1.3rem; }
   header br {
@@ -2492,6 +2499,25 @@ section#speakers {
   background: #FCDBDB;
   border-top: 1px solid #fac3c3;
   border-bottom: 1px solid #fac3c3; }
+
+.row.view-all {
+  text-align: center; }
+  .row.view-all a {
+    display: inline-block;
+    background: #DA4D3D;
+    color: white;
+    font-size: 1.5rem;
+    padding: 1rem 2.42705rem;
+    text-align: center;
+    text-decoration: none;
+    font-weight: 400;
+    text-transform: uppercase;
+    line-height: 1.7rem; }
+    .row.view-all a:hover {
+      background: #bf3425; }
+    @media screen and (max-width: 530px) {
+      .row.view-all a {
+        padding: 1rem 1.5rem; } }
 
 .speaker {
   float: left;

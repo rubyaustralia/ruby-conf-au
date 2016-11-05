@@ -97,3 +97,8 @@ footer {
 .column {
   @include outer-container;
 }
+
+.row {
+  @include clearfix;
+  display: block;
+}

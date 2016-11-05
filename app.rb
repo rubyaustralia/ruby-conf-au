@@ -92,17 +92,26 @@ end
 
 module TwentySeventeen
   class Speaker
-    attr_reader :name, :featured, :bio, :twitter
+    attr_reader :name, :featured, :bio, :twitter, :avatar
 
-    def initialize(name:, featured: false, bio: nil, twitter: nil)
+    def initialize(name:, featured: false, bio: nil, twitter: nil, avatar: true)
       @name = name
       @featured = featured
       @bio = bio
       @twitter = twitter
+      @avatar = avatar
     end
 
     def slug
       name.downcase.gsub(/[^A-Za-z]/, '-')
+    end
+
+    def avatar_path
+      avatar && "/images/2017/speakers/#{slug}.jpg" || "/images/2017/speakers/temp.png"
+    end
+
+    def external_url
+      twitter && "https://twitter.com/#{twitter}" || '#'
     end
   end
 
@@ -133,6 +142,10 @@ get '/2017/?' do
 end
 
 get '/2017/:page_name' do
+  all_speakers = YAML.load_file(File.join('2017', 'data', 'speakers.yml'))
+                  .map{ |s| TwentySeventeen::Speaker.new(**s.symbolize_keys) }
+
+  @speakers = TwentySeventeen::SpeakerList.new(speakers: all_speakers)
   page_name = params[:page_name]
   @title = page_name
   haml :"2017/#{page_name}", :layout => :"2017/layout"

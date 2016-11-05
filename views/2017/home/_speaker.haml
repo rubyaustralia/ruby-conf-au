@@ -1,9 +1,16 @@
-%a.speaker{href: "https://twitter.com/#{speaker.twitter}", target: '_blank'}
-  %img.thumbnail{src: "#{speaker.slug}" }
+%a.speaker{href: speaker.external_url, target: '_blank'}
+  %img.thumbnail{src: speaker.avatar_path }
 
   .about
     %h3
       - speaker.name.split(' ').each do |word|
         %span.name= word
-    %div.twitter @#{speaker.twitter}
-    %p.bio= speaker.bio
+
+    %div.twitter
+      - if speaker.twitter.blank?
+        &nbsp;
+      - else
+        @#{speaker.twitter}
+
+    - if show_bio
+      %div.bio= speaker.bio

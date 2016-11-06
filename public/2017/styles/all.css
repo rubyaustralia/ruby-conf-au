@@ -2465,6 +2465,8 @@ section.billboard {
     @media screen and (max-width: 530px) {
       section.billboard a {
         padding: 1rem 1.5rem; } }
+    section.billboard a span {
+      font-size: 0.92705rem; }
 
 section#location #map {
   float: left;

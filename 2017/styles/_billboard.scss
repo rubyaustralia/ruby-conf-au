@@ -42,5 +42,9 @@ section.billboard {
 
   a {
     @include button;
+
+    span {
+      font-size: ms(-1);
+    }
   }
 }

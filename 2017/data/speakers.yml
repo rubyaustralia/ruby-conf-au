@@ -1,31 +1,37 @@
 - name: 'Aja Hammerly'
   twitter: 'the_thagomizer'
   featured: true
+  talk_title: ''
   bio: |
 
 - name: 'Aaron Patterson'
   twitter: 'tenderlove'
   featured: true
+  talk_title: ''
   bio: |
 
 - name: 'Karolina Szczur'
   twitter: 'fox'
   featured: true
+  talk_title: ''
   bio: |
 
 - name: 'Tim Riley'
   twitter: 'timriley'
   featured: true
+  talk_title: ''
   bio: |
 
 - name: 'Piotr Solnica'
   twitter: '_solnic_'
   featured: true
+  talk_title: ''
   bio: |
 
 - name: 'Katie McLaughlin'
   twitter: 'glasnt'
   featured: true
+  talk_title: ''
   bio: |
     Katie has worn many different hats over the years. She has been a software
     developer for many languages, systems administrator for multiple operating
@@ -36,6 +42,7 @@
 - name: 'Shana Moore'
   twitter: 'Shay_nuh__'
   featured: true
+  talk_title: ''
   bio: |
     Shana Moore has degrees in Human Development and Spanish Literature. Having
     worked administrative support for several years, she desired a career change
@@ -47,6 +54,7 @@
 
 - name: 'Barrett Clark'
   twitter: 'barrettclark'
+  talk_title: ''
   bio: |
     Barrett is a Rubyist turned polyglot. He currently works at Sabre Labs,
     where he experiments with the intersection of emerging and current
@@ -54,6 +62,7 @@
 
 - name: 'Alex Coles'
   twitter: 'myabc'
+  talk_title: ''
   bio: |
     Alex Coles unabashedly wears the hat of generalist. He is CTO of education
     startup [Skive] and very active in the Ruby community, having founded the
@@ -63,6 +72,7 @@
 
 - name: 'Elle Meredith'
   twitter: 'aemeredith'
+  talk_title: ''
   bio: |
     Elle works at thoughtbot as a development director. She has been building
     websites for over a decade. Since 2007, those websites have been in Ruby.
@@ -74,11 +84,13 @@
 
 - name: 'Colby Swandale'
   twitter: '0xcolby'
+  talk_title: ''
   bio: |
 
 - name: 'Ron Krishna'
   avatar: false
   twitter:
+  talk_title: ''
   bio: |
     Ron has been working with Ruby/Rails for nearly 8 years. In the past he's
     worked on virtual machines, source control systems, music, and now is one
@@ -88,6 +100,7 @@
 
 - name: 'Erika Carlson'
   twitter: 'eacarlson'
+  talk_title: ''
   bio: |
     Erika Carlson is the Director of Apprenticeship & Training at Detroit Labs,
     where she blends her love of programming with her passion for helping others
@@ -98,6 +111,7 @@
 
 - name: 'Toby Hede'
   twitter: 'tobyhede'
+  talk_title: ''
   bio: |
     Toby Hede is a Ruby Developer from Sydney. Toby has an eclectic
     background across education, startups, government and his hobbies include
@@ -106,6 +120,7 @@
 
 - name: 'Louis Simoneau'
   twitter: 'louis_simoneau'
+  talk_title: ''
   bio: |
     Louis is a biochemist by training, a software developer by trade, and a
     technical lead by accident. His experience is primarily in the startup
@@ -115,6 +130,7 @@
 
 - name: 'Valerie Woolard Srinivasan'
   twitter: 'valeriecodes'
+  talk_title: ''
   bio: |
     Valerie Woolard Srinivasan is a software engineer at Panoply in Washington,
     DC, where she builds tools for podcasters in Ruby on Rails. She has a
@@ -125,6 +141,7 @@
 
 - name: 'Andre Arko'
   twitter: 'indirect'
+  talk_title: ''
   bio: |
     André Arko thinks Ruby is pretty neat, and has been using it for nine years.
     His day job is building web apps and training developers for clients at
@@ -133,6 +150,7 @@
 
 - name: 'Stella Cotton'
   twitter: 'practice_cactus'
+  talk_title: ''
   bio: |
     Stella Cotton is a Tools engineer at Heroku and co-founder of SF.rb and
     AndConf. She loves the World Wide Web Consortium, good abstractions, and
@@ -140,6 +158,7 @@
 
 - name: 'Marcos Castilho'
   twitter:
+  talk_title: ''
   bio: |
     Marcos Matos is a Brazilian developer, currently dodging all the hostile
     animal life Australia has the offer while he works in Melbourne. He loves to
@@ -149,6 +168,7 @@
 
 - name: 'Philip Arndt'
   twitter: 'parndt'
+  talk_title: ''
   bio: |
     Kiwi programmer and Director of Ruby at Manuka Coalition, Philip is deeply
     interested in open source, travel, sunshine, and great food. Founding
@@ -156,6 +176,7 @@
 
 - name: 'Andy Nicholson'
   twitter: 'andrewdotnich'
+  talk_title: ''
   bio: |
     A software language nerd and people person, Andy's learned more from
     listening to others than he ever did by yelling. A professional developer,
@@ -164,6 +185,7 @@
 
 - name: 'Kate Deutscher'
   twitter: 'kate_deutscher'
+  talk_title: ''
   bio: |
     Kate is in the Delivery Engineering team at REA, automating all the things
     using Ruby. She loves clean code, refactoring with a cup of coffee and
@@ -173,12 +195,14 @@
 
 - name: 'Hiro Asari'
   twitter: 'hiro_asari'
+  talk_title: ''
   bio: |
     Hiro Asari is a developer at Travis CI GmbH and core member of the JRuby
     team. He is not very good at writing his own bio.
 
 - name: 'Kinsey Ann Durham'
   twitter: 'kinseyanndurham'
+  talk_title: ''
   bio: |
     Kinsey is a software engineer at GoSpotCheck in Denver, Colorado, the
     co-founder of Kubmo, a non-profit dedicated to building and teaching
@@ -188,6 +212,7 @@
 
 - name: 'Kylie Stradley'
   twitter: 'KyFaSt'
+  talk_title: ''
   bio: |
     Kylie Stradley is Web Developer in Atlanta, GA. Untrained in computer
     science, she first taught herself Visual Basic as a survival tactic and then
@@ -197,6 +222,7 @@
 
 - name: 'Julian Doherty'
   twitter: madlep
+  talk_title: ''
   bio: |
     Ruby, Rails, Elixir, JavaScript, React, Erlang, elasticsearch. Senior dev
     at Envato. ElixirMelbourne organiser. Kerbal Space Program fanatic and
@@ -204,6 +230,7 @@
 
 - name: 'Prathmesh Ranaut'
   twitter: PrathmeshRanaut
+  talk_title: ''
   bio: |
     Born and brought up in New Delhi, India, I have been passionate and curious
     about computers from the very start. I started coding when I was 12 and I

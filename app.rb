@@ -92,14 +92,15 @@ end
 
 module TwentySeventeen
   class Speaker
-    attr_reader :name, :featured, :bio, :twitter, :avatar
+    attr_reader :name, :featured, :bio, :twitter, :avatar, :talk_title
 
-    def initialize(name:, featured: false, bio: nil, twitter: nil, avatar: true)
+    def initialize(name:, featured: false, bio: nil, twitter: nil, avatar: true, talk_title: nil)
       @name = name
       @featured = featured
       @bio = bio
       @twitter = twitter
       @avatar = avatar
+      @talk_title = talk_title
     end
 
     def slug
@@ -129,23 +130,23 @@ module TwentySeventeen
     def featured
       all.select(&:featured)
     end
+
+    def self.load(path)
+      all_speakers = YAML.load_file(path)
+                      .map{ |s| TwentySeventeen::Speaker.new(**s.symbolize_keys) }
+      TwentySeventeen::SpeakerList.new(speakers: all_speakers)
+    end
   end
 end
 
 get '/2017/?' do
   @title = :home
-  all_speakers = YAML.load_file(File.join('2017', 'data', 'speakers.yml'))
-                  .map{ |s| TwentySeventeen::Speaker.new(**s.symbolize_keys) }
-
-  @speakers = TwentySeventeen::SpeakerList.new(speakers: all_speakers)
+  @speakers = TwentySeventeen::SpeakerList.load(File.join('2017', 'data', 'speakers.yml'))
   haml :"2017/home", :layout => :"2017/layout"
 end
 
 get '/2017/:page_name' do
-  all_speakers = YAML.load_file(File.join('2017', 'data', 'speakers.yml'))
-                  .map{ |s| TwentySeventeen::Speaker.new(**s.symbolize_keys) }
-
-  @speakers = TwentySeventeen::SpeakerList.new(speakers: all_speakers)
+  @speakers = TwentySeventeen::SpeakerList.load(File.join('2017', 'data', 'speakers.yml'))
   page_name = params[:page_name]
   @title = page_name
   haml :"2017/#{page_name}", :layout => :"2017/layout"

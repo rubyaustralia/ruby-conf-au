@@ -57,7 +57,7 @@ section#sponsors {
     a {
       @include span-columns(3);
       text-align: center;
-      height: modular-scale(6);
+      max-height: modular-scale(6);
 
       img {
         @include filter(grayscale(100%));
@@ -88,6 +88,7 @@ section#sponsors {
       }
     }
 
+    &.single,
     &.assist {
       a {
         @include span-columns(2);
@@ -96,13 +97,15 @@ section#sponsors {
         @include mobile-portrait {
           @include span-columns(12);
 
-          margin-bottom: modular-scale(0);
-
           &:first-of-type{
             @include shift(0);
           }
         }
       }
+    }
+
+    &.assist a {
+      margin-bottom: modular-scale(0);
     }
 
     @include mobile-portrait {

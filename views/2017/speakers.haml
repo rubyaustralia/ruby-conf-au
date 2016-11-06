@@ -9,3 +9,5 @@
     .row
       - @speakers.all.each do |speaker|
         = haml :'2017/home/_speaker', locals: { speaker: speaker, show_bio: true }
+
+= haml :'2017/_sponsors'

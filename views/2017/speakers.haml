@@ -1,0 +1,13 @@
+- @page_title = "RubyConf AU 2017 - Speakers"
+
+%section.billboard
+  .column
+    %h1 Meet Our Speakers
+
+%section.body-section#speakers{'data-magellan-target': 'speakers'}
+  .column
+    .row
+      - @speakers.all.each do |speaker|
+        = haml :'2017/home/_speaker', locals: { speaker: speaker, show_bio: true }
+
+= haml :'2017/_sponsors'

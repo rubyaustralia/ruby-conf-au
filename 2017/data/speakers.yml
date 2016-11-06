@@ -1,33 +1,238 @@
 - name: 'Aja Hammerly'
-  image: '/images/2017/speakers/aja_hammerly.jpeg'
   twitter: 'the_thagomizer'
+  featured: true
+  talk_title: ''
   bio: |
-
 
 - name: 'Aaron Patterson'
-  image: '/images/2017/speakers/aaron_patterson.jpg'
   twitter: 'tenderlove'
+  featured: true
+  talk_title: ''
   bio: |
-
 
 - name: 'Karolina Szczur'
-  image: '/images/2017/speakers/karolina_szczur.jpg'
   twitter: 'fox'
+  featured: true
+  talk_title: ''
   bio: |
-    
 
 - name: 'Tim Riley'
-  image: '/images/2017/speakers/tim_riley.jpeg'
   twitter: 'timriley'
+  featured: true
+  talk_title: ''
+  bio: |
 
 - name: 'Piotr Solnica'
-  image: '/images/2017/speakers/piotr_solnica.jpg'
   twitter: '_solnic_'
+  featured: true
+  talk_title: ''
+  bio: |
 
 - name: 'Katie McLaughlin'
-  image: '/images/2017/speakers/katie_mclaughlin.png'
   twitter: 'glasnt'
+  featured: true
+  talk_title: ''
+  bio: |
+    Katie has worn many different hats over the years. She has been a software
+    developer for many languages, systems administrator for multiple operating
+    systems, and speaker on many different topics. When she's not changing the
+    world, she enjoys cooking, making tapestries, and yelling at JavaScript and
+    its attempt at global variables
 
 - name: 'Shana Moore'
-  image: '/images/2017/speakers/shana_moore.png'
   twitter: 'Shay_nuh__'
+  featured: true
+  talk_title: ''
+  bio: |
+    Shana Moore has degrees in Human Development and Spanish Literature. Having
+    worked administrative support for several years, she desired a career change
+    into the technology industry. With sharp focus, hard work, and support, she
+    achieved this goal within a year. Now she is a Software Engineer at Verve
+    Mobile and the co-leader of Girl Develop It San Diego, she hopes to
+    encourage, motivate, and inspire others, especially minorities, to consider
+    careers in tech.
+
+- name: 'Barrett Clark'
+  twitter: 'barrettclark'
+  talk_title: ''
+  bio: |
+    Barrett is a Rubyist turned polyglot. He currently works at Sabre Labs,
+    where he experiments with the intersection of emerging and current
+    technologies. He also wrote Data Visualization Toolkit.
+
+- name: 'Alex Coles'
+  twitter: 'myabc'
+  talk_title: ''
+  bio: |
+    Alex Coles unabashedly wears the hat of generalist. He is CTO of education
+    startup [Skive] and very active in the Ruby community, having founded the
+    annual eurucamp camp/conference and JRubyConf EU. He has also contributed
+    extensively to many open-source projects including OpenProject, RefineryCMS
+    and DataMapper.
+
+- name: 'Elle Meredith'
+  twitter: 'aemeredith'
+  talk_title: ''
+  bio: |
+    Elle works at thoughtbot as a development director. She has been building
+    websites for over a decade. Since 2007, those websites have been in Ruby.
+    She was a Ruby Australia committee member, an organiser for Ruby Conf AU
+    2014, and Rails Girls Sydney events. This year, Elle is a co-organiser for
+    GORUCO 2016 conference and Rails Camp USA East Coast. She also runs women’s
+    work jelly events at thoughtbot’s NYC office. When she is not immersed in
+    the Ruby community, she is probably immersed in water.
+
+- name: 'Colby Swandale'
+  twitter: '0xcolby'
+  talk_title: ''
+  bio: |
+
+- name: 'Ron Krishna'
+  avatar: false
+  twitter:
+  talk_title: ''
+  bio: |
+    Ron has been working with Ruby/Rails for nearly 8 years. In the past he's
+    worked on virtual machines, source control systems, music, and now is one
+    of the lead engineers at Atakote Studios, a full-stack development studio,
+    focused on Virtual and Augmented Reality. His passion is creating powerful
+    and compelling experiences, and making VR and AR accessible.
+
+- name: 'Erika Carlson'
+  twitter: 'eacarlson'
+  talk_title: ''
+  bio: |
+    Erika Carlson is the Director of Apprenticeship & Training at Detroit Labs,
+    where she blends her love of programming with her passion for helping others
+    grow. As a developer, Erika has built enterprise software, created websites
+    for nonprofits, and worked on iOS applications with millions of users. She
+    founded the Detroit chapter of Girl Develop It, and has taught programming
+    to students of all ages.
+
+- name: 'Toby Hede'
+  twitter: 'tobyhede'
+  talk_title: ''
+  bio: |
+    Toby Hede is a Ruby Developer from Sydney. Toby has an eclectic
+    background across education, startups, government and his hobbies include
+    collecting programming languages and databases, spaceships, playing the
+    drums, cutting code and pondering the nature of existence.
+
+- name: 'Louis Simoneau'
+  twitter: 'louis_simoneau'
+  talk_title: ''
+  bio: |
+    Louis is a biochemist by training, a software developer by trade, and a
+    technical lead by accident. His experience is primarily in the startup
+    world. Louis is currently the technical lead for the product and pricing
+    platform at REA Group, where he battles the ogre of legacy with the sword of
+    microservices.
+
+- name: 'Valerie Woolard Srinivasan'
+  twitter: 'valeriecodes'
+  talk_title: ''
+  bio: |
+    Valerie Woolard Srinivasan is a software engineer at Panoply in Washington,
+    DC, where she builds tools for podcasters in Ruby on Rails. She has a
+    master’s degree in computer science from the University of Chicago. In
+    addition to programming, she will gladly speak at length about running,
+    linguistics, American musical theatre, vegan cooking, and podcast
+    recommendations.
+
+- name: 'Andre Arko'
+  twitter: 'indirect'
+  talk_title: ''
+  bio: |
+    André Arko thinks Ruby is pretty neat, and has been using it for nine years.
+    His day job is building web apps and training developers for clients at
+    Cloud City Development in San Francisco. In his remaining time, he leads the
+    Bundler team and thinks about how to make software less terrible.
+
+- name: 'Stella Cotton'
+  twitter: 'practice_cactus'
+  talk_title: ''
+  bio: |
+    Stella Cotton is a Tools engineer at Heroku and co-founder of SF.rb and
+    AndConf. She loves the World Wide Web Consortium, good abstractions, and
+    boring technology.
+
+- name: 'Marcos Castilho'
+  twitter:
+  talk_title: ''
+  bio: |
+    Marcos Matos is a Brazilian developer, currently dodging all the hostile
+    animal life Australia has the offer while he works in Melbourne. He loves to
+    discuss about esoteric computer science topics, learn new programming
+    languages, write throw away code for quickly forgotten repos and drink some
+    nice beers.
+
+- name: 'Philip Arndt'
+  twitter: 'parndt'
+  talk_title: ''
+  bio: |
+    Kiwi programmer and Director of Ruby at Manuka Coalition, Philip is deeply
+    interested in open source, travel, sunshine, and great food. Founding
+    President of Ruby New Zealand.
+
+- name: 'Andy Nicholson'
+  twitter: 'andrewdotnich'
+  talk_title: ''
+  bio: |
+    A software language nerd and people person, Andy's learned more from
+    listening to others than he ever did by yelling. A professional developer,
+    amateur dad-joker and hobbyist musician, he's never found a topic too boring
+    to discuss with people.
+
+- name: 'Kate Deutscher'
+  twitter: 'kate_deutscher'
+  talk_title: ''
+  bio: |
+    Kate is in the Delivery Engineering team at REA, automating all the things
+    using Ruby. She loves clean code, refactoring with a cup of coffee and
+    corgis. She is determined to make a difference and introduce more women into
+    software engineering and is on the organising team for Rails Girls in
+    Melbourne.
+
+- name: 'Hiro Asari'
+  twitter: 'hiro_asari'
+  talk_title: ''
+  bio: |
+    Hiro Asari is a developer at Travis CI GmbH and core member of the JRuby
+    team. He is not very good at writing his own bio.
+
+- name: 'Kinsey Ann Durham'
+  twitter: 'kinseyanndurham'
+  talk_title: ''
+  bio: |
+    Kinsey is a software engineer at GoSpotCheck in Denver, Colorado, the
+    co-founder of Kubmo, a non-profit dedicated to building and teaching
+    technology curriculum to young women around the world. She is the chair of
+    the BridgeFoundry board and a mentor for Bloc. She is obsessed with dogs,
+    dancing ballet, and fly fishing.
+
+- name: 'Kylie Stradley'
+  twitter: 'KyFaSt'
+  talk_title: ''
+  bio: |
+    Kylie Stradley is Web Developer in Atlanta, GA. Untrained in computer
+    science, she first taught herself Visual Basic as a survival tactic and then
+    Ruby on Rails in an attempt to switch careers. As a recovering Visual Basic
+    developer & business major she defaults to using while loops with
+    embarrassing frequency.
+
+- name: 'Julian Doherty'
+  twitter: madlep
+  talk_title: ''
+  bio: |
+    Ruby, Rails, Elixir, JavaScript, React, Erlang, elasticsearch. Senior dev
+    at Envato. ElixirMelbourne organiser. Kerbal Space Program fanatic and
+    general space geek.
+
+- name: 'Prathmesh Ranaut'
+  twitter: PrathmeshRanaut
+  talk_title: ''
+  bio: |
+    Born and brought up in New Delhi, India, I have been passionate and curious
+    about computers from the very start. I started coding when I was 12 and I
+    have been coding since then. I am interested in nearly anything that is
+    related to computers.

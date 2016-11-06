@@ -90,15 +90,63 @@ end
 
 # 2017
 
+module TwentySeventeen
+  class Speaker
+    attr_reader :name, :featured, :bio, :twitter, :avatar, :talk_title
+
+    def initialize(name:, featured: false, bio: nil, twitter: nil, avatar: true, talk_title: nil)
+      @name = name
+      @featured = featured
+      @bio = bio
+      @twitter = twitter
+      @avatar = avatar
+      @talk_title = talk_title
+    end
+
+    def slug
+      name.downcase.gsub(/[^A-Za-z]/, '-')
+    end
+
+    def avatar_path
+      avatar && "/images/2017/speakers/#{slug}.jpg" || "/images/2017/speakers/temp.png"
+    end
+
+    def external_url
+      twitter && "https://twitter.com/#{twitter}" || '#'
+    end
+  end
+
+  class SpeakerList
+    attr_reader :speakers
+
+    def initialize(speakers:)
+      @speakers = speakers.sort{ |s1, s2| s1.slug <=> s2.slug }
+    end
+
+    def all
+      speakers
+    end
+
+    def featured
+      all.select(&:featured)
+    end
+
+    def self.load(path)
+      all_speakers = YAML.load_file(path)
+                      .map{ |s| TwentySeventeen::Speaker.new(**s.symbolize_keys) }
+      TwentySeventeen::SpeakerList.new(speakers: all_speakers)
+    end
+  end
+end
+
 get '/2017/?' do
   @title = :home
-  @speakers = YAML.load_file(File.join('2017', 'data', 'speakers.yml'))
-                .map(&:symbolize_keys)
-                .sort{ |s1, s2| s1[:name].downcase <=> s2[:name].downcase }
+  @speakers = TwentySeventeen::SpeakerList.load(File.join('2017', 'data', 'speakers.yml'))
   haml :"2017/home", :layout => :"2017/layout"
 end
 
 get '/2017/:page_name' do
+  @speakers = TwentySeventeen::SpeakerList.load(File.join('2017', 'data', 'speakers.yml'))
   page_name = params[:page_name]
   @title = page_name
   haml :"2017/#{page_name}", :layout => :"2017/layout"

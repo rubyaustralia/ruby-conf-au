@@ -2284,6 +2284,13 @@ footer {
     content: "";
     display: block; }
 
+.row {
+  display: block; }
+  .row::after {
+    clear: both;
+    content: "";
+    display: block; }
+
 header {
   padding: 1.5rem 0 1.3rem; }
   header br {
@@ -2458,6 +2465,8 @@ section.billboard {
     @media screen and (max-width: 530px) {
       section.billboard a {
         padding: 1rem 1.5rem; } }
+    section.billboard a span {
+      font-size: 0.92705rem; }
 
 section#location #map {
   float: left;
@@ -2492,6 +2501,25 @@ section#speakers {
   background: #FCDBDB;
   border-top: 1px solid #fac3c3;
   border-bottom: 1px solid #fac3c3; }
+
+.row.view-all {
+  text-align: center; }
+  .row.view-all a {
+    display: inline-block;
+    background: #DA4D3D;
+    color: white;
+    font-size: 1.5rem;
+    padding: 1rem 2.42705rem;
+    text-align: center;
+    text-decoration: none;
+    font-weight: 400;
+    text-transform: uppercase;
+    line-height: 1.7rem; }
+    .row.view-all a:hover {
+      background: #bf3425; }
+    @media screen and (max-width: 530px) {
+      .row.view-all a {
+        padding: 1rem 1.5rem; } }
 
 .speaker {
   float: left;
@@ -2610,7 +2638,7 @@ section#sponsors .sponsor-group {
     margin-right: 2.35765%;
     width: 23.23176%;
     text-align: center;
-    height: 5.08328rem; }
+    max-height: 5.08328rem; }
     section#sponsors .sponsor-group a:last-child {
       margin-right: 0; }
     section#sponsors .sponsor-group a img {
@@ -2636,25 +2664,26 @@ section#sponsors .sponsor-group {
           margin-right: 0; }
         section#sponsors .sponsor-group a:first-of-type {
           margin-left: 0%; } }
-  section#sponsors .sponsor-group.assist a {
+  section#sponsors .sponsor-group.single a, section#sponsors .sponsor-group.assist a {
     float: left;
     display: block;
     margin-right: 2.35765%;
     width: 14.70196%;
     margin-left: 42.64902%; }
-    section#sponsors .sponsor-group.assist a:last-child {
+    section#sponsors .sponsor-group.single a:last-child, section#sponsors .sponsor-group.assist a:last-child {
       margin-right: 0; }
     @media screen and (max-width: 530px) {
-      section#sponsors .sponsor-group.assist a {
+      section#sponsors .sponsor-group.single a, section#sponsors .sponsor-group.assist a {
         float: left;
         display: block;
         margin-right: 2.35765%;
-        width: 100%;
-        margin-bottom: 1.2rem; }
-        section#sponsors .sponsor-group.assist a:last-child {
+        width: 100%; }
+        section#sponsors .sponsor-group.single a:last-child, section#sponsors .sponsor-group.assist a:last-child {
           margin-right: 0; }
-        section#sponsors .sponsor-group.assist a:first-of-type {
+        section#sponsors .sponsor-group.single a:first-of-type, section#sponsors .sponsor-group.assist a:first-of-type {
           margin-left: 0%; } }
+  section#sponsors .sponsor-group.assist a {
+    margin-bottom: 1.2rem; }
   @media screen and (max-width: 530px) {
     section#sponsors .sponsor-group {
       margin-bottom: 1.94164rem; } }

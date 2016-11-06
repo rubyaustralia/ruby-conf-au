@@ -2,6 +2,14 @@ section#speakers {
   @include highlight-section;
 }
 
+.row.view-all {
+  text-align: center;
+
+  a {
+    @include button($dark-red, white);
+  }
+}
+
 .speaker {
   @include span-columns(4);
   @include omega(3n);

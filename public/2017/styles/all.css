@@ -2548,12 +2548,15 @@ section#speakers {
     position: relative;
     opacity: 0.6; }
   .speaker h3 {
-    margin-bottom: 0;
-    line-height: 1.94164rem; }
+    margin-bottom: 7px;
+    line-height: 1.94164rem;
+    color: #DA4D3D;
+    min-width: 80%; }
   .speaker .twitter {
-    color: #6484DF; }
+    color: #6484DF;
+    margin-bottom: 7px; }
   .speaker .bio {
-    color: #DA4D3D; }
+    color: #4A4A4A; }
   .speaker:hover img {
     opacity: 1.0; }
   @media screen and (max-width: 530px) {

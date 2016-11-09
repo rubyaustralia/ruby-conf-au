@@ -35,16 +35,19 @@ section#speakers {
   }
 
   h3 {
-    margin-bottom: 0;
+    margin-bottom: 7px;
     line-height: modular-scale(2);
+    color: $dark-red;
+    min-width: 80%;
   }
 
   .twitter {
     color: $blue;
+    margin-bottom: 7px;
   }
 
   .bio {
-    color: $dark-red;
+    color: $charcoal;
   }
 
   &:hover {

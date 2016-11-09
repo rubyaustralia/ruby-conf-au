@@ -20,3 +20,13 @@ section#location {
     }
   }
 }
+
+.accommodation,
+.getting-there {
+  @include span-columns(7);
+  @include shift(5);
+}
+
+.getting-there {
+  margin-bottom: modular-scale(2);
+}

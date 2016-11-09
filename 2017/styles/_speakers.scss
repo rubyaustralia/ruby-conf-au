@@ -57,12 +57,10 @@ section#speakers {
   }
 
   @include mobile-portrait {
-    @include span-columns(6);
+    @include span-columns(12);
     @include omega-reset(3n);
-    @include omega(2n);
+    @include omega(n);
 
-    width: 50% !important;
-    margin-right: 0 !important;
     margin-bottom: modular-scale(0);
 
     h3 .name {

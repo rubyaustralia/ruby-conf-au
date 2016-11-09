@@ -2564,9 +2564,7 @@ section#speakers {
       float: left;
       display: block;
       margin-right: 2.35765%;
-      width: 48.82117%;
-      width: 50% !important;
-      margin-right: 0 !important;
+      width: 100%;
       margin-bottom: 1.2rem; }
       .speaker:last-child {
         margin-right: 0; }
@@ -2574,10 +2572,8 @@ section#speakers {
         margin-right: 2.35765%; }
       .speaker:nth-child(3n+1) {
         clear: none; }
-      .speaker:nth-child(2n) {
+      .speaker:nth-child(n) {
         margin-right: 0; }
-      .speaker:nth-child(2n+1) {
-        clear: left; }
       .speaker h3 .name {
         display: block; } }
 

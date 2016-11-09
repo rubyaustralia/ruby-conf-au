@@ -39,6 +39,10 @@ section#speakers {
     line-height: modular-scale(2);
     color: $dark-red;
     min-width: 80%;
+
+    .name {
+      display: block;
+    }
   }
 
   .twitter {
@@ -50,6 +54,17 @@ section#speakers {
     color: $charcoal;
   }
 
+  .talk-title {
+    font-weight: 300;
+    font-size: modular-scale(2);
+    line-height: modular-scale(2);
+    margin-bottom: modular-scale(1);
+    color: $charcoal;
+    text-transform: uppercase;
+    font-style: italic;
+    width: 100%;
+  }
+
   &:hover {
     img{
       opacity: 1.0;
@@ -57,14 +72,25 @@ section#speakers {
   }
 
   @include mobile-portrait {
-    @include span-columns(12);
+    @include span-columns(6);
     @include omega-reset(3n);
-    @include omega(n);
+    @include omega(2n);
 
     margin-bottom: modular-scale(0);
 
-    h3 .name {
-      display: block;
+    h3 {
+      font-size: modular-scale(0);
+      line-height: modular-scale(0);
+      margin-bottom: 0;
+    }
+
+    .talk-title {
+      font-size: modular-scale(0);
+      line-height: modular-scale(0);
+    }
+
+    .bio {
+      display: none;
     }
   }
 }

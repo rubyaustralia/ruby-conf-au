@@ -2497,6 +2497,20 @@ section#location .description {
       section#location .description:last-child {
         margin-right: 0; } }
 
+.accommodation,
+.getting-there {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 57.35098%;
+  margin-left: 42.64902%; }
+  .accommodation:last-child,
+  .getting-there:last-child {
+    margin-right: 0; }
+
+.getting-there {
+  margin-bottom: 1.94164rem; }
+
 section#speakers {
   background: #FCDBDB;
   border-top: 1px solid #fac3c3;
@@ -2552,11 +2566,22 @@ section#speakers {
     line-height: 1.94164rem;
     color: #DA4D3D;
     min-width: 80%; }
+    .speaker h3 .name {
+      display: block; }
   .speaker .twitter {
     color: #6484DF;
     margin-bottom: 7px; }
   .speaker .bio {
     color: #4A4A4A; }
+  .speaker .talk-title {
+    font-weight: 300;
+    font-size: 1.94164rem;
+    line-height: 1.94164rem;
+    margin-bottom: 1.5rem;
+    color: #4A4A4A;
+    text-transform: uppercase;
+    font-style: italic;
+    width: 100%; }
   .speaker:hover img {
     opacity: 1.0; }
   @media screen and (max-width: 530px) {
@@ -2564,7 +2589,7 @@ section#speakers {
       float: left;
       display: block;
       margin-right: 2.35765%;
-      width: 100%;
+      width: 48.82117%;
       margin-bottom: 1.2rem; }
       .speaker:last-child {
         margin-right: 0; }
@@ -2572,10 +2597,19 @@ section#speakers {
         margin-right: 2.35765%; }
       .speaker:nth-child(3n+1) {
         clear: none; }
-      .speaker:nth-child(n) {
+      .speaker:nth-child(2n) {
         margin-right: 0; }
-      .speaker h3 .name {
-        display: block; } }
+      .speaker:nth-child(2n+1) {
+        clear: left; }
+      .speaker h3 {
+        font-size: 1.2rem;
+        line-height: 1.2rem;
+        margin-bottom: 0; }
+      .speaker .talk-title {
+        font-size: 1.2rem;
+        line-height: 1.2rem; }
+      .speaker .bio {
+        display: none; } }
 
 section#sponsors h1 {
   text-align: center;
@@ -2657,12 +2691,13 @@ section#sponsors .sponsor-group {
         float: left;
         display: block;
         margin-right: 2.35765%;
-        width: 100%;
-        margin-bottom: 1.2rem; }
+        width: 65.88078%;
+        margin-left: 17.05961%;
+        margin-bottom: 2.0rem; }
         section#sponsors .sponsor-group a:last-child {
           margin-right: 0; }
         section#sponsors .sponsor-group a:first-of-type {
-          margin-left: 0%; } }
+          margin-left: 17.05961%; } }
   section#sponsors .sponsor-group.single a, section#sponsors .sponsor-group.assist a {
     float: left;
     display: block;
@@ -2676,11 +2711,12 @@ section#sponsors .sponsor-group {
         float: left;
         display: block;
         margin-right: 2.35765%;
-        width: 100%; }
+        width: 65.88078%;
+        margin-left: 17.05961%; }
         section#sponsors .sponsor-group.single a:last-child, section#sponsors .sponsor-group.assist a:last-child {
           margin-right: 0; }
         section#sponsors .sponsor-group.single a:first-of-type, section#sponsors .sponsor-group.assist a:first-of-type {
-          margin-left: 0%; } }
+          margin-left: 17.05961%; } }
   section#sponsors .sponsor-group.assist a {
     margin-bottom: 1.2rem; }
   @media screen and (max-width: 530px) {

@@ -98,9 +98,9 @@
   twitter:
   talk_title: 'VR Backend Rails vs. Serverless - Froth or future?'
   bio: |
-    An Aussie now living in SF, Janet's passions are Rails, VR, and dim sum - 
-    sometimes not in that order. She's passionate about making software engineering, 
-    especially in VR, accessible to everyone. She's an principal engineer at Atakote 
+    An Aussie now living in SF, Janet's passions are Rails, VR, and dim sum -
+    sometimes not in that order. She's passionate about making software engineering,
+    especially in VR, accessible to everyone. She's an principal engineer at Atakote
     Studios, a VR development studio focused on virtual and augmented reality.
 
 - name: 'Erika Carlson'
@@ -134,7 +134,6 @@
     microservices.
 
 - name: 'Rahul Trikha'
-  avatar: false
   twitter: 'rahult'
   talk_title: 'Functional in the Front, Rails in the Back: Give your App an Elm Mullet'
   bio: |
@@ -238,12 +237,3 @@
     Ruby, Rails, Elixir, JavaScript, React, Erlang, elasticsearch. Senior dev
     at Envato. ElixirMelbourne organiser. Kerbal Space Program fanatic and
     general space geek.
-
-- name: 'Prathmesh Ranaut'
-  twitter: PrathmeshRanaut
-  talk_title: 'Performance Optimization in Ruby'
-  bio: |
-    Born and brought up in New Delhi, India, I have been passionate and curious
-    about computers from the very start. I started coding when I was 12 and I
-    have been coding since then. I am interested in nearly anything that is
-    related to computers.

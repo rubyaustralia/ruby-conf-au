@@ -78,12 +78,13 @@ section#sponsors {
       }
 
       @include mobile-portrait {
-        @include span-columns(12);
+        @include span-columns(8);
+        @include shift(2);
 
-        margin-bottom: modular-scale(0);
+        margin-bottom: 2.0rem;
 
         &:first-of-type{
-          @include shift(0);
+          @include shift(2);
         }
       }
     }
@@ -95,10 +96,11 @@ section#sponsors {
         @include shift(5);
 
         @include mobile-portrait {
-          @include span-columns(12);
+          @include span-columns(8);
+          @include shift(2);
 
           &:first-of-type{
-            @include shift(0);
+            @include shift(2);
           }
         }
       }

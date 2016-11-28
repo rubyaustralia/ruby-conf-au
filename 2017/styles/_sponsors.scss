@@ -1,4 +1,6 @@
 section#sponsors {
+  @include highlight-section;
+
   h1 {
     text-align: center;
     color: $blue;

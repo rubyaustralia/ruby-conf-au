@@ -2611,133 +2611,31 @@ section#speakers {
       .speaker .bio {
         display: none; } }
 
-section#sponsors h1 {
-  text-align: center;
-  color: #6484DF;
-  line-height: 8.22492rem; }
-  section#sponsors h1 small {
-    color: #4A4A4A; }
-    @media screen and (max-width: 530px) {
-      section#sponsors h1 small {
-        font-size: 1.94164rem;
-        line-height: 1.94164rem; } }
-  @media screen and (max-width: 530px) {
-    section#sponsors h1 {
-      text-align: left;
-      line-height: 3.14164rem;
-      margin-bottom: 1.5rem; }
-      section#sponsors h1 br {
-        display: none; } }
-section#sponsors p.help {
-  text-align: center;
-  margin-bottom: 5.08328rem; }
-  section#sponsors p.help a {
-    display: inline-block;
-    background: #DA4D3D;
-    color: white;
-    font-size: 1.5rem;
-    padding: 1rem 2.42705rem;
-    text-align: center;
-    text-decoration: none;
-    font-weight: 400;
-    text-transform: uppercase;
-    line-height: 1.7rem;
-    margin-top: 1.94164rem; }
-    section#sponsors p.help a:hover {
-      background: #bf3425; }
-    @media screen and (max-width: 530px) {
-      section#sponsors p.help a {
-        padding: 1rem 1.5rem; } }
-    @media screen and (max-width: 530px) {
-      section#sponsors p.help a {
-        display: block; } }
-  @media screen and (max-width: 530px) {
-    section#sponsors p.help {
-      text-align: left; } }
-section#sponsors h3 {
-  text-align: center; }
-  @media screen and (max-width: 530px) {
-    section#sponsors h3 {
-      margin-bottom: 1.2rem; } }
-section#sponsors .sponsor-group {
-  margin-bottom: 6.0rem; }
-  section#sponsors .sponsor-group::after {
-    clear: both;
-    content: "";
-    display: block; }
-  section#sponsors .sponsor-group a {
-    float: left;
-    display: block;
-    margin-right: 2.35765%;
-    width: 23.23176%;
-    text-align: center;
-    max-height: 5.08328rem; }
-    section#sponsors .sponsor-group a:last-child {
-      margin-right: 0; }
-    section#sponsors .sponsor-group a img {
-      -webkit-filter: grayscale(100%);
-      filter: grayscale(100%);
-      max-width: 100%;
-      max-height: 100%;
-      opacity: 0.5; }
-    section#sponsors .sponsor-group a:first-of-type {
-      margin-left: 25.58941%; }
-    section#sponsors .sponsor-group a:hover img {
-      -webkit-filter: none;
-      filter: none;
-      opacity: 0.9; }
-    @media screen and (max-width: 530px) {
-      section#sponsors .sponsor-group a {
-        float: left;
-        display: block;
-        margin-right: 2.35765%;
-        width: 65.88078%;
-        margin-left: 17.05961%;
-        margin-bottom: 2.0rem; }
-        section#sponsors .sponsor-group a:last-child {
-          margin-right: 0; }
-        section#sponsors .sponsor-group a:first-of-type {
-          margin-left: 17.05961%; } }
-  section#sponsors .sponsor-group.single a, section#sponsors .sponsor-group.assist a {
-    float: left;
-    display: block;
-    margin-right: 2.35765%;
-    width: 14.70196%;
-    margin-left: 42.64902%; }
-    section#sponsors .sponsor-group.single a:last-child, section#sponsors .sponsor-group.assist a:last-child {
-      margin-right: 0; }
-    @media screen and (max-width: 530px) {
-      section#sponsors .sponsor-group.single a, section#sponsors .sponsor-group.assist a {
-        float: left;
-        display: block;
-        margin-right: 2.35765%;
-        width: 65.88078%;
-        margin-left: 17.05961%; }
-        section#sponsors .sponsor-group.single a:last-child, section#sponsors .sponsor-group.assist a:last-child {
-          margin-right: 0; }
-        section#sponsors .sponsor-group.single a:first-of-type, section#sponsors .sponsor-group.assist a:first-of-type {
-          margin-left: 17.05961%; } }
-  section#sponsors .sponsor-group.assist a {
-    margin-bottom: 1.2rem; }
-  @media screen and (max-width: 530px) {
-    section#sponsors .sponsor-group {
-      margin-bottom: 1.94164rem; } }
-
-section#attending {
+section#sponsors {
   background: #FCDBDB;
   border-top: 1px solid #fac3c3;
   border-bottom: 1px solid #fac3c3; }
-  section#attending .policies {
-    max-width: 1200px;
-    margin-left: auto;
-    margin-right: auto;
+  section#sponsors h1 {
     text-align: center;
-    margin-top: 1rem; }
-    section#attending .policies::after {
-      clear: both;
-      content: "";
-      display: block; }
-    section#attending .policies a {
+    color: #6484DF;
+    line-height: 8.22492rem; }
+    section#sponsors h1 small {
+      color: #4A4A4A; }
+      @media screen and (max-width: 530px) {
+        section#sponsors h1 small {
+          font-size: 1.94164rem;
+          line-height: 1.94164rem; } }
+    @media screen and (max-width: 530px) {
+      section#sponsors h1 {
+        text-align: left;
+        line-height: 3.14164rem;
+        margin-bottom: 1.5rem; }
+        section#sponsors h1 br {
+          display: none; } }
+  section#sponsors p.help {
+    text-align: center;
+    margin-bottom: 5.08328rem; }
+    section#sponsors p.help a {
       display: inline-block;
       background: #DA4D3D;
       color: white;
@@ -2748,18 +2646,120 @@ section#attending {
       font-weight: 400;
       text-transform: uppercase;
       line-height: 1.7rem;
-      margin: 0 1rem 1.2rem; }
-      section#attending .policies a:hover {
+      margin-top: 1.94164rem; }
+      section#sponsors p.help a:hover {
         background: #bf3425; }
       @media screen and (max-width: 530px) {
-        section#attending .policies a {
+        section#sponsors p.help a {
           padding: 1rem 1.5rem; } }
       @media screen and (max-width: 530px) {
-        section#attending .policies a {
+        section#sponsors p.help a {
+          display: block; } }
+    @media screen and (max-width: 530px) {
+      section#sponsors p.help {
+        text-align: left; } }
+  section#sponsors h3 {
+    text-align: center; }
+    @media screen and (max-width: 530px) {
+      section#sponsors h3 {
+        margin-bottom: 1.2rem; } }
+  section#sponsors .sponsor-group {
+    margin-bottom: 6.0rem; }
+    section#sponsors .sponsor-group::after {
+      clear: both;
+      content: "";
+      display: block; }
+    section#sponsors .sponsor-group a {
+      float: left;
+      display: block;
+      margin-right: 2.35765%;
+      width: 23.23176%;
+      text-align: center;
+      max-height: 5.08328rem; }
+      section#sponsors .sponsor-group a:last-child {
+        margin-right: 0; }
+      section#sponsors .sponsor-group a img {
+        -webkit-filter: grayscale(100%);
+        filter: grayscale(100%);
+        max-width: 100%;
+        max-height: 100%;
+        opacity: 0.5; }
+      section#sponsors .sponsor-group a:first-of-type {
+        margin-left: 25.58941%; }
+      section#sponsors .sponsor-group a:hover img {
+        -webkit-filter: none;
+        filter: none;
+        opacity: 0.9; }
+      @media screen and (max-width: 530px) {
+        section#sponsors .sponsor-group a {
           float: left;
           display: block;
           margin-right: 2.35765%;
-          width: 100%;
-          margin: 0 0 1.2rem 0; }
-          section#attending .policies a:last-child {
-            margin-right: 0; } }
+          width: 65.88078%;
+          margin-left: 17.05961%;
+          margin-bottom: 2.0rem; }
+          section#sponsors .sponsor-group a:last-child {
+            margin-right: 0; }
+          section#sponsors .sponsor-group a:first-of-type {
+            margin-left: 17.05961%; } }
+    section#sponsors .sponsor-group.single a, section#sponsors .sponsor-group.assist a {
+      float: left;
+      display: block;
+      margin-right: 2.35765%;
+      width: 14.70196%;
+      margin-left: 42.64902%; }
+      section#sponsors .sponsor-group.single a:last-child, section#sponsors .sponsor-group.assist a:last-child {
+        margin-right: 0; }
+      @media screen and (max-width: 530px) {
+        section#sponsors .sponsor-group.single a, section#sponsors .sponsor-group.assist a {
+          float: left;
+          display: block;
+          margin-right: 2.35765%;
+          width: 65.88078%;
+          margin-left: 17.05961%; }
+          section#sponsors .sponsor-group.single a:last-child, section#sponsors .sponsor-group.assist a:last-child {
+            margin-right: 0; }
+          section#sponsors .sponsor-group.single a:first-of-type, section#sponsors .sponsor-group.assist a:first-of-type {
+            margin-left: 17.05961%; } }
+    section#sponsors .sponsor-group.assist a {
+      margin-bottom: 1.2rem; }
+    @media screen and (max-width: 530px) {
+      section#sponsors .sponsor-group {
+        margin-bottom: 1.94164rem; } }
+
+section#attending .policies {
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  margin-top: 1rem; }
+  section#attending .policies::after {
+    clear: both;
+    content: "";
+    display: block; }
+  section#attending .policies a {
+    display: inline-block;
+    background: #DA4D3D;
+    color: white;
+    font-size: 1.5rem;
+    padding: 1rem 2.42705rem;
+    text-align: center;
+    text-decoration: none;
+    font-weight: 400;
+    text-transform: uppercase;
+    line-height: 1.7rem;
+    margin: 0 1rem 1.2rem; }
+    section#attending .policies a:hover {
+      background: #bf3425; }
+    @media screen and (max-width: 530px) {
+      section#attending .policies a {
+        padding: 1rem 1.5rem; } }
+    @media screen and (max-width: 530px) {
+      section#attending .policies a {
+        float: left;
+        display: block;
+        margin-right: 2.35765%;
+        width: 100%;
+        margin: 0 0 1.2rem 0; }
+        section#attending .policies a:last-child {
+          margin-right: 0; } }

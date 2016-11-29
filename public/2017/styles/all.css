@@ -2763,3 +2763,49 @@ section#attending .policies {
         margin: 0 0 1.2rem 0; }
         section#attending .policies a:last-child {
           margin-right: 0; } }
+section#attending .social {
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  margin-top: 1rem; }
+  section#attending .social::after {
+    clear: both;
+    content: "";
+    display: block; }
+  section#attending .social a {
+    display: inline-block;
+    background: #DA4D3D;
+    color: white;
+    font-size: 1.5rem;
+    padding: 1rem 2.42705rem;
+    text-align: center;
+    text-decoration: none;
+    font-weight: 400;
+    text-transform: uppercase;
+    line-height: 1.7rem;
+    margin: 0 1rem 1.2rem; }
+    section#attending .social a:hover {
+      background: #bf3425; }
+    @media screen and (max-width: 530px) {
+      section#attending .social a {
+        padding: 1rem 1.5rem; } }
+    @media screen and (max-width: 530px) {
+      section#attending .social a {
+        float: left;
+        display: block;
+        margin-right: 2.35765%;
+        width: 100%;
+        margin: 0 0 1.2rem 0; }
+        section#attending .social a:last-child {
+          margin-right: 0; } }
+
+section#closing {
+  background: #FCDBDB;
+  border-top: 1px solid #fac3c3;
+  border-bottom: 1px solid #fac3c3; }
+
+section#opening {
+  background: #FCDBDB;
+  border-top: 1px solid #fac3c3;
+  border-bottom: 1px solid #fac3c3; }

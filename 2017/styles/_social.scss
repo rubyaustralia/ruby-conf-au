@@ -28,4 +28,31 @@ section#opening {
   @include mobile-portrait {
     @include span-columns(12);
   }
+
+  h3 {
+    line-height: 1;
+  }
 }
+
+.social-overview {
+  font-weight: bold;
+}
+
+.all-tickets {
+  line-height: 1.5;
+  text-align: center;
+  font-weight: bold;
+  font-size: 1.2rem;
+
+  a {
+    @include button($color: $dark-red, $text-color: white);
+    margin: 0 1rem modular-scale(0);
+
+    @include mobile-portrait {
+      @include span-columns(12);
+      margin: 0 0 modular-scale(0) 0;
+    }
+  }
+}
+
+

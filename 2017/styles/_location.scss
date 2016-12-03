@@ -19,6 +19,16 @@ section#location {
       @include span-columns(12);
     }
   }
+
+  a.button {
+    @include button($color: $dark-red, $text-color: white);
+    margin: 0 1rem modular-scale(0);
+
+    @include mobile-portrait {
+      @include span-columns(12);
+      margin: 0 0 modular-scale(0) 0;
+    }
+  }
 }
 
 .accommodation,

@@ -2496,6 +2496,32 @@ section#location .description {
       width: 100%; }
       section#location .description:last-child {
         margin-right: 0; } }
+section#location a.button {
+  display: inline-block;
+  background: #DA4D3D;
+  color: white;
+  font-size: 1.5rem;
+  padding: 1rem 2.42705rem;
+  text-align: center;
+  text-decoration: none;
+  font-weight: 400;
+  text-transform: uppercase;
+  line-height: 1.7rem;
+  margin: 0 1rem 1.2rem; }
+  section#location a.button:hover {
+    background: #bf3425; }
+  @media screen and (max-width: 530px) {
+    section#location a.button {
+      padding: 1rem 1.5rem; } }
+  @media screen and (max-width: 530px) {
+    section#location a.button {
+      float: left;
+      display: block;
+      margin-right: 2.35765%;
+      width: 100%;
+      margin: 0 0 1.2rem 0; }
+      section#location a.button:last-child {
+        margin-right: 0; } }
 
 .accommodation,
 .getting-there {
@@ -2880,3 +2906,47 @@ section#opening {
         margin: 0 0 1.2rem 0; }
         .all-tickets a:last-child {
           margin-right: 0; } }
+
+section#crowne {
+  background: #FCDBDB;
+  border-top: 1px solid #fac3c3;
+  border-bottom: 1px solid #fac3c3; }
+
+.hotel-image {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 40.29137%;
+  height: 20rem; }
+  .hotel-image:last-child {
+    margin-right: 0; }
+  .hotel-image img {
+    -webkit-filter: grayscale(100%);
+    filter: grayscale(100%);
+    width: 100%;
+    position: relative;
+    opacity: 0.8; }
+  @media screen and (max-width: 530px) {
+    .hotel-image {
+      display: none; } }
+
+.hotel-description {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 57.35098%; }
+  .hotel-description:last-child {
+    margin-right: 0; }
+  @media screen and (max-width: 530px) {
+    .hotel-description {
+      float: left;
+      display: block;
+      margin-right: 2.35765%;
+      width: 100%; }
+      .hotel-description:last-child {
+        margin-right: 0; } }
+  .hotel-description h3 {
+    line-height: 1; }
+
+.hotel-address {
+  font-weight: bold; }

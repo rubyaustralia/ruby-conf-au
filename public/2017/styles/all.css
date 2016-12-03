@@ -2809,3 +2809,37 @@ section#opening {
   background: #FCDBDB;
   border-top: 1px solid #fac3c3;
   border-bottom: 1px solid #fac3c3; }
+
+.social-image {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 40.29137%;
+  height: 20rem; }
+  .social-image:last-child {
+    margin-right: 0; }
+  .social-image img {
+    -webkit-filter: grayscale(100%);
+    filter: grayscale(100%);
+    width: 100%;
+    position: relative;
+    opacity: 0.8; }
+  @media screen and (max-width: 530px) {
+    .social-image {
+      display: none; } }
+
+.social-description {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 57.35098%; }
+  .social-description:last-child {
+    margin-right: 0; }
+  @media screen and (max-width: 530px) {
+    .social-description {
+      float: left;
+      display: block;
+      margin-right: 2.35765%;
+      width: 100%; }
+      .social-description:last-child {
+        margin-right: 0; } }

@@ -5,3 +5,27 @@ section#closing {
 section#opening {
   @include highlight-section;
 }
+
+.social-image {
+  @include span-columns(5);
+  height: 20rem;
+
+  img {
+    @include filter(grayscale(100%));
+    width: 100%;
+    position: relative;
+    opacity: 0.8;
+  }
+
+  @include mobile-portrait {
+    display: none;
+  }
+}
+
+.social-description {
+  @include span-columns(7);
+
+  @include mobile-portrait {
+    @include span-columns(12);
+  }
+}

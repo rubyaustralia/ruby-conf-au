@@ -2728,24 +2728,24 @@ section#sponsors {
             margin-right: 0; }
           section#sponsors .sponsor-group a:first-of-type {
             margin-left: 17.05961%; } }
-    section#sponsors .sponsor-group.single a, section#sponsors .sponsor-group.assist a {
+    section#sponsors .sponsor-group.single a {
       float: left;
       display: block;
       margin-right: 2.35765%;
       width: 14.70196%;
       margin-left: 42.64902%; }
-      section#sponsors .sponsor-group.single a:last-child, section#sponsors .sponsor-group.assist a:last-child {
+      section#sponsors .sponsor-group.single a:last-child {
         margin-right: 0; }
       @media screen and (max-width: 530px) {
-        section#sponsors .sponsor-group.single a, section#sponsors .sponsor-group.assist a {
+        section#sponsors .sponsor-group.single a {
           float: left;
           display: block;
           margin-right: 2.35765%;
           width: 65.88078%;
           margin-left: 17.05961%; }
-          section#sponsors .sponsor-group.single a:last-child, section#sponsors .sponsor-group.assist a:last-child {
+          section#sponsors .sponsor-group.single a:last-child {
             margin-right: 0; }
-          section#sponsors .sponsor-group.single a:first-of-type, section#sponsors .sponsor-group.assist a:first-of-type {
+          section#sponsors .sponsor-group.single a:first-of-type {
             margin-left: 17.05961%; } }
     section#sponsors .sponsor-group.assist a {
       margin-bottom: 1.2rem; }

@@ -2747,6 +2747,8 @@ section#sponsors {
             margin-right: 0; }
           section#sponsors .sponsor-group.single a:first-of-type {
             margin-left: 17.05961%; } }
+    section#sponsors .sponsor-group.squish {
+      margin-bottom: 3.0rem; }
     section#sponsors .sponsor-group.assist a {
       margin-bottom: 1.2rem; }
     @media screen and (max-width: 530px) {

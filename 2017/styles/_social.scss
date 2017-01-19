@@ -8,13 +8,20 @@ section#opening {
 
 .social-image {
   @include span-columns(5);
-  height: 20rem;
 
   img {
     @include filter(grayscale(100%));
     width: 100%;
     position: relative;
     opacity: 0.8;
+  }
+
+  .credit a {
+    font-size: modular-scale(-1);
+    text-decoration: none;
+    color: #AAA;
+
+    &:hover{ text-decoration: underline; }
   }
 
   @include mobile-portrait {
@@ -39,20 +46,15 @@ section#opening {
 }
 
 .all-tickets {
-  line-height: 1.5;
-  text-align: center;
   font-weight: bold;
-  font-size: 1.2rem;
-
-  a {
-    @include button($color: $dark-red, $text-color: white);
-    margin: 0 1rem modular-scale(0);
-
-    @include mobile-portrait {
-      @include span-columns(12);
-      margin: 0 0 modular-scale(0) 0;
-    }
-  }
 }
 
+a.button {
+  @include button($color: $dark-red, $text-color: white);
+  margin: 0;
 
+  // @include mobile-portrait {
+  //   @include span-columns(12);
+  //   margin: 0 0 modular-scale(0) 0;
+  // }
+}

@@ -2842,8 +2842,7 @@ section#opening {
   float: left;
   display: block;
   margin-right: 2.35765%;
-  width: 40.29137%;
-  height: 20rem; }
+  width: 40.29137%; }
   .social-image:last-child {
     margin-right: 0; }
   .social-image img {
@@ -2852,6 +2851,12 @@ section#opening {
     width: 100%;
     position: relative;
     opacity: 0.8; }
+  .social-image .credit a {
+    font-size: 0.92705rem;
+    text-decoration: none;
+    color: #AAA; }
+    .social-image .credit a:hover {
+      text-decoration: underline; }
   @media screen and (max-width: 530px) {
     .social-image {
       display: none; } }
@@ -2878,36 +2883,25 @@ section#opening {
   font-weight: bold; }
 
 .all-tickets {
-  line-height: 1.5;
+  font-weight: bold; }
+
+a.button {
+  display: inline-block;
+  background: #DA4D3D;
+  color: white;
+  font-size: 1.5rem;
+  padding: 1rem 2.42705rem;
   text-align: center;
-  font-weight: bold;
-  font-size: 1.2rem; }
-  .all-tickets a {
-    display: inline-block;
-    background: #DA4D3D;
-    color: white;
-    font-size: 1.5rem;
-    padding: 1rem 2.42705rem;
-    text-align: center;
-    text-decoration: none;
-    font-weight: 400;
-    text-transform: uppercase;
-    line-height: 1.7rem;
-    margin: 0 1rem 1.2rem; }
-    .all-tickets a:hover {
-      background: #bf3425; }
-    @media screen and (max-width: 530px) {
-      .all-tickets a {
-        padding: 1rem 1.5rem; } }
-    @media screen and (max-width: 530px) {
-      .all-tickets a {
-        float: left;
-        display: block;
-        margin-right: 2.35765%;
-        width: 100%;
-        margin: 0 0 1.2rem 0; }
-        .all-tickets a:last-child {
-          margin-right: 0; } }
+  text-decoration: none;
+  font-weight: 400;
+  text-transform: uppercase;
+  line-height: 1.7rem;
+  margin: 0; }
+  a.button:hover {
+    background: #bf3425; }
+  @media screen and (max-width: 530px) {
+    a.button {
+      padding: 1rem 1.5rem; } }
 
 section#crowne {
   background: #FCDBDB;

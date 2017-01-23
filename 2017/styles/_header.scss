@@ -42,14 +42,6 @@ header {
     li {
       display: inline;
       padding: 0 0.8rem;
-
-      &:last-of-type {
-        padding-right: 0;
-
-        a {
-          color: $dark-red;
-        }
-      }
     }
 
     a{

@@ -2337,10 +2337,6 @@ header {
     header nav li {
       display: inline;
       padding: 0 0.8rem; }
-      header nav li:last-of-type {
-        padding-right: 0; }
-        header nav li:last-of-type a {
-          color: #DA4D3D; }
     header nav a {
       font-family: "Open Sans", sans-serif;
       text-transform: uppercase;

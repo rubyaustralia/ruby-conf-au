@@ -103,16 +103,13 @@
     especially in VR, accessible to everyone. She's an principal engineer at Atakote
     Studios, a VR development studio focused on virtual and augmented reality.
 
-- name: 'Erika Carlson'
-  twitter: 'eacarlson'
-  talk_title: 'Sunlight & Air: 10 Lessons for Growing Junior Developers'
+- name: 'Prathmesh Ranaut'
+  twitter: 'prathmeshranaut'
+  talk_title: 'Performance Optimization in Ruby'
   bio: |
-    Erika Carlson is the Director of Apprenticeship & Training at Detroit Labs,
-    where she blends her love of programming with her passion for helping others
-    grow. As a developer, Erika has built enterprise software, created websites
-    for nonprofits, and worked on iOS applications with millions of users. She
-    founded the Detroit chapter of Girl Develop It, and has taught programming
-    to students of all ages.
+    I am a Ruby developer with over 5 years of web development experience and last
+    summer I worked with Celluloid, a popular concurrency framework written in
+    Ruby to increase it's performance as a part of Google Summer of Code.
 
 - name: 'Toby Hede'
   twitter: 'tobyhede'

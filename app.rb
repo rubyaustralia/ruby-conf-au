@@ -92,19 +92,36 @@ end
 
 module TwentySeventeen
   class Speaker
-    attr_reader :name, :featured, :bio, :twitter, :avatar, :talk_title
+    attr_reader :name, :featured, :bio, :twitter, :avatar, :talk_title, :talk_datetime
 
-    def initialize(name:, featured: false, bio: nil, twitter: nil, avatar: true, talk_title: nil)
+    def initialize(name:, featured: false, bio: nil, twitter: nil, avatar: true, talk_title: nil, talk_datetime: nil)
       @name = name
       @featured = featured
       @bio = bio
       @twitter = twitter
       @avatar = avatar
       @talk_title = talk_title
+      @talk_datetime = DateTime.parse(talk_datetime)
     end
 
     def slug
       name.downcase.gsub(/[^A-Za-z]/, '-')
+    end
+
+    def talk_time
+      talk_datetime.strftime('%l:%M %p')
+    end
+
+    def epoch
+      talk_datetime.strftime('%s') 
+    end
+
+    def thursday
+      talk_datetime.strftime('%A') == "Thursday"
+    end
+
+    def friday
+      talk_datetime.strftime('%A') == "Friday"
     end
 
     def avatar_path
@@ -129,6 +146,14 @@ module TwentySeventeen
 
     def featured
       all.select(&:featured)
+    end
+
+    def thursday
+      all.select(&:thursday).sort{|s1, s2| s1.epoch <=> s2.epoch }
+    end
+
+    def friday
+      all.select(&:friday).sort{|s1, s2| s1.epoch <=> s2.epoch }
     end
 
     def self.load(path)

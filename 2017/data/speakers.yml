@@ -2,31 +2,36 @@
 - name: 'Aja Hammerly'
   twitter: 'the_thagomizer'
   featured: true
-  talk_title: ''
+  talk_title: "Datacenter Fires and Other 'Minor' Disasters "
+  talk_datetime: '2017-02-10 16:35'
   bio: |
 
 - name: 'Aaron Patterson'
   twitter: 'tenderlove'
   featured: true
-  talk_title: ''
+  talk_title: 'TBD'
+  talk_datetime: '2017-02-10 09:30'
   bio: |
 
 - name: 'Tim Riley'
   twitter: 'timriley'
   featured: true
-  talk_title: ''
+  talk_title: 'Reinvesting in Ruby'
+  talk_datetime: '2017-02-09 09:30'
   bio: |
 
 - name: 'Piotr Solnica'
   twitter: '_solnic_'
   featured: true
-  talk_title: ''
+  talk_title: 'Persistence pays off: a new look at rom-rb'
+  talk_datetime: '2017-02-09 16:25'
   bio: |
 
 - name: 'Katie McLaughlin'
   twitter: 'glasnt'
   featured: true
-  talk_title: ''
+  talk_title: 'The Power ⚡️ and Responsibility 😓 of Unicode Adoption ✨ '
+  talk_datetime: '2017-02-09 16:00'
   bio: |
     Katie has worn many different hats over the years. She has been a software
     developer for many languages, systems administrator for multiple operating
@@ -37,7 +42,8 @@
 - name: 'Shana Moore'
   twitter: 'Shay_nuh__'
   featured: true
-  talk_title: ''
+  talk_title: 'So you want to become a software engineer'
+  talk_datetime: '2017-02-09 10:20'
   bio: |
     Shana Moore has degrees in Human Development and Spanish Literature. Having
     worked administrative support for several years, she desired a career change
@@ -50,6 +56,7 @@
 - name: 'Barrett Clark'
   twitter: 'barrettclark'
   talk_title: 'Simple And Awesome Database Tricks'
+  talk_datetime: '2017-02-10 14:00'
   bio: |
     Barrett is a Rubyist turned polyglot. He currently works at Sabre Labs,
     where he experiments with the intersection of emerging and current
@@ -58,6 +65,7 @@
 - name: 'Alex Coles'
   twitter: 'myabc'
   talk_title: 'Ruby: how a language reflects its people'
+  talk_datetime: '2017-02-09 15:10'
   bio: |
     Alex Coles unabashedly wears the hat of generalist. He is CTO of education
     startup [Skive] and very active in the Ruby community, having founded the
@@ -68,6 +76,7 @@
 - name: 'Elle Meredith'
   twitter: 'aemeredith'
   talk_title: 'Self-learning is a Marathon, Not a Sprint'
+  talk_datetime: '2017-02-10 14:25'
   bio: |
     Elle works at thoughtbot as a development director. She has been building
     websites for over a decade. Since 2007, those websites have been in Ruby.
@@ -80,12 +89,14 @@
 - name: 'Colby Swandale'
   twitter: '0xcolby'
   talk_title: 'Writing A Gameboy Emulator in Ruby'
+  talk_datetime: '2017-02-09 11:40'
   bio: |
 
 - name: 'Ram Ramakrishnan'
   avatar: false
   twitter:
   talk_title: 'VR Backend Rails vs. Serverless - Froth or future?'
+  talk_datetime: '2017-02-10 11:40'
   bio: |
     Ron has been working with Ruby/Rails for nearly 8 years. In the past he's
     worked on virtual machines, source control systems, music, and now is one
@@ -97,6 +108,7 @@
   avatar: false
   twitter:
   talk_title: 'VR Backend Rails vs. Serverless - Froth or future?'
+  talk_datetime: '2017-02-10 11:40'
   bio: |
     An Aussie now living in SF, Janet's passions are Rails, VR, and dim sum -
     sometimes not in that order. She's passionate about making software engineering,
@@ -106,6 +118,7 @@
 - name: 'Prathmesh Ranaut'
   twitter: 'prathmeshranaut'
   talk_title: 'Performance Optimization in Ruby'
+  talk_datetime: '2017-02-10 10:20'
   bio: |
     I am a Ruby developer with over 5 years of web development experience and last
     summer I worked with Celluloid, a popular concurrency framework written in
@@ -114,6 +127,7 @@
 - name: 'Toby Hede'
   twitter: 'tobyhede'
   talk_title: 'How to Polyglot'
+  talk_datetime: '2017-02-10 15:10'
   bio: |
     Toby Hede is a Ruby Developer from Sydney. Toby has an eclectic
     background across education, startups, government and his hobbies include
@@ -123,6 +137,7 @@
 - name: 'Louis Simoneau'
   twitter: 'louis_simoneau'
   talk_title: 'Functional in the Front, Rails in the Back: Give your App an Elm Mullet'
+  talk_datetime: '2017-02-10 14:00'
   bio: |
     Louis is a biochemist by training, a software developer by trade, and a
     technical lead by accident. His experience is primarily in the startup
@@ -133,11 +148,13 @@
 - name: 'Rahul Trikha'
   twitter: 'rahult'
   talk_title: 'Functional in the Front, Rails in the Back: Give your App an Elm Mullet'
+  talk_datetime: '2017-02-10 14:00'
   bio: |
 
 - name: 'Valerie Woolard Srinivasan'
   twitter: 'valeriecodes'
   talk_title: 'Finding Translations: Localization and Internationalization'
+  talk_datetime: '2017-02-10 12:05'
   bio: |
     Valerie Woolard Srinivasan is a software engineer at Panoply in Washington,
     DC, where she builds tools for podcasters in Ruby on Rails. She has a
@@ -149,6 +166,7 @@
 - name: 'Andre Arko'
   twitter: 'indirect'
   talk_title: 'How does Bundler work, anyway?'
+  talk_datetime: '2017-02-10 11:40'
   bio: |
     André Arko thinks Ruby is pretty neat, and has been using it for nine years.
     His day job is building web apps and training developers for clients at
@@ -158,6 +176,7 @@
 - name: 'Stella Cotton'
   twitter: 'practice_cactus'
   talk_title: 'The Little Server That Could'
+  talk_datetime: '2017-02-09 12:25'
   bio: |
     Stella Cotton is a Tools engineer at Heroku and co-founder of SF.rb and
     AndConf. She loves the World Wide Web Consortium, good abstractions, and
@@ -166,6 +185,7 @@
 - name: 'Marcos Matos'
   twitter: 'marcosccm'
   talk_title: 'Actors in Ruby! Why let Elixir have all the fun?'
+  talk_datetime: '2017-02-09 14:45'
   bio: |
     Marcos Matos is a Brazilian developer, currently dodging all the hostile
     animal life Australia has the offer while he works in Melbourne. He loves to
@@ -176,6 +196,7 @@
 - name: 'Philip Arndt'
   twitter: 'parndt'
   talk_title: 'Taking Refinery off the Rails'
+  talk_datetime: '2017-02-10 10:20'
   bio: |
     Kiwi programmer and Director of Ruby at Manuka Coalition, Philip is deeply
     interested in open source, travel, sunshine, and great food. Founding
@@ -184,11 +205,13 @@
 - name: 'Samuel Seay'
   twitter: 'samseay'
   talk_title: 'Taking Refinery off the Rails'
+  talk_datetime: '2017-02-10 10:20'
   bio: |
 
 - name: 'Andy Nicholson'
   twitter: 'andrewdotnich'
   talk_title: "You and Your Type[s] Aren't Welcome Here"
+  talk_datetime: '2017-02-10 14:45'
   bio: |
     A software language nerd and people person, Andy has learned more from
     listening to others than he ever did by yelling. A professional developer,
@@ -198,6 +221,7 @@
 - name: 'Kate Deutscher'
   twitter: 'kate_deutscher'
   talk_title: 'Automation Run Rampant'
+  talk_datetime: '2017-02-10 16:00'
   bio: |
     Kate is in the Delivery Engineering team at REA, automating all the things
     using Ruby. She loves clean code, refactoring with a cup of coffee and
@@ -208,6 +232,7 @@
 - name: 'Hiro Asari'
   twitter: 'hiro_asari'
   talk_title: 'Ruby, HTTP/2, and You'
+  talk_datetime: '2017-02-09 10:45'
   bio: |
     Hiro Asari is a developer at Travis CI GmbH and core member of the JRuby
     team. He is not very good at writing his own bio.
@@ -215,6 +240,7 @@
 - name: 'Kinsey Ann Durham'
   twitter: 'kinseyanndurham'
   talk_title: 'Impactful Refactors: Refactoring for Readability'
+  talk_datetime: '2017-02-10 12:05'
   bio: |
     Kinsey is a software engineer at GoSpotCheck in Denver, Colorado, the
     co-founder of Kubmo, a non-profit dedicated to building and teaching
@@ -225,6 +251,7 @@
 - name: 'Kylie Stradley'
   twitter: 'KyFaSt'
   talk_title: 'A Common Taxonomy of Bugs and How to Catch Them'
+  talk_datetime: '2017-02-10 16:00'
   bio: |
     Kylie Stradley is Web Developer in Atlanta, GA. Untrained in computer
     science, she first taught herself Visual Basic as a survival tactic and then
@@ -235,6 +262,7 @@
 - name: 'Julian Doherty'
   twitter: madlep
   talk_title: 'Functional Programming For The Anxious Developer'
+  talk_datetime: '2017-02-09 14:00'
   bio: |
     Ruby, Rails, Elixir, JavaScript, React, Erlang, elasticsearch. Senior dev
     at Envato. ElixirMelbourne organiser. Kerbal Space Program fanatic and

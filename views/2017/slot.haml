@@ -1,0 +1,13 @@
+%a.speaker{href: speaker.external_url, target: '_blank'}
+  %img.thumbnail{src: speaker.avatar_path}
+
+  .time
+    #{speaker.talk_time}
+  .about
+    %h3
+      - speaker.name.split(' ').each do |word|
+        %span.name= word
+
+    .talk-title
+      #{speaker.talk_title}
+    

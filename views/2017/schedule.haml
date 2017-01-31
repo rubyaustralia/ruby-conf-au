@@ -1,0 +1,24 @@
+- @page_title = "RubyConf AU 2017 - Schedule"
+
+%section.billboard
+  .column
+    %h1 Schedule
+
+%section.body-section#speakers{'data-magellan-target': 'speakers'}
+  .column
+    %h3 Thursday
+
+  .column
+    .row
+      - @speakers.thursday.each do |speaker|
+        = haml :'2017/slot', locals: { speaker: speaker }
+
+  .column
+    %h3 Friday
+
+  .column
+    .row
+      - @speakers.friday.each do |speaker|
+        = haml :'2017/slot', locals: { speaker: speaker }
+
+= haml :'2017/_sponsors'

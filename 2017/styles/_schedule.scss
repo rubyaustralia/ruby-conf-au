@@ -1,0 +1,65 @@
+section#schedule {
+  @include highlight-section;
+  position: relative;
+
+  h4 {
+    @extend h3;
+    text-align: center;
+  }
+
+  .row {
+    @include outer-container;
+    @include clearfix;
+
+    margin-bottom: ms(3);
+  }
+
+  .column {
+    position: relative;
+
+    &:after {
+      content: "";
+      background: white;
+      height: 100%;
+      width: 2px;
+      position: absolute;
+      top: 0;
+      left: 50%;
+      margin-left: -1px;
+    }
+  }
+
+  .time {
+    width: 100px;
+    padding: 10px 15px;
+    color: black;
+    background: white;
+    border-radius: 25px;
+    overflow: hidden;
+    left: 50%;
+    margin-left: -50px;
+    position: absolute;
+    text-align: center;
+  }
+
+  .track {
+    @include span-columns(6);
+    @include clearfix;
+
+    position: relative;
+  }
+
+  .slot {
+    @include span-columns(12);
+
+    img {
+      @include span-columns(4);
+      border-radius: 50%;
+      border: 4px solid white;
+    }
+
+    .about {
+      @include span-columns(8);
+    }
+  }
+}

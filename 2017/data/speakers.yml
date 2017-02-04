@@ -2,7 +2,7 @@
 - name: 'Aja Hammerly'
   twitter: 'the_thagomizer'
   featured: true
-  talk_title: "Datacenter Fires and Other 'Minor' Disasters "
+  talk_title: "Datacenter Fires and Other 'Minor' Disasters"
   talk_datetime: '2017-02-10 16:35'
   bio: |
 
@@ -17,7 +17,7 @@
   twitter: 'timriley'
   featured: true
   talk_title: 'Reinvesting in Ruby'
-  talk_datetime: '2017-02-09 09:30'
+  talk_datetime: '2017-02-09 09:30+11:00'
   bio: |
 
 - name: 'Piotr Solnica'

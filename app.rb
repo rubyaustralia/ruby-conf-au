@@ -113,7 +113,7 @@ module TwentySeventeen
     end
 
     def epoch
-      talk_datetime.strftime('%s') 
+      talk_datetime.strftime('%s')
     end
 
     def thursday
@@ -146,6 +146,12 @@ module TwentySeventeen
 
     def featured
       all.select(&:featured)
+    end
+
+    def timeslots(day:)
+      send(day.to_sym).group_by do |speaker|
+        speaker.epoch
+      end
     end
 
     def thursday

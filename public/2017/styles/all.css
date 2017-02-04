@@ -2214,7 +2214,8 @@ header {
 
 h1,
 h2,
-h3 {
+h3,
+section#schedule h4 {
   font-family: "Lato", sans-serif;
   text-transform: uppercase;
   margin: 0 0 40px;
@@ -2256,11 +2257,11 @@ h2 {
       line-height: 3.14164rem;
       margin: 0 0 1.5rem; } }
 
-h3 {
+h3, section#schedule h4 {
   color: #6484DF;
   font-size: 2.42705rem; }
   @media screen and (max-width: 530px) {
-    h3 {
+    h3, section#schedule h4 {
       font-size: 1.5rem;
       line-height: 1.5rem; } }
 
@@ -2583,12 +2584,12 @@ section#speakers {
     width: 100%;
     position: relative;
     opacity: 0.6; }
-  .speaker h3 {
+  .speaker h3, .speaker section#schedule h4, section#schedule .speaker h4 {
     margin-bottom: 7px;
     line-height: 1.94164rem;
     color: #DA4D3D;
     min-width: 80%; }
-    .speaker h3 .name {
+    .speaker h3 .name, .speaker section#schedule h4 .name, section#schedule .speaker h4 .name {
       display: block; }
   .speaker .twitter {
     color: #6484DF;
@@ -2623,7 +2624,7 @@ section#speakers {
         margin-right: 0; }
       .speaker:nth-child(2n+1) {
         clear: left; }
-      .speaker h3 {
+      .speaker h3, .speaker section#schedule h4, section#schedule .speaker h4 {
         font-size: 1.2rem;
         line-height: 1.2rem;
         margin-bottom: 0; }
@@ -2680,10 +2681,10 @@ section#sponsors {
     @media screen and (max-width: 530px) {
       section#sponsors p.help {
         text-align: left; } }
-  section#sponsors h3 {
+  section#sponsors h3, section#sponsors section#schedule h4, section#schedule section#sponsors h4 {
     text-align: center; }
     @media screen and (max-width: 530px) {
-      section#sponsors h3 {
+      section#sponsors h3, section#sponsors section#schedule h4, section#schedule section#sponsors h4 {
         margin-bottom: 1.2rem; } }
   section#sponsors .sponsor-group {
     margin-bottom: 6.0rem; }
@@ -2872,7 +2873,7 @@ section#opening {
       width: 100%; }
       .social-description:last-child {
         margin-right: 0; } }
-  .social-description h3 {
+  .social-description h3, .social-description section#schedule h4, section#schedule .social-description h4 {
     line-height: 1; }
 
 .social-overview {
@@ -2937,8 +2938,86 @@ section#crowne {
       width: 100%; }
       .hotel-description:last-child {
         margin-right: 0; } }
-  .hotel-description h3 {
+  .hotel-description h3, .hotel-description section#schedule h4, section#schedule .hotel-description h4 {
     line-height: 1; }
 
 .hotel-address {
   font-weight: bold; }
+
+section#schedule {
+  background: #FCDBDB;
+  border-top: 1px solid #fac3c3;
+  border-bottom: 1px solid #fac3c3;
+  position: relative; }
+  section#schedule h4 {
+    text-align: center; }
+  section#schedule .row {
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 2.42705rem; }
+    section#schedule .row::after {
+      clear: both;
+      content: "";
+      display: block; }
+    section#schedule .row::after {
+      clear: both;
+      content: "";
+      display: block; }
+  section#schedule .column {
+    position: relative; }
+    section#schedule .column:after {
+      content: "";
+      background: white;
+      height: 100%;
+      width: 2px;
+      position: absolute;
+      top: 0;
+      left: 50%;
+      margin-left: -1px; }
+  section#schedule .time {
+    width: 100px;
+    padding: 10px 15px;
+    color: black;
+    background: white;
+    border-radius: 25px;
+    overflow: hidden;
+    left: 50%;
+    margin-left: -50px;
+    position: absolute;
+    text-align: center; }
+  section#schedule .track {
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 48.82117%;
+    position: relative; }
+    section#schedule .track:last-child {
+      margin-right: 0; }
+    section#schedule .track::after {
+      clear: both;
+      content: "";
+      display: block; }
+  section#schedule .slot {
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 100%; }
+    section#schedule .slot:last-child {
+      margin-right: 0; }
+    section#schedule .slot img {
+      float: left;
+      display: block;
+      margin-right: 2.35765%;
+      width: 31.76157%;
+      border-radius: 50%;
+      border: 4px solid white; }
+      section#schedule .slot img:last-child {
+        margin-right: 0; }
+    section#schedule .slot .about {
+      float: left;
+      display: block;
+      margin-right: 2.35765%;
+      width: 65.88078%; }
+      section#schedule .slot .about:last-child {
+        margin-right: 0; }

@@ -4,21 +4,31 @@
   .column
     %h1 Schedule
 
-%section.body-section#speakers{'data-magellan-target': 'speakers'}
+%section.body-section#schedule{'data-magellan-target': 'speakers'}
   .column
-    %h3 Thursday
+    %h2 Thursday, 9th February
 
   .column
     .row
-      - @speakers.thursday.each do |speaker|
-        = haml :'2017/slot', locals: { speaker: speaker }
+      .track
+        %h4 Main Track
+      .track
+        %h4 Tech Track
+
+    - @speakers.timeslots(day: :thursday).each do |time, speakers|
+      .row
+        .time= Time.at(time.to_i).strftime("%H:%M")
+        .track
+          - speakers.each do |speaker|
+            = haml :'2017/_slot', locals: { speaker: speaker }
+
 
   .column
-    %h3 Friday
+    %h2 Friday, 10th February
 
   .column
     .row
       - @speakers.friday.each do |speaker|
-        = haml :'2017/slot', locals: { speaker: speaker }
+        = haml :'2017/_slot', locals: { speaker: speaker }
 
 = haml :'2017/_sponsors'

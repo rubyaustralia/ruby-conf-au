@@ -111,14 +111,10 @@
     summer I worked with Celluloid, a popular concurrency framework written in
     Ruby to increase it's performance as a part of Google Summer of Code.
 
-- name: 'Toby Hede'
-  twitter: 'tobyhede'
-  talk_title: 'How to Polyglot'
-  bio: |
-    Toby Hede is a Ruby Developer from Sydney. Toby has an eclectic
-    background across education, startups, government and his hobbies include
-    collecting programming languages and databases, spaceships, playing the
-    drums, cutting code and pondering the nature of existence.
+- name: 'Pat Allan'
+  twitter: 'pat'
+  talk_title: 'Open Source: Power and the Passion'
+  bio: ''
 
 - name: 'Louis Simoneau'
   twitter: 'louis_simoneau'

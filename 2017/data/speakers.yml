@@ -14,14 +14,23 @@
 - name: 'Tim Riley'
   twitter: 'timriley'
   featured: true
-  talk_title: ''
+  talk_title: 'Reinvesting in Ruby'
   bio: |
+    Tim is a partner at Australian design and development agency Icelab, and a
+    core developer of dry-rb and rom-rb. He’s excited about advancing the state
+    of web development in Ruby.
 
 - name: 'Piotr Solnica'
   twitter: '_solnic_'
   featured: true
-  talk_title: ''
+  talk_title: 'Something about databases (TBC)'
   bio: |
+    Piotr is a software engineer at MojoTech with over a decade of experience
+    working with people from around the world. He graduated with a Bachelor
+    degree in Computer Science and started his programming career while he was
+    still a student. In 2007 he started working as a Ruby developer and loved
+    the language and the community. He’s been an active Open Source contributor
+    since 2009, currently working hard on rom-rb and dry-rb projects.
 
 - name: 'Katie McLaughlin'
   twitter: 'glasnt'
@@ -37,7 +46,7 @@
 - name: 'Shana Moore'
   twitter: 'Shay_nuh__'
   featured: true
-  talk_title: ''
+  talk_title: 'So you want to become a software engineer'
   bio: |
     Shana Moore has degrees in Human Development and Spanish Literature. Having
     worked administrative support for several years, she desired a career change

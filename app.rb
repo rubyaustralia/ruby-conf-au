@@ -92,9 +92,9 @@ end
 
 module TwentySeventeen
   class Speaker
-    attr_reader :name, :featured, :bio, :twitter, :avatar, :talk_title, :talk_datetime
+    attr_reader :name, :featured, :bio, :twitter, :avatar, :talk_title, :talk_datetime, :talk_track
 
-    def initialize(name:, featured: false, bio: nil, twitter: nil, avatar: true, talk_title: nil, talk_datetime: nil)
+    def initialize(name:, featured: false, bio: nil, twitter: nil, avatar: true, talk_title: nil, talk_datetime: nil, talk_track: nil)
       @name = name
       @featured = featured
       @bio = bio
@@ -102,6 +102,7 @@ module TwentySeventeen
       @avatar = avatar
       @talk_title = talk_title
       @talk_datetime = DateTime.parse(talk_datetime)
+      @talk_track = talk_track
     end
 
     def slug

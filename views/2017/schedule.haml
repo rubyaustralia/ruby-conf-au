@@ -8,27 +8,21 @@
   .column
     %h2 Thursday, 9th February
 
-  .column
-    .row
-      .track
-        %h4 Main Track
-      .track
-        %h4 Tech Track
-
     - @speakers.timeslots(day: :thursday).each do |time, speakers|
-      .row
+      .row{ class: "speakers-#{speakers.count}" }
         .time= Time.at(time.to_i).strftime("%H:%M")
-        .track
-          - speakers.each do |speaker|
-            = haml :'2017/_slot', locals: { speaker: speaker }
+        - speakers.each do |speaker|
+          = haml :'2017/_slot', locals: { speaker: speaker }
 
 
   .column
     %h2 Friday, 10th February
 
   .column
-    .row
-      - @speakers.friday.each do |speaker|
-        = haml :'2017/_slot', locals: { speaker: speaker }
+    - @speakers.timeslots(day: :friday).each do |time, speakers|
+      .row{ class: "speakers-#{speakers.count}" }
+        .time= Time.at(time.to_i).strftime("%H:%M")
+        - speakers.each do |speaker|
+          = haml :'2017/_slot', locals: { speaker: speaker }
 
 = haml :'2017/_sponsors'

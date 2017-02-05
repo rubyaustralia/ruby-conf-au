@@ -2215,7 +2215,8 @@ header {
 h1,
 h2,
 h3,
-section#schedule h4 {
+section#schedule h4,
+section#schedule .slot .talk-title {
   font-family: "Lato", sans-serif;
   text-transform: uppercase;
   margin: 0 0 40px;
@@ -2257,11 +2258,11 @@ h2 {
       line-height: 3.14164rem;
       margin: 0 0 1.5rem; } }
 
-h3, section#schedule h4 {
+h3, section#schedule h4, section#schedule .slot .talk-title {
   color: #6484DF;
   font-size: 2.42705rem; }
   @media screen and (max-width: 530px) {
-    h3, section#schedule h4 {
+    h3, section#schedule h4, section#schedule .slot .talk-title {
       font-size: 1.5rem;
       line-height: 1.5rem; } }
 
@@ -2354,6 +2355,8 @@ header {
         left: 0;
         height: 3px;
         background: #6484DF; }
+    header nav li:first-of-type a {
+      color: #DA4D3D; }
     @media screen and (max-width: 800px) {
       header nav {
         display: none; } }
@@ -2584,12 +2587,12 @@ section#speakers {
     width: 100%;
     position: relative;
     opacity: 0.6; }
-  .speaker h3, .speaker section#schedule h4, section#schedule .speaker h4 {
+  .speaker h3, .speaker section#schedule h4, section#schedule .speaker h4, .speaker section#schedule .slot .talk-title, section#schedule .slot .speaker .talk-title {
     margin-bottom: 7px;
     line-height: 1.94164rem;
     color: #DA4D3D;
     min-width: 80%; }
-    .speaker h3 .name, .speaker section#schedule h4 .name, section#schedule .speaker h4 .name {
+    .speaker h3 .name, .speaker section#schedule h4 .name, section#schedule .speaker h4 .name, .speaker section#schedule .slot .talk-title .name, section#schedule .slot .speaker .talk-title .name {
       display: block; }
   .speaker .twitter {
     color: #6484DF;
@@ -2624,7 +2627,7 @@ section#speakers {
         margin-right: 0; }
       .speaker:nth-child(2n+1) {
         clear: left; }
-      .speaker h3, .speaker section#schedule h4, section#schedule .speaker h4 {
+      .speaker h3, .speaker section#schedule h4, section#schedule .speaker h4, .speaker section#schedule .slot .talk-title, section#schedule .slot .speaker .talk-title {
         font-size: 1.2rem;
         line-height: 1.2rem;
         margin-bottom: 0; }
@@ -2681,10 +2684,10 @@ section#sponsors {
     @media screen and (max-width: 530px) {
       section#sponsors p.help {
         text-align: left; } }
-  section#sponsors h3, section#sponsors section#schedule h4, section#schedule section#sponsors h4 {
+  section#sponsors h3, section#sponsors section#schedule h4, section#schedule section#sponsors h4, section#sponsors section#schedule .slot .talk-title, section#schedule .slot section#sponsors .talk-title {
     text-align: center; }
     @media screen and (max-width: 530px) {
-      section#sponsors h3, section#sponsors section#schedule h4, section#schedule section#sponsors h4 {
+      section#sponsors h3, section#sponsors section#schedule h4, section#schedule section#sponsors h4, section#sponsors section#schedule .slot .talk-title, section#schedule .slot section#sponsors .talk-title {
         margin-bottom: 1.2rem; } }
   section#sponsors .sponsor-group {
     margin-bottom: 6.0rem; }
@@ -2873,7 +2876,7 @@ section#opening {
       width: 100%; }
       .social-description:last-child {
         margin-right: 0; } }
-  .social-description h3, .social-description section#schedule h4, section#schedule .social-description h4 {
+  .social-description h3, .social-description section#schedule h4, section#schedule .social-description h4, .social-description section#schedule .slot .talk-title, section#schedule .slot .social-description .talk-title {
     line-height: 1; }
 
 .social-overview {
@@ -2938,7 +2941,7 @@ section#crowne {
       width: 100%; }
       .hotel-description:last-child {
         margin-right: 0; } }
-  .hotel-description h3, .hotel-description section#schedule h4, section#schedule .hotel-description h4 {
+  .hotel-description h3, .hotel-description section#schedule h4, section#schedule .hotel-description h4, .hotel-description section#schedule .slot .talk-title, section#schedule .slot .hotel-description .talk-title {
     line-height: 1; }
 
 .hotel-address {
@@ -2949,75 +2952,83 @@ section#schedule {
   border-top: 1px solid #fac3c3;
   border-bottom: 1px solid #fac3c3;
   position: relative; }
+  section#schedule h2 {
+    text-align: center; }
   section#schedule h4 {
     text-align: center; }
   section#schedule .row {
-    max-width: 1200px;
-    margin-left: auto;
-    margin-right: auto;
-    margin-bottom: 2.42705rem; }
-    section#schedule .row::after {
-      clear: both;
-      content: "";
-      display: block; }
-    section#schedule .row::after {
-      clear: both;
-      content: "";
-      display: block; }
-  section#schedule .column {
+    border-top: 1px solid white;
+    color: white;
     position: relative; }
-    section#schedule .column:after {
-      content: "";
-      background: white;
-      height: 100%;
-      width: 2px;
-      position: absolute;
-      top: 0;
-      left: 50%;
-      margin-left: -1px; }
   section#schedule .time {
-    width: 100px;
-    padding: 10px 15px;
-    color: black;
-    background: white;
-    border-radius: 25px;
-    overflow: hidden;
-    left: 50%;
-    margin-left: -50px;
     position: absolute;
-    text-align: center; }
-  section#schedule .track {
-    float: left;
-    display: block;
-    margin-right: 2.35765%;
-    width: 48.82117%;
-    position: relative; }
-    section#schedule .track:last-child {
-      margin-right: 0; }
-    section#schedule .track::after {
-      clear: both;
-      content: "";
-      display: block; }
+    display: inline-block;
+    text-align: center;
+    background: white;
+    color: #DA4D3D;
+    padding: 15px 15px;
+    border-radius: 5px;
+    line-height: 0;
+    width: 78px;
+    top: -16px;
+    left: 50%;
+    margin-left: -39px; }
+  section#schedule .speakers-1 .slot:first-of-type {
+    margin-left: 34.11922%; }
+  section#schedule .speakers-2 .slot {
+    margin-left: 8.5298%; }
+    section#schedule .speakers-2 .slot:first-of-type {
+      margin-left: 12.79471%; }
   section#schedule .slot {
     float: left;
     display: block;
     margin-right: 2.35765%;
-    width: 100%; }
+    width: 31.76157%;
+    padding: 40px 0;
+    text-decoration: none;
+    color: black;
+    position: relative; }
     section#schedule .slot:last-child {
       margin-right: 0; }
-    section#schedule .slot img {
-      float: left;
-      display: block;
-      margin-right: 2.35765%;
-      width: 31.76157%;
-      border-radius: 50%;
-      border: 4px solid white; }
-      section#schedule .slot img:last-child {
-        margin-right: 0; }
     section#schedule .slot .about {
-      float: left;
-      display: block;
-      margin-right: 2.35765%;
-      width: 65.88078%; }
-      section#schedule .slot .about:last-child {
-        margin-right: 0; }
+      padding: 1.4rem 0;
+      text-align: center; }
+      @media screen and (max-width: 530px) {
+        section#schedule .slot .about {
+          padding: 0.5rem 0; } }
+    section#schedule .slot .time {
+      background: white;
+      color: black;
+      overflow: hidden;
+      border-radius: 5px;
+      position: absolute;
+      top: -1.96353rem;
+      left: 50%;
+      margin-left: -1.96353rem;
+      padding: 5px 10px;
+      text-align: center; }
+    section#schedule .slot img {
+      -webkit-filter: grayscale(100%);
+      filter: grayscale(100%);
+      width: 100%;
+      position: relative;
+      opacity: 0.6;
+      border: 2px solid white;
+      border-radius: 50%; }
+    section#schedule .slot h3, section#schedule .slot h4, section#schedule .slot .talk-title {
+      margin-bottom: 7px;
+      font-size: 1.2rem;
+      line-height: 1.2rem;
+      color: black;
+      min-width: 80%; }
+      section#schedule .slot h3 .name, section#schedule .slot h4 .name, section#schedule .slot .talk-title .name {
+        display: inline-block; }
+    section#schedule .slot .talk-title {
+      -webkit-hyphens: auto;
+      -moz-hyphens: auto;
+      -ms-hyphens: auto;
+      hyphens: auto;
+      font-size: 1.5rem;
+      line-height: 1.5rem;
+      color: #DA4D3D;
+      overflow-wrap: break-word; }

@@ -66,6 +66,10 @@ header {
       }
     }
 
+    li:first-of-type a {
+      color: $dark-red;
+    }
+
     @include tablet-portrait {
       display: none;
     }

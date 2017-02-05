@@ -83,7 +83,6 @@
   bio: |
 
 - name: 'Ram Ramakrishnan'
-  avatar: false
   twitter:
   talk_title: 'VR Backend Rails vs. Serverless - Froth or future?'
   bio: |
@@ -94,7 +93,6 @@
     and compelling experiences, and making VR and AR accessible.
 
 - name: 'Janet Brown'
-  avatar: false
   twitter:
   talk_title: 'VR Backend Rails vs. Serverless - Froth or future?'
   bio: |

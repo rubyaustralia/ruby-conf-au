@@ -2339,6 +2339,11 @@ header {
     header nav li {
       display: inline;
       padding: 0 0.8rem; }
+      @media screen and (max-width: 800px) {
+        header nav li {
+          display: inline-block;
+          padding: 0 0.8rem 0 0;
+          margin-bottom: 0.8rem; } }
     header nav a {
       font-family: "Open Sans", sans-serif;
       text-transform: uppercase;
@@ -2359,7 +2364,13 @@ header {
       color: #DA4D3D; }
     @media screen and (max-width: 800px) {
       header nav {
-        display: none; } }
+        float: left;
+        display: block;
+        margin-right: 2.35765%;
+        width: 100%;
+        text-align: left; }
+        header nav:last-child {
+          margin-right: 0; } }
   @media screen and (max-width: 1200px) {
     header {
       padding-left: 1.5rem;
@@ -2749,6 +2760,9 @@ section#sponsors {
             margin-left: 17.05961%; } }
     section#sponsors .sponsor-group.squish {
       margin-bottom: 3.0rem; }
+      @media screen and (max-width: 530px) {
+        section#sponsors .sponsor-group.squish {
+          margin-bottom: 0; } }
     section#sponsors .sponsor-group.assist a {
       margin-bottom: 1.2rem; }
     @media screen and (max-width: 530px) {

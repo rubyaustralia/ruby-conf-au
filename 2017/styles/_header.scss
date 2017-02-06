@@ -42,6 +42,12 @@ header {
     li {
       display: inline;
       padding: 0 0.8rem;
+
+      @include tablet-portrait {
+        display: inline-block;
+        padding: 0 0.8rem 0 0;
+        margin-bottom: 0.8rem;
+      }
     }
 
     a{
@@ -71,7 +77,8 @@ header {
     }
 
     @include tablet-portrait {
-      display: none;
+      @include span-columns(12);
+      text-align: left;
     }
   }
 

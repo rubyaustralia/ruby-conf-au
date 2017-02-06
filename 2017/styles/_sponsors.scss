@@ -109,6 +109,10 @@ section#sponsors {
 
     &.squish {
       margin-bottom: 3.0rem;
+
+      @include mobile-portrait {
+        margin-bottom: 0;
+      }
     }
 
     &.assist a {

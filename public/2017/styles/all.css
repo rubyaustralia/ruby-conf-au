@@ -2973,12 +2973,10 @@ section#schedule {
     top: -16px;
     left: 50%;
     margin-left: -39px; }
-  section#schedule .speakers-1 .slot:first-of-type {
+  section#schedule .speakers-1 .slot {
     margin-left: 34.11922%; }
   section#schedule .speakers-2 .slot {
-    margin-left: 8.5298%; }
-    section#schedule .speakers-2 .slot:first-of-type {
-      margin-left: 12.79471%; }
+    margin-left: 11.37023%; }
   section#schedule .slot {
     float: left;
     display: block;
@@ -2990,9 +2988,32 @@ section#schedule {
     position: relative; }
     section#schedule .slot:last-child {
       margin-right: 0; }
+    section#schedule .slot.double {
+      float: left;
+      display: block;
+      margin-right: 2.35765%;
+      width: 65.88078%; }
+      section#schedule .slot.double:last-child {
+        margin-right: 0; }
+      section#schedule .slot.double .thumbnail {
+        float: left;
+        display: block;
+        margin-right: 2.35765%;
+        width: 48.82117%;
+        margin-right: -2.5%; }
+        section#schedule .slot.double .thumbnail:last-child {
+          margin-right: 0; }
+        section#schedule .slot.double .thumbnail:first-of-type {
+          margin-left: 2.5%; }
     section#schedule .slot .about {
+      float: left;
+      display: block;
+      margin-right: 2.35765%;
+      width: 100%;
       padding: 1.4rem 0;
       text-align: center; }
+      section#schedule .slot .about:last-child {
+        margin-right: 0; }
       @media screen and (max-width: 530px) {
         section#schedule .slot .about {
           padding: 0.5rem 0; } }
@@ -3007,14 +3028,33 @@ section#schedule {
       margin-left: -1.96353rem;
       padding: 5px 10px;
       text-align: center; }
-    section#schedule .slot img {
-      -webkit-filter: grayscale(100%);
-      filter: grayscale(100%);
+    section#schedule .slot .thumbnail {
+      float: left;
+      display: block;
+      margin-right: 2.35765%;
       width: 100%;
       position: relative;
-      opacity: 0.6;
       border: 2px solid white;
-      border-radius: 50%; }
+      border-radius: 50%;
+      overflow: hidden;
+      margin-right: 0; }
+      section#schedule .slot .thumbnail:last-child {
+        margin-right: 0; }
+      section#schedule .slot .thumbnail img {
+        width: 100%;
+        float: left; }
+    section#schedule .slot .sash {
+      background: #6484DF;
+      position: absolute;
+      bottom: 8%;
+      left: 0;
+      color: white;
+      font-size: 0.74164rem;
+      text-align: center;
+      width: 100%;
+      text-transform: uppercase;
+      font-weight: 400;
+      line-height: 1.8rem; }
     section#schedule .slot h3, section#schedule .slot h4, section#schedule .slot .talk-title {
       margin-bottom: 7px;
       font-size: 1.2rem;

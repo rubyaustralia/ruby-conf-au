@@ -1,0 +1,6 @@
+- if speaker_group
+  - if speaker_group.count == 2
+    = haml :'2017/_double_slot', locals: { speakers: speaker_group }
+
+  - elsif speaker_group.count == 1
+    = haml :'2017/_slot', locals: { speaker: speaker_group.first }

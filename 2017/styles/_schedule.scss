@@ -32,17 +32,18 @@ section#schedule {
     margin-left: -39px;
   }
 
-  .speakers-1 .slot{
-    &:first-of-type {
-      @include shift(4);
-    }
+  .speakers-1 .slot {
+    @include shift(4);
+    // &:first-of-type {
+    //
+    // }
   }
 
-  .speakers-2 .slot{
-    @include shift(1);
-    &:first-of-type {
-      @include shift(1.5);
-    }
+  .speakers-2 .slot {
+    @include shift(1.333);
+    // &:first-of-type {
+    //   @include shift(1.5);
+    // }
   }
 
   .speakers-3 .slot{
@@ -55,7 +56,21 @@ section#schedule {
     color: black;
     position: relative;
 
+    &.double {
+      @include span-columns(8);
+
+      .thumbnail {
+        @include span-columns(6);
+        margin-right: -2.5%;
+
+        &:first-of-type{
+          margin-left: 2.5%;
+        }
+      }
+    }
+
     .about {
+      @include span-columns(12);
       padding: 1.4rem 0;
       text-align: center;
 
@@ -77,13 +92,33 @@ section#schedule {
       text-align: center;
     }
 
-    img {
-      @include filter(grayscale(100%));
-      width: 100%;
+    .thumbnail {
+      @include span-columns(12);
       position: relative;
-      opacity: 0.6;
       border: 2px solid white;
       border-radius: 50%;
+      overflow: hidden;
+      margin-right: 0;
+
+      img {
+        // @include filter(grayscale(100%));
+        width: 100%;
+        float: left;
+      }
+    }
+
+    .sash {
+      background: $blue;
+      position: absolute;
+      bottom: 8%;
+      left: 0;
+      color: white;
+      font-size: ms(-2);
+      text-align: center;
+      width: 100%;
+      text-transform: uppercase;
+      font-weight: 400;
+      line-height: 1.8rem;
     }
 
     h3 {

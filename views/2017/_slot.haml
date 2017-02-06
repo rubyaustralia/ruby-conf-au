@@ -1,9 +1,19 @@
-%a.slot{href: speaker.external_url, target: '_blank'}
-  %img.thumbnail{src: speaker.avatar_path}
+.slot
+  .thumbnail
+    %img{src: speaker.avatar_path}
+    .sash
+      - speaker.name.split(' ').each do |word|
+        %span.name= word
+
   .about
     .talk-title
       #{speaker.talk_title}
 
     %h3
-      - speaker.name.split(' ').each do |word|
-        %span.name= word
+      - if speaker.main_track?
+        .location Plenary 3, Ground Floor
+        .track General track
+
+      - elsif speaker.tech_track?
+        .location Breakout, First Floor
+        .track Deep-dive track

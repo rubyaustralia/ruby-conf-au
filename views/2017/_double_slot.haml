@@ -1,0 +1,25 @@
+.slot.double
+  .thumbnail
+    %img{src: speakers.first.avatar_path}
+    .sash
+      - speakers.first.name.split(' ').each do |word|
+        %span.name= word
+
+  .thumbnail
+    %img{src: speakers.last.avatar_path}
+    .sash
+      - speakers.last.name.split(' ').each do |word|
+        %span.name= word
+
+  .about
+    .talk-title
+      #{speakers.first.talk_title}
+
+    %h3
+      - if speakers.first.main_track?
+        .location Plenary 3, Ground Floor
+        .track General track
+
+      - elsif speakers.first.tech_track?
+        .location Breakout, First Floor
+        .track Deep-dive track

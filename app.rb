@@ -105,6 +105,14 @@ module TwentySeventeen
       @talk_track = talk_track
     end
 
+    def main_track?
+      self.talk_track.to_sym == :main
+    end
+
+    def tech_track?
+      self.talk_track.to_sym == :tech
+    end
+
     def slug
       name.downcase.gsub(/[^A-Za-z]/, '-')
     end

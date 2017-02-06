@@ -22,7 +22,7 @@
     - @speakers.timeslots(day: :friday).each do |time, speakers|
       .row{ class: "speakers-#{speakers.count}" }
         .time= Time.at(time.to_i).strftime("%H:%M")
-        - speakers.each do |speaker|
-          = haml :'2017/_slot', locals: { speaker: speaker }
+        - [:main, :tech].each do |track|
+          = haml :'2017/_multi_slot', locals: { speaker_group: speakers.group_by(&:talk_track)[track.to_s] }
 
 = haml :'2017/_sponsors'

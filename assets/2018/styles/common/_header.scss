@@ -1,0 +1,11 @@
+header {
+  .brand {
+    @include span(12);
+
+    text-align: center;
+
+    img {
+      width: 120px;
+    }
+  }
+}

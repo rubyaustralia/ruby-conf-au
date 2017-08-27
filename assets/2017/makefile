@@ -1,11 +1,11 @@
 NM=./node_modules
 IN_STYLES=./styles
-OUT_STYLES=../public/2015/styles
+OUT_STYLES=../../public/2017/styles
 
 AUTOPREFIXER=$(NM)/autoprefixer/autoprefixer
 
 all: $(OUT_STYLES)/all.css
-	echo "Built 2015 files"
+	echo "Built 2017 files"
 
 clean:
 	rm -r $(OUT_STYLES)

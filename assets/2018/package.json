@@ -1,0 +1,16 @@
+{
+  "devDependencies": {
+    "autoprefixer": "3.x",
+    "flexboxgrid": "^6.3.1",
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^3.1.0",
+    "gulp-sass": "^3.1.0",
+    "normalize.css": "^7.0.0",
+    "require-dir": "^0.3.0",
+    "watch": "^1.0.2",
+    "watching": "x"
+  },
+  "dependencies": {
+    "foundation-sites": "^6.2.3"
+  }
+}

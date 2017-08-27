@@ -1,0 +1,7 @@
+.page-home {
+  h1,
+  h2 {
+    @include span(12);
+    text-align: center;
+  }
+}

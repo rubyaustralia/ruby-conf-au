@@ -1,0 +1,29 @@
+!!!
+%html.no-js{lang: 'en'}
+  %head
+    /
+      Hello! This code is open-source, and MIT licensed. Go here to check out da code:
+      https://github.com/rubyaustralia/ruby-conf-au
+    %title= @page_title || "RubyConf Australia 2018"
+
+    %meta{ charset: "utf-8"}
+    %meta{ content:'width=device-width, initial-scale=1.0', name:'viewport'}
+    %link{ rel: "stylesheet", href: asset_path('2018/styles/all.css')}
+    %link{ rel:'shortcut icon', href:'/images/2018/favicon.png'}
+    %link{ href: "https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900", rel: "stylesheet" }
+  %body
+    = haml :'2018/common/_header'
+
+    .div{ class: "page-#{@page}" }
+      != yield
+
+    =# haml :'2018/_footer'
+
+    %script{src: '/javascripts/jquery-2.1.4.min.js'}
+    %script{src: 'https://cdn.jsdelivr.net/foundation/6.2.3/foundation.min.js'}
+    %script{src: '/2018/javascripts/all.js'}
+    %script{src: "https://maps.googleapis.com/maps/api/js?key=AIzaSyBWSc4ZlT4DtlT-gosWhQemM85qRGeumqA&callback=initializeMap" }
+    %script{src: "https://js.tito.io/v1?v2", async: true}
+    - # Fix for iOS vh/vw units
+    %script{src: '/javascripts/viewport-units-buggyfill.js'}
+    %script window.viewportUnitsBuggyfill.init();

@@ -1,0 +1,27 @@
+body, html {
+  color: $color-black-cherry;
+  font-family: 'Lato', sans-serif;
+  height: 100%;
+}
+
+body {
+  margin: 60px 0;
+}
+
+h1 {
+  font-size: 72px;
+  font-weight: 100;
+  text-align: center;
+}
+
+h2 {
+  font-size: 48px;
+  font-weight: 100;
+  text-align: center;
+}
+
+.container {
+  @include row;
+  margin: 0 auto;
+  max-width: 1200px;
+}

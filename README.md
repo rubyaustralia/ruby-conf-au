@@ -1,36 +1,36 @@
-# Ruby Conf AU Site
+# RubyConf AU
 
-The full conference site is being delivered iteratively.
-
-## Developing
+## Setup
 
 If this is this first time you are running the app:
 
-    gem install bundler
-    bundle install
+```
+$ gem install bundler
+$ bundle install
+```
 
 Then start the app with:
 
-    foreman start
+```
+$ foreman start
+```
 
-### 2016
+### Assets 2016-2018
 
-2016 follows the same pattern as 2015. To update styles: 
+To update styles:
 
-    cd 2016
+```
+$ cd assets/2018
+$ make
+```
 
-    # Compile the assets
-    make
+During development, you probably want to be compiling assets on change:
 
-    # Watch assets for change and automatically recompile
-    make watch
+```
+$ cd assets/2018
+$ make watch
+```
 
 ## Deploying
 
-Site is hosted on Heroku
-
-    git@heroku.com:ruby-conf-au.git
-
-Deploy with command
-
-    git push heroku master
+The site is automatically deployed when master is pushed to Github.

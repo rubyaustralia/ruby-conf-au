@@ -9,10 +9,10 @@ gem "json"
 gem "haml"
 gem "pony"
 gem "sinatra"
+gem 'sinatra-contrib'
 gem "zurb-foundation"
 gem "thin"
 
 group :development do
   gem "foreman"
-  gem "sinatra-contrib", require: false
 end

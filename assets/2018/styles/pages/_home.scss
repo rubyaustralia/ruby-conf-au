@@ -1,7 +1,141 @@
 .page-home {
   h1,
-  h2 {
+  h2,
+  h3 {
     @include span(12);
     text-align: center;
+  }
+
+  p {
+    @include span(12);
+    font-size: 34px;
+    font-weight: 200;
+    text-align: center;
+
+    &.annoucement {
+      @include span(6, $x-small: 12);
+      margin-top: 60px;
+      color: $color-sea-glass;
+      font-weight: 300;
+    }
+  }
+
+  .introduction .container,
+  .friends .container,
+  .coming-soon .container {
+    @include align('center')
+  }
+
+  .introduction p {
+    margin-bottom: 0;
+  }
+
+  p.tickets {
+    margin-top: 80px;
+
+    tito-button {
+      background: none;
+      border: 4px solid $color-sea-glass;
+      border-radius: 4px;
+      color: $color-sea-glass;
+      cursor: pointer;
+      font-family: $default-font-family;
+      font-size: 20px;
+      font-weight: 400;
+      padding: 15px 40px;
+      text-transform: uppercase;
+
+      button {
+        background: 0;
+        border: 0;
+        color: $color-sea-glass;
+        cursor: pointer;
+        font-family: $default-font-family;
+        font-weight: 400;
+        text-transform: uppercase;
+      }
+    }
+  }
+
+  p.dates {
+    font-weight: 300;
+  }
+
+  .friends {
+    margin-top: -30px;
+
+    p {
+      @include span(4, $x-small: 8);
+    }
+  }
+
+  .coming-soon {
+    margin-top: -120px;
+
+    p {
+      @include span(6, $x-small: 10);
+    }
+  }
+
+  .speakers {
+    @include align('center');
+
+    background: url('/2018/images/candy-stripe.svg') center center;
+    background-size: 100% 100%;
+    margin-top: -100px;
+    min-height: 800px;
+    padding-top: 170px;
+    overflow: hidden;
+
+    > .container {
+      @include align('center');
+    }
+  }
+
+  .speaker {
+    position: relative;
+    height: 400px;
+    width: 400px;
+
+    .speaker__name {
+      background: $color-french-fry;
+      border-radius: 50%;
+      color: $color-brown-sugar;
+      font-size: 38px;
+      font-weight: 300;
+      height: 150px;
+      left: -30px;
+      line-height: 38px;
+      padding: 35px 0;
+      position: absolute;
+      text-align: center;
+      top: -30px;
+      width: 150px;
+      z-index: 1000;
+    }
+
+    .avatar {
+      width: 100%;
+      height: 100%;
+
+      img {
+        width: 100%;
+        height: 100%;
+      }
+    }
+
+    &.first { margin-left: 100px; z-index: 1000; }
+    &.second { margin-left: -150px; margin-top: 190px; z-index: 999; width: 300px; height: 300px; }
+
+    &.first .avatar{ transform: rotate(-21deg); }
+    &.second .avatar{ transform: rotate(43deg); }
+    &.second .speaker__name{ top: auto; bottom: 0; left: auto; right: -30px; }
+
+    @include responsive-mobile {
+      &.first { margin-left: 0; }
+      &.second {
+        display: none;
+      }
+    }
   }
 }

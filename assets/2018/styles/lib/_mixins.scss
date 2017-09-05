@@ -31,3 +31,7 @@
   @extend .col-sm-offset-#{$small};
   @extend .col-xs-offset-#{$x-small};
 }
+
+@mixin responsive-mobile {
+  @media (max-width: 768px) { @content; }
+}

@@ -1,10 +1,79 @@
-.container
-  %h1
-    RubyConf
-    %br
-    AU 2018
+.introduction
+  .container
+    %p
+      RubyConf AU 2018
 
-  %h2
-    March 8th & 9th
-    %br
-    Sydney, Australia
+  .container
+    %p.dates
+      8th & 9th March
+      %br
+      Sydney, Australia
+
+  .container
+    %p.annoucement
+      Super early bird tickets on sale Friday, 8th September, 2017.
+
+  .container
+    %hr
+  -#
+    .container
+      %p.tickets
+        %tito-button{ event: 'ruby-australia/rubyconf-au-2018', releases:'8vrdb45u0cq' }
+          Buy Super Early Bird Tickets
+
+.friends
+  .container
+    %p
+      Featuring some
+      %strong very
+      special friends&hellip;
+
+.speakers
+  .container
+    .speaker.first
+      .speaker__name
+        Sandi
+        %br
+        Metz
+      .avatar
+        %img{ src: '/2018/images/speakers/sandi-metz.png?2' }
+
+    .speaker.second
+      .speaker__name
+        &hellip;and
+        %br
+        more!
+      .avatar
+        %img{ src: '/2018/images/mascot.svg' }
+
+.coming-soon
+  .container
+    %p
+      With more special guests, social events, and CFP to be announced soon.
+      %br
+      %br
+      %a{ href: 'https://confirmsubscription.com/h/j/809D057CE90261E7', target: '_blank' } Subscribe for updates.
+
+.container
+  %hr
+
+.sponsors
+  .container
+    %h3
+      RubyConf AU would not be possible without the support from these
+      %strong incredible
+      sponsors
+
+  .container
+    .sponsor-group
+      %h4 Ruby Sponsor
+      .sponsor
+        %img{ src: '2018/images/sponsors/envato.png' }
+
+  .container
+    .sponsor-group
+      %h4 Emerald Sponsors
+      .sponsor
+        %img{ src: '2018/images/sponsors/lookahead.png' }
+      .sponsor
+        %img{ src: '2018/images/sponsors/culture-amp.png' }

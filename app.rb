@@ -14,6 +14,7 @@ module RubyConf
       set :views, File.join(Dir.pwd, 'views')
       set :root, File.join(Dir.pwd)
       set :public_folder, File.join(Dir.pwd, 'public')
+      set :force_ssl, false
 
       Compass.configuration do |config|
         config.project_path = File.dirname(__FILE__)
@@ -23,8 +24,16 @@ module RubyConf
       set :scss, Compass.sass_engine_options
     end
 
+    configure :production do
+      set :host, 'rubyconf.org.au'
+      set :force_ssl, true
+    end
+
     configure :development do
       require 'sinatra/reloader'
+
+      set :host, 'rubyconf.dev'
+      set :force_ssl, true
     end
 
     helpers do
@@ -40,6 +49,16 @@ module RubyConf
     # Haml file-not-found exception bubbling up from the depths.
     error Errno::ENOENT do
       halt(404)
+    end
+
+    before do
+      # request.logger.info settings.force_ssl
+      # request.logger.info settings.host
+      if settings.respond_to?(:force_ssl) && settings.force_ssl && !request.secure?
+        secure_url = "https://#{settings.host}#{request.fullpath}"
+        request.logger.info "Insecure request, redirecting to #{secure_url}"
+        redirect secure_url
+      end
     end
 
     register Year2013::App

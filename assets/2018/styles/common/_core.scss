@@ -1,11 +1,16 @@
 body, html {
   color: $color-black-cherry;
-  font-family: 'Lato', sans-serif;
+  font-family: $default-font-family;
   height: 100%;
 }
 
 body {
   margin: 60px 0;
+}
+
+a {
+  color: $color-sea-glass;
+  font-weight: 300;
 }
 
 h1 {
@@ -20,8 +25,59 @@ h2 {
   text-align: center;
 }
 
+h3 {
+  font-size: 34px;
+  font-weight: 200;
+  text-align: center;
+}
+
+hr {
+  @include span(1);
+  border: 0;
+  height: 4px;
+  background: $color-sea-glass;
+  margin: 80px 0;
+}
+
 .container {
   @include row;
+  @include align('center');
   margin: 0 auto;
   max-width: 1200px;
+}
+
+.sponsors {
+  padding-bottom: 150px;
+
+  .container {
+    @include align('center');
+  }
+
+  .container h3 {
+    @include span(6, $x-small: 10);
+    margin-bottom: 60px;
+  }
+
+  h4 {
+    font-weight: 300;
+    font-size: 24px;
+    margin: 0;
+  }
+
+  .sponsor-group {
+    @include span(12);
+    @include align('center');
+
+    margin-bottom: 60px;
+  }
+
+  .sponsor {
+    @include span(4, $x-small: 8);
+    @include offset(4, $x-small: 2);
+    margin-top: 30px;
+
+    img {
+      max-width: 100%;
+    }
+  }
 }

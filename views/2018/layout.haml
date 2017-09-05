@@ -9,6 +9,7 @@
     %meta{ charset: "utf-8"}
     %meta{ content:'width=device-width, initial-scale=1.0', name:'viewport'}
     %link{ rel: "stylesheet", href: asset_path('2018/styles/all.css')}
+    %link{ rel: 'stylesheet', href: 'https://css.tito.io/v1.1', type: 'text/css' }
     %link{ rel:'shortcut icon', href:'/images/2018/favicon.png'}
     %link{ href: "https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900", rel: "stylesheet" }
   %body
@@ -23,7 +24,7 @@
     %script{src: 'https://cdn.jsdelivr.net/foundation/6.2.3/foundation.min.js'}
     %script{src: '/2018/javascripts/all.js'}
     %script{src: "https://maps.googleapis.com/maps/api/js?key=AIzaSyBWSc4ZlT4DtlT-gosWhQemM85qRGeumqA&callback=initializeMap" }
-    %script{src: "https://js.tito.io/v1?v2", async: true}
+    %script{src: 'https://js.tito.io/v1', async: true}
     - # Fix for iOS vh/vw units
     %script{src: '/javascripts/viewport-units-buggyfill.js'}
     %script window.viewportUnitsBuggyfill.init();

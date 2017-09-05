@@ -14,7 +14,7 @@ module RubyConf
       set :views, File.join(Dir.pwd, 'views')
       set :root, File.join(Dir.pwd)
       set :public_folder, File.join(Dir.pwd, 'public')
-      set :force_ssl, false
+      set :force_ssl, true
 
       Compass.configuration do |config|
         config.project_path = File.dirname(__FILE__)
@@ -52,8 +52,6 @@ module RubyConf
     end
 
     before do
-      # request.logger.info settings.force_ssl
-      # request.logger.info settings.host
       if settings.respond_to?(:force_ssl) && settings.force_ssl && !request.secure?
         secure_url = "https://#{settings.host}#{request.fullpath}"
         request.logger.info "Insecure request, redirecting to #{secure_url}"

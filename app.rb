@@ -52,11 +52,11 @@ module RubyConf
     end
 
     before do
-      if settings.respond_to?(:force_ssl) && settings.force_ssl && !request.secure?
+      # if settings.respond_to?(:force_ssl) && settings.force_ssl && !request.secure?
         secure_url = "https://#{settings.host}#{request.fullpath}"
         request.logger.info "Insecure request, redirecting to #{secure_url}"
         redirect secure_url
-      end
+      # end
     end
 
     register Year2013::App

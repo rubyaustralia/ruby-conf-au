@@ -42,6 +42,7 @@
     @include row;
     margin-top: 80px;
 
+    a,
     tito-button {
       @include span(12);
       display: block;
@@ -56,6 +57,7 @@
       padding: 15px 40px;
       text-align: center;
       text-transform: uppercase;
+      text-decoration: none;
 
       button {
         background: 0;

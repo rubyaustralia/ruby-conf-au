@@ -16,7 +16,8 @@
 
   .container
     %p.tickets
-      %tito-button{ event: 'ruby-australia/rubyconf-au-2018', releases:'8vrdb45u0cq' }
+      %a#tito-loading-button{ href: 'https://ti.to/ruby-australia/rubyconf-au-2018' } Buy Super Early Bird Tickets
+      %tito-button#tito-primary-button.hidden{ event: 'ruby-australia/rubyconf-au-2018', releases:'8vrdb45u0cq' }
         Buy Super Early Bird Tickets
 
     %p.small

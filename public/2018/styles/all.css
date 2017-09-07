@@ -448,6 +448,7 @@ header .location,
 .page-home h3,
 .page-home p,
 .page-home p.annoucement,
+.page-home p.tickets a,
 .page-home p.tickets tito-button,
 .col-xs-offset-0,
 .col-xs-offset-1,
@@ -534,7 +535,8 @@ header .location,
 
 .col-xs-12, .sponsors .sponsor-group, header .brand, header .location, .page-home h1,
 .page-home h2,
-.page-home h3, .page-home p, .page-home p.annoucement, .page-home p.tickets tito-button {
+.page-home h3, .page-home p, .page-home p.annoucement, .page-home p.tickets a,
+.page-home p.tickets tito-button {
   -ms-flex-preferred-size: 100%;
   flex-basis: 100%;
   max-width: 100%; }
@@ -653,6 +655,7 @@ header .location,
   .page-home h2,
   .page-home h3,
   .page-home p,
+  .page-home p.tickets a,
   .page-home p.tickets tito-button,
   .col-sm-offset-0,
   .col-sm-offset-1,
@@ -739,7 +742,8 @@ header .location,
 
   .col-sm-12, .sponsors .sponsor-group, header .brand, header .location, .page-home h1,
   .page-home h2,
-  .page-home h3, .page-home p, .page-home p.tickets tito-button {
+  .page-home h3, .page-home p, .page-home p.tickets a,
+  .page-home p.tickets tito-button {
     -ms-flex-preferred-size: 100%;
     flex-basis: 100%;
     max-width: 100%; }
@@ -857,6 +861,7 @@ header .location,
   .page-home h2,
   .page-home h3,
   .page-home p,
+  .page-home p.tickets a,
   .page-home p.tickets tito-button,
   .col-md-offset-0,
   .col-md-offset-1,
@@ -943,7 +948,8 @@ header .location,
 
   .col-md-12, .sponsors .sponsor-group, header .location, .page-home h1,
   .page-home h2,
-  .page-home h3, .page-home p, .page-home p.tickets tito-button {
+  .page-home h3, .page-home p, .page-home p.tickets a,
+  .page-home p.tickets tito-button {
     -ms-flex-preferred-size: 100%;
     flex-basis: 100%;
     max-width: 100%; }
@@ -1061,6 +1067,7 @@ header .location,
   .page-home h2,
   .page-home h3,
   .page-home p,
+  .page-home p.tickets a,
   .page-home p.tickets tito-button,
   .col-lg-offset-0,
   .col-lg-offset-1,
@@ -1147,7 +1154,8 @@ header .location,
 
   .col-lg-12, .sponsors .sponsor-group, header .location, .page-home h1,
   .page-home h2,
-  .page-home h3, .page-home p, .page-home p.tickets tito-button {
+  .page-home h3, .page-home p, .page-home p.tickets a,
+  .page-home p.tickets tito-button {
     -ms-flex-preferred-size: 100%;
     flex-basis: 100%;
     max-width: 100%; }
@@ -1269,6 +1277,9 @@ hr {
   margin: 0 auto;
   max-width: 1200px; }
 
+.hidden {
+  display: none !important; }
+
 .sponsors {
   padding-bottom: 150px; }
   .sponsors .container h3 {
@@ -1327,6 +1338,7 @@ header .location {
     font-weight: 400; }
 .page-home p.tickets {
   margin-top: 80px; }
+  .page-home p.tickets a,
   .page-home p.tickets tito-button {
     display: block;
     background: none;
@@ -1339,7 +1351,9 @@ header .location {
     font-weight: 400;
     padding: 15px 40px;
     text-align: center;
-    text-transform: uppercase; }
+    text-transform: uppercase;
+    text-decoration: none; }
+    .page-home p.tickets a button,
     .page-home p.tickets tito-button button {
       background: 0;
       border: 0;

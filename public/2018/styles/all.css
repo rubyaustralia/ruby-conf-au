@@ -398,7 +398,7 @@ template {
   padding-right: 2rem;
   padding-left: 2rem; }
 
-.row, .container {
+.row, .container, .page-home p.tickets {
   box-sizing: border-box;
   display: -ms-flexbox;
   display: flex;
@@ -411,7 +411,7 @@ template {
   margin-right: -0.5rem;
   margin-left: -0.5rem; }
 
-.row.reverse, .reverse.container {
+.row.reverse, .reverse.container, .page-home p.reverse.tickets {
   -ms-flex-direction: row-reverse;
   flex-direction: row-reverse; }
 
@@ -428,6 +428,7 @@ hr,
 .col-xs-5,
 header .dates,
 .col-xs-6,
+.sponsors p,
 .col-xs-7,
 .col-xs-8,
 .sponsors .sponsor,
@@ -435,6 +436,7 @@ header .dates,
 .col-xs-9,
 .col-xs-10,
 .sponsors .container h3,
+.sponsors .container p,
 .page-home .coming-soon p,
 .col-xs-11,
 .col-xs-12,
@@ -446,6 +448,7 @@ header .location,
 .page-home h3,
 .page-home p,
 .page-home p.annoucement,
+.page-home p.tickets tito-button,
 .col-xs-offset-0,
 .col-xs-offset-1,
 .col-xs-offset-2,
@@ -499,7 +502,7 @@ header .location,
   flex-basis: 41.66666667%;
   max-width: 41.66666667%; }
 
-.col-xs-6 {
+.col-xs-6, .sponsors p {
   -ms-flex-preferred-size: 50%;
   flex-basis: 50%;
   max-width: 50%; }
@@ -519,7 +522,7 @@ header .location,
   flex-basis: 75%;
   max-width: 75%; }
 
-.col-xs-10, .sponsors .container h3, .page-home .coming-soon p {
+.col-xs-10, .sponsors .container h3, .sponsors .container p, .page-home .coming-soon p {
   -ms-flex-preferred-size: 83.33333333%;
   flex-basis: 83.33333333%;
   max-width: 83.33333333%; }
@@ -531,7 +534,7 @@ header .location,
 
 .col-xs-12, .sponsors .sponsor-group, header .brand, header .location, .page-home h1,
 .page-home h2,
-.page-home h3, .page-home p, .page-home p.annoucement {
+.page-home h3, .page-home p, .page-home p.annoucement, .page-home p.tickets tito-button {
   -ms-flex-preferred-size: 100%;
   flex-basis: 100%;
   max-width: 100%; }
@@ -627,12 +630,14 @@ header .location,
   .col-sm-2,
   .col-sm-3,
   .col-sm-4,
+  .sponsors .container p,
   .sponsors .sponsor,
   .page-home .friends p,
   .col-sm-5,
   header .dates,
   .col-sm-6,
   .sponsors .container h3,
+  .sponsors p,
   .page-home p.annoucement,
   .page-home .coming-soon p,
   .col-sm-7,
@@ -648,6 +653,7 @@ header .location,
   .page-home h2,
   .page-home h3,
   .page-home p,
+  .page-home p.tickets tito-button,
   .col-sm-offset-0,
   .col-sm-offset-1,
   .col-sm-offset-2,
@@ -691,7 +697,7 @@ header .location,
     flex-basis: 25%;
     max-width: 25%; }
 
-  .col-sm-4, .sponsors .sponsor, .page-home .friends p {
+  .col-sm-4, .sponsors .container p, .sponsors .sponsor, .page-home .friends p {
     -ms-flex-preferred-size: 33.33333333%;
     flex-basis: 33.33333333%;
     max-width: 33.33333333%; }
@@ -701,7 +707,7 @@ header .location,
     flex-basis: 41.66666667%;
     max-width: 41.66666667%; }
 
-  .col-sm-6, .sponsors .container h3, .page-home p.annoucement, .page-home .coming-soon p {
+  .col-sm-6, .sponsors .container h3, .sponsors p, .page-home p.annoucement, .page-home .coming-soon p {
     -ms-flex-preferred-size: 50%;
     flex-basis: 50%;
     max-width: 50%; }
@@ -733,7 +739,7 @@ header .location,
 
   .col-sm-12, .sponsors .sponsor-group, header .brand, header .location, .page-home h1,
   .page-home h2,
-  .page-home h3, .page-home p {
+  .page-home h3, .page-home p, .page-home p.tickets tito-button {
     -ms-flex-preferred-size: 100%;
     flex-basis: 100%;
     max-width: 100%; }
@@ -829,12 +835,14 @@ header .location,
   header .brand,
   .col-md-3,
   .col-md-4,
+  .sponsors .container p,
   .sponsors .sponsor,
   .page-home .friends p,
   .col-md-5,
   header .dates,
   .col-md-6,
   .sponsors .container h3,
+  .sponsors p,
   .page-home p.annoucement,
   .page-home .coming-soon p,
   .col-md-7,
@@ -849,6 +857,7 @@ header .location,
   .page-home h2,
   .page-home h3,
   .page-home p,
+  .page-home p.tickets tito-button,
   .col-md-offset-0,
   .col-md-offset-1,
   .col-md-offset-2,
@@ -892,7 +901,7 @@ header .location,
     flex-basis: 25%;
     max-width: 25%; }
 
-  .col-md-4, .sponsors .sponsor, .page-home .friends p {
+  .col-md-4, .sponsors .container p, .sponsors .sponsor, .page-home .friends p {
     -ms-flex-preferred-size: 33.33333333%;
     flex-basis: 33.33333333%;
     max-width: 33.33333333%; }
@@ -902,7 +911,7 @@ header .location,
     flex-basis: 41.66666667%;
     max-width: 41.66666667%; }
 
-  .col-md-6, .sponsors .container h3, .page-home p.annoucement, .page-home .coming-soon p {
+  .col-md-6, .sponsors .container h3, .sponsors p, .page-home p.annoucement, .page-home .coming-soon p {
     -ms-flex-preferred-size: 50%;
     flex-basis: 50%;
     max-width: 50%; }
@@ -934,7 +943,7 @@ header .location,
 
   .col-md-12, .sponsors .sponsor-group, header .location, .page-home h1,
   .page-home h2,
-  .page-home h3, .page-home p {
+  .page-home h3, .page-home p, .page-home p.tickets tito-button {
     -ms-flex-preferred-size: 100%;
     flex-basis: 100%;
     max-width: 100%; }
@@ -1030,12 +1039,14 @@ header .location,
   header .brand,
   .col-lg-3,
   .col-lg-4,
+  .sponsors .container p,
   .sponsors .sponsor,
   .page-home .friends p,
   .col-lg-5,
   header .dates,
   .col-lg-6,
   .sponsors .container h3,
+  .sponsors p,
   .page-home p.annoucement,
   .page-home .coming-soon p,
   .col-lg-7,
@@ -1050,6 +1061,7 @@ header .location,
   .page-home h2,
   .page-home h3,
   .page-home p,
+  .page-home p.tickets tito-button,
   .col-lg-offset-0,
   .col-lg-offset-1,
   .col-lg-offset-2,
@@ -1093,7 +1105,7 @@ header .location,
     flex-basis: 25%;
     max-width: 25%; }
 
-  .col-lg-4, .sponsors .sponsor, .page-home .friends p {
+  .col-lg-4, .sponsors .container p, .sponsors .sponsor, .page-home .friends p {
     -ms-flex-preferred-size: 33.33333333%;
     flex-basis: 33.33333333%;
     max-width: 33.33333333%; }
@@ -1103,7 +1115,7 @@ header .location,
     flex-basis: 41.66666667%;
     max-width: 41.66666667%; }
 
-  .col-lg-6, .sponsors .container h3, .page-home p.annoucement, .page-home .coming-soon p {
+  .col-lg-6, .sponsors .container h3, .sponsors p, .page-home p.annoucement, .page-home .coming-soon p {
     -ms-flex-preferred-size: 50%;
     flex-basis: 50%;
     max-width: 50%; }
@@ -1135,7 +1147,7 @@ header .location,
 
   .col-lg-12, .sponsors .sponsor-group, header .location, .page-home h1,
   .page-home h2,
-  .page-home h3, .page-home p {
+  .page-home h3, .page-home p, .page-home p.tickets tito-button {
     -ms-flex-preferred-size: 100%;
     flex-basis: 100%;
     max-width: 100%; }
@@ -1260,11 +1272,17 @@ hr {
 .sponsors {
   padding-bottom: 150px; }
   .sponsors .container h3 {
-    margin-bottom: 60px; }
+    margin-bottom: 60px;
+    font-weight: 300; }
+  .sponsors .container p {
+    font-weight: 300; }
   .sponsors h4 {
     font-weight: 300;
     font-size: 24px;
     margin: 0; }
+  .sponsors p {
+    font-weight: 300;
+    text-align: center; }
   .sponsors .sponsor-group {
     margin-bottom: 60px; }
   .sponsors .sponsor {
@@ -1293,7 +1311,7 @@ header .location {
   text-align: center; }
 .page-home p {
   font-size: 34px;
-  font-weight: 200;
+  font-weight: 300;
   text-align: center; }
   .page-home p.annoucement {
     margin-top: 60px;
@@ -1301,9 +1319,16 @@ header .location {
     font-weight: 300; }
 .page-home .introduction p {
   margin-bottom: 0; }
+  .page-home .introduction p.small {
+    color: #36C0CA;
+    font-size: 16px;
+    text-transform: uppercase;
+    margin-top: 30px;
+    font-weight: 400; }
 .page-home p.tickets {
   margin-top: 80px; }
   .page-home p.tickets tito-button {
+    display: block;
     background: none;
     border: 4px solid #36C0CA;
     border-radius: 4px;
@@ -1313,12 +1338,15 @@ header .location {
     font-size: 20px;
     font-weight: 400;
     padding: 15px 40px;
+    text-align: center;
     text-transform: uppercase; }
     .page-home p.tickets tito-button button {
       background: 0;
       border: 0;
       color: #36C0CA;
       cursor: pointer;
+      display: block;
+      text-align: center;
       font-family: "Lato", sans-serif;
       font-weight: 400;
       text-transform: uppercase; }
@@ -1354,12 +1382,9 @@ header .location {
     top: -30px;
     width: 150px;
     z-index: 1000; }
-  .page-home .speaker .avatar {
+  .page-home .speaker .avatar img {
     width: 100%;
     height: 100%; }
-    .page-home .speaker .avatar img {
-      width: 100%;
-      height: 100%; }
   .page-home .speaker.first {
     margin-left: 100px;
     z-index: 1000; }

@@ -9,7 +9,7 @@
   p {
     @include span(12);
     font-size: 34px;
-    font-weight: 200;
+    font-weight: 300;
     text-align: center;
 
     &.annoucement {
@@ -28,12 +28,23 @@
 
   .introduction p {
     margin-bottom: 0;
+
+    &.small {
+      color: $color-sea-glass;
+      font-size: 16px;
+      text-transform: uppercase;
+      margin-top: 30px;
+      font-weight: 400;
+    }
   }
 
   p.tickets {
+    @include row;
     margin-top: 80px;
 
     tito-button {
+      @include span(12);
+      display: block;
       background: none;
       border: 4px solid $color-sea-glass;
       border-radius: 4px;
@@ -43,6 +54,7 @@
       font-size: 20px;
       font-weight: 400;
       padding: 15px 40px;
+      text-align: center;
       text-transform: uppercase;
 
       button {
@@ -50,6 +62,8 @@
         border: 0;
         color: $color-sea-glass;
         cursor: pointer;
+        display: block;
+        text-align: center;
         font-family: $default-font-family;
         font-weight: 400;
         text-transform: uppercase;
@@ -115,9 +129,6 @@
     }
 
     .avatar {
-      width: 100%;
-      height: 100%;
-
       img {
         width: 100%;
         height: 100%;

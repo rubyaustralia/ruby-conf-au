@@ -9,17 +9,21 @@
       %br
       Sydney, Australia
 
+  -#
+    .container
+      %p.annoucement
+        Super early bird tickets on sale Friday, 8th September, 2017.
+
   .container
-    %p.annoucement
-      Super early bird tickets on sale Friday, 8th September, 2017.
+    %p.tickets
+      %tito-button{ event: 'ruby-australia/rubyconf-au-2018', releases:'8vrdb45u0cq' }
+        Buy Super Early Bird Tickets
+
+    %p.small
+      On sale from 8th September at 12:00pm (AEST)
 
   .container
     %hr
-  -#
-    .container
-      %p.tickets
-        %tito-button{ event: 'ruby-australia/rubyconf-au-2018', releases:'8vrdb45u0cq' }
-          Buy Super Early Bird Tickets
 
 .friends
   .container
@@ -77,3 +81,9 @@
         %img{ src: '2018/images/sponsors/lookahead.png' }
       .sponsor
         %img{ src: '2018/images/sponsors/culture-amp.png' }
+
+  .container
+    %p
+      Interested in sponsoring RubyConf AU 2018?
+      %br
+      %a{ href: 'mailto:sponsorship@ruby.org.au' } Email us!

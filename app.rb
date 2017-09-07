@@ -53,7 +53,7 @@ module RubyConf
 
     before do
       if !request.secure?
-        secure_url = "https://rubyconf.org.au#{request.fullpath}"
+        secure_url = "https://#{settings.host}#{request.fullpath}"
         request.logger.info "Insecure request, redirecting to #{secure_url}"
         redirect secure_url
       end

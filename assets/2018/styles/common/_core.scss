@@ -56,12 +56,24 @@ hr {
   .container h3 {
     @include span(6, $x-small: 10);
     margin-bottom: 60px;
+    font-weight: 300;
+  }
+
+  .container p {
+    @include span(4, $x-small: 10);
+    font-weight: 300;
   }
 
   h4 {
     font-weight: 300;
     font-size: 24px;
     margin: 0;
+  }
+
+  p {
+    @include span(6);
+    font-weight: 300;
+    text-align: center;
   }
 
   .sponsor-group {

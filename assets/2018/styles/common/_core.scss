@@ -82,18 +82,28 @@ hr {
 
   .sponsor-group {
     @include span(12);
+    @include row;
     @include align('center');
+    @include align('middle');
 
     margin-bottom: 60px;
-  }
 
-  .sponsor {
-    @include span(4, $x-small: 8);
-    @include offset(4, $x-small: 2);
-    margin-top: 30px;
+    > h4 { @include span(12); }
+    > .sponsor { margin-top: 30px; display: inline;}
+    > .sponsor img {
+      max-width: 90%;
+    }
 
-    img {
-      max-width: 100%;
+    &.ruby .sponsor {
+      @include span(4, $x-small: 8);
+    }
+
+    &.emerald .sponsor {
+      @include span(3, $x-small: 7);
+    }
+
+    &.opal .sponsor {
+      @include span(2, $x-small: 4);
     }
   }
 }

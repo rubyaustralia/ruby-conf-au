@@ -5,6 +5,7 @@ ruby '2.3.5'
 gem "activesupport", '~> 4.2.8', require: "active_support/inflector"
 gem "createsend", "1.0.4"
 gem "compass"
+gem "sass", "~> 3.4.0"
 gem "json"
 gem "haml"
 gem "pony"

@@ -43,7 +43,7 @@ hr {
   @include row;
   @include align('center');
   margin: 0 auto;
-  max-width: 1200px;
+  max-width: 1200px - 20px;
 }
 
 .hidden {

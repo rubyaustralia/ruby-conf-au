@@ -2,6 +2,7 @@
   "devDependencies": {
     "autoprefixer": "3.x",
     "flexboxgrid": "^6.3.1",
+    "flexboxgrid2": "^7.0.0-alpha7",
     "gulp": "^3.9.1",
     "gulp-autoprefixer": "^3.1.0",
     "gulp-sass": "^3.1.0",

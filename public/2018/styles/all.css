@@ -389,16 +389,41 @@ template {
 [hidden] {
   display: none; }
 
-.container-fluid,
 .container {
+  margin-left: auto;
   margin-right: auto;
-  margin-left: auto; }
+  padding-right: .5rem;
+  padding-left: .5rem; }
 
 .container-fluid {
-  padding-right: 2rem;
-  padding-left: 2rem; }
+  padding-right: 1rem;
+  padding-left: 1rem; }
 
-.row, .container, .sponsors .sponsor-group, .page-home p.tickets {
+@media only screen and (min-width: 576px) {
+  .container {
+    padding-right: .5rem;
+    padding-left: .5rem;
+    width: calc(576px - 1rem);
+    max-width: 100%; } }
+@media only screen and (min-width: 768px) {
+  .container {
+    padding-right: .5rem;
+    padding-left: .5rem;
+    width: calc(768px - 1rem);
+    max-width: 100%; } }
+@media only screen and (min-width: 992px) {
+  .container {
+    padding-right: .5rem;
+    padding-left: .5rem;
+    width: calc(992px - 1rem);
+    max-width: 100%; } }
+@media only screen and (min-width: 1200px) {
+  .container {
+    padding-right: .5rem;
+    padding-left: .5rem;
+    width: calc(1200px - 1rem);
+    max-width: 100%; } }
+.row, .container, .sponsors .sponsor-group {
   box-sizing: border-box;
   display: -ms-flexbox;
   display: flex;
@@ -411,7 +436,7 @@ template {
   margin-right: -0.5rem;
   margin-left: -0.5rem; }
 
-.row.reverse, .reverse.container, .sponsors .reverse.sponsor-group, .page-home p.reverse.tickets {
+.row.reverse, .reverse.container, .sponsors .reverse.sponsor-group {
   -ms-flex-direction: row-reverse;
   flex-direction: row-reverse; }
 
@@ -451,8 +476,12 @@ header .location,
 .page-home h3,
 .page-home p,
 .page-home p.annoucement,
-.page-home p.tickets a,
-.page-home p.tickets tito-button,
+.page-home .introduction .ticketing,
+.page-home .introduction .cfp,
+.page-home .introduction .ticketing a,
+.page-home .introduction .ticketing tito-button,
+.page-home .introduction .cfp a,
+.page-home .introduction .cfp tito-button,
 .col-xs-offset-0,
 .col-xs-offset-1,
 .col-xs-offset-2,
@@ -537,8 +566,11 @@ header .location,
 
 .col-xs-12, .sponsors .sponsor-group, .sponsors .sponsor-group > h4, header .brand, header .location, .page-home h1,
 .page-home h2,
-.page-home h3, .page-home p, .page-home p.annoucement, .page-home p.tickets a,
-.page-home p.tickets tito-button {
+.page-home h3, .page-home p, .page-home p.annoucement, .page-home .introduction .ticketing,
+.page-home .introduction .cfp, .page-home .introduction .ticketing a,
+.page-home .introduction .ticketing tito-button,
+.page-home .introduction .cfp a,
+.page-home .introduction .cfp tito-button {
   -ms-flex-preferred-size: 100%;
   flex-basis: 100%;
   max-width: 100%; }
@@ -624,10 +656,11 @@ header .location,
   -ms-flex-order: 1;
   order: 1; }
 
-@media only screen and (min-width: 48em) {
-  .container {
-    width: 49rem; }
+.initial-order-xs {
+  -ms-flex-order: initial;
+  order: initial; }
 
+@media only screen and (min-width: 576px) {
   .col-sm,
   .col-sm-1,
   hr,
@@ -645,6 +678,8 @@ header .location,
   .sponsors .container h3,
   .sponsors p,
   .page-home p.annoucement,
+  .page-home .introduction .ticketing,
+  .page-home .introduction .cfp,
   .page-home .coming-soon p,
   .col-sm-7,
   .col-sm-8,
@@ -660,8 +695,10 @@ header .location,
   .page-home h2,
   .page-home h3,
   .page-home p,
-  .page-home p.tickets a,
-  .page-home p.tickets tito-button,
+  .page-home .introduction .ticketing a,
+  .page-home .introduction .ticketing tito-button,
+  .page-home .introduction .cfp a,
+  .page-home .introduction .cfp tito-button,
   .col-sm-offset-0,
   .col-sm-offset-1,
   .col-sm-offset-2,
@@ -714,7 +751,8 @@ header .location,
     flex-basis: 41.66666667%;
     max-width: 41.66666667%; }
 
-  .col-sm-6, .sponsors .container h3, .sponsors p, .page-home p.annoucement, .page-home .coming-soon p {
+  .col-sm-6, .sponsors .container h3, .sponsors p, .page-home p.annoucement, .page-home .introduction .ticketing,
+  .page-home .introduction .cfp, .page-home .coming-soon p {
     -ms-flex-preferred-size: 50%;
     flex-basis: 50%;
     max-width: 50%; }
@@ -746,8 +784,10 @@ header .location,
 
   .col-sm-12, .sponsors .sponsor-group, .sponsors .sponsor-group > h4, header .brand, header .location, .page-home h1,
   .page-home h2,
-  .page-home h3, .page-home p, .page-home p.tickets a,
-  .page-home p.tickets tito-button {
+  .page-home h3, .page-home p, .page-home .introduction .ticketing a,
+  .page-home .introduction .ticketing tito-button,
+  .page-home .introduction .cfp a,
+  .page-home .introduction .cfp tito-button {
     -ms-flex-preferred-size: 100%;
     flex-basis: 100%;
     max-width: 100%; }
@@ -831,11 +871,12 @@ header .location,
 
   .last-sm {
     -ms-flex-order: 1;
-    order: 1; } }
-@media only screen and (min-width: 64em) {
-  .container {
-    width: 65rem; }
+    order: 1; }
 
+  .initial-order-sm {
+    -ms-flex-order: initial;
+    order: initial; } }
+@media only screen and (min-width: 768px) {
   .col-md,
   .col-md-1,
   hr,
@@ -850,6 +891,8 @@ header .location,
   .page-home .friends p,
   .col-md-5,
   header .dates,
+  .page-home .introduction .ticketing,
+  .page-home .introduction .cfp,
   .col-md-6,
   .sponsors .container h3,
   .sponsors p,
@@ -868,8 +911,10 @@ header .location,
   .page-home h2,
   .page-home h3,
   .page-home p,
-  .page-home p.tickets a,
-  .page-home p.tickets tito-button,
+  .page-home .introduction .ticketing a,
+  .page-home .introduction .ticketing tito-button,
+  .page-home .introduction .cfp a,
+  .page-home .introduction .cfp tito-button,
   .col-md-offset-0,
   .col-md-offset-1,
   .col-md-offset-2,
@@ -917,7 +962,8 @@ header .location,
     flex-basis: 33.33333333%;
     max-width: 33.33333333%; }
 
-  .col-md-5, header .dates {
+  .col-md-5, header .dates, .page-home .introduction .ticketing,
+  .page-home .introduction .cfp {
     -ms-flex-preferred-size: 41.66666667%;
     flex-basis: 41.66666667%;
     max-width: 41.66666667%; }
@@ -954,8 +1000,10 @@ header .location,
 
   .col-md-12, .sponsors .sponsor-group, .sponsors .sponsor-group > h4, header .location, .page-home h1,
   .page-home h2,
-  .page-home h3, .page-home p, .page-home p.tickets a,
-  .page-home p.tickets tito-button {
+  .page-home h3, .page-home p, .page-home .introduction .ticketing a,
+  .page-home .introduction .ticketing tito-button,
+  .page-home .introduction .cfp a,
+  .page-home .introduction .cfp tito-button {
     -ms-flex-preferred-size: 100%;
     flex-basis: 100%;
     max-width: 100%; }
@@ -1039,11 +1087,12 @@ header .location,
 
   .last-md {
     -ms-flex-order: 1;
-    order: 1; } }
-@media only screen and (min-width: 75em) {
-  .container {
-    width: 76rem; }
+    order: 1; }
 
+  .initial-order-md {
+    -ms-flex-order: initial;
+    order: initial; } }
+@media only screen and (min-width: 992px) {
   .col-lg,
   .col-lg-1,
   hr,
@@ -1058,6 +1107,8 @@ header .location,
   .page-home .friends p,
   .col-lg-5,
   header .dates,
+  .page-home .introduction .ticketing,
+  .page-home .introduction .cfp,
   .col-lg-6,
   .sponsors .container h3,
   .sponsors p,
@@ -1076,8 +1127,10 @@ header .location,
   .page-home h2,
   .page-home h3,
   .page-home p,
-  .page-home p.tickets a,
-  .page-home p.tickets tito-button,
+  .page-home .introduction .ticketing a,
+  .page-home .introduction .ticketing tito-button,
+  .page-home .introduction .cfp a,
+  .page-home .introduction .cfp tito-button,
   .col-lg-offset-0,
   .col-lg-offset-1,
   .col-lg-offset-2,
@@ -1125,7 +1178,8 @@ header .location,
     flex-basis: 33.33333333%;
     max-width: 33.33333333%; }
 
-  .col-lg-5, header .dates {
+  .col-lg-5, header .dates, .page-home .introduction .ticketing,
+  .page-home .introduction .cfp {
     -ms-flex-preferred-size: 41.66666667%;
     flex-basis: 41.66666667%;
     max-width: 41.66666667%; }
@@ -1162,8 +1216,10 @@ header .location,
 
   .col-lg-12, .sponsors .sponsor-group, .sponsors .sponsor-group > h4, header .location, .page-home h1,
   .page-home h2,
-  .page-home h3, .page-home p, .page-home p.tickets a,
-  .page-home p.tickets tito-button {
+  .page-home h3, .page-home p, .page-home .introduction .ticketing a,
+  .page-home .introduction .ticketing tito-button,
+  .page-home .introduction .cfp a,
+  .page-home .introduction .cfp tito-button {
     -ms-flex-preferred-size: 100%;
     flex-basis: 100%;
     max-width: 100%; }
@@ -1247,7 +1303,209 @@ header .location,
 
   .last-lg {
     -ms-flex-order: 1;
-    order: 1; } }
+    order: 1; }
+
+  .initial-order-lg {
+    -ms-flex-order: initial;
+    order: initial; } }
+@media only screen and (min-width: 1200px) {
+  .col-xl,
+  .col-xl-1,
+  .col-xl-2,
+  .col-xl-3,
+  .col-xl-4,
+  .col-xl-5,
+  .col-xl-6,
+  .col-xl-7,
+  .col-xl-8,
+  .col-xl-9,
+  .col-xl-10,
+  .col-xl-11,
+  .col-xl-12,
+  .col-xl-offset-0,
+  .col-xl-offset-1,
+  .col-xl-offset-2,
+  .col-xl-offset-3,
+  .col-xl-offset-4,
+  .col-xl-offset-5,
+  .col-xl-offset-6,
+  .col-xl-offset-7,
+  .col-xl-offset-8,
+  .col-xl-offset-9,
+  .col-xl-offset-10,
+  .col-xl-offset-11,
+  .col-xl-offset-12 {
+    box-sizing: border-box;
+    -ms-flex: 0 0 auto;
+    flex: 0 0 auto;
+    padding-right: 0.5rem;
+    padding-left: 0.5rem; }
+
+  .col-xl {
+    -webkit-box-flex: 1;
+    -ms-flex-positive: 1;
+    flex-grow: 1;
+    -ms-flex-preferred-size: 0;
+    flex-basis: 0;
+    max-width: 100%; }
+
+  .col-xl-1 {
+    -ms-flex-preferred-size: 8.33333333%;
+    flex-basis: 8.33333333%;
+    max-width: 8.33333333%; }
+
+  .col-xl-2 {
+    -ms-flex-preferred-size: 16.66666667%;
+    flex-basis: 16.66666667%;
+    max-width: 16.66666667%; }
+
+  .col-xl-3 {
+    -ms-flex-preferred-size: 25%;
+    flex-basis: 25%;
+    max-width: 25%; }
+
+  .col-xl-4 {
+    -ms-flex-preferred-size: 33.33333333%;
+    flex-basis: 33.33333333%;
+    max-width: 33.33333333%; }
+
+  .col-xl-5 {
+    -ms-flex-preferred-size: 41.66666667%;
+    flex-basis: 41.66666667%;
+    max-width: 41.66666667%; }
+
+  .col-xl-6 {
+    -ms-flex-preferred-size: 50%;
+    flex-basis: 50%;
+    max-width: 50%; }
+
+  .col-xl-7 {
+    -ms-flex-preferred-size: 58.33333333%;
+    flex-basis: 58.33333333%;
+    max-width: 58.33333333%; }
+
+  .col-xl-8 {
+    -ms-flex-preferred-size: 66.66666667%;
+    flex-basis: 66.66666667%;
+    max-width: 66.66666667%; }
+
+  .col-xl-9 {
+    -ms-flex-preferred-size: 75%;
+    flex-basis: 75%;
+    max-width: 75%; }
+
+  .col-xl-10 {
+    -ms-flex-preferred-size: 83.33333333%;
+    flex-basis: 83.33333333%;
+    max-width: 83.33333333%; }
+
+  .col-xl-11 {
+    -ms-flex-preferred-size: 91.66666667%;
+    flex-basis: 91.66666667%;
+    max-width: 91.66666667%; }
+
+  .col-xl-12 {
+    -ms-flex-preferred-size: 100%;
+    flex-basis: 100%;
+    max-width: 100%; }
+
+  .col-xl-offset-0 {
+    margin-left: 0; }
+
+  .col-xl-offset-1 {
+    margin-left: 8.33333333%; }
+
+  .col-xl-offset-2 {
+    margin-left: 16.66666667%; }
+
+  .col-xl-offset-3 {
+    margin-left: 25%; }
+
+  .col-xl-offset-4 {
+    margin-left: 33.33333333%; }
+
+  .col-xl-offset-5 {
+    margin-left: 41.66666667%; }
+
+  .col-xl-offset-6 {
+    margin-left: 50%; }
+
+  .col-xl-offset-7 {
+    margin-left: 58.33333333%; }
+
+  .col-xl-offset-8 {
+    margin-left: 66.66666667%; }
+
+  .col-xl-offset-9 {
+    margin-left: 75%; }
+
+  .col-xl-offset-10 {
+    margin-left: 83.33333333%; }
+
+  .col-xl-offset-11 {
+    margin-left: 91.66666667%; }
+
+  .start-xl {
+    -ms-flex-pack: start;
+    justify-content: flex-start;
+    text-align: start; }
+
+  .center-xl {
+    -ms-flex-pack: center;
+    justify-content: center;
+    text-align: center; }
+
+  .end-xl {
+    -ms-flex-pack: end;
+    justify-content: flex-end;
+    text-align: end; }
+
+  .top-xl {
+    -ms-flex-align: start;
+    align-items: flex-start; }
+
+  .middle-xl {
+    -ms-flex-align: center;
+    align-items: center; }
+
+  .bottom-xl {
+    -ms-flex-align: end;
+    align-items: flex-end; }
+
+  .around-xl {
+    -ms-flex-pack: distribute;
+    justify-content: space-around; }
+
+  .between-xl {
+    -ms-flex-pack: justify;
+    justify-content: space-between; }
+
+  .first-xl {
+    -ms-flex-order: -1;
+    order: -1; }
+
+  .last-xl {
+    -ms-flex-order: 1;
+    order: 1; }
+
+  .initial-order-xl {
+    -ms-flex-order: initial;
+    order: initial; } }
+@media only screen and (max-width: 575px) {
+  .hidden-xs {
+    display: none; } }
+@media only screen and (min-width: 576px) and (max-width: 767px) {
+  .hidden-sm {
+    display: none; } }
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .hidden-md {
+    display: none; } }
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+  .hidden-lg {
+    display: none; } }
+@media only screen and (min-width: 1200px) {
+  .hidden-xl {
+    display: none; } }
 body, html {
   color: #6C143A;
   font-family: "Lato", sans-serif;
@@ -1283,7 +1541,7 @@ hr {
 
 .container {
   margin: 0 auto;
-  max-width: 1200px; }
+  max-width: 1180px; }
 
 .hidden {
   display: none !important; }
@@ -1345,36 +1603,47 @@ header .location {
     text-transform: uppercase;
     margin-top: 30px;
     font-weight: 400; }
-    .page-home .introduction p.small.loud {
-      color: #FBC54A; }
-.page-home p.tickets {
+    .page-home .introduction p.small .loud {
+      color: #F49DC3; }
+.page-home p.tickets,
+.page-home p.submit {
   margin-top: 80px; }
-  .page-home p.tickets a,
-  .page-home p.tickets tito-button {
-    display: block;
-    background: none;
-    border: 4px solid #36C0CA;
-    border-radius: 4px;
+.page-home .introduction .ticketing a,
+.page-home .introduction .ticketing tito-button,
+.page-home .introduction .cfp a,
+.page-home .introduction .cfp tito-button {
+  display: block;
+  background: none;
+  border: 4px solid #36C0CA;
+  border-radius: 4px;
+  color: #36C0CA;
+  cursor: pointer;
+  font-family: "Lato", sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+  padding: 15px 40px;
+  text-align: center;
+  text-transform: uppercase;
+  text-decoration: none; }
+  .page-home .introduction .ticketing a.inverse,
+  .page-home .introduction .ticketing tito-button.inverse,
+  .page-home .introduction .cfp a.inverse,
+  .page-home .introduction .cfp tito-button.inverse {
+    color: white;
+    background: #36C0CA; }
+  .page-home .introduction .ticketing a button,
+  .page-home .introduction .ticketing tito-button button,
+  .page-home .introduction .cfp a button,
+  .page-home .introduction .cfp tito-button button {
+    background: 0;
+    border: 0;
     color: #36C0CA;
     cursor: pointer;
-    font-family: "Lato", sans-serif;
-    font-size: 20px;
-    font-weight: 400;
-    padding: 15px 40px;
+    display: block;
     text-align: center;
-    text-transform: uppercase;
-    text-decoration: none; }
-    .page-home p.tickets a button,
-    .page-home p.tickets tito-button button {
-      background: 0;
-      border: 0;
-      color: #36C0CA;
-      cursor: pointer;
-      display: block;
-      text-align: center;
-      font-family: "Lato", sans-serif;
-      font-weight: 400;
-      text-transform: uppercase; }
+    font-family: "Lato", sans-serif;
+    font-weight: 400;
+    text-transform: uppercase; }
 .page-home p.dates {
   font-weight: 300; }
 .page-home .friends {

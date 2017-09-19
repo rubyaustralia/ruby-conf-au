@@ -36,15 +36,21 @@
       margin-top: 30px;
       font-weight: 400;
 
-      &.loud {
-        color: $color-french-fry;
+      .loud {
+        color: $color-fairy-floss;
       }
     }
   }
 
-  p.tickets {
-    @include row;
+  p.tickets,
+  p.submit {
+    // @include row;
     margin-top: 80px;
+  }
+
+  .introduction .ticketing,
+  .introduction .cfp {
+    @include span(5, $small: 6, $x-small: 12);
 
     a,
     tito-button {
@@ -62,6 +68,10 @@
       text-align: center;
       text-transform: uppercase;
       text-decoration: none;
+      &.inverse {
+        color: white;
+        background: $color-sea-glass;
+      }
 
       button {
         background: 0;

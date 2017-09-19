@@ -15,6 +15,7 @@ watch:
 	watch "make all" $(IN_STYLES) --interval=0.1
 
 vendor:
+	cp ./node_modules/flexboxgrid2/flexboxgrid2.css ./styles/vendor/flexboxgrid2.scss
 	cp ./node_modules/flexboxgrid/dist/flexboxgrid.css ./styles/vendor/flexboxgrid.scss
 	cp ./node_modules/normalize.css/normalize.css ./styles/vendor/normalize.scss
 

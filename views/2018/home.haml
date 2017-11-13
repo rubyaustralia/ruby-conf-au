@@ -12,24 +12,15 @@
   .container
     .ticketing
       %p.tickets
-        %a#tito-loading-button{ href: 'https://ti.to/ruby-australia/rubyconf-au-2018' } Buy Early Bird Tickets
+        %a#tito-loading-button.inverse{ href: 'https://ti.to/ruby-australia/rubyconf-au-2018' } Buy Early Bird Tickets
         %tito-button#tito-primary-button.hidden{ event: 'ruby-australia/rubyconf-au-2018', releases:'8vrdb45u0cq' }
           Buy Early Bird Tickets
 
       %p.small
-        On sale from 22nd September at 12:00pm (AEST)
-        %br
         %span.loud
           For orders of 3 or more tickets, use discount code '
           %strong<> GROUP
           '
-
-    .cfp
-      %p.submit
-        %a.inverse{ href: 'https://www.papercall.io/ruby-conf-au-2018' } Submit Your Talk
-
-      %p.small
-        Call for papers closes 30th of October, 2017
 
   .container
     %hr
@@ -98,6 +89,12 @@
       %h4 Opal Sponsor
       .sponsor
         %img{ src: '2018/images/sponsors/oneflare.png' }
+
+  .container
+    .sponsor-group.amber
+      %h4 Amber Sponsor
+      .sponsor
+        %img{ src: '2018/images/sponsors/shippit.png' }
 
   .container
     %p

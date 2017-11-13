@@ -448,6 +448,7 @@ template {
 .col-xs-1,
 hr,
 .col-xs-2,
+.sponsors .sponsor-group.amber .sponsor,
 .col-xs-3,
 .col-xs-4,
 .sponsors .sponsor-group.opal .sponsor,
@@ -458,9 +459,9 @@ header .dates,
 .col-xs-7,
 .sponsors .sponsor-group.emerald .sponsor,
 .col-xs-8,
-.sponsors .sponsor-group.ruby .sponsor,
 .page-home .friends p,
 .col-xs-9,
+.sponsors .sponsor-group.ruby .sponsor,
 .col-xs-10,
 .sponsors .container h3,
 .sponsors .container p,
@@ -514,7 +515,7 @@ header .location,
   flex-basis: 8.33333333%;
   max-width: 8.33333333%; }
 
-.col-xs-2 {
+.col-xs-2, .sponsors .sponsor-group.amber .sponsor {
   -ms-flex-preferred-size: 16.66666667%;
   flex-basis: 16.66666667%;
   max-width: 16.66666667%; }
@@ -544,12 +545,12 @@ header .location,
   flex-basis: 58.33333333%;
   max-width: 58.33333333%; }
 
-.col-xs-8, .sponsors .sponsor-group.ruby .sponsor, .page-home .friends p {
+.col-xs-8, .page-home .friends p {
   -ms-flex-preferred-size: 66.66666667%;
   flex-basis: 66.66666667%;
   max-width: 66.66666667%; }
 
-.col-xs-9 {
+.col-xs-9, .sponsors .sponsor-group.ruby .sponsor {
   -ms-flex-preferred-size: 75%;
   flex-basis: 75%;
   max-width: 75%; }
@@ -664,6 +665,7 @@ header .location,
   .col-sm,
   .col-sm-1,
   hr,
+  .sponsors .sponsor-group.amber .sponsor,
   .col-sm-2,
   .sponsors .sponsor-group.opal .sponsor,
   .col-sm-3,
@@ -726,7 +728,7 @@ header .location,
     flex-basis: 0;
     max-width: 100%; }
 
-  .col-sm-1, hr {
+  .col-sm-1, hr, .sponsors .sponsor-group.amber .sponsor {
     -ms-flex-preferred-size: 8.33333333%;
     flex-basis: 8.33333333%;
     max-width: 8.33333333%; }
@@ -880,6 +882,7 @@ header .location,
   .col-md,
   .col-md-1,
   hr,
+  .sponsors .sponsor-group.amber .sponsor,
   .col-md-2,
   .sponsors .sponsor-group.opal .sponsor,
   header .brand,
@@ -942,7 +945,7 @@ header .location,
     flex-basis: 0;
     max-width: 100%; }
 
-  .col-md-1, hr {
+  .col-md-1, hr, .sponsors .sponsor-group.amber .sponsor {
     -ms-flex-preferred-size: 8.33333333%;
     flex-basis: 8.33333333%;
     max-width: 8.33333333%; }
@@ -1096,6 +1099,7 @@ header .location,
   .col-lg,
   .col-lg-1,
   hr,
+  .sponsors .sponsor-group.amber .sponsor,
   .col-lg-2,
   .sponsors .sponsor-group.opal .sponsor,
   header .brand,
@@ -1158,7 +1162,7 @@ header .location,
     flex-basis: 0;
     max-width: 100%; }
 
-  .col-lg-1, hr {
+  .col-lg-1, hr, .sponsors .sponsor-group.amber .sponsor {
     -ms-flex-preferred-size: 8.33333333%;
     flex-basis: 8.33333333%;
     max-width: 8.33333333%; }

@@ -95,7 +95,7 @@ hr {
     }
 
     &.ruby .sponsor {
-      @include span(4, $x-small: 8);
+      @include span(4, $x-small: 9);
     }
 
     &.emerald .sponsor {
@@ -104,6 +104,10 @@ hr {
 
     &.opal .sponsor {
       @include span(2, $x-small: 4);
+    }
+
+    &.amber .sponsor {
+      @include span(1, $x-small: 2);
     }
   }
 }

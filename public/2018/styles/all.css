@@ -1654,6 +1654,9 @@ header .location {
   margin-top: -30px; }
 .page-home .coming-soon {
   margin-top: -120px; }
+@media (max-width: 768px) {
+  .page-home .coming-soon {
+    margin-top: -20px; } }
 .page-home .speakers {
   background: url("/2018/images/candy-stripe.svg") center center;
   background-size: 100% 100%;
@@ -1688,23 +1691,47 @@ header .location {
     z-index: 1000; }
   .page-home .speaker.second {
     margin-left: -150px;
-    margin-top: 190px;
+    margin-top: 140px;
     z-index: 999;
-    width: 300px;
-    height: 300px; }
+    width: 380px;
+    height: 380px; }
+  .page-home .speaker.third {
+    margin-left: 100px;
+    margin-top: 340px;
+    z-index: 998;
+    width: 140px;
+    height: 140px; }
   .page-home .speaker.first .avatar {
     -webkit-transform: rotate(-21deg);
             transform: rotate(-21deg); }
   .page-home .speaker.second .avatar {
-    -webkit-transform: rotate(43deg);
-            transform: rotate(43deg); }
+    -webkit-transform: rotate(33deg);
+            transform: rotate(33deg); }
+  .page-home .speaker.third .avatar {
+    -webkit-transform: rotate(-43deg);
+            transform: rotate(-43deg); }
   .page-home .speaker.second .speaker__name {
     top: auto;
     bottom: 0;
     left: auto;
     right: -30px; }
+  .page-home .speaker.third .speaker__name {
+    top: auto;
+    bottom: 0;
+    left: auto;
+    left: -30px;
+    height: 80px;
+    width: 80px;
+    font-size: 18px;
+    line-height: 18px;
+    padding: 20px; }
   @media (max-width: 768px) {
     .page-home .speaker.first {
       margin-left: 0; }
     .page-home .speaker.second {
-      display: none; } }
+      margin-left: 0;
+      margin-top: -100px; } }
+  @media (max-width: 374px) {
+    .page-home .speaker.second {
+      margin-left: 0;
+      margin-top: -180px; } }

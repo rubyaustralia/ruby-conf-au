@@ -107,6 +107,12 @@
     }
   }
 
+  @include responsive-mobile {
+    .coming-soon {
+      margin-top: -20px;
+    }
+  }
+
   .speakers {
     @include align('center');
 
@@ -152,16 +158,29 @@
     }
 
     &.first { margin-left: 100px; z-index: 1000; }
-    &.second { margin-left: -150px; margin-top: 190px; z-index: 999; width: 300px; height: 300px; }
+    &.second { margin-left: -150px; margin-top: 140px; z-index: 999; width: 380px; height: 380px; }
+    &.third { margin-left: 100px; margin-top: 340px; z-index: 998; width: 140px; height: 140px; }
 
     &.first .avatar{ transform: rotate(-21deg); }
-    &.second .avatar{ transform: rotate(43deg); }
+    &.second .avatar{ transform: rotate(33deg); }
+    &.third .avatar{ transform: rotate(-43deg); }
+
+    &.first .speaker__name{}
     &.second .speaker__name{ top: auto; bottom: 0; left: auto; right: -30px; }
+    &.third .speaker__name{ top: auto; bottom: 0; left: auto; left: -30px; height: 80px; width: 80px; font-size: 18px; line-height: 18px; padding: 20px; }
 
     @include responsive-mobile {
       &.first { margin-left: 0; }
       &.second {
-        display: none;
+        margin-left: 0;
+        margin-top: -100px;
+      }
+    }
+
+    @include responsive-small-mobile {
+      &.second {
+        margin-left: 0;
+        margin-top: -180px;
       }
     }
   }

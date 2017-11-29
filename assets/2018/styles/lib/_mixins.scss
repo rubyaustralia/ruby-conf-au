@@ -35,3 +35,7 @@
 @mixin responsive-mobile {
   @media (max-width: 768px) { @content; }
 }
+
+@mixin responsive-small-mobile {
+  @media (max-width: 374px) { @content; }
+}

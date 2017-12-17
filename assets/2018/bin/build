@@ -1,0 +1,8 @@
+#!/bin/bash
+
+echo "Building 2018 Assets"
+cp ./node_modules/normalize.css/normalize.css ./styles/vendor/normalize.scss
+cp ./node_modules/flexboxgrid2/flexboxgrid2.css ./styles/vendor/flexboxgrid2.scss
+sass --sourcemap=none --scss ./styles/all.scss ../../public/2018/styles/all.css
+autoprefixer ../../public/2018/styles/all.css
+md5 -q ../../public/2018/styles/all.css > ../../public/2018/styles/all.css.md5

@@ -1,17 +1,21 @@
 {
   "devDependencies": {
     "autoprefixer": "3.x",
-    "flexboxgrid": "^6.3.1",
     "flexboxgrid2": "^7.0.0-alpha7",
-    "gulp": "^3.9.1",
-    "gulp-autoprefixer": "^3.1.0",
     "gulp-sass": "^3.1.0",
     "normalize.css": "^7.0.0",
-    "require-dir": "^0.3.0",
-    "watch": "^1.0.2",
-    "watching": "x"
+    "require-dir": "^0.3.0"
   },
   "dependencies": {
-    "foundation-sites": "^6.2.3"
+    "foundation-sites": "^6.2.3",
+    "nodemon": "^1.13.3"
+  },
+  "name": "ruby-conf-au-2018",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "build": "bin/build",
+    "watch": "nodemon --config nodemon.config.json --exec 'yarn build'"
   }
 }

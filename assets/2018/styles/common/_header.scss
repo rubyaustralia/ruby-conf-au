@@ -14,18 +14,30 @@ header {
     }
   }
 
-  .dates {
-    @include span(5);
-    font-size: 48px;
-    font-weight: 100;
-    text-align: ro;
+  nav {
+    @include span(5, $small: 12);
+    @include align('start', $small: 'middle');
+    padding: 20px 0;
   }
 
-  .location {
-    @include span(12);
-    font-size: 32px;
-    font-weight: 100;
-    text-align: center;
-    padding: 40px 0;
+  .dates-and-location {
+    @include span(5, $small: 12);
+    @include align('end', $small: 'middle');
+
+    color: $color-black-cherry;
+    text-transform: uppercase;
+    font-weight: 300;
+    padding: 20px 0;
+  }
+
+  nav > a {
+    padding: 8px 16px;
+    margin-right: 10px;
+    color: $color-sea-glass;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: 500;
+    border: 1px solid $color-sea-glass;
+    border-radius: 3px;
   }
 }

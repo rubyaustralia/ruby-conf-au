@@ -1,0 +1,6 @@
+{
+  "verbose": true,
+  "ignore": ["vendor"],
+  "ext": "scss",
+  "watch": "styles"
+}

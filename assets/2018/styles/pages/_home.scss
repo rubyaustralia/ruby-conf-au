@@ -8,8 +8,6 @@
 
   p {
     @include span(12);
-    font-size: 34px;
-    font-weight: 300;
     text-align: center;
 
     &.annoucement {
@@ -20,71 +18,13 @@
     }
   }
 
-  .introduction .container,
   .friends .container,
   .coming-soon .container {
     @include align('center')
   }
 
-  .introduction p {
-    margin-bottom: 0;
-
-    &.small {
-      color: $color-sea-glass;
-      font-size: 16px;
-      text-transform: uppercase;
-      margin-top: 30px;
-      font-weight: 400;
-
-      .loud {
-        color: $color-fairy-floss;
-      }
-    }
-  }
-
-  p.tickets,
   p.submit {
-    // @include row;
     margin-top: 80px;
-  }
-
-  .introduction .ticketing,
-  .introduction .cfp {
-    @include span(5, $small: 6, $x-small: 12);
-
-    a,
-    tito-button {
-      @include span(12);
-      display: block;
-      background: none;
-      border: 4px solid $color-sea-glass;
-      border-radius: 4px;
-      color: $color-sea-glass;
-      cursor: pointer;
-      font-family: $default-font-family;
-      font-size: 20px;
-      font-weight: 400;
-      padding: 15px 40px;
-      text-align: center;
-      text-transform: uppercase;
-      text-decoration: none;
-      &.inverse {
-        color: white;
-        background: $color-sea-glass;
-      }
-
-      button {
-        background: 0;
-        border: 0;
-        color: $color-sea-glass;
-        cursor: pointer;
-        display: block;
-        text-align: center;
-        font-family: $default-font-family;
-        font-weight: 400;
-        text-transform: uppercase;
-      }
-    }
   }
 
   p.dates {

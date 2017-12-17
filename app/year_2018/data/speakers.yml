@@ -1,0 +1,9 @@
+- name: Sandi Metz
+  pitch: "Keynote"
+  bio: "Sandi is a programmer, and the author of Practical Object-Oriented Design in Ruby (POODR) and 99 Bottles of OOP. She believes in simple code and straightforward explanations and wants to help you transform your code and bring back the joy."
+  twitter: sandimetz
+
+- name: Avdi Grimm
+  pitch: "Keynote"
+  bio: "Avdi Grimm has been hacking Ruby code for over 10 years, and is still loving it. He is chief aeronaut at ShipRise, head chef at RubyTapas.com, and a co-host of the Ruby Rogues podcast."
+  twitter: avdi

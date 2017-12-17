@@ -390,40 +390,41 @@ template {
   display: none; }
 
 .container {
+  box-sizing: border-box;
   margin-left: auto;
   margin-right: auto;
-  padding-right: .5rem;
-  padding-left: .5rem; }
+  padding-right: 8px;
+  padding-left: 8px; }
 
 .container-fluid {
-  padding-right: 1rem;
-  padding-left: 1rem; }
+  padding-right: 16px;
+  padding-left: 16px; }
 
 @media only screen and (min-width: 576px) {
   .container {
-    padding-right: .5rem;
-    padding-left: .5rem;
-    width: calc(576px - 1rem);
+    padding-right: 8px;
+    padding-left: 8px;
+    width: 576px;
     max-width: 100%; } }
 @media only screen and (min-width: 768px) {
   .container {
-    padding-right: .5rem;
-    padding-left: .5rem;
-    width: calc(768px - 1rem);
+    padding-right: 8px;
+    padding-left: 8px;
+    width: 768px;
     max-width: 100%; } }
 @media only screen and (min-width: 992px) {
   .container {
-    padding-right: .5rem;
-    padding-left: .5rem;
-    width: calc(992px - 1rem);
+    padding-right: 8px;
+    padding-left: 8px;
+    width: 992px;
     max-width: 100%; } }
 @media only screen and (min-width: 1200px) {
   .container {
-    padding-right: .5rem;
-    padding-left: .5rem;
-    width: calc(1200px - 1rem);
+    padding-right: 8px;
+    padding-left: 8px;
+    width: 1200px;
     max-width: 100%; } }
-.row, .container, .sponsors .sponsor-group {
+.row, .container, .sponsors .sponsor-group, .page-speakers .speaker {
   box-sizing: border-box;
   display: -ms-flexbox;
   display: flex;
@@ -433,10 +434,10 @@ template {
   flex-direction: row;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
-  margin-right: -0.5rem;
-  margin-left: -0.5rem; }
+  margin-right: -8px;
+  margin-left: -8px; }
 
-.row.reverse, .reverse.container, .sponsors .reverse.sponsor-group {
+.row.reverse, .reverse.container, .sponsors .reverse.sponsor-group, .page-speakers .reverse.speaker {
   -ms-flex-direction: row-reverse;
   flex-direction: row-reverse; }
 
@@ -453,7 +454,6 @@ hr,
 .col-xs-4,
 .sponsors .sponsor-group.opal .sponsor,
 .col-xs-5,
-header .dates,
 .col-xs-6,
 .sponsors p,
 .col-xs-7,
@@ -466,23 +466,28 @@ header .dates,
 .sponsors .container h3,
 .sponsors .container p,
 .page-home .coming-soon p,
+.page-speakers .speaker,
 .col-xs-11,
 .col-xs-12,
+.introduction .container p,
 .sponsors .sponsor-group,
 .sponsors .sponsor-group > h4,
+.ticketing,
+.cfp,
+.ticketing a,
+.ticketing tito-button,
+.cfp a,
+.cfp tito-button,
 header .brand,
-header .location,
+header nav,
+header .dates-and-location,
 .page-home h1,
 .page-home h2,
 .page-home h3,
 .page-home p,
 .page-home p.annoucement,
-.page-home .introduction .ticketing,
-.page-home .introduction .cfp,
-.page-home .introduction .ticketing a,
-.page-home .introduction .ticketing tito-button,
-.page-home .introduction .cfp a,
-.page-home .introduction .cfp tito-button,
+.page-speakers .speaker .avatar,
+.page-speakers .speaker .details,
 .col-xs-offset-0,
 .col-xs-offset-1,
 .col-xs-offset-2,
@@ -499,8 +504,8 @@ header .location,
   box-sizing: border-box;
   -ms-flex: 0 0 auto;
   flex: 0 0 auto;
-  padding-right: 0.5rem;
-  padding-left: 0.5rem; }
+  padding-right: 8px;
+  padding-left: 8px; }
 
 .col-xs {
   -webkit-box-flex: 1;
@@ -530,7 +535,7 @@ header .location,
   flex-basis: 33.33333333%;
   max-width: 33.33333333%; }
 
-.col-xs-5, header .dates {
+.col-xs-5 {
   -ms-flex-preferred-size: 41.66666667%;
   flex-basis: 41.66666667%;
   max-width: 41.66666667%; }
@@ -555,7 +560,7 @@ header .location,
   flex-basis: 75%;
   max-width: 75%; }
 
-.col-xs-10, .sponsors .container h3, .sponsors .container p, .page-home .coming-soon p {
+.col-xs-10, .sponsors .container h3, .sponsors .container p, .page-home .coming-soon p, .page-speakers .speaker {
   -ms-flex-preferred-size: 83.33333333%;
   flex-basis: 83.33333333%;
   max-width: 83.33333333%; }
@@ -565,13 +570,13 @@ header .location,
   flex-basis: 91.66666667%;
   max-width: 91.66666667%; }
 
-.col-xs-12, .sponsors .sponsor-group, .sponsors .sponsor-group > h4, header .brand, header .location, .page-home h1,
+.col-xs-12, .introduction .container p, .sponsors .sponsor-group, .sponsors .sponsor-group > h4, .ticketing,
+.cfp, .ticketing a,
+.ticketing tito-button,
+.cfp a,
+.cfp tito-button, header .brand, header nav, header .dates-and-location, .page-home h1,
 .page-home h2,
-.page-home h3, .page-home p, .page-home p.annoucement, .page-home .introduction .ticketing,
-.page-home .introduction .cfp, .page-home .introduction .ticketing a,
-.page-home .introduction .ticketing tito-button,
-.page-home .introduction .cfp a,
-.page-home .introduction .cfp tito-button {
+.page-home h3, .page-home p, .page-home p.annoucement, .page-speakers .speaker .avatar, .page-speakers .speaker .details {
   -ms-flex-preferred-size: 100%;
   flex-basis: 100%;
   max-width: 100%; }
@@ -617,8 +622,7 @@ header .location,
   justify-content: flex-start;
   text-align: start; }
 
-.center-xs, .container, .sponsors .container, .sponsors .sponsor-group, header .container, .page-home .introduction .container,
-.page-home .friends .container,
+.center-xs, .container, .introduction .container, .sponsors .container, .sponsors .sponsor-group, header .container, .page-home .friends .container,
 .page-home .coming-soon .container, .page-home .speakers, .page-home .speakers > .container {
   -ms-flex-pack: center;
   justify-content: center;
@@ -633,7 +637,7 @@ header .location,
   -ms-flex-align: start;
   align-items: flex-start; }
 
-.middle-xs, .sponsors .sponsor-group, header .container {
+.middle-xs, .sponsors .sponsor-group, header .container, header nav, header .dates-and-location, .page-speakers .speaker .avatar {
   -ms-flex-align: center;
   align-items: center; }
 
@@ -675,32 +679,36 @@ header .location,
   .sponsors .sponsor-group.ruby .sponsor,
   .page-home .friends p,
   .col-sm-5,
-  header .dates,
   .col-sm-6,
   .sponsors .container h3,
   .sponsors p,
+  .ticketing,
+  .cfp,
   .page-home p.annoucement,
-  .page-home .introduction .ticketing,
-  .page-home .introduction .cfp,
   .page-home .coming-soon p,
   .col-sm-7,
   .col-sm-8,
   .col-sm-9,
   .col-sm-10,
+  .page-speakers .speaker,
   .col-sm-11,
   .col-sm-12,
+  .introduction .container p,
   .sponsors .sponsor-group,
   .sponsors .sponsor-group > h4,
+  .ticketing a,
+  .ticketing tito-button,
+  .cfp a,
+  .cfp tito-button,
   header .brand,
-  header .location,
+  header nav,
+  header .dates-and-location,
   .page-home h1,
   .page-home h2,
   .page-home h3,
   .page-home p,
-  .page-home .introduction .ticketing a,
-  .page-home .introduction .ticketing tito-button,
-  .page-home .introduction .cfp a,
-  .page-home .introduction .cfp tito-button,
+  .page-speakers .speaker .avatar,
+  .page-speakers .speaker .details,
   .col-sm-offset-0,
   .col-sm-offset-1,
   .col-sm-offset-2,
@@ -717,8 +725,8 @@ header .location,
     box-sizing: border-box;
     -ms-flex: 0 0 auto;
     flex: 0 0 auto;
-    padding-right: 0.5rem;
-    padding-left: 0.5rem; }
+    padding-right: 8px;
+    padding-left: 8px; }
 
   .col-sm {
     -webkit-box-flex: 1;
@@ -748,13 +756,13 @@ header .location,
     flex-basis: 33.33333333%;
     max-width: 33.33333333%; }
 
-  .col-sm-5, header .dates {
+  .col-sm-5 {
     -ms-flex-preferred-size: 41.66666667%;
     flex-basis: 41.66666667%;
     max-width: 41.66666667%; }
 
-  .col-sm-6, .sponsors .container h3, .sponsors p, .page-home p.annoucement, .page-home .introduction .ticketing,
-  .page-home .introduction .cfp, .page-home .coming-soon p {
+  .col-sm-6, .sponsors .container h3, .sponsors p, .ticketing,
+  .cfp, .page-home p.annoucement, .page-home .coming-soon p {
     -ms-flex-preferred-size: 50%;
     flex-basis: 50%;
     max-width: 50%; }
@@ -774,7 +782,7 @@ header .location,
     flex-basis: 75%;
     max-width: 75%; }
 
-  .col-sm-10 {
+  .col-sm-10, .page-speakers .speaker {
     -ms-flex-preferred-size: 83.33333333%;
     flex-basis: 83.33333333%;
     max-width: 83.33333333%; }
@@ -784,12 +792,12 @@ header .location,
     flex-basis: 91.66666667%;
     max-width: 91.66666667%; }
 
-  .col-sm-12, .sponsors .sponsor-group, .sponsors .sponsor-group > h4, header .brand, header .location, .page-home h1,
+  .col-sm-12, .introduction .container p, .sponsors .sponsor-group, .sponsors .sponsor-group > h4, .ticketing a,
+  .ticketing tito-button,
+  .cfp a,
+  .cfp tito-button, header .brand, header nav, header .dates-and-location, .page-home h1,
   .page-home h2,
-  .page-home h3, .page-home p, .page-home .introduction .ticketing a,
-  .page-home .introduction .ticketing tito-button,
-  .page-home .introduction .cfp a,
-  .page-home .introduction .cfp tito-button {
+  .page-home h3, .page-home p, .page-speakers .speaker .avatar, .page-speakers .speaker .details {
     -ms-flex-preferred-size: 100%;
     flex-basis: 100%;
     max-width: 100%; }
@@ -835,8 +843,7 @@ header .location,
     justify-content: flex-start;
     text-align: start; }
 
-  .center-sm, .container, .sponsors .container, .sponsors .sponsor-group, header .container, .page-home .introduction .container,
-  .page-home .friends .container,
+  .center-sm, .container, .introduction .container, .sponsors .container, .sponsors .sponsor-group, header .container, .page-home .friends .container,
   .page-home .coming-soon .container, .page-home .speakers, .page-home .speakers > .container {
     -ms-flex-pack: center;
     justify-content: center;
@@ -851,7 +858,7 @@ header .location,
     -ms-flex-align: start;
     align-items: flex-start; }
 
-  .middle-sm, .sponsors .sponsor-group, header .container {
+  .middle-sm, .sponsors .sponsor-group, header .container, header nav, header .dates-and-location, .page-speakers .speaker .avatar {
     -ms-flex-align: center;
     align-items: center; }
 
@@ -888,15 +895,18 @@ header .location,
   header .brand,
   .col-md-3,
   .sponsors .sponsor-group.emerald .sponsor,
+  .page-speakers .speaker .avatar,
   .col-md-4,
   .sponsors .container p,
   .sponsors .sponsor-group.ruby .sponsor,
   .page-home .friends p,
   .col-md-5,
-  header .dates,
-  .page-home .introduction .ticketing,
-  .page-home .introduction .cfp,
+  .ticketing,
+  .cfp,
+  header nav,
+  header .dates-and-location,
   .col-md-6,
+  .introduction .container p,
   .sponsors .container h3,
   .sponsors p,
   .page-home p.annoucement,
@@ -904,20 +914,21 @@ header .location,
   .col-md-7,
   .col-md-8,
   .col-md-9,
+  .page-speakers .speaker .details,
   .col-md-10,
+  .page-speakers .speaker,
   .col-md-11,
   .col-md-12,
   .sponsors .sponsor-group,
   .sponsors .sponsor-group > h4,
-  header .location,
+  .ticketing a,
+  .ticketing tito-button,
+  .cfp a,
+  .cfp tito-button,
   .page-home h1,
   .page-home h2,
   .page-home h3,
   .page-home p,
-  .page-home .introduction .ticketing a,
-  .page-home .introduction .ticketing tito-button,
-  .page-home .introduction .cfp a,
-  .page-home .introduction .cfp tito-button,
   .col-md-offset-0,
   .col-md-offset-1,
   .col-md-offset-2,
@@ -934,8 +945,8 @@ header .location,
     box-sizing: border-box;
     -ms-flex: 0 0 auto;
     flex: 0 0 auto;
-    padding-right: 0.5rem;
-    padding-left: 0.5rem; }
+    padding-right: 8px;
+    padding-left: 8px; }
 
   .col-md {
     -webkit-box-flex: 1;
@@ -955,7 +966,7 @@ header .location,
     flex-basis: 16.66666667%;
     max-width: 16.66666667%; }
 
-  .col-md-3, .sponsors .sponsor-group.emerald .sponsor {
+  .col-md-3, .sponsors .sponsor-group.emerald .sponsor, .page-speakers .speaker .avatar {
     -ms-flex-preferred-size: 25%;
     flex-basis: 25%;
     max-width: 25%; }
@@ -965,13 +976,13 @@ header .location,
     flex-basis: 33.33333333%;
     max-width: 33.33333333%; }
 
-  .col-md-5, header .dates, .page-home .introduction .ticketing,
-  .page-home .introduction .cfp {
+  .col-md-5, .ticketing,
+  .cfp, header nav, header .dates-and-location {
     -ms-flex-preferred-size: 41.66666667%;
     flex-basis: 41.66666667%;
     max-width: 41.66666667%; }
 
-  .col-md-6, .sponsors .container h3, .sponsors p, .page-home p.annoucement, .page-home .coming-soon p {
+  .col-md-6, .introduction .container p, .sponsors .container h3, .sponsors p, .page-home p.annoucement, .page-home .coming-soon p {
     -ms-flex-preferred-size: 50%;
     flex-basis: 50%;
     max-width: 50%; }
@@ -986,12 +997,12 @@ header .location,
     flex-basis: 66.66666667%;
     max-width: 66.66666667%; }
 
-  .col-md-9 {
+  .col-md-9, .page-speakers .speaker .details {
     -ms-flex-preferred-size: 75%;
     flex-basis: 75%;
     max-width: 75%; }
 
-  .col-md-10 {
+  .col-md-10, .page-speakers .speaker {
     -ms-flex-preferred-size: 83.33333333%;
     flex-basis: 83.33333333%;
     max-width: 83.33333333%; }
@@ -1001,12 +1012,12 @@ header .location,
     flex-basis: 91.66666667%;
     max-width: 91.66666667%; }
 
-  .col-md-12, .sponsors .sponsor-group, .sponsors .sponsor-group > h4, header .location, .page-home h1,
+  .col-md-12, .sponsors .sponsor-group, .sponsors .sponsor-group > h4, .ticketing a,
+  .ticketing tito-button,
+  .cfp a,
+  .cfp tito-button, .page-home h1,
   .page-home h2,
-  .page-home h3, .page-home p, .page-home .introduction .ticketing a,
-  .page-home .introduction .ticketing tito-button,
-  .page-home .introduction .cfp a,
-  .page-home .introduction .cfp tito-button {
+  .page-home h3, .page-home p {
     -ms-flex-preferred-size: 100%;
     flex-basis: 100%;
     max-width: 100%; }
@@ -1047,19 +1058,18 @@ header .location,
   .col-md-offset-11 {
     margin-left: 91.66666667%; }
 
-  .start-md {
+  .start-md, header nav {
     -ms-flex-pack: start;
     justify-content: flex-start;
     text-align: start; }
 
-  .center-md, .container, .sponsors .container, .sponsors .sponsor-group, header .container, .page-home .introduction .container,
-  .page-home .friends .container,
+  .center-md, .container, .introduction .container, .sponsors .container, .sponsors .sponsor-group, header .container, .page-home .friends .container,
   .page-home .coming-soon .container, .page-home .speakers, .page-home .speakers > .container {
     -ms-flex-pack: center;
     justify-content: center;
     text-align: center; }
 
-  .end-md {
+  .end-md, header .dates-and-location, .page-speakers .speaker .avatar {
     -ms-flex-pack: end;
     justify-content: flex-end;
     text-align: end; }
@@ -1105,15 +1115,18 @@ header .location,
   header .brand,
   .col-lg-3,
   .sponsors .sponsor-group.emerald .sponsor,
+  .page-speakers .speaker .avatar,
   .col-lg-4,
   .sponsors .container p,
   .sponsors .sponsor-group.ruby .sponsor,
   .page-home .friends p,
   .col-lg-5,
-  header .dates,
-  .page-home .introduction .ticketing,
-  .page-home .introduction .cfp,
+  .ticketing,
+  .cfp,
+  header nav,
+  header .dates-and-location,
   .col-lg-6,
+  .introduction .container p,
   .sponsors .container h3,
   .sponsors p,
   .page-home p.annoucement,
@@ -1121,20 +1134,21 @@ header .location,
   .col-lg-7,
   .col-lg-8,
   .col-lg-9,
+  .page-speakers .speaker .details,
   .col-lg-10,
+  .page-speakers .speaker,
   .col-lg-11,
   .col-lg-12,
   .sponsors .sponsor-group,
   .sponsors .sponsor-group > h4,
-  header .location,
+  .ticketing a,
+  .ticketing tito-button,
+  .cfp a,
+  .cfp tito-button,
   .page-home h1,
   .page-home h2,
   .page-home h3,
   .page-home p,
-  .page-home .introduction .ticketing a,
-  .page-home .introduction .ticketing tito-button,
-  .page-home .introduction .cfp a,
-  .page-home .introduction .cfp tito-button,
   .col-lg-offset-0,
   .col-lg-offset-1,
   .col-lg-offset-2,
@@ -1151,8 +1165,8 @@ header .location,
     box-sizing: border-box;
     -ms-flex: 0 0 auto;
     flex: 0 0 auto;
-    padding-right: 0.5rem;
-    padding-left: 0.5rem; }
+    padding-right: 8px;
+    padding-left: 8px; }
 
   .col-lg {
     -webkit-box-flex: 1;
@@ -1172,7 +1186,7 @@ header .location,
     flex-basis: 16.66666667%;
     max-width: 16.66666667%; }
 
-  .col-lg-3, .sponsors .sponsor-group.emerald .sponsor {
+  .col-lg-3, .sponsors .sponsor-group.emerald .sponsor, .page-speakers .speaker .avatar {
     -ms-flex-preferred-size: 25%;
     flex-basis: 25%;
     max-width: 25%; }
@@ -1182,13 +1196,13 @@ header .location,
     flex-basis: 33.33333333%;
     max-width: 33.33333333%; }
 
-  .col-lg-5, header .dates, .page-home .introduction .ticketing,
-  .page-home .introduction .cfp {
+  .col-lg-5, .ticketing,
+  .cfp, header nav, header .dates-and-location {
     -ms-flex-preferred-size: 41.66666667%;
     flex-basis: 41.66666667%;
     max-width: 41.66666667%; }
 
-  .col-lg-6, .sponsors .container h3, .sponsors p, .page-home p.annoucement, .page-home .coming-soon p {
+  .col-lg-6, .introduction .container p, .sponsors .container h3, .sponsors p, .page-home p.annoucement, .page-home .coming-soon p {
     -ms-flex-preferred-size: 50%;
     flex-basis: 50%;
     max-width: 50%; }
@@ -1203,12 +1217,12 @@ header .location,
     flex-basis: 66.66666667%;
     max-width: 66.66666667%; }
 
-  .col-lg-9 {
+  .col-lg-9, .page-speakers .speaker .details {
     -ms-flex-preferred-size: 75%;
     flex-basis: 75%;
     max-width: 75%; }
 
-  .col-lg-10 {
+  .col-lg-10, .page-speakers .speaker {
     -ms-flex-preferred-size: 83.33333333%;
     flex-basis: 83.33333333%;
     max-width: 83.33333333%; }
@@ -1218,12 +1232,12 @@ header .location,
     flex-basis: 91.66666667%;
     max-width: 91.66666667%; }
 
-  .col-lg-12, .sponsors .sponsor-group, .sponsors .sponsor-group > h4, header .location, .page-home h1,
+  .col-lg-12, .sponsors .sponsor-group, .sponsors .sponsor-group > h4, .ticketing a,
+  .ticketing tito-button,
+  .cfp a,
+  .cfp tito-button, .page-home h1,
   .page-home h2,
-  .page-home h3, .page-home p, .page-home .introduction .ticketing a,
-  .page-home .introduction .ticketing tito-button,
-  .page-home .introduction .cfp a,
-  .page-home .introduction .cfp tito-button {
+  .page-home h3, .page-home p {
     -ms-flex-preferred-size: 100%;
     flex-basis: 100%;
     max-width: 100%; }
@@ -1264,19 +1278,18 @@ header .location,
   .col-lg-offset-11 {
     margin-left: 91.66666667%; }
 
-  .start-lg {
+  .start-lg, header nav {
     -ms-flex-pack: start;
     justify-content: flex-start;
     text-align: start; }
 
-  .center-lg, .container, .sponsors .container, .sponsors .sponsor-group, header .container, .page-home .introduction .container,
-  .page-home .friends .container,
+  .center-lg, .container, .introduction .container, .sponsors .container, .sponsors .sponsor-group, header .container, .page-home .friends .container,
   .page-home .coming-soon .container, .page-home .speakers, .page-home .speakers > .container {
     -ms-flex-pack: center;
     justify-content: center;
     text-align: center; }
 
-  .end-lg {
+  .end-lg, header .dates-and-location, .page-speakers .speaker .avatar {
     -ms-flex-pack: end;
     justify-content: flex-end;
     text-align: end; }
@@ -1342,8 +1355,8 @@ header .location,
     box-sizing: border-box;
     -ms-flex: 0 0 auto;
     flex: 0 0 auto;
-    padding-right: 0.5rem;
-    padding-left: 0.5rem; }
+    padding-right: 8px;
+    padding-left: 8px; }
 
   .col-xl {
     -webkit-box-flex: 1;
@@ -1522,6 +1535,10 @@ a {
   color: #36C0CA;
   font-weight: 300; }
 
+p {
+  font-size: 34px;
+  font-weight: 300; }
+
 h1 {
   font-size: 72px;
   font-weight: 100;
@@ -1550,6 +1567,23 @@ hr {
 .hidden {
   display: none !important; }
 
+.introduction .container p {
+  line-height: 48px; }
+
+.introduction {
+  margin: 20px 0 80px; }
+
+p {
+  margin-bottom: 0; }
+  p.small {
+    color: #36C0CA;
+    font-size: 16px;
+    text-transform: uppercase;
+    margin-top: 30px;
+    font-weight: 400; }
+    p.small .loud {
+      color: #F49DC3; }
+
 .sponsors {
   padding-bottom: 150px; }
   .sponsors .container h3 {
@@ -1572,50 +1606,10 @@ hr {
     .sponsors .sponsor-group > .sponsor img {
       max-width: 90%; }
 
-header .brand {
-  text-align: center;
-  overflow: visible; }
-  header .brand img {
-    width: 120px; }
-header .dates {
-  font-size: 48px;
-  font-weight: 100;
-  text-align: ro; }
-header .location {
-  font-size: 32px;
-  font-weight: 100;
-  text-align: center;
-  padding: 40px 0; }
-
-.page-home h1,
-.page-home h2,
-.page-home h3 {
-  text-align: center; }
-.page-home p {
-  font-size: 34px;
-  font-weight: 300;
-  text-align: center; }
-  .page-home p.annoucement {
-    margin-top: 60px;
-    color: #36C0CA;
-    font-weight: 300; }
-.page-home .introduction p {
-  margin-bottom: 0; }
-  .page-home .introduction p.small {
-    color: #36C0CA;
-    font-size: 16px;
-    text-transform: uppercase;
-    margin-top: 30px;
-    font-weight: 400; }
-    .page-home .introduction p.small .loud {
-      color: #F49DC3; }
-.page-home p.tickets,
-.page-home p.submit {
-  margin-top: 80px; }
-.page-home .introduction .ticketing a,
-.page-home .introduction .ticketing tito-button,
-.page-home .introduction .cfp a,
-.page-home .introduction .cfp tito-button {
+.ticketing a,
+.ticketing tito-button,
+.cfp a,
+.cfp tito-button {
   display: block;
   background: none;
   border: 4px solid #36C0CA;
@@ -1629,16 +1623,16 @@ header .location {
   text-align: center;
   text-transform: uppercase;
   text-decoration: none; }
-  .page-home .introduction .ticketing a.inverse,
-  .page-home .introduction .ticketing tito-button.inverse,
-  .page-home .introduction .cfp a.inverse,
-  .page-home .introduction .cfp tito-button.inverse {
+  .ticketing a.inverse,
+  .ticketing tito-button.inverse,
+  .cfp a.inverse,
+  .cfp tito-button.inverse {
     color: white;
     background: #36C0CA; }
-  .page-home .introduction .ticketing a button,
-  .page-home .introduction .ticketing tito-button button,
-  .page-home .introduction .cfp a button,
-  .page-home .introduction .cfp tito-button button {
+  .ticketing a button,
+  .ticketing tito-button button,
+  .cfp a button,
+  .cfp tito-button button {
     background: 0;
     border: 0;
     color: #36C0CA;
@@ -1648,6 +1642,41 @@ header .location {
     font-family: "Lato", sans-serif;
     font-weight: 400;
     text-transform: uppercase; }
+
+header .brand {
+  text-align: center;
+  overflow: visible; }
+  header .brand img {
+    width: 120px; }
+header nav {
+  padding: 20px 0; }
+header .dates-and-location {
+  color: #6C143A;
+  text-transform: uppercase;
+  font-weight: 300;
+  padding: 20px 0; }
+header nav > a {
+  padding: 8px 16px;
+  margin-right: 10px;
+  color: #36C0CA;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: 500;
+  border: 1px solid #36C0CA;
+  border-radius: 3px; }
+
+.page-home h1,
+.page-home h2,
+.page-home h3 {
+  text-align: center; }
+.page-home p {
+  text-align: center; }
+  .page-home p.annoucement {
+    margin-top: 60px;
+    color: #36C0CA;
+    font-weight: 300; }
+.page-home p.submit {
+  margin-top: 80px; }
 .page-home p.dates {
   font-weight: 300; }
 .page-home .friends {
@@ -1735,3 +1764,78 @@ header .location {
     .page-home .speaker.second {
       margin-left: 0;
       margin-top: -180px; } }
+
+.page-speakers .speakers {
+  margin-top: 60px; }
+.page-speakers .speaker {
+  margin-bottom: 40px; }
+  .page-speakers .speaker .avatar {
+    position: relative;
+    z-index: 900; }
+    .page-speakers .speaker .avatar img {
+      width: 160px; }
+    .page-speakers .speaker .avatar .name {
+      background: #FBC54A;
+      border-radius: 50%;
+      color: #8C6612;
+      font-size: 18px;
+      font-weight: 300;
+      height: 80px;
+      left: 50%;
+      margin-left: -80px;
+      padding: 18px 0;
+      position: absolute;
+      text-align: center;
+      top: -30px;
+      width: 80px;
+      z-index: 1300; }
+    .page-speakers .speaker .avatar.variation-1 img {
+      -webkit-transform: rotate(-21deg);
+              transform: rotate(-21deg); }
+    .page-speakers .speaker .avatar.variation-1 .name {
+      top: auto;
+      bottom: 0px; }
+    .page-speakers .speaker .avatar.variation-2 img {
+      -webkit-transform: rotate(-14deg);
+              transform: rotate(-14deg); }
+    .page-speakers .speaker .avatar.variation-3 img {
+      -webkit-transform: rotate(-4deg);
+              transform: rotate(-4deg); }
+    .page-speakers .speaker .avatar.variation-3 .name {
+      top: auto;
+      bottom: 0px; }
+    .page-speakers .speaker .avatar.variation-4 img {
+      -webkit-transform: rotate(12deg);
+              transform: rotate(12deg); }
+    .page-speakers .speaker .avatar.variation-5 img {
+      -webkit-transform: rotate(19deg);
+              transform: rotate(19deg); }
+    .page-speakers .speaker .avatar.variation-5 .name {
+      top: auto;
+      bottom: 0px; }
+    .page-speakers .speaker .avatar.variation-4 img {
+      -webkit-transform: rotate(24deg);
+              transform: rotate(24deg); }
+  .page-speakers .speaker .details {
+    position: relative;
+    z-index: 1100;
+    background: white; }
+    .page-speakers .speaker .details:before {
+      content: "";
+      position: absolute;
+      left: -50px;
+      width: 50px;
+      height: 100%;
+      background: linear-gradient(to right, rgba(255, 255, 255, 0) 0%, white 100%); }
+    .page-speakers .speaker .details .quote {
+      font-size: 22px;
+      text-align: left;
+      margin-bottom: 30px;
+      line-height: 30px; }
+    .page-speakers .speaker .details .bio {
+      text-align: left;
+      font-size: 18px;
+      font-weight: 300;
+      line-height: 24px; }
+    .page-speakers .speaker .details .social {
+      text-align: left; }

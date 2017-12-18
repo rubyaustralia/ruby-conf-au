@@ -1,7 +1,21 @@
 header {
+  position: relative;
+
+  .ribbon {
+    width: 100%;
+    height: 56px;
+    background: $color-fairy-floss;
+    position: absolute;
+    z-index: 0;
+    top: 50%;
+    margin-top: -28px;
+  }
+
   .container {
     @include align('center');
     @include align('middle');
+    position: relative;
+    z-index: 10;
   }
 
   .brand {
@@ -17,7 +31,7 @@ header {
   nav {
     @include span(5, $small: 12);
     @include align('start', $small: 'middle');
-    padding: 20px 0;
+    padding: 20px 10px;
   }
 
   .dates-and-location {
@@ -27,17 +41,22 @@ header {
     color: $color-black-cherry;
     text-transform: uppercase;
     font-weight: 300;
-    padding: 20px 0;
+    padding: 20px 10px;
   }
 
   nav > a {
     padding: 8px 16px;
     margin-right: 10px;
-    color: $color-sea-glass;
+    color: $color-black-cherry;
     text-decoration: none;
     text-transform: uppercase;
     font-weight: 500;
-    border: 1px solid $color-sea-glass;
+    border: 1px solid $color-black-cherry;
     border-radius: 3px;
+
+    &:hover {
+      background: $color-black-cherry;
+      color: $color-fairy-floss;
+    }
   }
 }

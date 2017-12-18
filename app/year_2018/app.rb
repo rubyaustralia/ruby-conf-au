@@ -16,8 +16,8 @@ module RubyConf
         data['name'].split(' ').last
       end
 
-      def avatar_filename
-        "/2018/images/speakers/#{first_name.downcase}-#{last_name.downcase}.png"
+      def avatar_filename(format: 'png')
+        "/2018/images/speakers/#{first_name.downcase}-#{last_name.downcase}.#{format}"
       end
 
       def bio
@@ -34,6 +34,10 @@ module RubyConf
 
       def twitter
         data["twitter"] && data["twitter"].strip
+      end
+
+      def is_keynote?
+        data["pitch"].strip.downcase == 'keynote' || data["pitch"].nil?
       end
 
       private

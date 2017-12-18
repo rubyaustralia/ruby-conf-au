@@ -14,21 +14,21 @@
             = speaker.first_name
             %br
             = speaker.last_name
-          %img{ src: speaker.avatar_filename }
+          %img{ src: speaker.avatar_filename(format: 'jpg') }
         .details
-          .quote= speaker.pitch
+          .quote{ class: speaker.is_keynote? ? "default" : "highlight"}= speaker.pitch
           .bio= speaker.bio
-          -#
-            .social
-              - if speaker.has_twitter?
-                %a{ href: "https://twitter.com/#{speaker.twitter}" } Twitter
-
-  .container
-    %p
-      &hellip;with more to be announced!
-      %br
-      %br
-      %a{ href: 'https://confirmsubscription.com/h/j/809D057CE90261E7', target: '_blank' } Subscribe for updates.
+          .social
+            - if speaker.has_twitter?
+              %a{ href: "https://twitter.com/#{speaker.twitter}", target: '_blank' }= "@#{speaker.twitter}"
+    .speaker
+      .avatar{ class: "variation-#{(1..5).to_a.sample}"}
+        %img{ src: '/2018/images/speakers/coming-soon.jpg' }
+      .details
+        .quote &hellip;and more to be announced!
+        .bio
+          Stay tuned over the next few weeks as we announce all the amazing speakers for RubyConf AU 2018. Don't wanna miss out on the news?
+          %a{ href: 'https://confirmsubscription.com/h/j/809D057CE90261E7', target: '_blank' } Subscribe for updates.
 
 .container
   %hr

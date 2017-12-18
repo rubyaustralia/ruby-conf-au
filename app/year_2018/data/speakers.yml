@@ -7,3 +7,12 @@
   pitch: "Keynote"
   bio: "Avdi Grimm has been hacking Ruby code for over 10 years, and is still loving it. He is chief aeronaut at ShipRise, head chef at RubyTapas.com, and a co-host of the Ruby Rogues podcast."
   twitter: avdi
+
+- name: Eleanor Haggerty
+  pitch: "Does your git log resemble an archaeological site from 500BC? Let's explore the surprising similarities between archaeology and programming to understand developer decision-making in 2017."
+  bio: "After many years translating Ancient Greek texts and working with antiquities, Eleanor began tinkering with code — now she writes Ruby instead of reading Homer. When she’s not digging into code at The Conversation, she’s probably cooking, attending a yoga class, or patting other people's dogs at the park."
+
+- name: Tom Gamon
+  pitch: "What dyslexia is, what it definitely isn’t, and why it makes you a great developer."
+  bio: "Tom is a ruby developer at Disco who has recently fled from London to settle in Melbourne. Alongside programming, he is interested by the mind, our cognitive biases and how these effect the way that we interact with each other."
+  twitter: thrgamon

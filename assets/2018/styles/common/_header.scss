@@ -42,6 +42,11 @@ header {
     text-transform: uppercase;
     font-weight: 300;
     padding: 20px 10px;
+
+    a {
+      color: $color-black-cherry;
+      text-decoration: none;
+    }
   }
 
   nav > a {

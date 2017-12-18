@@ -1672,6 +1672,9 @@ header {
     text-transform: uppercase;
     font-weight: 300;
     padding: 20px 10px; }
+    header .dates-and-location a {
+      color: #6C143A;
+      text-decoration: none; }
   header nav > a {
     padding: 8px 16px;
     margin-right: 10px;

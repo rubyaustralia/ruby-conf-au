@@ -17,3 +17,13 @@
   pitch: "What dyslexia is, what it definitely isn’t, and why it makes you a great developer."
   bio: "Tom is a ruby developer at Disco who has recently fled from London to settle in Melbourne. Alongside programming, he is interested by the mind, our cognitive biases and how these effect the way that we interact with each other."
   twitter: thrgamon
+
+- name: Amy Unger
+  pitch: "Pilots have the flight deck, Captain Kirk had his bridge, but what do you have for managing failure in your application?"
+  bio: "The granddaughter of a former MIT computer (yup, that was a job title), Amy was clearly supposed to be a programmer, but just did not get the message. Her wanderings have taken her through the land of libraries and archives and into software consulting. Now a software engineer at Heroku, she is deeply grateful for every scarce day she does not use vim commands in Google Docs."
+  twitter: cdwort
+
+- name: John Feminella
+  pitch: "Blockchains are a new kind of data structure offering an intriguing property: immutability through cryptography. We’ll use Ruby to explore the intriguing properties of blockchains, seen through the lens of a fictitious cryptocurrency we’ll create for the purposes of the talk — ConferenceCoin"
+  bio: "John Feminella is an avid technologist, occasional public speaker, and curiosity advocate. He serves as an advisor to Pivotal, where he works on helping enterprises transform the way they write, operate, and deploy software. He’s also the cofounder of a tiny analytics monitoring and reporting startup named UpHex. John lives in Charlottesville, VA and likes meta-jokes, milkshakes, and referring to himself in the third person in speaker bios."
+  twitter: jxxf

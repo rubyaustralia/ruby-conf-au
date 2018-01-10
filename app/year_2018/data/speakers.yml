@@ -8,6 +8,16 @@
   bio: "Avdi Grimm has been hacking Ruby code for over 10 years, and is still loving it. He is chief aeronaut at ShipRise, head chef at RubyTapas.com, and a co-host of the Ruby Rogues podcast."
   twitter: avdi
 
+- name: Stella Cotton
+  pitch: "Traditional application performance monitoring is great for debugging a single app but how do you debug a system with multiple services? Distributed tracing can help! You’ll learn the theory behind how distributed tracing works and dive into practical considerations you won’t get from a README."
+  bio: "Stella Cotton is a Tools engineer at Heroku and co-founder of AndConf and Fog City Ruby. She loves good abstractions and boring technology."
+  twitter: practice_cactus
+
+- name: Zach Holman
+  pitch: "After you tell developers you’re building a calendar, most will sadly sigh, comfort you, and send you to your doom. Because it’s true: everyone knows dates, times, and timezones can be hugely frustrating concepts in programming. But it turns out what you don’t know is even weirder!"
+  bio: "Zach Holman is a developer living in San Francisco. He joined GitHub in 2010 as one of their first engineering hires, and helped build and grow their product and culture over five years. Currently he’s the founder and CEO of During, a new calendar to help you during your day. He also advises startups, including GitLab, StackShare, and Dockbit."
+  twitter: holman
+
 - name: Amy Unger
   pitch: "Pilots have the flight deck, Captain Kirk had his bridge, but what do you have for managing failure in your application?"
   bio: "The granddaughter of a former MIT computer (yup, that was a job title), Amy was clearly supposed to be a programmer, but just did not get the message. Her wanderings have taken her through the land of libraries and archives and into software consulting. Now a software engineer at Heroku, she is deeply grateful for every scarce day she does not use vim commands in Google Docs."

@@ -56,7 +56,7 @@ module RubyConf
           end
 
           get '/:page_name' do
-            page_name = params[:page_name]
+            page_name = params[:page_name].underscore
             @page = page_name
             @title = page_name
             @speakers = YAML.load_file(File.join('app', 'year_2018', 'data', 'speakers.yml')).map{ |d| Speaker.new(d) }

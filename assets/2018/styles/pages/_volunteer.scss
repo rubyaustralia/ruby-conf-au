@@ -1,0 +1,38 @@
+.volunteer {
+  .help {
+    @include span(6, $small: 12);
+
+    p {
+      font-size: 22px;
+
+      &:last-of-type {
+        margin-bottom: 80px;
+      }
+    }
+  }
+
+  .caveat {
+    @include span(6, $small: 12);
+
+    p {
+      font-size: 12px;
+    }
+  }
+
+  a.cta {
+    @include span(12);
+    display: block;
+    background: none;
+    border: 4px solid $color-sea-glass;
+    border-radius: 4px;
+    color: $color-sea-glass;
+    cursor: pointer;
+    font-family: $default-font-family;
+    font-size: 20px;
+    font-weight: 400;
+    padding: 15px 40px;
+    text-align: center;
+    text-transform: uppercase;
+    text-decoration: none;
+  }
+}

@@ -8,6 +8,16 @@
   bio: "Avdi Grimm has been hacking Ruby code for over 10 years, and is still loving it. He is chief aeronaut at ShipRise, head chef at RubyTapas.com, and a co-host of the Ruby Rogues podcast."
   twitter: avdi
 
+- name: Katie McLaughlin
+  pitch: "JavaScript. The language developers love to hate. It is full of WATs, whys, and other annoyances; and yet it is the most used programming language in the world. If it’s so powerful, why do developers hate it so? We’ll discuss the power and functionally of this multi-tool of the web."
+  bio: "Katie has worn many different hats over the years. She has been a software developer for many languages, systems administrator for multiple operating systems, and speaker on many different topics. When she’s not changing the world, she enjoys making tapestries, cooking, and seeing just how well various application stacks handle emoji."
+  twitter: glasnt
+
+- name: Andy Nicholson
+  pitch: "Did you hear about this great Ruby-like language built in South America? No, not Elixir. Crystal!"
+  bio: "Human for over 30 years, a developer for 8 years, language polyamorist (but Ruby will always be my first ❤️). I care a lot about the Ruby community, and believe in clear and fun communication. Life's too short for: bad coffee, poor music, and white melamine."
+  twitter: andrewdotnich
+
 - name: Stella Cotton
   pitch: "Traditional application performance monitoring is great for debugging a single app but how do you debug a system with multiple services? Distributed tracing can help! You’ll learn the theory behind how distributed tracing works and dive into practical considerations you won’t get from a README."
   bio: "Stella Cotton is a Tools engineer at Heroku and co-founder of AndConf and Fog City Ruby. She loves good abstractions and boring technology."

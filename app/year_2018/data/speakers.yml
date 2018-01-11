@@ -14,7 +14,7 @@
   twitter: glasnt
 
 - name: Andy Nicholson
-  pitch: "Did you hear about this great Ruby-like language built in South America? No, not Elixir. Crystal!"
+  pitch: "Did you hear about this great Ruby-like language built in South America? No, not Elixir. Crystal! We’ll take a look at its syntax, design choices, its ecosystem, and tradeoffs. You’ll see how language design affects code, and become a better Rubyist along the way."
   bio: "Human for over 30 years, a developer for 8 years, language polyamorist (but Ruby will always be my first ❤️). I care a lot about the Ruby community, and believe in clear and fun communication. Life's too short for: bad coffee, poor music, and white melamine."
   twitter: andrewdotnich
 

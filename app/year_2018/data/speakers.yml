@@ -16,7 +16,7 @@
 - name: Ken Scambler
   pitch: "Functional programming has made great strides in the popular imagination, yet adoption of FP languages has often been challenging for companies, sputtering in fits and starts."
   bio: "Ken is a Melbourne-based software developer, whose job is to promote and guide good software practice at REA Group. He is an outspoken advocate of functional programming, runs a weekly \"FP Guild\" at REA, and is co-organiser of the Melbourne Scala User Group and Compose :: Melbourne FP Conference."
-  twitter: kenbot
+  twitter: KenScambler
 
 - name: Katie McLaughlin
   pitch: "JavaScript. The language developers love to hate. It is full of WATs, whys, and other annoyances; and yet it is the most used programming language in the world. If it’s so powerful, why do developers hate it so? We’ll discuss the power and functionally of this multi-tool of the web."

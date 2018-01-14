@@ -13,6 +13,11 @@
   bio: "Lauren is a Senior Full Stack Engineer at Netflix. Previously, she was Senior Developer at DockYard, a user experience driven software consultancy based in Boston, MA. Although formally educated in Finance, she has been involved with user interface and experience design for more than 5 years. She is also an active contributor to the Ember.js community, and a regular speaker at leading JavaScript and Elixir events & conferences."
   twitter: "sugarpirate_"
 
+- name: Ken Scambler
+  pitch: "Functional programming has made great strides in the popular imagination, yet adoption of FP languages has often been challenging for companies, sputtering in fits and starts."
+  bio: "Ken is a Melbourne-based software developer, whose job is to promote and guide good software practice at REA Group. He is an outspoken advocate of functional programming, runs a weekly \"FP Guild\" at REA, and is co-organiser of the Melbourne Scala User Group and Compose :: Melbourne FP Conference."
+  twitter: kenbot
+
 - name: Katie McLaughlin
   pitch: "JavaScript. The language developers love to hate. It is full of WATs, whys, and other annoyances; and yet it is the most used programming language in the world. If it’s so powerful, why do developers hate it so? We’ll discuss the power and functionally of this multi-tool of the web."
   bio: "Katie has worn many different hats over the years. She has been a software developer for many languages, systems administrator for multiple operating systems, and speaker on many different topics. When she’s not changing the world, she enjoys making tapestries, cooking, and seeing just how well various application stacks handle emoji."

@@ -8,6 +8,16 @@
   bio: "Avdi Grimm has been hacking Ruby code for over 10 years, and is still loving it. He is chief aeronaut at ShipRise, head chef at RubyTapas.com, and a co-host of the Ruby Rogues podcast."
   twitter: avdi
 
+- name: Danielle Adams
+  pitch: "Ruby is a widely used language, popular for serving web pages and storing data. What about serving different types of clients? Is it possible to use Ruby to talk to other machines? I’m going to share my experiences integrating Ruby services with hardware, such as barcode scanners and Zebra printers."
+  bio: "Danielle is a full-stack software engineer working at Blue Apron in New York City on their warehouse software. Her expertise stretches between front-end heavy web applications and a variety of back-ends. She has been coding since age 12. In her free time, she enjoys live music, food, teaching others to code, and hanging out with her cat."
+  twitter: adamzdanielle
+
+- name: Ryan Bigg
+  pitch: "The best talent of today is already working for someone else. Hiring them involves aggressive poaching, which isn’t sustainable in the long-term. Let’s look at how companies around the world are growing their own best and brightest, what’s worked for them and what hasn’t."
+  bio: "I’ve been mentoring developers for close to a decade. I’ve done this through lots and lots of pairing, book writing, my addiction to Stack Overflow, and plenty more. More recently, I’ve started up a Junior Engineering Program at Culture Amp where I’m growing 8 engineers into the confident and capable engineers of the future through a structured program."
+  twitter: ryanbigg
+
 - name: Lauren Tan
   pitch: "At Netflix, we’re continuously reinventing the way we entertain. We’ve sent DVDs in the mail, pioneered streaming video, and now we’re doing it all over again. In this talk, we’ll learn how Ruby helps the \"teams behind the streams\" create and produce billions of dollars of original content."
   bio: "Lauren is a Senior Full Stack Engineer at Netflix. Previously, she was Senior Developer at DockYard, a user experience driven software consultancy based in Boston, MA. Although formally educated in Finance, she has been involved with user interface and experience design for more than 5 years. She is also an active contributor to the Ember.js community, and a regular speaker at leading JavaScript and Elixir events & conferences."

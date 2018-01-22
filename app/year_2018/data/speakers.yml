@@ -8,6 +8,16 @@
   bio: "Avdi Grimm is a father, a Ruby Hero, the head chef at RubyTapas.com, and author of the books Confident Ruby and Exceptional Ruby. He splits his theoretical spare time between hiking the Smoky Mountains and dancing to oontz-oontz music. His passion is Ruby. He spends most of his time training and educating other programmers, speaking at software conferences, hosting podcast and programming episodes."
   twitter: avdi
 
+- name: Merrin Macload
+  pitch: "Politics and technology can not be separated. We’ll look at some of the technologies that people are using to shift political realities, and we’ll examine the political ideas that underpin the technologies that we use and build every day."
+  bio: "I am a developer, designer, and community organiser. I started Ruby New Zealand, Kiwi Ruby, and Rails Girls in Wellington, New Zealand. I like haiku, spreadsheets, and seeing fluffy dogs in the middle distance."
+  twitter: merxplat
+
+- name: Michael Morris
+  pitch: "We have a serious workplace with a serious problem - Mario Kart. We’ve employed Ruby to answer the important questions - just who is the best and is there any hope for justice in kart?"
+  bio: "Life has been a journey from shipping “The Conversation”, an attempt at improving the standard of journalism which now has editions in 7 countries and read by millions of people. Next was shipping the world’s first Ruby on Rails powered banking platform which recently won best banking platform in Australia. Now building an entirely new banking experience aiming to be a genuine alternative from current banks - Up. I still enjoy making time to work on the important things… you know… like Mario Kart."
+  twitter: mtcmorris
+
 - name: Danielle Adams
   pitch: "Ruby is a widely used language, popular for serving web pages and storing data. What about serving different types of clients? Is it possible to use Ruby to talk to other machines? I’m going to share my experiences integrating Ruby services with hardware, such as barcode scanners and Zebra printers."
   bio: "Danielle is a full-stack software engineer working at Blue Apron in New York City on their warehouse software. Her expertise stretches between front-end heavy web applications and a variety of back-ends. She has been coding since age 12. In her free time, she enjoys live music, food, teaching others to code, and hanging out with her cat."

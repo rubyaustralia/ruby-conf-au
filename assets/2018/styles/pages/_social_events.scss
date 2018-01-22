@@ -1,0 +1,5 @@
+.social-events {
+  .details {
+    @include span(8, $small: 12);
+  }
+}

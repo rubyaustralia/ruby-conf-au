@@ -8,7 +8,7 @@ header {
     position: absolute;
     z-index: 0;
     top: 50%;
-    margin-top: -28px;
+    margin-top: -58px;
   }
 
   .container {
@@ -29,6 +29,22 @@ header {
   }
 
   nav {
+    margin-top: 20px;
+    a {
+      text-transform: uppercase;
+      display: inline-block;
+      padding: 10px 5px;
+      text-decoration: none;
+      font-weight: bold;
+      margin: 0 4px;
+
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+
+  .nav {
     @include span(5, $small: 12);
     @include align('start', $small: 'middle');
     padding: 20px 10px;
@@ -49,19 +65,16 @@ header {
     }
   }
 
-  nav > a {
+  .nav > a {
     padding: 8px 16px;
-    margin-right: 10px;
-    color: $color-black-cherry;
+    color: white;
     text-decoration: none;
     text-transform: uppercase;
     font-weight: 500;
-    border: 1px solid $color-black-cherry;
+    background: $color-black-cherry;
     border-radius: 3px;
 
     &:hover {
-      background: $color-black-cherry;
-      color: $color-fairy-floss;
     }
   }
 }

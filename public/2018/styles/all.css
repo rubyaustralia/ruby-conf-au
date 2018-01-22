@@ -480,7 +480,7 @@ hr,
 .cfp a,
 .cfp tito-button,
 header .brand,
-header nav,
+header .nav,
 header .dates-and-location,
 .page-home h1,
 .page-home h2,
@@ -489,6 +489,11 @@ header .dates-and-location,
 .page-home p.annoucement,
 .page-speakers .speaker .avatar,
 .page-speakers .speaker .details,
+.volunteer .help,
+.volunteer .caveat,
+.volunteer a.cta,
+.location .transport,
+.social-events .details,
 .col-xs-offset-0,
 .col-xs-offset-1,
 .col-xs-offset-2,
@@ -575,9 +580,9 @@ header .dates-and-location,
 .cfp, .ticketing a,
 .ticketing tito-button,
 .cfp a,
-.cfp tito-button, header .brand, header nav, header .dates-and-location, .page-home h1,
+.cfp tito-button, header .brand, header .nav, header .dates-and-location, .page-home h1,
 .page-home h2,
-.page-home h3, .page-home p, .page-home p.annoucement, .page-speakers .speaker .avatar, .page-speakers .speaker .details {
+.page-home h3, .page-home p, .page-home p.annoucement, .page-speakers .speaker .avatar, .page-speakers .speaker .details, .volunteer .help, .volunteer .caveat, .volunteer a.cta, .location .transport, .social-events .details {
   -ms-flex-preferred-size: 100%;
   flex-basis: 100%;
   max-width: 100%; }
@@ -638,7 +643,7 @@ header .dates-and-location,
   -ms-flex-align: start;
   align-items: flex-start; }
 
-.middle-xs, .sponsors .sponsor-group, header .container, header nav, header .dates-and-location, .page-speakers .speaker .avatar {
+.middle-xs, .sponsors .sponsor-group, header .container, header .nav, header .dates-and-location, .page-speakers .speaker .avatar {
   -ms-flex-align: center;
   align-items: center; }
 
@@ -703,7 +708,7 @@ header .dates-and-location,
   .cfp a,
   .cfp tito-button,
   header .brand,
-  header nav,
+  header .nav,
   header .dates-and-location,
   .page-home h1,
   .page-home h2,
@@ -711,6 +716,11 @@ header .dates-and-location,
   .page-home p,
   .page-speakers .speaker .avatar,
   .page-speakers .speaker .details,
+  .volunteer .help,
+  .volunteer .caveat,
+  .volunteer a.cta,
+  .location .transport,
+  .social-events .details,
   .col-sm-offset-0,
   .col-sm-offset-1,
   .col-sm-offset-2,
@@ -797,9 +807,9 @@ header .dates-and-location,
   .col-sm-12, .introduction .container p, .sponsors .sponsor-group, .sponsors .sponsor-group > h4, .ticketing a,
   .ticketing tito-button,
   .cfp a,
-  .cfp tito-button, header .brand, header nav, header .dates-and-location, .page-home h1,
+  .cfp tito-button, header .brand, header .nav, header .dates-and-location, .page-home h1,
   .page-home h2,
-  .page-home h3, .page-home p, .page-speakers .speaker .avatar, .page-speakers .speaker .details {
+  .page-home h3, .page-home p, .page-speakers .speaker .avatar, .page-speakers .speaker .details, .volunteer .help, .volunteer .caveat, .volunteer a.cta, .location .transport, .social-events .details {
     -ms-flex-preferred-size: 100%;
     flex-basis: 100%;
     max-width: 100%; }
@@ -860,7 +870,7 @@ header .dates-and-location,
     -ms-flex-align: start;
     align-items: flex-start; }
 
-  .middle-sm, .sponsors .sponsor-group, header .container, header nav, header .dates-and-location, .page-speakers .speaker .avatar {
+  .middle-sm, .sponsors .sponsor-group, header .container, header .nav, header .dates-and-location, .page-speakers .speaker .avatar {
     -ms-flex-align: center;
     align-items: center; }
 
@@ -906,7 +916,7 @@ header .dates-and-location,
   .col-md-5,
   .ticketing,
   .cfp,
-  header nav,
+  header .nav,
   header .dates-and-location,
   .col-md-6,
   .introduction .container p,
@@ -914,9 +924,13 @@ header .dates-and-location,
   .sponsors p,
   .page-home p.annoucement,
   .page-home .coming-soon p,
+  .volunteer .help,
+  .volunteer .caveat,
   .col-md-7,
   .col-md-8,
   .page-speakers .speaker .details,
+  .location .transport,
+  .social-events .details,
   .col-md-9,
   .col-md-10,
   .page-speakers .speaker,
@@ -932,6 +946,7 @@ header .dates-and-location,
   .page-home h2,
   .page-home h3,
   .page-home p,
+  .volunteer a.cta,
   .col-md-offset-0,
   .col-md-offset-1,
   .col-md-offset-2,
@@ -980,12 +995,12 @@ header .dates-and-location,
     max-width: 33.33333333%; }
 
   .col-md-5, .ticketing,
-  .cfp, header nav, header .dates-and-location {
+  .cfp, header .nav, header .dates-and-location {
     -ms-flex-preferred-size: 41.66666667%;
     flex-basis: 41.66666667%;
     max-width: 41.66666667%; }
 
-  .col-md-6, .introduction .container p, .sponsors .container h3, .sponsors p, .page-home p.annoucement, .page-home .coming-soon p {
+  .col-md-6, .introduction .container p, .sponsors .container h3, .sponsors p, .page-home p.annoucement, .page-home .coming-soon p, .volunteer .help, .volunteer .caveat {
     -ms-flex-preferred-size: 50%;
     flex-basis: 50%;
     max-width: 50%; }
@@ -995,7 +1010,7 @@ header .dates-and-location,
     flex-basis: 58.33333333%;
     max-width: 58.33333333%; }
 
-  .col-md-8, .page-speakers .speaker .details {
+  .col-md-8, .page-speakers .speaker .details, .location .transport, .social-events .details {
     -ms-flex-preferred-size: 66.66666667%;
     flex-basis: 66.66666667%;
     max-width: 66.66666667%; }
@@ -1020,7 +1035,7 @@ header .dates-and-location,
   .cfp a,
   .cfp tito-button, .page-home h1,
   .page-home h2,
-  .page-home h3, .page-home p {
+  .page-home h3, .page-home p, .volunteer a.cta {
     -ms-flex-preferred-size: 100%;
     flex-basis: 100%;
     max-width: 100%; }
@@ -1061,7 +1076,7 @@ header .dates-and-location,
   .col-md-offset-11 {
     margin-left: 91.66666667%; }
 
-  .start-md, header nav {
+  .start-md, header .nav {
     -ms-flex-pack: start;
     justify-content: flex-start;
     text-align: start; }
@@ -1127,7 +1142,7 @@ header .dates-and-location,
   .col-lg-5,
   .ticketing,
   .cfp,
-  header nav,
+  header .nav,
   header .dates-and-location,
   .col-lg-6,
   .introduction .container p,
@@ -1135,9 +1150,13 @@ header .dates-and-location,
   .sponsors p,
   .page-home p.annoucement,
   .page-home .coming-soon p,
+  .volunteer .help,
+  .volunteer .caveat,
   .col-lg-7,
   .col-lg-8,
   .page-speakers .speaker .details,
+  .location .transport,
+  .social-events .details,
   .col-lg-9,
   .col-lg-10,
   .page-speakers .speaker,
@@ -1153,6 +1172,7 @@ header .dates-and-location,
   .page-home h2,
   .page-home h3,
   .page-home p,
+  .volunteer a.cta,
   .col-lg-offset-0,
   .col-lg-offset-1,
   .col-lg-offset-2,
@@ -1201,12 +1221,12 @@ header .dates-and-location,
     max-width: 33.33333333%; }
 
   .col-lg-5, .ticketing,
-  .cfp, header nav, header .dates-and-location {
+  .cfp, header .nav, header .dates-and-location {
     -ms-flex-preferred-size: 41.66666667%;
     flex-basis: 41.66666667%;
     max-width: 41.66666667%; }
 
-  .col-lg-6, .introduction .container p, .sponsors .container h3, .sponsors p, .page-home p.annoucement, .page-home .coming-soon p {
+  .col-lg-6, .introduction .container p, .sponsors .container h3, .sponsors p, .page-home p.annoucement, .page-home .coming-soon p, .volunteer .help, .volunteer .caveat {
     -ms-flex-preferred-size: 50%;
     flex-basis: 50%;
     max-width: 50%; }
@@ -1216,7 +1236,7 @@ header .dates-and-location,
     flex-basis: 58.33333333%;
     max-width: 58.33333333%; }
 
-  .col-lg-8, .page-speakers .speaker .details {
+  .col-lg-8, .page-speakers .speaker .details, .location .transport, .social-events .details {
     -ms-flex-preferred-size: 66.66666667%;
     flex-basis: 66.66666667%;
     max-width: 66.66666667%; }
@@ -1241,7 +1261,7 @@ header .dates-and-location,
   .cfp a,
   .cfp tito-button, .page-home h1,
   .page-home h2,
-  .page-home h3, .page-home p {
+  .page-home h3, .page-home p, .volunteer a.cta {
     -ms-flex-preferred-size: 100%;
     flex-basis: 100%;
     max-width: 100%; }
@@ -1282,7 +1302,7 @@ header .dates-and-location,
   .col-lg-offset-11 {
     margin-left: 91.66666667%; }
 
-  .start-lg, header nav {
+  .start-lg, header .nav {
     -ms-flex-pack: start;
     justify-content: flex-start;
     text-align: start; }
@@ -1544,19 +1564,28 @@ p {
   font-weight: 300; }
 
 h1 {
-  font-size: 72px;
-  font-weight: 100;
+  font-size: 64px;
+  font-weight: 300;
   text-align: center; }
 
 h2 {
   font-size: 48px;
-  font-weight: 100;
+  font-weight: 300;
   text-align: center; }
 
 h3 {
   font-size: 34px;
   font-weight: 200;
   text-align: center; }
+
+h4 {
+  font-size: 28px;
+  font-weight: 400;
+  text-align: center;
+  width: 100%;
+  margin-top: 80px;
+  margin-bottom: 0;
+  text-transform: uppercase; }
 
 hr {
   border: 0;
@@ -1575,7 +1604,7 @@ hr {
   line-height: 48px; }
 
 .introduction {
-  margin: 20px 0 80px; }
+  margin: 40px 0 80px; }
 
 p {
   margin-bottom: 0; }
@@ -1656,7 +1685,7 @@ header {
     position: absolute;
     z-index: 0;
     top: 50%;
-    margin-top: -28px; }
+    margin-top: -58px; }
   header .container {
     position: relative;
     z-index: 10; }
@@ -1666,6 +1695,17 @@ header {
     header .brand img {
       width: 120px; }
   header nav {
+    margin-top: 20px; }
+    header nav a {
+      text-transform: uppercase;
+      display: inline-block;
+      padding: 10px 5px;
+      text-decoration: none;
+      font-weight: bold;
+      margin: 0 4px; }
+      header nav a:hover {
+        text-decoration: underline; }
+  header .nav {
     padding: 20px 10px; }
   header .dates-and-location {
     color: #6C143A;
@@ -1675,18 +1715,14 @@ header {
     header .dates-and-location a {
       color: #6C143A;
       text-decoration: none; }
-  header nav > a {
+  header .nav > a {
     padding: 8px 16px;
-    margin-right: 10px;
-    color: #6C143A;
+    color: white;
     text-decoration: none;
     text-transform: uppercase;
     font-weight: 500;
-    border: 1px solid #6C143A;
+    background: #6C143A;
     border-radius: 3px; }
-    header nav > a:hover {
-      background: #6C143A;
-      color: #F49DC3; }
 
 .page-home h1,
 .page-home h2,
@@ -1893,3 +1929,34 @@ header {
       margin-bottom: 20px; }
     .page-speakers .speaker .details .social {
       text-align: left; }
+
+.volunteer .help p {
+  font-size: 22px; }
+  .volunteer .help p:last-of-type {
+    margin-bottom: 80px; }
+.volunteer .caveat p {
+  font-size: 12px; }
+.volunteer a.cta {
+  display: block;
+  background: none;
+  border: 4px solid #36C0CA;
+  border-radius: 4px;
+  color: #36C0CA;
+  cursor: pointer;
+  font-family: "Lato", sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+  padding: 15px 40px;
+  text-align: center;
+  text-transform: uppercase;
+  text-decoration: none; }
+
+.introduction + .location {
+  margin-top: -100px; }
+
+.location img.map {
+  max-width: 100%;
+  border-radius: 50%;
+  border: 4px solid #FBC54A; }
+.location h4 + p {
+  margin-top: 10px; }

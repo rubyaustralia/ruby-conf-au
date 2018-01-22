@@ -449,11 +449,11 @@ template {
 .col-xs-1,
 hr,
 .col-xs-2,
-.sponsors .sponsor-group.amber .sponsor,
-.sponsors .sponsor-group.speaker-sponsors .sponsor,
 .col-xs-3,
 .col-xs-4,
 .sponsors .sponsor-group.opal .sponsor,
+.sponsors .sponsor-group.amber .sponsor,
+.sponsors .sponsor-group.speaker-sponsors .sponsor,
 .col-xs-5,
 .col-xs-6,
 .sponsors p,
@@ -526,7 +526,7 @@ header .dates-and-location,
   flex-basis: 8.33333333%;
   max-width: 8.33333333%; }
 
-.col-xs-2, .sponsors .sponsor-group.amber .sponsor, .sponsors .sponsor-group.speaker-sponsors .sponsor {
+.col-xs-2 {
   -ms-flex-preferred-size: 16.66666667%;
   flex-basis: 16.66666667%;
   max-width: 16.66666667%; }
@@ -536,7 +536,7 @@ header .dates-and-location,
   flex-basis: 25%;
   max-width: 25%; }
 
-.col-xs-4, .sponsors .sponsor-group.opal .sponsor {
+.col-xs-4, .sponsors .sponsor-group.opal .sponsor, .sponsors .sponsor-group.amber .sponsor, .sponsors .sponsor-group.speaker-sponsors .sponsor {
   -ms-flex-preferred-size: 33.33333333%;
   flex-basis: 33.33333333%;
   max-width: 33.33333333%; }

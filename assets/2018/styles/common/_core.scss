@@ -153,11 +153,11 @@ p {
     }
 
     &.amber .sponsor {
-      @include span(1, $x-small: 2);
+      @include span(1, $x-small: 4);
     }
 
     &.speaker-sponsors .sponsor {
-      @include span(2, $x-small: 2);
+      @include span(2, $x-small: 4);
     }
   }
 }

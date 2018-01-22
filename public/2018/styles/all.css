@@ -492,6 +492,8 @@ header .dates-and-location,
 .volunteer .help,
 .volunteer .caveat,
 .volunteer a.cta,
+.location .transport,
+.social-events .details,
 .col-xs-offset-0,
 .col-xs-offset-1,
 .col-xs-offset-2,
@@ -580,7 +582,7 @@ header .dates-and-location,
 .cfp a,
 .cfp tito-button, header .brand, header .nav, header .dates-and-location, .page-home h1,
 .page-home h2,
-.page-home h3, .page-home p, .page-home p.annoucement, .page-speakers .speaker .avatar, .page-speakers .speaker .details, .volunteer .help, .volunteer .caveat, .volunteer a.cta {
+.page-home h3, .page-home p, .page-home p.annoucement, .page-speakers .speaker .avatar, .page-speakers .speaker .details, .volunteer .help, .volunteer .caveat, .volunteer a.cta, .location .transport, .social-events .details {
   -ms-flex-preferred-size: 100%;
   flex-basis: 100%;
   max-width: 100%; }
@@ -717,6 +719,8 @@ header .dates-and-location,
   .volunteer .help,
   .volunteer .caveat,
   .volunteer a.cta,
+  .location .transport,
+  .social-events .details,
   .col-sm-offset-0,
   .col-sm-offset-1,
   .col-sm-offset-2,
@@ -805,7 +809,7 @@ header .dates-and-location,
   .cfp a,
   .cfp tito-button, header .brand, header .nav, header .dates-and-location, .page-home h1,
   .page-home h2,
-  .page-home h3, .page-home p, .page-speakers .speaker .avatar, .page-speakers .speaker .details, .volunteer .help, .volunteer .caveat, .volunteer a.cta {
+  .page-home h3, .page-home p, .page-speakers .speaker .avatar, .page-speakers .speaker .details, .volunteer .help, .volunteer .caveat, .volunteer a.cta, .location .transport, .social-events .details {
     -ms-flex-preferred-size: 100%;
     flex-basis: 100%;
     max-width: 100%; }
@@ -925,6 +929,8 @@ header .dates-and-location,
   .col-md-7,
   .col-md-8,
   .page-speakers .speaker .details,
+  .location .transport,
+  .social-events .details,
   .col-md-9,
   .col-md-10,
   .page-speakers .speaker,
@@ -1004,7 +1010,7 @@ header .dates-and-location,
     flex-basis: 58.33333333%;
     max-width: 58.33333333%; }
 
-  .col-md-8, .page-speakers .speaker .details {
+  .col-md-8, .page-speakers .speaker .details, .location .transport, .social-events .details {
     -ms-flex-preferred-size: 66.66666667%;
     flex-basis: 66.66666667%;
     max-width: 66.66666667%; }
@@ -1149,6 +1155,8 @@ header .dates-and-location,
   .col-lg-7,
   .col-lg-8,
   .page-speakers .speaker .details,
+  .location .transport,
+  .social-events .details,
   .col-lg-9,
   .col-lg-10,
   .page-speakers .speaker,
@@ -1228,7 +1236,7 @@ header .dates-and-location,
     flex-basis: 58.33333333%;
     max-width: 58.33333333%; }
 
-  .col-lg-8, .page-speakers .speaker .details {
+  .col-lg-8, .page-speakers .speaker .details, .location .transport, .social-events .details {
     -ms-flex-preferred-size: 66.66666667%;
     flex-basis: 66.66666667%;
     max-width: 66.66666667%; }
@@ -1556,19 +1564,28 @@ p {
   font-weight: 300; }
 
 h1 {
-  font-size: 72px;
-  font-weight: 100;
+  font-size: 64px;
+  font-weight: 300;
   text-align: center; }
 
 h2 {
   font-size: 48px;
-  font-weight: 100;
+  font-weight: 300;
   text-align: center; }
 
 h3 {
   font-size: 34px;
   font-weight: 200;
   text-align: center; }
+
+h4 {
+  font-size: 28px;
+  font-weight: 400;
+  text-align: center;
+  width: 100%;
+  margin-top: 80px;
+  margin-bottom: 0;
+  text-transform: uppercase; }
 
 hr {
   border: 0;
@@ -1933,3 +1950,13 @@ header {
   text-align: center;
   text-transform: uppercase;
   text-decoration: none; }
+
+.introduction + .location {
+  margin-top: -100px; }
+
+.location img.map {
+  max-width: 100%;
+  border-radius: 50%;
+  border: 4px solid #FBC54A; }
+.location h4 + p {
+  margin-top: 10px; }

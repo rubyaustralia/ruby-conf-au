@@ -19,14 +19,14 @@ p {
 }
 
 h1 {
-  font-size: 72px;
-  font-weight: 100;
+  font-size: 64px;
+  font-weight: 300;
   text-align: center;
 }
 
 h2 {
   font-size: 48px;
-  font-weight: 100;
+  font-weight: 300;
   text-align: center;
 }
 
@@ -34,6 +34,16 @@ h3 {
   font-size: 34px;
   font-weight: 200;
   text-align: center;
+}
+
+h4 {
+  font-size: 28px;
+  font-weight: 400;
+  text-align: center;
+  width: 100%;
+  margin-top: 80px;
+  margin-bottom: 0;
+  text-transform: uppercase;
 }
 
 hr {

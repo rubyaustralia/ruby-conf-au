@@ -451,14 +451,14 @@ hr,
 .col-xs-2,
 .col-xs-3,
 .col-xs-4,
-.sponsors .sponsor-group.opal .sponsor,
-.sponsors .sponsor-group.amber .sponsor,
-.sponsors .sponsor-group.speaker-sponsors .sponsor,
 .col-xs-5,
 .col-xs-6,
 .sponsors p,
 .col-xs-7,
 .sponsors .sponsor-group.emerald .sponsor,
+.sponsors .sponsor-group.opal .sponsor,
+.sponsors .sponsor-group.amber .sponsor,
+.sponsors .sponsor-group.speaker-sponsors .sponsor,
 .col-xs-8,
 .page-home .friends p,
 .col-xs-9,
@@ -536,7 +536,7 @@ header .dates-and-location,
   flex-basis: 25%;
   max-width: 25%; }
 
-.col-xs-4, .sponsors .sponsor-group.opal .sponsor, .sponsors .sponsor-group.amber .sponsor, .sponsors .sponsor-group.speaker-sponsors .sponsor {
+.col-xs-4 {
   -ms-flex-preferred-size: 33.33333333%;
   flex-basis: 33.33333333%;
   max-width: 33.33333333%; }
@@ -551,7 +551,7 @@ header .dates-and-location,
   flex-basis: 50%;
   max-width: 50%; }
 
-.col-xs-7, .sponsors .sponsor-group.emerald .sponsor {
+.col-xs-7, .sponsors .sponsor-group.emerald .sponsor, .sponsors .sponsor-group.opal .sponsor, .sponsors .sponsor-group.amber .sponsor, .sponsors .sponsor-group.speaker-sponsors .sponsor {
   -ms-flex-preferred-size: 58.33333333%;
   flex-basis: 58.33333333%;
   max-width: 58.33333333%; }
@@ -1567,11 +1567,17 @@ h1 {
   font-size: 64px;
   font-weight: 300;
   text-align: center; }
+  @media (max-width: 374px) {
+    h1 {
+      font-size: 36px; } }
 
 h2 {
   font-size: 48px;
   font-weight: 300;
   text-align: center; }
+  @media (max-width: 374px) {
+    h2 {
+      font-size: 36px; } }
 
 h3 {
   font-size: 34px;
@@ -1633,10 +1639,12 @@ p {
     text-align: center; }
   .sponsors .sponsor-group {
     margin-bottom: 60px; }
-    .sponsors .sponsor-group > .sponsor {
+    .sponsors .sponsor-group > .sponsor-group {
+      margin-bottom: 0; }
+    .sponsors .sponsor-group .sponsor {
       margin-top: 30px;
       display: inline; }
-    .sponsors .sponsor-group > .sponsor img {
+    .sponsors .sponsor-group .sponsor img {
       max-width: 90%; }
 
 .ticketing a,

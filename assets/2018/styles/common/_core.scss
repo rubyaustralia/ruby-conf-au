@@ -22,12 +22,20 @@ h1 {
   font-size: 64px;
   font-weight: 300;
   text-align: center;
+
+  @include responsive-small-mobile {
+    font-size: 36px;
+  }
 }
 
 h2 {
   font-size: 48px;
   font-weight: 300;
   text-align: center;
+
+  @include responsive-small-mobile {
+    font-size: 36px;
+  }
 }
 
 h3 {
@@ -135,8 +143,9 @@ p {
     margin-bottom: 60px;
 
     > h4 { @include span(12); }
-    > .sponsor { margin-top: 30px; display: inline;}
-    > .sponsor img {
+    > .sponsor-group { margin-bottom: 0; }
+    .sponsor { margin-top: 30px; display: inline;}
+    .sponsor img {
       max-width: 90%;
     }
 
@@ -149,15 +158,15 @@ p {
     }
 
     &.opal .sponsor {
-      @include span(2, $x-small: 4);
+      @include span(2, $x-small: 7);
     }
 
     &.amber .sponsor {
-      @include span(1, $x-small: 4);
+      @include span(1, $x-small: 7);
     }
 
     &.speaker-sponsors .sponsor {
-      @include span(2, $x-small: 4);
+      @include span(2, $x-small: 7);
     }
   }
 }

@@ -493,7 +493,7 @@ header .dates-and-location,
 .volunteer .caveat,
 .volunteer a.cta,
 .location .transport,
-.social-events .details,
+.social-events p,
 .col-xs-offset-0,
 .col-xs-offset-1,
 .col-xs-offset-2,
@@ -582,7 +582,7 @@ header .dates-and-location,
 .cfp a,
 .cfp tito-button, header .brand, header .nav, header .dates-and-location, .page-home h1,
 .page-home h2,
-.page-home h3, .page-home p, .page-home p.annoucement, .page-speakers .speaker .avatar, .page-speakers .speaker .details, .volunteer .help, .volunteer .caveat, .volunteer a.cta, .location .transport, .social-events .details {
+.page-home h3, .page-home p, .page-home p.annoucement, .page-speakers .speaker .avatar, .page-speakers .speaker .details, .volunteer .help, .volunteer .caveat, .volunteer a.cta, .location .transport, .social-events p {
   -ms-flex-preferred-size: 100%;
   flex-basis: 100%;
   max-width: 100%; }
@@ -720,7 +720,7 @@ header .dates-and-location,
   .volunteer .caveat,
   .volunteer a.cta,
   .location .transport,
-  .social-events .details,
+  .social-events p,
   .col-sm-offset-0,
   .col-sm-offset-1,
   .col-sm-offset-2,
@@ -809,7 +809,7 @@ header .dates-and-location,
   .cfp a,
   .cfp tito-button, header .brand, header .nav, header .dates-and-location, .page-home h1,
   .page-home h2,
-  .page-home h3, .page-home p, .page-speakers .speaker .avatar, .page-speakers .speaker .details, .volunteer .help, .volunteer .caveat, .volunteer a.cta, .location .transport, .social-events .details {
+  .page-home h3, .page-home p, .page-speakers .speaker .avatar, .page-speakers .speaker .details, .volunteer .help, .volunteer .caveat, .volunteer a.cta, .location .transport, .social-events p {
     -ms-flex-preferred-size: 100%;
     flex-basis: 100%;
     max-width: 100%; }
@@ -930,7 +930,7 @@ header .dates-and-location,
   .col-md-8,
   .page-speakers .speaker .details,
   .location .transport,
-  .social-events .details,
+  .social-events p,
   .col-md-9,
   .col-md-10,
   .page-speakers .speaker,
@@ -1010,7 +1010,7 @@ header .dates-and-location,
     flex-basis: 58.33333333%;
     max-width: 58.33333333%; }
 
-  .col-md-8, .page-speakers .speaker .details, .location .transport, .social-events .details {
+  .col-md-8, .page-speakers .speaker .details, .location .transport, .social-events p {
     -ms-flex-preferred-size: 66.66666667%;
     flex-basis: 66.66666667%;
     max-width: 66.66666667%; }
@@ -1156,7 +1156,7 @@ header .dates-and-location,
   .col-lg-8,
   .page-speakers .speaker .details,
   .location .transport,
-  .social-events .details,
+  .social-events p,
   .col-lg-9,
   .col-lg-10,
   .page-speakers .speaker,
@@ -1236,7 +1236,7 @@ header .dates-and-location,
     flex-basis: 58.33333333%;
     max-width: 58.33333333%; }
 
-  .col-lg-8, .page-speakers .speaker .details, .location .transport, .social-events .details {
+  .col-lg-8, .page-speakers .speaker .details, .location .transport, .social-events p {
     -ms-flex-preferred-size: 66.66666667%;
     flex-basis: 66.66666667%;
     max-width: 66.66666667%; }
@@ -1963,8 +1963,50 @@ header {
   margin-top: -100px; }
 
 .location img.map {
+  border-radius: 50%;
+  border: 4px solid #FBC54A;
+  max-width: 100%; }
+.location h4 + p {
+  margin-top: 10px; }
+
+.introduction + .social-events {
+  margin-top: -40px; }
+
+.social-events .spotlight {
+  position: relative; }
+  .social-events .spotlight .sticker {
+    position: absolute;
+    top: -30px;
+    left: -30px;
+    background: #FBC54A;
+    color: #8C6612;
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    font-size: 44px;
+    font-weight: 300;
+    line-height: 44px;
+    padding: 50px 20px;
+    -webkit-transform: rotate(-20deg);
+            transform: rotate(-20deg); }
+    .social-events .spotlight .sticker.right {
+      font-size: 38px;
+      line-height: 38px;
+      left: auto;
+      right: -30px;
+      padding: 60px 0;
+      -webkit-transform: rotate(20deg);
+              transform: rotate(20deg); }
+    .social-events .spotlight .sticker small {
+      display: block;
+      font-size: 24px;
+      font-weight: 600;
+      line-height: 24px;
+      margin-top: 10px; }
+.social-events img.feature {
   max-width: 100%;
   border-radius: 50%;
-  border: 4px solid #FBC54A; }
-.location h4 + p {
+  border: 4px solid #FBC54A;
+  width: 512px; }
+.social-events h4 + p {
   margin-top: 10px; }

@@ -494,6 +494,8 @@ header .dates-and-location,
 .volunteer a.cta,
 .location .transport,
 .social-events p,
+.social-events .saturday,
+.social-events .saturday p,
 .col-xs-offset-0,
 .col-xs-offset-1,
 .col-xs-offset-2,
@@ -582,7 +584,7 @@ header .dates-and-location,
 .cfp a,
 .cfp tito-button, header .brand, header .nav, header .dates-and-location, .page-home h1,
 .page-home h2,
-.page-home h3, .page-home p, .page-home p.annoucement, .page-speakers .speaker .avatar, .page-speakers .speaker .details, .volunteer .help, .volunteer .caveat, .volunteer a.cta, .location .transport, .social-events p {
+.page-home h3, .page-home p, .page-home p.annoucement, .page-speakers .speaker .avatar, .page-speakers .speaker .details, .volunteer .help, .volunteer .caveat, .volunteer a.cta, .location .transport, .social-events p, .social-events .saturday, .social-events .saturday p {
   -ms-flex-preferred-size: 100%;
   flex-basis: 100%;
   max-width: 100%; }
@@ -721,6 +723,8 @@ header .dates-and-location,
   .volunteer a.cta,
   .location .transport,
   .social-events p,
+  .social-events .saturday,
+  .social-events .saturday p,
   .col-sm-offset-0,
   .col-sm-offset-1,
   .col-sm-offset-2,
@@ -809,7 +813,7 @@ header .dates-and-location,
   .cfp a,
   .cfp tito-button, header .brand, header .nav, header .dates-and-location, .page-home h1,
   .page-home h2,
-  .page-home h3, .page-home p, .page-speakers .speaker .avatar, .page-speakers .speaker .details, .volunteer .help, .volunteer .caveat, .volunteer a.cta, .location .transport, .social-events p {
+  .page-home h3, .page-home p, .page-speakers .speaker .avatar, .page-speakers .speaker .details, .volunteer .help, .volunteer .caveat, .volunteer a.cta, .location .transport, .social-events p, .social-events .saturday, .social-events .saturday p {
     -ms-flex-preferred-size: 100%;
     flex-basis: 100%;
     max-width: 100%; }
@@ -913,6 +917,7 @@ header .dates-and-location,
   .sponsors .sponsor-group.ruby .sponsor,
   .page-home .friends p,
   .page-speakers .speaker .avatar,
+  .social-events .saturday,
   .col-md-5,
   .ticketing,
   .cfp,
@@ -947,6 +952,7 @@ header .dates-and-location,
   .page-home h3,
   .page-home p,
   .volunteer a.cta,
+  .social-events .saturday p,
   .col-md-offset-0,
   .col-md-offset-1,
   .col-md-offset-2,
@@ -989,7 +995,7 @@ header .dates-and-location,
     flex-basis: 25%;
     max-width: 25%; }
 
-  .col-md-4, .sponsors .container p, .sponsors .sponsor-group.ruby .sponsor, .page-home .friends p, .page-speakers .speaker .avatar {
+  .col-md-4, .sponsors .container p, .sponsors .sponsor-group.ruby .sponsor, .page-home .friends p, .page-speakers .speaker .avatar, .social-events .saturday {
     -ms-flex-preferred-size: 33.33333333%;
     flex-basis: 33.33333333%;
     max-width: 33.33333333%; }
@@ -1035,7 +1041,7 @@ header .dates-and-location,
   .cfp a,
   .cfp tito-button, .page-home h1,
   .page-home h2,
-  .page-home h3, .page-home p, .volunteer a.cta {
+  .page-home h3, .page-home p, .volunteer a.cta, .social-events .saturday p {
     -ms-flex-preferred-size: 100%;
     flex-basis: 100%;
     max-width: 100%; }
@@ -1139,6 +1145,7 @@ header .dates-and-location,
   .sponsors .sponsor-group.ruby .sponsor,
   .page-home .friends p,
   .page-speakers .speaker .avatar,
+  .social-events .saturday,
   .col-lg-5,
   .ticketing,
   .cfp,
@@ -1173,6 +1180,7 @@ header .dates-and-location,
   .page-home h3,
   .page-home p,
   .volunteer a.cta,
+  .social-events .saturday p,
   .col-lg-offset-0,
   .col-lg-offset-1,
   .col-lg-offset-2,
@@ -1215,7 +1223,7 @@ header .dates-and-location,
     flex-basis: 25%;
     max-width: 25%; }
 
-  .col-lg-4, .sponsors .container p, .sponsors .sponsor-group.ruby .sponsor, .page-home .friends p, .page-speakers .speaker .avatar {
+  .col-lg-4, .sponsors .container p, .sponsors .sponsor-group.ruby .sponsor, .page-home .friends p, .page-speakers .speaker .avatar, .social-events .saturday {
     -ms-flex-preferred-size: 33.33333333%;
     flex-basis: 33.33333333%;
     max-width: 33.33333333%; }
@@ -1261,7 +1269,7 @@ header .dates-and-location,
   .cfp a,
   .cfp tito-button, .page-home h1,
   .page-home h2,
-  .page-home h3, .page-home p, .volunteer a.cta {
+  .page-home h3, .page-home p, .volunteer a.cta, .social-events .saturday p {
     -ms-flex-preferred-size: 100%;
     flex-basis: 100%;
     max-width: 100%; }

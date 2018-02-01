@@ -54,4 +54,12 @@
   p {
     @include span(8, $small: 12);
   }
+
+  .saturday {
+    @include span(4, $small: 12);
+
+    p {
+      @include span(12);
+    }
+  }
 }

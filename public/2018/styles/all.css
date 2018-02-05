@@ -456,6 +456,7 @@ hr,
 .sponsors p,
 .col-xs-7,
 .sponsors .sponsor-group.emerald .sponsor,
+.sponsors .sponsor-group.community .sponsor,
 .sponsors .sponsor-group.opal .sponsor,
 .sponsors .sponsor-group.amber .sponsor,
 .sponsors .sponsor-group.speaker-sponsors .sponsor,
@@ -551,7 +552,7 @@ header .dates-and-location,
   flex-basis: 50%;
   max-width: 50%; }
 
-.col-xs-7, .sponsors .sponsor-group.emerald .sponsor, .sponsors .sponsor-group.opal .sponsor, .sponsors .sponsor-group.amber .sponsor, .sponsors .sponsor-group.speaker-sponsors .sponsor {
+.col-xs-7, .sponsors .sponsor-group.emerald .sponsor, .sponsors .sponsor-group.community .sponsor, .sponsors .sponsor-group.opal .sponsor, .sponsors .sponsor-group.amber .sponsor, .sponsors .sponsor-group.speaker-sponsors .sponsor {
   -ms-flex-preferred-size: 58.33333333%;
   flex-basis: 58.33333333%;
   max-width: 58.33333333%; }
@@ -681,6 +682,7 @@ header .dates-and-location,
   .sponsors .sponsor-group.speaker-sponsors .sponsor,
   .col-sm-3,
   .sponsors .sponsor-group.emerald .sponsor,
+  .sponsors .sponsor-group.community .sponsor,
   .col-sm-4,
   .sponsors .container p,
   .sponsors .sponsor-group.ruby .sponsor,
@@ -758,7 +760,7 @@ header .dates-and-location,
     flex-basis: 16.66666667%;
     max-width: 16.66666667%; }
 
-  .col-sm-3, .sponsors .sponsor-group.emerald .sponsor {
+  .col-sm-3, .sponsors .sponsor-group.emerald .sponsor, .sponsors .sponsor-group.community .sponsor {
     -ms-flex-preferred-size: 25%;
     flex-basis: 25%;
     max-width: 25%; }
@@ -908,6 +910,7 @@ header .dates-and-location,
   header .brand,
   .col-md-3,
   .sponsors .sponsor-group.emerald .sponsor,
+  .sponsors .sponsor-group.community .sponsor,
   .col-md-4,
   .sponsors .container p,
   .sponsors .sponsor-group.ruby .sponsor,
@@ -984,7 +987,7 @@ header .dates-and-location,
     flex-basis: 16.66666667%;
     max-width: 16.66666667%; }
 
-  .col-md-3, .sponsors .sponsor-group.emerald .sponsor {
+  .col-md-3, .sponsors .sponsor-group.emerald .sponsor, .sponsors .sponsor-group.community .sponsor {
     -ms-flex-preferred-size: 25%;
     flex-basis: 25%;
     max-width: 25%; }
@@ -1134,6 +1137,7 @@ header .dates-and-location,
   header .brand,
   .col-lg-3,
   .sponsors .sponsor-group.emerald .sponsor,
+  .sponsors .sponsor-group.community .sponsor,
   .col-lg-4,
   .sponsors .container p,
   .sponsors .sponsor-group.ruby .sponsor,
@@ -1210,7 +1214,7 @@ header .dates-and-location,
     flex-basis: 16.66666667%;
     max-width: 16.66666667%; }
 
-  .col-lg-3, .sponsors .sponsor-group.emerald .sponsor {
+  .col-lg-3, .sponsors .sponsor-group.emerald .sponsor, .sponsors .sponsor-group.community .sponsor {
     -ms-flex-preferred-size: 25%;
     flex-basis: 25%;
     max-width: 25%; }

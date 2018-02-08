@@ -4,9 +4,9 @@
 
 .location {
   img.map {
-    max-width: 100%;
     border-radius: 50%;
     border: 4px solid $color-french-fry;
+    max-width: 100%;
   }
 
   h4 + p {

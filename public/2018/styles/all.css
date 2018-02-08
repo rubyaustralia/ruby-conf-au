@@ -2005,6 +2005,14 @@ header {
       padding: 60px 0;
       -webkit-transform: rotate(20deg);
               transform: rotate(20deg); }
+      @media (max-width: 768px) {
+        .social-events .spotlight .sticker.right {
+          top: auto;
+          right: auto;
+          left: -25px;
+          bottom: 0;
+          -webkit-transform: rotate(-25deg);
+                  transform: rotate(-25deg); } }
     .social-events .spotlight .sticker small {
       display: block;
       font-size: 24px;
@@ -2022,7 +2030,15 @@ header {
   margin-top: 30px; }
   .social-events .saturday h4 {
     margin-top: 10px; }
-  .social-events .saturday img {
+  .social-events .saturday > img {
     max-width: 100%;
     border-radius: 50%;
     border: 4px solid #F49DC3; }
+  .social-events .saturday p.sponsored-by img {
+    max-width: 80% !important; }
+.social-events p.sponsored-by {
+  font-size: 18px;
+  text-transform: uppercase;
+  margin-top: 25px; }
+  .social-events p.sponsored-by img {
+    max-width: 50%; }

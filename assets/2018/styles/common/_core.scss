@@ -169,6 +169,10 @@ p {
     &.speaker-sponsors .sponsor {
       @include span(2, $x-small: 7);
     }
+
+    &.additional-support .sponsor {
+      @include span(2, $x-small: 7);
+    }
   }
 }
 

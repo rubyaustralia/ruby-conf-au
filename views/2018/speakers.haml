@@ -7,20 +7,11 @@
 
 .speakers
   .container
-    - @speakers.each do |speaker|
-      .speaker
-        .avatar{ class: "variation-#{(1..5).to_a.sample}"}
-          .name
-            = speaker.first_name
-            %br
-            = speaker.last_name
-          %img{ src: speaker.avatar_filename(format: 'jpg') }
-        .details
-          .quote{ class: speaker.is_keynote? ? "default" : "highlight"}= speaker.pitch
-          .bio= speaker.bio
-          .social
-            - if speaker.has_twitter?
-              %a{ href: "https://twitter.com/#{speaker.twitter}", target: '_blank' }= "@#{speaker.twitter}"
+    - @speakers[0...2].each do |speaker|
+      = haml :'2018/_speaker', locals: { speaker: speaker }
+
+    - @speakers[2..-1].shuffle.each do |speaker|
+      = haml :'2018/_speaker', locals: { speaker: speaker }
 
 .container
   %hr

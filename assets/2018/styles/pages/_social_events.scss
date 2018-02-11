@@ -61,6 +61,10 @@
 
   p {
     @include span(8, $small: 12);
+
+    small {
+      font-size: 18px;
+    }
   }
 
   .saturday {
@@ -79,6 +83,9 @@
 
     p {
       @include span(12);
+      small {
+        font-size: 12px;
+      }
     }
 
     p.sponsored-by img { max-width: 80% !important; }

@@ -35,6 +35,9 @@
       Wednesday, 7th March @ 7:30pm
       %br
       %a{ href: 'https://www.google.com/maps/dir/''/ivy+hotel+sydney/@-33.8663908,151.1376334,12z/data=!4m8!4m7!1m0!1m5!1m1!1s0x6b12ae4059c0015b:0x9107c30771c45336!2m2!1d151.2076735!2d-33.8664106', target: '_blank' } 330 George St, Sydney
+      %br
+      %small Access included with conference ticket.
+
 
 .container
   %hr
@@ -67,6 +70,8 @@
       Friday, 9th March @ 7:30pm
       %br
       %a{ href: 'https://goo.gl/maps/Xj2fWk9tiFx', target: '_blank' } Pier St, Darling Harbour
+      %br
+      %small Access included with conference ticket.
 
   .container
     %hr
@@ -95,8 +100,6 @@
         %a{ href: 'https://reinteractive.com', target: '_blank' }
           %img{ src: '/2018/images/sponsors/reinteractive.png' }
 
-
-
     .saturday
       %img{ src: '/2018/images/social-events/something-else.jpg' }
       %h4 And more!
@@ -109,7 +112,7 @@
 .container
   %hr
 
-= haml :'2018/common/_tickets'
+= haml :'2018/common/_tickets', locals: { message: 'Buy Conference Tickets' }
 
 .container
   %hr

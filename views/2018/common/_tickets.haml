@@ -1,9 +1,9 @@
 .container
   .ticketing
     %p.tickets
-      %a#tito-loading-button.inverse{ href: 'https://ti.to/ruby-australia/rubyconf-au-2018' } Buy Tickets
+      %a#tito-loading-button.inverse{ href: 'https://ti.to/ruby-australia/rubyconf-au-2018' }= defined?(message) && message || 'Buy Tickets'
       %tito-button#tito-primary-button.hidden{ event: 'ruby-australia/rubyconf-au-2018', releases:'8vrdb45u0cq' }
-        Buy Tickets
+        = defined?(message) && message || 'Buy Tickets'
 
     %p.small
       %span.loud

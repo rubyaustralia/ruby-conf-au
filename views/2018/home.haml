@@ -33,19 +33,17 @@
 
     .speaker.second
       .speaker__name
-        Avdi
+        = @speaker.first_name
         %br
-        Grimm
+        = @speaker.last_name
       .avatar
-        %img{ src: '/2018/images/speakers/avdi-grimm.png' }
+        %img{ src: @speaker.avatar_filename }
 
 .coming-soon
   .container
     %p
-      With speakers, and social events to be announced soon.
-      %br
-      %br
-      %a{ href: 'https://confirmsubscription.com/h/j/809D057CE90261E7', target: '_blank' } Subscribe for updates.
+      &hellip;
+      %a{ href: '/2018/speakers', target: '_blank' } and lots more!
 
 .container
   %hr

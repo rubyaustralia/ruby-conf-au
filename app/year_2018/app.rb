@@ -52,6 +52,8 @@ module RubyConf
           get '/?' do
             @page = :home
             @title = :home
+            random_speaker = YAML.load_file(File.join('app', 'year_2018', 'data', 'speakers.yml'))[1..-1].shuffle.first
+            @speaker = Speaker.new(random_speaker)
             haml :"2018/home", :layout => :"2018/layout"
           end
 

@@ -1,0 +1,148 @@
+.page-schedule .introduction  {
+  margin-bottom: 0;
+}
+
+.schedule {
+  .event {
+    @include row;
+    @include align('center');
+    width: 100%;
+
+    position: relative;
+
+    h2,
+    p,
+    .start_time,
+    .end_time {
+      width: 100%;
+    }
+
+    h2 {
+      text-transform: uppercase;
+      font-size: 28px;
+      font-weight: 400;
+      padding-top: 10px;
+      margin-bottom: 0;
+    }
+
+    p {
+      margin-top: 0;
+    }
+
+    .details {
+      @include span(9);
+      padding-bottom: 15px;
+    }
+
+    h2,
+    .details {
+      background: rgba(255,255,255,0.6);
+      z-index: 10;
+    }
+
+    .start_time,
+    .end_time {
+      background: white;
+      border: 2px solid $color-blue-heaven;
+      color: $color-sea-glass;
+      font-weight: 400;
+      height: 64px;
+      width: 64px;
+      line-height: 58px;
+      border-radius: 50%;
+      z-index: 10;
+    }
+
+    .start_time {
+      margin-top: 40px;
+      margin-bottom: 10px;
+    }
+
+    .end_time {
+      margin-top: 10px;
+      margin-bottom: 40px;
+    }
+
+    .speakers {
+      @include span(12);
+    }
+
+    .speaker {
+      @include row;
+      @include align('center');
+      @include align('middle');
+
+      margin: 10px 0;
+
+      @include responsive-mobile {
+        margin-bottom: 40px !important;
+      }
+
+      .name {
+        text-align: right;
+
+        a {
+          text-decoration: none;
+        }
+
+        @include responsive-mobile {
+          text-align: center;
+          margin-bottom: 5px;
+        }
+      }
+
+      .title {
+        text-align: left;
+        @include responsive-mobile {
+          text-align: center;
+        }
+      }
+
+      .name,
+      .title {
+        @include span(4, $small: 12);
+        font-size: 24px;
+        font-weight: 300;
+        margin-top: -20px;
+
+        @include responsive-mobile {
+          margin-top: 10px;
+        }
+
+        img {
+          max-width: 50%;
+          margin-top: 10px;
+          @include responsive-mobile {
+            max-width: 30%;
+          }
+
+          &.compact {
+            max-width: 20%;
+          }
+        }
+      }
+
+      .twitter {
+        font-size: 18px;
+      }
+
+      .avatar {
+        @include span(3, $small: 6);
+        img {
+          max-width: 100%;
+        }
+      }
+    }
+
+    &:before {
+      content: "";
+      position: absolute;
+      background: $color-blue-heaven;
+      height: 100%;
+      width: 2px;
+      left: 50%;
+      margin-left: -1px;
+      z-index: 1;
+    }
+  }
+}

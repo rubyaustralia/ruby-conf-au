@@ -1,0 +1,42 @@
+.introduction
+  .container
+    %nav
+      %a{href: '#wednesday'} Wednesday
+      %a{href: '#thursday'} Thursday
+      %a{href: '#friday'} Friday
+      %a{href: '#saturday'} Saturday
+
+.schedule
+  .container
+    %h1#wednesday
+      Wednesday, 7th March
+  - @wednesday.each do |event|
+    = haml :'2018/schedule/_event', locals: { event: event, last: event == @wednesday.last }
+
+  .container
+    %h1#thursday
+      Thursday, 8th March
+  - @thursday.each do |event|
+    = haml :'2018/schedule/_event', locals: { event: event, last: event == @thursday.last }
+
+  .container
+    %h1#friday
+      Friday, 9th March
+  - @friday.each do |event|
+    = haml :'2018/schedule/_event', locals: { event: event, last: event == @friday.last }
+
+  .container
+    %h1#saturday
+      Saturday, 10th March
+  - @saturday.each do |event|
+    = haml :'2018/schedule/_event', locals: { event: event, last: event == @saturday.last }
+
+.container
+  %hr
+
+= haml :'2018/common/_tickets', locals: { message: 'Buy Tickets' }
+
+.container
+  %hr
+
+= haml :'2018/common/_sponsors'

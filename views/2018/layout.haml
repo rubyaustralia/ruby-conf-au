@@ -15,7 +15,7 @@
   %body
     = haml :'2018/common/_header'
 
-    .div{ class: "page-#{@page}" }
+    .div{ class: "page-#{@page.name}" }
       != yield
 
     =# haml :'2018/_footer'

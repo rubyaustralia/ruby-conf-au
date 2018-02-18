@@ -1,0 +1,19 @@
+.speakers
+  - event.speakers.each do |name|
+    - speaker = @speaker_repository.find(name: name)
+    - if speaker
+      .speaker
+        .name
+          = speaker.name
+          %br
+          %a.twitter{href: "https://twitter.com/#{speaker.twitter}", target: "_blank"}= "@#{speaker.twitter}"
+        .avatar
+          %img{ src: speaker.avatar_filename }
+        .title
+          = speaker.title
+          - if speaker.is_sponsored?
+            %br
+            %img{ src: speaker.sponsor_image_filename, class: (speaker.compact_sponsor? && 'compact' || '') }
+    - else
+      .speaker
+        Could not find speaker named #{name}

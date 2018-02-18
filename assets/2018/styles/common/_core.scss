@@ -82,6 +82,32 @@ hr {
 
 .introduction {
   margin: 40px 0 80px;
+
+  nav {
+    @include span(12);
+    @include row;
+    @include align('center');
+
+    a {
+      @include span($grid-auto-width, $small: 12);
+      border: 2px solid $color-brown-sugar;
+      display: inline-block;
+      text-decoration: none;
+      text-transform: uppercase;
+      color: $color-brown-sugar;
+      font-weight: 400;
+      padding: 5px 20px;
+      height: 30px;
+      line-height: 18px;
+      border-radius: 15px;
+      margin: 10px 5px;
+
+      &:hover {
+        background: $color-brown-sugar;
+        color: white;
+      }
+    }
+  }
 }
 
 .introduction .container p {

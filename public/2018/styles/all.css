@@ -424,7 +424,7 @@ template {
     padding-left: 8px;
     width: 1200px;
     max-width: 100%; } }
-.row, .container, .sponsors .sponsor-group, .page-speakers .speaker {
+.row, .container, .introduction nav, .sponsors .sponsor-group, .page-speakers .speaker, .schedule .event, .schedule .event .speaker {
   box-sizing: border-box;
   display: -ms-flexbox;
   display: flex;
@@ -437,7 +437,7 @@ template {
   margin-right: -8px;
   margin-left: -8px; }
 
-.row.reverse, .reverse.container, .sponsors .reverse.sponsor-group, .page-speakers .reverse.speaker {
+.row.reverse, .reverse.container, .introduction nav.reverse, .sponsors .reverse.sponsor-group, .page-speakers .reverse.speaker, .schedule .reverse.event, .schedule .event .reverse.speaker {
   -ms-flex-direction: row-reverse;
   flex-direction: row-reverse; }
 
@@ -454,6 +454,7 @@ hr,
 .col-xs-5,
 .col-xs-6,
 .sponsors p,
+.schedule .event .speaker .avatar,
 .col-xs-7,
 .sponsors .sponsor-group.emerald .sponsor,
 .sponsors .sponsor-group.community .sponsor,
@@ -465,6 +466,7 @@ hr,
 .page-home .friends p,
 .col-xs-9,
 .sponsors .sponsor-group.ruby .sponsor,
+.schedule .event .details,
 .col-xs-10,
 .sponsors .container h3,
 .sponsors .container p,
@@ -472,6 +474,8 @@ hr,
 .page-speakers .speaker,
 .col-xs-11,
 .col-xs-12,
+.introduction nav,
+.introduction nav a,
 .introduction .container p,
 .sponsors .sponsor-group,
 .sponsors .sponsor-group > h4,
@@ -498,6 +502,9 @@ header .dates-and-location,
 .social-events p,
 .social-events .saturday,
 .social-events .saturday p,
+.schedule .event .speakers,
+.schedule .event .speaker .name,
+.schedule .event .speaker .title,
 .col-xs-offset-0,
 .col-xs-offset-1,
 .col-xs-offset-2,
@@ -550,7 +557,7 @@ header .dates-and-location,
   flex-basis: 41.66666667%;
   max-width: 41.66666667%; }
 
-.col-xs-6, .sponsors p {
+.col-xs-6, .sponsors p, .schedule .event .speaker .avatar {
   -ms-flex-preferred-size: 50%;
   flex-basis: 50%;
   max-width: 50%; }
@@ -565,7 +572,7 @@ header .dates-and-location,
   flex-basis: 66.66666667%;
   max-width: 66.66666667%; }
 
-.col-xs-9, .sponsors .sponsor-group.ruby .sponsor {
+.col-xs-9, .sponsors .sponsor-group.ruby .sponsor, .schedule .event .details {
   -ms-flex-preferred-size: 75%;
   flex-basis: 75%;
   max-width: 75%; }
@@ -580,13 +587,14 @@ header .dates-and-location,
   flex-basis: 91.66666667%;
   max-width: 91.66666667%; }
 
-.col-xs-12, .introduction .container p, .sponsors .sponsor-group, .sponsors .sponsor-group > h4, .ticketing,
+.col-xs-12, .introduction nav, .introduction nav a, .introduction .container p, .sponsors .sponsor-group, .sponsors .sponsor-group > h4, .ticketing,
 .cfp, .ticketing a,
 .ticketing tito-button,
 .cfp a,
 .cfp tito-button, header .brand, header .nav, header .dates-and-location, .page-home h1,
 .page-home h2,
-.page-home h3, .page-home p, .page-home p.annoucement, .page-speakers .speaker .avatar, .page-speakers .speaker .details, .volunteer .help, .volunteer .caveat, .volunteer a.cta, .location .transport, .social-events p, .social-events .saturday, .social-events .saturday p {
+.page-home h3, .page-home p, .page-home p.annoucement, .page-speakers .speaker .avatar, .page-speakers .speaker .details, .volunteer .help, .volunteer .caveat, .volunteer a.cta, .location .transport, .social-events p, .social-events .saturday, .social-events .saturday p, .schedule .event .speakers, .schedule .event .speaker .name,
+.schedule .event .speaker .title {
   -ms-flex-preferred-size: 100%;
   flex-basis: 100%;
   max-width: 100%; }
@@ -632,8 +640,8 @@ header .dates-and-location,
   justify-content: flex-start;
   text-align: start; }
 
-.center-xs, .container, .introduction .container, .sponsors .container, .sponsors .sponsor-group, header .container, .page-home .friends .container,
-.page-home .coming-soon .container, .page-home .speakers, .page-home .speakers > .container {
+.center-xs, .container, .introduction .container, .introduction nav, .sponsors .container, .sponsors .sponsor-group, header .container, .page-home .friends .container,
+.page-home .coming-soon .container, .page-home .speakers, .page-home .speakers > .container, .schedule .event, .schedule .event .speaker {
   -ms-flex-pack: center;
   justify-content: center;
   text-align: center; }
@@ -647,7 +655,7 @@ header .dates-and-location,
   -ms-flex-align: start;
   align-items: flex-start; }
 
-.middle-xs, .sponsors .sponsor-group, header .container, header .nav, header .dates-and-location, .page-speakers .speaker .avatar {
+.middle-xs, .sponsors .sponsor-group, header .container, header .nav, header .dates-and-location, .page-speakers .speaker .avatar, .schedule .event .speaker {
   -ms-flex-align: center;
   align-items: center; }
 
@@ -699,13 +707,17 @@ header .dates-and-location,
   .cfp,
   .page-home p.annoucement,
   .page-home .coming-soon p,
+  .schedule .event .speaker .avatar,
   .col-sm-7,
   .col-sm-8,
   .col-sm-9,
+  .schedule .event .details,
   .col-sm-10,
   .page-speakers .speaker,
   .col-sm-11,
   .col-sm-12,
+  .introduction nav,
+  .introduction nav a,
   .introduction .container p,
   .sponsors .sponsor-group,
   .sponsors .sponsor-group > h4,
@@ -729,6 +741,9 @@ header .dates-and-location,
   .social-events p,
   .social-events .saturday,
   .social-events .saturday p,
+  .schedule .event .speakers,
+  .schedule .event .speaker .name,
+  .schedule .event .speaker .title,
   .col-sm-offset-0,
   .col-sm-offset-1,
   .col-sm-offset-2,
@@ -782,7 +797,7 @@ header .dates-and-location,
     max-width: 41.66666667%; }
 
   .col-sm-6, .sponsors .container h3, .sponsors p, .ticketing,
-  .cfp, .page-home p.annoucement, .page-home .coming-soon p {
+  .cfp, .page-home p.annoucement, .page-home .coming-soon p, .schedule .event .speaker .avatar {
     -ms-flex-preferred-size: 50%;
     flex-basis: 50%;
     max-width: 50%; }
@@ -797,7 +812,7 @@ header .dates-and-location,
     flex-basis: 66.66666667%;
     max-width: 66.66666667%; }
 
-  .col-sm-9 {
+  .col-sm-9, .schedule .event .details {
     -ms-flex-preferred-size: 75%;
     flex-basis: 75%;
     max-width: 75%; }
@@ -812,12 +827,13 @@ header .dates-and-location,
     flex-basis: 91.66666667%;
     max-width: 91.66666667%; }
 
-  .col-sm-12, .introduction .container p, .sponsors .sponsor-group, .sponsors .sponsor-group > h4, .ticketing a,
+  .col-sm-12, .introduction nav, .introduction nav a, .introduction .container p, .sponsors .sponsor-group, .sponsors .sponsor-group > h4, .ticketing a,
   .ticketing tito-button,
   .cfp a,
   .cfp tito-button, header .brand, header .nav, header .dates-and-location, .page-home h1,
   .page-home h2,
-  .page-home h3, .page-home p, .page-speakers .speaker .avatar, .page-speakers .speaker .details, .volunteer .help, .volunteer .caveat, .volunteer a.cta, .location .transport, .social-events p, .social-events .saturday, .social-events .saturday p {
+  .page-home h3, .page-home p, .page-speakers .speaker .avatar, .page-speakers .speaker .details, .volunteer .help, .volunteer .caveat, .volunteer a.cta, .location .transport, .social-events p, .social-events .saturday, .social-events .saturday p, .schedule .event .speakers, .schedule .event .speaker .name,
+  .schedule .event .speaker .title {
     -ms-flex-preferred-size: 100%;
     flex-basis: 100%;
     max-width: 100%; }
@@ -863,8 +879,8 @@ header .dates-and-location,
     justify-content: flex-start;
     text-align: start; }
 
-  .center-sm, .container, .introduction .container, .sponsors .container, .sponsors .sponsor-group, header .container, .page-home .friends .container,
-  .page-home .coming-soon .container, .page-home .speakers, .page-home .speakers > .container {
+  .center-sm, .container, .introduction .container, .introduction nav, .sponsors .container, .sponsors .sponsor-group, header .container, .page-home .friends .container,
+  .page-home .coming-soon .container, .page-home .speakers, .page-home .speakers > .container, .schedule .event, .schedule .event .speaker {
     -ms-flex-pack: center;
     justify-content: center;
     text-align: center; }
@@ -878,7 +894,7 @@ header .dates-and-location,
     -ms-flex-align: start;
     align-items: flex-start; }
 
-  .middle-sm, .sponsors .sponsor-group, header .container, header .nav, header .dates-and-location, .page-speakers .speaker .avatar {
+  .middle-sm, .sponsors .sponsor-group, header .container, header .nav, header .dates-and-location, .page-speakers .speaker .avatar, .schedule .event .speaker {
     -ms-flex-align: center;
     align-items: center; }
 
@@ -906,7 +922,7 @@ header .dates-and-location,
     -ms-flex-order: initial;
     order: initial; } }
 @media only screen and (min-width: 768px) {
-  .col-md,
+  .col-md, .introduction nav a,
   .col-md-1,
   hr,
   .sponsors .sponsor-group.amber .sponsor,
@@ -918,12 +934,15 @@ header .dates-and-location,
   .col-md-3,
   .sponsors .sponsor-group.emerald .sponsor,
   .sponsors .sponsor-group.community .sponsor,
+  .schedule .event .speaker .avatar,
   .col-md-4,
   .sponsors .container p,
   .sponsors .sponsor-group.ruby .sponsor,
   .page-home .friends p,
   .page-speakers .speaker .avatar,
   .social-events .saturday,
+  .schedule .event .speaker .name,
+  .schedule .event .speaker .title,
   .col-md-5,
   .ticketing,
   .cfp,
@@ -943,10 +962,12 @@ header .dates-and-location,
   .location .transport,
   .social-events p,
   .col-md-9,
+  .schedule .event .details,
   .col-md-10,
   .page-speakers .speaker,
   .col-md-11,
   .col-md-12,
+  .introduction nav,
   .sponsors .sponsor-group,
   .sponsors .sponsor-group > h4,
   .ticketing a,
@@ -959,6 +980,7 @@ header .dates-and-location,
   .page-home p,
   .volunteer a.cta,
   .social-events .saturday p,
+  .schedule .event .speakers,
   .col-md-offset-0,
   .col-md-offset-1,
   .col-md-offset-2,
@@ -978,7 +1000,7 @@ header .dates-and-location,
     padding-right: 8px;
     padding-left: 8px; }
 
-  .col-md {
+  .col-md, .introduction nav a {
     -webkit-box-flex: 1;
     -ms-flex-positive: 1;
     flex-grow: 1;
@@ -996,12 +1018,13 @@ header .dates-and-location,
     flex-basis: 16.66666667%;
     max-width: 16.66666667%; }
 
-  .col-md-3, .sponsors .sponsor-group.emerald .sponsor, .sponsors .sponsor-group.community .sponsor {
+  .col-md-3, .sponsors .sponsor-group.emerald .sponsor, .sponsors .sponsor-group.community .sponsor, .schedule .event .speaker .avatar {
     -ms-flex-preferred-size: 25%;
     flex-basis: 25%;
     max-width: 25%; }
 
-  .col-md-4, .sponsors .container p, .sponsors .sponsor-group.ruby .sponsor, .page-home .friends p, .page-speakers .speaker .avatar, .social-events .saturday {
+  .col-md-4, .sponsors .container p, .sponsors .sponsor-group.ruby .sponsor, .page-home .friends p, .page-speakers .speaker .avatar, .social-events .saturday, .schedule .event .speaker .name,
+  .schedule .event .speaker .title {
     -ms-flex-preferred-size: 33.33333333%;
     flex-basis: 33.33333333%;
     max-width: 33.33333333%; }
@@ -1027,7 +1050,7 @@ header .dates-and-location,
     flex-basis: 66.66666667%;
     max-width: 66.66666667%; }
 
-  .col-md-9 {
+  .col-md-9, .schedule .event .details {
     -ms-flex-preferred-size: 75%;
     flex-basis: 75%;
     max-width: 75%; }
@@ -1042,12 +1065,12 @@ header .dates-and-location,
     flex-basis: 91.66666667%;
     max-width: 91.66666667%; }
 
-  .col-md-12, .sponsors .sponsor-group, .sponsors .sponsor-group > h4, .ticketing a,
+  .col-md-12, .introduction nav, .sponsors .sponsor-group, .sponsors .sponsor-group > h4, .ticketing a,
   .ticketing tito-button,
   .cfp a,
   .cfp tito-button, .page-home h1,
   .page-home h2,
-  .page-home h3, .page-home p, .volunteer a.cta, .social-events .saturday p {
+  .page-home h3, .page-home p, .volunteer a.cta, .social-events .saturday p, .schedule .event .speakers {
     -ms-flex-preferred-size: 100%;
     flex-basis: 100%;
     max-width: 100%; }
@@ -1093,8 +1116,8 @@ header .dates-and-location,
     justify-content: flex-start;
     text-align: start; }
 
-  .center-md, .container, .introduction .container, .sponsors .container, .sponsors .sponsor-group, header .container, .page-home .friends .container,
-  .page-home .coming-soon .container, .page-home .speakers, .page-home .speakers > .container {
+  .center-md, .container, .introduction .container, .introduction nav, .sponsors .container, .sponsors .sponsor-group, header .container, .page-home .friends .container,
+  .page-home .coming-soon .container, .page-home .speakers, .page-home .speakers > .container, .schedule .event, .schedule .event .speaker {
     -ms-flex-pack: center;
     justify-content: center;
     text-align: center; }
@@ -1108,7 +1131,7 @@ header .dates-and-location,
     -ms-flex-align: start;
     align-items: flex-start; }
 
-  .middle-md, .sponsors .sponsor-group, header .container, .page-speakers .speaker .avatar {
+  .middle-md, .sponsors .sponsor-group, header .container, .page-speakers .speaker .avatar, .schedule .event .speaker {
     -ms-flex-align: center;
     align-items: center; }
 
@@ -1136,7 +1159,7 @@ header .dates-and-location,
     -ms-flex-order: initial;
     order: initial; } }
 @media only screen and (min-width: 992px) {
-  .col-lg,
+  .col-lg, .introduction nav a,
   .col-lg-1,
   hr,
   .sponsors .sponsor-group.amber .sponsor,
@@ -1148,12 +1171,15 @@ header .dates-and-location,
   .col-lg-3,
   .sponsors .sponsor-group.emerald .sponsor,
   .sponsors .sponsor-group.community .sponsor,
+  .schedule .event .speaker .avatar,
   .col-lg-4,
   .sponsors .container p,
   .sponsors .sponsor-group.ruby .sponsor,
   .page-home .friends p,
   .page-speakers .speaker .avatar,
   .social-events .saturday,
+  .schedule .event .speaker .name,
+  .schedule .event .speaker .title,
   .col-lg-5,
   .ticketing,
   .cfp,
@@ -1173,10 +1199,12 @@ header .dates-and-location,
   .location .transport,
   .social-events p,
   .col-lg-9,
+  .schedule .event .details,
   .col-lg-10,
   .page-speakers .speaker,
   .col-lg-11,
   .col-lg-12,
+  .introduction nav,
   .sponsors .sponsor-group,
   .sponsors .sponsor-group > h4,
   .ticketing a,
@@ -1189,6 +1217,7 @@ header .dates-and-location,
   .page-home p,
   .volunteer a.cta,
   .social-events .saturday p,
+  .schedule .event .speakers,
   .col-lg-offset-0,
   .col-lg-offset-1,
   .col-lg-offset-2,
@@ -1208,7 +1237,7 @@ header .dates-and-location,
     padding-right: 8px;
     padding-left: 8px; }
 
-  .col-lg {
+  .col-lg, .introduction nav a {
     -webkit-box-flex: 1;
     -ms-flex-positive: 1;
     flex-grow: 1;
@@ -1226,12 +1255,13 @@ header .dates-and-location,
     flex-basis: 16.66666667%;
     max-width: 16.66666667%; }
 
-  .col-lg-3, .sponsors .sponsor-group.emerald .sponsor, .sponsors .sponsor-group.community .sponsor {
+  .col-lg-3, .sponsors .sponsor-group.emerald .sponsor, .sponsors .sponsor-group.community .sponsor, .schedule .event .speaker .avatar {
     -ms-flex-preferred-size: 25%;
     flex-basis: 25%;
     max-width: 25%; }
 
-  .col-lg-4, .sponsors .container p, .sponsors .sponsor-group.ruby .sponsor, .page-home .friends p, .page-speakers .speaker .avatar, .social-events .saturday {
+  .col-lg-4, .sponsors .container p, .sponsors .sponsor-group.ruby .sponsor, .page-home .friends p, .page-speakers .speaker .avatar, .social-events .saturday, .schedule .event .speaker .name,
+  .schedule .event .speaker .title {
     -ms-flex-preferred-size: 33.33333333%;
     flex-basis: 33.33333333%;
     max-width: 33.33333333%; }
@@ -1257,7 +1287,7 @@ header .dates-and-location,
     flex-basis: 66.66666667%;
     max-width: 66.66666667%; }
 
-  .col-lg-9 {
+  .col-lg-9, .schedule .event .details {
     -ms-flex-preferred-size: 75%;
     flex-basis: 75%;
     max-width: 75%; }
@@ -1272,12 +1302,12 @@ header .dates-and-location,
     flex-basis: 91.66666667%;
     max-width: 91.66666667%; }
 
-  .col-lg-12, .sponsors .sponsor-group, .sponsors .sponsor-group > h4, .ticketing a,
+  .col-lg-12, .introduction nav, .sponsors .sponsor-group, .sponsors .sponsor-group > h4, .ticketing a,
   .ticketing tito-button,
   .cfp a,
   .cfp tito-button, .page-home h1,
   .page-home h2,
-  .page-home h3, .page-home p, .volunteer a.cta, .social-events .saturday p {
+  .page-home h3, .page-home p, .volunteer a.cta, .social-events .saturday p, .schedule .event .speakers {
     -ms-flex-preferred-size: 100%;
     flex-basis: 100%;
     max-width: 100%; }
@@ -1323,8 +1353,8 @@ header .dates-and-location,
     justify-content: flex-start;
     text-align: start; }
 
-  .center-lg, .container, .introduction .container, .sponsors .container, .sponsors .sponsor-group, header .container, .page-home .friends .container,
-  .page-home .coming-soon .container, .page-home .speakers, .page-home .speakers > .container {
+  .center-lg, .container, .introduction .container, .introduction nav, .sponsors .container, .sponsors .sponsor-group, header .container, .page-home .friends .container,
+  .page-home .coming-soon .container, .page-home .speakers, .page-home .speakers > .container, .schedule .event, .schedule .event .speaker {
     -ms-flex-pack: center;
     justify-content: center;
     text-align: center; }
@@ -1338,7 +1368,7 @@ header .dates-and-location,
     -ms-flex-align: start;
     align-items: flex-start; }
 
-  .middle-lg, .sponsors .sponsor-group, header .container, .page-speakers .speaker .avatar {
+  .middle-lg, .sponsors .sponsor-group, header .container, .page-speakers .speaker .avatar, .schedule .event .speaker {
     -ms-flex-align: center;
     align-items: center; }
 
@@ -1627,6 +1657,21 @@ hr {
 
 .introduction {
   margin: 40px 0 80px; }
+  .introduction nav a {
+    border: 2px solid #8C6612;
+    display: inline-block;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #8C6612;
+    font-weight: 400;
+    padding: 5px 20px;
+    height: 30px;
+    line-height: 18px;
+    border-radius: 15px;
+    margin: 10px 5px; }
+    .introduction nav a:hover {
+      background: #8C6612;
+      color: white; }
 
 p {
   margin-bottom: 0; }
@@ -1729,6 +1774,8 @@ header {
       margin: 0 4px; }
       header nav a:hover {
         text-decoration: underline; }
+      header nav a.active {
+        color: #8C6612; }
   header .nav {
     padding: 20px 10px; }
   header .dates-and-location {
@@ -2054,3 +2101,97 @@ header {
   margin-top: 25px; }
   .social-events p.sponsored-by img {
     max-width: 50%; }
+
+.page-schedule .introduction {
+  margin-bottom: 0; }
+
+.schedule .event {
+  width: 100%;
+  position: relative; }
+  .schedule .event h2,
+  .schedule .event p,
+  .schedule .event .start_time,
+  .schedule .event .end_time {
+    width: 100%; }
+  .schedule .event h2 {
+    text-transform: uppercase;
+    font-size: 28px;
+    font-weight: 400;
+    padding-top: 10px;
+    margin-bottom: 0; }
+  .schedule .event p {
+    margin-top: 0; }
+  .schedule .event .details {
+    padding-bottom: 15px; }
+  .schedule .event h2,
+  .schedule .event .details {
+    background: rgba(255, 255, 255, 0.6);
+    z-index: 10; }
+  .schedule .event .start_time,
+  .schedule .event .end_time {
+    background: white;
+    border: 2px solid #C2FBFF;
+    color: #36C0CA;
+    font-weight: 400;
+    height: 64px;
+    width: 64px;
+    line-height: 58px;
+    border-radius: 50%;
+    z-index: 10; }
+  .schedule .event .start_time {
+    margin-top: 40px;
+    margin-bottom: 10px; }
+  .schedule .event .end_time {
+    margin-top: 10px;
+    margin-bottom: 40px; }
+  .schedule .event .speaker {
+    margin: 10px 0; }
+    @media (max-width: 768px) {
+      .schedule .event .speaker {
+        margin-bottom: 40px !important; } }
+    .schedule .event .speaker .name {
+      text-align: right; }
+      .schedule .event .speaker .name a {
+        text-decoration: none; }
+      @media (max-width: 768px) {
+        .schedule .event .speaker .name {
+          text-align: center;
+          margin-bottom: 5px; } }
+    .schedule .event .speaker .title {
+      text-align: left; }
+      @media (max-width: 768px) {
+        .schedule .event .speaker .title {
+          text-align: center; } }
+    .schedule .event .speaker .name,
+    .schedule .event .speaker .title {
+      font-size: 24px;
+      font-weight: 300;
+      margin-top: -20px; }
+      @media (max-width: 768px) {
+        .schedule .event .speaker .name,
+        .schedule .event .speaker .title {
+          margin-top: 10px; } }
+      .schedule .event .speaker .name img,
+      .schedule .event .speaker .title img {
+        max-width: 50%;
+        margin-top: 10px; }
+        @media (max-width: 768px) {
+          .schedule .event .speaker .name img,
+          .schedule .event .speaker .title img {
+            max-width: 30%; } }
+        .schedule .event .speaker .name img.compact,
+        .schedule .event .speaker .title img.compact {
+          max-width: 20%; }
+    .schedule .event .speaker .twitter {
+      font-size: 18px; }
+    .schedule .event .speaker .avatar img {
+      max-width: 100%; }
+  .schedule .event:before {
+    content: "";
+    position: absolute;
+    background: #C2FBFF;
+    height: 100%;
+    width: 2px;
+    left: 50%;
+    margin-left: -1px;
+    z-index: 1; }

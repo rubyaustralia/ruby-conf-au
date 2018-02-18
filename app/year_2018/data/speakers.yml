@@ -1,89 +1,116 @@
 - name: Sandi Metz
   pitch: "Keynote"
+  title: "Keynote"
   bio: "Sandi is a programmer, and the author of Practical Object-Oriented Design in Ruby (POODR) and 99 Bottles of OOP. She believes in simple code and straightforward explanations and wants to help you transform your code and bring back the joy."
   twitter: sandimetz
 
 - name: Jessica Rudder
+  title: "The Good Bad Bug: Fail Your Way to Better Code"
   pitch: "Programming is filled with bugs that were actually features. We’ll journey through code that’s so ‘bad’ it’s actually good while discovering the important role failure plays in learning. Then we’ll tame our inner perfectionists & look at an approach to code that will allow us to fail in the best way."
   bio: "Jessica Rudder is a web developer with a passion for clean code and the Kansas City Royals. She once ran 70 miles through the Santa Monica Mountains “just for fun”. When she’s not writing code, she can be found running aimlessly through city streets training for her next ultra or creating code-related videos on YouTube for CompChomp. She is an avid squirrel photographer and loves the color green."
   twitter: jessrudder
 
 - name: Paolo Perrotta
+  title: "Machine Learning explained to humans"
   pitch: "It happens to all of us: that weird moment when you realize that your phone or computer just did something impossible. How the heck could an algorithm caption your pictures or understand your movie reviews? Let me show you how, by giving you the technical foundations of Machine Learning."
   bio: "Paolo Perrotta is the author of “Metaprogramming Ruby”. He has almost twenty years of experience as a developer, ranging from embedded to enterprise software, computer games, and web applications. He’s now focusing on AI, and writing a book on Deep Learning for the Pragmatic Programmers."
   twitter: nusco
 
 - name: Alaina Kafkes
+  title: "Tackling Technical Writing"
   pitch: "Empathetic, accessible, and thorough technical tutorials & blog posts break down Ruby’s barrier to entry and foster inclusion. Thus, Ruby’s fate rests on people who write well – an oft underdeveloped skill. In this talk, I’ll give actionable pointers to get Rubyists started with technical writing."
   bio: "Alaina is a software engineer at Medium, where she works predominantly on iOS development and petting other people’s dogs. She recently graduated from Northwestern University with a degree in computer science and many humanities classes under her belt. Though she’d like to think that her claim to fame is her inability to pronounce the word “corgi,” she’s best known for her technical writing in freeCodeCamp and Chronicles of a Junior Dev, as well as for co-founding BuildHer, Chicago’s first-ever student-run women’s hackathon. Current fascinations include swing dancing and reading fiction."
   twitter: alainakafkes
 
 - name: Merrin Macleod
+  title: "Politics? In My Technology? "
   pitch: "Politics and technology can not be separated. We’ll look at some of the technologies that people are using to shift political realities, and we’ll examine the political ideas that underpin the technologies that we use and build every day."
   bio: "I am a developer, designer, and community organiser. I started Ruby New Zealand, Kiwi Ruby, and Rails Girls in Wellington, New Zealand. I like haiku, spreadsheets, and seeing fluffy dogs in the middle distance."
   twitter: merxplat
 
 - name: Michael Morris
+  title: "High performance Mario Kart on Ruby"
   pitch: "We have a serious workplace with a serious problem - Mario Kart. We’ve employed Ruby to answer the important questions - just who is the best and is there any hope for justice in kart?"
   bio: "Life has been a journey from shipping “The Conversation”, an attempt at improving the standard of journalism which now has editions in 7 countries and read by millions of people. Next was shipping the world’s first Ruby on Rails powered banking platform which recently won best banking platform in Australia. Now building an entirely new banking experience aiming to be a genuine alternative from current banks - Up. I still enjoy making time to work on the important things… you know… like Mario Kart."
   twitter: mtcmorris
+  sponsor: up-alt
+  compact_sponsor: true
 
 - name: Danielle Adams
+  title: "Outside the Web Box: Using Ruby for Other Protocols"
   pitch: "Ruby is a widely used language, popular for serving web pages and storing data. What about serving different types of clients? Is it possible to use Ruby to talk to other machines? I’m going to share my experiences integrating Ruby services with hardware, such as barcode scanners and Zebra printers."
   bio: "Danielle is a full-stack software engineer working at Blue Apron in New York City on their warehouse software. Her expertise stretches between front-end heavy web applications and a variety of back-ends. She has been coding since age 12. In her free time, she enjoys live music, food, teaching others to code, and hanging out with her cat."
   twitter: adamzdanielle
 
 - name: Ryan Bigg
+  title: "Hiring Juniors"
   pitch: "The best talent of today is already working for someone else. Hiring them involves aggressive poaching, which isn’t sustainable in the long-term. Let’s look at how companies around the world are growing their own best and brightest, what’s worked for them and what hasn’t."
   bio: "I’ve been mentoring developers for close to a decade. I’ve done this through lots and lots of pairing, book writing, my addiction to Stack Overflow, and plenty more. More recently, I’ve started up a Junior Engineering Program at Culture Amp where I’m growing 8 engineers into the confident and capable engineers of the future through a structured program."
   twitter: ryanbigg
+  sponsor: culture-amp
 
 - name: Lauren Tan
+  title: "Building the World's Largest Studio at Netflix"
   pitch: "At Netflix, we’re continuously reinventing the way we entertain. We’ve sent DVDs in the mail, pioneered streaming video, and now we’re doing it all over again. In this talk, we’ll learn how Ruby helps the \"teams behind the streams\" create and produce billions of dollars of original content."
   bio: "Lauren is a Senior Full Stack Engineer at Netflix. Previously, she was Senior Developer at DockYard, a user experience driven software consultancy based in Boston, MA. Although formally educated in Finance, she has been involved with user interface and experience design for more than 5 years. She is also an active contributor to the Ember.js community, and a regular speaker at leading JavaScript and Elixir events & conferences."
   twitter: "sugarpirate_"
+  sponsor: netflix
 
 - name: Ken Scambler
+  title: "A Human Approach to Functional Programming"
   pitch: "Functional programming has made great strides in the popular imagination, yet adoption of FP languages has often been challenging for companies, sputtering in fits and starts."
   bio: "Ken is a Melbourne-based software developer, whose job is to promote and guide good software practice at REA Group. He is an outspoken advocate of functional programming, runs a weekly \"FP Guild\" at REA, and is co-organiser of the Melbourne Scala User Group and Compose :: Melbourne FP Conference."
   twitter: KenScambler
+  sponsor: rea-group
 
 - name: Katie McLaughlin
+  title: "JavaScript is Awe-ful"
   pitch: "JavaScript. The language developers love to hate. It is full of WATs, whys, and other annoyances; and yet it is the most used programming language in the world. If it’s so powerful, why do developers hate it so? We’ll discuss the power and functionality of this multi-tool of the web."
   bio: "Katie has worn many different hats over the years. She has been a software developer for many languages, systems administrator for multiple operating systems, and speaker on many different topics. When she’s not changing the world, she enjoys making tapestries, cooking, and seeing just how well various application stacks handle emoji."
   twitter: glasnt
 
 - name: Andy Nicholson
+  title: "Consider Crystal"
   pitch: "Did you hear about this great Ruby-like language built in South America? No, not Elixir. Crystal! We’ll take a look at its syntax, design choices, its ecosystem, and tradeoffs. You’ll see how language design affects code, and become a better Rubyist along the way."
   bio: "Human for over 30 years, a developer for 8 years, language polyamorist (but Ruby will always be my first ❤️). I care a lot about the Ruby community, and believe in clear and fun communication. Life's too short for: bad coffee, poor music, and white melamine."
   twitter: andrewdotnich
 
 - name: Stella Cotton
+  title: "Debugging Your Services with Distributed Tracing"
   pitch: "Traditional application performance monitoring is great for debugging a single app but how do you debug a system with multiple services? Distributed tracing can help! You’ll learn the theory behind how distributed tracing works and dive into practical considerations you won’t get from a README."
   bio: "Stella Cotton is a Tools engineer at Heroku and co-founder of AndConf and Fog City Ruby. She loves good abstractions and boring technology."
   twitter: practice_cactus
+  sponsor: heroku
 
 - name: Zach Holman
+  title: "UTC is Enough for Everybody, Right?"
   pitch: "After you tell developers you’re building a calendar, most will sadly sigh, comfort you, and send you to your doom. Because it’s true: everyone knows dates, times, and timezones can be hugely frustrating concepts in programming. But it turns out what you don’t know is even weirder!"
   bio: "Zach Holman is a developer living in San Francisco. He joined GitHub in 2010 as one of their first engineering hires, and helped build and grow their product and culture over five years. Currently he’s the founder and CEO of During, a new calendar to help you during your day. He also advises startups, including GitLab, StackShare, and Dockbit."
   twitter: holman
 
 - name: Amy Unger
+  title: "Knobs, Levers and Buttons: tools for operating your application at scale"
   pitch: "Pilots have the flight deck, Captain Kirk had his bridge, but what do you have for managing failure in your application?"
   bio: "The granddaughter of a former MIT computer (yup, that was a job title), Amy was clearly supposed to be a programmer, but just did not get the message. Her wanderings have taken her through the land of libraries and archives and into software consulting. Now a software engineer at Heroku, she is deeply grateful for every scarce day she does not use vim commands in Google Docs."
   twitter: cdwort
+  sponsor: heroku
 
 - name: John Feminella
+  title: "Building with Blockchains in Ruby"
   pitch: "Blockchains are a new kind of data structure offering an intriguing property: immutability through cryptography. We’ll use Ruby to explore the intriguing properties of blockchains, seen through the lens of a fictitious cryptocurrency we’ll create for the purposes of the talk — ConferenceCoin"
   bio: "John Feminella is an avid technologist, occasional public speaker, and curiosity advocate. He serves as an advisor to Pivotal, where he works on helping enterprises transform the way they write, operate, and deploy software. He’s also the cofounder of a tiny analytics monitoring and reporting startup named UpHex. John lives in Charlottesville, VA and likes meta-jokes, milkshakes, and referring to himself in the third person in speaker bios."
   twitter: jxxf
 
 - name: Eleanor Haggerty
+  title: "Here's to history: programming through archaeology"
   pitch: "Does your git log resemble an archaeological site from 500BC? Let's explore the surprising similarities between archaeology and programming to understand developer decision-making in 2018."
   bio: "After many years translating Ancient Greek texts and working with antiquities, Eleanor began tinkering with code — now she writes Ruby instead of reading Homer. When she’s not digging into code at The Conversation, she’s probably cooking, attending a yoga class, or patting other people's dogs at the park."
   twitter: eleanorkh
+  sponsor: the-conversation
 
 - name: Tom Gamon
+  title: "Why Dyslexia Makes you a Great Programmer"
   pitch: "What dyslexia is, what it definitely isn’t, and why it makes you a great developer."
   bio: "Tom is a ruby developer at Disco who has recently fled from London to settle in Melbourne. Alongside programming, he is interested by the mind, our cognitive biases and how these effect the way that we interact with each other."
   twitter: thrgamon
+  sponsor: discolabs

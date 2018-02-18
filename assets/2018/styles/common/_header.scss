@@ -41,6 +41,10 @@ header {
       &:hover {
         text-decoration: underline;
       }
+
+      &.active {
+        color: $color-brown-sugar;
+      }
     }
   }
 

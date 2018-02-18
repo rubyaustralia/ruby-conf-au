@@ -38,7 +38,7 @@ thursday:
     end_time: 1330
   - type: session
     title: Session 3
-    speakers: ["Andy Nicholson", "Michael Morris", "Eleanor Haggerty"]
+    speakers: ["Andy Nicholson", "Michael Morris", "Eleanor Kiefel Haggerty"]
     start_time: 1330
     end_time: 1530
   - type: break

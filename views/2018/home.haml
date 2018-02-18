@@ -32,7 +32,7 @@
         %img{ src: '/2018/images/speakers/sandi-metz.png?2' }
 
     .speaker.second
-      .speaker__name
+      .speaker__name{ class: @speaker.long_name? && 'long' || '' }
         = @speaker.first_name
         %br
         = @speaker.last_name

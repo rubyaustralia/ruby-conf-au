@@ -27,8 +27,9 @@
         background: $color-french-fry;
         border-radius: 50%;
         color: $color-brown-sugar;
-        font-size: 24px;
+        font-size: 22px;
         font-weight: 300;
+        line-height: 26px;
         height: 120px;
         left: 50%;
         margin-left: -170px;
@@ -38,6 +39,9 @@
         top: -30px;
         width: 120px;
         z-index: 1300;
+        &.long {
+          line-height: 20px;
+        }
       }
 
       &.variation-1 { img { transform: rotate(-21deg); } .name { top: auto; bottom: 0; margin-left: -150px; }  }

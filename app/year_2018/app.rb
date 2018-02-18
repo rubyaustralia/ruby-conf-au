@@ -46,16 +46,21 @@ module RubyConf
         data['name']
       end
 
+      def long_name?
+        name.length > 20
+      end
+
       def first_name
-        data['name'].split(' ').first
+        data['name'].split(' ', 2).first
       end
 
       def last_name
-        data['name'].split(' ').last
+        data['name'].split(' ', 2).last
       end
 
       def avatar_filename(format: 'png')
-        "/2018/images/speakers/#{first_name.downcase}-#{last_name.downcase}.#{format}"
+        fn = name.downcase.gsub(' ', '-')
+        "/2018/images/speakers/#{fn}.#{format}"
       end
 
       def bio

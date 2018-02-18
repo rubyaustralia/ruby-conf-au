@@ -1833,7 +1833,7 @@ header {
     background: #FBC54A;
     border-radius: 50%;
     color: #8C6612;
-    font-size: 38px;
+    font-size: 28px;
     font-weight: 300;
     height: 150px;
     left: -30px;
@@ -1844,6 +1844,9 @@ header {
     top: -30px;
     width: 150px;
     z-index: 1000; }
+    .page-home .speaker .speaker__name.long {
+      font-size: 30px;
+      line-height: 28px; }
   .page-home .speaker .avatar img {
     width: 100%;
     height: 100%; }
@@ -1913,8 +1916,9 @@ header {
       background: #FBC54A;
       border-radius: 50%;
       color: #8C6612;
-      font-size: 24px;
+      font-size: 22px;
       font-weight: 300;
+      line-height: 26px;
       height: 120px;
       left: 50%;
       margin-left: -170px;
@@ -1924,6 +1928,8 @@ header {
       top: -30px;
       width: 120px;
       z-index: 1300; }
+      .page-speakers .speaker .avatar .name.long {
+        line-height: 20px; }
     .page-speakers .speaker .avatar.variation-1 img {
       -webkit-transform: rotate(-21deg);
               transform: rotate(-21deg); }

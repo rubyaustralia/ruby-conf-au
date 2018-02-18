@@ -1,6 +1,6 @@
 .speaker
   .avatar{ class: "variation-#{(1..5).to_a.sample}"}
-    .name
+    .name{ class: speaker.long_name? && 'long' || '' }
       = speaker.first_name
       %br
       = speaker.last_name

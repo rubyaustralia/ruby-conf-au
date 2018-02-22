@@ -4,6 +4,8 @@ wednesday:
     description: We're having a pool party on a <a href="https://www.google.com/maps/dir/''/ivy+hotel+sydney/@-33.8663908,151.1376334,12z/data=!4m8!4m7!1m0!1m5!1m1!1s0x6b12ae4059c0015b:0x9107c30771c45336!2m2!1d151.2076735!2d-33.8664106" target="_blank">rooftop in Sydney's CBD</a>. Join us for some casual canapés, drinks, and dancing!
     start_time: 1930
     end_time: 2230
+    sponsor: envato
+    sponsor_link: https://envato.com
 
 thursday:
   - type: break
@@ -15,44 +17,51 @@ thursday:
     title: Welcome to Country
     description: ""
     start_time: 930
-    end_time: 1000
+    end_time: 950
   - type: session
     title: Session 1
     speakers: ["Sandi Metz"]
-    start_time: 1000
-    end_time: 1040
+    start_time: 950
+    end_time: 1035
   - type: break
     title: Morning Tea
     description: ''
-    start_time: 1040
-    end_time: 1110
+    start_time: 1035
+    end_time: 1105
   - type: session
     title: Session 2
     speakers: ["Paolo Perrotta", "Katie McLaughlin"]
-    start_time: 1110
-    end_time: 1230
+    start_time: 1105
+    end_time: 1215
   - type: break
     title: Lunch
     description: ''
-    start_time: 1230
-    end_time: 1330
+    start_time: 1215
+    end_time: 1305
   - type: session
     title: Session 3
     speakers: ["Andy Nicholson", "Michael Morris", "Eleanor Kiefel Haggerty"]
-    start_time: 1330
-    end_time: 1530
+    start_time: 1305
+    end_time: 1500
   - type: break
     title: Afternoon Tea
     description: ''
-    start_time: 1530
-    end_time: 1600
+    start_time: 1500
+    end_time: 1530
   - type: session
     title: Session 4
     speakers: ["Stella Cotton", "Ryan Bigg"]
-    start_time: 1600
-    end_time: 1740
+    start_time: 1530
+    end_time: 1700
 
 friday:
+  - type: social_event
+    title: Breakfast
+    description: Come join us for a delicious hot breakfast in the park outside the venue. Full details TBC.
+    start_time: 700
+    end_time: 900
+    sponsor: twilio
+    sponsor_link: https://twilio.com
   - type: break
     title: Registration
     description: Check out our <a href="/2018/location">location and transport information</a> for details on how to get here.
@@ -62,42 +71,44 @@ friday:
     title: Session 1
     speakers: ["Lauren Tan", "Amy Unger"]
     start_time: 930
-    end_time: 1040
+    end_time: 1035
   - type: break
     title: Morning Tea
     description: ''
-    start_time: 1040
-    end_time: 1110
+    start_time: 1035
+    end_time: 1105
   - type: session
     title: Session 2
     speakers: ["Danielle Adams", "Tom Gamon"]
-    start_time: 1110
-    end_time: 1230
+    start_time: 1105
+    end_time: 1215
   - type: break
     title: Lunch
     description: ''
-    start_time: 1230
-    end_time: 1330
+    start_time: 1215
+    end_time: 1305
   - type: session
     title: Session 3
     speakers: ["John Feminella", "Zach Holman", "Alaina Kafkes"]
-    start_time: 1330
-    end_time: 1530
+    start_time: 1305
+    end_time: 1500
   - type: break
     title: Afternoon Tea
     description: ''
-    start_time: 1530
-    end_time: 1600
+    start_time: 1500
+    end_time: 1530
   - type: session
     title: Session 4
     speakers: ["Jessica Rudder", "Ken Scambler", "Merrin Macleod"]
-    start_time: 1600
-    end_time: 1740
+    start_time: 1530
+    end_time: 1730
   - type: social_event
     title: "😭 Closing Party 🍻"
     description: 'Come and share canapés, drinks and MESSINA GELATO with all your new Ruby friends at the most appropriate venue for such an occasion <a target="_blank" href="https://goo.gl/maps/Xj2fWk9tiFx">The Chinese Friendship Gardens</a>.'
     start_time: 1930
     end_time: 2330
+    sponsor: culture-amp
+    sponsor_link: http://cultureamp.com
 
 
 saturday:
@@ -106,8 +117,12 @@ saturday:
     description: Meet at Circular Quay, then a quick ferry ride through Sydney Harbour to Taronga Zoo. Full details TBA.
     start_time: 1000
     end_time: 1130
+    sponsor: ''
+    sponsor_link: ''
   - type: social_event
     title: Hack Day
     description: Full details TBA
     start_time: 1030
     end_time: 1600
+    sponsor: ''
+    sponsor_link: ''

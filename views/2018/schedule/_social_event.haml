@@ -1,1 +1,8 @@
-%p= event.description
+%p
+  = event.description
+- if event.sponsored?
+  %p.sponsor
+    Sponsored by
+    %br
+    %a{ href: event.sponsor_link, target: '_blank' }
+      %img{ src: "/2018/images/sponsors/#{event.sponsor}.png"}

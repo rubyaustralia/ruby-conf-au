@@ -63,6 +63,15 @@
       margin-bottom: 40px;
     }
 
+    .sponsor {
+      margin-top: 20px;
+      font-size: 16px;
+      img {
+        margin-top: 5px;
+        max-width: 128px;
+      }
+    }
+
     .speakers {
       @include span(12);
     }

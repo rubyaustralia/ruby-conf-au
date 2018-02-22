@@ -2154,6 +2154,12 @@ header {
   .schedule .event .end_time {
     margin-top: 10px;
     margin-bottom: 40px; }
+  .schedule .event .sponsor {
+    margin-top: 20px;
+    font-size: 16px; }
+    .schedule .event .sponsor img {
+      margin-top: 5px;
+      max-width: 128px; }
   .schedule .event .speaker {
     margin: 10px 0; }
     @media (max-width: 768px) {

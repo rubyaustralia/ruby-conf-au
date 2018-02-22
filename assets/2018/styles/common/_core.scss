@@ -192,6 +192,10 @@ p {
       @include span(1, $x-small: 7);
     }
 
+    &.conference .sponsor {
+      @include span(2, $x-small: 7);
+    }
+
     &.speaker-sponsors .sponsor {
       @include span(2, $x-small: 7);
     }

@@ -105,8 +105,8 @@ friday:
   - type: social_event
     title: "😭 Closing Party 🍻"
     description: 'Come and share canapés, drinks and MESSINA GELATO with all your new Ruby friends at the most appropriate venue for such an occasion <a target="_blank" href="https://goo.gl/maps/Xj2fWk9tiFx">The Chinese Friendship Gardens</a>.'
-    start_time: 1930
-    end_time: 2330
+    start_time: 1830
+    end_time: 2230
     sponsor: culture-amp
     sponsor_link: http://cultureamp.com
 

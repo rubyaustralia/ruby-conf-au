@@ -50,7 +50,7 @@ thursday:
     end_time: 1530
   - type: session
     title: Session 4
-    speakers: ["Stella Cotton", "Ryan Bigg"]
+    speakers: ["Ken Scambler", "Ryan Bigg"]
     start_time: 1530
     end_time: 1700
 
@@ -99,7 +99,7 @@ friday:
     end_time: 1530
   - type: session
     title: Session 4
-    speakers: ["Jessica Rudder", "Ken Scambler", "Merrin Macleod"]
+    speakers: ["Jessica Rudder", "Stella Cotton", "Merrin Macleod"]
     start_time: 1530
     end_time: 1730
   - type: social_event

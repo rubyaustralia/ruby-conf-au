@@ -2,8 +2,8 @@ wednesday:
   - type: social_event
     title: 🍻 Opening Party 🏝
     description: We're having a pool party on a <a href="https://www.google.com/maps/dir/''/ivy+hotel+sydney/@-33.8663908,151.1376334,12z/data=!4m8!4m7!1m0!1m5!1m1!1s0x6b12ae4059c0015b:0x9107c30771c45336!2m2!1d151.2076735!2d-33.8664106" target="_blank">rooftop in Sydney's CBD</a>. Join us for some casual canapés, drinks, and dancing!
-    start_time: 1930
-    end_time: 2230
+    start_time: 1900
+    end_time: 2200
     sponsor: envato
     sponsor_link: https://envato.com
 

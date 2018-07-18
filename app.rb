@@ -26,7 +26,7 @@ module RubyConf
     end
 
     configure :production do
-      set :host, 'rubyconf.org.au'
+      set :host, ENV.fetch("DEFAULT_HOST", "rubyconf.org.au")
       set :force_ssl, true
     end
 

@@ -1,0 +1,13 @@
+{
+  "devDependencies": {},
+  "dependencies": {
+    "foundation-sites": "^6.5.0-rc.2"
+  },
+  "name": "ruby-conf-au-2019",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "build": "bin/build"
+  }
+}

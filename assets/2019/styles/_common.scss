@@ -1,0 +1,29 @@
+$red: #cc4b37;
+
+h1, h2 {
+  text-align: center;
+  font-family: 'Merriweather Sans', sans-serif;
+  font-weight: 900;
+}
+
+h3 {
+  font-family: 'Merriweather Sans', sans-serif;
+  font-weight: 400;
+}
+
+p, li {
+  font-family: 'Open Sans', sans-serif;
+}
+
+i.fa, i.fab {
+  color: $red;
+}
+
+a {
+  text-decoration: underline;
+}
+
+a.icon {
+  text-decoration: none;
+  color: $red;
+}

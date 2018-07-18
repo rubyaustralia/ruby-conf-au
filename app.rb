@@ -6,6 +6,7 @@ require_relative 'app/year_2015/app'
 require_relative 'app/year_2016/app'
 require_relative 'app/year_2017/app'
 require_relative 'app/year_2018/app'
+require_relative 'app/year_2019/app'
 
 module RubyConf
   class App < Sinatra::Application
@@ -65,6 +66,7 @@ module RubyConf
     register Year2016::App
     register Year2017::App
     register Year2018::App
+    register Year2019::App
 
     get '/' do
       status_code 302

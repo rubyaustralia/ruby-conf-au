@@ -24,8 +24,8 @@ GEM
       hashie (~> 1.0)
       httparty (~> 0.8)
       json
-    daemons (1.2.4)
-    eventmachine (1.2.5)
+    daemons (1.2.6)
+    eventmachine (1.2.7)
     ffi (1.9.18)
     foreman (0.84.0)
       thor (~> 0.19.1)
@@ -45,10 +45,10 @@ GEM
     minitest (5.10.3)
     multi_json (1.12.2)
     multi_xml (0.6.0)
-    mustermann (1.0.1)
+    mustermann (1.0.2)
     pony (1.11)
       mail (>= 2.0)
-    rack (2.0.3)
+    rack (2.0.5)
     rack-protection (2.0.0)
       rack
     rb-fsevent (0.10.2)

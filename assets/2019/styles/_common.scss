@@ -27,3 +27,22 @@ a.icon {
   text-decoration: none;
   color: $red;
 }
+
+.speakers {
+  h4 {
+    text-align: center;
+  }
+
+  img {
+    width: 80%;
+    margin: 5% 10%;
+  }
+
+  .bio {
+    font-size: 90%;
+  }
+}
+
+.cfp {
+  margin-top: 1.5em;
+}

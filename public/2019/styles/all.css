@@ -2605,3 +2605,14 @@ a {
 a.icon {
   text-decoration: none;
   color: #cc4b37; }
+
+.speakers h4 {
+  text-align: center; }
+.speakers img {
+  width: 80%;
+  margin: 5% 10%; }
+.speakers .bio {
+  font-size: 90%; }
+
+.cfp {
+  margin-top: 1.5em; }

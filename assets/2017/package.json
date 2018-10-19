@@ -9,6 +9,6 @@
   },
   "dependencies": {
     "foundation-sites": "^6.2.3",
-    "hoek": "^5.0.3"
+    "hoek": "^5.0.4"
   }
 }

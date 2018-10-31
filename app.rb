@@ -33,8 +33,8 @@ module RubyConf
     configure :development do
       require 'sinatra/reloader'
 
-      set :host, 'rubyconf.dev'
-      set :force_ssl, true
+      set(:host, ENV.fetch("DEFAULT_HOST", "localhost:5000"))
+      set(:force_ssl, ENV.fetch("USE_SSL", "false") == "true")
     end
 
     helpers do
@@ -53,7 +53,7 @@ module RubyConf
     end
 
     before do
-      if !request.secure?
+      if self.class.force_ssl? && !request.secure?
         secure_url = "https://#{settings.host}#{request.fullpath}"
         request.logger.info "Insecure request, redirecting to #{secure_url}"
         redirect secure_url

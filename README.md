@@ -15,30 +15,29 @@ Then start the app with:
 $ foreman start
 ```
 
-### Assets 2018
+### Assets 2018-2019
 
-To update styles:
-
-To update styles:
+To update styles, go into the appropriate year's assets folder and run the following commands:
 
 ```
-$ cd assets/2018
+$ cd assets/2019
+$ yarn install
 $ yarn build
 ```
 
 During development, you probably want to be compiling assets on change:
 
 ```
-$ cd assets/2018
+$ cd assets/2019
 $ yarn watch
 ```
 
-### Assets 2016-2018
+### Assets 2016-2017
 
-To update styles:
+To update styles, go into the appropriate year's assets folder and run the following commands:
 
 ```
-$ cd assets/2018
+$ cd assets/2017
 $ make
 ```
 

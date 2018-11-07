@@ -48,7 +48,7 @@ GEM
     mustermann (1.0.2)
     pony (1.12)
       mail (>= 2.0)
-    rack (2.0.5)
+    rack (2.0.6)
     rack-protection (2.0.3)
       rack
     rb-fsevent (0.10.3)
@@ -102,4 +102,4 @@ RUBY VERSION
    ruby 2.5.1p57
 
 BUNDLED WITH
-   1.16.1
+   1.16.4

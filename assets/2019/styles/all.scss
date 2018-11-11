@@ -55,4 +55,7 @@ $global-width: 900px;
 // @include motion-ui-transitions;
 // @include motion-ui-animations;
 
-@import "common"
+@import "common";
+
+@import "variables";
+@import "header";

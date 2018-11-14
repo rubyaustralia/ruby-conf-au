@@ -1,0 +1,79 @@
+header {
+  background: $brown;
+  position: relative;
+
+  padding: 20px;
+
+  h2 {
+    font-size: 1.2rem;
+  }
+
+  .container {
+    @include align('center');
+    @include align('middle');
+    position: relative;
+    z-index: 10;
+  }
+
+  .brand {
+    @include span(12, $small: 12);
+    text-align: center;
+    overflow: visible;
+
+    img {
+      width: 200px;
+    }
+  }
+
+  nav {
+    margin-top: 20px;
+    a {
+      text-transform: uppercase;
+      display: inline-block;
+      padding: 10px 5px;
+      text-decoration: none;
+      font-weight: bold;
+      margin: 0 4px;
+
+      &:hover {
+        text-decoration: underline;
+      }
+
+      &.active {
+      }
+    }
+  }
+
+  .nav {
+    @include span(12, $small: 12);
+    @include align('center', $small: 'middle');
+    padding: 20px 10px;
+  }
+
+  .dates-and-location {
+    @include span(12, $small: 12);
+    @include align('center', $small: 'middle');
+    color: white;
+    text-transform: uppercase;
+    font-weight: 300;
+    padding: 40px 10px 20px;
+
+    a {
+      color: white;
+      text-decoration: none;
+    }
+  }
+
+  .nav > a {
+    padding: 8px 16px;
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: 500;
+    background: $ruby;
+    border-radius: 3px;
+
+    &:hover {
+    }
+  }
+}

@@ -54,8 +54,10 @@ $global-width: 900px;
 
 // @include motion-ui-transitions;
 // @include motion-ui-animations;
+@import 'vendor/flexboxgrid2';
 
-@import "common";
+@import 'lib/variables';
+@import 'lib/mixins';
 
-@import "variables";
-@import "header";
+@import 'common/common';
+@import 'common/header';

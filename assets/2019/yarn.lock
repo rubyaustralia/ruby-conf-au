@@ -2,6 +2,16 @@
 # yarn lockfile v1
 
 
+flexboxgrid2@^7.2.1:
+  version "7.2.1"
+  resolved "https://registry.yarnpkg.com/flexboxgrid2/-/flexboxgrid2-7.2.1.tgz#3ffb9661ca5a9e96468eae648f8caf279bd0b2a4"
+  dependencies:
+    normalize.css "^7.0.0"
+
 foundation-sites@^6.5.0-rc.2:
   version "6.5.0-rc.2"
   resolved "https://registry.yarnpkg.com/foundation-sites/-/foundation-sites-6.5.0-rc.2.tgz#0890f52e9dffed93ea394402b5ac9c1837618c08"
+
+normalize.css@^7.0.0:
+  version "7.0.0"
+  resolved "https://registry.yarnpkg.com/normalize.css/-/normalize.css-7.0.0.tgz#abfb1dd82470674e0322b53ceb1aaf412938e4bf"

@@ -3797,3 +3797,8 @@ header {
     font-weight: 500;
     background: #eb1d3b;
     border-radius: 3px; }
+
+.introduction {
+  margin: 40px 0 80px; }
+  .introduction .lead {
+    font-size: 150%; }

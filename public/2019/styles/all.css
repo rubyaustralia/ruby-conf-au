@@ -3831,23 +3831,28 @@ header {
     text-transform: uppercase;
     text-decoration: none; }
 
-.tickets .tito-submit {
-  background: #eab41e !important;
-  border-color: #eab41e !important;
-  font-weight: 600;
-  padding: 8px 16px !important;
-  height: auto !important; }
-.tickets .tito-submit:hover {
-  background: #eab41e !important;
-  border-color: #eab41e !important; }
-.tickets .apply a {
-  padding: 12px 60px;
-  color: white;
-  cursor: pointer;
-  font-weight: 500;
-  background: hotpink;
-  border-radius: 3px;
-  margin: 20px 0;
-  text-align: center;
-  text-transform: uppercase;
-  text-decoration: none; }
+.tickets {
+  margin: 40px 0 80px; }
+  .tickets .tito-submit {
+    background: #eab41e !important;
+    border-color: #eab41e !important;
+    font-weight: 600;
+    padding: 8px 16px !important;
+    height: auto !important; }
+  .tickets .tito-submit:hover {
+    background: #eab41e !important;
+    border-color: #eab41e !important; }
+  .tickets .apply a {
+    padding: 12px 60px;
+    color: white;
+    cursor: pointer;
+    font-weight: 500;
+    background: hotpink;
+    border-radius: 3px;
+    margin: 20px 0;
+    text-align: center;
+    text-transform: uppercase;
+    text-decoration: none; }
+
+.contact {
+  margin: 40px 0 80px; }

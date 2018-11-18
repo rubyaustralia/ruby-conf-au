@@ -3821,6 +3821,8 @@ footer {
   color: white;
   position: relative;
   padding: 40px 20px 80px; }
+  footer ul {
+    margin-left: 0; }
   footer li {
     list-style-type: none; }
   footer a {

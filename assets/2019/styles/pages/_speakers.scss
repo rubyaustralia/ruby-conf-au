@@ -12,7 +12,7 @@
     }
 
     .speaker {
-        width: 33.33%;
+        @include span(4, $medium: 6, $small: 12);
         img {
             border-radius: 3px;
             border: 3px solid $brown;

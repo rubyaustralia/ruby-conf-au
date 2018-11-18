@@ -2656,6 +2656,7 @@ select {
 header .brand,
 header .nav,
 header .dates-and-location,
+.speakers .speaker,
 .col-xs-offset-0,
 .col-xs-offset-1,
 .col-xs-offset-2,
@@ -2685,6 +2686,7 @@ header .dates-and-location,
 header .brand,
 header .nav,
 header .dates-and-location,
+.speakers .speaker,
 .col-sm-offset-0,
 .col-sm-offset-1,
 .col-sm-offset-2,
@@ -2705,6 +2707,7 @@ header .dates-and-location,
 .col-md-4,
 .col-md-5,
 .col-md-6,
+.speakers .speaker,
 .col-md-7,
 .col-md-8,
 .col-md-9,
@@ -2732,6 +2735,7 @@ header .dates-and-location,
 .col-lg-2,
 .col-lg-3,
 .col-lg-4,
+.speakers .speaker,
 .col-lg-5,
 .col-lg-6,
 .col-lg-7,
@@ -2855,7 +2859,7 @@ header .dates-and-location,
   flex-basis: 91.66666667%;
   max-width: 91.66666667%; }
 
-.col-xs-12, header .brand, header .nav, header .dates-and-location {
+.col-xs-12, header .brand, header .nav, header .dates-and-location, .speakers .speaker {
   -ms-flex-preferred-size: 100%;
   flex-basis: 100%;
   max-width: 100%; }
@@ -3017,7 +3021,7 @@ header .dates-and-location,
     flex-basis: 91.66666667%;
     max-width: 91.66666667%; }
 
-  .col-sm-12, header .brand, header .nav, header .dates-and-location {
+  .col-sm-12, header .brand, header .nav, header .dates-and-location, .speakers .speaker {
     -ms-flex-preferred-size: 100%;
     flex-basis: 100%;
     max-width: 100%; }
@@ -3122,6 +3126,7 @@ header .dates-and-location,
   .col-md-4,
   .col-md-5,
   .col-md-6,
+  .speakers .speaker,
   .col-md-7,
   .col-md-8,
   .col-md-9,
@@ -3184,7 +3189,7 @@ header .dates-and-location,
     flex-basis: 41.66666667%;
     max-width: 41.66666667%; }
 
-  .col-md-6 {
+  .col-md-6, .speakers .speaker {
     -ms-flex-preferred-size: 50%;
     flex-basis: 50%;
     max-width: 50%; }
@@ -3317,6 +3322,7 @@ header .dates-and-location,
   .col-lg-2,
   .col-lg-3,
   .col-lg-4,
+  .speakers .speaker,
   .col-lg-5,
   .col-lg-6,
   .col-lg-7,
@@ -3371,7 +3377,7 @@ header .dates-and-location,
     flex-basis: 25%;
     max-width: 25%; }
 
-  .col-lg-4 {
+  .col-lg-4, .speakers .speaker {
     -ms-flex-preferred-size: 33.33333333%;
     flex-basis: 33.33333333%;
     max-width: 33.33333333%; }
@@ -3831,29 +3837,27 @@ footer {
     display: flex;
     flex-wrap: wrap;
     margin: 40px 0 80px; }
-  .speakers .speaker {
-    width: 33.33%; }
-    .speakers .speaker img {
-      border-radius: 3px;
-      border: 3px solid #635147; }
-    .speakers .speaker.bio {
-      margin: 1rem; }
-    .speakers .speaker__name {
-      background: #fbc54a;
-      border-radius: 50%;
-      color: #635147;
-      font-size: 22px;
-      font-weight: 500;
-      line-height: 26px;
-      height: 120px;
-      left: 50%;
-      margin-left: -170px;
-      padding: 32px 0;
-      position: absolute;
-      text-align: center;
-      top: 0;
-      width: 120px;
-      z-index: 1300; }
+  .speakers .speaker img {
+    border-radius: 3px;
+    border: 3px solid #635147; }
+  .speakers .speaker.bio {
+    margin: 1rem; }
+  .speakers .speaker__name {
+    background: #fbc54a;
+    border-radius: 50%;
+    color: #635147;
+    font-size: 22px;
+    font-weight: 500;
+    line-height: 26px;
+    height: 120px;
+    left: 50%;
+    margin-left: -170px;
+    padding: 32px 0;
+    position: absolute;
+    text-align: center;
+    top: 0;
+    width: 120px;
+    z-index: 1300; }
   .speakers .apply a {
     padding: 15px 120px;
     color: white;

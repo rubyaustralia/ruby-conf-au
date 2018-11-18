@@ -2716,13 +2716,13 @@ header .dates-and-location,
 header .brand,
 header .nav,
 header .dates-and-location,
-.speakers.all .speaker .avatar,
 .col-md-5,
+.speakers.all .speaker .avatar,
 .col-md-6,
 .speakers .speaker,
 .col-md-7,
-.col-md-8,
 .speakers.all .speaker .details,
+.col-md-8,
 .col-md-9,
 .col-md-10,
 .speakers.all .speaker,
@@ -2922,7 +2922,7 @@ header .dates-and-location,
   justify-content: flex-start;
   text-align: start; }
 
-.center-xs, header, header .container {
+.center-xs, header, header .container, .speakers.all .speaker .avatar {
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   justify-content: center;
@@ -3084,7 +3084,7 @@ header .dates-and-location,
     justify-content: flex-start;
     text-align: start; }
 
-  .center-sm, header, header .container {
+  .center-sm, header, header .container, .speakers.all .speaker .avatar {
     -webkit-box-pack: center;
     -ms-flex-pack: center;
     justify-content: center;
@@ -3143,13 +3143,13 @@ header .dates-and-location,
   header .brand,
   header .nav,
   header .dates-and-location,
-  .speakers.all .speaker .avatar,
   .col-md-5,
+  .speakers.all .speaker .avatar,
   .col-md-6,
   .speakers .speaker,
   .col-md-7,
-  .col-md-8,
   .speakers.all .speaker .details,
+  .col-md-8,
   .col-md-9,
   .col-md-10,
   .speakers.all .speaker,
@@ -3199,12 +3199,12 @@ header .dates-and-location,
     flex-basis: 25%;
     max-width: 25%; }
 
-  .col-md-4, header .brand, header .nav, header .dates-and-location, .speakers.all .speaker .avatar {
+  .col-md-4, header .brand, header .nav, header .dates-and-location {
     -ms-flex-preferred-size: 33.33333333%;
     flex-basis: 33.33333333%;
     max-width: 33.33333333%; }
 
-  .col-md-5 {
+  .col-md-5, .speakers.all .speaker .avatar {
     -ms-flex-preferred-size: 41.66666667%;
     flex-basis: 41.66666667%;
     max-width: 41.66666667%; }
@@ -3214,12 +3214,12 @@ header .dates-and-location,
     flex-basis: 50%;
     max-width: 50%; }
 
-  .col-md-7 {
+  .col-md-7, .speakers.all .speaker .details {
     -ms-flex-preferred-size: 58.33333333%;
     flex-basis: 58.33333333%;
     max-width: 58.33333333%; }
 
-  .col-md-8, .speakers.all .speaker .details {
+  .col-md-8 {
     -ms-flex-preferred-size: 66.66666667%;
     flex-basis: 66.66666667%;
     max-width: 66.66666667%; }
@@ -3286,7 +3286,7 @@ header .dates-and-location,
     justify-content: flex-start;
     text-align: start; }
 
-  .center-md, header, header .container {
+  .center-md, header, header .container, .speakers.all .speaker .avatar {
     -webkit-box-pack: center;
     -ms-flex-pack: center;
     justify-content: center;
@@ -3488,7 +3488,7 @@ header .dates-and-location,
     justify-content: flex-start;
     text-align: start; }
 
-  .center-lg, header, header .container {
+  .center-lg, header, header .container, .speakers.all .speaker .avatar {
     -webkit-box-pack: center;
     -ms-flex-pack: center;
     justify-content: center;
@@ -3907,12 +3907,10 @@ footer {
     font-weight: 500;
     line-height: 26px;
     height: 120px;
-    left: 50%;
-    margin-left: -170px;
     padding: 32px 0;
     position: absolute;
     text-align: center;
-    top: 0;
+    display: inline-block;
     width: 120px;
     z-index: 1300; }
   .speakers .apply a {
@@ -3927,6 +3925,18 @@ footer {
     text-transform: uppercase;
     text-decoration: none; }
 
+@media (min-width: 768px) {
+  .speakers.all .speaker .avatar .name {
+    left: -15px;
+    top: -35px; } }
+@media (min-width: 990px) {
+  .speakers.all .speaker .avatar .name {
+    left: -15px;
+    top: -35px; } }
+@media (min-width: 1200px) {
+  .speakers.all .speaker .avatar .name {
+    left: 18px;
+    top: -35px; } }
 .speakers.all {
   margin-top: 60px; }
   .speakers.all .speaker {
@@ -3937,31 +3947,21 @@ footer {
       z-index: 900;
       height: 220px; }
       .speakers.all .speaker .avatar img {
-        margin-top: 10px;
-        margin-bottom: 10px;
-        margin-left: 30px;
-        margin-right: 0;
-        width: 200px;
-        height: 200px; }
+        margin: 0 auto;
+        width: 200px; }
     .speakers.all .speaker .name {
       font-size: 18px;
       font-weight: 500;
       line-height: 20px;
       height: 90px;
-      margin-left: -170px;
       padding-top: 22px;
-      width: 90px; }
+      width: 90px;
+      left: 75px;
+      top: -35px; }
     .speakers.all .speaker .details {
       position: relative;
       z-index: 1100;
       background: white; }
-      .speakers.all .speaker .details:before {
-        content: "";
-        position: absolute;
-        left: -50px;
-        width: 50px;
-        height: 100%;
-        background: linear-gradient(to right, rgba(255, 255, 255, 0) 0%, white 100%); }
       .speakers.all .speaker .details .quote {
         font-size: 20px;
         text-align: left;

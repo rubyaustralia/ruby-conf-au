@@ -30,12 +30,13 @@
             font-weight: 500;
             line-height: 26px;
             height: 120px;
-            left: 50%;
-            margin-left: -170px;
+            // left: 50%;
+            // margin-left: -170px;
             padding: 32px 0;
             position: absolute;
             text-align: center;
-            top: 0;
+            display: inline-block;
+            // top: 0;
             width: 120px;
             z-index: 1300;
 
@@ -58,6 +59,27 @@
     }
 }
 
+@media (min-width: 768px) {
+  .speakers.all .speaker .avatar .name {
+    left: -15px;
+    top: -35px;
+  }
+}
+
+@media (min-width: 990px) {
+  .speakers.all .speaker .avatar .name {
+    left: -15px;
+    top: -35px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .speakers.all .speaker .avatar .name {
+    left: 18px;
+    top: -35px;
+  }
+}
+
 .speakers.all {
   margin-top: 60px;
 
@@ -69,20 +91,17 @@
     min-height: 220px;
 
     .avatar {
-      @include span(4, $small: 12);
-      @include align('middle', $small: 'middle');
+      @include span(4, $medium: 5, $small: 12);
+      @include align('middle', $small: 'middle', $x-small: 'middle');
+      @include align('center');
 
       position: relative;
       z-index: 900;
       height: 220px;
 
       img {
-        margin-top: 10px;
-        margin-bottom: 10px;
-        margin-left: 30px;
-        margin-right: 0;
+        margin: 0 auto;
         width: 200px;
-        height: 200px;
       }
     }
 
@@ -91,25 +110,27 @@
       font-weight: 500;
       line-height: 20px;
       height: 90px;
-      margin-left: -170px;
+      // margin-left: -170px;
       padding-top: 22px;
       width: 90px;
+      left: 75px;
+      top: -35px;
     }
 
     .details {
-      @include span(8, $small: 12);
+      @include span(8, $medium: 7, $small: 12);
       position: relative;
       z-index: 1100;
       background: white;
 
-      &:before {
-        content: "";
-        position: absolute;
-        left: -50px;
-        width: 50px;
-        height: 100%;
-        background: linear-gradient(to right, rgba(255,255,255,0) 0%,rgba(255,255,255,1) 100%);
-      }
+      // &:before {
+      //   content: "";
+      //   position: absolute;
+      //   left: -50px;
+      //   width: 50px;
+      //   height: 100%;
+      //   background: linear-gradient(to right, rgba(255,255,255,0) 0%,rgba(255,255,255,1) 100%);
+      // }
 
       .quote {
         font-size: 20px;

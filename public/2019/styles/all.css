@@ -3731,14 +3731,17 @@ p, li {
   font-family: 'Open Sans', sans-serif; }
 
 i.fa, i.fab {
-  color: #cc4b37; }
+  color: #eb1d3b; }
 
 a {
-  text-decoration: underline; }
+  text-decoration: underline;
+  color: #eb1d3b; }
+  a:hover {
+    color: #eb1d3b; }
 
 a.icon {
   text-decoration: none;
-  color: #cc4b37; }
+  color: #eb1d3b; }
 
 .speakers h4 {
   text-align: center; }
@@ -3746,7 +3749,8 @@ a.icon {
   width: 80%;
   margin: 5% 10%; }
 .speakers .bio {
-  font-size: 90%; }
+  font-size: 100%;
+  margin: 0 2rem 2rem; }
 
 .cfp {
   margin-top: 1.5em; }
@@ -3802,3 +3806,29 @@ header {
   margin: 40px 0 80px; }
   .introduction .lead {
     font-size: 150%; }
+
+.speakers {
+  margin: 40px 0 80px; }
+  .speakers .speaker-list {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 40px 0 80px; }
+  .speakers .speaker {
+    width: 33.33%; }
+    .speakers .speaker img {
+      border-radius: 3px; }
+    .speakers .speaker.bio {
+      margin: 1rem; }
+  .speakers .apply a {
+    padding: 15px 40px;
+    color: white;
+    cursor: pointer;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: 500;
+    background: teal;
+    border-radius: 3px;
+    margin: 20px 0;
+    text-align: center;
+    text-transform: uppercase;
+    text-decoration: none; }

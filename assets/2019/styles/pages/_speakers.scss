@@ -1,0 +1,36 @@
+.speakers {
+	margin: 40px 0 80px;
+
+    .speaker-list {
+        display: flex;
+        flex-wrap: wrap;
+        margin: 40px 0 80px;
+    }
+
+    .speaker {
+        width: 33.33%;
+        img {
+            border-radius: 3px;
+        }
+
+        &.bio {
+            margin: 1rem;
+        }
+    }
+
+    .apply a {
+        padding: 15px 40px;
+        color: white;
+        cursor: pointer;
+        text-decoration: none;
+        text-transform: uppercase;
+        font-weight: 500;
+        background: teal;
+        border-radius: 3px;
+        margin: 20px 0;
+        text-align: center;
+        text-transform: uppercase;
+        text-decoration: none;
+    }
+}
+

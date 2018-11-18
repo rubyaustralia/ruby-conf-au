@@ -1,4 +1,4 @@
-$red: #cc4b37;
+$red: #eb1d3b;
 
 h1, h2 {
   text-align: center;
@@ -21,6 +21,10 @@ i.fa, i.fab {
 
 a {
   text-decoration: underline;
+  color: $red;
+  &:hover {
+    color: $red;
+  }
 }
 
 a.icon {
@@ -39,7 +43,8 @@ a.icon {
   }
 
   .bio {
-    font-size: 90%;
+    font-size: 100%;
+    margin: 0 2rem 2rem;
   }
 }
 

@@ -1,0 +1,24 @@
+footer {
+  background: $brown;
+  color: white;
+  position: relative;
+
+  padding: 40px 20px 80px;
+
+  li {
+  	list-style-type: none;
+  }
+
+  a {
+  	color: white;
+  }
+
+  i {
+  	color: white!important;
+  }
+}
+
+.footer {
+	display: flex;
+	justify-content: space-between;
+}

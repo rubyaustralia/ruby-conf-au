@@ -4,13 +4,9 @@ $global-width: 900px;
 
 @import url('https://fonts.googleapis.com/css?family=Merriweather+Sans|Open+Sans');
 
-// @import 'font-awesome/font-awesome.scss';
 @import 'foundation';
-// @import 'motion-ui';
 
 @include foundation-global-styles;
-// @include foundation-grid;
-// @include foundation-flex-grid;
 @include foundation-xy-grid-classes;
 @include foundation-typography;
 @include foundation-button;
@@ -23,6 +19,7 @@ $global-width: 900px;
 
 @import 'common/common';
 @import 'common/header';
+@import 'common/footer';
 
 @import 'pages/home';
 @import 'pages/speakers';

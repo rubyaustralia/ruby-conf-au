@@ -3802,6 +3802,22 @@ header {
     background: #eb1d3b;
     border-radius: 3px; }
 
+footer {
+  background: #635147;
+  color: white;
+  position: relative;
+  padding: 40px 20px 80px; }
+  footer li {
+    list-style-type: none; }
+  footer a {
+    color: white; }
+  footer i {
+    color: white !important; }
+
+.footer {
+  display: flex;
+  justify-content: space-between; }
+
 .introduction {
   margin: 40px 0 80px; }
   .introduction .lead {
@@ -3809,6 +3825,8 @@ header {
 
 .speakers {
   margin: 40px 0 80px; }
+  .speakers .avatar {
+    position: relative; }
   .speakers .speaker-list {
     display: flex;
     flex-wrap: wrap;
@@ -3816,34 +3834,51 @@ header {
   .speakers .speaker {
     width: 33.33%; }
     .speakers .speaker img {
-      border-radius: 3px; }
+      border-radius: 3px;
+      border: 3px solid #635147; }
     .speakers .speaker.bio {
       margin: 1rem; }
+    .speakers .speaker__name {
+      background: #fbc54a;
+      border-radius: 50%;
+      color: #635147;
+      font-size: 22px;
+      font-weight: 500;
+      line-height: 26px;
+      height: 120px;
+      left: 50%;
+      margin-left: -170px;
+      padding: 32px 0;
+      position: absolute;
+      text-align: center;
+      top: 0;
+      width: 120px;
+      z-index: 1300; }
   .speakers .apply a {
-    padding: 12px 60px;
+    padding: 15px 120px;
     color: white;
     cursor: pointer;
     font-weight: 500;
     background: teal;
     border-radius: 3px;
-    margin: 20px 0;
+    margin: 2rem 0 0;
     text-align: center;
     text-transform: uppercase;
     text-decoration: none; }
 
 .tickets {
-  margin: 40px 0 80px; }
+  margin: 40px 0 0; }
   .tickets .tito-submit {
-    background: #eab41e !important;
-    border-color: #eab41e !important;
+    background: orange !important;
+    border-color: orange !important;
     font-weight: 600;
     padding: 8px 16px !important;
     height: auto !important; }
   .tickets .tito-submit:hover {
-    background: #eab41e !important;
-    border-color: #eab41e !important; }
+    background: orange !important;
+    border-color: orange !important; }
   .tickets .apply a {
-    padding: 12px 60px;
+    padding: 15px 120px;
     color: white;
     cursor: pointer;
     font-weight: 500;
@@ -3853,6 +3888,10 @@ header {
     text-align: center;
     text-transform: uppercase;
     text-decoration: none; }
+  .tickets .ticketing {
+    margin-bottom: 80px; }
+  .tickets .opportunity {
+    margin: 40px 0 80px; }
 
 .contact {
   margin: 40px 0 80px; }

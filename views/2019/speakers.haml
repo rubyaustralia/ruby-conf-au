@@ -1,0 +1,11 @@
+.introduction
+  .container
+    %h4 Behold, the stellar line-up of speakers for our conference!
+
+.speakers.all
+  .container
+    - @speakers[0...5].each do |speaker|
+      = haml :'2019/_speaker', locals: { speaker: speaker }
+
+    - @speakers[5..-1].shuffle.each do |speaker|
+      = haml :'2019/_speaker', locals: { speaker: speaker }

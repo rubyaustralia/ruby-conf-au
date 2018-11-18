@@ -8,52 +8,30 @@
     %p We are so stoked to have the following speakers to grace our stage and share their wisdom and knowledge with us!
 
     .speaker-list
-
       .speaker.first
-
-        .avatar
-          .speaker__name
-            Nadia
-            %br
-            Odunayo
-          %img{src: "/images/2019/nadia.jpg"}
-          %p.bio <a href="http://www.nadiaodunayo.com">Nadia</a> is currently CTO at <a href="https://www.codenewbie.org">CodeNewbie</a>. Before that, she co-directed Ignition Works, a company that did a mix of in-house product development and software consultancy, helping large firms to manage their cloud platforms. She previously worked at Pivotal and originally learnt to code at Makers Academy in London. She maintains <a href="https://speakerline.io">speakerline.io</a> in her spare time.
+        = haml :'2019/_speaker_mini', locals: { speaker: @speakers[0] }
 
       .speaker.second
-        .avatar
-          .speaker__name
-            Beth
-            %br
-            Haubert
-          %img{src: "/images/2019/beth.jpg"}
-          %p.bio <a href="https://www.bethanyhaubert.com">Beth</a> is a software engineer who loves Ruby, little-known APIs, handcrafting SQL queries, and as many monitors on her desk as possible. She’s also a former airborne cryptologic linguist for the US Air Force, fluent in Mandarin. Things you can ask her about include cats, board games, karaoke, and building applications that convert songs into auto-tuned cat meows. Things she'll have to kill you if you ask her about: the airborne linguist part. Also, she likes to make emojis look like they're farting. 🐈💨
+        = haml :'2019/_speaker_mini', locals: { speaker: @speakers[1] }
 
       .speaker.third
-        .avatar
-          .speaker__name
-            Daniel
-            %br
-            Fone
-          %img{src: "/images/2019/daniel.jpg"}
-          %p.bio <a href="http://daniel.fone.net.nz">Daniel</a> has been writing Ruby/Rails for about 10 years. In recent years he has been helping to organise the Christchurch Ruby meetups and serving as secretary on the Ruby New Zealand committee. He lives in 🇳🇿 with 👨‍👩‍👧‍👦👶, and enjoys 🏃, 🍺, and 🔎 📖 ἡ κοινὴ. Much like Ruby, he tries to be optimised for happiness — both his own and other people's.
+        = haml :'2019/_speaker_mini', locals: { speaker: @speakers[2] }
 
       .speaker.fourth
-        .avatar
-          .speaker__name
-            Eliza
-            %br
-            Sorensen
-          %img{src: "/images/2019/eliza.jpg"}
-          %p.bio <a href="https://twitter.com/Zemmiph0bia">Eliza</a> is an Infrastructure & Security engineer, cyber witch and co-founder of social enterprise <a href="https://assemblyfour.com">Assembly Four</a> who created sex worker friendly social network Switter and inclusive modern advertising platform Tryst.
+        = haml :'2019/_speaker_mini', locals: { speaker: @speakers[3] }
 
       .speaker.fifth
-        .avatar
-          .speaker__name
-            Jack
-            %br
-            Chen
-          %img{src: "/images/2019/jack.jpg"}
-          %p.bio Mostly known as “<a href="https://twitter.com/chendo">chendo</a>”, Jack is a software-oriented problem-solver who occasionally enjoys making computers do his bidding. He is one of the co-founders of a social enterprise called <a href="https://assemblyfour.com">Assembly Four</a>, which aims to build modern products and services for sex workers around the world. When he’s not yelling at computers, you can find him bouldering, playing video games, or go karting.
+        = haml :'2019/_speaker_mini', locals: { speaker: @speakers[4] }
+
+      .speaker.sixth
+        %a{href: "/2019/speakers"}
+          .avatar
+            .speaker__name
+              And
+              %br
+              more!
+            %img{ src: @speakers[5..-1].shuffle[0].avatar_filename(format: 'jpg') }
+
 
 .tickets
   = haml :'2019/common/_tickets'
@@ -65,3 +43,5 @@
       %a{href: "https://confirmsubscription.com/h/j/809D057CE90261E7"} subscribe to the mailing list
       or
       %a{href: "https://twitter.com/rubyconf_au"} follow us on Twitter.
+
+= haml :'2019/common/_sponsors'

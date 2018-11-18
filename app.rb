@@ -1,5 +1,7 @@
 Bundler.require(:default)
+require 'active_support/inflector'
 require 'active_support/core_ext/hash/indifferent_access'
+require 'active_support/core_ext/string/output_safety'
 require_relative 'app/year_2013/app'
 require_relative 'app/year_2014/app'
 require_relative 'app/year_2015/app'

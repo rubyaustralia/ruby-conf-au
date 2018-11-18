@@ -1,0 +1,34 @@
+- name: Nadia Odunayo
+  bio: "[Nadia](http://www.nadiaodunayo.com/) is currently CTO at [CodeNewbie](https://www.codenewbie.org/). Before that, she co-directed Ignition Works, a company that did a mix of in-house product development and software consultancy, helping large firms to manage their cloud platforms. She previously worked at Pivotal and originally learnt to code at Makers Academy in London. She maintains [speakerline.io](https://speakerline.io/) in her spare time."
+  twitter: nodunayo
+
+- name: Beth Haubert
+  bio: "[Beth](https://www.bethanyhaubert.com/) is a software engineer who loves Ruby, little-known APIs, handcrafting SQL queries, and as many monitors on her desk as possible. She’s also a former airborne cryptologic linguist for the US Air Force, fluent in Mandarin. Things you can ask her about include cats, board games, karaoke, and building applications that convert songs into auto-tuned cat meows. Things she'll have to kill you if you ask her about: the airborne linguist part. Also, she likes to make emojis look like they're farting. 🐈💨"
+  twitter: haubertdashery
+
+- name: Daniel Fone
+  bio: "[Daniel](http://daniel.fone.net.nz/) has been writing Ruby/Rails for about 10 years. In recent years he has been helping to organise the Christchurch Ruby meetups and serving as secretary on the Ruby New Zealand committee. He lives in 🇳🇿 with 👨‍👩‍👧‍👦👶, and enjoys 🏃, 🍺, and 🔎 📖 ἡ κοινὴ. Much like Ruby, he tries to be optimised for happiness — both his own and other people's."
+  twitter: danielfone
+
+- name: Eliza Sorensen
+  bio: "[Eliza](https://twitter.com/Zemmiph0bia) is an Infrastructure & Security engineer, cyber witch and co-founder of social enterprise [Assembly Four](https://assemblyfour.com/) who created sex worker friendly social network Switter and inclusive modern advertising platform Tryst."
+  twitter: Zemmiph0bia
+
+- name: Jack Chen
+  bio: "Mostly known as “chendo”, Jack is a software-oriented problem-solver who occasionally enjoys making computers do his bidding. He is one of the co-founders of a social enterprise called [Assembly Four](https://assemblyfour.com/), which aims to build modern products and services for sex workers around the world. When he’s not yelling at computers, you can find him bouldering, playing video games, or go karting."
+  twitter: chendo
+
+- name: Merrin Macleod
+  title: "Environment Variables"
+  pitch: |
+    How can we minimise our software’s contribution to climate change? How do we make software that can withstand climate change-related disasters? How do we deal with the knowledge that we’re careening towards catastrophe?
+
+    I don’t have all the answers, but let’s do some maths about it.
+  bio: "Merrin is a Ruby developer with a background in design, social enterprise, and the electricity industry."
+  twitter: merxplat
+
+- name: Keith Pitty
+  title: "\"What were they thinking?\""
+  pitch: "This is a sentiment many Rails developers have experienced whilst reading a legacy codebase, trying to glean the motivations behind the code or simply understand what it is meant to do. This talk turns that perspective on its head and asks, “what can I do to prevent this scenario?”"
+  bio: "Keith Pitty has been developing software professionally for more than three decades. Since 2000 he has maintained a keen interest in Agile approaches and for the last ten years has made many contributions to the Australian Ruby community. He has been fascinated by how developers consider other people when developing software since his early days of programming on mainframes. Away from computers he enjoys golf, is a cricket tragic and a passionate Collingwood supporter."
+  twitter: keithpitty

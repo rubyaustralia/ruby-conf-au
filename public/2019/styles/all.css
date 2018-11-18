@@ -2647,6 +2647,7 @@ select {
 .col-xs-4,
 .col-xs-5,
 .col-xs-6,
+.footer,
 .col-xs-7,
 .col-xs-8,
 .col-xs-9,
@@ -2686,6 +2687,7 @@ header .dates-and-location,
 header .brand,
 header .nav,
 header .dates-and-location,
+.footer,
 .speakers .speaker,
 .col-sm-offset-0,
 .col-sm-offset-1,
@@ -2717,6 +2719,7 @@ header .dates-and-location,
 header .brand,
 header .nav,
 header .dates-and-location,
+.footer,
 .col-md-offset-0,
 .col-md-offset-1,
 .col-md-offset-2,
@@ -2747,6 +2750,7 @@ header .dates-and-location,
 header .brand,
 header .nav,
 header .dates-and-location,
+.footer,
 .col-lg-offset-0,
 .col-lg-offset-1,
 .col-lg-offset-2,
@@ -2829,7 +2833,7 @@ header .dates-and-location,
   flex-basis: 41.66666667%;
   max-width: 41.66666667%; }
 
-.col-xs-6 {
+.col-xs-6, .footer {
   -ms-flex-preferred-size: 50%;
   flex-basis: 50%;
   max-width: 50%; }
@@ -3021,7 +3025,7 @@ header .dates-and-location,
     flex-basis: 91.66666667%;
     max-width: 91.66666667%; }
 
-  .col-sm-12, header .brand, header .nav, header .dates-and-location, .speakers .speaker {
+  .col-sm-12, header .brand, header .nav, header .dates-and-location, .footer, .speakers .speaker {
     -ms-flex-preferred-size: 100%;
     flex-basis: 100%;
     max-width: 100%; }
@@ -3136,6 +3140,7 @@ header .dates-and-location,
   header .brand,
   header .nav,
   header .dates-and-location,
+  .footer,
   .col-md-offset-0,
   .col-md-offset-1,
   .col-md-offset-2,
@@ -3219,7 +3224,7 @@ header .dates-and-location,
     flex-basis: 91.66666667%;
     max-width: 91.66666667%; }
 
-  .col-md-12, header .brand, header .nav, header .dates-and-location {
+  .col-md-12, header .brand, header .nav, header .dates-and-location, .footer {
     -ms-flex-preferred-size: 100%;
     flex-basis: 100%;
     max-width: 100%; }
@@ -3334,6 +3339,7 @@ header .dates-and-location,
   header .brand,
   header .nav,
   header .dates-and-location,
+  .footer,
   .col-lg-offset-0,
   .col-lg-offset-1,
   .col-lg-offset-2,
@@ -3417,7 +3423,7 @@ header .dates-and-location,
     flex-basis: 91.66666667%;
     max-width: 91.66666667%; }
 
-  .col-lg-12, header .brand, header .nav, header .dates-and-location {
+  .col-lg-12, header .brand, header .nav, header .dates-and-location, .footer {
     -ms-flex-preferred-size: 100%;
     flex-basis: 100%;
     max-width: 100%; }
@@ -3781,6 +3787,7 @@ header {
   header nav {
     margin-top: 20px; }
     header nav a {
+      color: #c9a180;
       text-transform: uppercase;
       display: inline-block;
       padding: 10px 5px;
@@ -3788,7 +3795,8 @@ header {
       font-weight: bold;
       margin: 0 4px; }
       header nav a:hover {
-        text-decoration: underline; }
+        text-decoration: underline;
+        color: #c9a180; }
   header .nav {
     padding: 20px 10px; }
   header .dates-and-location {
@@ -3822,6 +3830,7 @@ footer {
 
 .footer {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between; }
 
 .introduction {
@@ -3886,7 +3895,7 @@ footer {
     color: white;
     cursor: pointer;
     font-weight: 500;
-    background: hotpink;
+    background: #d2696f;
     border-radius: 3px;
     margin: 20px 0;
     text-align: center;

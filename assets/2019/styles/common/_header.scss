@@ -28,6 +28,7 @@ header {
   nav {
     margin-top: 20px;
     a {
+      color: $khaki;
       text-transform: uppercase;
       display: inline-block;
       padding: 10px 5px;
@@ -37,6 +38,7 @@ header {
 
       &:hover {
         text-decoration: underline;
+        color: $khaki;
       }
 
       &.active {

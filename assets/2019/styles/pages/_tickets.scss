@@ -14,11 +14,11 @@
 
 	.apply {
 		a {
-			padding: 15px 120px;
+					padding: 15px 120px;
         	color: white;
 	        cursor: pointer;
 	        font-weight: 500;
-	        background: hotpink;
+	        background: $darker-pink;
 	        border-radius: 3px;
 	        margin: 20px 0;
 	        text-align: center;
@@ -26,7 +26,7 @@
 	        text-decoration: none;
 		}
 	}
-	
+
 	.ticketing {
 		margin-bottom: 80px;
 	}

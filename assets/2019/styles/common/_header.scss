@@ -1,22 +1,28 @@
 header {
-  background: $brown;
+  padding-top: 5px;
+  background: $teal;
   position: relative;
 
-  padding: 20px;
+  @include align('center');
 
   h2 {
     font-size: 1.2rem;
+    color: $rosey-pink;
+    @include align('end', $small: 'middle', $x-small: 'middle');
   }
 
   .container {
+    @include row;
     @include align('center');
     @include align('middle');
+
     position: relative;
     z-index: 10;
+    margin: 0 auto;
   }
 
   .brand {
-    @include span(12, $small: 12);
+    @include span(4, $small: 12, $x-small: 12);
     text-align: center;
     overflow: visible;
 
@@ -26,9 +32,9 @@ header {
   }
 
   nav {
-    margin-top: 20px;
+    margin-top: 5px;
     a {
-      color: $khaki;
+      color: $rosey-pink;
       text-transform: uppercase;
       display: inline-block;
       padding: 10px 5px;
@@ -38,7 +44,7 @@ header {
 
       &:hover {
         text-decoration: underline;
-        color: $khaki;
+        color: $rosey-pink;
       }
 
       &.active {
@@ -47,18 +53,19 @@ header {
   }
 
   .nav {
-    @include span(12, $small: 12);
-    @include align('center', $small: 'middle');
+    @include span(4, $small: 12, $x-small: 12);
+    @include align('start', $small: 'middle', $x-small: 'middle');
     padding: 20px 10px;
   }
 
   .dates-and-location {
-    @include span(12, $small: 12);
-    @include align('center', $small: 'middle');
+    @include span(4, $small: 12, $x-small: 12);
+    @include align('end', $small: 'middle', $x-small: 'middle');
+
     color: white;
     text-transform: uppercase;
     font-weight: 300;
-    padding: 40px 10px 20px;
+    padding: 20px 10px;
 
     a {
       color: white;
@@ -76,6 +83,20 @@ header {
     border-radius: 3px;
 
     &:hover {
+    }
+  }
+}
+
+@media (min-width: 1200px) {
+  header {
+    .nav > a {
+      position: relative;
+      left: -80px;
+    }
+
+    .dates-and-location a {
+      position: relative;
+      right: -80px;
     }
   }
 }

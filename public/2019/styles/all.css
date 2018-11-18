@@ -2611,7 +2611,7 @@ select {
   .container {
     width: 1184px;
     max-width: 100%; } }
-.row, .speakers.all .speaker {
+.row, header .container, .speakers.all .speaker {
   box-sizing: border-box;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -2628,7 +2628,7 @@ select {
   margin-right: -8px;
   margin-left: -8px; }
 
-.row.reverse, .speakers.all .reverse.speaker {
+.row.reverse, header .reverse.container, .speakers.all .reverse.speaker {
   -webkit-box-orient: horizontal;
   -webkit-box-direction: reverse;
   -ms-flex-direction: row-reverse;
@@ -2713,6 +2713,9 @@ header .dates-and-location,
 .col-md-2,
 .col-md-3,
 .col-md-4,
+header .brand,
+header .nav,
+header .dates-and-location,
 .speakers.all .speaker .avatar,
 .col-md-5,
 .col-md-6,
@@ -2725,9 +2728,6 @@ header .dates-and-location,
 .speakers.all .speaker,
 .col-md-11,
 .col-md-12,
-header .brand,
-header .nav,
-header .dates-and-location,
 .footer,
 .col-md-offset-0,
 .col-md-offset-1,
@@ -2747,6 +2747,9 @@ header .dates-and-location,
 .col-lg-2,
 .col-lg-3,
 .col-lg-4,
+header .brand,
+header .nav,
+header .dates-and-location,
 .speakers .speaker,
 .speakers.all .speaker .avatar,
 .col-lg-5,
@@ -2759,9 +2762,6 @@ header .dates-and-location,
 .speakers.all .speaker,
 .col-lg-11,
 .col-lg-12,
-header .brand,
-header .nav,
-header .dates-and-location,
 .footer,
 .col-lg-offset-0,
 .col-lg-offset-1,
@@ -2922,7 +2922,7 @@ header .dates-and-location,
   justify-content: flex-start;
   text-align: start; }
 
-.center-xs, header .container {
+.center-xs, header, header .container {
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   justify-content: center;
@@ -2939,7 +2939,7 @@ header .dates-and-location,
   -ms-flex-align: start;
   align-items: flex-start; }
 
-.middle-xs, header .container, header .nav, header .dates-and-location, .speakers.all .speaker .avatar {
+.middle-xs, header h2, header .container, header .nav, header .dates-and-location, .speakers.all .speaker .avatar {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center; }
@@ -3084,7 +3084,7 @@ header .dates-and-location,
     justify-content: flex-start;
     text-align: start; }
 
-  .center-sm, header .container {
+  .center-sm, header, header .container {
     -webkit-box-pack: center;
     -ms-flex-pack: center;
     justify-content: center;
@@ -3101,7 +3101,7 @@ header .dates-and-location,
     -ms-flex-align: start;
     align-items: flex-start; }
 
-  .middle-sm, header .container, header .nav, header .dates-and-location, .speakers.all .speaker .avatar {
+  .middle-sm, header h2, header .container, header .nav, header .dates-and-location, .speakers.all .speaker .avatar {
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center; }
@@ -3140,6 +3140,9 @@ header .dates-and-location,
   .col-md-2,
   .col-md-3,
   .col-md-4,
+  header .brand,
+  header .nav,
+  header .dates-and-location,
   .speakers.all .speaker .avatar,
   .col-md-5,
   .col-md-6,
@@ -3152,9 +3155,6 @@ header .dates-and-location,
   .speakers.all .speaker,
   .col-md-11,
   .col-md-12,
-  header .brand,
-  header .nav,
-  header .dates-and-location,
   .footer,
   .col-md-offset-0,
   .col-md-offset-1,
@@ -3199,7 +3199,7 @@ header .dates-and-location,
     flex-basis: 25%;
     max-width: 25%; }
 
-  .col-md-4, .speakers.all .speaker .avatar {
+  .col-md-4, header .brand, header .nav, header .dates-and-location, .speakers.all .speaker .avatar {
     -ms-flex-preferred-size: 33.33333333%;
     flex-basis: 33.33333333%;
     max-width: 33.33333333%; }
@@ -3239,7 +3239,7 @@ header .dates-and-location,
     flex-basis: 91.66666667%;
     max-width: 91.66666667%; }
 
-  .col-md-12, header .brand, header .nav, header .dates-and-location, .footer {
+  .col-md-12, .footer {
     -ms-flex-preferred-size: 100%;
     flex-basis: 100%;
     max-width: 100%; }
@@ -3280,19 +3280,19 @@ header .dates-and-location,
   .col-md-offset-11 {
     margin-left: 91.66666667%; }
 
-  .start-md {
+  .start-md, header .nav {
     -webkit-box-pack: start;
     -ms-flex-pack: start;
     justify-content: flex-start;
     text-align: start; }
 
-  .center-md, header .container, header .nav, header .dates-and-location {
+  .center-md, header, header .container {
     -webkit-box-pack: center;
     -ms-flex-pack: center;
     justify-content: center;
     text-align: center; }
 
-  .end-md {
+  .end-md, header h2, header .dates-and-location {
     -webkit-box-pack: end;
     -ms-flex-pack: end;
     justify-content: flex-end;
@@ -3342,6 +3342,9 @@ header .dates-and-location,
   .col-lg-2,
   .col-lg-3,
   .col-lg-4,
+  header .brand,
+  header .nav,
+  header .dates-and-location,
   .speakers .speaker,
   .speakers.all .speaker .avatar,
   .col-lg-5,
@@ -3354,9 +3357,6 @@ header .dates-and-location,
   .speakers.all .speaker,
   .col-lg-11,
   .col-lg-12,
-  header .brand,
-  header .nav,
-  header .dates-and-location,
   .footer,
   .col-lg-offset-0,
   .col-lg-offset-1,
@@ -3401,7 +3401,7 @@ header .dates-and-location,
     flex-basis: 25%;
     max-width: 25%; }
 
-  .col-lg-4, .speakers .speaker, .speakers.all .speaker .avatar {
+  .col-lg-4, header .brand, header .nav, header .dates-and-location, .speakers .speaker, .speakers.all .speaker .avatar {
     -ms-flex-preferred-size: 33.33333333%;
     flex-basis: 33.33333333%;
     max-width: 33.33333333%; }
@@ -3441,7 +3441,7 @@ header .dates-and-location,
     flex-basis: 91.66666667%;
     max-width: 91.66666667%; }
 
-  .col-lg-12, header .brand, header .nav, header .dates-and-location, .footer {
+  .col-lg-12, .footer {
     -ms-flex-preferred-size: 100%;
     flex-basis: 100%;
     max-width: 100%; }
@@ -3482,19 +3482,19 @@ header .dates-and-location,
   .col-lg-offset-11 {
     margin-left: 91.66666667%; }
 
-  .start-lg {
+  .start-lg, header .nav {
     -webkit-box-pack: start;
     -ms-flex-pack: start;
     justify-content: flex-start;
     text-align: start; }
 
-  .center-lg, header .container, header .nav, header .dates-and-location {
+  .center-lg, header, header .container {
     -webkit-box-pack: center;
     -ms-flex-pack: center;
     justify-content: center;
     text-align: center; }
 
-  .end-lg {
+  .end-lg, header h2, header .dates-and-location {
     -webkit-box-pack: end;
     -ms-flex-pack: end;
     justify-content: flex-end;
@@ -3805,23 +3805,25 @@ a.icon {
   margin-bottom: 5em; }
 
 header {
-  background: #635147;
-  position: relative;
-  padding: 20px; }
+  padding-top: 5px;
+  background: #3c8583;
+  position: relative; }
   header h2 {
-    font-size: 1.2rem; }
+    font-size: 1.2rem;
+    color: #ec9da2; }
   header .container {
     position: relative;
-    z-index: 10; }
+    z-index: 10;
+    margin: 0 auto; }
   header .brand {
     text-align: center;
     overflow: visible; }
     header .brand img {
       width: 200px; }
   header nav {
-    margin-top: 20px; }
+    margin-top: 5px; }
     header nav a {
-      color: #c9a180;
+      color: #ec9da2;
       text-transform: uppercase;
       display: inline-block;
       padding: 10px 5px;
@@ -3830,14 +3832,14 @@ header {
       margin: 0 4px; }
       header nav a:hover {
         text-decoration: underline;
-        color: #c9a180; }
+        color: #ec9da2; }
   header .nav {
     padding: 20px 10px; }
   header .dates-and-location {
     color: white;
     text-transform: uppercase;
     font-weight: 300;
-    padding: 40px 10px 20px; }
+    padding: 20px 10px; }
     header .dates-and-location a {
       color: white;
       text-decoration: none; }
@@ -3850,9 +3852,16 @@ header {
     background: #eb1d3b;
     border-radius: 3px; }
 
+@media (min-width: 1200px) {
+  header .nav > a {
+    position: relative;
+    left: -80px; }
+  header .dates-and-location a {
+    position: relative;
+    right: -80px; } }
 footer {
-  background: #635147;
-  color: white;
+  background: #3c8583;
+  color: #ec9da2;
   position: relative;
   padding: 40px 20px 80px; }
   footer ul {
@@ -3861,6 +3870,9 @@ footer {
     list-style-type: none; }
   footer a {
     color: white; }
+    footer a:hover {
+      color: white;
+      color: #d2696f; }
   footer i {
     color: white !important; }
 

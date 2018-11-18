@@ -41,11 +41,6 @@ a.icon {
     width: 80%;
     margin: 5% 10%;
   }
-
-  .bio {
-    font-size: 100%;
-    margin: 0 2rem 2rem;
-  }
 }
 
 .cfp {
@@ -54,4 +49,24 @@ a.icon {
 
 .apply {
   text-align: center;
+}
+
+
+.sponsors {
+  .sponsor-group {
+    text-align: center;
+    margin: 2em 0;
+  }
+
+  img {
+    margin: 1em 0;
+  }
+
+  .emerald img {
+    width: 400px;
+  }
+
+  .opal img {
+    width: 300px;
+  }
 }

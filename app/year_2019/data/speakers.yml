@@ -47,3 +47,12 @@
     In this talk you’ll learn how emotions are affecting you by modeling them as an API and looking at the code.
   bio: John the co-founder and CTO of Data Simply and a Senior Developer at Privia Health. He’s been programming professionally for two decades, in Perl, Java, PHP and Ruby. In recent years he has also been supervising workshops called “Purpose, Passion, Peace” which helps people get deeply in touch with themselves and liberated from past traumas. He has fused his expertise from these disparate areas into a new way of thinking about them both.
   twitter: emotionalapi
+
+- name: Tom Ridge
+  title: Building APIs you want to hug with GraphQL
+  pitch: |
+    REST-ful, more like stress-ful am I right? What if I told you you could build amazing APIs your cat would be proud of with GraphQL instead.
+
+    Let’s take a look at how to go about implementing a GraphQL API alongside an existing codebase, and how it helps you hide that nasty legacy code away.
+  bio: Tom Ridge is a developer currently residing in Brisbane, Australia. A father of twins, he’s recently organised a Rails Camp, was Vice President of Ruby Australia and has co-organised his local meetup. Somehow, he’s still not sure why he has so little free time.
+  twitter: tjridge

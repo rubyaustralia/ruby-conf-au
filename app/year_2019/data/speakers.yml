@@ -32,3 +32,18 @@
   pitch: "This is a sentiment many Rails developers have experienced whilst reading a legacy codebase, trying to glean the motivations behind the code or simply understand what it is meant to do. This talk turns that perspective on its head and asks, “what can I do to prevent this scenario?”"
   bio: "Keith Pitty has been developing software professionally for more than three decades. Since 2000 he has maintained a keen interest in Agile approaches and for the last ten years has made many contributions to the Australian Ruby community. He has been fascinated by how developers consider other people when developing software since his early days of programming on mainframes. Away from computers he enjoys golf, is a cricket tragic and a passionate Collingwood supporter."
   twitter: keithpitty
+
+- name: Laura Mosher
+  title: Harry the Hedgehog Learns You A Communication
+  pitch: "Communication is the one of the most difficult skills to master in software development. There are many shortfalls in communication — both written and spoken — that have an impact on how you are perceived. Harry the Hedgehog will uncover some of those shortfalls and how he overcame them."
+  bio: "Laura is a software engineer with a passion for clean code and oxford commas. She’s passionate about creating a better world through code, kindness, and understanding. When she isn’t coding, she enjoys rescuing hedgehogs, making things, and playing games."
+  twitter: LauraTrev
+
+- name: John Sawers
+  title: Hacking Your Emotional API
+  pitch: |
+    Being a good developer isn’t just about slinging code; we’re part of a community. Interacting with others in a community means feelings are involved.
+
+    In this talk you’ll learn how emotions are affecting you by modeling them as an API and looking at the code.
+  bio: John the co-founder and CTO of Data Simply and a Senior Developer at Privia Health. He’s been programming professionally for two decades, in Perl, Java, PHP and Ruby. In recent years he has also been supervising workshops called “Purpose, Passion, Peace” which helps people get deeply in touch with themselves and liberated from past traumas. He has fused his expertise from these disparate areas into a new way of thinking about them both.
+  twitter: emotionalapi

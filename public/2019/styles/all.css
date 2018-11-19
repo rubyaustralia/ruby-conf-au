@@ -3806,11 +3806,11 @@ a.icon {
 
 header {
   padding-top: 5px;
-  background: #3c8583;
+  background: #183534;
   position: relative; }
   header h2 {
     font-size: 1.2rem;
-    color: #ec9da2; }
+    color: white; }
   header .container {
     position: relative;
     z-index: 10;
@@ -3823,7 +3823,7 @@ header {
   header nav {
     margin-top: 5px; }
     header nav a {
-      color: #ec9da2;
+      color: #d2696f;
       text-transform: uppercase;
       display: inline-block;
       padding: 10px 5px;
@@ -3832,7 +3832,7 @@ header {
       margin: 0 4px; }
       header nav a:hover {
         text-decoration: underline;
-        color: #ec9da2; }
+        color: #d2696f; }
   header .nav {
     padding: 20px 10px; }
   header .dates-and-location {
@@ -3860,8 +3860,8 @@ header {
     position: relative;
     right: -80px; } }
 footer {
-  background: #3c8583;
-  color: #ec9da2;
+  background: #183534;
+  color: #d2696f;
   position: relative;
   padding: 40px 20px 80px; }
   footer ul {

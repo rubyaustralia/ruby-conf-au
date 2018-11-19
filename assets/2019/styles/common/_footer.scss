@@ -1,6 +1,6 @@
 footer {
-  background: #c4dad9;
-  color: $darker-pink;
+  background: $eucalypt;
+  color: $teal;
   position: relative;
 
   padding: 40px 20px 80px;
@@ -14,11 +14,11 @@ footer {
   }
 
   a {
-  	color: #183534;
+  	color: $dark-teal;
 
     &:hover {
       color: white;
-      color: #183534;
+      color: $dark-teal;
     }
   }
 

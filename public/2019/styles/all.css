@@ -3823,7 +3823,7 @@ header {
   header nav {
     margin-top: 5px; }
     header nav a {
-      color: #d2696f;
+      color: #3c8583;
       text-transform: uppercase;
       display: inline-block;
       padding: 10px 5px;
@@ -3832,7 +3832,7 @@ header {
       margin: 0 4px; }
       header nav a:hover {
         text-decoration: underline;
-        color: #d2696f; }
+        color: #3c8583; }
   header .nav {
     padding: 20px 10px; }
   header .dates-and-location {
@@ -3861,7 +3861,7 @@ header {
     right: -80px; } }
 footer {
   background: #c4dad9;
-  color: #d2696f;
+  color: #3c8583;
   position: relative;
   padding: 40px 20px 80px; }
   footer ul {

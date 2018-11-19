@@ -3806,11 +3806,11 @@ a.icon {
 
 header {
   padding-top: 5px;
-  background: #183534;
+  background: #c4dad9;
   position: relative; }
   header h2 {
     font-size: 1.2rem;
-    color: white; }
+    color: #183534; }
   header .container {
     position: relative;
     z-index: 10;
@@ -3860,7 +3860,7 @@ header {
     position: relative;
     right: -80px; } }
 footer {
-  background: #183534;
+  background: #c4dad9;
   color: #d2696f;
   position: relative;
   padding: 40px 20px 80px; }
@@ -3869,10 +3869,10 @@ footer {
   footer li {
     list-style-type: none; }
   footer a {
-    color: white; }
+    color: #183534; }
     footer a:hover {
       color: white;
-      color: #d2696f; }
+      color: #183534; }
   footer i {
     color: white !important; }
 

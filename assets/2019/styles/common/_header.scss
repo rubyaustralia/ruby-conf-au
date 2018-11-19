@@ -1,13 +1,13 @@
 header {
   padding-top: 5px;
-  background: #183534;
+  background: #c4dad9;
   position: relative;
 
   @include align('center');
 
   h2 {
     font-size: 1.2rem;
-    color: white;
+    color: #183534;
     @include align('end', $small: 'middle', $x-small: 'middle');
   }
 

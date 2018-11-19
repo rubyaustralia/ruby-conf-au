@@ -1,5 +1,5 @@
 footer {
-  background: #183534;
+  background: #c4dad9;
   color: $darker-pink;
   position: relative;
 
@@ -14,11 +14,11 @@ footer {
   }
 
   a {
-  	color: white;
+  	color: #183534;
 
     &:hover {
       color: white;
-      color: $darker-pink;
+      color: #183534;
     }
   }
 

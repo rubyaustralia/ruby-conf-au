@@ -1,0 +1,15 @@
+.speaker
+  .avatar
+    .name{ class: speaker.long_name? && 'long' || '' }
+      = speaker.first_name
+      %br
+      = speaker.last_name
+    %img{ src: speaker.avatar_filename(format: 'jpg') }
+  .details
+    - if speaker.pitch
+      %h4= speaker.title
+      .quote{ class: "highlight"}= speaker.pitch
+    .bio= speaker.bio
+    .social
+      - if speaker.has_twitter?
+        %a{ href: "https://twitter.com/#{speaker.twitter}", target: '_blank' }= "@#{speaker.twitter}"

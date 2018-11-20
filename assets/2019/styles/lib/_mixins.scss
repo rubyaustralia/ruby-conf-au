@@ -1,0 +1,41 @@
+@mixin row() {
+  @extend .row;
+}
+
+@mixin align($large, $medium: $large, $small: $medium, $x-small: $small) {
+  @extend .#{$large}-lg;
+  @extend .#{$medium}-md;
+  @extend .#{$small}-sm;
+  @extend .#{$x-small}-xs;
+}
+
+@mixin distribute($large, $medium: $large, $small: $medium, $x-small: $small) {
+  @include align($large, $medium, $small, $x-small);
+}
+
+@mixin span($large: $grid-auto-width, $medium: $large, $small: $medium, $x-small: $small) {
+  @if $large   != $grid-auto-width  { $large: '-#{$large}';     }
+  @if $medium  != $grid-auto-width  { $medium: '-#{$medium}';   }
+  @if $small   != $grid-auto-width  { $small: '-#{$small}';     }
+  @if $x-small != $grid-auto-width  { $x-small: '-#{$x-small}'; }
+
+  @extend .col-lg#{$large};
+  @extend .col-md#{$medium};
+  @extend .col-sm#{$small};
+  @extend .col-xs#{$x-small};
+}
+
+@mixin offset($large, $medium: $large, $small: $medium, $x-small: $small) {
+  @extend .col-lg-offset-#{$large};
+  @extend .col-md-offset-#{$medium};
+  @extend .col-sm-offset-#{$small};
+  @extend .col-xs-offset-#{$x-small};
+}
+
+@mixin responsive-mobile {
+  @media (max-width: 768px) { @content; }
+}
+
+@mixin responsive-small-mobile {
+  @media (max-width: 374px) { @content; }
+}

@@ -1,0 +1,102 @@
+header {
+  padding-top: 5px;
+  background: $eucalypt;
+  position: relative;
+
+  @include align('center');
+
+  h2 {
+    font-size: 1.2rem;
+    color: $dark-teal;
+    @include align('end', $small: 'middle', $x-small: 'middle');
+  }
+
+  .container {
+    @include row;
+    @include align('center');
+    @include align('middle');
+
+    position: relative;
+    z-index: 10;
+    margin: 0 auto;
+  }
+
+  .brand {
+    @include span(4, $small: 12, $x-small: 12);
+    text-align: center;
+    overflow: visible;
+
+    img {
+      width: 200px;
+    }
+  }
+
+  nav {
+    margin-top: 5px;
+    a {
+      color: $teal;
+      text-transform: uppercase;
+      display: inline-block;
+      padding: 10px 5px;
+      text-decoration: none;
+      font-weight: bold;
+      margin: 0 4px;
+
+      &:hover {
+        text-decoration: underline;
+        color: $teal;
+      }
+
+      &.active {
+      }
+    }
+  }
+
+  .nav {
+    @include span(4, $small: 12, $x-small: 12);
+    @include align('start', $small: 'middle', $x-small: 'middle');
+    padding: 20px 10px;
+  }
+
+  .dates-and-location {
+    @include span(4, $small: 12, $x-small: 12);
+    @include align('end', $small: 'middle', $x-small: 'middle');
+
+    color: white;
+    text-transform: uppercase;
+    font-weight: 300;
+    padding: 20px 10px;
+
+    a {
+      color: white;
+      text-decoration: none;
+    }
+  }
+
+  .nav > a {
+    padding: 8px 16px;
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: 500;
+    background: $ruby;
+    border-radius: 3px;
+
+    &:hover {
+    }
+  }
+}
+
+@media (min-width: 1200px) {
+  header {
+    .nav > a {
+      position: relative;
+      left: -80px;
+    }
+
+    .dates-and-location a {
+      position: relative;
+      right: -80px;
+    }
+  }
+}

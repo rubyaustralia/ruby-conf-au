@@ -1,0 +1,37 @@
+.tickets {
+	margin: 40px 0 0;
+	.tito-submit{
+		background: orange!important;
+		border-color: orange!important;
+		font-weight: 600;
+		padding: 8px 16px!important;
+    	height: auto!important;
+	}
+	.tito-submit:hover {
+		background: orange!important;
+		border-color: orange!important;
+	}
+
+	.apply {
+		a {
+					padding: 15px 120px;
+        	color: white;
+	        cursor: pointer;
+	        font-weight: 500;
+	        background: $darker-pink;
+	        border-radius: 3px;
+	        margin: 20px 0;
+	        text-align: center;
+	        text-transform: uppercase;
+	        text-decoration: none;
+		}
+	}
+
+	.ticketing {
+		margin-bottom: 80px;
+	}
+
+	.opportunity {
+		margin: 40px 0 80px;
+	}
+}

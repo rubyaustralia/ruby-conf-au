@@ -1,0 +1,6 @@
+.avatar
+  .speaker__name
+    = speaker.first_name
+    %br
+    = speaker.last_name
+  %img{ src: speaker.avatar_filename(format: 'jpg') }

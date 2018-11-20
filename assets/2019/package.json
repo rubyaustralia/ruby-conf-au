@@ -1,6 +1,7 @@
 {
   "devDependencies": {},
   "dependencies": {
+    "flexboxgrid2": "^7.2.1",
     "foundation-sites": "^6.5.0-rc.2"
   },
   "name": "ruby-conf-au-2019",

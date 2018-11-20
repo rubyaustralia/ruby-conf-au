@@ -1,94 +1,47 @@
-.grid-x.grid-margin-x
-  .cell
-    %h1
-      %i.fa.fa-gem
-      RubyConf AU
-      %i.fa.fa-gem
-    %h2 February 7th-9th, 2019
-    %h2 The Forum, Melbourne
+.introduction
+  .container
+    %h4 Our yearly gathering where we share knowledge about the Ruby programming language, and celebrate the Australian and broader Ruby community.
 
-    %p
-      %img{src: "/images/2019/forum.jpg"}
-
-    %p.lead Our yearly gathering where we share knowledge about the Ruby programming language, and celebrate the Australian and broader Ruby community.
-
-    %hr
-
-.grid-x.grid-margin-x#speakers
-  .cell
+.speakers
+  .container
     %h3 Speakers
-
     %p We are so stoked to have the following speakers to grace our stage and share their wisdom and knowledge with us!
 
-.grid-x.grid-margin-x.speakers
-  .cell.large-auto
-    %img{src: "/images/2019/nadia.jpg"}
-    %h4 Nadia Odunayo
+    .speaker-list
+      .speaker.first
+        = haml :'2019/_speaker_mini', locals: { speaker: @speakers[0] }
 
-    %p.bio <a href="http://www.nadiaodunayo.com">Nadia</a> is currently CTO at <a href="https://www.codenewbie.org">CodeNewbie</a>. Before that, she co-directed Ignition Works, a company that did a mix of in-house product development and software consultancy, helping large firms to manage their cloud platforms. She previously worked at Pivotal and originally learnt to code at Makers Academy in London. She maintains <a href="https://speakerline.io">speakerline.io</a> in her spare time.
+      .speaker.second
+        = haml :'2019/_speaker_mini', locals: { speaker: @speakers[1] }
 
-  .cell.large-auto
-    %img{src: "/images/2019/beth.jpg"}
-    %h4 Beth Haubert
+      .speaker.third
+        = haml :'2019/_speaker_mini', locals: { speaker: @speakers[2] }
 
-    %p.bio <a href="https://www.bethanyhaubert.com">Beth</a> is a software engineer who loves Ruby, little-known APIs, handcrafting SQL queries, and as many monitors on her desk as possible. She’s also a former airborne cryptologic linguist for the US Air Force, fluent in Mandarin. Things you can ask her about include cats, board games, karaoke, and building applications that convert songs into auto-tuned cat meows. Things she'll have to kill you if you ask her about: the airborne linguist part. Also, she likes to make emojis look like they're farting. 🐈💨
+      .speaker.fourth
+        = haml :'2019/_speaker_mini', locals: { speaker: @speakers[3] }
 
-.grid-x.grid-margin-x.speakers
-  .cell.large-auto
-    %img{src: "/images/2019/daniel.jpg"}
-    %h4 Daniel Fone
+      .speaker.fifth
+        = haml :'2019/_speaker_mini', locals: { speaker: @speakers[4] }
 
-    %p.bio <a href="http://daniel.fone.net.nz">Daniel</a> has been writing Ruby/Rails for about 10 years. In recent years he has been helping to organise the Christchurch Ruby meetups and serving as secretary on the Ruby New Zealand committee. He lives in 🇳🇿 with 👨‍👩‍👧‍👦👶, and enjoys 🏃, 🍺, and 🔎 📖 ἡ κοινὴ. Much like Ruby, he tries to be optimised for happiness — both his own and other people's.
+      .speaker.sixth
+        %a{href: "/2019/speakers"}
+          .avatar
+            .speaker__name
+              And
+              %br
+              more!
+            %img{ src: @speakers[5..-1].shuffle[0].avatar_filename(format: 'jpg') }
 
-  .cell.large-auto
-    %img{src: "/images/2019/eliza.jpg"}
-    %h4 Eliza Sorensen
 
-    %p.bio <a href="https://twitter.com/Zemmiph0bia">Eliza</a> is an Infrastructure & Security engineer, cyber witch and co-founder of social enterprise <a href="https://assemblyfour.com">Assembly Four</a> who created sex worker friendly social network Switter and inclusive modern advertising platform Tryst.
+.tickets
+  = haml :'2019/common/_tickets'
 
-.grid-x.grid-margin-x.speakers
-  .cell.large-auto
-    %img{src: "/images/2019/jack.jpg"}
-    %h4 Jack Chen
-
-    %p.bio Mostly known as “<a href="https://twitter.com/chendo">chendo</a>”, Jack is a software-oriented problem-solver who occasionally enjoys making computers do his bidding. He is one of the co-founders of a social enterprise called <a href="https://assemblyfour.com">Assembly Four</a>, which aims to build modern products and services for sex workers around the world. When he’s not yelling at computers, you can find him bouldering, playing video games, or go karting.
-
-  .cell.large-auto
-
-.grid-x.grid-margin-x.cfp
-  .cell
-    %p More speakers will be announced soon - and if you're keen to be one of them, please submit a talk in our <a href="https://www.papercall.io/rubyconf-au-2019">Call for Proposals</a>, which is open until October 15th!
-
-    %p.apply
-      %a{ href: "https://www.papercall.io/rubyconf-au-2019", class: "button large"} Submit a Talk
-
-    %hr
-
-.grid-x.grid-margin-x
-  .cell
-    %h3 Tickets
-
-    %tito-widget{ event: "ruby-australia/rubyconf-au-2019" }
-
-    %h3#opportunity Opportunity Program
-
-    %p Our <strong>Opportunity Program</strong> includes a free ticket to the conference plus an allowance for travel and accommodation costs for those outside Melbourne. This is for people who would otherwise not be able to afford attending RubyConf AU - we know not everyone receives the same opportunities to get ahead in their career, so this is just one step towards evening things out. Please <a href="https://docs.google.com/forms/d/e/1FAIpQLSex3nNpp0724priwdZZc7L3MyPMQ22mU73XZ2dfm4NEoP9YVw/viewform">fill out our application form</a> if you are interested in this program!
-
-    %p Applications will be reviewed on a monthly basis from September, and available tickets granted to those who best meet the criteria. Applications will close when all opportunity program tickets have been allocated, when 80% of conference tickets have been sold, or on December 31st 2018, whichever occurs soonest.
-
-    %p.apply
-      %a{ href: "https://docs.google.com/forms/d/e/1FAIpQLSex3nNpp0724priwdZZc7L3MyPMQ22mU73XZ2dfm4NEoP9YVw/viewform", class: "button large"} Apply Now
-
-.grid-x.grid-margin-x
-  .cell
-    %hr
-
+.contact
+  .container
     %p
-      We're working hard at putting together another fun-filled RubyConf AU, and will have more details for you soon! We might give this site a significant lick of paint too.
-      %i.fa.fa-paint-roller
-
-    %p
-      In the meantime, if you've any questions, don't hesitate to <a href="mailto:organisers@rubyconf.org.au">shoot us an email</a>. To keep on top of the latest,
+      We're working hard at putting together another fun-filled RubyConf AU, and will have more details for you soon!  In the meantime, if you've any questions, don't hesitate to <a href="mailto:organisers@rubyconf.org.au">shoot us an email</a>. To keep on top of the latest,
       %a{href: "https://confirmsubscription.com/h/j/809D057CE90261E7"} subscribe to the mailing list
       or
       %a{href: "https://twitter.com/rubyconf_au"} follow us on Twitter.
+
+= haml :'2019/common/_sponsors'

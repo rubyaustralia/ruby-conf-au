@@ -1,0 +1,35 @@
+footer {
+  background: $eucalypt;
+  color: $teal;
+  position: relative;
+
+  padding: 40px 20px 80px;
+
+  ul {
+    margin-left: 0;
+  }
+
+  li {
+  	list-style-type: none;
+  }
+
+  a {
+  	color: $dark-teal;
+
+    &:hover {
+      color: white;
+      color: $dark-teal;
+    }
+  }
+
+  i {
+  	color: white!important;
+  }
+}
+
+.footer {
+  @include span(12, $medium: 12, $small: 12, $x-small: 6);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}

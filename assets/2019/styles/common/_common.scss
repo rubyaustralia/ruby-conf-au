@@ -1,4 +1,4 @@
-$red: #cc4b37;
+$red: #eb1d3b;
 
 h1, h2 {
   text-align: center;
@@ -21,6 +21,10 @@ i.fa, i.fab {
 
 a {
   text-decoration: underline;
+  color: $red;
+  &:hover {
+    color: $red;
+  }
 }
 
 a.icon {
@@ -37,10 +41,6 @@ a.icon {
     width: 80%;
     margin: 5% 10%;
   }
-
-  .bio {
-    font-size: 90%;
-  }
 }
 
 .cfp {
@@ -49,4 +49,36 @@ a.icon {
 
 .apply {
   text-align: center;
+}
+
+
+.sponsors {
+  .sponsor-group {
+    text-align: center;
+    margin: 2em 0;
+  }
+
+  img {
+    margin: 1em 0;
+  }
+
+  .emerald img {
+    width: 400px;
+  }
+
+  .opal img {
+    width: 300px;
+  }
+}
+
+.events {
+  margin-bottom: 10em;
+}
+
+.forum {
+  text-align: center;
+}
+
+.location {
+  margin-bottom: 5em;
 }

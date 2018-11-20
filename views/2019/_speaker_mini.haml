@@ -1,6 +1,7 @@
-.avatar
-  .speaker__name
-    = speaker.first_name
-    %br
-    = speaker.last_name
-  %img{ src: speaker.avatar_filename(format: 'jpg') }
+%a{href: "/2019/speakers"}
+  .avatar
+    .speaker__name
+      = speaker.first_name
+      %br
+      = speaker.last_name
+    %img{ src: speaker.avatar_filename(format: 'jpg') }

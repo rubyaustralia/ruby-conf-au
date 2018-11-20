@@ -56,3 +56,29 @@
     Let’s take a look at how to go about implementing a GraphQL API alongside an existing codebase, and how it helps you hide that nasty legacy code away.
   bio: Tom Ridge is a developer currently residing in Brisbane, Australia. A father of twins, he’s recently organised a Rails Camp, was Vice President of Ruby Australia and has co-organised his local meetup. Somehow, he’s still not sure why he has so little free time.
   twitter: tjridge
+
+- name: Tekin Suleyman
+  title: A Branch in Time (a story about revision histories)
+  pitch: |
+    In one timeline a quick path to clarity. In the other a painful journey trying to uncover the obscure intent of a line of code. The only difference between these two realities? The revision history…
+
+    This is a story about revision histories and their impact on software maintainability. Think Sliding Doors, but with more Git!
+  bio: "Tekin is a senior freelance consultant who’s been shipping Ruby code for over a decade. He’s worked with teams, large and small: from Government agencies (GDS) to listed startups (FreeAgent), and the world’s oldest and largest Co-operative (Co-op Digital). He also runs the North West Ruby User Group in Manchester, UK."
+  twitter: tekin
+
+- name: Tom Stuart
+  title: Representations Matter
+  pitch: In your grandparents’ attic you discover a mysterious old computer. You boot it up and discover it runs Ruby, but doesn’t support negative numbers! How can you implement negative numbers in an elegant way? We’ll explore two solutions and discover how important it is to pick the right representation.
+  bio: Tom is a computer scientist and programmer. He has lectured on optimising compilers at the University of Cambridge, co-organises the Ruby Manor conference, and is a member of the London Ruby User Group.
+  twitter: tomstuart
+
+- name: Tim Riley
+  title: Views, from the top
+  pitch: |
+    /Veni, vidi, view-ci/ – I came, I saw, I left the views in a mess.
+
+    With server-rendered HTML still delivering most of the web, our views deserve more than a grab bag of helpers.
+
+    Come along and learn the tools and techniques to conquer the design challenges that a complex view layer presents.
+  bio: Tim Riley is a partner at Australian design agency Icelab, and a core developer of dry-rb and rom-rb. He’s excited by small libraries, first-class functions, and pushing forward web app development with Ruby.
+  twitter: timriley

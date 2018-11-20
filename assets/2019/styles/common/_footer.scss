@@ -28,7 +28,7 @@ footer {
 }
 
 .footer {
-  @include span(12, $medium: 12, $small: 12, $x-small: 6);
+  @include span(12, $medium: 12, $small: 12, $x-small: 12);
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;

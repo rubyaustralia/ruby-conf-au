@@ -59,6 +59,14 @@
     }
 }
 
+@media (max-width: 576px) {
+  .speakers.all .speaker .avatar .name {
+    right: 65%;
+    left: auto;
+    top: -35px;
+  }
+}
+
 @media (min-width: 768px) {
   .speakers.all .speaker .avatar .name {
     left: -15px;

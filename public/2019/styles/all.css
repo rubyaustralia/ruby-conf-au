@@ -2647,7 +2647,6 @@ select {
 .col-xs-4,
 .col-xs-5,
 .col-xs-6,
-.footer,
 .col-xs-7,
 .col-xs-8,
 .col-xs-9,
@@ -2658,6 +2657,7 @@ select {
 header .brand,
 header .nav,
 header .dates-and-location,
+.footer,
 .speakers .speaker,
 .speakers.all .speaker .avatar,
 .speakers.all .speaker .details,
@@ -2845,7 +2845,7 @@ header .dates-and-location,
   flex-basis: 41.66666667%;
   max-width: 41.66666667%; }
 
-.col-xs-6, .footer {
+.col-xs-6 {
   -ms-flex-preferred-size: 50%;
   flex-basis: 50%;
   max-width: 50%; }
@@ -2875,7 +2875,7 @@ header .dates-and-location,
   flex-basis: 91.66666667%;
   max-width: 91.66666667%; }
 
-.col-xs-12, header .brand, header .nav, header .dates-and-location, .speakers .speaker, .speakers.all .speaker .avatar, .speakers.all .speaker .details {
+.col-xs-12, header .brand, header .nav, header .dates-and-location, .footer, .speakers .speaker, .speakers.all .speaker .avatar, .speakers.all .speaker .details {
   -ms-flex-preferred-size: 100%;
   flex-basis: 100%;
   max-width: 100%; }
@@ -3925,6 +3925,11 @@ footer {
     text-transform: uppercase;
     text-decoration: none; }
 
+@media (max-width: 576px) {
+  .speakers.all .speaker .avatar .name {
+    right: 65%;
+    left: auto;
+    top: -35px; } }
 @media (min-width: 768px) {
   .speakers.all .speaker .avatar .name {
     left: -15px;

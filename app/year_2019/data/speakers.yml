@@ -69,7 +69,7 @@
 - name: Tom Stuart
   title: Representations Matter
   pitch: In your grandparents’ attic you discover a mysterious old computer. You boot it up and discover it runs Ruby, but doesn’t support negative numbers! How can you implement negative numbers in an elegant way? We’ll explore two solutions and discover how important it is to pick the right representation.
-  bio: Tom is a computer scientist and programmer. He has lectured on optimising compilers at the University of Cambridge, co-organises the Ruby Manor conference, and is a member of the London Ruby User Group.
+  bio: "[Tom](https://twitter.com/tomstuart) is a [computer scientist](http://computationbook.com/) and programmer. He has lectured on optimising compilers at the University of Cambridge, co-organises the Ruby Manor conference, and is a member of the London Ruby User Group. He is currently the CTO of [FutureLearn](https://www.futurelearn.com/), an online learning platform."
   twitter: tomstuart
 
 - name: Tim Riley

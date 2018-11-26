@@ -4001,8 +4001,12 @@ footer {
       .speakers.all .speaker .details .social {
         text-align: left; }
 
+.sponsors {
+  margin: 40px 0 80px; }
+
 .tickets {
-  margin: 40px 0 0; }
+  background-color: #fbf1f1;
+  padding: 40px 0 0; }
   .tickets .tito-submit {
     background: orange !important;
     border-color: orange !important;
@@ -4012,21 +4016,22 @@ footer {
   .tickets .tito-submit:hover {
     background: orange !important;
     border-color: orange !important; }
-  .tickets .apply a {
-    padding: 15px 120px;
-    color: white;
-    cursor: pointer;
-    font-weight: 500;
-    background: #d2696f;
-    border-radius: 3px;
-    margin: 20px 0;
-    text-align: center;
-    text-transform: uppercase;
-    text-decoration: none; }
+  .tickets .apply {
+    margin: 0; }
+    .tickets .apply a {
+      padding: 15px 120px;
+      color: white;
+      cursor: pointer;
+      font-weight: 500;
+      background: #ec9da2;
+      border-radius: 3px;
+      margin: 20px 0;
+      text-align: center;
+      text-transform: uppercase;
+      text-decoration: none; }
   .tickets .ticketing {
     margin-bottom: 80px; }
-  .tickets .opportunity {
-    margin: 40px 0 80px; }
 
 .contact {
-  margin: 40px 0 80px; }
+  background: #fbf1f1;
+  padding: 40px 0 80px; }

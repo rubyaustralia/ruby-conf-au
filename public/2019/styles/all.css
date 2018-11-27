@@ -3761,7 +3761,7 @@ p, li {
   font-family: 'Open Sans', sans-serif; }
 
 i.fa, i.fab {
-  color: #eb1d3b; }
+  color: #3c8583; }
 
 a {
   text-decoration: underline;
@@ -3873,8 +3873,6 @@ footer {
     footer a:hover {
       color: white;
       color: #183534; }
-  footer i {
-    color: white !important; }
 
 .footer {
   display: flex;

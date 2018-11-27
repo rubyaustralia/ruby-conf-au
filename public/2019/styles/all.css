@@ -3981,7 +3981,7 @@ footer {
       z-index: 900;
       height: 220px; }
       .speakers.all .speaker .avatar img {
-        margin: 0 auto;
+        margin: 20px auto;
         width: 200px; }
     .speakers.all .speaker .name {
       font-size: 18px;

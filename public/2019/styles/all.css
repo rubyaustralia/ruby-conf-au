@@ -3892,25 +3892,56 @@ footer {
     display: flex;
     flex-wrap: wrap;
     margin: 40px 0 80px; }
-  .speakers .speaker img {
-    border-radius: 3px;
-    border: 3px solid #635147; }
-  .speakers .speaker.bio {
-    margin: 1rem 0; }
-  .speakers .speaker__name, .speakers .speaker .name {
-    background: #fbc54a;
-    border-radius: 50%;
-    color: #635147;
-    font-size: 22px;
-    font-weight: 500;
-    line-height: 26px;
-    height: 120px;
-    padding: 32px 0;
-    position: absolute;
-    text-align: center;
-    display: inline-block;
-    width: 120px;
-    z-index: 1300; }
+  .speakers .speaker {
+    /* Ruby gem */ }
+    .speakers .speaker img {
+      position: relative;
+      border-radius: 3px;
+      border: 3px solid #635147; }
+    .speakers .speaker.bio {
+      margin: 1rem 0; }
+    .speakers .speaker__name, .speakers .speaker .name {
+      -webkit-box-sizing: content-box;
+      -moz-box-sizing: content-box;
+      box-sizing: content-box;
+      width: 60px;
+      height: 0;
+      position: absolute;
+      border: 45px solid transparent;
+      border-top-width: 0;
+      border-bottom-color: #fbc54a;
+      color: #635147;
+      font-size: 22px;
+      font-weight: 500;
+      line-height: 26px;
+      -o-text-overflow: clip;
+      text-overflow: clip;
+      z-index: 9; }
+      .speakers .speaker__name:after, .speakers .speaker .name:after {
+        -webkit-box-sizing: content-box;
+        -moz-box-sizing: content-box;
+        box-sizing: content-box;
+        width: 0;
+        height: 0;
+        position: absolute;
+        content: "";
+        top: 45px;
+        left: -46px;
+        border: 75px solid transparent;
+        border-top: 80px solid #fbc54a;
+        border-bottom-width: 0;
+        color: #635147;
+        -o-text-overflow: clip;
+        text-overflow: clip;
+        text-shadow: none;
+        z-index: -1; }
+    .speakers .speaker__name > div {
+      font-size: 22px;
+      margin: 20px;
+      display: flex;
+      align-items: center;
+      text-align: center;
+      justify-content: center; }
   .speakers .apply a {
     padding: 15px 120px;
     color: white;

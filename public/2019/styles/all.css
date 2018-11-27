@@ -3996,6 +3996,9 @@ footer {
       position: relative;
       z-index: 1100;
       background: white; }
+      @media (max-width: 576px) {
+        .speakers.all .speaker .details h4 {
+          margin-top: 20px; } }
       .speakers.all .speaker .details .quote {
         font-size: 20px;
         text-align: left;
@@ -4027,6 +4030,9 @@ footer {
         font-weight: 300;
         line-height: 24px;
         margin-bottom: 20px; }
+        @media (max-width: 576px) {
+          .speakers.all .speaker .details .bio {
+            margin-top: 20px; } }
       .speakers.all .speaker .details .social {
         text-align: left; }
 

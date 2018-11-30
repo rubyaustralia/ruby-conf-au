@@ -108,3 +108,18 @@
     But how has that gone wrong? This talk will dive into how one company of ~100 engineers refined their thinking and their Rails app for the better.
   bio: Kelly Sutton is an engineering manager at Gusto. In the past, he helped create LayerVault, Designer News, and a blog for college students. He is currently based in San Francisco, CA. He regularly writes blog posts about software engineering at https://kellysutton.com
   twitter: kellysutton
+
+- name: Elle Meredith
+  title: Algorithms to live by and why should we care
+  pitch: In this talk we will discuss algorithmic thinking in everyday life in language we can all understand. We will explore widely applicable algorithms, and how they reveal themselves in our everyday lives, so that we better understand what when and how we can use them in our programs.
+  bio: Elle is a full stack web developer with more than ten years experience writing Ruby and Rails. Currently at Blackmill, previously she was Development Director at thoughtbot New York. Elle believes in writing clean code, driven by automatic tests, with agile practices, an even work/life balance, and a respectful and inclusive team culture. Recently, she developed and ran the apprenticeship program for Hooroo, up-skilling less experienced developers. When she is not immersed in the Ruby community, she is probably immersed in water, or lately, in bread flour.
+  twitter: aemeredith
+
+- name: Dávid Halász
+  title: How to hijack, proxy and smuggle sockets with Rack/Ruby
+  pitch: |
+    Does your network only let through HTTP connections? No problem! Let’s hijack some sockets from incoming HTTP connections and use it to smuggle any kind of traffic through an HTTP session! Concurrently! In Ruby!
+
+    Warning: your infosec team already does not like me, but I have some cute stickers.
+  bio: David is a Software Engineer working for Red Hat. His first language is C, but fell in love with Ruby in 2012 and now codes in it for a living.
+  twitter: halaszdavid

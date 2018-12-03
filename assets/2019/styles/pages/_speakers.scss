@@ -30,7 +30,7 @@
             -webkit-box-sizing: content-box;
             -moz-box-sizing: content-box;
             box-sizing: content-box;
-            width: 70px;
+            width: 60px;
             height: 0;
             position: absolute;
             border: 45px solid transparent;
@@ -54,7 +54,7 @@
               content: "";
               top: 45px;
               left: -46px;
-              border: 80px solid transparent;
+              border: 75px solid transparent;
               border-top: 80px solid #fbc54a;
               border-bottom-width: 0;
               color: #635147;
@@ -67,7 +67,7 @@
 
         &__name {
           > div {
-            font-size: 22px;
+            font-size: 20px;
             margin: 20px;
             display: flex;
             align-items: center;

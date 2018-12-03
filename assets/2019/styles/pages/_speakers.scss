@@ -3,6 +3,11 @@
 
     .avatar {
         position: relative;
+        &:hover {
+          cursor: pointer;
+          animation: shake 0.5s; 
+          animation-iteration-count: infinite; 
+        }
     }
 
     .speaker-list {

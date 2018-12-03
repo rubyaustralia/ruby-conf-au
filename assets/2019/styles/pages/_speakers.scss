@@ -12,7 +12,7 @@
     }
 
     .speaker {
-        @include span(4, $medium: 6, $small: 12);
+        @include span(4, $medium: 6, $small: 12, $x-small: 12);
 
         img {
           position: relative;
@@ -99,7 +99,14 @@
   }
 }
 
+@media (max-width: 768px){
+.speakers.all .speaker .avatar img {
+    width: 260px!important;
+  }
+}
+
 @media (min-width: 768px) {
+
   .speakers.all .speaker .avatar .name {
     left: -15px;
     top: -35px;
@@ -121,23 +128,21 @@
 }
 
 .speakers.all {
-  margin-top: 60px;
 
   .speaker {
-    @include span(10);
+    @include span(12, $medium: 12);
     @include row;
 
     margin-bottom: 60px;
     min-height: 220px;
 
     .avatar {
-      @include span(4, $medium: 5, $small: 12);
+      @include span(4, $medium: 5, $small: 12, $x-small:12);
       @include align('middle', $small: 'middle', $x-small: 'middle');
       @include align('center');
 
       position: relative;
       z-index: 900;
-      height: 220px;
 
       img {
         margin: 20px auto;

@@ -123,3 +123,18 @@
     Warning: your infosec team already does not like me, but I have some cute stickers.
   bio: David is a Software Engineer working for Red Hat. His first language is C, but fell in love with Ruby in 2012 and now codes in it for a living.
   twitter: halaszdavid
+
+- name: Kelsey Pedersen
+  title: It's Down! Simulating Incidents in Production
+  pitch: |
+    Who loves getting paged at 3am? No one.
+
+    In responding to incidents – either at 3am or the middle of the day – we want to feel prepared and practiced in resolving production issues. In this talk, you’ll learn how to practice incident response by simulating outages in your application.
+  bio: Kelsey Pedersen is a software engineer at Stitch Fix on the styling engineering team. She builds internal software their stylists use to curate clothes for their clients. She works cross-functionally with their styling community and data science team to build new features to better assist their stylists. She had a former career in sales and as a Division I rower at UC Berkeley.
+  twitter: kelsey_pedersen
+
+- name: Adam Cuppy
+  title: Mechanically Confident
+  pitch: "There’s a thread amongst all skilled practitioners: specific habits, routines, and processes that wrap uncertainty and create confidence. Oscar-winning actors rehearse, pro-drivers do laps, chefs prep. This talk will help you recognize and design habits and routines that embed confidence in the body."
+  bio: Adam is _not_ a Fortune 500 CEO, award-winning book author, or Nobel Prize recipient. But, he’s an actor turned software engineer who co-founded [ZEAL](https://codingzeal.com), a people-centric process-focused consulting company located around the United States.
+  twitter: adamcuppy

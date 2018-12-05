@@ -4,8 +4,17 @@
 
 .speakers.all
   .container
-    - @speakers[0...5].each do |speaker|
+    - @speakers.via_invite.each do |speaker|
       = haml :'2019/_speaker', locals: { speaker: speaker }
 
-    - @speakers[5..-1].shuffle.each do |speaker|
+    - @speakers.via_cfp.shuffle.each do |speaker|
+      = haml :'2019/_speaker', locals: { speaker: speaker }
+
+.introduction
+  .container
+    %h4 And our magnificent masters of ceremony:
+
+.speakers.all
+  .container
+    - @speakers.mcs.shuffle.each do |speaker|
       = haml :'2019/_speaker', locals: { speaker: speaker }

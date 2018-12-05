@@ -1,22 +1,27 @@
 - name: Nadia Odunayo
   bio: "[Nadia](http://www.nadiaodunayo.com/) is currently CTO at [CodeNewbie](https://www.codenewbie.org/). Before that, she co-directed Ignition Works, a company that did a mix of in-house product development and software consultancy, helping large firms to manage their cloud platforms. She previously worked at Pivotal and originally learnt to code at Makers Academy in London. She maintains [speakerline.io](https://speakerline.io/) in her spare time."
   twitter: nodunayo
+  type: invitation
 
 - name: Beth Haubert
   bio: "[Beth](https://www.bethanyhaubert.com/) is a software engineer who loves Ruby, little-known APIs, handcrafting SQL queries, and as many monitors on her desk as possible. She’s also a former airborne cryptologic linguist for the US Air Force, fluent in Mandarin. Things you can ask her about include cats, board games, karaoke, and building applications that convert songs into auto-tuned cat meows. Things she'll have to kill you if you ask her about: the airborne linguist part. Also, she likes to make emojis look like they're farting. 🐈💨"
   twitter: haubertdashery
+  type: invitation
 
 - name: Daniel Fone
   bio: "[Daniel](http://daniel.fone.net.nz/) has been writing Ruby/Rails for about 10 years. In recent years he has been helping to organise the Christchurch Ruby meetups and serving as secretary on the Ruby New Zealand committee. He lives in 🇳🇿 with 👨‍👩‍👧‍👦👶, and enjoys 🏃, 🍺, and 🔎 📖 ἡ κοινὴ. Much like Ruby, he tries to be optimised for happiness — both his own and other people's."
   twitter: danielfone
+  type: invitation
 
 - name: Eliza Sorensen
   bio: "[Eliza](https://twitter.com/Zemmiph0bia) is an Infrastructure & Security engineer, cyber witch and co-founder of social enterprise [Assembly Four](https://assemblyfour.com/) who created sex worker friendly social network Switter and inclusive modern advertising platform Tryst."
   twitter: Zemmiph0bia
+  type: invitation
 
 - name: Jack Chen
   bio: "Mostly known as “chendo”, Jack is a software-oriented problem-solver who occasionally enjoys making computers do his bidding. He is one of the co-founders of a social enterprise called [Assembly Four](https://assemblyfour.com/), which aims to build modern products and services for sex workers around the world. When he’s not yelling at computers, you can find him bouldering, playing video games, or go karting."
   twitter: chendo
+  type: invitation
 
 - name: Merrin Macleod
   title: "Environment Variables"
@@ -144,3 +149,13 @@
   pitch: Let me guess, your code is awesome but no one else gets it? You need a data visualisation! Complex concepts can easily be explained through visual information. There are four types to choose from storytelling, status, analytical and exploratory. I’ll help you find the perfect one.
   bio: Mila is a data geek that loves data visualisations. Especially if the data visualisation is related to cats. Ruby is still her favourite language because of the community and how expressive it is. When she's not coding, you’ll find Mila cruising on an electric skateboard.
   twitter: milameow1
+
+- name: Rose Lu
+  bio: Rose has been working as a software engineer since 2011. She currently works at [Flick](https://www.flickelectric.co.nz/), an electricity wholesaler. In the past she has been involved with social enterprise, Rails Bridge and Youthline. This year Rose completed her Masters in Creative Writing with an essay collection on her experience of contemporary Chinese migration to Aotearoa. Her writing has been published in Mimicry, [Pantograph Punch](https://www.pantograph-punch.com/post/all-who-live-on-islands) and [Sport](http://vup.victoria.ac.nz/sport-46). When not in some type of text editor, Rose likes to cycle, do yoga and perfect her technique for Korean fried chicken.
+  twitter: plainricedinner
+  type: mc
+
+- name: Caitlin Palmer-Bright
+  bio:
+  twitter: CaitlinPB
+  type: mc

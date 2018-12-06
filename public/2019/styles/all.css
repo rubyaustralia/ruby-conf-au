@@ -3917,7 +3917,7 @@ footer {
     .speakers .avatar:hover {
       cursor: pointer;
       animation: shake 0.5s;
-      animation-iteration-count: infinite; }
+      animation-iteration-count: 1; }
   .speakers .speaker-list {
     display: flex;
     flex-wrap: wrap;
@@ -4088,12 +4088,14 @@ footer {
       color: white;
       cursor: pointer;
       font-weight: 500;
-      background: #ec9da2;
+      background-color: #ec9da2;
       border-radius: 3px;
       margin: 20px 0;
       text-align: center;
       text-transform: uppercase;
       text-decoration: none; }
+      .tickets .apply a:hover {
+        background-color: #e47279; }
   .tickets .ticketing {
     margin-bottom: 80px; }
 

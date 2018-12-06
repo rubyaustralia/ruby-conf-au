@@ -21,12 +21,16 @@
         	color: white;
 	        cursor: pointer;
 	        font-weight: 500;
-	        background: $rosey-pink;
+	        background-color: $rosey-pink;
 	        border-radius: 3px;
 	        margin: 20px 0;
 	        text-align: center;
 	        text-transform: uppercase;
 	        text-decoration: none;
+
+	        &:hover {
+	        	background-color: darken($rosey-pink,10%);
+	        }
 		}
 	}
 

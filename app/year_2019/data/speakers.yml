@@ -144,3 +144,9 @@
   pitch: Let me guess, your code is awesome but no one else gets it? You need a data visualisation! Complex concepts can easily be explained through visual information. There are four types to choose from storytelling, status, analytical and exploratory. I’ll help you find the perfect one.
   bio: Mila is a data geek that loves data visualisations. Especially if the data visualisation is related to cats. Ruby is still her favourite language because of the community and how expressive it is. When she's not coding, you’ll find Mila cruising on an electric skateboard.
   twitter: milameow1
+
+- name: Betsy Haibel
+  title: Pairing with People Who Don't Look Like You
+  pitch: Pair programming can be hazardous if you’re from an underrepresented group. Bad pairs will keyboard-hog, ignore your ideas, and talk down to you. In this talk, you’ll learn how to rescue pairing sessions from bad power dynamics – whether you’re a well-intentioned jerk or their long-suffering pair.
+  bio: Betsy Haibel is the founding CTO of Cohere. She writes fiction and nonfiction in English, Ruby, and Javascript – among other languages – and co-organizes Learn Ruby in DC. Her lifelong ambitions? To meet a red panda, and to break down barriers between “developers” and “users.”
+  twitter: betsythemuffin

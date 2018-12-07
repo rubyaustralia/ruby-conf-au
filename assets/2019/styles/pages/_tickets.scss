@@ -1,5 +1,7 @@
 .tickets {
-	margin: 40px 0 0;
+	background-color: $super-soft-pink;
+	padding: 40px 0 0;
+
 	.tito-submit{
 		background: orange!important;
 		border-color: orange!important;
@@ -13,25 +15,26 @@
 	}
 
 	.apply {
+		margin:0;
 		a {
-					padding: 15px 120px;
+			padding: 15px 120px;
         	color: white;
 	        cursor: pointer;
 	        font-weight: 500;
-	        background: $darker-pink;
+	        background-color: $rosey-pink;
 	        border-radius: 3px;
 	        margin: 20px 0;
 	        text-align: center;
 	        text-transform: uppercase;
 	        text-decoration: none;
+
+	        &:hover {
+	        	background-color: darken($rosey-pink,10%);
+	        }
 		}
 	}
 
 	.ticketing {
 		margin-bottom: 80px;
-	}
-
-	.opportunity {
-		margin: 40px 0 80px;
 	}
 }

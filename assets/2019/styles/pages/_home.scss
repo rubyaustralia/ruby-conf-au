@@ -1,5 +1,10 @@
 .introduction {
 	margin: 40px 0 80px;
+
+	@media (max-width: 768px) {
+		margin: 40px 0;
+	}
+
 	.lead {
 		font-size: 150%;
 	}

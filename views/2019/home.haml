@@ -27,9 +27,10 @@
         %a{href: "/2019/speakers"}
           .avatar
             .speaker__name
-              And
-              %br
-              more!
+              %div
+                And
+                %br
+                more!
             %img{ src: @speakers[5..-1].shuffle[0].avatar_filename(format: 'jpg') }
 
 

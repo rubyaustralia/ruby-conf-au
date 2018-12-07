@@ -3,6 +3,11 @@
 
     .avatar {
         position: relative;
+        &:hover {
+          cursor: pointer;
+          animation: shake 0.5s; 
+          animation-iteration-count: 1; 
+        }
     }
 
     .speaker-list {
@@ -12,36 +17,68 @@
     }
 
     .speaker {
-        @include span(4, $medium: 6, $small: 12);
+        @include span(4, $medium: 6, $small: 12, $x-small: 12);
+
         img {
-            border-radius: 3px;
-            border: 3px solid $brown;
+          position: relative;
+          border-radius: 3px;
+          border: 3px solid $brown;
         }
 
         &.bio {
             margin: 1rem 0;
         }
 
+        /* Ruby gem */
+
         &__name, .name {
-            background: $mustard;
-            border-radius: 50%;
-            color: $brown;
+            -webkit-box-sizing: content-box;
+            -moz-box-sizing: content-box;
+            box-sizing: content-box;
+            width: 60px;
+            height: 0;
+            position: absolute;
+            border: 45px solid transparent;
+            border-top-width: 0;
+            border-bottom-color: #fbc54a;
+            color: #635147;
             font-size: 22px;
             font-weight: 500;
             line-height: 26px;
-            height: 120px;
-            // left: 50%;
-            // margin-left: -170px;
-            padding: 32px 0;
-            position: absolute;
-            text-align: center;
-            display: inline-block;
-            // top: 0;
-            width: 120px;
-            z-index: 1300;
+            -o-text-overflow: clip;
+            text-overflow: clip;
+            z-index: 9;
 
             &:after {
+              -webkit-box-sizing: content-box;
+              -moz-box-sizing: content-box;
+              box-sizing: content-box;
+              width: 0;
+              height: 0;
+              position: absolute;
+              content: "";
+              top: 45px;
+              left: -46px;
+              border: 75px solid transparent;
+              border-top: 80px solid #fbc54a;
+              border-bottom-width: 0;
+              color: #635147;
+              -o-text-overflow: clip;
+              text-overflow: clip;
+              text-shadow: none;
+              z-index: -1;
             }
+        }
+
+        &__name {
+          > div {
+            font-size: 20px;
+            margin: 20px;
+            display: flex;
+            align-items: center;
+            text-align: center;
+            justify-content: center;
+          }
         }
     }
 
@@ -67,7 +104,14 @@
   }
 }
 
+@media (max-width: 768px){
+.speakers.all .speaker .avatar img {
+    width: 260px!important;
+  }
+}
+
 @media (min-width: 768px) {
+
   .speakers.all .speaker .avatar .name {
     left: -15px;
     top: -35px;
@@ -89,26 +133,24 @@
 }
 
 .speakers.all {
-  margin-top: 60px;
 
   .speaker {
-    @include span(10);
+    @include span(12, $medium: 12);
     @include row;
 
     margin-bottom: 60px;
     min-height: 220px;
 
     .avatar {
-      @include span(4, $medium: 5, $small: 12);
+      @include span(4, $medium: 5, $small: 12, $x-small:12);
       @include align('middle', $small: 'middle', $x-small: 'middle');
       @include align('center');
 
       position: relative;
       z-index: 900;
-      height: 220px;
 
       img {
-        margin: 0 auto;
+        margin: 20px auto;
         width: 200px;
       }
     }
@@ -131,14 +173,11 @@
       z-index: 1100;
       background: white;
 
-      // &:before {
-      //   content: "";
-      //   position: absolute;
-      //   left: -50px;
-      //   width: 50px;
-      //   height: 100%;
-      //   background: linear-gradient(to right, rgba(255,255,255,0) 0%,rgba(255,255,255,1) 100%);
-      // }
+      h4 {
+        @media (max-width: 576px) {
+          margin-top: 20px;
+        }
+      }
 
       .quote {
         font-size: 20px;
@@ -179,6 +218,10 @@
         font-weight: 300;
         line-height: 24px;
         margin-bottom: 20px;
+
+        @media (max-width: 576px) {
+          margin-top: 20px;
+        }
       }
 
       .social {

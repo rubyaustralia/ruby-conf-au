@@ -11,6 +11,10 @@ module RubyConf
         data['title']
       end
 
+      def type
+        data["type"] || "cfp"
+      end
+
       def is_sponsored?
         !data['sponsor'].nil?
       end

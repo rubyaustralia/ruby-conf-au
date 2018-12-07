@@ -18,8 +18,9 @@ module RubyConf
 
         app.namespace '/2019' do
           get '/?' do
-            @title    = :home
-            @speakers = speaker_repository.all
+            @title            = :home
+            @random_speaker   = speaker_repository.via_cfp.shuffle[0]
+            @invited_speakers = speaker_repository.via_invite
 
             haml :"2019/home", :layout => :"2019/layout"
           end
@@ -27,7 +28,7 @@ module RubyConf
           get '/:page_name' do
             page_name = params[:page_name]
             @title    = page_name
-            @speakers = speaker_repository.all
+            @speakers = speaker_repository
 
             haml :"2019/#{page_name}", :layout => :"2019/layout"
           end

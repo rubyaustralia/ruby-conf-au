@@ -3910,6 +3910,9 @@ footer {
   .introduction .lead {
     font-size: 150%; }
 
+.opportunity {
+  padding-bottom: 1rem; }
+
 .speakers {
   margin: 40px 0 80px; }
   .speakers .avatar {

@@ -58,7 +58,7 @@
   pitch: |
     REST-ful, more like stress-ful am I right? What if I told you you could build amazing APIs your cat would be proud of with GraphQL instead.
 
-    Let’s take a look at how to go about implementing a GraphQL API alongside an existing codebase, and how it helps you hide that nasty legacy code away.
+    Let’s take a look at how to go about implementing a GraphQL API that’s evolvable and empowers your team.
   bio: Tom Ridge is a developer currently residing in Brisbane, Australia. A father of twins, he’s recently organised a Rails Camp, was Vice President of Ruby Australia and has co-organised his local meetup. Somehow, he’s still not sure why he has so little free time.
   twitter: tjridge
 

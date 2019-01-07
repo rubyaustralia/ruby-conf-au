@@ -19,6 +19,9 @@
   type: invitation
 
 - name: Daniel Fone
+  title: What Could Go Wrong? The Subtle Science Of Coding for Failure
+  pitch: |
+    Software development is the anticipation of a thousand dangers: regressions, edge-cases, exceptions, attacks, downtime, the list is endless. Drawing from a wide range of disciplines, we’ll build a simple model for quantifying danger, explore why the human brain is so bad at it, and examine some practical applications for our development processes. There will be at least one science.
   bio: "[Daniel](http://daniel.fone.net.nz/) has been writing Ruby/Rails for about 10 years. In recent years he has been helping to organise the Christchurch Ruby meetups and serving as secretary on the Ruby New Zealand committee. He lives in 🇳🇿 with 👨‍👩‍👧‍👦👶, and enjoys 🏃, 🍺, and 🔎 📖 ἡ κοινὴ. Much like Ruby, he tries to be optimised for happiness — both his own and other people's."
   twitter: danielfone
   type: invitation

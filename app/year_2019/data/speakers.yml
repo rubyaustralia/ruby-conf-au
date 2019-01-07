@@ -1,9 +1,19 @@
 - name: Nadia Odunayo
+  title: The Case Of The Missing Method - A Ruby Mystery Story
+  pitch: |
+    Business is slow for Ruby Private Investigator, Deirdre Bug. She’s on the verge of switching industry when she gets a call from an anxious young man. "Some class methods have gone missing," he tells her breathlessly. "I need your help."
+
+    Deirdre takes the case and begins exploring Ruby objects behind the scenes. Though she thinks she's on familiar ground — Ruby's object model, method lookup — she's about to discover that she really has no clue.
   bio: "[Nadia](http://www.nadiaodunayo.com/) is currently CTO at [CodeNewbie](https://www.codenewbie.org/). Before that, she co-directed Ignition Works, a company that did a mix of in-house product development and software consultancy, helping large firms to manage their cloud platforms. She previously worked at Pivotal and originally learnt to code at Makers Academy in London. She maintains [speakerline.io](https://speakerline.io/) in her spare time."
   twitter: nodunayo
   type: invitation
 
 - name: Beth Haubert
+  title: Cats, The Musical! Algorithmic Song Meow-ification
+  pitch: |
+    How are you supposed to sing along with your favorite TV theme song every week if it doesn't have lyrics? At my house, we "meow" along (loudly). We also code, so I built 'Meowifier' to convert any song into a cat's meows. Join me in this exploration of melody analysis APIs and gratuitous cat gifs.
+
+    I built an application that takes a song's audio and outputs a new audio file with that song's melody **sung by cats**. It's a technical feat. It's hilarious. It's beautiful. It's a new way to waste time on the internet.
   bio: "[Beth](https://www.bethanyhaubert.com/) is a software engineer who loves Ruby, little-known APIs, handcrafting SQL queries, and as many monitors on her desk as possible. She’s also a former airborne cryptologic linguist for the US Air Force, fluent in Mandarin. Things you can ask her about include cats, board games, karaoke, and building applications that convert songs into auto-tuned cat meows. Things she'll have to kill you if you ask her about: the airborne linguist part. Also, she likes to make emojis look like they're farting. 🐈💨"
   twitter: haubertdashery
   type: invitation

@@ -3937,6 +3937,14 @@ footer {
 .opportunity {
   padding-bottom: 1rem; }
 
+.ticketing #tito-ticket-y1kpbdian8q:before {
+  content: "Saturday Activities";
+  border-top: 1px solid #ccc !important;
+  display: block;
+  padding: 0.5em 0.75em;
+  font-size: 2rem;
+  margin-top: 1em; }
+
 .speakers {
   margin: 40px 0 80px; }
   .speakers .avatar {

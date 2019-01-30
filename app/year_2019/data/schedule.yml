@@ -1,5 +1,5 @@
 - type: social_event
-  title: Opening Party
+  title: Opening Party 🌆
   description: |
     To begin our celebrations of the conference and the Ruby community, we'll be taking in a magnificent view of Melbourne (and the sunset) from the grand height of Eureka Tower's 89th floor! Dinner and drinks will be provided.
   day: wednesday
@@ -13,13 +13,13 @@
   location_link: https://goo.gl/maps/neGpVVCHuBP2
 
 - type: break
-  title: Registration
+  title: Registration 🎟️
   description: ""
   day: thursday
   start_time: 830
   end_time: 930
 - type: break
-  title: Welcome and Opening Remarks
+  title: Welcome and Opening Remarks 🎤
   description: ""
   day: thursday
   start_time: 930
@@ -31,7 +31,7 @@
   start_time: 1000
   end_time: 1030
 - type: break
-  title: Morning Tea
+  title: Morning Tea 🍵
   description: ''
   day: thursday
   start_time: 1030
@@ -43,7 +43,7 @@
   start_time: 1100
   end_time: 1215
 - type: break
-  title: Lunch
+  title: Lunch 🍽️
   description: ''
   day: thursday
   start_time: 1215
@@ -55,7 +55,7 @@
   start_time: 1330
   end_time: 1420
 - type: break
-  title: Coffee Break
+  title: Coffee Break ☕
   description: ''
   day: thursday
   start_time: 1420
@@ -67,7 +67,7 @@
   start_time: 1450
   end_time: 1540
 - type: break
-  title: Afternoon Tea
+  title: Afternoon Tea 🍰
   description: ''
   day: thursday
   start_time: 1540
@@ -79,24 +79,24 @@
   start_time: 1600
   end_time: 1650
 - type: break
-  title: Closing Remarks
+  title: Closing Remarks 🎤
   description: ''
   day: thursday
   start_time: 1650
   end_time: 1700
+
 - type: break
-  title: Registration and Coffee
+  title: Registration 🎟️ and Coffee ☕
   description: ""
   day: friday
   start_time: 900
   end_time: 930
 - type: break
-  title: Opening Remarks
+  title: Opening Remarks 🎤
   description: ""
   day: friday
   start_time: 930
   end_time: 940
-
 - type: session
   title: Session 1
   speakers: [["Eliza Sorensen", "Jack Chen"], "Keith Pitty"]
@@ -104,7 +104,7 @@
   start_time: 940
   end_time: 1030
 - type: break
-  title: Morning Tea
+  title: Morning Tea 🍵
   description: ''
   day: friday
   start_time: 1030
@@ -116,7 +116,7 @@
   start_time: 1100
   end_time: 1215
 - type: break
-  title: Lunch
+  title: Lunch 🍽️
   description: ''
   day: friday
   start_time: 1215
@@ -128,7 +128,7 @@
   start_time: 1330
   end_time: 1420
 - type: break
-  title: Coffee Break
+  title: Coffee Break ☕
   description: ''
   day: friday
   start_time: 1420
@@ -140,7 +140,7 @@
   start_time: 1450
   end_time: 1540
 - type: break
-  title: Afternoon Tea
+  title: Afternoon Tea 🍰
   description: ''
   day: friday
   start_time: 1540
@@ -152,13 +152,13 @@
   start_time: 1600
   end_time: 1650
 - type: break
-  title: Closing Remarks
+  title: Closing Remarks 🎤
   description: ''
   day: friday
   start_time: 1650
   end_time: 1715
 - type: social_event
-  title: "Closing Party"
+  title: "Closing Party 🎲"
   description: |
     After our speakers have finished sharing their insights and wisdom on our stage, we'll continue the conversations and fun within The Forum, taking full advantage of their striking and recently renovated theatre spaces. Again, dinner and drinks are covered, so you can kick back and hang out with Ruby friends new and old.
   day: friday
@@ -172,7 +172,7 @@
   location_link: https://goo.gl/maps/yNEF43hiGzo
 
 - type: social_event
-  title: Hands-on Pizza Cooking Class
+  title: Hands-on Pizza Cooking Class 🍕
   description: |
     A hands-on workshop where you learn how to cook pizzas from scratch, in a class led by local Rubyists (and enthusiastic chefs) <a href="https://twitter.com/aemeredith" target="_blank">Elle Meredith</a> and <a href="https://twitter.com/lachlanhardy" target="_blank">Lachlan Hardy</a>.
   day: saturday
@@ -185,7 +185,7 @@
   location_text: Urban Kitchen, 17-21 Buckhurst Street, South Melbourne, Victoria 3205
   location_link: https://goo.gl/maps/Wojv7MnDyso
 - type: social_event
-  title: Hack Day
+  title: Hack Day 👩‍💻
   description: |
     After all the learning you've done at the conference, we wouldn't blame you if you're itching to put that theory into practice and fire up your favourite text editor. We'll provide a space for you to code away to your heart's content with other like minds from the conference. Hosted by <a href="https://twitter.com/jamesmclaren555" target="_blank">James McLaren</a>.
   day: saturday
@@ -198,7 +198,7 @@
   location_text: Envato, 121 King Street, Melbourne, Victoria 3000
   location_link: https://goo.gl/maps/y38F33W5jRz
 - type: social_event
-  title: Indoor Bouldering
+  title: Indoor Bouldering 🧗‍♀️
   description: |
     Spend the afternoon stretching your muscles with your fellow conference-goers in a group climbing session led by local Rubyist <a href="https://twitter.com/bjeanes/" target="_blank">Bo Jeanes</a>. Hosted at <a href="https://goo.gl/maps/26dpPk4hJ2u" target="_blank">Urban Climb</a> in Collingwood.
   day: saturday
@@ -211,7 +211,7 @@
   location_text: Urban Climb, 29-41 Down Street, Collingwood, Victoria 3066
   location_link: https://goo.gl/maps/26dpPk4hJ2u
 - type: social_event
-  title: "Aboriginal History and Melbourne Walking Tour"
+  title: "Aboriginal History and Melbourne Walking Tour 🚶‍♂️"
   description: |
     Bring your walking shoes and get to know a bit of the region's Aboriginal culture and history with a tour from the <a href="http://koorieheritagetrust.com.au">Koorie Heritage Trust</a>. Afterwards, be guided by local Rubyist <a href="https://twitter.com/pat" target="_blank">Pat Allan</a> as we wander through the street art, alleys and arcades of Melbourne's CBD.
   day: saturday

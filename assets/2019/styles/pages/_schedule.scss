@@ -1,8 +1,30 @@
-.page-schedule .introduction  {
-  margin-bottom: 0;
+.shortcuts {
+  @include align('center');
+
+  a {
+    text-transform: uppercase;
+    font-weight: 600;
+    color: $darker-pink;
+    font-size: 26px;
+    padding: 0 5px;
+  }
 }
 
 .schedule {
+  .day {
+    background-color: $super-soft-pink;
+  }
+
+  ol {
+    margin: 0;
+    padding: 0;
+
+    li {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+    }
+  }
 
   h3 {
     text-align: center;
@@ -12,19 +34,17 @@
 
   .event {
     @include row;
-    @include align('center');
     width: 100%;
 
     position: relative;
 
     h2,
-    p,
-    .start_time,
-    .end_time {
+    p {
       width: 100%;
     }
 
     h2 {
+      text-align: left;
       font-size: 28px;
       font-weight: 400;
       padding-top: 10px;
@@ -36,37 +56,24 @@
     }
 
     .details {
-      @include span(9);
+      @include span(9, $small: 12);
       padding-bottom: 15px;
     }
 
-    h2,
-    .details {
-      background: rgba(255,255,255,0.6);
-      z-index: 10;
+    .time {
+      @include span(2);
+
+      p {
+        text-align: right;
+        color: $brown;
+        font-weight: 600;
+        margin-top: 15px;
+        font-size: 20px;
+      }
     }
 
-    .start_time,
-    .end_time {
-      background: white;
-      border: 2px solid $eucalypt;
-      color: $teal;
-      font-weight: 400;
-      height: 64px;
-      width: 64px;
-      line-height: 58px;
-      border-radius: 50%;
-      z-index: 10;
-    }
-
-    .start_time {
-      margin-top: 30px;
-      margin-bottom: 10px;
-    }
-
-    .end_time {
-      margin-top: 10px;
-      margin-bottom: 40px;
+    article {
+      @include span(10);
     }
 
     .sponsor {
@@ -78,94 +85,74 @@
       }
     }
 
-    .speakers {
-      @include span(12);
+    .social {
+      @include row;
+
+      .avatar {
+        @include span(3, $small: 6);
+
+        img {
+          max-width: 100%;
+          border: 3px solid $brown;
+        }
+      }
+
+      .info {
+        @include span(9, $small: 12);
+
+        .title {
+          font-weight: 600;
+          font-size: 24px;
+        }
+
+        .minor {
+          font-size: 90%;
+          margin-bottom: 0.35rem;
+
+          &.free {
+            color: $darker-pink;
+            font-weight: 600;
+          }
+
+          a {
+            color: $darker-pink;
+          }
+        }
+      }
     }
 
     .speaker {
       @include row;
-      @include align('center');
-      @include align('middle');
 
       margin: 10px 0;
+      .avatar {
+        @include span(3, $small: 6);
 
-      @include responsive-mobile {
-        margin-bottom: 40px !important;
+        img {
+          max-width: 100%;
+          border: 3px solid $brown;
+        }
       }
 
-      .name {
-        text-align: right;
+      .info {
+        @include span(9, $small: 12);
+
+        &.double {
+          @include span(6, $small: 12);
+        }
+
+        .title {
+          font-weight: 600;
+        }
+
+        font-size: 24px;
+        font-weight: 300;
 
         a {
           text-decoration: none;
-        }
-
-        @include responsive-mobile {
-          text-align: center;
-          margin-bottom: 5px;
-        }
-
-        &.flip {
-          text-align: left;
+          font-size: 18px;
         }
       }
-
-      .title {
-        text-align: left;
-        @include responsive-mobile {
-          text-align: center;
-        }
-      }
-
-      .name,
-      .title {
-        @include span(4, $small: 12);
-        font-size: 24px;
-        font-weight: 300;
-        margin-top: -20px;
-
-        @include responsive-mobile {
-          margin-top: 10px;
-        }
-
-        img {
-          max-width: 50%;
-          margin-top: 10px;
-          @include responsive-mobile {
-            max-width: 30%;
-          }
-
-          &.compact {
-            max-width: 20%;
-          }
-        }
-
-        &.double {
-          @include span(3, $small: 12);
-        }
-      }
-
-      .twitter {
-        font-size: 18px;
-      }
-
-      .avatar {
-        @include span(3, $small: 6);
-        img {
-          max-width: 100%;
-        }
-      }
-    }
-
-    &:before {
-      content: "";
-      position: absolute;
-      background: $eucalypt;
-      height: 100%;
-      width: 2px;
-      left: 50%;
-      margin-left: -1px;
-      z-index: 1;
     }
   }
 }

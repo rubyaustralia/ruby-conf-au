@@ -2611,7 +2611,7 @@ select {
   .container {
     width: 1184px;
     max-width: 100%; } }
-.row, header .container, .all-speakers.all .speaker, .events.all .event, .schedule .event, .schedule .event .speaker {
+.row, header .container, .all-speakers.all .speaker, .events.all .event, .schedule .event, .schedule .event .social, .schedule .event .speaker {
   box-sizing: border-box;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -2628,7 +2628,7 @@ select {
   margin-right: -8px;
   margin-left: -8px; }
 
-.row.reverse, header .reverse.container, .all-speakers.all .reverse.speaker, .events.all .reverse.event, .schedule .reverse.event, .schedule .event .reverse.speaker {
+.row.reverse, header .reverse.container, .all-speakers.all .reverse.speaker, .events.all .reverse.event, .schedule .reverse.event, .schedule .event .reverse.social, .schedule .event .reverse.speaker {
   -webkit-box-orient: horizontal;
   -webkit-box-direction: reverse;
   -ms-flex-direction: row-reverse;
@@ -2643,16 +2643,18 @@ select {
 .col-xs,
 .col-xs-1,
 .col-xs-2,
+.schedule .event .time,
 .col-xs-3,
 .col-xs-4,
 .col-xs-5,
 .col-xs-6,
+.schedule .event .social .avatar,
 .schedule .event .speaker .avatar,
 .col-xs-7,
 .col-xs-8,
 .col-xs-9,
-.schedule .event .details,
 .col-xs-10,
+.schedule .event article,
 .col-xs-11,
 .col-xs-12,
 header .brand,
@@ -2667,11 +2669,10 @@ header .dates-and-location,
 .events.all .event,
 .events.all .event .avatar,
 .events.all .event .details,
-.schedule .event .speakers,
-.schedule .event .speaker .name,
-.schedule .event .speaker .title,
-.schedule .event .speaker .name.double,
-.schedule .event .speaker .title.double,
+.schedule .event .details,
+.schedule .event .social .info,
+.schedule .event .speaker .info,
+.schedule .event .speaker .info.double,
 .col-xs-offset-0,
 .col-xs-offset-1,
 .col-xs-offset-2,
@@ -2688,16 +2689,18 @@ header .dates-and-location,
 .col-sm,
 .col-sm-1,
 .col-sm-2,
+.schedule .event .time,
 .col-sm-3,
 .col-sm-4,
 .col-sm-5,
 .col-sm-6,
+.schedule .event .social .avatar,
 .schedule .event .speaker .avatar,
 .col-sm-7,
 .col-sm-8,
 .col-sm-9,
-.schedule .event .details,
 .col-sm-10,
+.schedule .event article,
 .col-sm-11,
 .col-sm-12,
 header .brand,
@@ -2712,11 +2715,10 @@ header .dates-and-location,
 .events.all .event,
 .events.all .event .avatar,
 .events.all .event .details,
-.schedule .event .speakers,
-.schedule .event .speaker .name,
-.schedule .event .speaker .title,
-.schedule .event .speaker .name.double,
-.schedule .event .speaker .title.double,
+.schedule .event .details,
+.schedule .event .social .info,
+.schedule .event .speaker .info,
+.schedule .event .speaker .info.double,
 .col-sm-offset-0,
 .col-sm-offset-1,
 .col-sm-offset-2,
@@ -2733,35 +2735,36 @@ header .dates-and-location,
 .col-md,
 .col-md-1,
 .col-md-2,
+.schedule .event .time,
 .col-md-3,
-.schedule .event .speaker .name.double,
-.schedule .event .speaker .title.double,
+.schedule .event .social .avatar,
 .schedule .event .speaker .avatar,
 .col-md-4,
 header .brand,
 header .nav,
 header .dates-and-location,
-.schedule .event .speaker .name,
-.schedule .event .speaker .title,
 .col-md-5,
 .all-speakers.all .speaker .avatar,
 .events.all .event .avatar,
 .col-md-6,
 .all-speakers .speaker,
 .events .event,
+.schedule .event .speaker .info.double,
 .col-md-7,
 .all-speakers.all .speaker .details,
 .events.all .event .details,
 .col-md-8,
 .col-md-9,
 .schedule .event .details,
+.schedule .event .social .info,
+.schedule .event .speaker .info,
 .col-md-10,
+.schedule .event article,
 .col-md-11,
 .col-md-12,
 .footer,
 .all-speakers.all .speaker,
 .events.all .event,
-.schedule .event .speakers,
 .col-md-offset-0,
 .col-md-offset-1,
 .col-md-offset-2,
@@ -2778,9 +2781,9 @@ header .dates-and-location,
 .col-lg,
 .col-lg-1,
 .col-lg-2,
+.schedule .event .time,
 .col-lg-3,
-.schedule .event .speaker .name.double,
-.schedule .event .speaker .title.double,
+.schedule .event .social .avatar,
 .schedule .event .speaker .avatar,
 .col-lg-4,
 header .brand,
@@ -2790,23 +2793,24 @@ header .dates-and-location,
 .all-speakers.all .speaker .avatar,
 .events .event,
 .events.all .event .avatar,
-.schedule .event .speaker .name,
-.schedule .event .speaker .title,
 .col-lg-5,
 .col-lg-6,
+.schedule .event .speaker .info.double,
 .col-lg-7,
 .col-lg-8,
 .all-speakers.all .speaker .details,
 .events.all .event .details,
 .col-lg-9,
 .schedule .event .details,
+.schedule .event .social .info,
+.schedule .event .speaker .info,
 .col-lg-10,
+.schedule .event article,
 .col-lg-11,
 .col-lg-12,
 .footer,
 .all-speakers.all .speaker,
 .events.all .event,
-.schedule .event .speakers,
 .col-lg-offset-0,
 .col-lg-offset-1,
 .col-lg-offset-2,
@@ -2869,7 +2873,7 @@ header .dates-and-location,
   flex-basis: 8.33333333%;
   max-width: 8.33333333%; }
 
-.col-xs-2 {
+.col-xs-2, .schedule .event .time {
   -ms-flex-preferred-size: 16.66666667%;
   flex-basis: 16.66666667%;
   max-width: 16.66666667%; }
@@ -2889,7 +2893,7 @@ header .dates-and-location,
   flex-basis: 41.66666667%;
   max-width: 41.66666667%; }
 
-.col-xs-6, .schedule .event .speaker .avatar {
+.col-xs-6, .schedule .event .social .avatar, .schedule .event .speaker .avatar {
   -ms-flex-preferred-size: 50%;
   flex-basis: 50%;
   max-width: 50%; }
@@ -2904,12 +2908,12 @@ header .dates-and-location,
   flex-basis: 66.66666667%;
   max-width: 66.66666667%; }
 
-.col-xs-9, .schedule .event .details {
+.col-xs-9 {
   -ms-flex-preferred-size: 75%;
   flex-basis: 75%;
   max-width: 75%; }
 
-.col-xs-10 {
+.col-xs-10, .schedule .event article {
   -ms-flex-preferred-size: 83.33333333%;
   flex-basis: 83.33333333%;
   max-width: 83.33333333%; }
@@ -2919,9 +2923,7 @@ header .dates-and-location,
   flex-basis: 91.66666667%;
   max-width: 91.66666667%; }
 
-.col-xs-12, header .brand, header .nav, header .dates-and-location, .footer, .all-speakers .speaker, .all-speakers.all .speaker, .all-speakers.all .speaker .avatar, .all-speakers.all .speaker .details, .events .event, .events.all .event, .events.all .event .avatar, .events.all .event .details, .schedule .event .speakers, .schedule .event .speaker .name,
-.schedule .event .speaker .title, .schedule .event .speaker .name.double,
-.schedule .event .speaker .title.double {
+.col-xs-12, header .brand, header .nav, header .dates-and-location, .footer, .all-speakers .speaker, .all-speakers.all .speaker, .all-speakers.all .speaker .avatar, .all-speakers.all .speaker .details, .events .event, .events.all .event, .events.all .event .avatar, .events.all .event .details, .schedule .event .details, .schedule .event .social .info, .schedule .event .speaker .info, .schedule .event .speaker .info.double {
   -ms-flex-preferred-size: 100%;
   flex-basis: 100%;
   max-width: 100%; }
@@ -2968,7 +2970,7 @@ header .dates-and-location,
   justify-content: flex-start;
   text-align: start; }
 
-.center-xs, header, header .container, .all-speakers.all .speaker .avatar, .events.all .event .avatar, .schedule .event, .schedule .event .speaker {
+.center-xs, header, header .container, .all-speakers.all .speaker .avatar, .events.all .event .avatar, .shortcuts {
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   justify-content: center;
@@ -2985,7 +2987,7 @@ header .dates-and-location,
   -ms-flex-align: start;
   align-items: flex-start; }
 
-.middle-xs, header h2, header .container, header .nav, header .dates-and-location, .all-speakers.all .speaker .avatar, .events.all .event .avatar, .schedule .event .speaker {
+.middle-xs, header h2, header .container, header .nav, header .dates-and-location, .all-speakers.all .speaker .avatar, .events.all .event .avatar {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center; }
@@ -3033,7 +3035,7 @@ header .dates-and-location,
     flex-basis: 8.33333333%;
     max-width: 8.33333333%; }
 
-  .col-sm-2 {
+  .col-sm-2, .schedule .event .time {
     -ms-flex-preferred-size: 16.66666667%;
     flex-basis: 16.66666667%;
     max-width: 16.66666667%; }
@@ -3053,7 +3055,7 @@ header .dates-and-location,
     flex-basis: 41.66666667%;
     max-width: 41.66666667%; }
 
-  .col-sm-6, .schedule .event .speaker .avatar {
+  .col-sm-6, .schedule .event .social .avatar, .schedule .event .speaker .avatar {
     -ms-flex-preferred-size: 50%;
     flex-basis: 50%;
     max-width: 50%; }
@@ -3068,12 +3070,12 @@ header .dates-and-location,
     flex-basis: 66.66666667%;
     max-width: 66.66666667%; }
 
-  .col-sm-9, .schedule .event .details {
+  .col-sm-9 {
     -ms-flex-preferred-size: 75%;
     flex-basis: 75%;
     max-width: 75%; }
 
-  .col-sm-10 {
+  .col-sm-10, .schedule .event article {
     -ms-flex-preferred-size: 83.33333333%;
     flex-basis: 83.33333333%;
     max-width: 83.33333333%; }
@@ -3083,9 +3085,7 @@ header .dates-and-location,
     flex-basis: 91.66666667%;
     max-width: 91.66666667%; }
 
-  .col-sm-12, header .brand, header .nav, header .dates-and-location, .footer, .all-speakers .speaker, .all-speakers.all .speaker, .all-speakers.all .speaker .avatar, .all-speakers.all .speaker .details, .events .event, .events.all .event, .events.all .event .avatar, .events.all .event .details, .schedule .event .speakers, .schedule .event .speaker .name,
-  .schedule .event .speaker .title, .schedule .event .speaker .name.double,
-  .schedule .event .speaker .title.double {
+  .col-sm-12, header .brand, header .nav, header .dates-and-location, .footer, .all-speakers .speaker, .all-speakers.all .speaker, .all-speakers.all .speaker .avatar, .all-speakers.all .speaker .details, .events .event, .events.all .event, .events.all .event .avatar, .events.all .event .details, .schedule .event .details, .schedule .event .social .info, .schedule .event .speaker .info, .schedule .event .speaker .info.double {
     -ms-flex-preferred-size: 100%;
     flex-basis: 100%;
     max-width: 100%; }
@@ -3132,7 +3132,7 @@ header .dates-and-location,
     justify-content: flex-start;
     text-align: start; }
 
-  .center-sm, header, header .container, .all-speakers.all .speaker .avatar, .events.all .event .avatar, .schedule .event, .schedule .event .speaker {
+  .center-sm, header, header .container, .all-speakers.all .speaker .avatar, .events.all .event .avatar, .shortcuts {
     -webkit-box-pack: center;
     -ms-flex-pack: center;
     justify-content: center;
@@ -3149,7 +3149,7 @@ header .dates-and-location,
     -ms-flex-align: start;
     align-items: flex-start; }
 
-  .middle-sm, header h2, header .container, header .nav, header .dates-and-location, .all-speakers.all .speaker .avatar, .events.all .event .avatar, .schedule .event .speaker {
+  .middle-sm, header h2, header .container, header .nav, header .dates-and-location, .all-speakers.all .speaker .avatar, .events.all .event .avatar {
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center; }
@@ -3186,35 +3186,36 @@ header .dates-and-location,
   .col-md,
   .col-md-1,
   .col-md-2,
+  .schedule .event .time,
   .col-md-3,
-  .schedule .event .speaker .name.double,
-  .schedule .event .speaker .title.double,
+  .schedule .event .social .avatar,
   .schedule .event .speaker .avatar,
   .col-md-4,
   header .brand,
   header .nav,
   header .dates-and-location,
-  .schedule .event .speaker .name,
-  .schedule .event .speaker .title,
   .col-md-5,
   .all-speakers.all .speaker .avatar,
   .events.all .event .avatar,
   .col-md-6,
   .all-speakers .speaker,
   .events .event,
+  .schedule .event .speaker .info.double,
   .col-md-7,
   .all-speakers.all .speaker .details,
   .events.all .event .details,
   .col-md-8,
   .col-md-9,
   .schedule .event .details,
+  .schedule .event .social .info,
+  .schedule .event .speaker .info,
   .col-md-10,
+  .schedule .event article,
   .col-md-11,
   .col-md-12,
   .footer,
   .all-speakers.all .speaker,
   .events.all .event,
-  .schedule .event .speakers,
   .col-md-offset-0,
   .col-md-offset-1,
   .col-md-offset-2,
@@ -3248,19 +3249,17 @@ header .dates-and-location,
     flex-basis: 8.33333333%;
     max-width: 8.33333333%; }
 
-  .col-md-2 {
+  .col-md-2, .schedule .event .time {
     -ms-flex-preferred-size: 16.66666667%;
     flex-basis: 16.66666667%;
     max-width: 16.66666667%; }
 
-  .col-md-3, .schedule .event .speaker .name.double,
-  .schedule .event .speaker .title.double, .schedule .event .speaker .avatar {
+  .col-md-3, .schedule .event .social .avatar, .schedule .event .speaker .avatar {
     -ms-flex-preferred-size: 25%;
     flex-basis: 25%;
     max-width: 25%; }
 
-  .col-md-4, header .brand, header .nav, header .dates-and-location, .schedule .event .speaker .name,
-  .schedule .event .speaker .title {
+  .col-md-4, header .brand, header .nav, header .dates-and-location {
     -ms-flex-preferred-size: 33.33333333%;
     flex-basis: 33.33333333%;
     max-width: 33.33333333%; }
@@ -3270,7 +3269,7 @@ header .dates-and-location,
     flex-basis: 41.66666667%;
     max-width: 41.66666667%; }
 
-  .col-md-6, .all-speakers .speaker, .events .event {
+  .col-md-6, .all-speakers .speaker, .events .event, .schedule .event .speaker .info.double {
     -ms-flex-preferred-size: 50%;
     flex-basis: 50%;
     max-width: 50%; }
@@ -3285,12 +3284,12 @@ header .dates-and-location,
     flex-basis: 66.66666667%;
     max-width: 66.66666667%; }
 
-  .col-md-9, .schedule .event .details {
+  .col-md-9, .schedule .event .details, .schedule .event .social .info, .schedule .event .speaker .info {
     -ms-flex-preferred-size: 75%;
     flex-basis: 75%;
     max-width: 75%; }
 
-  .col-md-10 {
+  .col-md-10, .schedule .event article {
     -ms-flex-preferred-size: 83.33333333%;
     flex-basis: 83.33333333%;
     max-width: 83.33333333%; }
@@ -3300,7 +3299,7 @@ header .dates-and-location,
     flex-basis: 91.66666667%;
     max-width: 91.66666667%; }
 
-  .col-md-12, .footer, .all-speakers.all .speaker, .events.all .event, .schedule .event .speakers {
+  .col-md-12, .footer, .all-speakers.all .speaker, .events.all .event {
     -ms-flex-preferred-size: 100%;
     flex-basis: 100%;
     max-width: 100%; }
@@ -3347,7 +3346,7 @@ header .dates-and-location,
     justify-content: flex-start;
     text-align: start; }
 
-  .center-md, header, header .container, .all-speakers.all .speaker .avatar, .events.all .event .avatar, .schedule .event, .schedule .event .speaker {
+  .center-md, header, header .container, .all-speakers.all .speaker .avatar, .events.all .event .avatar, .shortcuts {
     -webkit-box-pack: center;
     -ms-flex-pack: center;
     justify-content: center;
@@ -3364,7 +3363,7 @@ header .dates-and-location,
     -ms-flex-align: start;
     align-items: flex-start; }
 
-  .middle-md, header .container, .all-speakers.all .speaker .avatar, .events.all .event .avatar, .schedule .event .speaker {
+  .middle-md, header .container, .all-speakers.all .speaker .avatar, .events.all .event .avatar {
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center; }
@@ -3401,9 +3400,9 @@ header .dates-and-location,
   .col-lg,
   .col-lg-1,
   .col-lg-2,
+  .schedule .event .time,
   .col-lg-3,
-  .schedule .event .speaker .name.double,
-  .schedule .event .speaker .title.double,
+  .schedule .event .social .avatar,
   .schedule .event .speaker .avatar,
   .col-lg-4,
   header .brand,
@@ -3413,23 +3412,24 @@ header .dates-and-location,
   .all-speakers.all .speaker .avatar,
   .events .event,
   .events.all .event .avatar,
-  .schedule .event .speaker .name,
-  .schedule .event .speaker .title,
   .col-lg-5,
   .col-lg-6,
+  .schedule .event .speaker .info.double,
   .col-lg-7,
   .col-lg-8,
   .all-speakers.all .speaker .details,
   .events.all .event .details,
   .col-lg-9,
   .schedule .event .details,
+  .schedule .event .social .info,
+  .schedule .event .speaker .info,
   .col-lg-10,
+  .schedule .event article,
   .col-lg-11,
   .col-lg-12,
   .footer,
   .all-speakers.all .speaker,
   .events.all .event,
-  .schedule .event .speakers,
   .col-lg-offset-0,
   .col-lg-offset-1,
   .col-lg-offset-2,
@@ -3463,19 +3463,17 @@ header .dates-and-location,
     flex-basis: 8.33333333%;
     max-width: 8.33333333%; }
 
-  .col-lg-2 {
+  .col-lg-2, .schedule .event .time {
     -ms-flex-preferred-size: 16.66666667%;
     flex-basis: 16.66666667%;
     max-width: 16.66666667%; }
 
-  .col-lg-3, .schedule .event .speaker .name.double,
-  .schedule .event .speaker .title.double, .schedule .event .speaker .avatar {
+  .col-lg-3, .schedule .event .social .avatar, .schedule .event .speaker .avatar {
     -ms-flex-preferred-size: 25%;
     flex-basis: 25%;
     max-width: 25%; }
 
-  .col-lg-4, header .brand, header .nav, header .dates-and-location, .all-speakers .speaker, .all-speakers.all .speaker .avatar, .events .event, .events.all .event .avatar, .schedule .event .speaker .name,
-  .schedule .event .speaker .title {
+  .col-lg-4, header .brand, header .nav, header .dates-and-location, .all-speakers .speaker, .all-speakers.all .speaker .avatar, .events .event, .events.all .event .avatar {
     -ms-flex-preferred-size: 33.33333333%;
     flex-basis: 33.33333333%;
     max-width: 33.33333333%; }
@@ -3485,7 +3483,7 @@ header .dates-and-location,
     flex-basis: 41.66666667%;
     max-width: 41.66666667%; }
 
-  .col-lg-6 {
+  .col-lg-6, .schedule .event .speaker .info.double {
     -ms-flex-preferred-size: 50%;
     flex-basis: 50%;
     max-width: 50%; }
@@ -3500,12 +3498,12 @@ header .dates-and-location,
     flex-basis: 66.66666667%;
     max-width: 66.66666667%; }
 
-  .col-lg-9, .schedule .event .details {
+  .col-lg-9, .schedule .event .details, .schedule .event .social .info, .schedule .event .speaker .info {
     -ms-flex-preferred-size: 75%;
     flex-basis: 75%;
     max-width: 75%; }
 
-  .col-lg-10 {
+  .col-lg-10, .schedule .event article {
     -ms-flex-preferred-size: 83.33333333%;
     flex-basis: 83.33333333%;
     max-width: 83.33333333%; }
@@ -3515,7 +3513,7 @@ header .dates-and-location,
     flex-basis: 91.66666667%;
     max-width: 91.66666667%; }
 
-  .col-lg-12, .footer, .all-speakers.all .speaker, .events.all .event, .schedule .event .speakers {
+  .col-lg-12, .footer, .all-speakers.all .speaker, .events.all .event {
     -ms-flex-preferred-size: 100%;
     flex-basis: 100%;
     max-width: 100%; }
@@ -3562,7 +3560,7 @@ header .dates-and-location,
     justify-content: flex-start;
     text-align: start; }
 
-  .center-lg, header, header .container, .all-speakers.all .speaker .avatar, .events.all .event .avatar, .schedule .event, .schedule .event .speaker {
+  .center-lg, header, header .container, .all-speakers.all .speaker .avatar, .events.all .event .avatar, .shortcuts {
     -webkit-box-pack: center;
     -ms-flex-pack: center;
     justify-content: center;
@@ -3579,7 +3577,7 @@ header .dates-and-location,
     -ms-flex-align: start;
     align-items: flex-start; }
 
-  .middle-lg, header .container, .all-speakers.all .speaker .avatar, .events.all .event .avatar, .schedule .event .speaker {
+  .middle-lg, header .container, .all-speakers.all .speaker .avatar, .events.all .event .avatar {
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center; }
@@ -4327,9 +4325,22 @@ footer {
         .events.all .event .details .location {
           margin-top: 20px; } }
 
-.page-schedule .introduction {
-  margin-bottom: 0; }
+.shortcuts a {
+  text-transform: uppercase;
+  font-weight: 600;
+  color: #d2696f;
+  font-size: 26px;
+  padding: 0 5px; }
 
+.schedule .day {
+  background-color: #fbf1f1; }
+.schedule ol {
+  margin: 0;
+  padding: 0; }
+  .schedule ol li {
+    list-style-type: none;
+    margin: 0;
+    padding: 0; }
 .schedule h3 {
   text-align: center;
   text-transform: uppercase;
@@ -4338,11 +4349,10 @@ footer {
   width: 100%;
   position: relative; }
   .schedule .event h2,
-  .schedule .event p,
-  .schedule .event .start_time,
-  .schedule .event .end_time {
+  .schedule .event p {
     width: 100%; }
   .schedule .event h2 {
+    text-align: left;
     font-size: 28px;
     font-weight: 400;
     padding-top: 10px;
@@ -4351,83 +4361,42 @@ footer {
     margin-top: 0; }
   .schedule .event .details {
     padding-bottom: 15px; }
-  .schedule .event h2,
-  .schedule .event .details {
-    background: rgba(255, 255, 255, 0.6);
-    z-index: 10; }
-  .schedule .event .start_time,
-  .schedule .event .end_time {
-    background: white;
-    border: 2px solid #c4dad9;
-    color: #3c8583;
-    font-weight: 400;
-    height: 64px;
-    width: 64px;
-    line-height: 58px;
-    border-radius: 50%;
-    z-index: 10; }
-  .schedule .event .start_time {
-    margin-top: 30px;
-    margin-bottom: 10px; }
-  .schedule .event .end_time {
-    margin-top: 10px;
-    margin-bottom: 40px; }
+  .schedule .event .time p {
+    text-align: right;
+    color: #635147;
+    font-weight: 600;
+    margin-top: 15px;
+    font-size: 20px; }
   .schedule .event .sponsor {
     margin-top: 20px;
     font-size: 16px; }
     .schedule .event .sponsor img {
       margin-top: 5px;
       max-width: 128px; }
+  .schedule .event .social .avatar img {
+    max-width: 100%;
+    border: 3px solid #635147; }
+  .schedule .event .social .info .title {
+    font-weight: 600;
+    font-size: 24px; }
+  .schedule .event .social .info .minor {
+    font-size: 90%;
+    margin-bottom: 0.35rem; }
+    .schedule .event .social .info .minor.free {
+      color: #d2696f;
+      font-weight: 600; }
+    .schedule .event .social .info .minor a {
+      color: #d2696f; }
   .schedule .event .speaker {
     margin: 10px 0; }
-    @media (max-width: 768px) {
-      .schedule .event .speaker {
-        margin-bottom: 40px !important; } }
-    .schedule .event .speaker .name {
-      text-align: right; }
-      .schedule .event .speaker .name a {
-        text-decoration: none; }
-      @media (max-width: 768px) {
-        .schedule .event .speaker .name {
-          text-align: center;
-          margin-bottom: 5px; } }
-      .schedule .event .speaker .name.flip {
-        text-align: left; }
-    .schedule .event .speaker .title {
-      text-align: left; }
-      @media (max-width: 768px) {
-        .schedule .event .speaker .title {
-          text-align: center; } }
-    .schedule .event .speaker .name,
-    .schedule .event .speaker .title {
-      font-size: 24px;
-      font-weight: 300;
-      margin-top: -20px; }
-      @media (max-width: 768px) {
-        .schedule .event .speaker .name,
-        .schedule .event .speaker .title {
-          margin-top: 10px; } }
-      .schedule .event .speaker .name img,
-      .schedule .event .speaker .title img {
-        max-width: 50%;
-        margin-top: 10px; }
-        @media (max-width: 768px) {
-          .schedule .event .speaker .name img,
-          .schedule .event .speaker .title img {
-            max-width: 30%; } }
-        .schedule .event .speaker .name img.compact,
-        .schedule .event .speaker .title img.compact {
-          max-width: 20%; }
-    .schedule .event .speaker .twitter {
-      font-size: 18px; }
     .schedule .event .speaker .avatar img {
-      max-width: 100%; }
-  .schedule .event:before {
-    content: "";
-    position: absolute;
-    background: #c4dad9;
-    height: 100%;
-    width: 2px;
-    left: 50%;
-    margin-left: -1px;
-    z-index: 1; }
+      max-width: 100%;
+      border: 3px solid #635147; }
+    .schedule .event .speaker .info {
+      font-size: 24px;
+      font-weight: 300; }
+      .schedule .event .speaker .info .title {
+        font-weight: 600; }
+      .schedule .event .speaker .info a {
+        text-decoration: none;
+        font-size: 18px; }

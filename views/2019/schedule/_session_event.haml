@@ -6,30 +6,20 @@
         - speaker = @speakers.find(name: names.first)
         - raise names.first if speaker.nil?
         .speaker
-          .name
-            = speaker.name
-            %br
-            %a.twitter{href: "https://twitter.com/#{speaker.twitter}", target: "_blank"}= "@#{speaker.twitter}"
           .avatar
             %img{ src: speaker.avatar_filename }
-          .title
-            = speaker.title
-            - if speaker.is_sponsored?
-              %br
-              %img{ src: speaker.sponsor_image_filename, class: (speaker.compact_sponsor? && 'compact' || '') }
+          .info
+            .title= speaker.title
+            .name= speaker.name
+            %a.twitter{href: "https://twitter.com/#{speaker.twitter}", target: "_blank"}= "@#{speaker.twitter}"
       - else
+        - speakers = names.collect { |name| @speakers.find(name: name) }
         .speaker
-          - speaker = @speakers.find(name: names.first)
-          .name.double
-            = speaker.name
-            %br
-            %a.twitter{href: "https://twitter.com/#{speaker.twitter}", target: "_blank"}= "@#{speaker.twitter}"
-          .avatar
-            %img{ src: speaker.avatar_filename }
-          - speaker = @speakers.find(name: names.last)
-          .avatar.flip
-            %img{ src: speaker.avatar_filename }
-          .name.double.flip
-            = speaker.name
-            %br
-            %a.twitter{href: "https://twitter.com/#{speaker.twitter}", target: "_blank"}= "@#{speaker.twitter}"
+          - speakers.each do |speaker|
+            .avatar
+              %img{ src: speaker.avatar_filename }
+          .info.double
+            .title= speakers.first.title
+            .name= speakers.collect(&:name).join(" &amp; ")
+            - speakers.each do |speaker|
+              %a.twitter{href: "https://twitter.com/#{speaker.twitter}", target: "_blank"}= "@#{speaker.twitter}"

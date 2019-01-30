@@ -40,8 +40,8 @@
             position: absolute;
             border: 45px solid transparent;
             border-top-width: 0;
-            border-bottom-color: #fbc54a;
-            color: #635147;
+            border-bottom-color: $mustard;
+            color: $brown;
             font-size: 22px;
             font-weight: 500;
             line-height: 26px;
@@ -60,9 +60,9 @@
               top: 45px;
               left: -46px;
               border: 75px solid transparent;
-              border-top: 80px solid #fbc54a;
+              border-top: 80px solid $mustard;
               border-bottom-width: 0;
-              color: #635147;
+              color: $brown;
               -o-text-overflow: clip;
               text-overflow: clip;
               text-shadow: none;

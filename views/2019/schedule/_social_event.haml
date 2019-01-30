@@ -1,9 +1,21 @@
 .details
-  %p
-    = event.description
-  - if event.sponsored?
-    %p.sponsor
-      Sponsored by
-      %br
-      %a{ href: event.sponsor_link, target: '_blank' }
-        %img{ src: "/2018/images/sponsors/#{event.sponsor}.png"}
+  .social
+    .avatar
+      %img{ src: event.image }
+    .info
+      .title= event.title
+      %p
+        = event.description
+      %p.minor
+        %a{ href: event.location_link, target: '_blank' }= event.location_text
+      - if event.ticketed?
+        %p.minor
+          %a{ href: event.ticket_link, target: '_blank' } Purchase a ticket
+      - else
+        %p.minor.free All conference attendees are welcome!
+      - if event.sponsored?
+        %p.sponsor
+          Sponsored by
+          %br
+          %a{ href: event.sponsor_link, target: '_blank' }
+            %img{ src: "/2018/images/sponsors/#{event.sponsor}.png"}

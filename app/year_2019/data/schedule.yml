@@ -7,6 +7,10 @@
   end_time: 2200
   sponsor: envato
   sponsor_link: https://envato.com
+  image: /2019/images/eureka-square.jpg
+  ticket_link: ''
+  location_text: The Eureka Tower, 7 Riverside Quay, Southbank, Victoria 3006
+  location_link: https://goo.gl/maps/neGpVVCHuBP2
 
 - type: break
   title: Registration
@@ -162,25 +166,37 @@
   end_time: 2200
   sponsor: culture-amp
   sponsor_link: https://www.cultureamp.com
+  image: /2019/images/forum-square.jpg
+  ticket_link: ''
+  location_text: Forum Melbourne, 154 Flinders Street, Melbourne, Victoria 3000
+  location_link: https://goo.gl/maps/yNEF43hiGzo
 
 - type: social_event
   title: Hands-on Pizza Cooking Class
   description: |
-    A hands-on workshop where you learn how to cook pizzas from scratch, in a class led by local Rubyists (and enthusiastic chefs) <a href="https://twitter.com/aemeredith" target="_blank">Elle Meredith</a> and <a href="https://twitter.com/lachlanhardy" target="_blank">Lachlan Hardy</a>. Hosted at <a href="https://goo.gl/maps/Wojv7MnDyso" target="_blank">Urban Kitchen</a> in South Melbourne.
+    A hands-on workshop where you learn how to cook pizzas from scratch, in a class led by local Rubyists (and enthusiastic chefs) <a href="https://twitter.com/aemeredith" target="_blank">Elle Meredith</a> and <a href="https://twitter.com/lachlanhardy" target="_blank">Lachlan Hardy</a>.
   day: saturday
   start_time: 1300
   end_time: 1600
   sponsor: ''
   sponsor_link: ''
+  image: /2019/images/pizza.jpg
+  ticket_link: https://rubyconf.org.au/2019/social-events#pizza
+  location_text: Urban Kitchen, 17-21 Buckhurst Street, South Melbourne, Victoria 3205
+  location_link: https://goo.gl/maps/Wojv7MnDyso
 - type: social_event
   title: Hack Day
   description: |
-    After all the learning you've done at the conference, we wouldn't blame you if you're itching to put that theory into practice and fire up your favourite text editor. We'll provide a space for you to code away to your heart's content with other like minds from the conference. Hosted at <a href="https://goo.gl/maps/y38F33W5jRz" target="_blank">Envato</a> in the CBD by <a href="https://twitter.com/jamesmclaren555" target="_blank">James McLaren</a>.
+    After all the learning you've done at the conference, we wouldn't blame you if you're itching to put that theory into practice and fire up your favourite text editor. We'll provide a space for you to code away to your heart's content with other like minds from the conference. Hosted by <a href="https://twitter.com/jamesmclaren555" target="_blank">James McLaren</a>.
   day: saturday
   start_time: 1200
   end_time: 1600
   sponsor: ''
   sponsor_link: ''
+  image: /2019/images/hack-day.jpg
+  ticket_link: https://rubyconf.org.au/2019/social-events#hack
+  location_text: Envato, 121 King Street, Melbourne, Victoria 3000
+  location_link: https://goo.gl/maps/y38F33W5jRz
 - type: social_event
   title: Indoor Bouldering
   description: |
@@ -190,6 +206,10 @@
   end_time: 1600
   sponsor: ''
   sponsor_link: ''
+  image: /2019/images/climbing.jpg
+  ticket_link: https://rubyconf.org.au/2019/social-events#climbing
+  location_text: Urban Climb, 29-41 Down Street, Collingwood, Victoria 3066
+  location_link: https://goo.gl/maps/26dpPk4hJ2u
 - type: social_event
   title: "Aboriginal History and Melbourne Walking Tour"
   description: |
@@ -199,3 +219,7 @@
   end_time: 1600
   sponsor: ''
   sponsor_link: ''
+  image: /2019/images/melbourne.jpg
+  ticket_link: https://rubyconf.org.au/2019/social-events#walking
+  location_text: Koorie Heritage Trust, Levels 1 & 3, The Yarra Building, Federation Square, Melbourne, Victoria 3000
+  location_link: https://goo.gl/maps/bdHh52FL2Cv

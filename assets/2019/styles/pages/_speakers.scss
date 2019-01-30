@@ -1,12 +1,12 @@
-.speakers {
+.all-speakers {
 	margin: 40px 0 80px;
 
     .avatar {
         position: relative;
         &:hover {
           cursor: pointer;
-          animation: shake 0.5s; 
-          animation-iteration-count: 1; 
+          animation: shake 0.5s;
+          animation-iteration-count: 1;
         }
     }
 
@@ -97,7 +97,7 @@
 }
 
 @media (max-width: 576px) {
-  .speakers.all .speaker .avatar .name {
+  .all-speakers.all .speaker .avatar .name {
     right: 65%;
     left: auto;
     top: -35px;
@@ -105,34 +105,34 @@
 }
 
 @media (max-width: 768px){
-.speakers.all .speaker .avatar img {
+.all-speakers.all .speaker .avatar img {
     width: 260px!important;
   }
 }
 
 @media (min-width: 768px) {
 
-  .speakers.all .speaker .avatar .name {
+  .all-speakers.all .speaker .avatar .name {
     left: -15px;
     top: -35px;
   }
 }
 
 @media (min-width: 990px) {
-  .speakers.all .speaker .avatar .name {
+  .all-speakers.all .speaker .avatar .name {
     left: -15px;
     top: -35px;
   }
 }
 
 @media (min-width: 1200px) {
-  .speakers.all .speaker .avatar .name {
+  .all-speakers.all .speaker .avatar .name {
     left: 18px;
     top: -35px;
   }
 }
 
-.speakers.all {
+.all-speakers.all {
 
   .speaker {
     @include span(12, $medium: 12);

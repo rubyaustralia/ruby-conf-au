@@ -1,0 +1,35 @@
+.details
+  .speakers
+    - event.speakers.each do |names|
+      - names = Array(names)
+      - if names.length == 1
+        - speaker = @speakers.find(name: names.first)
+        - raise names.first if speaker.nil?
+        .speaker
+          .name
+            = speaker.name
+            %br
+            %a.twitter{href: "https://twitter.com/#{speaker.twitter}", target: "_blank"}= "@#{speaker.twitter}"
+          .avatar
+            %img{ src: speaker.avatar_filename }
+          .title
+            = speaker.title
+            - if speaker.is_sponsored?
+              %br
+              %img{ src: speaker.sponsor_image_filename, class: (speaker.compact_sponsor? && 'compact' || '') }
+      - else
+        .speaker
+          - speaker = @speakers.find(name: names.first)
+          .name.double
+            = speaker.name
+            %br
+            %a.twitter{href: "https://twitter.com/#{speaker.twitter}", target: "_blank"}= "@#{speaker.twitter}"
+          .avatar
+            %img{ src: speaker.avatar_filename }
+          - speaker = @speakers.find(name: names.last)
+          .avatar.flip
+            %img{ src: speaker.avatar_filename }
+          .name.double.flip
+            = speaker.name
+            %br
+            %a.twitter{href: "https://twitter.com/#{speaker.twitter}", target: "_blank"}= "@#{speaker.twitter}"

@@ -1,0 +1,36 @@
+.introduction
+  .container
+    %nav
+      %a{href: '#wednesday'} Wednesday
+      %a{href: '#thursday'} Thursday
+      %a{href: '#friday'} Friday
+      %a{href: '#saturday'} Saturday
+
+.schedule
+  .container
+    %h3#wednesday
+      Wednesday, 6th February
+  - wednesday = @schedule.for(day: 'wednesday')
+  - wednesday.each do |event|
+    = haml :'2019/schedule/_event', locals: { event: event, last: event == wednesday.last }
+
+  .container
+    %h3#thursday
+      Thursday, 7th February
+  - thursday = @schedule.for(day: 'thursday')
+  - thursday.each do |event|
+    = haml :'2019/schedule/_event', locals: { event: event, last: event == thursday.last }
+
+  .container
+    %h3#friday
+      Friday, 8th February
+  - friday = @schedule.for(day: 'friday')
+  - friday.each do |event|
+    = haml :'2019/schedule/_event', locals: { event: event, last: event == friday.last }
+
+  .container
+    %h3#saturday
+      Saturday, 9th February
+  - saturday = @schedule.for(day: 'saturday')
+  - saturday.each do |event|
+    = haml :'2019/schedule/_event', locals: { event: event, last: event == saturday.last }

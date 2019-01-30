@@ -2,7 +2,7 @@
   .container
     %h4 Behold, the stellar line-up of speakers for our conference!
 
-.speakers.all
+.all-speakers.all
   .container
     - @speakers.via_invite.each do |speaker|
       = haml :'2019/_speaker', locals: { speaker: speaker }
@@ -14,7 +14,7 @@
   .container
     %h4 And our magnificent masters of ceremony:
 
-.speakers.all
+.all-speakers.all
   .container
     - @speakers.mcs.shuffle.each do |speaker|
       = haml :'2019/_speaker', locals: { speaker: speaker }

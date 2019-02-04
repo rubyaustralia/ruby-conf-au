@@ -59,18 +59,18 @@
   description: ''
   day: thursday
   start_time: 1420
-  end_time: 1450
+  end_time: 1440
 - type: session
   title: Session 4
   speakers: ["Kelly Sutton", "Betsy Haibel"]
   day: thursday
-  start_time: 1450
-  end_time: 1540
+  start_time: 1440
+  end_time: 1530
 - type: break
   title: Afternoon Tea 🍰
   description: ''
   day: thursday
-  start_time: 1540
+  start_time: 1530
   end_time: 1600
 - type: session
   title: Session 5
@@ -132,18 +132,18 @@
   description: ''
   day: friday
   start_time: 1420
-  end_time: 1450
+  end_time: 1440
 - type: session
   title: Session 4
   speakers: ["Victor Shepelev", "Kelsey Pedersen"]
   day: friday
-  start_time: 1450
-  end_time: 1540
+  start_time: 1440
+  end_time: 1530
 - type: break
   title: Afternoon Tea 🍰
   description: ''
   day: friday
-  start_time: 1540
+  start_time: 1530
   end_time: 1600
 - type: session
   title: Session 5

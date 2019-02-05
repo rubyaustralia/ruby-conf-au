@@ -135,7 +135,7 @@
   end_time: 1440
 - type: session
   title: Session 4
-  speakers: ["Victor Shepelev", "Kelsey Pedersen"]
+  speakers: ["Tom Gamon", "Kelsey Pedersen"]
   day: friday
   start_time: 1440
   end_time: 1530

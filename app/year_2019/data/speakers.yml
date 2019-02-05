@@ -102,16 +102,11 @@
   bio: Tim Riley is a partner at Australian design agency Icelab, and a core developer of dry-rb and rom-rb. He’s excited by small libraries, first-class functions, and pushing forward web app development with Ruby.
   twitter: timriley
 
-- name: Victor Shepelev
-  title: Towards the post-framework future
-  pitch: "Starting from “What’s wrong with Rails and why everybody seems to discuss this” contradiction, this talk takes the question of framework choice at higher levels: do we need a framework at all? Pragmatic approaches to framework-less thinking will be investigated, and their deep consequences reviewed."
-  bio: |
-    Victor ‘zverok’ Shepelev is Ukrainian programmer and poet with more than fifteen years of programming experience and ten years of Ruby programming. He is a huge fan of open source and open data, author of multiple Ruby gems (made it to Ruby News Weekly several times!) and creator of [molybdenum](https://github.com/molybdenum-99) project, known for [reality](https://github.com/molybdenum-99/reality) — an early effort of making entire real-world data computable and accessible from Ruby.
-
-    His project was selected for the [Ruby Association Grant in 2015](http://www.ruby.or.jp/en/news/20160406.html).
-
-    Currently, Victor is proud to work at [VerbIT.ai](https://www.verbit.ai/), and also mentors programming students. The latter includes being a mentor for [SciRuby](http://sciruby.com/) (Scientific Ruby Foundation) for Google Summer of Code 2016-2018.
-  twitter: zverok
+- name: Tom Gamon
+  title: What the hell is a JRuby?
+  pitch: If you are like me and you don’t know your MRI from your RBX, you think a Truffle Ruby sounds delicious and panic when someone mentions JRuby, then this talk is for you. We will delve into JRuby and figure out what it is, why it is and how it is different from 'normal' ruby and other alternative Ruby implementations.
+  bio: I am a Ruby developer working out of Melbourne. I am awful at writing bios, I like tinkering with electronics and I know my chiffonade from my chicory.
+  twitter: thrgamon
 
 - name: Heidi Waterhouse
   title: I Have ADD and So Can - Ooh, Shiny!

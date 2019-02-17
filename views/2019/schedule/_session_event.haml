@@ -12,6 +12,7 @@
             .title= speaker.title
             .name= speaker.name
             %a.twitter{href: "https://twitter.com/#{speaker.twitter}", target: "_blank"}= "@#{speaker.twitter}"
+            %a.video{href: speaker.video, target: "_blank"} 🎥 Watch Video
       - else
         - speakers = names.collect { |name| @speakers.find(name: name) }
         .speaker
@@ -23,3 +24,4 @@
             .name= speakers.collect(&:name).join(" &amp; ")
             - speakers.each do |speaker|
               %a.twitter{href: "https://twitter.com/#{speaker.twitter}", target: "_blank"}= "@#{speaker.twitter}"
+            %a.video{href: speakers.first.video, target: "_blank"} 🎥 Watch Video

@@ -10,6 +10,9 @@
     - if speaker.pitch
       %h4= speaker.title
       .quote{ class: "highlight"}= speaker.pitch
+      - if speaker.has_video?
+        .video
+          %a{ href: speaker.video, target: '_blank' } 🎥 Watch Video
     .bio= speaker.bio
     .social
       - if speaker.has_twitter?

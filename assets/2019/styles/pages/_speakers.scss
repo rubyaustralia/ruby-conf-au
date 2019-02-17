@@ -182,7 +182,6 @@
       .quote {
         font-size: 20px;
         text-align: left;
-        margin-bottom: 30px;
         line-height: 30px;
         position: relative;
 
@@ -210,6 +209,10 @@
             opacity: 0.5;
           }
         }
+      }
+
+      .video {
+        margin-bottom: 30px;
       }
 
       .bio {

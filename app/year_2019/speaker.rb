@@ -68,6 +68,14 @@ module RubyConf
         !!data['compact_sponsor']
       end
 
+      def has_video?
+        !video.nil? && video.length > 0
+      end
+
+      def video
+        data["video"]
+      end
+
       private
 
       attr_reader :data

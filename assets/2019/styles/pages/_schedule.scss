@@ -134,6 +134,10 @@
         }
       }
 
+      .video {
+        display: block;
+      }
+
       .info {
         @include span(9, $small: 12);
 

@@ -2,7 +2,7 @@ NM=./node_modules
 IN_STYLES=./styles
 OUT_STYLES=../../public/2017/styles
 
-AUTOPREFIXER=$(NM)/autoprefixer/autoprefixer
+AUTOPREFIXER=$(NM)/autoprefixer/bin/autoprefixer
 
 all: $(OUT_STYLES)/all.css
 	echo "Built 2017 files"

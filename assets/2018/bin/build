@@ -1,6 +1,7 @@
 #!/bin/bash
 
 echo "Building 2018 Assets"
+mkdir -p styles/vendor
 cp ./node_modules/normalize.css/normalize.css ./styles/vendor/normalize.scss
 cp ./node_modules/flexboxgrid2/flexboxgrid2.css ./styles/vendor/flexboxgrid2.scss
 sass --sourcemap=none --scss ./styles/all.scss ../../public/2018/styles/all.css

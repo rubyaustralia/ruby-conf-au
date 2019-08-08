@@ -1,0 +1,27 @@
+!!!
+%html.no-js{lang: 'en'}
+  %head
+    /
+      Hello! This code is open-source, and MIT licensed. Go here to check out the code:
+      https://github.com/rubyaustralia/ruby-conf-au
+    %title= @page_title || "RubyConf AU 2020"
+
+    %meta{ charset: "utf-8"}
+    %meta{ content:'width=device-width, initial-scale=1.0', name:'viewport'}
+    %link{ rel: "stylesheet", href: "https://use.fontawesome.com/releases/v5.1.1/css/all.css", integrity: "sha384-O8whS3fhG2OnA5Kas0Y9l3cfpmYjapjI0E4theH4iuMD+pLhbf6JI0jIMfYcK3yZ", crossorigin: "anonymous" }
+    %link{ rel: 'stylesheet', href: 'https://css.tito.io/v1.1', type: 'text/css' }
+    %link{ rel: 'stylesheet', href: "https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css", integrity: "sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T", crossorigin: "anonymous"}
+    %link{ rel: "stylesheet", href: asset_path('2020/styles/all.css')}
+    %link{ rel:'shortcut icon', href:'/images/2018/favicon.png'}
+    %link{ href: "https://fonts.googleapis.com/css?family=Dosis:600|Roboto:300,400,500,700&display=swap", rel: "stylesheet" }
+    %script{ src: 'https://js.tito.io/v1', async: 'async' }
+    %script{:crossorigin => "anonymous", :integrity => "sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo", :src => "https://code.jquery.com/jquery-3.3.1.slim.min.js"}
+    %script{:crossorigin => "anonymous", :integrity => "sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1", :src => "https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"}
+    %script{:crossorigin => "anonymous", :integrity => "sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM", :src => "https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"}
+  %body
+    = haml :'2020/common/_header'
+
+    .div
+      != yield
+
+      = haml :'2020/common/_footer'

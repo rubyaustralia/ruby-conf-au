@@ -1,0 +1,36 @@
+@import "../lib/variables";
+
+body {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  background: #fafafa;
+}
+
+h1 {
+  font-family: "Dosis", sans-serif;
+  font-weight: 500;
+  color: $white;
+}
+
+.btn {
+  font-size: 0.85rem;
+  font-weight: 500;
+  letter-spacing: 2px;
+  border: none;
+  border-radius: 40px;
+  background: $button-primary;
+  padding: 0.5rem 1.5rem;
+  color: $white;
+  text-transform: uppercase;
+
+  &:hover {
+    background: $button-primary-hover;
+    color: $white;
+  }
+}
+
+.btn-lrg {
+  padding: 0.85rem 2.5rem;
+  color: $white;
+  text-transform: uppercase;
+}

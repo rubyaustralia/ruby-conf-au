@@ -1,0 +1,43 @@
+@import "../lib/variables";
+
+.about {
+  align-items: center;
+  width: 100%;
+
+  h2 {
+    font-size: 2.25rem;
+    font-weight: 700;
+    letter-spacing: 2px;
+    color: $red;
+  }
+
+  p {
+    font-size: 0.95rem;
+    line-height: 32px;
+    color: $black;
+  }
+}
+
+.about-desc {
+  padding: 0 2rem;
+}
+
+.about-img {
+  border-radius: 4px;
+  width: 90%;
+  margin: 0 4rem;
+}
+
+.image::before {
+  content: "";
+  width: 85%;
+  height: 100%;
+  display: block;
+  position: absolute;
+  top: 8%;
+  left: 7%;
+  background: url(https://react-native.eu/pattern.9c101eb5.svg);
+  background-size: 12px 12px;
+  opacity: 0.25;
+  z-index: -1;
+}

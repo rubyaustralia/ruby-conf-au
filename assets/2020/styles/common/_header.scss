@@ -1,0 +1,29 @@
+@import "../lib/variables";
+
+.header-cover {
+  background-image: $gradient-red,
+    url("../images/melbourne.jpg");
+  background-size: cover;
+  height: 32vh;
+  background-position-y: center;
+}
+
+.header-title {
+  font-size: 3.5rem;
+  text-transform: uppercase;
+  letter-spacing: 6px;
+}
+
+.header-lead {
+  color: $white;
+  font-weight: 400;
+}
+
+.nav-item.nav-link {
+  font-family: "Roboto", sans-serif;
+  font-size: 0.85rem;
+  font-weight: 500;
+  color: $white;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}

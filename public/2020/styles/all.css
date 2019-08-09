@@ -179,9 +179,12 @@ template {
 
 /* End normalize */
 
+/* Start Header and Footer Stuff */
+
 body {
   font-family: "Roboto", sans-serif;
   font-weight: 400;
+  background: #fafafa;
 }
 
 h1 {
@@ -264,32 +267,84 @@ h1 {
 }
 
 h4 {
-    font-size: 0.85rem;
-    font-weight: 500;
-    color: #404040;
-    letter-spacing: 3px;
-    text-transform: uppercase;
+  font-size: 0.85rem;
+  font-weight: 500;
+  color: #404040;
+  letter-spacing: 3px;
+  text-transform: uppercase;
 }
 
 .footer-links a {
-    display: inline-flex;
-    align-items: center;
-    color: #404040;
-    letter-spacing: 1px;
-    line-height: 32px;
-    font-size: 0.9rem;
+  display: inline-flex;
+  align-items: center;
+  color: #404040;
+  letter-spacing: 1px;
+  line-height: 32px;
+  font-size: 0.9rem;
 }
 
 .footer-links {
-    list-style: none;
-    padding: 0;
+  list-style: none;
+  padding: 0;
 }
 
 .copyright {
-    color: #404040;
-    font-size: 0.9rem;
+  color: #404040;
+  font-size: 0.9rem;
 }
 
-.fa, .fab {
-    padding-right: 0.25rem;
+.fa,
+.fab {
+  padding-right: 0.25rem;
 }
+
+/* End Header and Footer Stuff */
+
+/* Start Home */
+
+.about {
+  align-items: center;
+}
+
+h2 {
+  font-size: 2.25rem;
+  font-weight: 700;
+  letter-spacing: 2px;
+  color: #de3323;
+}
+
+.about {
+    width: 100%;
+}
+
+.about p {
+  font-size: 0.95rem;
+  line-height: 32px;
+  color: #404040;
+}
+
+.about-desc {
+    padding: 0 2rem;
+}
+
+.about-img {
+    border-radius: 4px;
+    width: 90%;
+    margin: 0 4rem;
+}
+
+.image::before {
+    content: "";
+    width: 85%;
+    height: 100%;
+    display: block;
+    position: absolute;
+    top: 8%;
+    left: 7%;
+    background: url(https://react-native.eu/pattern.9c101eb5.svg);
+    background-size: 12px 12px;
+    opacity: 0.25;
+    z-index: -1;
+}
+
+/* End Home */

@@ -1,4 +1,5 @@
 require 'sinatra/base'
+require 'sinatra/namespace'
 
 module RubyConf
   module Year2020
@@ -10,6 +11,16 @@ module RubyConf
             get '/?' do
                 @title = :home
                 haml :"2020/home", :layout => :"2020/layout"
+            end
+
+            get '/schedule' do
+                @title = 'Schedule'
+            end
+
+            get '/:page_name' do
+                page_name = params[:page_name]
+                @title = page_name
+                haml :"2020/#{page_name}", :layout => :"2020/layout"
             end
         end
       end

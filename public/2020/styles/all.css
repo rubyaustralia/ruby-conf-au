@@ -197,7 +197,10 @@ h1 {
   color: #fff;
 }
 
-h2, h3, h4, h5 {
+h2,
+h3,
+h4,
+h5 {
   color: #404040;
   letter-spacing: 1px;
   font-weight: 500;
@@ -244,7 +247,7 @@ img {
 }
 
 p {
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   line-height: 36px;
   font-weight: 300;
 }
@@ -272,6 +275,10 @@ p {
 .header-lead {
   color: #fff;
   font-weight: 400;
+}
+
+.nav-link {
+  padding: 1rem 1rem 0;
 }
 
 .nav-item.nav-link {
@@ -389,13 +396,15 @@ h2 {
 .header-home {
   background-image: linear-gradient(
       0deg,
-      rgba(0, 0, 0, 0.95) 0%,
-      rgba(43, 8, 0, 0.9) 100%
+      rgba(0, 0, 0, 0.99) 0%,
+      rgba(43, 8, 0, 0.95) 100%
     ),
     url("../images/melbourne.jpg");
   background-size: cover;
   height: 100vh;
   background-position-y: center;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
 
   justify-content: center;
   display: flex;
@@ -510,7 +519,21 @@ h2 {
 /* Speaker Start */
 
 .speaker-img {
-  width: 20rem;
+  width: 18rem;
+}
+
+.speaker-avatar::before {
+  content: "";
+  width: 65%;
+  height: 70%;
+  display: block;
+  position: absolute;
+  top: 11%;
+  left: 3%;
+  background: url(../images/pattern.svg);
+  background-size: 10px 10px;
+  opacity: 0.2;
+  z-index: -1;
 }
 
 .speaker-name {
@@ -522,5 +545,3 @@ h2 {
 }
 
 /* Speaker End */
-
-

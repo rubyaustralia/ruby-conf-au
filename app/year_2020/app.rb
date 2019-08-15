@@ -15,7 +15,6 @@ module RubyConf
 
             get '/schedule' do
                 @title = 'Schedule'
-                @lead = 'We have got a gem-packed, there is something for everyone' 
                 haml :"2020/schedule", :layout => :"2020/layout"
             end
 

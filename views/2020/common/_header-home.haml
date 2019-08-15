@@ -1,14 +1,26 @@
 %header
 	.container-full.header-home
-		%img{:src => "/2020/images/logo.png", :width => '20%'}
-		%h1.header-title
-			RubyConf
-			%br/
-			Australia
-		%h3.header-lead Our yearly gathering to celebrate the Australian and broader Ruby community
-		%p 
-			%i.fa.fa-calendar-alt
-			7th - 9th Feburary 2020
-		%p 
-			%i.fa.fa-map-marker-alt
-			Town Hall, Melbourne, VIC
+		.row.mr-0
+			.col-6
+				.header-content.pl-5
+					%img{:src => "/2020/images/rubylogo.png", :width => '25%'}
+					%h1.header-title.mb-4
+						Welcome to
+						%br/
+						RubyConfAu
+					%h3.header-lead 
+						Our yearly gathering to celebrate
+						%br/
+						the Australian and broader Ruby community
+					.header-details.mt-4
+						%p
+							%i.fa.fa-calendar-alt
+							7th - 9th Feburary 2020
+						%p.ml-5
+							%i.fa.fa-map-marker-alt
+							Town Hall, 90-130 Swanston St, Melbourne
+			.col-6
+				%img{:src => "/2020/images/testing.png", :width => '100%', :class => 'pr-5'}
+		.row.scroll-down
+			.col-12
+				%img{:src => "/2020/images/blob.svg", :width => '15%', :class => 'blob'}

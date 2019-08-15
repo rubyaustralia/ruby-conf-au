@@ -187,10 +187,24 @@ body {
   background: #fafafa;
 }
 
+.mt-5 {
+  margin-right: 0;
+}
+
 h1 {
   font-family: "Dosis", sans-serif;
   font-weight: 500;
   color: #fff;
+}
+
+h2, h3, h4, h5 {
+  color: #404040;
+  letter-spacing: 1px;
+  font-weight: 500;
+}
+
+.container-full {
+  padding: 0 3rem;
 }
 
 .btn {
@@ -216,22 +230,34 @@ h1 {
   text-transform: uppercase;
 }
 
+img {
+  border-radius: 4px;
+}
+
+p {
+  font-family: 'Roboto', sans-serif;
+  line-height: 36px;
+  font-weight: 300;
+}
+
 .header-cover {
   background-image: linear-gradient(
       0deg,
-      rgba(199, 41, 20, 0.95) 0%,
-      rgba(156, 29, 0, 0.9) 100%
+      rgba(21, 0, 0, 0.95) 0%,
+      rgba(70, 13, 0, 0.9) 100%
     ),
     url("../images/melbourne.jpg");
   background-size: cover;
   height: 32vh;
   background-position-y: center;
+  margin-bottom: 3rem;
 }
 
-.header-title {
-  font-size: 3.5rem;
+.header-title,
+.title {
+  font-size: 4.5rem;
   text-transform: uppercase;
-  letter-spacing: 6px;
+  letter-spacing: 10px;
 }
 
 .header-lead {
@@ -258,8 +284,8 @@ h1 {
 .footer-cover {
   background-image: linear-gradient(
       0deg,
-      rgba(199, 41, 20, 0.95) 0%,
-      rgba(156, 29, 0, 0.9) 100%
+      rgba(21, 0, 0, 0.95) 0%,
+      rgba(70, 13, 0, 0.9) 100%
     ),
     url("../images/conference.jpg");
   background-size: cover;
@@ -354,8 +380,8 @@ h2 {
 .header-home {
   background-image: linear-gradient(
       0deg,
-      rgba(199, 41, 20, 0.95) 0%,
-      rgba(156, 29, 0, 0.9) 100%
+      rgba(0, 0, 0, 0.95) 0%,
+      rgba(43, 8, 0, 0.9) 100%
     ),
     url("../images/melbourne.jpg");
   background-size: cover;
@@ -365,5 +391,108 @@ h2 {
   justify-content: center;
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: flex-start;
+  padding: 0;
+}
+
+.header-title {
+  text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 20px #881e14, 0 0 30px #821106,
+    0 0 40px #6b0f07, 0 0 55px #b1544c, 0 0 75px #9e4037;
+  animation: text-flicker 2s linear;
+}
+
+.header-lead {
+  font-family: "Roboto", sans-serif;
+  font-size: 1.1rem;
+  letter-spacing: 1px;
+  line-height: 32px;
+}
+
+.header-details {
+  color: #fff;
+  display: flex;
+}
+
+.scroll-down {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
+
+.blob {
+  display: block;
+  margin: 0 auto;
+}
+
+@keyframes text-flicker {
+  0% {
+    opacity: 0.8;
+  }
+
+  1% {
+    opacity: 0.9;
+  }
+
+  5% {
+    opacity: 1;
+  }
+
+  7% {
+    opacity: 0.2;
+  }
+
+  15% {
+    opacity: 1;
+  }
+
+  16% {
+    opacity: 0.3;
+  }
+
+  20% {
+    opacity: 0.9;
+  }
+
+  22% {
+    opacity: 0.7;
+  }
+
+  30% {
+    opacity: 1;
+  }
+
+  35% {
+    opacity: 1;
+  }
+
+  50% {
+    opacity: 0.4;
+  }
+
+  60% {
+    opacity: 1;
+  }
+
+  64% {
+    opacity: 1;
+  }
+
+  70% {
+    opacity: 0.2;
+  }
+
+  85% {
+    opacity: 0.1;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+/* Location Start */
+.mapouter {
+  width: 100%;
+  height: 300px;
+  margin-top: 2rem;
 }

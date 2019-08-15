@@ -1,0 +1,21 @@
+.row.pb-5
+  .col-3
+    %img{ src: speaker.avatar_filename(format: 'jpg'), class: 'speaker-img' }
+    .speaker__name{ class: speaker.long_name? && 'long' || '' }
+      %h3.speaker-name
+        = speaker.first_name
+        = speaker.last_name
+    .social
+      - if speaker.has_twitter?
+        %a{ href: "https://twitter.com/#{speaker.twitter}", target: '_blank' }
+          %i.fab.fa-twitter
+          = "@#{speaker.twitter}"
+  .col-9
+    .details
+      - if speaker.pitch
+        %h3= speaker.title
+        .quote{ class: "highlight"}= speaker.pitch
+        - if speaker.has_video?
+          .video
+            %a{ href: speaker.video, target: '_blank' } 🎥 Watch Video
+      .bio= speaker.bio

@@ -203,6 +203,15 @@ h2, h3, h4, h5 {
   font-weight: 500;
 }
 
+a {
+  color: #d62305;
+  transition: 0.2s ease-in-out;
+}
+
+a:hover {
+  color: #9c1600;
+}
+
 .container-full {
   padding: 0 3rem;
 }
@@ -363,15 +372,15 @@ h2 {
 
 .image::before {
   content: "";
-  width: 85%;
+  width: 87%;
   height: 100%;
   display: block;
   position: absolute;
-  top: 8%;
+  top: 7%;
   left: 7%;
-  background: url("../images/pattern.svg");
-  background-size: 12px 12px;
-  opacity: 0.25;
+  background: url(../images/pattern.svg);
+  background-size: 10px 10px;
+  opacity: 0.2;
   z-index: -1;
 }
 
@@ -494,5 +503,24 @@ h2 {
 .mapouter {
   width: 100%;
   height: 300px;
-  margin-top: 2rem;
 }
+
+/* Location End */
+
+/* Speaker Start */
+
+.speaker-img {
+  width: 20rem;
+}
+
+.speaker-name {
+  font-weight: 400;
+  text-transform: uppercase;
+  font-size: 1.2rem;
+  letter-spacing: 3px;
+  padding-top: 0.75rem;
+}
+
+/* Speaker End */
+
+

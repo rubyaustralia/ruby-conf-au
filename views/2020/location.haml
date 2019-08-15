@@ -1,8 +1,8 @@
 .container-full
     .row
-        .col-6
-            %img{:src => "/2020/images/townhall.jpg", :width => '100%'}
-        .col-6
+        .col-6.image
+            %img{:src => "/2020/images/townhall.jpg", :width => '100%', :class => "about-img"}
+        .col-6.about-desc
             %h3 Melbourne Town Hall
             %p Melbourne Town Hall is the central City and town hall, and is a historic building that has been there since 1867, Australia, in the State of Victoria. It is located on the northeast corner of Swanston and Collins Streets, in the central business district.
             %p
@@ -10,7 +10,7 @@
                 90-130 Swanston St, Melbourne VIC 3000         
     .row
         .col
-            .mapouter
+            .mapouter.mt-5
                 .gmap_canvas
                     %iframe#gmap_canvas{:frameborder => "0", :height => "300px", :marginheight => "0", :marginwidth => "0", :scrolling => "no", :src => "https://maps.google.com/maps?q=melbourne%20town%20hall&t=&z=13&ie=UTF8&iwloc=&output=embed", :width => "100%"}
                 :css

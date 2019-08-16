@@ -1,0 +1,12 @@
+.container
+  .event
+    .time
+      %p
+        = event.formatted_start_time
+        - if defined?(last) && last
+          to
+          = event.formatted_end_time
+
+    %article
+      %h2= event.show_title? ? event.title : ""
+      = haml event.template_name, locals: { event: event }

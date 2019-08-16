@@ -4,6 +4,12 @@ require 'sinatra/namespace'
 require_relative "speaker"
 require_relative "speaker_repository"
 
+require_relative "scheduled_event"
+require_relative "break_event"
+require_relative "session_event"
+require_relative "social_event"
+require_relative "schedule_repository"
+
 module RubyConf
   module Year2020
     module App
@@ -12,6 +18,11 @@ module RubyConf
           speakers: YAML.load_file(
             File.join('app', 'year_2020', 'data', 'speakers.yml')
           ).map { |d| Speaker.new(d) }
+        )
+        schedule_repository = ScheduleRepository.new(
+          schedule: YAML.load_file(
+            File.join('app', 'year_2020', 'data', 'schedule.yml')
+          )
         )
         app.register Sinatra::Namespace
 
@@ -25,6 +36,9 @@ module RubyConf
 
             get '/schedule' do
                 @title = 'Schedule'
+                @speakers = speaker_repository
+                @schedule = schedule_repository
+
                 haml :"2020/schedule", :layout => :"2020/layout"
             end
 

@@ -1,2 +1,20 @@
 .container
-    ueet
+    %nav.shortcuts
+        %a{href: '#wednesday'} Wed
+        %a{href: '#thursday'} Thu
+        %a{href: '#friday'} Fri
+        %a{href: '#saturday'} Sat
+
+.container
+    .row
+        .col-12.offset-md-1
+            %ul.timeline
+                %li.day
+                    %h3 Wednesday, 6th February
+                - wednesday = @schedule.for(day: 'wednesday')
+                - wednesday.each do |event|
+                    %li= haml :'2020/schedule/_event', locals: { event: event, last: event == wednesday.last }
+                %li
+                    %p testing 1
+                %li
+                    %p testing 1

@@ -248,6 +248,7 @@ img {
 
 p {
   font-family: "Roboto", sans-serif;
+  font-size: 0.95rem;
   line-height: 36px;
   font-weight: 300;
 }
@@ -545,3 +546,68 @@ h2 {
 }
 
 /* Speaker End */
+
+/*Schedule Start */
+
+ul.timeline {
+  list-style-type: none;
+  position: relative;
+}
+
+ul.timeline:before {
+  content: " ";
+  background: #e3e3e3;
+  display: inline-block;
+  position: absolute;
+  left: 25px;
+  width: 1px;
+  height: 100%;
+  z-index: 400;
+}
+
+ul.timeline > li {
+  margin: 20px 0;
+  padding-left: 20px;
+}
+
+ul.timeline > li:before {
+  content: " ";
+  background: #fff;
+  display: inline-block;
+  position: absolute;
+  border-radius: 50%;
+  border: 2px solid #e83a31;
+  left: 20px;
+  width: 14px;
+  height: 14px;
+  z-index: 400;
+}
+
+ul.timeline > li.day:before {
+  content: " ";
+  background: red;
+  display: inline-block;
+  position: absolute;
+  border-radius: 50%;
+  border: none;
+  left: 20px;
+  width: 14px;
+  height: 14px;
+  z-index: 400;
+}
+
+.event-title {
+  display: inline-flex;
+  align-items: center;
+}
+
+.event-title span {
+  font-style: italic;
+  font-weight: 300;
+}
+
+.sponsor img {
+  width: 12rem;
+}
+
+/*Schedule End */

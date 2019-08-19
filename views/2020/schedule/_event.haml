@@ -1,12 +1,12 @@
 .container
   .row
-    .col-1.pl-0.pr-0
+    .col-lg-1.pl-0.pr-0
       %h2.event-title
         = event.formatted_start_time
         - if defined?(last) && last
           to
           = event.formatted_end_time
-    .col-11.pl-0
+    .col-lg-11.pl-0
       %article
         %h2.timeline-title= event.show_title? ? event.title : ""
         = haml event.template_name, locals: { event: event }

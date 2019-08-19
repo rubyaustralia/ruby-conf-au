@@ -1,5 +1,5 @@
 .row.mb-5
-  .col-3
+  .col-lg-3
     .speaker-avatar
       %img{ src: speaker.avatar_filename(format: 'jpg'), class: 'speaker-img pl-3' }
     .speaker__name{ class: speaker.long_name? && 'long' || '' }
@@ -11,7 +11,7 @@
         %a{ href: "https://twitter.com/#{speaker.twitter}", target: '_blank' }
           %i.fab.fa-twitter
           = "@#{speaker.twitter}"
-  .col-9
+  .col-lg-9
     .details
       - if speaker.pitch
         %h3= speaker.title

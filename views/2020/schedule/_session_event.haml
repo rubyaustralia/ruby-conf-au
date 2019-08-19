@@ -1,27 +1,29 @@
-.details
-  .speakers
+.container-full.pl-0
+  .row.mt-2.mb-2
     - event.speakers.each do |names|
       - names = Array(names)
       - if names.length == 1
         - speaker = @speakers.find(name: names.first)
         - raise names.first if speaker.nil?
-        .speaker
+        .col-3.mb-3
           .avatar
             %img{ src: speaker.avatar_filename }
+        .col-9
           .info
-            .title= speaker.title
+            %h3= speaker.title
             .name= speaker.name
             %a.twitter{href: "https://twitter.com/#{speaker.twitter}", target: "_blank"}= "@#{speaker.twitter}"
             %a.video{href: speaker.video, target: "_blank"} 🎥 Watch Video
       - else
         - speakers = names.collect { |name| @speakers.find(name: name) }
-        .speaker
+        .col-5.double-speaker.mb-3
           - speakers.each do |speaker|
-            .avatar
+            .avatar.mr-4
               %img{ src: speaker.avatar_filename }
+        .col-7
           .info.double
-            .title= speakers.first.title
+            %h3= speakers.first.title
             .name= speakers.collect(&:name).join(" &amp; ")
             - speakers.each do |speaker|
               %a.twitter{href: "https://twitter.com/#{speaker.twitter}", target: "_blank"}= "@#{speaker.twitter}"
-            %a.video{href: speakers.first.video, target: "_blank"} 🎥 Watch Video
+              %a.video{href: speakers.first.video, target: "_blank"} 🎥 Watch Video

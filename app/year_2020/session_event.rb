@@ -10,7 +10,7 @@ module RubyConf
       end
 
       def template_name
-        :'2019/schedule/_session_event'
+        :'2020/schedule/_session_event'
       end
 
       def show_title?

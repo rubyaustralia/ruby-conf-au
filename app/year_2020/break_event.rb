@@ -9,7 +9,7 @@ module RubyConf
         end
   
         def template_name
-          :'2019/schedule/_break_event'
+          :'2020/schedule/_break_event'
         end
       end
     end

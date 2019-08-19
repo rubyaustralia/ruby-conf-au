@@ -267,7 +267,7 @@ p {
 }
 
 .header-title,
-.title {
+.page-title {
   font-size: 4.5rem;
   text-transform: uppercase;
   letter-spacing: 10px;
@@ -559,14 +559,14 @@ ul.timeline:before {
   background: #e3e3e3;
   display: inline-block;
   position: absolute;
-  left: 25px;
+  left: 26px;
   width: 1px;
   height: 100%;
   z-index: 400;
 }
 
 ul.timeline > li {
-  margin: 20px 0;
+  margin: 3rem 0;
   padding-left: 20px;
 }
 
@@ -581,11 +581,12 @@ ul.timeline > li:before {
   width: 14px;
   height: 14px;
   z-index: 400;
+  margin-top: 0.35rem;
 }
 
 ul.timeline > li.day:before {
   content: " ";
-  background: red;
+  background: #e83a31;
   display: inline-block;
   position: absolute;
   border-radius: 50%;
@@ -596,6 +597,10 @@ ul.timeline > li.day:before {
   z-index: 400;
 }
 
+.day h3 {
+  color: #e83a31;
+}
+
 .event-title {
   display: inline-flex;
   align-items: center;
@@ -603,11 +608,32 @@ ul.timeline > li.day:before {
 
 .event-title span {
   font-style: italic;
+  font-size: 1rem;
   font-weight: 300;
 }
 
 .sponsor img {
   width: 12rem;
+}
+
+.timeline-title,
+.event-title {
+  font-size: 1.4rem;
+  color: #404040;
+  font-weight: 500;
+  letter-spacing: 1px;
+}
+
+.avatar img {
+  width: 100%;
+}
+
+.double-avatar img{
+  width: 45%;
+}
+
+.double-speaker {
+  display: inline-flex;
 }
 
 /*Schedule End */

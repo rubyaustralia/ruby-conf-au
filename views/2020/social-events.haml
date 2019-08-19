@@ -1,95 +1,118 @@
 .introduction
-  .container
+  .container-full.mb-5
     %h3 Social Events
-    %h4 An array of fun and varied activities to surround the conference!
+    %h3.event-title An array of fun and varied activities to surround the conference!
 
-.events.all
-  .container
-    .event#opening
-      .avatar
-        %img{ src: '/2019/images/eureka-square.jpg' }
-      .details
-        %h4 The Opening Party
-        .description.highlight
-          %p To begin our celebrations of the conference and the Ruby community, we'll be taking in a magnificent view of Melbourne (and the sunset) from the grand height of Eureka Tower's 89th floor! Dinner and drinks will be provided. Many thanks to <a href="https://envato.com" target="_blank">Envato</a> for supporting this event!
+.events
+  .container-full
+    .row.mb-5
+      .col-3
+        .avatar
+          %img{ src: '/2019/images/eureka-square.jpg' }
+      .col-9
+        .details
+          %h3.event-title The Opening Party
+          .description.highlight
+            %p To begin our celebrations of the conference and the Ruby community, we'll be taking in a magnificent view of Melbourne (and the sunset) from the grand height of Eureka Tower's 89th floor! Dinner and drinks will be provided. Many thanks to <a href="https://envato.com" target="_blank">Envato</a> for supporting this event!
 
-          %p This event is free for all conference attendees.
-        .location
-          Wednesday 6th February, 7pm-10pm <br />
-          %a{ href: 'https://goo.gl/maps/neGpVVCHuBP2' } The Eureka Tower, 7 Riverside Quay, Southbank, Victoria 3006
+            %p This event is free for all conference attendees.
+          .location
+            Wednesday 6th February, 7pm-10pm <br />
+            %a{ href: 'https://goo.gl/maps/neGpVVCHuBP2' } 
+              %i.fa.fa-map-marker-alt
+              The Eureka Tower, 7 Riverside Quay, Southbank, Victoria 3006
+    .row.mb-5
+      .col-3
+        .avatar
+          %img{ src: '/2019/images/forum-square.jpg' }
+      .col-9
+        .details
+          %h3.event-title The Closing Party
+          .description.highlight
+            %p After our speakers have finished sharing their insights and wisdom on our stage, we'll continue the conversations and fun within The Forum, taking full advantage of their striking and recently renovated theatre spaces. Again, dinner and drinks are covered, so you can kick back and hang out with Ruby friends new and old. Many thanks to <a href="https://www.cultureamp.com" target="_blank">Culture Amp</a> for supporting this event!
 
-    .event#closing
-      .avatar
-        %img{ src: '/2019/images/forum-square.jpg' }
-      .details
-        %h4 The Closing Party
-        .description.highlight
-          %p After our speakers have finished sharing their insights and wisdom on our stage, we'll continue the conversations and fun within The Forum, taking full advantage of their striking and recently renovated theatre spaces. Again, dinner and drinks are covered, so you can kick back and hang out with Ruby friends new and old. Many thanks to <a href="https://www.cultureamp.com" target="_blank">Culture Amp</a> for supporting this event!
+            %p This event is free for all conference attendees.
+          .location
+            Friday 8th February, 5:30pm-10pm <br />
+            %a{ href: 'https://goo.gl/maps/yNEF43hiGzo' } 
+              %i.fa.fa-map-marker-alt
+              Forum Melbourne, 154 Flinders Street, Melbourne, Victoria 3000
 
-          %p This event is free for all conference attendees.
-        .location
-          Friday 8th February, 5:30pm-10pm <br />
-          %a{ href: 'https://goo.gl/maps/yNEF43hiGzo' } Forum Melbourne, 154 Flinders Street, Melbourne, Victoria 3000
+    .row.mb-5
+      .col-3
+        .avatar
+          %img{ src: '/2019/images/pizza.jpg' }
+      .col-9
+        .details
+          %h3.event-title Pizza Workshop
+          .description.highlight
+            %p A hands-on workshop where you learn how to cook pizzas from scratch, in a class led by local Rubyists (and enthusiastic chefs) <a href="https://twitter.com/aemeredith" target="_blank">Elle Meredith</a> and <a href="https://twitter.com/lachlanhardy" target="_blank">Lachlan Hardy</a>.
 
-    .event#pizza
-      .avatar
-        %img{ src: '/2019/images/pizza.jpg' }
-      .details
-        %h4 Pizza Workshop
-        .description.highlight
-          %p A hands-on workshop where you learn how to cook pizzas from scratch, in a class led by local Rubyists (and enthusiastic chefs) <a href="https://twitter.com/aemeredith" target="_blank">Elle Meredith</a> and <a href="https://twitter.com/lachlanhardy" target="_blank">Lachlan Hardy</a>.
+            %p This event is open to conference-goers and their partners, but has limited availability. Please reserve your place as soon as possible to avoid missing out!
+          .location
+            Saturday 9th February, 1pm-4pm <br />
+            %a{ href: 'https://goo.gl/maps/Wojv7MnDyso'} 
+              %i.fa.fa-map-marker-alt
+              Urban Kitchen, 17-21 Buckhurst Street, South Melbourne, Victoria 3205
+          .social-ticket
+            %tito-widget{ event: "ruby-australia/rubyconf-au-2019", releases: "y1kpbdian8q" }
 
-          %p This event is open to conference-goers and their partners, but has limited availability. Please reserve your place as soon as possible to avoid missing out!
-        .location
-          Saturday 9th February, 1pm-4pm <br />
-          %a{ href: 'https://goo.gl/maps/Wojv7MnDyso'} Urban Kitchen, 17-21 Buckhurst Street, South Melbourne, Victoria 3205
-        .social-ticket
-          %tito-widget{ event: "ruby-australia/rubyconf-au-2019", releases: "y1kpbdian8q" }
+    .row.mb-5
+      .col-3
+        .avatar
+          %img{ src: '/2019/images/climbing.jpg' }
+      .col-9
+        .details
+          %h3.event-title Indoor Bouldering
+          .description.highlight
+            %p Spend the afternoon stretching your muscles with your fellow conference-goers in a group climbing session led by local Rubyist <a href="https://twitter.com/bjeanes/" target="_blank">Bo Jeanes</a>.
 
-    .event#climbing
-      .avatar
-        %img{ src: '/2019/images/climbing.jpg' }
-      .details
-        %h4 Indoor Bouldering
-        .description.highlight
-          %p Spend the afternoon stretching your muscles with your fellow conference-goers in a group climbing session led by local Rubyist <a href="https://twitter.com/bjeanes/" target="_blank">Bo Jeanes</a>.
+            %p This event is open to conference-goers and their partners, but has limited availability. Please reserve your place as soon as possible to avoid missing out! And if you've not climbed before, don't worry - beginners are very much welcome. Tickets include harnesses and the assistance of an instructor.
+          .location
+            Saturday 9th February, 1pm-4pm <br />
+            %a{ href: 'https://goo.gl/maps/26dpPk4hJ2u'} 
+              %i.fa.fa-map-marker-alt
+              Urban Climb, 29-41 Down Street, Collingwood, Victoria 3066
+          .social-ticket
+            %tito-widget{ event: "ruby-australia/rubyconf-au-2019", releases: "e3znqityvbw" }
 
-          %p This event is open to conference-goers and their partners, but has limited availability. Please reserve your place as soon as possible to avoid missing out! And if you've not climbed before, don't worry - beginners are very much welcome. Tickets include harnesses and the assistance of an instructor.
-        .location
-          Saturday 9th February, 1pm-4pm <br />
-          %a{ href: 'https://goo.gl/maps/26dpPk4hJ2u'} Urban Climb, 29-41 Down Street, Collingwood, Victoria 3066
-        .social-ticket
-          %tito-widget{ event: "ruby-australia/rubyconf-au-2019", releases: "e3znqityvbw" }
+    .row.mb-5
+      .col-3
+        .avatar
+          %img{ src: '/2019/images/melbourne.jpg' }
+      .col-9
+        .details
+          %h3.event-title Aboriginal History and Melbourne Walking Tour
+          .description.highlight
+            %p Bring your walking shoes and get to know a bit of the region's Aboriginal culture and history with a tour from the <a href="http://koorieheritagetrust.com.au">Koorie Heritage Trust</a>. Afterwards, be guided by local Rubyist <a href="https://twitter.com/pat" target="_blank">Pat Allan</a> as we wander through the street art, alleys and arcades of Melbourne's CBD.
 
-    .event#walking
-      .avatar
-        %img{ src: '/2019/images/melbourne.jpg' }
-      .details
-        %h4 Aboriginal History and Melbourne Walking Tour
-        .description.highlight
-          %p Bring your walking shoes and get to know a bit of the region's Aboriginal culture and history with a tour from the <a href="http://koorieheritagetrust.com.au">Koorie Heritage Trust</a>. Afterwards, be guided by local Rubyist <a href="https://twitter.com/pat" target="_blank">Pat Allan</a> as we wander through the street art, alleys and arcades of Melbourne's CBD.
+            %p This event is open to conference-goers and their partners, but has limited availability. Please reserve your place as soon as possible to avoid missing out!
+          .location
+            Saturday 9th February, 1pm-4pm <br />
+            %a{ href: 'https://goo.gl/maps/bdHh52FL2Cv'} 
+              %i.fa.fa-map-marker-alt
+              Koorie Heritage Trust, Levels 1 & 3, The Yarra Building, Federation Square, Melbourne, Victoria 3000
+          %tito-widget{ event: "ruby-australia/rubyconf-au-2019", releases: "lq9xv4hy-oq" }
 
-          %p This event is open to conference-goers and their partners, but has limited availability. Please reserve your place as soon as possible to avoid missing out!
-        .location
-          Saturday 9th February, 1pm-4pm <br />
-          %a{ href: 'https://goo.gl/maps/bdHh52FL2Cv'} Koorie Heritage Trust, Levels 1 & 3, The Yarra Building, Federation Square, Melbourne, Victoria 3000
-        %tito-widget{ event: "ruby-australia/rubyconf-au-2019", releases: "lq9xv4hy-oq" }
+    .row.mb-5
+      .col-3
+        .avatar
+          %img{ src: '/2019/images/hack-day.jpg' }
+      .col-9
+        .details
+          %h3.event-title Hack Day
+          .description.highlight
+            %p After all the learning you've done at the conference, we wouldn't blame you if you're itching to put that theory into practice and fire up your favourite text editor. We'll provide a space for you to code away to your heart's content with other like minds from the conference.
 
-    .event#hack
-      .avatar
-        %img{ src: '/2019/images/hack-day.jpg' }
-      .details
-        %h4 Hack Day
-        .description.highlight
-          %p After all the learning you've done at the conference, we wouldn't blame you if you're itching to put that theory into practice and fire up your favourite text editor. We'll provide a space for you to code away to your heart's content with other like minds from the conference.
+            %p Bring your laptop and your Ruby ideas and projects along to an open coding session hosted by the <a href="https://www.meetup.com/en-AU/Ruby-On-Rails-Oceania-Melbourne/" target="_blank">Melbourne Ruby</a> community and local Rubyist <a href="https://twitter.com/jamesmclaren555" target="_blank">James McLaren</a>.
 
-          %p Bring your laptop and your Ruby ideas and projects along to an open coding session hosted by the <a href="https://www.meetup.com/en-AU/Ruby-On-Rails-Oceania-Melbourne/" target="_blank">Melbourne Ruby</a> community and local Rubyist <a href="https://twitter.com/jamesmclaren555" target="_blank">James McLaren</a>.
+            %p This event is open to conference-goers and their partners - and is free! - but has limited availability. Please reserve your place as soon as possible to avoid missing out!
+          .location
+            Saturday 9th Feb, 12pm-4pm <br />
+            %a{ href: 'https://goo.gl/maps/y38F33W5jRz' } 
+              %i.fa.fa-map-marker-alt
+              Envato, 121 King Street, Melbourne, Victoria 3000
+          %tito-widget{ event: "ruby-australia/rubyconf-au-2019", releases: "j0znwyl3d8o" }
 
-          %p This event is open to conference-goers and their partners - and is free! - but has limited availability. Please reserve your place as soon as possible to avoid missing out!
-        .location
-          Saturday 9th Feb, 12pm-4pm <br />
-          %a{ href: 'https://goo.gl/maps/y38F33W5jRz' } Envato, 121 King Street, Melbourne, Victoria 3000
-        %tito-widget{ event: "ruby-australia/rubyconf-au-2019", releases: "j0znwyl3d8o" }
-
-.container
+.container-full
   %p In order of appearance, the photos used on this page were supplied and/or taken by <a href="http://eureka89.com.au" target="_blank">Eureka 89</a>, <a href="https://forummelbourne.com.au" target="_blank">Forum Melbourne</a>, <a href="https://twitter.com/lachlanhardy" target="_blank">Lachlan Hardy</a>, <a href="https://twitter.com/bjeanes" target="_blank">Bo Jeanes</a>, <a href="https://twitter.com/pat" target="_blank">Pat Allan</a>, and <a href="https://www.flickr.com/photos/wocintechchat/25926639341/" target="_blank">WOC in Tech</a>.

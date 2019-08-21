@@ -1,12 +1,12 @@
 %header
 	.container-full.pl-1.pr-1.header-cover
-		%nav.navbar.navbar-expand-lg.pt-3
+		%nav.navbar.navbar-default.navbar-expand-lg.navbar-dark.pt-3
 			%a.navbar-brand{:href => "/2020"}
 				%img{src: "/2020/images/ruby-01.svg", :alt => "RubyConfAu Logo", :height => "55", width: "55"}
-			%button.navbar-toggler{"aria-controls" => "navbarNavAltMarkup", "aria-expanded" => "false", "aria-label" => "Toggle navigation", "data-target" => "#navbarNavAltMarkup", "data-toggle" => "collapse", :type => "button"}
+			%button.navbar-toggler{"aria-controls" => "navbarNavDropdown", "aria-expanded" => "false", "aria-label" => "Toggle navigation", "data-target" => "#navbarNavDropdown", "data-toggle" => "collapse", :type => "button"}
 				%span.navbar-toggler-icon
-			#navbarNavAltMarkup.collapse.navbar-collapse
-				.navbar-nav.mr-auto
+			#navbarNavDropdown.collapse.navbar-collapse
+				.navbar-nav.ml-auto
 					%a.nav-item.nav-link{:href => "/2020/schedule"} Schedule
 					%a.nav-item.nav-link{:href => "/2020/speakers"} Speakers
 					%a.nav-item.nav-link{:href => "/2020/social-events"} Social Events

@@ -181,6 +181,10 @@ template {
 
 /* Start Header and Footer Stuff */
 
+html {
+  font-size: 16px;
+}
+
 body {
   font-family: "Roboto", sans-serif;
   font-weight: 400;
@@ -229,6 +233,8 @@ a:hover {
   padding: 0.5rem 1.5rem;
   color: #fff;
   text-transform: uppercase;
+  max-width: 11rem;
+  min-width: 11rem;
 }
 
 .btn:hover {
@@ -240,6 +246,7 @@ a:hover {
   padding: 0.85rem 2.5rem;
   color: #fff;
   text-transform: uppercase;
+  min-width: 15rem;
 }
 
 img {
@@ -271,15 +278,11 @@ p {
   font-size: 4.5rem;
   text-transform: uppercase;
   letter-spacing: 10px;
+  color: #fafafa;
 }
 
-.header-lead {
-  color: #fff;
-  font-weight: 400;
-}
-
-.nav-link {
-  padding: 1rem 1rem 0;
+.blob {
+  width: 15%;
 }
 
 .nav-item.nav-link {
@@ -289,6 +292,15 @@ p {
   color: #fff;
   text-transform: uppercase;
   letter-spacing: 2px;
+}
+
+.navbar-dark .navbar-nav .nav-link {
+  color: #fff;
+}
+
+.navbar-dark .navbar-toggler {
+  color: rgba(255,255,255,1);
+  border-color: rgba(255,255,255, 1);
 }
 
 .footer-title {
@@ -390,6 +402,11 @@ h2 {
   background-size: 10px 10px;
   opacity: 0.2;
   z-index: -1;
+}
+
+.speakers,
+.event-sponsors {
+  margin-top: 3rem;
 }
 
 /* End Home */
@@ -610,6 +627,7 @@ ul.timeline > li.day:before {
   font-style: italic;
   font-size: 1rem;
   font-weight: 300;
+  margin-left: 1rem;
 }
 
 .sponsor img {
@@ -628,12 +646,78 @@ ul.timeline > li.day:before {
   width: 100%;
 }
 
-.double-avatar img{
-  width: 45%;
-}
-
 .double-speaker {
   display: inline-flex;
 }
 
+.double-speaker .avatar {
+  margin-right: 2rem;
+}
+
 /*Schedule End */
+
+/* Media Queries Start */
+
+@media only screen and (max-width: 768px) {
+  .header-img {
+    display: none;
+  }
+
+  .blob {
+    width: 25%;
+  }
+
+  .about-desc {
+    margin-top: 4rem;
+  }
+
+  .speakers,
+  .event-sponsors {
+    margin-top: 0.5rem;
+  }
+
+  .timeline-title,
+  .schedule-avatar.avatar {
+    margin-left: 2rem;
+  }
+
+  .event-title {
+    display: block;
+  }
+
+  .event-title span {
+    margin-left: 0;
+  }
+}
+
+@media only screen and (max-width: 576px) {
+  .container-full {
+    padding: 0 1rem;
+  }
+
+  .header-cover {
+    height: 38vh;
+  }
+
+  .page-title {
+    font-size: 3.5rem;
+  }
+
+  .footer-title {
+    font-size: 1.75rem;
+  }
+
+  .footer-details {
+    text-align: center;
+  }
+
+  .footer-header-title {
+    margin-top: 0.75rem;
+  }
+  
+  .about-img {
+    margin: 0 2rem;
+  }
+}
+
+/* Media Queries End */

@@ -1,14 +1,14 @@
 .container-full.pl-0
   .row
-    .col-lg-3
-      .avatar
+    .col-lg-3.col-md-4
+      .avatar.schedule-avatar
         %img{ src: event.image, width: '100%' }
-    .col-lg-9
+    .col-lg-9.col-md-8
       .info
         .event-title
           %h3= event.title
           - if !event.ticketed?
-            %span.ml-3 All conference attendees are welcome!
+            %span All conference attendees are welcome!
         %p
           = event.description
         %p

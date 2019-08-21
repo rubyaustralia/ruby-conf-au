@@ -42,6 +42,14 @@ module RubyConf
                 haml :"2020/schedule", :layout => :"2020/layout"
             end
 
+            get '/social-events' do
+              page_name = params[:page_name]
+              @title = 'Social Events'
+              @speakers = speaker_repository
+              
+              haml :"2020/social-events", :layout => :"2020/layout"
+            end 
+
             get '/:page_name' do
                 page_name = params[:page_name]
                 @title = page_name

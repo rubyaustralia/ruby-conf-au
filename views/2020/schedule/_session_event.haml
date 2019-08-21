@@ -5,15 +5,16 @@
       - if names.length == 1
         - speaker = @speakers.find(name: names.first)
         - raise names.first if speaker.nil?
-        .col-lg-3.col-md-4.mb-3
-          .avatar.schedule-avatar
-            %img{ src: speaker.avatar_filename }
-        .col-lg-9.col-md-8
+        -# .col-lg-3.col-md-4.mb-3
+        -#   .avatar.schedule-avatar
+        -#     %img{ src: speaker.avatar_filename }
+        .col-lg-12.col-md-8
           .info
-            %h3= speaker.title
-            .name= speaker.name
-            %a.twitter{href: "https://twitter.com/#{speaker.twitter}", target: "_blank"}= "@#{speaker.twitter}"
-            %a.video{href: speaker.video, target: "_blank"} 🎥 Watch Video
+            %h2.timeline-title= speaker.title
+            %p
+              = speaker.name
+              %a.twitter{href: "https://twitter.com/#{speaker.twitter}", target: "_blank"}= "@#{speaker.twitter}"
+              %a.video{href: speaker.video, target: "_blank"} 🎥 Watch Video
       - else
         - speakers = names.collect { |name| @speakers.find(name: name) }
         .col-lg-5.col-md-6.double-speaker.mb-3

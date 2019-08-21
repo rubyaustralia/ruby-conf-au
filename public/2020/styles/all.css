@@ -233,8 +233,8 @@ a:hover {
   padding: 0.5rem 1.5rem;
   color: #fff;
   text-transform: uppercase;
-  max-width: 11rem;
-  min-width: 11rem;
+  max-width: 13rem;
+  min-width: 10rem;
 }
 
 .btn:hover {
@@ -414,8 +414,8 @@ h2 {
 .header-home {
   background-image: linear-gradient(
       0deg,
-      rgba(0, 0, 0, 0.99) 0%,
-      rgba(43, 8, 0, 0.95) 100%
+      rgba(0, 0, 0, 0.85) 0%,
+      rgba(43, 8, 0, 0.9) 100%
     ),
     url("../images/melbourne.jpg");
   background-size: cover;
@@ -437,11 +437,16 @@ h2 {
   animation: text-flicker 2s linear;
 }
 
+.header-content {
+  padding-left: 4rem;
+}
+
 .header-lead {
   font-family: "Roboto", sans-serif;
   font-size: 1.1rem;
   letter-spacing: 1px;
   line-height: 32px;
+  color: #fff;
 }
 
 .header-details {
@@ -583,11 +588,11 @@ ul.timeline:before {
 }
 
 ul.timeline > li {
-  margin: 3rem 0;
+  margin: 1.25rem 0;
   padding-left: 20px;
 }
 
-ul.timeline > li:before {
+ul.timeline > li.day:before {
   content: " ";
   background: #fff;
   display: inline-block;
@@ -601,7 +606,7 @@ ul.timeline > li:before {
   margin-top: 0.35rem;
 }
 
-ul.timeline > li.day:before {
+ul.timeline > li:before {
   content: " ";
   background: #e83a31;
   display: inline-block;
@@ -615,7 +620,11 @@ ul.timeline > li.day:before {
 }
 
 .day h3 {
-  color: #e83a31;
+  color: #de3323;
+  font-size: 1.25rem;
+  letter-spacing: 5px;
+  text-transform: uppercase;
+  font-weight: 400;
 }
 
 .event-title {
@@ -628,6 +637,13 @@ ul.timeline > li.day:before {
   font-size: 1rem;
   font-weight: 300;
   margin-left: 1rem;
+}
+
+.event-time {
+  font-size: 1.25rem;
+  letter-spacing: 0px;
+  color: #505050;
+  font-weight: 500;
 }
 
 .sponsor img {
@@ -650,8 +666,8 @@ ul.timeline > li.day:before {
   display: inline-flex;
 }
 
-.double-speaker .avatar {
-  margin-right: 2rem;
+.double-speaker .avatar:first-child {
+  padding-right: 1rem;
 }
 
 /*Schedule End */
@@ -717,6 +733,29 @@ ul.timeline > li.day:before {
   
   .about-img {
     margin: 0 2rem;
+  }
+
+  .social-event-avatar {
+    width: 60%;
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 1.5rem;
+  }
+
+  .timeline-title, .schedule-avatar.avatar {
+    margin: 0;
+  }
+
+  .header-content {
+    padding-left: 1rem;
+  }
+
+  .blob {
+    width: 60%;
+  }
+
+  .header-title {
+    font-size: 2.5rem;
   }
 }
 

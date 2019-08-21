@@ -1,28 +1,26 @@
 .container-full.pl-0
   .row
-    .col-lg-3.col-md-4
-      .avatar.schedule-avatar
-        %img{ src: event.image, width: '100%' }
-    .col-lg-9.col-md-8
-      .info
-        .event-title
-          %h3= event.title
-          - if !event.ticketed?
-            %span All conference attendees are welcome!
+    -# .col-lg-3.col-md-4
+    -#   .avatar.schedule-avatar
+    -#     %img{ src: event.image, width: '100%' }
+    .col-lg-12.col-md-8
+      %h3.timeline-title= event.title
+      - if !event.ticketed?
+        %span All conference attendees are welcome!
+      %p
+        = event.description
+      %p
+        %a{ href: event.location_link, target: '_blank' }
+          %i.fa.fa-map-marker-alt
+          = event.location_text
+      - if event.ticketed?
         %p
-          = event.description
-        %p
-          %a{ href: event.location_link, target: '_blank' }
-            %i.fa.fa-map-marker-alt
-            = event.location_text
-        - if event.ticketed?
-          %p
-            %a{ href: event.ticket_link, target: '_blank' } Purchase a ticket
-        - else
-          %p.sponsor
-            Sponsored by
-            %br
-            %a{ href: event.sponsor_link, target: '_blank' }
-              %img{ src: "/2018/images/sponsors/#{event.sponsor}.png", width: '100%'}
-        
+          %a{ href: event.ticket_link, target: '_blank' } Purchase a ticket
+      - else
+        %p.sponsor
+          Sponsored by
+          %br
+          %a{ href: event.sponsor_link, target: '_blank' }
+            %img{ src: "/2018/images/sponsors/#{event.sponsor}.png", width: '100%'}
+      
 

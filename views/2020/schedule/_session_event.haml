@@ -1,5 +1,5 @@
 .container-full.pl-0
-  .row.mt-2.mb-2
+  .row
     - event.speakers.each do |names|
       - names = Array(names)
       - if names.length == 1
@@ -8,23 +8,28 @@
         -# .col-lg-3.col-md-4.mb-3
         -#   .avatar.schedule-avatar
         -#     %img{ src: speaker.avatar_filename }
-        .col-lg-12.col-md-8
+        .col-lg-12.event-container
           .info
             %h2.timeline-title= speaker.title
             %p
               = speaker.name
+              \//
               %a.twitter{href: "https://twitter.com/#{speaker.twitter}", target: "_blank"}= "@#{speaker.twitter}"
+              \//
               %a.video{href: speaker.video, target: "_blank"} 🎥 Watch Video
       - else
         - speakers = names.collect { |name| @speakers.find(name: name) }
-        .col-lg-5.col-md-6.double-speaker.mb-3
-          - speakers.each do |speaker|
-            .avatar.mr-0
-              %img{ src: speaker.avatar_filename }
-        .col-lg-7.col-md-6
+        -# .col-lg-5.col-md-6.double-speaker.mb-3
+        -#   - speakers.each do |speaker|
+        -#     .avatar.mr-0
+        -#       %img{ src: speaker.avatar_filename }
+        .col-lg-12.event-container
           .info.double
-            %h3= speakers.first.title
-            .name= speakers.collect(&:name).join(" &amp; ")
+            %h2.timeline-title= speakers.first.title
+            %p= speakers.collect(&:name).join(" &amp; ")
             - speakers.each do |speaker|
-              %a.twitter{href: "https://twitter.com/#{speaker.twitter}", target: "_blank"}= "@#{speaker.twitter}"
-              %a.video{href: speakers.first.video, target: "_blank"} 🎥 Watch Video
+              %p
+                %a.twitter{href: "https://twitter.com/#{speaker.twitter}", target: "_blank"}= "@#{speaker.twitter}"
+                \//
+                %a.video{href: speakers.first.video, target: "_blank"} 🎥 Watch Video
+                %br/

@@ -259,6 +259,7 @@ a:hover {
   color: #fff;
   text-transform: uppercase;
   min-width: 15rem;
+  max-width: 20rem;
 }
 
 img {
@@ -268,8 +269,8 @@ img {
 .header-cover {
   background-image: linear-gradient(
       0deg,
-      rgba(21, 0, 0, 0.95) 0%,
-      rgba(70, 13, 0, 0.9) 100%
+      rgba(180, 21, 0, 0.95) 0%,
+      rgba(160, 30, 0, 0.9) 100%
     ),
     url("../images/melbourne.jpg");
   background-size: cover;
@@ -318,8 +319,8 @@ img {
 .footer-cover {
   background-image: linear-gradient(
       0deg,
-      rgba(21, 0, 0, 0.95) 0%,
-      rgba(70, 13, 0, 0.9) 100%
+      rgba(180, 21, 0, 0.95) 0%,
+      rgba(160, 30, 0, 0.9) 100%
     ),
     url("../images/conference.jpg");
   background-size: cover;
@@ -353,6 +354,7 @@ img {
 .fa,
 .fab {
   padding-right: 0.25rem;
+  font-size: 1.3rem;
 }
 
 .navbar {
@@ -365,10 +367,10 @@ img {
   z-index: 999;
   animation-name: stickySlideDown;
   padding: 0.75rem;
-  background: linear-gradient(
+  background:linear-gradient(
     0deg,
-    rgba(21, 0, 0, 0.95) 0%,
-    rgba(70, 13, 0, 0.9) 100%
+    rgba(180, 21, 0, 1) 0%,
+    rgba(160, 30, 0, 1) 100%
   );
   transition: none;
   width: 100%;
@@ -427,10 +429,11 @@ h2 {
 .header-home {
   background-image: linear-gradient(
       0deg,
-      rgba(16, 0, 1, 0.95) 0%,
-      rgba(78, 0, 3, 0.95) 50%
+      rgba(180, 21, 0, 0.95) 0%,
+      rgba(160, 30, 0, 0.9) 100%
     ),
     url("../images/melbourne.jpg");
+
   background-size: cover;
   height: 100vh;
   background-position-y: center;
@@ -448,17 +451,18 @@ h2 {
   text-shadow: 0 0 2px #fff, 0 0 6px #fff, 0 0 13px #921f14, 0 0 26px #8c241a,
     0 0 20px #3e0601, 0 0 15px #f3c4c0, 0 0 10px #a01a0d;
   animation: text-flicker 1.5s linear;
-  font-family: "Oswald", sans-serif;
+  font-family: "Roboto", sans-serif;
+  letter-spacing: 10px;
+  font-weight: 300;
+  font-size: 1.5rem;
 }
 
 .header-lead {
   font-family: "Roboto", sans-serif;
-  font-size: 1.15rem;
-  letter-spacing: 3px;
-  line-height: 32px;
+  font-size: 2rem;
+  line-height: 2.5rem;
   color: #fff;
-  font-weight: 300;
-  text-transform: uppercase;
+  font-weight: 400;
 }
 
 .header-details {

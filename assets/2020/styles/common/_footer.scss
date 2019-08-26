@@ -8,7 +8,12 @@
 }
 
 .footer-cover {
-  background-image: $gradient-red, url("../images/conference.jpg");
+  background-image: linear-gradient(
+      0deg,
+      rgba(180, 21, 0, 0.95) 0%,
+      rgba(160, 30, 0, 0.9) 100%
+    ),
+    url("../images/conference.jpg");
   background-size: cover;
   height: 32vh;
   background-position-y: center;
@@ -18,34 +23,21 @@
   flex-direction: column;
 }
 
-h4 {
-  font-size: 0.85rem;
-  font-weight: 500;
-  color: $black;
-  letter-spacing: 3px;
-  text-transform: uppercase;
-}
-
-.footer-links a {
-  display: inline-flex;
-  align-items: center;
-  color: $black;
-  letter-spacing: 1px;
-  line-height: 32px;
-  font-size: 0.9rem;
-}
-
 .footer-links {
   list-style: none;
   padding: 0;
+
+  a {
+    display: inline-flex;
+    align-items: center;
+    color: $black;
+    letter-spacing: 1px;
+    line-height: 32px;
+    font-size: 0.9rem;
+  }
 }
 
 .copyright {
   color: $black;
   font-size: 0.9rem;
-}
-
-.fa,
-.fab {
-  padding-right: 0.25rem;
 }

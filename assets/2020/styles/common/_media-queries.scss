@@ -1,0 +1,157 @@
+@media only screen and (max-width: 768px) {
+  .header-img {
+    display: none;
+  }
+
+  .blob {
+    width: 25%;
+  }
+
+  .header-details p {
+    margin-right: 0.5rem;
+  }
+
+  .about-desc {
+    margin-top: 4rem;
+    text-align: center;
+  }
+
+  .speakers,
+  .event-sponsors {
+    margin-top: 0.5rem;
+  }
+
+  .event-title {
+    display: block;
+  }
+
+  .event-title span {
+    margin-left: 0;
+  }
+}
+
+@media only screen and (max-width: 576px) {
+  .container-full {
+    padding: 0 1rem;
+  }
+
+  .header-details p {
+    margin-right: 0;
+  }
+
+  .header-cover {
+    height: 38vh;
+  }
+
+  .page-title {
+    font-size: 3.5rem;
+  }
+
+  .footer-title {
+    font-size: 1.75rem;
+  }
+
+  .footer-details {
+    text-align: center;
+  }
+
+  .footer-header-title {
+    margin-top: 0.75rem;
+  }
+
+  .social-event-avatar {
+    width: 60%;
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 1.5rem;
+  }
+
+  .timeline-title,
+  .schedule-avatar.avatar {
+    margin: 0;
+  }
+
+  .event-container {
+    padding-left: 0.5rem;
+  }
+
+  .blob {
+    width: 60%;
+  }
+
+  .header-title {
+    font-size: 1rem;
+  }
+
+  .header-lead {
+    font-size: 1.1rem;
+    margin-bottom: 3rem;
+  }
+
+  .header-details {
+    flex-direction: column;
+  }
+
+  .speakers,
+  .event-sponsors {
+    padding: 0 1rem;
+  }
+}
+
+@media only screen and (max-width: 375px) and (max-height: 667px) {
+  .header-cover {
+    height: 44vh;
+  }
+}
+
+@media only screen and (max-width: 320px) {
+  .header-cover {
+    height: 50vh;
+  }
+
+  .blob {
+    width: 45%;
+  }
+
+  .btn-lrg {
+    padding: 0.55rem 1.5rem;
+  }
+
+  .footer-title {
+    font-size: 1.35rem;
+  }
+
+  .page-title {
+    font-size: 2.5rem;
+  }
+}
+
+@media only screen and (max-width: 812px) and (max-height: 375px) {
+  .header-content img {
+    width: 20%;
+  }
+
+  .header-title {
+    font-size: 3.5rem;
+  }
+
+  .header-lead {
+    font-size: 1.1rem;
+  }
+
+  .header-details p {
+    font-size: 1rem;
+  }
+
+  .section-title {
+    margin-top: 1.5rem;
+  }
+
+  .header-cover {
+    height: 77vh;
+  }
+
+  .footer-cover {
+    height: 64vh;
+  }
+}

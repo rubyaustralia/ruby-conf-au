@@ -8,11 +8,7 @@
 }
 
 .footer-cover {
-  background-image: linear-gradient(
-      0deg,
-      rgba(180, 21, 0, 0.95) 0%,
-      rgba(160, 30, 0, 0.9) 100%
-    ),
+  background-image: $gradient-red,
     url("../images/conference.jpg");
   background-size: cover;
   height: 32vh;

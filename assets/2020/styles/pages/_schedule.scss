@@ -20,7 +20,7 @@ ul.timeline > li {
   margin: 2rem 0;
   padding-left: 20px;
 
-  &:hover {
+  &:before {
     content: " ";
     background: $white;
     display: inline-block;

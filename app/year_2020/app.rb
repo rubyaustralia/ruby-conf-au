@@ -29,8 +29,8 @@ module RubyConf
         app.namespace '/2020' do
             get '/?' do
                 @title = 'Home'
-                @random_speaker   = speaker_repository.via_cfp.shuffle[0]
-                @invited_speakers = speaker_repository.via_invite
+                # @random_speaker   = speaker_repository.via_cfp.shuffle[0]
+                # @invited_speakers = speaker_repository.via_invite
                 haml :"2020/home", :layout => :"2020/layout"
             end
 

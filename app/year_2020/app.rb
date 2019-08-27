@@ -42,13 +42,13 @@ module RubyConf
             #     haml :"2020/schedule", :layout => :"2020/layout"
             # end
 
-            # get '/:page_name' do
-            #     page_name = params[:page_name]
-            #     @title = page_name.gsub(/[-]/, ' ')
-            #     @speakers = speaker_repository
+            get '/:page_name' do
+                page_name = params[:page_name]
+                @title = page_name.gsub(/[-]/, ' ')
+                # @speakers = speaker_repository
                 
-            #     haml :"2020/#{page_name}", :layout => :"2020/layout"
-            # end
+                haml :"2020/#{page_name}", :layout => :"2020/layout"
+            end
         end
       end
     end

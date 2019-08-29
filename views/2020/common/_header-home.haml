@@ -1,10 +1,18 @@
 %header
 	.container-full.header-home
+		%nav#fixed.navbar.navbar-default.navbar-expand-lg.navbar-dark
+			%a.navbar-brand{:href => "/2020"}
+				%img{src: "/2020/images/ruby-01.svg", :alt => "RubyConfAu Logo", :height => "55", width: "55"}
+			%button.navbar-toggler{"aria-controls" => "navbarNavDropdown", "aria-expanded" => "false", "aria-label" => "Toggle navigation", "data-target" => "#navbarNavDropdown", "data-toggle" => "collapse", :type => "button"}
+				%span.navbar-toggler-icon
+			#navbarNavDropdown.collapse.navbar-collapse
+				.navbar-nav.ml-auto
+					%a{href: 'https://confirmsubscription.com/h/j/809D057CE90261E7'}
+						%button.btn Join Mailing List
 		.row
 			.col-lg-12.pl-0.pr-0
 				.header-content.text-center
-					%img{src:"/2020/images/ruby-01.svg", width: '20%', class: 'mb-4 mr-3 logo'}
-					%h1.header-title.mt-0.mb-4
+					%h1.header-title.mt-0.mb-2
 						RubyConf Au 2020
 					%h3.header-lead 
 						A conference to share Ruby knowledge 

@@ -305,124 +305,11 @@ img {
   color: #404040;
   font-size: 0.9rem; }
 
-@media only screen and (max-width: 768px) {
-  .header-img {
-    display: none; }
-
-  .blob {
-    width: 25%; }
-
-  .header-details p {
-    margin-right: 0.5rem; }
-
-  .about-desc {
-    margin-top: 4rem;
-    text-align: center; }
-
-  .speakers,
-  .event-sponsors {
-    margin-top: 0.5rem; }
-
-  .event-title {
-    display: block; }
-
-  .event-title span {
-    margin-left: 0; } }
-@media only screen and (max-width: 576px) {
-  .container-full {
-    padding: 0 1rem; }
-
-  .header-details p {
-    margin-right: 0; }
-
-  .header-cover {
-    height: 38vh; }
-
-  .page-title {
-    font-size: 2.5rem; }
-
-  .footer-title {
-    font-size: 1.75rem; }
-
-  .footer-details {
-    text-align: center; }
-
-  .footer-header-title {
-    margin-top: 0.75rem; }
-
-  .social-event-avatar {
-    width: 60%;
-    display: block;
-    margin: 0 auto;
-    margin-bottom: 1.5rem; }
-
-  .timeline-title,
-  .schedule-avatar.avatar {
-    margin: 0; }
-
-  .event-container {
-    padding-left: 0.5rem; }
-
-  .blob {
-    width: 60%; }
-
-  .header-title {
-    font-size: 1rem; }
-
-  .header-lead {
-    font-size: 1.1rem;
-    margin-bottom: 3rem; }
-
-  .header-details {
-    flex-direction: column; }
-
-  .speakers,
-  .event-sponsors {
-    padding: 0 1rem; } }
-@media only screen and (max-width: 375px) and (max-height: 667px) {
-  .header-cover {
-    height: 44vh; } }
-@media only screen and (max-width: 320px) {
-  .header-cover {
-    height: 50vh; }
-
-  .blob {
-    width: 45%; }
-
-  .btn-lrg {
-    padding: 0.55rem 1.5rem; }
-
-  .footer-title {
-    font-size: 1.35rem; }
-
-  .page-title {
-    font-size: 2.5rem; } }
-@media only screen and (max-width: 812px) and (max-height: 375px) {
-  .header-content img {
-    width: 20%; }
-
-  .header-title {
-    font-size: 3.5rem; }
-
-  .header-lead {
-    font-size: 1.1rem; }
-
-  .header-details p {
-    font-size: 1rem; }
-
-  .section-title {
-    margin-top: 1.5rem; }
-
-  .header-cover {
-    height: 77vh; }
-
-  .footer-cover {
-    height: 64vh; } }
 h2 {
   font-size: 2.25rem;
   font-weight: 700;
   letter-spacing: 2px;
-  color: #de3323; }
+  color: #b40000; }
 
 .about {
   display: inline-flex;
@@ -527,30 +414,30 @@ h2 {
   100% {
     opacity: 1; } }
 .header-home {
-  background-image: linear-gradient(0deg, rgba(103, 12, 0, 0.95) 0%, rgba(165, 31, 0, 0.9) 100%), url("../images/melbourne.jpg");
+  background-image: linear-gradient(0deg, rgba(103, 12, 0, 0.95) 0%, rgba(165, 31, 0, 0.9) 100%), url("https://images.unsplash.com/photo-1494236472818-d35e50e604cf?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1352&q=80");
   background-size: cover;
   height: 100vh;
   background-position-y: center;
   background-attachment: fixed;
-  background-repeat: no-repeat;
-  justify-content: center;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding: 0; }
+  background-repeat: no-repeat; }
+
+.navbar {
+  position: absolute;
+  top: 0;
+  width: 100%; }
 
 .header-title {
   text-shadow: 0 0 2px #ffffff, 0 0 6px #ffffff, 0 0 13px #921f14, 0 0 26px #8c241a, 0 0 20px #3e0601, 0 0 15px #f3c4c0, 0 0 10px #a01a0d;
   animation: text-flicker 1.5s linear;
-  font-family: "Roboto", sans-serif;
-  letter-spacing: 10px;
-  font-weight: 300;
-  font-size: 1.5rem; }
+  font-family: "Oswald", sans-serif;
+  letter-spacing: 15px;
+  font-weight: 500;
+  font-size: 4.85rem; }
 
 .header-lead {
   font-family: "Roboto", sans-serif;
-  font-size: 2rem;
-  line-height: 2.5rem;
+  font-size: 2.8rem;
+  line-height: 3.5rem;
   color: #ffffff;
   font-weight: 400; }
 
@@ -618,7 +505,7 @@ ul.timeline > li.day:before {
   z-index: 400; }
 
 .day h3 {
-  color: #de3323;
+  color: #b40000;
   font-size: 1.25rem;
   letter-spacing: 5px;
   text-transform: uppercase;
@@ -689,3 +576,132 @@ ul.timeline > li.day:before {
 .speaker-bio {
   font-weight: 400;
   font-size: 1rem; }
+
+@media only screen and (max-width: 769px) {
+  .blob {
+    width: 25%; }
+
+  .header-title {
+    font-size: 3.5rem; }
+
+  .header-lead {
+    font-size: 1.8rem;
+    line-height: 2.5rem; }
+
+  .header-details p {
+    margin-right: 0.5rem; }
+
+  .about-desc {
+    margin-top: 4rem;
+    text-align: center; }
+
+  .speakers,
+  .event-sponsors {
+    margin-top: 0.5rem; }
+
+  .event-title {
+    display: block; }
+
+  .event-title span {
+    margin-left: 0; } }
+@media only screen and (max-width: 576px) {
+  .container-full {
+    padding: 0 1rem; }
+
+  .header-details p {
+    margin-right: 0; }
+
+  .header-cover {
+    height: 38vh; }
+
+  .page-title {
+    font-size: 2.5rem; }
+
+  .footer-title {
+    font-size: 1.75rem; }
+
+  .footer-details {
+    text-align: center; }
+
+  .footer-header-title {
+    margin-top: 0.75rem; }
+
+  .social-event-avatar {
+    width: 60%;
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 1.5rem; }
+
+  .timeline-title,
+  .schedule-avatar.avatar {
+    margin: 0; }
+
+  .event-container {
+    padding-left: 0.5rem; }
+
+  .blob {
+    width: 60%; }
+
+  .header-title {
+    font-size: 1rem; }
+
+  .header-lead {
+    font-size: 1.1rem;
+    margin: 2rem 0; }
+
+  .header-details {
+    flex-direction: column; }
+
+  .speakers,
+  .event-sponsors {
+    padding: 0 1rem; } }
+@media only screen and (max-width: 375px) and (max-height: 667px) {
+  .header-cover {
+    height: 44vh; } }
+@media only screen and (max-width: 320px) {
+  .header-cover {
+    height: 50vh; }
+
+  .header-title {
+    font-size: 2rem; }
+
+  .header-lead {
+    font-size: 0.9rem;
+    margin: 0.5rem 0; }
+
+  .header-details p,
+  .fa {
+    font-size: 0.9rem; }
+
+  .blob {
+    width: 45%; }
+
+  .btn-lrg {
+    padding: 0.55rem 1.5rem; }
+
+  .footer-title {
+    font-size: 1.35rem; }
+
+  .page-title {
+    font-size: 2.5rem; } }
+@media only screen and (max-width: 812px) and (max-height: 375px) {
+  .header-content img {
+    width: 20%; }
+
+  .header-title {
+    font-size: 3.5rem; }
+
+  .header-lead {
+    font-size: 1.1rem; }
+
+  .header-details p {
+    font-size: 1rem; }
+
+  .section-title {
+    margin-top: 1.5rem; }
+
+  .header-cover {
+    height: 77vh; }
+
+  .footer-cover {
+    height: 64vh; } }

@@ -6,10 +6,11 @@
 @import 'common/common';
 @import 'common/header';
 @import 'common/footer';
-@import 'common/media-queries';
 
 @import 'pages/home';
 @import 'pages/header-home';
 @import 'pages/location';
 @import 'pages/schedule';
 @import 'pages/speaker';
+
+@import 'common/media-queries';

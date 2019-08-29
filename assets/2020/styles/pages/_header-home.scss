@@ -2,35 +2,35 @@
 
 .header-home {
   background-image: $gradient-red,
-    url("../images/melbourne.jpg");
+    url("https://images.unsplash.com/photo-1494236472818-d35e50e604cf?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1352&q=80");
 
   background-size: cover;
   height: 100vh;
   background-position-y: center;
   background-attachment: fixed;
   background-repeat: no-repeat;
+}
 
-  justify-content: center;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding: 0;
+.navbar {
+  position: absolute;
+  top: 0;
+  width: 100%;
 }
 
 .header-title {
-  text-shadow: 0 0 2px $white, 0 0 6px $white, 0 0 13px #921f14, 0 0 26px #8c241a,
-    0 0 20px #3e0601, 0 0 15px #f3c4c0, 0 0 10px #a01a0d;
+  text-shadow: 0 0 2px $white, 0 0 6px $white, 0 0 13px #921f14,
+    0 0 26px #8c241a, 0 0 20px #3e0601, 0 0 15px #f3c4c0, 0 0 10px #a01a0d;
   animation: text-flicker 1.5s linear;
-  font-family: $font;
-  letter-spacing: 10px;
-  font-weight: 300;
-  font-size: 1.5rem;
+  font-family: "Oswald", sans-serif;
+  letter-spacing: 15px;
+  font-weight: 500;
+  font-size: 4.85rem;
 }
 
 .header-lead {
   font-family: $font;
-  font-size: 2rem;
-  line-height: 2.5rem;
+  font-size: 2.8rem;
+  line-height: 3.5rem;
   color: $white;
   font-weight: 400;
 }

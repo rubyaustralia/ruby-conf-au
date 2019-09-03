@@ -2,7 +2,7 @@
 
 .header-home {
   background-image: $gradient-red,
-    url("https://images.unsplash.com/photo-1494236472818-d35e50e604cf?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1352&q=80");
+    url("../images/melbourne.jpg");
 
   background-size: cover;
   height: 100vh;
@@ -11,10 +11,12 @@
   background-repeat: no-repeat;
 }
 
-.navbar {
-  position: absolute;
-  top: 0;
-  width: 100%;
+.header-home {
+  .navbar {
+    position: absolute;
+    top: 0;
+    width: 100%;
+  }
 }
 
 .header-title {
@@ -50,7 +52,7 @@
   position: absolute;
   width: 100%;
   margin: 0 auto;
-  bottom: 0;
+  bottom: -2px;
 }
 
 .blob {

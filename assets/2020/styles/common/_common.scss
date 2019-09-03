@@ -37,7 +37,7 @@ h4 {
 p {
   font-family: $font;
   font-size: 1.05rem;
-  line-height: 1.55rem;
+  line-height: 1.575rem;
   font-weight: 300;
 }
 
@@ -48,6 +48,13 @@ a {
   &:hover {
     color: #9c1600;
   }
+}
+
+figcaption {
+  color: $grey;
+  font-size: 0.8rem;
+  font-style: italic;
+  font-weight: 300;
 }
 
 .container-full {

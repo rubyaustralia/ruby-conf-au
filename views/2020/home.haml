@@ -2,7 +2,11 @@
 	.container-full
 		.row.about
 			.col-lg-6.col-sm-12.col-xs-12.image.text-center
-				%img{src: "https://uc.uxpin.com/files/1010883/989432/image-6be625.png", class: "about-img"}
+				%figure
+					%img{src: "/2020/images/nadia.jpg", class: "about-img", alt: "Nadia Speaking"}
+					%figcaption
+						Photo Credit: 
+						%a{href: 'https://about.me/johncarney', target: 'blank'} John Carney
 			.col-lg-6.col-sm-12.col-xs-12.about-desc
 				%h2.section-title 
 					What is 

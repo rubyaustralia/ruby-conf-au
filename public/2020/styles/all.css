@@ -180,7 +180,7 @@ h4 {
 p {
   font-family: "Roboto", sans-serif;
   font-size: 1.05rem;
-  line-height: 1.55rem;
+  line-height: 1.575rem;
   font-weight: 300; }
 
 a {
@@ -188,6 +188,12 @@ a {
   transition: 0.2s ease-in-out; }
   a:hover {
     color: #9c1600; }
+
+figcaption {
+  color: #929292;
+  font-size: 0.8rem;
+  font-style: italic;
+  font-weight: 300; }
 
 .container-full {
   padding: 0 3rem; }
@@ -309,14 +315,11 @@ h2 {
   font-size: 2.25rem;
   font-weight: 700;
   letter-spacing: 2px;
-  color: #b40000; }
+  color: #d10202; }
 
 .about {
   display: inline-flex;
   align-items: center; }
-  .about p {
-    line-height: 1.5rem;
-    color: #404040; }
 
 .about-desc {
   padding: 0 2rem; }
@@ -505,7 +508,7 @@ ul.timeline > li.day:before {
   z-index: 400; }
 
 .day h3 {
-  color: #b40000;
+  color: #d10202;
   font-size: 1.25rem;
   letter-spacing: 5px;
   text-transform: uppercase;
@@ -592,7 +595,7 @@ ul.timeline > li.day:before {
     margin-right: 0.5rem; }
 
   .about-desc {
-    margin-top: 4rem;
+    margin-top: 1rem;
     text-align: center; }
 
   .speakers,
@@ -643,7 +646,7 @@ ul.timeline > li.day:before {
     width: 60%; }
 
   .header-title {
-    font-size: 1rem; }
+    font-size: 3rem; }
 
   .header-lead {
     font-size: 1.1rem;

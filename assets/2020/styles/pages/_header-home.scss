@@ -1,8 +1,7 @@
 @import "../lib/variables";
 
 .header-home {
-  background-image: $gradient-red,
-    url("../images/melbourne.jpg");
+  background-image: $gradient-red, url("../images/melbourne.jpg");
 
   background-size: cover;
   height: 100vh;
@@ -55,7 +54,55 @@
   bottom: -2px;
 }
 
-.blob {
-  display: block;
-  margin: 0 auto;
+.scroll-icon,
+.scroll-icon:before {
+  position: absolute;
+  left: 50%;
+}
+.scroll-icon {
+  width: 30px;
+  height: 50px;
+  margin-left: -20px;
+  bottom: 15px;
+  margin-top: -35px;
+  border: 2px solid #fff;
+  border-radius: 25px;
+
+  &:before {
+    content: "";
+    width: 4px;
+    height: 4px;
+    background: #fff;
+    margin-left: -2px;
+    top: 8px;
+    border-radius: 4px;
+    -webkit-animation-duration: 1.5s;
+    animation-duration: 1.5s;
+    -webkit-animation-iteration-count: infinite;
+    animation-iteration-count: infinite;
+    -webkit-animation-name: scroll;
+    animation-name: scroll;
+  }
+}
+
+@-webkit-keyframes scroll {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    -webkit-transform: translateY(26px);
+    transform: translateY(26px);
+  }
+}
+
+@keyframes scroll {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    -webkit-transform: translateY(26px);
+    transform: translateY(26px);
+  }
 }

@@ -1,8 +1,4 @@
 @media only screen and (max-width: 768px + 1) {
-  .blob {
-    width: 25%;
-  }
-
   .header-title {
     font-size: 3.5rem;
   }
@@ -34,7 +30,9 @@
     margin-left: 0;
   }
 
-  
+  .scroll-icon {
+    position: relative;
+  }
 }
 
 @media only screen and (max-width: 576px) {
@@ -82,10 +80,6 @@
     padding-left: 0.5rem;
   }
 
-  .blob {
-    width: 60%;
-  }
-
   .header-title {
     font-size: 3rem;
   }
@@ -129,10 +123,6 @@
   .header-details p,
   .fa {
     font-size: 0.9rem;
-  }
-
-  .blob {
-    width: 45%;
   }
 
   .btn-lrg {

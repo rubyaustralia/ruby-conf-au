@@ -193,7 +193,8 @@ figcaption {
   color: #929292;
   font-size: 0.8rem;
   font-style: italic;
-  font-weight: 300; }
+  font-weight: 300;
+  padding-top: 0.5rem; }
 
 .container-full {
   padding: 0 3rem; }

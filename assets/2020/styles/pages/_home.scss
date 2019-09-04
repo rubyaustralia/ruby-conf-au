@@ -1,0 +1,160 @@
+@import "../lib/variables";
+
+h2 {
+  font-size: 2.25rem;
+  font-weight: 700;
+  letter-spacing: 2px;
+  color: $red;
+}
+
+.about {
+  display: inline-flex;
+  align-items: center;
+}
+
+.about-desc {
+  padding: 0 2rem;
+}
+
+.about-img {
+  border-radius: 4px;
+  width: 90%;
+}
+
+.speakers,
+.event-sponsors {
+  margin-top: 3rem;
+  text-align: center;
+}
+
+.blob {
+  width: 15%;
+}
+
+.header-home {
+  background-image: linear-gradient(
+      0deg,
+      rgba(180, 21, 0, 0.95) 0%,
+      rgba(160, 30, 0, 0.9) 100%
+    ),
+    url("../images/melbourne.jpg");
+
+  background-size: cover;
+  height: 100vh;
+  background-position-y: center;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0;
+}
+
+.header-title {
+  text-shadow: 0 0 2px $white, 0 0 6px $white, 0 0 13px #921f14, 0 0 26px #8c241a,
+    0 0 20px #3e0601, 0 0 15px #f3c4c0, 0 0 10px #a01a0d;
+  animation: text-flicker 1.5s linear;
+  font-family: $font;
+  letter-spacing: 10px;
+  font-weight: 300;
+  font-size: 1.5rem;
+}
+
+.header-lead {
+  font-family: $font;
+  font-size: 2rem;
+  line-height: 2.5rem;
+  color: $white;
+  font-weight: 400;
+}
+
+.header-details {
+  color: $white;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.header-details p {
+  font-weight: 300;
+  margin-right: 1.5rem;
+}
+
+.scroll-down {
+  position: absolute;
+  width: 100%;
+  margin: 0 auto;
+  bottom: 0;
+}
+
+.blob {
+  display: block;
+  margin: 0 auto;
+}
+
+@keyframes text-flicker {
+  0% {
+    opacity: 0.8;
+  }
+
+  1% {
+    opacity: 0.9;
+  }
+
+  5% {
+    opacity: 1;
+  }
+
+  7% {
+    opacity: 0.2;
+  }
+
+  15% {
+    opacity: 1;
+  }
+
+  16% {
+    opacity: 0.3;
+  }
+
+  20% {
+    opacity: 0.9;
+  }
+
+  22% {
+    opacity: 0.7;
+  }
+
+  30% {
+    opacity: 1;
+  }
+
+  35% {
+    opacity: 1;
+  }
+
+  50% {
+    opacity: 0.4;
+  }
+
+  60% {
+    opacity: 1;
+  }
+
+  64% {
+    opacity: 1;
+  }
+
+  70% {
+    opacity: 0.2;
+  }
+
+  85% {
+    opacity: 0.1;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}

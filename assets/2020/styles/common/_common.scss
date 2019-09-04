@@ -1,0 +1,100 @@
+@import "../lib/variables";
+
+html {
+  font-size: 16px;
+}
+
+body {
+  font-family: $font;
+  font-weight: 400;
+  background: #fafafa;
+}
+
+h1 {
+  font-family: "Oswald", sans-serif;
+  font-weight: 500;
+  color: $white;
+}
+
+h2,
+h3,
+h4,
+h5 {
+  font-family: $font;
+  color: $black;
+  letter-spacing: 1px;
+  font-weight: 500;
+}
+
+h4 {
+  font-size: 0.85rem;
+  font-weight: 500;
+  color: $black;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+}
+
+p {
+  font-family: $font;
+  font-size: 1.05rem;
+  line-height: 1.575rem;
+  font-weight: 300;
+}
+
+a {
+  color: #d62305;
+  transition: 0.2s ease-in-out;
+
+  &:hover {
+    color: #9c1600;
+  }
+}
+
+figcaption {
+  color: $grey;
+  font-size: 0.8rem;
+  font-style: italic;
+  font-weight: 300;
+  padding-top: 0.5rem;
+}
+
+.container-full {
+  padding: 0 3rem;
+}
+
+.btn {
+  font-size: 0.85rem;
+  font-weight: 500;
+  letter-spacing: 2px;
+  border: none;
+  border-radius: 40px;
+  background: #f29411;
+  padding: 0.5rem 1.5rem;
+  color: $white;
+  text-transform: uppercase;
+  max-width: 13rem;
+  min-width: 10rem;
+
+  &:hover {
+    background: #ef8d04;
+    color: $white;
+  }
+}
+
+.btn-lrg {
+  padding: 0.85rem 2.5rem;
+  color: $white;
+  text-transform: uppercase;
+  min-width: 15rem;
+  max-width: 20rem;
+}
+
+img {
+  border-radius: 4px;
+}
+
+.fa,
+.fab {
+  padding-right: 0.25rem;
+  font-size: 1.3rem;
+}

@@ -380,9 +380,21 @@ h2 {
   margin: 0 auto;
   bottom: 0; }
 
-.blob {
-  display: block;
-  margin: 0 auto; }
+.speaker-container {
+  text-align: center; }
+  .speaker-container img {
+    width: 70%; }
+  .speaker-container .speaker-name {
+    font-weight: 400;
+    text-transform: uppercase;
+    font-size: 1rem;
+    letter-spacing: 3px;
+    padding-top: 0.75rem; }
+    .speaker-container .speaker-name:hover {
+      text-decoration: none; }
+
+.sponsor-home img {
+  width: 70%; }
 
 @keyframes text-flicker {
   0% {
@@ -606,7 +618,7 @@ ul.timeline > li.day:before {
   padding: 0; }
 
 .speaker-img {
-  width: 18rem; }
+  width: 95%; }
 
 .speaker-name {
   font-weight: 400;

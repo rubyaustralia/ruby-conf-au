@@ -16,9 +16,7 @@
 					RubyConf AU?
 				%p Our yearly gathering where we share knowledge about the Ruby programming language, and celebrate the Australian and broader Ruby community.
 				%p With a mixture of local and international speakers, there will be two day of talks. We'll cover topics that interest, excite, and delight Rubyists and the Ruby-curious of all levels. There will also be social events hosted where you will get the opportunity to meet like-minded people!
-		.row.event-sponsors
-			.col
-				%h2.section-title Event Sponsors
-				%p
-					We're currently looking for sponsors! If you'd like to sponsor RubyConf AU, please visit 
-					%a{href: 'https://ruby.org.au/sponsorship', target: 'blank'} Ruby Australia.
+
+		-# = haml :'2020/_speaker_mini', locals: { speaker: @invited_speakers[0] }
+				
+		= haml :'2020/common/_sponsors'

@@ -53,8 +53,8 @@ h2 {
 }
 
 .header-title {
-  text-shadow: 0 0 2px $white, 0 0 6px $white, 0 0 13px #921f14, 0 0 26px #8c241a,
-    0 0 20px #3e0601, 0 0 15px #f3c4c0, 0 0 10px #a01a0d;
+  text-shadow: 0 0 2px $white, 0 0 6px $white, 0 0 13px #921f14,
+    0 0 26px #8c241a, 0 0 20px #3e0601, 0 0 15px #f3c4c0, 0 0 10px #a01a0d;
   animation: text-flicker 1.5s linear;
   font-family: $font;
   letter-spacing: 10px;
@@ -88,9 +88,30 @@ h2 {
   bottom: 0;
 }
 
-.blob {
-  display: block;
-  margin: 0 auto;
+.speaker-container {
+  text-align: center;
+
+  img {
+    width: 70%;
+  }
+
+  .speaker-name {
+    font-weight: 400;
+    text-transform: uppercase;
+    font-size: 1rem;
+    letter-spacing: 3px;
+    padding-top: 0.75rem;
+
+    &:hover {
+      text-decoration: none;
+    }
+  }
+}
+
+.sponsor-home {
+  img {
+    width: 70%;
+  }
 }
 
 @keyframes text-flicker {

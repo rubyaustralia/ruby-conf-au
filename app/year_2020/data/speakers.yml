@@ -1,11 +1,11 @@
-- name: Nadia Odunayo
+- name: Vaidehi Joshi
   title: The Case Of The Missing Method - A Ruby Mystery Story
   pitch: |
     Business is slow for Ruby Private Investigator, Deirdre Bug. She’s on the verge of switching industry when she gets a call from an anxious young man. "Some class methods have gone missing," he tells her breathlessly. "I need your help."
 
     Deirdre takes the case and begins exploring Ruby objects behind the scenes. Though she thinks she's on familiar ground — Ruby's object model, method lookup — she's about to discover that she really has no clue.
-  bio: "[Nadia](http://www.nadiaodunayo.com/) is CEO at [The StoryGraph](https://thestorygraph.com). Before that, she co-directed Ignition Works, a company that did a mix of in-house product development and software consultancy, helping large firms to manage their cloud platforms. She previously worked at Pivotal and originally learnt to code at Makers Academy in London. She maintains [speakerline.io](https://speakerline.io/) in her spare time."
-  twitter: nodunayo
+  bio: "[Vaidehi Joshi](http://www.vaidehi.com/) is an engineer at Tilde, in Portland, Oregon, where she works on Skylight. She enjoys building and breaking code, but loves creating empathetic engineering teams a whole lot more. She is the creator of basecs, a weekly writing series that explored the fundamentals of computer science, co-host of the Base.cs Podcast, and a producer of the BaseCS and Byte Sized video series. She's currently at work on a new series on the basics of distributed systems, called baseds."
+  twitter: vaidehijoshi
   type: invitation
   video: https://www.youtube.com/watch?v=aRkHqYDi_wQ&list=PL9_jjLrTYxc3dTbvb8fIuzDFGTCaEdO3a&index=2&t=0s
 
@@ -131,64 +131,6 @@
   bio: Heidi is a developer advocate with LaunchDarkly. She delights in working at the intersection of usability, risk reduction, and cutting-edge technology. One of her favorite hobbies is talking to developers about things they already knew but had never thought of that way before. She sews all her conference dresses so that she’s sure there is a pocket for the mic.
   twitter: wiredferret
   video: https://www.youtube.com/watch?v=xX6qLuarYVs&list=PL9_jjLrTYxc3dTbvb8fIuzDFGTCaEdO3a&index=4&t=0s
-
-- name: Kelly Sutton
-  title: Taming Monoliths Without Microservices
-  pitch: |
-    In the recent years, microservices have been an investment among many engineering teams as they scale. They are often the default of many new companies.
-
-    But how has that gone wrong? This talk will dive into how one company of ~100 engineers refined their thinking and their Rails app for the better.
-  bio: Kelly Sutton is an engineering manager at Gusto. In the past, he helped create LayerVault, Designer News, and a blog for college students. He is currently based in San Francisco, CA. He regularly writes blog posts about software engineering at https://kellysutton.com
-  twitter: kellysutton
-  video: https://www.youtube.com/watch?v=-ovkkvvTiRM&index=6&t=0s&list=PL9_jjLrTYxc3dTbvb8fIuzDFGTCaEdO3a
-
-- name: Elle Meredith
-  title: Algorithms to live by and why should we care
-  pitch: In this talk we will discuss algorithmic thinking in everyday life in language we can all understand. We will explore widely applicable algorithms, and how they reveal themselves in our everyday lives, so that we better understand what when and how we can use them in our programs.
-  bio: Elle is a full stack web developer with more than ten years experience writing Ruby and Rails. Currently at Blackmill, previously she was Development Director at thoughtbot New York. Elle believes in writing clean code, driven by automatic tests, with agile practices, an even work/life balance, and a respectful and inclusive team culture. Recently, she developed and ran the apprenticeship program for Hooroo, up-skilling less experienced developers. When she is not immersed in the Ruby community, she is probably immersed in water, or lately, in bread flour.
-  twitter: aemeredith
-  video: https://www.youtube.com/watch?v=kxYL0EyYOKw&index=17&t=0s&list=PL9_jjLrTYxc3dTbvb8fIuzDFGTCaEdO3a
-
-- name: Dávid Halász
-  title: How to hijack, proxy and smuggle sockets with Rack/Ruby
-  pitch: |
-    Does your network only let through HTTP connections? No problem! Let’s hijack some sockets from incoming HTTP connections and use it to smuggle any kind of traffic through an HTTP session! Concurrently! In Ruby!
-
-    Warning: your infosec team already does not like me, but I have some cute stickers.
-  bio: David is a Software Engineer working for Red Hat. His first language is C, but fell in love with Ruby in 2012 and now codes in it for a living.
-  twitter: halaszdavid
-  video: https://www.youtube.com/watch?v=dU7192V1mLI&list=PL9_jjLrTYxc3dTbvb8fIuzDFGTCaEdO3a&index=3&t=0s
-
-- name: Kelsey Pedersen
-  title: It's Down! Simulating Incidents in Production
-  pitch: |
-    Who loves getting paged at 3am? No one.
-
-    In responding to incidents – either at 3am or the middle of the day – we want to feel prepared and practiced in resolving production issues. In this talk, you’ll learn how to practice incident response by simulating outages in your application.
-  bio: Kelsey Pedersen is a software engineer at Stitch Fix on the styling engineering team. She builds internal software their stylists use to curate clothes for their clients. She works cross-functionally with their styling community and data science team to build new features to better assist their stylists. She had a former career in sales and as a Division I rower at UC Berkeley.
-  twitter: kelsey_pedersen
-  video: https://www.youtube.com/watch?v=NYZdambrG_I&index=20&t=0s&list=PL9_jjLrTYxc3dTbvb8fIuzDFGTCaEdO3a
-
-- name: Adam Cuppy
-  title: Mechanically Confident
-  pitch: "There’s a thread amongst all skilled practitioners: specific habits, routines, and processes that wrap uncertainty and create confidence. Oscar-winning actors rehearse, pro-drivers do laps, chefs prep. This talk will help you recognize and design habits and routines that embed confidence in the body."
-  bio: Adam is _not_ a Fortune 500 CEO, award-winning book author, or Nobel Prize recipient. But, he’s an actor turned software engineer who co-founded [ZEAL](https://codingzeal.com), a people-centric process-focused consulting company located around the United States.
-  twitter: adamcuppy
-  video: https://www.youtube.com/watch?v=Btsx9YzhJVM&list=PL9_jjLrTYxc3dTbvb8fIuzDFGTCaEdO3a&index=21&t=0s
-
-- name: Mila Dymnikova
-  title: "Learn to make the point: data visualisation strategy"
-  pitch: Let me guess, your code is awesome but no one else gets it? You need a data visualisation! Complex concepts can easily be explained through visual information. There are four types to choose from storytelling, status, analytical and exploratory. I’ll help you find the perfect one.
-  bio: Mila is a data geek that loves data visualisations. Especially if the data visualisation is related to cats. Ruby is still her favourite language because of the community and how expressive it is. When she's not coding, you’ll find Mila cruising on an electric skateboard.
-  twitter: milameow1
-  video: https://www.youtube.com/watch?v=4OkoJxR3jdM&list=PL9_jjLrTYxc3dTbvb8fIuzDFGTCaEdO3a&index=15&t=0s
-
-- name: Betsy Haibel
-  title: Pairing with People Who Don't Look Like You
-  pitch: Pair programming can be hazardous if you’re from an underrepresented group. Bad pairs will keyboard-hog, ignore your ideas, and talk down to you. In this talk, you’ll learn how to rescue pairing sessions from bad power dynamics – whether you’re a well-intentioned jerk or their long-suffering pair.
-  bio: Betsy Haibel is the founding CTO of Cohere. She writes fiction and nonfiction in English, Ruby, and Javascript – among other languages – and co-organizes Learn Ruby in DC. Her lifelong ambitions? To meet a red panda, and to break down barriers between “developers” and “users.”
-  twitter: betsythemuffin
-  video: https://www.youtube.com/watch?v=A_9v5L01fcs&list=PL9_jjLrTYxc3dTbvb8fIuzDFGTCaEdO3a&index=9&t=0s
 
 - name: Rose Lu
   bio: Rose has been working as a software engineer since 2011. She currently works at [Flick](https://www.flickelectric.co.nz/), an electricity wholesaler. In the past she has been involved with social enterprise, Rails Bridge and Youthline. This year Rose completed her Masters in Creative Writing with an essay collection on her experience of contemporary Chinese migration to Aotearoa. Her writing has been published in Mimicry, [Pantograph Punch](https://www.pantograph-punch.com/post/all-who-live-on-islands) and [Sport](http://vup.victoria.ac.nz/sport-46). When not in some type of text editor, Rose likes to cycle, do yoga and perfect her technique for Korean fried chicken.

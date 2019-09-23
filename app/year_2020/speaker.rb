@@ -20,7 +20,7 @@ module RubyConf
       end
 
       def sponsor_image_filename
-        "/2019/images/sponsors/#{data['sponsor']}.png"
+        "/2020/images/sponsors/#{data['sponsor']}.png"
       end
 
       def name

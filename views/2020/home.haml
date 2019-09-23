@@ -16,7 +16,15 @@
 					RubyConf AU?
 				%p Our yearly gathering where we share knowledge about the Ruby programming language, and celebrate the Australian and broader Ruby community.
 				%p With a mixture of local and international speakers, there will be two day of talks. We'll cover topics that interest, excite, and delight Rubyists and the Ruby-curious of all levels. There will also be social events hosted where you will get the opportunity to meet like-minded people!
-
-		-# = haml :'2020/_speaker_mini', locals: { speaker: @invited_speakers[0] }
-				
+	
+		.row.speakers
+			.col
+				%h2.section-title Keynote Speaker
+		.row.speaker-container
+			.col-lg-3.text-center
+				%img{ src: "/2020/images/speakers/vaidehi-joshi.jpg" }
+			.col-lg-9			
+				%h3.speaker-name Vaidehi Joshi
+				%p Vaidehi Joshi is an engineer at Tilde, in Portland, Oregon, where she works on Skylight. She enjoys building and breaking code, but loves creating empathetic engineering teams a whole lot more. She is the creator of basecs, a weekly writing series that explored the fundamentals of computer science, co-host of the Base.cs Podcast, and a producer of the BaseCS and Byte Sized video series. She's currently at work on a new series on the basics of distributed systems, called baseds.
+							
 		= haml :'2020/common/_sponsors'

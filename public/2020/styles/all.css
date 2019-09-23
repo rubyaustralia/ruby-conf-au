@@ -230,6 +230,12 @@ img {
   padding-right: 0.25rem;
   font-size: 1.3rem; }
 
+.align-center {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center; }
+
 .header-cover {
   background-image: linear-gradient(0deg, rgba(103, 12, 0, 0.95) 0%, rgba(165, 31, 0, 0.9) 100%), url("../images/melbourne.jpg");
   background-size: cover;
@@ -331,7 +337,7 @@ h2 {
 
 .speakers,
 .event-sponsors {
-  margin-top: 3rem;
+  margin-top: 4rem;
   text-align: center; }
 
 .blob {
@@ -380,18 +386,16 @@ h2 {
   margin: 0 auto;
   bottom: 0; }
 
-.speaker-container {
-  text-align: center; }
-  .speaker-container img {
-    width: 70%; }
-  .speaker-container .speaker-name {
-    font-weight: 400;
-    text-transform: uppercase;
-    font-size: 1rem;
-    letter-spacing: 3px;
-    padding-top: 0.75rem; }
-    .speaker-container .speaker-name:hover {
-      text-decoration: none; }
+.speaker-container img {
+  width: 80%; }
+.speaker-container .speaker-name {
+  font-weight: 400;
+  text-transform: uppercaSse;
+  font-size: 1rem;
+  letter-spacing: 3px;
+  padding-top: 0.75rem; }
+  .speaker-container .speaker-name:hover {
+    text-decoration: none; }
 
 .sponsor-home img {
   width: 70%; }
@@ -705,7 +709,10 @@ ul.timeline > li.day:before {
 
   .speakers,
   .event-sponsors {
-    padding: 0 1rem; } }
+    padding: 0 1rem; }
+
+  .sponsor-home {
+    margin: 1rem 0; } }
 @media only screen and (max-width: 375px) and (max-height: 667px) {
   .header-cover {
     height: 44vh; } }

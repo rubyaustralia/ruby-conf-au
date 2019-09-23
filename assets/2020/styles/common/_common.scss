@@ -98,3 +98,10 @@ img {
   padding-right: 0.25rem;
   font-size: 1.3rem;
 }
+
+.align-center {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}

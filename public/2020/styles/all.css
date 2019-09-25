@@ -197,7 +197,7 @@ figcaption {
   padding-top: 0.5rem; }
 
 .container-full {
-  padding: 0 3rem; }
+  padding: 0 8rem; }
 
 .btn {
   font-size: 0.85rem;
@@ -661,7 +661,10 @@ ul.timeline > li.day:before {
     margin-left: 0; }
 
   .scroll-icon {
-    position: relative; } }
+    position: relative; }
+
+  .speaker-info {
+    text-align: center; } }
 @media only screen and (max-width: 576px) {
   .container-full {
     padding: 0 1rem; }

@@ -20,7 +20,7 @@ module RubyConf
       end
 
       def sponsor_image_filename
-        "/2019/images/sponsors/#{data['sponsor']}.png"
+        "/2020/images/sponsors/#{data['sponsor']}.png"
       end
 
       def name
@@ -41,7 +41,7 @@ module RubyConf
 
       def avatar_filename(format: 'jpg')
         filename = name.downcase.gsub(' ', '-')
-        "/images/2019/speakers/#{filename}.#{format}"
+        "/2020/images/speakers/#{filename}.#{format}"
       end
 
       def bio

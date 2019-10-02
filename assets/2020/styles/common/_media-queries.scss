@@ -48,6 +48,15 @@
     margin-right: 0;
   }
 
+  .header-cta {
+    display: block;
+
+    .cfp {
+      margin-left: 0;
+      margin-top: 1rem;
+    }
+  }
+
   .header-cover {
     height: 38vh;
   }
@@ -90,7 +99,7 @@
 
   .header-lead {
     font-size: 1.1rem;
-    margin: 2rem 0;
+    margin: 1rem 0;
   }
 
   .header-details {

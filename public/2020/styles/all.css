@@ -199,6 +199,9 @@ figcaption {
 .container-full {
   padding: 0 8rem; }
 
+.row {
+  width: 100%; }
+
 .btn {
   font-size: 0.85rem;
   font-weight: 500;
@@ -340,8 +343,11 @@ h2 {
   margin-top: 4rem;
   text-align: center; }
 
-.blob {
-  width: 15%; }
+.header-cta {
+  display: inline-flex;
+  justify-content: center; }
+  .header-cta .cfp {
+    margin-left: 3rem; }
 
 .header-home {
   background-image: linear-gradient(0deg, rgba(180, 21, 0, 0.95) 0%, rgba(160, 30, 0, 0.9) 100%), url("../images/melbourne.jpg");
@@ -373,8 +379,7 @@ h2 {
 
 .header-details {
   color: #ffffff;
-  display: flex;
-  justify-content: space-evenly; }
+  display: inline-flex; }
 
 .header-details p {
   font-weight: 300;
@@ -462,9 +467,7 @@ h2 {
   font-weight: 400; }
 
 .header-details {
-  color: #ffffff;
-  display: flex;
-  justify-content: space-evenly; }
+  color: #ffffff; }
   .header-details p {
     font-weight: 300;
     margin-right: 1.5rem; }
@@ -672,6 +675,12 @@ ul.timeline > li.day:before {
   .header-details p {
     margin-right: 0; }
 
+  .header-cta {
+    display: block; }
+    .header-cta .cfp {
+      margin-left: 0;
+      margin-top: 1rem; }
+
   .header-cover {
     height: 38vh; }
 
@@ -705,7 +714,7 @@ ul.timeline > li.day:before {
 
   .header-lead {
     font-size: 1.1rem;
-    margin: 2rem 0; }
+    margin: 1rem 0; }
 
   .header-details {
     flex-direction: column; }

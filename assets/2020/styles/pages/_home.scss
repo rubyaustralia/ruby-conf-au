@@ -27,8 +27,13 @@ h2 {
   text-align: center;
 }
 
-.blob {
-  width: 15%;
+.header-cta {
+  display: inline-flex;
+  justify-content: center;
+
+  .cfp {
+    margin-left: 3rem;
+  }
 }
 
 .header-home {
@@ -72,8 +77,7 @@ h2 {
 
 .header-details {
   color: $white;
-  display: flex;
-  justify-content: space-evenly;
+  display: inline-flex;
 }
 
 .header-details p {

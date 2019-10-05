@@ -63,9 +63,9 @@ module RubyConf
     post '/subscribe' do
       content_type :json
 
-      CreateSend.api_key '64e1e3a9ca79765e3a439a2fd4588dc8'
+      CreateSend.api_key ENV["CAMPAIGN_MONITOR_API_KEY"]
       begin
-        CreateSend::Subscriber.add "da0ee77746e2f89b40a3bdff230c415d", params[:email], "", [], true
+        CreateSend::Subscriber.add ENV["CAMPAIGN_MONITOR_LIST_ID"], params[:email], "", [], true
         rescue CreateSend::BadRequest => br
           puts "Bad request error: #{br}"
           puts "Error Code:    #{br.data.Code}"

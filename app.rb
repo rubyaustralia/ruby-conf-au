@@ -1,4 +1,3 @@
-Bundler.require(:default)
 require 'active_support/inflector'
 require 'active_support/core_ext/hash/indifferent_access'
 require 'active_support/core_ext/string/output_safety'
@@ -28,16 +27,8 @@ module RubyConf
       set :scss, Compass.sass_engine_options
     end
 
-    configure :production do
-      set :host, ENV.fetch("DEFAULT_HOST", "rubyconf.org.au")
-      set :force_ssl, true
-    end
-
     configure :development do
       require 'sinatra/reloader'
-
-      set(:host, ENV.fetch("DEFAULT_HOST", "localhost:5000"))
-      set(:force_ssl, ENV.fetch("USE_SSL", "false") == "true")
     end
 
     helpers do
@@ -53,14 +44,6 @@ module RubyConf
     # Haml file-not-found exception bubbling up from the depths.
     error Errno::ENOENT do
       halt(404)
-    end
-
-    before do
-      if self.class.force_ssl? && !request.secure?
-        secure_url = "https://#{settings.host}#{request.fullpath}"
-        request.logger.info "Insecure request, redirecting to #{secure_url}"
-        redirect secure_url
-      end
     end
 
     register Year2013::App
@@ -80,9 +63,9 @@ module RubyConf
     post '/subscribe' do
       content_type :json
 
-      CreateSend.api_key '64e1e3a9ca79765e3a439a2fd4588dc8'
+      CreateSend.api_key ENV["CAMPAIGN_MONITOR_API_KEY"]
       begin
-        CreateSend::Subscriber.add "da0ee77746e2f89b40a3bdff230c415d", params[:email], "", [], true
+        CreateSend::Subscriber.add ENV["CAMPAIGN_MONITOR_LIST_ID"], params[:email], "", [], true
         rescue CreateSend::BadRequest => br
           puts "Bad request error: #{br}"
           puts "Error Code:    #{br.data.Code}"
@@ -117,5 +100,3 @@ module RubyConf
     end
   end
 end
-
-RubyConf::App.run!

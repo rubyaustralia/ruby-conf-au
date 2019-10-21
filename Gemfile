@@ -9,6 +9,7 @@ gem "sass", "~> 3.4.0"
 gem "json"
 gem "haml"
 gem "pony"
+gem "rack-ssl-enforcer"
 gem "sinatra"
 gem 'sinatra-contrib'
 gem "zurb-foundation"

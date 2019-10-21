@@ -391,6 +391,9 @@ h2 {
   margin: 0 auto;
   bottom: 0; }
 
+.tickets .tito-ticket.row {
+  width: auto; }
+
 .speaker-container img {
   width: 80%; }
 .speaker-container .speaker-name {

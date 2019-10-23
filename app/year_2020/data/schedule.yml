@@ -19,9 +19,9 @@
   day: friday
   start_time: 1900
   end_time: 2200
-  sponsor: ''
-  sponsor_link: ''
-  image: /2019/images/slv.jpg
+  sponsor: 'culture-amp'
+  sponsor_link: 'http://cultureamp.com'
+  image: /2020/images/slv.jpg
   ticket_link: ''
   location_text: La Trobe Reading Room @ The State Library, 328 Swanston St, Melbourne VIC
   location_link: https://goo.gl/maps/yYqYWVVc1uVnSFNX8

@@ -3,29 +3,23 @@
         %a{href: '#wednesday'} Wed
         %a{href: '#thursday'} Thu
         %a{href: '#friday'} Fri
-        %a{href: '#saturday'} Sat
 
 .container
     .row
         .col-lg-12
             %ul.timeline
                 %li.day#wednesday
-                    %h3 Wednesday, 6th February
+                    %h3 Wednesday, 19th February
                 - wednesday = @schedule.for(day: 'wednesday')
                 - wednesday.each do |event|
                     %li= haml :'2020/schedule/_event', locals: { event: event, last: event == wednesday.last }
-                %li.day#thursday
-                    %h3 Thursday, 7th February
-                - thursday = @schedule.for(day: 'thursday')
-                - thursday.each do |event|
-                    %li= haml :'2020/schedule/_event', locals: { event: event, last: event == thursday.last }
+                -# %li.day#thursday
+                -#     %h3 Thursday, 7th February
+                -# - thursday = @schedule.for(day: 'thursday')
+                -# - thursday.each do |event|
+                -#     %li= haml :'2020/schedule/_event', locals: { event: event, last: event == thursday.last }
                 %li.day#friday
-                    %h3 Friday, 8th February
+                    %h3 Friday, 21st February
                 - friday = @schedule.for(day: 'friday')
                 - friday.each do |event|
                     %li= haml :'2020/schedule/_event', locals: { event: event, last: event == friday.last }
-                %li.day#saturday
-                    %h3 saturday, 9th February
-                - saturday = @schedule.for(day: 'saturday')
-                - saturday.each do |event|
-                    %li= haml :'2020/schedule/_event', locals: { event: event, last: true }

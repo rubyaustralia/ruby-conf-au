@@ -1,12 +1,12 @@
 - type: social_event
   title: Welcome Cocktail Party 💃
   description: |
-    To kick things off we are heading to the top of the GPO Building to Alto for a cocktail party to celebrate the start of the conference and the Ruby Community. Finger Food and drinks will be provided. Many thanks to Envato for supporting this event! (Sponsor TBC)
+    To kick things off we are heading to the top of the GPO Building to Alto for a cocktail party to celebrate the start of the conference and the Ruby Community. Finger Food and drinks will be provided.
   day: wednesday
   start_time: 1900
   end_time: 2200
-  sponsor: envato
-  sponsor_link: https://envato.com
+  sponsor: ''
+  sponsor_link: ''
   image: /2020/images/alto.jpg
   ticket_link: ''
   location_text: Top Floor, Melbourne GPO Building Cnr Elizabeth + Little Bourke St, Melbourne VIC 3000 
@@ -15,12 +15,12 @@
 - type: social_event
   title: Closing Games Night 🎲
   description: |
-    Once we wrap up the conference, we'll continue the conversations with some board game fun at the State Library. Bring your favorite board game or use one provided and enjoy the soft sounds of Jazz surrounded by some of the most amazing books in the State! Again, Finger food and drinks are covered, so you can kick back and hang out with Ruby friends new and old. Many thanks to Culture Amp for supporting this event! (TBC)
+    Once we wrap up the conference, we'll continue the conversations with some board game fun at the State Library. Bring your favorite board game or use one provided and enjoy the soft sounds of Jazz surrounded by some of the most amazing books in the State! Again, Finger food and drinks are covered, so you can kick back and hang out with Ruby friends new and old.
   day: friday
   start_time: 1900
   end_time: 2200
-  sponsor: 'culture-amp'
-  sponsor_link: 'http://cultureamp.com'
+  sponsor: ''
+  sponsor_link: ''
   image: /2020/images/slv.jpg
   ticket_link: ''
   location_text: La Trobe Reading Room @ The State Library, 328 Swanston St, Melbourne VIC

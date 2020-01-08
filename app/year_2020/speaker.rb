@@ -34,12 +34,12 @@ module RubyConf
       def first_name
         if data['name'].include?('Thanh')
           'Paul and Thanh'
-        elsif data['name'].include?('&')
-          names = data['name'].split('& ')
+        elsif data['name'].include?(' and ')
+          names = data['name'].split('and ')
           names = names.map do |name|
             name.split(' ', 2).first
           end
-          names.join(' & ')
+          names.join(' and ')
         else
           data['name'].split(' ', 2).first
         end

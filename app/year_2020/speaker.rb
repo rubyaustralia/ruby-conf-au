@@ -32,7 +32,17 @@ module RubyConf
       end
 
       def first_name
-        data['name'].split(' ', 2).first
+        if data['name'].include?('Thanh')
+          'Paul and Thanh'
+        elsif data['name'].include?('&')
+          names = data['name'].split('& ')
+          names = names.map do |name|
+            name.split(' ', 2).first
+          end
+          names.join(' & ')
+        else
+          data['name'].split(' ', 2).first
+        end
       end
 
       def last_name
@@ -56,8 +66,16 @@ module RubyConf
         !twitter.nil? && twitter.length > 0
       end
 
+      def has_twitter2?
+        !twitter2.nil? && twitter2.length > 0
+      end
+
       def twitter
         data["twitter"] && data["twitter"].strip
+      end
+
+      def twitter2
+        data["twitter2"] && data["twitter2"].strip
       end
 
       def is_keynote?

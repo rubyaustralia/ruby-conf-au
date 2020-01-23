@@ -1,13 +1,15 @@
 - name: Vaidehi Joshi
-  title: To Be Announced
+  title: The Cost of Data
   bio: "[Vaidehi Joshi](http://www.vaidehi.com/) is an engineer at Tilde, in Portland, Oregon, where she works on Skylight. She enjoys building and breaking code, but loves creating empathetic engineering teams a whole lot more. She is the creator of basecs, a weekly writing series that explored the fundamentals of computer science, co-host of the Base.cs Podcast, and a producer of the BaseCS and Byte Sized video series. She's currently at work on a new series on the basics of distributed systems, called baseds."
   twitter: vaidehijoshi
+  pitch: The internet grows every day. Every second, one of us is making calls to an API, uploading images, and streaming the latest content. But what is the cost of this—is it free? This talk explores the reality of data, and what responsibilities we have as creators and consumers of tech.
   type: invitation
 
 - name: Xavier Shay
   title: My Experience With Experience
   bio: "Xavier recently moved back home to Melbourne after spending eight years in San Francisco, mostly as an engineering leader at Square. Currently working at Ferocia building Up, a fancy new digital bank. He's scheming to introduce the RubyConf 5K tradition to Australia."
   twitter: xshay
+  pitch: Becoming a senior contributor to your organization takes years. It's a process that is stubbornly hard to accelerate - it takes much more than drilling code katas! In this talk Xavier reflect on situations he's encountered over the last decade, and apply some academic models he's found useful to explain and learn from them. By doing so we can better understand the limits to learning and prepare ourselves to make the most out of our experience.
   type: invitation
 
 - name: Matthew Borden
@@ -28,7 +30,6 @@
   title: "A Message to the Stars"
   pitch: |
     In 1977, NASA launched the Voyager probes into space. Each carried a copper ‘vinyl’ record, with music, speech… and 115 images, all inscribed on the disc as audio!
-
     In this talk we’ll pretend to be aliens; we’ll use Ruby to read the audio, recreate the images, and learn some space history too. 🚀✨
   bio: |
     Rob Howard is a web developer and figurative magpie. Having spent his career so far learning and mixing the nice parts from different programming languages, he'd like nothing better than to help technical communities learn more from each other, build better stuff, and have fun in the process.
@@ -47,15 +48,11 @@
   title: "Developing your Dreamcast games with mruby"
   bio: |
     Yuji is a software developer based in Adelaide, South Australia. He was born and raised in Tokyo, Japan. He used to be a Windows desktop application developer until he discovered  Ruby.
-
     He also enjoys console video games, Judo and Brazilian Jiu Jitsu.
   pitch: |
     What would you develop for Dreamcast using Ruby?
-
     I have made an mruby environment for Dreamcast, with a small game and a presentation tool.
-
     I will cover topics including how to get started, why Dreamcast, and some challenges I have faced.
-
     This session will be delivered on a Dreamcast console.
   twitter: yujiyokoo
 
@@ -72,12 +69,12 @@
     Adel Smee is an Engineering Manager at Zendesk where, for the last four years, she has led innovation projects across a variety of technologies and grown a number of high performing teams. Her career in tech started with teaching people to code, before she decided to break out and get paid to do it commercially at a startup, then at Lonely Planet, and then at Zendesk. Along the way she realised that her main implicit motivator is delight in the success of others, which turns out to be a really useful quality in a manager. She is obsessed with what makes people (and herself) tick and loves to hear how she is getting it wrong so she can do better. Adel is an incurable optimist who believes that one day we’ll live in a world where everybody likes their job as much as she does, but isn’t naive enough to think that day is coming any time soon.
   twitter: adelsmee
 
-- name: Tal Ater
-  title: "Raising $24 million to Build an Open Source Skynet"
-  pitch: "This is the story of a small team, a dozen drones, one robot, and an autonomous boat, and how we took a journey from China to California, from Jerusalem to the Vatican that ended up with $24,000,000 raised to build an open source framework for tomorrow’s autonomous vehicles."
+- name: Julian Doherty
+  title: Escape Your Framework
+  pitch: Rails and other frameworks let you quickly throw together ideas to get up and running quickly. But as your app grows, this can limit what you can do. How can we set ourselves up to get the benefits that come from using a framework, while staying flexible and not beholden to it?
   bio: |
-    Tal Ater is the founder and CTO of the DAV Foundation, an O’Reilly published author, a prolific open sourcer, a W3C Invited Expert, and thanks to one sleepless weekend, the creator of a choose-your-own-adventure GitHub template generator featuring Lewis Carroll and Cthulhu.
-  twitter: TalAter
+    Julian is a lead developer with 20 years experience, and has been hacking on Ruby for the last 13. Originally from Wellington, New Zealand, he now calls Melbourne home. Currently working at Envato, he has spent time at some of the biggest Rails shops in Australia. Julian also runs the Elixir Melbourne meetup group, and tries to spend as much time as possible inflicting functional programming paradigms on codebases he works in. (photo attached)
+  twitter:
 
 - name: Paul Joe George and Do Xuan Thanh
   title: "Build a voice based smart home using Sinatra & mruby/c"
@@ -90,7 +87,6 @@
   title: "Escaping The Tar Pit"
   pitch: |
     Nobody wants to inherit a project that reeks but here we are: Stuck in the tar pit. How can we get out? Could we have avoided it in the first place?
-
     In this talk you will learn how to use a few, great Ruby gems that will guide you out of that sticky tar you are in.
   bio: |
     Ernesto is the Founder of Ombu Labs, a small software development company dedicated to building lean code. When he is not playing table tennis, he likes to maintain a few Ruby gems including database_cleaner and email-spec. He is passionate about writing less code, contributing to open source, and eating empanadas.
@@ -100,11 +96,9 @@
   title: "300x faster ruby"
   pitch: |
     Everything I’ve learned about how to make ruby go fast with examples from writing a spell-checking gem
-
     I’ll go into how to improve your intuition about slow code, how to use and read the output of ruby-prof, rb-spy, Benchmark, Parallel, fast-ruby, etc, and the pitfalls to avoid when optimising code
   bio: |
     I’ve been writing ruby for about 11 years now and have thoroughly fallen in love with the language.
-
     My other hobbies include writing bad fiction and taking bad photographs. I’m a kiwi and a vegetarian so you know I’m a terrible person.
 
 - name: Carmen Chung
@@ -131,7 +125,6 @@
   pitch: "Do the principles on which a programming language is based shape the community that grows up around it? Heck yes. While writing my own programming language, I was reminded that language creates (not merely carries) meaning. I also learned that you don’t have to be Grace Hopper to write your own."
   bio: |
     Hi, I’m Lena. I’m an avid cat rescuer, learning enthusiast, and Rails Bridge Wellington organising committee member. I started out in design, but fell for web and software development during my first industry internship. I've been writing Ruby since 2015, and I'm currently learning other languages to expand my toolkit. I’m all about finding patterns, building and communicating software in a way that helps everyone understands it, and failing better – mistakes make me a better developer, and I believe that failing is just an opportunity to learn.
-
     When I’m not coding, I’m watching movies with my 3-legged rescue cat Warlock, collecting enamel pins, and helping out and/or presenting at tech community events around town.
   twitter: plaksina_lena
 

@@ -408,6 +408,9 @@ h2 {
 .sponsor-home img {
   width: 70%; }
 
+.purple-background {
+  background-color: #8400ff;
+}
 @keyframes text-flicker {
   0% {
     opacity: 0.8; }

@@ -16,11 +16,11 @@
       - if event.ticketed?
         %p
           %a{ href: event.ticket_link, target: '_blank' } Purchase a ticket
-      - else
+      - elsif event.sponsor_link && event.sponsor_link.length > 0
         %p.sponsor
           Sponsored by
           %br
           %a{ href: event.sponsor_link, target: '_blank' }
-            %img{ src: "/2018/images/sponsors/#{event.sponsor}.png", width: '100%'}
-      
+            %img{ src: "/2020/images/sponsors/#{event.sponsor}.png", width: '100%'}
+
 

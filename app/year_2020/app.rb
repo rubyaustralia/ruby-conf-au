@@ -37,7 +37,7 @@ module RubyConf
 
             get '/schedule' do
                 @title = 'Schedule'
-                # @speakers = speaker_repository
+                @speakers = speaker_repository
                 @schedule = schedule_repository
                 haml :"2020/schedule", :layout => :"2020/layout"
             end

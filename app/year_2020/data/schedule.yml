@@ -5,12 +5,128 @@
   day: wednesday
   start_time: 1900
   end_time: 2200
-  sponsor: ''
-  sponsor_link: ''
+  sponsor: 'envato'
+  sponsor_link: 'https://envato.com/'
   image: /2020/images/alto.jpg
   ticket_link: ''
-  location_text: Top Floor, Melbourne GPO Building Cnr Elizabeth + Little Bourke St, Melbourne VIC 3000 
+  location_text: Top Floor, Melbourne GPO Building Cnr Elizabeth + Little Bourke St, Melbourne VIC 3000
   location_link: https://goo.gl/maps/nMorFH1wGMq1mSUP8
+
+- type: break
+  title: Registration 🎟️
+  description: ""
+  day: thursday
+  start_time: 830
+  end_time: 930
+- type: break
+  title: Welcome and Opening Remarks 🎤
+  description: ""
+  day: thursday
+  start_time: 900
+  end_time: 930
+- type: session
+  title: Session 1
+  speakers: ["Vaidehi Joshi", "Liam McNally"]
+  day: thursday
+  start_time: 930
+  end_time: 1040
+- type: break
+  title: Morning Tea 🍵
+  description: ''
+  day: thursday
+  start_time: 1040
+  end_time: 1110
+- type: session
+  title: Session 2
+  speakers: ["Rob Howard", "Nancy Cai"]
+  day: thursday
+  start_time: 1110
+  end_time: 1230
+- type: break
+  title: Lunch 🍽️
+  description: ''
+  day: thursday
+  start_time: 1230
+  end_time: 1330
+- type: session
+  title: Session 3
+  speakers: ["Ernesto Tagwerker", "Jameson Hampton", "Brandon Weaver"]
+  day: thursday
+  start_time: 1330
+  end_time: 1530
+- type: break
+  title: Afternoon Tea 🍰
+  description: ''
+  day: thursday
+  start_time: 1530
+  end_time: 1600
+- type: session
+  title: Session 4
+  speakers: ["Michael Milewski and Selena Small", "Yuji Yokoo"]
+  day: thursday
+  start_time: 1600
+  end_time: 1710
+- type: break
+  title: Closing Remarks 🎤
+  description: ''
+  day: thursday
+  start_time: 1710
+  end_time: 1730
+
+- type: break
+  title: Registration and Coffee 🎟️
+  description: ""
+  day: friday
+  start_time: 830
+  end_time: 900
+- type: session
+  title: Session 1
+  speakers: ["Adel Smee", "Matthew Borden"]
+  day: friday
+  start_time: 900
+  end_time: 1040
+- type: break
+  title: Morning Tea 🍵
+  description: ''
+  day: friday
+  start_time: 1040
+  end_time: 1115
+- type: session
+  title: Session 2
+  speakers: ["Lena Plaksina", "Julian Doherty"]
+  day: friday
+  start_time: 1115
+  end_time: 1230
+- type: break
+  title: Lunch 🍽️
+  description: ''
+  day: friday
+  start_time: 1230
+  end_time: 1330
+- type: session
+  title: Session 3
+  speakers: ["Carmen Chung", "Paul Joe George and Do Xuan Thanh", "Elle Meredith"]
+  day: friday
+  start_time: 1330
+  end_time: 1530
+- type: break
+  title: Afternoon Tea 🍰
+  description: ''
+  day: friday
+  start_time: 1530
+  end_time: 1600
+- type: session
+  title: Session 4
+  speakers: ["Dana Sherson", "Xavier Shay"]
+  day: friday
+  start_time: 1600
+  end_time: 1710
+- type: break
+  title: Closing Remarks 🎤
+  description: ''
+  day: friday
+  start_time: 1710
+  end_time: 1730
 
 - type: social_event
   title: Closing Games Night 🎲
@@ -19,9 +135,40 @@
   day: friday
   start_time: 1900
   end_time: 2200
-  sponsor: ''
-  sponsor_link: ''
+  sponsor: 'culture-amp'
+  sponsor_link: 'https://cultureamp.com'
   image: /2020/images/slv.jpg
   ticket_link: ''
   location_text: La Trobe Reading Room @ The State Library, 328 Swanston St, Melbourne VIC
   location_link: https://goo.gl/maps/yYqYWVVc1uVnSFNX8
+
+
+- type: social_event
+  title: Saturday Afternoon Drinks
+  description: |
+    If you are local, or still in town, join us for a traditionally Saturday Avo Drink at Section 8 container bar. Drinks at bar prices, China Town is just down the lane to grab food if you get hungry later also.
+  day: saturday
+  start_time: 1400
+  end_time: 1800
+  sponsor: ''
+  sponsor_link: ''
+  ticket_link: ''
+  image: https://www.broadsheet.com.au/media/cache/62/f1/62f1c207410f95cd631d6d403358d907.jpg
+  location_text: Section 8, 27-29 Tattersalls Ln, Melbourne VIC 3000
+  location_link: https://g.page/section8melbourne?share
+
+- type: social_event
+  title: Hack Day 👩‍💻
+  description: |
+    After all the learning you've done at the conference, we wouldn't blame you if you're itching to put that theory into practice and fire up your favourite text editor. ring your laptop and your Ruby ideas and projects along and we'll provide a space for you to code away to your heart's content with other like minds from the conference.
+
+    This event is open to conference-goers and their partners - and is free! - but has limited availability. Please reserve your place here as soon as possible to avoid missing out!
+  day: saturday
+  start_time: 1100
+  end_time: 1600
+  sponsor: ''
+  sponsor_link: ''
+  image: /2019/images/hack-day.jpg
+  ticket_link: https://ti.to/ruby-australia/rubyconf-au-2020/with/xp87v52rb7c
+  location_text: Envato, 121 King Street, Melbourne, Victoria 3000
+  location_link: https://goo.gl/maps/y38F33W5jRz

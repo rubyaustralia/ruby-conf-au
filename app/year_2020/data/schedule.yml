@@ -67,10 +67,10 @@
   start_time: 1600
   end_time: 1710
 - type: break
-  title: Closing Remarks 🎤
+  title: Close
   description: ''
   day: thursday
-  start_time: 1710
+  start_time: 1730
   end_time: 1730
 
 - type: break
@@ -125,7 +125,7 @@
   title: Closing Remarks 🎤
   description: ''
   day: friday
-  start_time: 1710
+  start_time: 1730
   end_time: 1730
 
 - type: social_event

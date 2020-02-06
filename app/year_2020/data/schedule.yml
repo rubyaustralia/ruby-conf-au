@@ -13,11 +13,11 @@
   location_link: https://goo.gl/maps/nMorFH1wGMq1mSUP8
 
 - type: break
-  title: Registration 🎟️
+  title: Registration and Coffee 🎟️
   description: ""
   day: thursday
-  start_time: 830
-  end_time: 930
+  start_time: 800
+  end_time: 900
 - type: break
   title: Welcome and Opening Remarks 🎤
   description: ""
@@ -77,7 +77,7 @@
   title: Registration and Coffee 🎟️
   description: ""
   day: friday
-  start_time: 830
+  start_time: 800
   end_time: 900
 - type: session
   title: Session 1

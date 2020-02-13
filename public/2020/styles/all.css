@@ -299,7 +299,7 @@ img {
 .footer-cover {
   background-image: linear-gradient(0deg, rgba(103, 12, 0, 0.95) 0%, rgba(165, 31, 0, 0.9) 100%), url("../images/conference.jpg");
   background-size: cover;
-  height: 32vh;
+  height: 24vh;
   background-position-y: center;
   display: flex;
   align-items: center;

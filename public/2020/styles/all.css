@@ -299,7 +299,7 @@ img {
 .footer-cover {
   background-image: linear-gradient(0deg, rgba(103, 12, 0, 0.95) 0%, rgba(165, 31, 0, 0.9) 100%), url("../images/conference.jpg");
   background-size: cover;
-  height: 32vh;
+  height: 24vh;
   background-position-y: center;
   display: flex;
   align-items: center;
@@ -408,6 +408,9 @@ h2 {
 .sponsor-home img {
   width: 70%; }
 
+.purple-background {
+  background-color: #8400ff;
+}
 @keyframes text-flicker {
   0% {
     opacity: 0.8; }
@@ -635,7 +638,10 @@ ul.timeline > li.day:before {
   text-transform: uppercase;
   font-size: 1rem;
   letter-spacing: 3px;
-  padding-top: 0.75rem; }
+  padding-top: 0.75rem;
+  text-align: center;
+}
+
 
 .speaker-bio {
   font-weight: 400;

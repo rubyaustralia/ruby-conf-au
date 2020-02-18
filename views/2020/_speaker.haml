@@ -4,13 +4,7 @@
       %img{ src: speaker.avatar_filename(format: 'jpg'), class: 'speaker-img' }
     .speaker__name{ class: speaker.long_name? && 'long' || '' }
       %h3.speaker-name
-        = speaker.first_name
-        = speaker.last_name
-    .social
-      - if speaker.has_twitter?
-        %a{ href: "https://twitter.com/#{speaker.twitter}", target: '_blank' }
-          %i.fab.fa-twitter
-          = "@#{speaker.twitter}"
+        = speaker.name
   .col-lg-9
     .details
       - if speaker.pitch
@@ -24,3 +18,12 @@
           About
           = speaker.first_name
         = speaker.bio
+      .social
+        - if speaker.has_twitter?
+          %a{ href: "https://twitter.com/#{speaker.twitter}", target: '_blank' }
+            %i.fab.fa-twitter
+            = "@#{speaker.twitter}"
+        - if speaker.has_twitter2?
+          %a{ href: "https://twitter.com/#{speaker.twitter2}", target: '_blank' }
+            %i.fab.fa-twitter
+            = "@#{speaker.twitter2}"

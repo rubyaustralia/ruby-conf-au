@@ -62,7 +62,7 @@
   end_time: 1600
 - type: session
   title: Session 4
-  speakers: ["Michael Milewski and Selena Small", "Yuji Yokoo"]
+  speakers: ["Selena Small and Michael Milewski", "Yuji Yokoo"]
   day: thursday
   start_time: 1600
   end_time: 1710

@@ -112,13 +112,13 @@
     During the day, she is a software engineer at Valiant Finance, and at night, she's the host and producer of a YouTube channel called CodeFights, which teaches people how to solve coding questions in 15 minutes. In her spare time, she teaches flexibility classes, creates (often absurd) side projects, and fosters rescue dogs.
   twitter: carmenhchung
 
-- name: Michael Milewski and Selena Small
+- name: Selena Small and Michael Milewski
   title: "10X your teamwork through pair programming"
   pitch: "A roller coaster journey of how to get the most out of pair-programming. Live on stage acting out highs, lows, do’s and don’ts of pair-programming. Laughs and tears are guaranteed as the audience connect on the difficulties and ultimately the rewards that can be reaped through effective pairing."
   bio: |
     Selena and Michael met through work at Fresho! but soon realised they are the kind of friends who would rather talk tech at a party. So they turned their party times into numerous hackathons, coding camps, and duo talks and workshops on topics around test driving software and pair programming.
-  twitter: saramic
-  twitter2: selenasmall88
+  twitter2: saramic
+  twitter: selenasmall88
 
 - name: Lena Plaksina
   title: "Just my type: things I learned from writing my own programming language"
@@ -140,6 +140,7 @@
   pitch: "Developing apps for users in different demographics is inherently differently than developing apps just for ourselves and for other programmers. Understanding the needs of our users — and learning to foster empathy for them — is just as much of a skill as learning Rails, Java or PHP!"
   bio: |
     Jamey is a non-binary adventurer from Buffalo, NY who wishes they were immortal so they’d have time to visit every coffee shop in the world. They're a Rails engineer who has recently been taking the plunge into DevRel and a panelist on the Greater than Code podcast. In their spare time, they do advocacy in the transgender community, write comics and spend as much time as possible in the forest.
+  twitter: jameybash
 
 - name: Mel Kaulfuss
   bio: Mel is a product loving backend Software Engineer at Qantas Hotels. Discovering (to her surprise) she actually truly loved computers after attending a Railsgirls event in 2014, she embarked on a journey to software developer only to learn the road never ends. When she's not busy solving technical problems she's escaping to travel somewhere with her family, preferably outdoors; camping, hiking or skiing. Her favourite place to be is anywhere but home.

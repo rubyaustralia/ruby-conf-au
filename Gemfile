@@ -1,6 +1,6 @@
 source 'https://rubygems.org'
 
-ruby '2.5.5'
+ruby '2.5.8'
 
 gem "activesupport", '~> 4.2.8', require: false
 gem "createsend", "1.0.4"

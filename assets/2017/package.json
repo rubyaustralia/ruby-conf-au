@@ -1,14 +1,14 @@
 {
   "devDependencies": {
-    "autoprefixer": "9.x",
+    "autoprefixer": "^9.7.6",
     "gulp": "^4.0.2",
-    "gulp-autoprefixer": "^6.1.0",
-    "gulp-sass": "4.x",
-    "jquery": "3.x",
+    "gulp-autoprefixer": "^7.0.1",
+    "gulp-sass": "^4.0.2",
+    "jquery": "^3.5.0",
     "require-dir": "^1.2.0",
-    "watching": "x"
+    "watching": "^0.1.1"
   },
   "dependencies": {
-    "foundation-sites": "^6.5.3"
+    "foundation-sites": "^6.6.3"
   }
 }

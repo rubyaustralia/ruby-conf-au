@@ -50,7 +50,7 @@ GEM
     mustermann (1.0.2)
     pony (1.12)
       mail (>= 2.0)
-    rack (2.0.8)
+    rack (2.2.3)
     rack-protection (2.0.3)
       rack
     rack-ssl-enforcer (0.2.9)

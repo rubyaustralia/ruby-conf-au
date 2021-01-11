@@ -14,7 +14,7 @@ gem "sinatra"
 gem 'sinatra-contrib'
 gem "zurb-foundation"
 gem "thin"
-gem "redcarpet", "~> 3.4.0"
+gem "redcarpet", "~> 3.5.1"
 
 group :development do
   gem "foreman"

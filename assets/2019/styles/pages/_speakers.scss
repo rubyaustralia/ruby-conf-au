@@ -188,7 +188,7 @@
         &.highlight {
           &:before {
             content: "";
-            background: url(/2018/images/quote-open.png) no-repeat center top;
+            background: url(../images/quote-open.png) no-repeat center top;
             width: 32px;
             height: 27px;
             height: 100%;
@@ -200,7 +200,7 @@
 
           &:after {
             content: "";
-            background: url(/2018/images/quote-close.png) no-repeat center top;
+            background: url(../images/quote-close.png) no-repeat center top;
             width: 32px;
             height: 27px;
             position: absolute;

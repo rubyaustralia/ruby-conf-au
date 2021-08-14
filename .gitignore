@@ -1,3 +1,5 @@
 .sass-cache*
 .DS_Store
 .bundle
+node_modules
+public/assets

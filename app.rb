@@ -32,12 +32,9 @@ module RubyConf
     end
 
     helpers do
-      def file_digest(file)
-        File.read("#{file}.md5")
-      end
-
       def asset_path(file)
-        "/#{file}?#{file_digest('public/' + file)}"
+        @manifest ||= JSON.parse(File.read("public/assets/manifest.json"))
+        @manifest[file]
       end
     end
 

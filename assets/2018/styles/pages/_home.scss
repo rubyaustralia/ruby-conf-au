@@ -60,7 +60,7 @@
   .speakers {
     @include align('center');
 
-    background: url('/2018/images/candy-stripe.svg') center center;
+    background: url('../images/candy-stripe.svg') center center;
     background-size: 100% 100%;
     margin-top: -100px;
     min-height: 800px;

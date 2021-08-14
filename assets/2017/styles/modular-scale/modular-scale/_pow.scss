@@ -1,3 +1,5 @@
+@use "sass:math";
+
 // If a native exponent function doesnt exist
 // this one is needed.
 @function ms-pow($Base, $Exponent) {
@@ -5,9 +7,9 @@
   // Find and remove unit.
   // Avoids messyness with unit calculations
   $Unit: $Base * 0 + 1;
-  $Base: $Base/$Unit;
+  $Base: math.div($Base, $Unit);
 
-  // This function doesnt support non-interger exponents.
+  // This function doesn't support non-integer exponents.
   // Warn the user about why this is breaking.
 	@if round($Exponent) != $Exponent {
 		@warn "Unfortunately, you need Compass to use non-integer exponents";
@@ -19,22 +21,22 @@
   // If the number is positive, multiply it.
   @if $Exponent > 0 {
     // Basic feedback loop as exponents
-    // are recursivley multiplied numbers.
+    // are recursively multiplied numbers.
     @for $i from 1 to $Exponent {
       $Return: $Return * $Base;
     }
   }
 
-  // If the number is 0 or negitive
+  // If the number is 0 or negative
   // divide instead of multiply.
   @else {
-    // Libsass doesnt allow negitive values in loops
+    // Libsass doesn't allow negative values in loops
     @for $i from (-1 + 1) to (abs($Exponent) + 1) {
-      $Return: $Return / $Base;
+      $Return: math.div($Return, $Base);
     }
   }
 
-  // Return is now compounded redy to be returned.
+  // Return is now compounded ready to be returned.
   // Add the unit back onto the number.
 	@return $Return * $Unit;
 }

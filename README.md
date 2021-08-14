@@ -2,11 +2,13 @@
 
 ## Setup
 
-If this is this first time you are running the app:
+If this is this first time you are running the app, you need Ruby, Node, and Yarn installed, and then you can run the following commands:
 
 ```
 $ gem install bundler
 $ bundle install
+$ yarn install
+$ yarn run webpack
 ```
 
 Then start the app with:
@@ -15,38 +17,15 @@ Then start the app with:
 $ foreman start
 ```
 
-### Assets 2018-2019
+### Assets
 
-To update styles, go into the appropriate year's assets folder and run the following commands:
-
-```
-$ cd assets/2019
-$ yarn install
-$ yarn build
-```
-
-During development, you probably want to be compiling assets on change:
+Assets are managed via Webpack, with each year in a separate directory within /assets. To compile:
 
 ```
-$ cd assets/2019
-$ yarn watch
+$ yarn run webpack
 ```
 
-### Assets 2016-2017
-
-To update styles, go into the appropriate year's assets folder and run the following commands:
-
-```
-$ cd assets/2017
-$ make
-```
-
-During development, you probably want to be compiling assets on change:
-
-```
-$ cd assets/2018
-$ make watch
-```
+At this point in time there's no distinction between development and production asset generation, and there's no live-rebuilding of assets. Both of these would be nice though.
 
 ## Deploying
 

@@ -1,3 +1,5 @@
+@use "sass:math";
+
 .body-section {
   padding-left: 1rem;
   padding-right: 1rem;
@@ -72,10 +74,10 @@
     position: absolute;
     text-indent: -1000px;
     overflow: hidden;
-    background: transparent url('/images/2015/down-arrow.svg') bottom center no-repeat;
+    background: transparent url('../images/down-arrow.svg') bottom center no-repeat;
     bottom: 2rem;
     left: 50%;
-    margin-left: (-63px / 2);
+    margin-left: math.div(-63px, 2);
     opacity: 0;
     animation: .75s down-arrow-animation infinite alternate;
     animation-play-state: paused;
@@ -142,7 +144,7 @@
   &:before {
     content: ' ';
     display: block;
-    background: url(/images/2015/heart-separator.svg) center center no-repeat;
+    background: url(../images/heart-separator.svg) center center no-repeat;
     width: 100%;
     padding-top: 32px;
     margin-top: -32px;
@@ -162,7 +164,7 @@
   &:before {
     content: ' ';
     display: block;
-    background: url(/images/2015/heart-separator.svg) center center no-repeat;
+    background: url(../images/heart-separator.svg) center center no-repeat;
     width: 100%;
     padding-top: 32px;
     margin-top: -32px;

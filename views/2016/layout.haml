@@ -7,19 +7,16 @@
     %title= @page_title || "RubyConf Australia 2016"
     %meta{charset: "utf-8"}
     %meta{content:'width=device-width, initial-scale=1.0', name:'viewport'}
-    %link{rel: "stylesheet", href: asset_path('2016/styles/all.css')}
+    %link{rel: "stylesheet", href: asset_path("2016.css")}
     %link{rel:'shortcut icon', href:'/images/2016/favicon.png'}
+    %script{src: "https://maps.googleapis.com/maps/api/js" }
+    %script{src: asset_path("2016.js")}
     :javascript
       (function(d) {
         var config = { kitId: 'pcd5kcy', scriptTimeout: 3000 },
         h=d.documentElement,t=setTimeout(function(){h.className=h.className.replace(/\bwf-loading\b/g,"")+" wf-inactive";},config.scriptTimeout),tk=d.createElement("script"),f=false,s=d.getElementsByTagName("script")[0],a;h.className+=" wf-loading";tk.src='//use.typekit.net/'+config.kitId+'.js';tk.async=true;tk.onload=tk.onreadystatechange=function(){a=this.readyState;if(f||a&&a!="complete"&&a!="loaded")return;f=true;clearTimeout(t);try{Typekit.load(config)}catch(e){}};s.parentNode.insertBefore(tk,s)
       })(document);
     %script{src: "https://js.tito.io/v1?v2", async: true}
-    %script{src: "https://maps.googleapis.com/maps/api/js" }
-    %script{src: "/javascripts/jquery-2.1.4.min.js" }
-    %script{src: "/2016/javascripts/map.js" }
-    %script{src: "/2016/javascripts/bootstrap-transitions.js" }
-    %script{src: "/2016/javascripts/bootstrap-carousel.js" }
   %body
     != yield
 
@@ -49,5 +46,4 @@
           %a{ href: "/2015" } 2015
 
     - # Fix for iOS vh/vw units
-    %script(src="/2016/javascripts/viewport-units-buggyfill.js")
-    %script window.viewportUnitsBuggyfill.init();
+    %script(src="/assets/footer.js")

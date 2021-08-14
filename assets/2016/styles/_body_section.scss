@@ -1,3 +1,5 @@
+@use "sass:math";
+
 .body-section {
   padding-left: 1rem;
   text-align: center;
@@ -13,7 +15,7 @@
 
 .body-section--event-header {
   @extend .body-section;
-  background: url('/images/2016/background.jpg') top center no-repeat;
+  background: url('../images/background.jpg') top center no-repeat;
   .skip-nav {
     width: 63px;
     height: 48px;
@@ -22,7 +24,7 @@
     overflow: hidden;
     bottom: 2rem;
     left: 50%;
-    margin-left: (-63px / 2);
+    margin-left: math.div(-63px, 2);
     opacity: 0;
     animation: .75s down-arrow-animation infinite alternate;
     animation-play-state: paused;

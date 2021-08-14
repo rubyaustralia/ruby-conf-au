@@ -1,0 +1,30 @@
+{
+  "name": "rubyconf-au",
+  "version": "1.0.0",
+  "description": "Combined assets for rubyconf.org.au",
+  "private": true,
+  "author": "Ruby Australia",
+  "license": "MIT",
+  "devDependencies": {
+    "autoprefixer": "^10.3.1",
+    "css-loader": "^6.2.0",
+    "flexboxgrid2": "^7.2.1",
+    "foundation-sites": "^6.6.3",
+    "jquery": "^3.6.0",
+    "mini-css-extract-plugin": "^2.2.0",
+    "postcss": "^8.3.6",
+    "postcss-loader": "^6.1.1",
+    "sass": "^1.37.5",
+    "sass-loader": "^12.1.0",
+    "spin.js": "^4.1.0",
+    "style-loader": "^3.2.1",
+    "viewport-units-buggyfill": "^0.6.2",
+    "webpack": "^5.50.0",
+    "webpack-cli": "^4.7.2",
+    "webpack-manifest-plugin": "^4.0.2"
+  },
+  "browserslist": ["defaults"],
+  "scripts": {
+    "build": "webpack"
+  }
+}

@@ -1,6 +1,0 @@
-{
-  "verbose": true,
-  "ignore": ["styles/vendor/*"],
-  "ext": "scss",
-  "watch": "styles"
-}

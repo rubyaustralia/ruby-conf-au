@@ -7,8 +7,9 @@
     %title= @page_title || "RubyConf Australia 2015"
     %meta{charset: "utf-8"}
     %meta{content:'width=device-width, initial-scale=1.0', name:'viewport'}
-    %link{rel: "stylesheet", href: asset_path('2015/styles/all.css')}
+    %link{rel: "stylesheet", href: asset_path("2015.css")}
     %link{rel:'shortcut icon', href:'/images/2015/favicon.png'}
+    %script{src: asset_path("2015.js")}
     :javascript
       (function(d) {
         var config = { kitId: 'pcd5kcy', scriptTimeout: 3000 },
@@ -41,5 +42,4 @@
         %li <a href="/2014">2014</a>
 
     - # Fix for iOS vh/vw units
-    %script(src="/2015/javascripts/viewport-units-buggyfill.js")
-    %script window.viewportUnitsBuggyfill.init();
+    %script(src="/assets/footer.js")

@@ -7,8 +7,9 @@
     %title= @page_title || "RubyConf Australia 2017"
     %meta{charset: "utf-8"}
     %meta{content:'width=device-width, initial-scale=1.0', name:'viewport'}
-    %link{rel: "stylesheet", href: asset_path('2017/styles/all.css')}
+    %link{rel: "stylesheet", href: asset_path("2017.css")}
     %link{rel:'shortcut icon', href:'/images/favicon.png'}
+    %script{src: asset_path("2017.js")}
 
     :javascript
       (function(d) {
@@ -22,11 +23,7 @@
 
     = haml :'2017/_footer'
 
-    %script{src: '/javascripts/jquery-2.1.4.min.js'}
-    %script{src: 'https://cdn.jsdelivr.net/foundation/6.2.3/foundation.min.js'}
-    %script{src: '/2017/javascripts/all.js'}
     %script{src: "https://maps.googleapis.com/maps/api/js?key=#{ENV["GOOGLE_MAPS_API_KEY"]}&callback=initializeMap" }
     %script{src: "https://js.tito.io/v1?v2", async: true}
     - # Fix for iOS vh/vw units
-    %script{src: '/javascripts/viewport-units-buggyfill.js'}
-    %script window.viewportUnitsBuggyfill.init();
+    %script{src: asset_path("footer.js")}

@@ -6,21 +6,22 @@
       https://github.com/rubyaustralia/ruby-conf-au
     %title= @page_title || "RubyConf AU 2020"
 
-    %meta{ charset: "utf-8"}
-    %meta{ content:'width=device-width, initial-scale=1.0', name:'viewport'}
+    %meta{ charset: "utf-8" }
+    %meta{ content:'width=device-width, initial-scale=1.0', name:'viewport' }
+    %link{rel: "stylesheet", href: asset_path("2020.css")}
     %link{ href: "https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Oswald&display=swap", rel: "stylesheet" }
     %link{ rel: "stylesheet", href: "https://use.fontawesome.com/releases/v5.1.1/css/all.css", integrity: "sha384-O8whS3fhG2OnA5Kas0Y9l3cfpmYjapjI0E4theH4iuMD+pLhbf6JI0jIMfYcK3yZ", crossorigin: "anonymous" }
     %link{ rel: 'stylesheet', href: 'https://css.tito.io/v1.1', type: 'text/css' }
-    %link{ rel: 'stylesheet', href: "https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css", integrity: "sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T", crossorigin: "anonymous"}
-    %link{ rel: "stylesheet", href: asset_path('2020/styles/all.css')}
-    %link{ rel:'shortcut icon', href:'/2020/images/favicon.png'}
+    %link{ rel: 'stylesheet', href: "https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css", integrity: "sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T", crossorigin: "anonymous" }
+    %link{ rel: 'shortcut icon', href:'/2020/images/favicon.png' }
+    %script{ src: asset_path("2020.js") }
     %script{:crossorigin => "anonymous", :integrity => "sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo", src: "https://code.jquery.com/jquery-3.3.1.slim.min.js"}
   %body
     - if @title == 'Home'
       = haml :'2020/common/_header-home'
     - else
       = haml :'2020/common/_header'
-			 
+
     .div
       != yield
       = haml :'2020/common/_footer'

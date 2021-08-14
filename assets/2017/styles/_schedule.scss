@@ -1,3 +1,5 @@
+@use "sass:math";
+
 section#schedule {
   @include highlight-section;
   position: relative;
@@ -85,9 +87,9 @@ section#schedule {
       overflow: hidden;
       border-radius: 5px;
       position: absolute;
-      top: -(ms(5) / 2);
+      top: -(math.div(ms(5), 2));
       left: 50%;
-      margin-left: -(ms(5)/2);
+      margin-left: -(math.div(ms(5), 2));
       padding: 5px 10px;
       text-align: center;
     }

@@ -1,6 +1,9 @@
+# frozen_string_literal: true
+
 require 'active_support/inflector'
 require 'active_support/core_ext/hash/indifferent_access'
 require 'active_support/core_ext/string/output_safety'
+
 require_relative 'app/year_2013/app'
 require_relative 'app/year_2014/app'
 require_relative 'app/year_2015/app'
@@ -18,13 +21,6 @@ module RubyConf
       set :root, File.join(Dir.pwd)
       set :public_folder, File.join(Dir.pwd, 'public')
       set :force_ssl, true
-
-      Compass.configuration do |config|
-        config.project_path = File.dirname(__FILE__)
-        config.sass_dir = 'views'
-      end
-
-      set :scss, Compass.sass_engine_options
     end
 
     configure :development do
@@ -60,15 +56,22 @@ module RubyConf
     post '/subscribe' do
       content_type :json
 
-      CreateSend.api_key ENV["CAMPAIGN_MONITOR_API_KEY"]
       begin
-        CreateSend::Subscriber.add ENV["CAMPAIGN_MONITOR_LIST_ID"], params[:email], "", [], true
-        rescue CreateSend::BadRequest => br
-          puts "Bad request error: #{br}"
-          puts "Error Code:    #{br.data.Code}"
-          puts "Error Message: #{br.data.Message}"
-        rescue Exception => e
-          puts "Error: #{e}"
+        CreateSend::Subscriber.add(
+          {:api_key => ENV["CAMPAIGN_MONITOR_API_KEY"]},
+          ENV["CAMPAIGN_MONITOR_LIST_ID"],
+          params[:email],
+          "",
+          nil,        # custom fields
+          true,       # resubscribe
+          'Unchanged' # consent_to_track
+        )
+      rescue CreateSend::BadRequest => br
+        puts "Bad request error: #{br}"
+        puts "Error Code:    #{br.data.Code}"
+        puts "Error Message: #{br.data.Message}"
+      rescue Exception => e
+        puts "Error: #{e}"
       end
 
       {success: true}.to_json

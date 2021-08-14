@@ -10,7 +10,7 @@ module RubyConf
       def initialize(schedule:)
         @events = schedule.collect do |data|
           create(
-            data.inject({}) do |memo, (key, value)|
+            **data.inject({}) do |memo, (key, value)|
               memo[key.to_sym] = value
               memo
             end

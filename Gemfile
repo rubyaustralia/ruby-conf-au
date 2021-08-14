@@ -1,20 +1,18 @@
-source 'https://rubygems.org'
+# frozen_string_literal: true
 
-ruby '2.5.8'
+source "https://rubygems.org"
 
-gem "activesupport", '~> 4.2.8', require: false
-gem "createsend", "1.0.4"
-gem "compass"
-gem "sass", "~> 3.4.0"
+ruby "3.0.2"
+
+gem "activesupport", "~> 6.1", require: false
+gem "createsend", "~> 5.1.0"
 gem "json"
 gem "haml"
-gem "pony"
+gem "puma"
 gem "rack-ssl-enforcer"
-gem "sinatra"
-gem 'sinatra-contrib'
-gem "zurb-foundation"
-gem "thin"
 gem "redcarpet", "~> 3.5.1"
+gem "sinatra"
+gem "sinatra-contrib"
 
 group :development do
   gem "foreman"

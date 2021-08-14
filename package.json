@@ -23,5 +23,8 @@
     "webpack-cli": "^4.7.2",
     "webpack-manifest-plugin": "^4.0.2"
   },
-  "browserslist": ["defaults"]
+  "browserslist": ["defaults"],
+  "scripts": {
+    "build": "webpack"
+  }
 }

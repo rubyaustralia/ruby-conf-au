@@ -2,7 +2,7 @@
 
 source "https://rubygems.org"
 
-ruby "3.0.2"
+ruby "3.1.2"
 
 gem "activesupport", "~> 6.1", require: false
 gem "createsend", "~> 5.1.0"

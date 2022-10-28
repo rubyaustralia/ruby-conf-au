@@ -2,7 +2,11 @@
 
 ## Setup
 
-If this is this first time you are running the app, you need Ruby, Node, and Yarn installed, and then you can run the following commands:
+If this is this first time you are running the app, you need Ruby, Node, and Yarn installed.
+
+It is recommended that you use [asdf](https://asdf-vm.com/) to install the versions that are specified in `.tool-versions`.
+
+Then you can run the following commands:
 
 ```
 $ gem install bundler

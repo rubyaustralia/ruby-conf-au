@@ -1,0 +1,12 @@
+.container-full
+  .all-speakers.all
+    - @speakers.via_invite.each do |speaker|
+      = haml :'2023/_speaker', locals: { speaker: speaker }
+
+    - @speakers.via_cfp.shuffle.each do |speaker|
+      = haml :'2023/_speaker', locals: { speaker: speaker }
+
+.container-full
+  .all-speakers.all
+    - @speakers.mcs.shuffle.each do |speaker|
+      = haml :'2023/_speaker', locals: { speaker: speaker }

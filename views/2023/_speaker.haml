@@ -1,0 +1,29 @@
+.row.mb-5
+  .col-lg-3
+    .speaker-avatar
+      %img{ src: speaker.avatar_filename(format: 'jpg'), class: 'speaker-img' }
+    .speaker__name{ class: speaker.long_name? && 'long' || '' }
+      %h3.speaker-name
+        = speaker.name
+  .col-lg-9
+    .details
+      - if speaker.pitch
+        %h3= speaker.title
+        .quote{ class: "highlight"}= speaker.pitch
+        - if speaker.has_video?
+          .video
+            %a{ href: speaker.video, target: '_blank' } 🎥 Watch Video
+      .bio
+        %h4.speaker-bio.mt-2
+          About
+          = speaker.first_name
+        = speaker.bio
+      .social
+        - if speaker.has_twitter?
+          %a{ href: "https://twitter.com/#{speaker.twitter}", target: '_blank' }
+            %i.fab.fa-twitter
+            = "@#{speaker.twitter}"
+        - if speaker.has_twitter2?
+          %a{ href: "https://twitter.com/#{speaker.twitter2}", target: '_blank' }
+            %i.fab.fa-twitter
+            = "@#{speaker.twitter2}"

@@ -1,0 +1,25 @@
+.container
+    %nav.shortcuts
+        %a{href: '#wednesday'} Wed
+        %a{href: '#thursday'} Thu
+        %a{href: '#friday'} Fri
+
+.container
+    .row
+        .col-lg-12
+            %ul.timeline
+                %li.day#wednesday
+                    %h3 Wednesday, 15th February
+                - wednesday = @schedule.for(day: 'wednesday')
+                - wednesday.each do |event|
+                    %li= haml :'2023/schedule/_event', locals: { event: event, last: event == wednesday.last }
+                %li.day#thursday
+                    %h3 Thursday, 16th February
+                - thursday = @schedule.for(day: 'thursday')
+                - thursday.each do |event|
+                    %li= haml :'2023/schedule/_event', locals: { event: event }
+                %li.day#friday
+                    %h3 Friday, 17th February
+                - friday = @schedule.for(day: 'friday')
+                - friday.each do |event|
+                    %li= haml :'2023/schedule/_event', locals: { event: event }

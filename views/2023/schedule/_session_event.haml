@@ -1,0 +1,19 @@
+.container-full.pl-0
+  .row
+    - event.speakers.each do |names|
+      - names = Array(names)
+      - speaker = @speakers.find(name: names.first)
+      .speaker.d-flex.flex-row
+        .col-lg-3.col-md-4.mb-3.flex
+          .avatar.schedule-avatar
+            %img{ src: speaker.avatar_filename }
+        .col-lg-12.event-container
+          .info
+            %h2.timeline-title= speaker.title
+            %p
+              = speaker.name
+              - if speaker.twitter
+                \//
+                %a.twitter{href: "https://twitter.com/#{speaker.twitter}", target: "_blank"}= "@#{speaker.twitter}"
+                - if speaker.twitter2
+                  %a.twitter{href: "https://twitter.com/#{speaker.twitter2}", target: "_blank"}= "@#{speaker.twitter2}"

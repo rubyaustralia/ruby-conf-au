@@ -14,6 +14,7 @@ module.exports = {
     '2018': './assets/2018/index.js',
     '2019': './assets/2019/index.js',
     '2020': './assets/2020/index.js',
+    '2023': './assets/2023/index.js',
     'footer': './assets/footer.js',
   },
   output: {

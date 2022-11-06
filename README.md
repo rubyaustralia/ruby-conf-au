@@ -34,3 +34,17 @@ At this point in time there's no distinction between development and production 
 ## Deploying
 
 The site is automatically deployed when master is pushed to Github.
+
+## Create New Year Event
+
+Copy previous year folders e.g. :
+
+```
+app/year_2020
+assets/2020
+views/2020
+```
+
+Modify `app.rb` to include the new year information
+
+Modify `webpack.config.js` to include the new year information

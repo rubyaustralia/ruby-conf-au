@@ -1,0 +1,18 @@
+.container-full
+    .row
+        .col-lg-6.image.text-center
+            %img{src: "/2023/images/convention-centre.jpg", width: '100%', class: "about-img"}
+        .col-lg-6.about-desc
+            %h3 Melbourne Convention Centre
+            %p Melbourne Convention Centre is front and centre in the State of Victoria. Alongside the Yarra River and just a stroll from the city’s famous restaurants, bars, shops and arts precinct. With direct access to quality accommodation (Pan Pacific Melbourne and Novotel Melbourne South Wharf) and parking and public transport on our doorstep, we couldn’t be more convenient if we tried.
+            %p
+                %i.fa.fa-map-marker-alt
+                1 Convention Centre Place, South Wharf VIC 3006, Melbourne, Australia         
+    .row
+        .col
+            .mapouter.mt-5
+                .gmap_canvas
+                    %iframe#gmap_canvas{:frameborder => "0", :height => "300px", :marginheight => "0", :marginwidth => "0", :scrolling => "no", src: "https://maps.google.com/maps?q=melbourne%20convention%20centre&t=&z=13&ie=UTF8&iwloc=&output=embed", width: "100%"}
+                :css
+                    .mapouter{position:relative;}.gmap_canvas {overflow:hidden;background:none!important;}
+

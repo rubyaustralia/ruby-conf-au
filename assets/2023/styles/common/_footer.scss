@@ -1,0 +1,39 @@
+@import "../lib/variables";
+
+.footer-title {
+  font-size: 2.5rem;
+  font-weight: 700;
+  letter-spacing: 1px;
+  color: $white;
+}
+
+.footer-cover {
+  background-image: $gradient-red,
+    url("../images/conference.jpg");
+  background-size: cover;
+  height: 12vh;
+  background-position-y: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.footer-links {
+  list-style: none;
+  padding: 0;
+
+  a {
+    display: inline-flex;
+    align-items: center;
+    color: $black;
+    letter-spacing: 1px;
+    line-height: 32px;
+    font-size: 0.9rem;
+  }
+}
+
+.copyright {
+  color: $black;
+  font-size: 0.9rem;
+}

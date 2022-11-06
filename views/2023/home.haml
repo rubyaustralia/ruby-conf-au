@@ -1,0 +1,34 @@
+.introduction.mt-5
+	.container-full
+		.row.about
+			.col-lg-6.col-sm-12.col-xs-12.image.text-center
+				%figure
+					%img{src: "/2020/images/nadia.jpg", class: "about-img", alt: "Nadia Speaking"}
+					%figcaption
+						RubyConf AU 2019 speaker
+						%a{href: 'http://www.nadiaodunayo.com/', target: 'blank'} Nadia Odunayo.
+						Photographer:
+						%a{href: 'https://about.me/johncarney', target: 'blank'} John Carney
+			.col-lg-6.col-sm-12.col-xs-12.about-desc
+				%h2.section-title
+					What is
+					%br/
+					RubyConf AU?
+				%p Our yearly gathering where we share knowledge about the Ruby programming language, and celebrate the Australian and broader Ruby community.
+				%p With a mixture of local and international speakers, there will be two day of talks. We'll cover topics that interest, excite, and delight Rubyists and the Ruby-curious of all levels. There will also be social events hosted where you will get the opportunity to meet like-minded people!
+
+		.row.tickets.text-center.mt-3
+			.col
+				%h2.section-title Tickets
+				%p
+					Ticket sales for RubyConf Au 2023 are live!
+					%a{href: 'https://ti.to/ruby-australia/rubyconf-au-2023', target: 'blank'} Get your tickets here.
+
+		.row.speakers.text-center.mt-3
+			.col
+				%h2.section-title Speakers
+				%p
+					Call for papers is open!
+					%a{href: 'https://www.papercall.io/rubyconf-au-2023', target: 'blank'} Submit your proposal by 14 November.
+
+		= haml :'2023/common/_sponsors'

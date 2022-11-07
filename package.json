@@ -5,9 +5,8 @@
   "private": true,
   "author": "Ruby Australia",
   "license": "MIT",
-  "engineStrict": true,
   "engines": {
-    "node": "^14.17.3"
+    "node": "18.x"
   },
   "devDependencies": {
     "autoprefixer": "^10.3.1",

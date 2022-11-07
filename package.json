@@ -5,6 +5,10 @@
   "private": true,
   "author": "Ruby Australia",
   "license": "MIT",
+  "engineStrict": true,
+  "engines": {
+    "node": "^14.17.3"
+  },
   "devDependencies": {
     "autoprefixer": "^10.3.1",
     "css-loader": "^6.2.0",

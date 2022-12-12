@@ -1,165 +1,118 @@
-- name: Vaidehi Joshi
-  title: The Cost of Data
-  bio: "[Vaidehi](http://www.vaidehi.com/) is a senior engineer at DEV, where she builds community and helps improve the software careers of millions. She enjoys building and breaking code, but loves creating empathetic engineering teams a whole lot more. She is the creator of basecs and baseds, two writing series exploring the fundamentals of computer science and distributed systems. She also co-hosts the Base.cs Podcast, and is a producer of the BaseCS and Byte Sized video series."
-  twitter: vaidehijoshi
-  pitch: The internet grows every day. Every second, one of us is making calls to an API, uploading images, and streaming the latest content. But what is the cost of this—is it free? This talk explores the reality of data, and what responsibilities we have as creators and consumers of tech.
-  type: invitation
-  video: https://www.youtube.com/watch?v=iEUPwHyIOBQ
-
-- name: Xavier Shay
-  title: My Experience With Experience
-  bio: "Xavier recently moved back home to Melbourne after spending eight years in San Francisco, mostly as an engineering leader at Square. Currently working at Ferocia building Up, a fancy new digital bank. He's scheming to introduce the RubyConf 5K tradition to Australia."
-  twitter: xshay
-  pitch: Becoming a senior contributor to your organization takes years. It's a process that is stubbornly hard to accelerate - it takes much more than drilling code katas! In this talk Xavier reflect on situations he's encountered over the last decade, and apply some academic models he's found useful to explain and learn from them. By doing so we can better understand the limits to learning and prepare ourselves to make the most out of our experience.
+- name: Samuel Williams
+  title: Asynchronous Rails
+  bio: ""
+  twitter: ioquatix
+  pitch: The fiber scheduler presents new opportunities for building scalable and concurrent Ruby programs. However, Rails has traditionally been a request-per-process or request-per-thread framework. We will give a brief introduction to the fiber scheduler, and look at how we are evolving Rails to take advantage of request-per-fiber using Falcon.
   type: invitation
 
-- name: Matthew Borden
-  title: "Murdering our Mongo Database (or how we migrated to a relational database)"
-  pitch: "This is the story of migrating large parts of an application’s data layer from MongoDB to MySQL with zero downtime using Ruby. We’ll cover designing schemas to represent untyped data, dual writing to both databases, migrating old data and staging the cutover to the new database."
-  bio: |
-    Matthew is a Site Reliability Engineer at Seer Medical maintaining a cloud based epilepsy diagnostics system. Previously, he was at Stile Education developing a science education platform for high school students. He enjoys the detective work of debugging issues in production, the delightful nature of writing Ruby and finding new ways to break systems early before they break in production.
-  twitter: matthewborden
-  video: https://www.youtube.com/watch?v=Knd3m2qh0o8
+- name: Tim Riley
+  title: Hanami 2 - New Framework, New You
+  bio: ""
+  twitter: timriley
+  pitch: Years in the making, Hanami 2.0 is out! Together we'll explore how Hanami works, what makes it special, and how it can unlock different modes of app development. Could this be the framework that gives you a new perspective on Ruby?
+  type: invitation
 
-- name: Elle Meredith
-  title: "Start your own engineering apprenticeship program"
-  pitch: "An apprenticeship program creates a continuous learning environment. It helps all your engineers understand the technology stack, culture, and shared vocabulary. Learn how to develop and implement a robust apprenticeship program that creates a solid pipeline of talent that will grow your business."
-  bio: |
-    Elle has been writing Ruby for over a decade. Currently at Blackmill, previously Development Director at thoughtbot New York. Elle believes in writing clean code, driven by automatic tests, with agile practices, an even work/life balance, and a respectful and inclusive team culture. Recently, she developed and ran an apprenticeship program for Qantas Hotels. When not immersed in the Ruby community, she is probably immersed in water, or lately in flour
-  twitter: aemeredith
+- name: Wiktoria Dalach
+  title: Security Doesn't Have To Be a Nightmare
+  bio: "Wiktoria Dalach is a Software/Security Engineer, a writer an a youtuber. She has been building apps for nearly a decade now. She has organized over 30 workshops for Webmuses, a community she co-founded in 2012. She's a RailsGirls mentor. Her interests focus on creativity, art and cybersecurity."
+  twitter: wdalach
+  pitch: How to build secure products? After 9 years of coding, I moved to the security team where I discovered a better, more manageable approach to security. From my talk, you will learn how to design with security in mind so that security isn't a blocker but an enabler for innovation.
+  type: invitation
 
-- name: Rob Howard
-  title: "A Message to the Stars"
-  pitch: |
-    In 1977, NASA launched the Voyager probes into space. Each carried a copper ‘vinyl’ record, with music, speech… and 115 images, all inscribed on the disc as audio!
-    In this talk we’ll pretend to be aliens; we’ll use Ruby to read the audio, recreate the images, and learn some space history too. 🚀✨
-  bio: |
-    Rob Howard is a web developer and figurative magpie. Having spent his career so far learning and mixing the nice parts from different programming languages, he'd like nothing better than to help technical communities learn more from each other, build better stuff, and have fun in the process.
-  twitter: damncabbage
-  video: https://www.youtube.com/watch?v=W5A7_TWd4QM
+- name: Pat Allan
+  title: Upgrading the Ruby Community
+  bio: "Pat is a gelato connoisseur, pancake chef, and recovering events organiser, but most often is focused on web and Ruby development. He has had the pleasure of working with many talented development teams as a Ruby contractor, and written open source Ruby libraries such as [Thinking Sphinx](https://github.com/pat/thinking-sphinx), [Gutentag](https://github.com/pat/gutentag), and [Combustion](https://github.com/pat/combustion). Lately he has been learning far too much about calendar protocols as part of releasing [Calm Calendar](https://calmcalendar.com)."
+  twitter: pat
+  pitch: From MINASWAN to Rails Camps, conference guides to Ruby Together, there's a long history of the Ruby community being wonderfully welcoming, thoughtful, fun and supportive. Let's make it even better, and discuss ways to have a persistent, positive impact in the wider tech industry and beyond.
+  type: invitation
 
-- name: Brandon Weaver
-  title: "Tales from the Ruby Grimoire"
-  pitch: |
-    The Grimoire is a collection of Ruby tricks. It’s a performance, a storybook adventure told by a particularly mad narrator weaving tales from the darkest corners of Ruby.
-    Give your audience an experience they won’t forget, and a group of mischievous little lemurs a chance to warm your hearts.
-  bio: |
-    Brandon is a Ruby Architect at Square working on the Frameworks team, defining standards for Ruby across the company. He's an artist who turned programmer who had a crazy idea to teach programming with cartoon lemurs and whimsy.
-  twitter: keystonelemur
-  video: https://www.youtube.com/watch?v=xRj5DWvdx6k
+- name: Igor Kapokov
+  title: Testing in Production - there is a better way
+  bio: ""
+  twitter: igasgeek
+  pitch: Testing in Production doesn't need to be scary. Come and find out how to prevent data corruption, increase deployment confidence and improve your DORA metrics.
+  type: invitation
+
+- name: Julián Pinzón Eslava
+  title: Rails Engines are dead. Long live Rails Engines - The path to scaling your app's architecture
+  bio: "I'm a Profesional Musician and Recording/Mixing engineer turned software engineer. I've worked with Ruby, Rails and HTML-over-the-wire applications for 8 years and I love it. When I'm not coding you can find me playing guitar, cooking or baking."
+  twitter: pinzonjulian
+  pitch: Rails provides a great set of defaults for starting your application but when your app and your team grow, it becomes difficult to answer questions like - Where does this go? Should I use service objects? Is this a micro service? Let's answer these questions using Rails Engines and Packwerk
+  type: invitation
+
+- name: Prakriti Mateti
+  title: REACT to Imposter Syndrome
+  bio: "Prakriti Mateti is a Director of Engineering. She cares deeply about diversity, inclusion, and equity in tech, code quality, engineering culture, and what makes teams work well together. Prakriti loves travelling and food, experimenting with different cuisines and cultures. She likes to read, conduct workshops, present talks, jumps off a plane or high building occasionally, and dreams of getting a pilot license some day and buying her own airplane (if she can overcome her Netflix addiction)."
+  twitter: PrakritiMateti
+  pitch: Do you worry you're not as smart as people around you? That you won't be able to keep up and they'll find out you don't deserve to be there? Learn 5 realistic steps to banish imposter syndrome and prevent it from getting in the way of your success, career progression, mental health, and happiness.
+  type: invitation
+
+- name: Shaila Man
+  title: Neurodiversity - A silent disability or a super power?!
+  bio: "Software engineer turned software engineer recruiter with Culture Amp. Single mother of three teenager daughters, a Weimaraner, a Ragdoll, and a very pathetic looking basil plant. Huge advocate for diversity, equity and inclusion, especially in the tech sector. Director of MusesCodeJS, which is a not-for-profit helping women and non-binary across Australia enter into engineering careers. ADHD and ASD positive, and will not stop talking about it! ...and finally known for having a keen interest in breeding rare breed chickens!"
+  twitter: silky098
+  pitch: Let's take a look at the evolutionary theory behind neurodiversity, and how your teams could benefit by actively including and supporting neurodiversity, instead of suppressing super powers with neurotypical expectations. Let's remove the stigma and talk more openly about thinking different!
+  type: invitation
+
+- name: Bianca Power
+  title: Ruby Makes My Brain Happy
+  bio: "After finishing a PhD in education and looking for something new I enrolled in a 6 month web dev bootcamp, fell in love with Ruby on Rails, and never looked back. In my day job I work in Ruby on Rails and React, and in my spare time I learn new things for fun."
+  twitter: 20by31
+  pitch: Why is Ruby more fun than JS or Python? Why might a JS dev disagree? Different people have different ways of processing the world - does that mean there's a language that 'best fits' your brain? Let's explore this idea, touching on learning theories and implications for getting people into coding.
+  type: invitation
+
+- name: Coraline Ada Ehmke
+  title: The World Set Free
+  bio: ""
+  twitter: coralineada
+  pitch: In an age of algorithmic manipulation, surveillance capitalism, privacy erosion, rising fascism, and impending climate disaster, it's easy to fall prey to despair, to grimly accept our slide into an inevitable dystopian future. But there is another way. The philosophy of techno-optimism challenges us to imagine alternate futures in which technology helps promote broad social good. This talk applies a literary lens, by way of an early 20th century "future history" by H. G. Wells, to explore our evolving relationship with world-changing technologies, and help us imagine-- and build toward-- a future we can all not just survive in, but truly thrive in.
+  type: invitation
 
 - name: Yuji Yokoo
-  title: "Developing your Dreamcast games with mruby"
-  bio: |
-    Yuji is a software developer based in Adelaide, South Australia. He was born and raised in Tokyo, Japan. He used to be a Windows desktop application developer until he discovered  Ruby.
-    He also enjoys console video games, Judo and Brazilian Jiu Jitsu.
-  pitch: |
-    What would you develop for Dreamcast using Ruby?
-    I have made an mruby environment for Dreamcast, with a small game and a presentation tool.
-    I will cover topics including how to get started, why Dreamcast, and some challenges I have faced.
-    This session will be delivered on a Dreamcast console.
+  title: Megaruby - mruby/c on Sega Mega Drive
+  bio: "Yuji is a software developer based in Adelaide, Australia. He is originally from Tokyo, Japan. He used to write Win32 desktop applications until he discovered Ruby."
   twitter: yujiyokoo
-  video: https://www.youtube.com/watch?v=ni-1x5Esa_o
+  pitch: With mruby/c, it's now possible to run Ruby code on Sega Mega Drive! I will show you how to get started, what makes Sega Mega Drive a great platform for mruby/c, and some of the challenges I faced. This presentation will be delivered on a Mega Drive unit.
+  type: invitation
 
-- name: Nancy Cai
-  title: "How much pressure can your app handle - Performance testing with Ruby"
-  pitch: "Have you ever considered how much pressure your app can handle before it explodes? Do you want to know what’s your app’s bottleneck? I’ll teach how to build a performance testing framework, in RUBY!"
-  video: https://www.youtube.com/watch?v=Q09wJm4P8Xw
-  bio: |
-    I learnt Economics and Interpreting and Translation in Uni. But after I graduated I ended up being a dental nurse for 2.5 years. Then I realised I need a career that has bright future so I started to learn software testing. I taught myself the necessary coding skills to became a QA engineer. Later under the mentorship of the other software engineers at Airtasker I became one of them as well. I love Lord of the Rings to death! For me it's the best movie ever! I also love to make fondant cakes and according to my co-workers they are amazing :)
+- name: Geoffrey Donaldson
+  title: Aussie Internet - How we learned to stop fearing the NBN and love the SPA
+  bio: "Geoffrey has been developing customer-centric apps for over 2 decades. As the CTO of Black Box Co, he is helping to empower people by simplifying data. While afk, you'll find him tracking down the best ramen in town, and trying to break escape room records with his partner in crime, Caitlin."
+  twitter: geoffreyd
+  pitch: Having performant queries means nothing if your customers can't load them. Slow internet is a reality for many Aussies, especially in rural areas. This is even more challenging when building interactive data-visualisation tools. Learn how we adopted modern web tech to deliver, even when NBN doesn't.
+  type: invitation
 
-- name: Adel Smee
-  title: "Inclusiveness - It's In Your Hands"
-  pitch: "The tech industry is a way from creating a safe, nurturing, inclusive culture. This talk will encourage you to get involved in diversity and inclusion work at your company in whatever way makes sense to you. It includes a few pointers to get you started and stories to motivate you along the way."
-  bio: |
-    Adel Smee is an Engineering Manager at Zendesk where, for the last four years, she has led innovation projects across a variety of technologies and grown a number of high performing teams. Her career in tech started with teaching people to code, before she decided to break out and get paid to do it commercially at a startup, then at Lonely Planet, and then at Zendesk. Along the way she realised that her main implicit motivator is delight in the success of others, which turns out to be a really useful quality in a manager. She is obsessed with what makes people (and herself) tick and loves to hear how she is getting it wrong so she can do better. Adel is an incurable optimist who believes that one day we’ll live in a world where everybody likes their job as much as she does, but isn’t naive enough to think that day is coming any time soon.
-  twitter: adelsmee
-  video: https://www.youtube.com/watch?v=6QKA7LtYiG0
+- name: Colleen Lavin
+  title: A People Pleasers Guide to Salary Negotiation
+  bio: ""
+  twitter: colleencodes
+  pitch: Negotiating salaries is hard. It's harder if you always want people to like you. If you fall behind your peers and don't reach your full earning potential. This talk demystifies negotiation and empowers the attendees to earn as much as their peers while staying true to their personality.
+  type: invitation
 
-- name: Julian Doherty
-  title: Escape Your Framework
-  pitch: Rails and other frameworks let you quickly throw together ideas to get up and running quickly. But as your app grows, this can limit what you can do. How can we set ourselves up to get the benefits that come from using a framework, while staying flexible and not beholden to it?
-  bio: |
-    Julian is a lead developer with 20 years experience, and has been hacking on Ruby for the last 13. Originally from Wellington, New Zealand, he now calls Melbourne home. Currently working at Envato, he has spent time at some of the biggest Rails shops in Australia. Julian also runs the Elixir Melbourne meetup group, and tries to spend as much time as possible inflicting functional programming paradigms on codebases he works in.
-  twitter:
+- name: Hilary Stohs-Krause
+  title: How to Make Your Website Not Ugly - Basic UX for Programmers
+  bio: "Hilary Stohs-Krause is a co-owner and senior software developer at [Ten Forward Consulting](http://tenforward.consulting) in Madison, WI, USA. She came to tech by way of childhood website-building (a Buffy the Vampire Slayer fansite, to be exact). Hilary volunteers regularly with several tech and community organisations, and co-runs madisonwomen.tech, a local Women in Tech group with ~2,000 members. She loves board games, garlic-stuffed olives and bourbon barrel-aged stouts. She'll read any fantasy or sci-fi she can get her hands on."
+  twitter: hilarysk
+  pitch: Ever found yourself inadvertently (perhaps unwillingly) straddling the line between design and code? Even with zero design training or background, there are numerous small, simple and practical ways you can vastly improve the look and usability of a website. Let's explore 10 of them together.
+  type: invitation
 
-- name: Paul Joe George and Do Xuan Thanh
-  title: "Build a voice based smart home using Sinatra & mruby/c"
-  pitch: "Are you tired of searching for the remote controls? We were in that category and that’s why we decided to replace remote controls and start using a smart assistant like Alexa instead. This talk will share knowledge on how to achieve this by using mruby/c and Sinatra."
-  bio: |
-    Paul and Thanh are software developers at Monstar Lab Inc.  Living in Matz's hometown, where Ruby is more than a programming language. They use Ruby purely for fun as Ruby is fun. Using Ruby only for traditional Ruby on Rails projects never satisfied them. For that reason they decided to experiment using mruby/c - a mini version of Ruby for one-chip microcontroller programming. Currently they are building more and more practical applications  to inspire other Ruby lovers to start using Ruby for IoT.
-  twitter: pauljoegeorge
+- name: Jason Charnes
+  title: The Rails Renaissance
+  bio: "Jason Charnes is a Staff Product Developer at Podia, co-host of the Remote Ruby podcast, and gardener of Job Boardly. Outside of programming, Jason enjoys programming, his family of 5, and Memphis basketball."
+  twitter: jmcharnes
+  pitch: Things have been bleak for Rails developers. People flocked to single page JavaScript applications and microservices. They mocked Rails for being slow and declared It dead. Yikes. But today, we're coming out of the dark ages into the Rails Renaissance. Let's look at, and celebrate, how we got here.
+  type: invitation
 
-- name: Ernesto Tagwerker
-  title: "Escaping The Tar Pit"
-  pitch: |
-    Nobody wants to inherit a project that reeks but here we are: Stuck in the tar pit. How can we get out? Could we have avoided it in the first place?
-    In this talk you will learn how to use a few, great Ruby gems that will guide you out of that sticky tar you are in.
-  bio: |
-    Ernesto is the Founder of Ombu Labs, a small software development company dedicated to building lean code. When he is not playing table tennis, he likes to maintain a few Ruby gems including database_cleaner and email-spec. He is passionate about writing less code, contributing to open source, and eating empanadas.
-  twitter: etagwerker
-  video: https://www.youtube.com/watch?v=ORb2UQ0_8zg
+- name: Rhiana Heppenstall
+  title: But, you don't look Autistic
+  bio: "Rhiana is a front end developer with a focus on accessible UX and design based in Melbourne. With a background in educational psychology Rhiana made the move to programming 10 years ago after attending a Rails Installfest. Combining her skill sets, Rhiana has a passion for making software the is easy for everyone to use and understand. When Rhiana isn't working you can often see her at a meetup or on the stage sharing her knowledge. Otherwise down at the local beach, park or zoo with her kids."
+  twitter: DevRhiana
+  pitch: Put yourself into the eyes of someone with autism... wait that's not how that goes, metaphors are hard. As someone who grew up in an autistic house, I knew we were different, but not why and what to do about it. After stumbling through life, here's what I'd like to share about autism. Wait, shoes!
+  type: invitation
 
-- name: Dana Sherson
-  title: "300x faster ruby"
-  pitch: |
-    Everything I’ve learned about how to make ruby go fast with examples from writing a spell-checking gem
-    I’ll go into how to improve your intuition about slow code, how to use and read the output of ruby-prof, rb-spy, Benchmark, Parallel, fast-ruby, etc, and the pitfalls to avoid when optimising code
-  bio: |
-    I’ve been writing ruby for about 11 years now and have thoroughly fallen in love with the language.
-    My other hobbies include writing bad fiction and taking bad photographs. I’m a kiwi and a vegetarian so you know I’m a terrible person.
-
-- name: Carmen Chung
-  title: "How To Write Tech Documentation That Will Save Your Career"
-  pitch: |
-    “Save your career?!” You’re probably thinking. “That’s a bit dramatic!” But so is someone saying “Thank goodness for these docs!” - and trust me, it does happen.
-    In this talk, I’ll share battle-tested tips for writing tech documentation that people will come back to, time and time again.
-  bio: |
-    Carmen is a software engineer, writer, and conference speaker, with a reputation for breaking people's code. Prior to her move into tech, she worked internationally as a corporate lawyer for almost seven years.
-
-    During the day, she is a software engineer at Valiant Finance, and at night, she's the host and producer of a YouTube channel called CodeFights, which teaches people how to solve coding questions in 15 minutes. In her spare time, she teaches flexibility classes, creates (often absurd) side projects, and fosters rescue dogs.
-  twitter: carmenhchung
-
-- name: Selena Small and Michael Milewski
-  title: "10X your teamwork through pair programming"
-  pitch: "A roller coaster journey of how to get the most out of pair-programming. Live on stage acting out highs, lows, do’s and don’ts of pair-programming. Laughs and tears are guaranteed as the audience connect on the difficulties and ultimately the rewards that can be reaped through effective pairing."
-  bio: |
-    Selena and Michael met through work at Fresho! but soon realised they are the kind of friends who would rather talk tech at a party. So they turned their party times into numerous hackathons, coding camps, and duo talks and workshops on topics around test driving software and pair programming.
-  twitter2: saramic
-  twitter: selenasmall88
-  video: https://www.youtube.com/watch?v=wujR20wFhNM
-
-- name: Lena Plaksina
-  title: "Just my type: things I learned from writing my own programming language"
-  pitch: "Do the principles on which a programming language is based shape the community that grows up around it? Heck yes. While writing my own programming language, I was reminded that language creates (not merely carries) meaning. I also learned that you don’t have to be Grace Hopper to write your own."
-  bio: |
-    Hi, I’m Lena. I’m an avid cat rescuer, learning enthusiast, and Rails Bridge Wellington organising committee member. I started out in design, but fell for web and software development during my first industry internship. I've been writing Ruby since 2015, and I'm currently learning other languages to expand my toolkit. I’m all about finding patterns, building and communicating software in a way that helps everyone understands it, and failing better – mistakes make me a better developer, and I believe that failing is just an opportunity to learn.
-    When I’m not coding, I’m watching movies with my 3-legged rescue cat Warlock, collecting enamel pins, and helping out and/or presenting at tech community events around town.
-  twitter: plaksina_lena
-  video: https://www.youtube.com/watch?v=3wSLmQWlixc
-
-- name: Liam McNally
-  title: "Working remotely and how to scale a remote first work environment"
-  pitch: "The talk will centre around: The benefits and challenges of working remotely How to hire remote workers How to build a remote first culture How to ensure that culture scales The benefits and challenges to a business of a remote first environment"
-  bio: |
-    Close to 10 years experience working in HR and Talent Acquisition and the last 3 years working and scaling remote businesses. I have worked in tech environments for the last 5 years and have become a huge advocate for remote working as a way of building and teams/businesses.
-  twitter: Liammcnallyrec
-  video: https://www.youtube.com/watch?v=Ljjy9IHNUWo
-
-- name: Jameson Hampton
-  title: "Walking A Mile In Your Users' Shoes"
-  pitch: "Developing apps for users in different demographics is inherently differently than developing apps just for ourselves and for other programmers. Understanding the needs of our users — and learning to foster empathy for them — is just as much of a skill as learning Rails, Java or PHP!"
-  bio: |
-    Jamey is a non-binary adventurer from Buffalo, NY who wishes they were immortal so they’d have time to visit every coffee shop in the world. They're a Rails engineer who has recently been taking the plunge into DevRel and a panelist on the Greater than Code podcast. In their spare time, they do advocacy in the transgender community, write comics and spend as much time as possible in the forest.
-  twitter: jameybash
-  video: https://www.youtube.com/watch?v=w-zYKo8f7nM
-
-- name: Mel Kaulfuss
-  bio: Mel is a product loving backend Software Engineer at Qantas Hotels. Discovering (to her surprise) she actually truly loved computers after attending a Railsgirls event in 2014, she embarked on a journey to software developer only to learn the road never ends. When she's not busy solving technical problems she's escaping to travel somewhere with her family, preferably outdoors; camping, hiking or skiing. Her favourite place to be is anywhere but home.
-  twitter: MelissaKaulfuss
-  type: mc
-
-- name: Caitlin Donaldson
-  bio: With a background in education and science communication, Caitlin loves learning new things and solving problems. She works as a Rails and Ember developer at [TwoRedKites](http://twitter.com/tworedkites) in Brisbane, and is a member of the Ruby Australia Committee.  When she isn’t writing code or organising community events, she loves to eat cheese pizza and binge watch videos of cute animals.
-  twitter: CaitlinPB
-  type: mc
+- name: Nate Berkopec
+  title: How Puma Works
+  bio: ""
+  twitter: nateberkopec
+  pitch: Have you ever wondered how Puma (or other webservers) work? Let's explore the internals of how a pre-forking webserver like Puma buffers and processes requests, what Rack is and how Puma uses it to interact with Rails, and how Puma's multi-threaded and parallel design works in practice.
+  type: invitation

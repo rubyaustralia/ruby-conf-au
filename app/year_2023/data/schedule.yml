@@ -24,6 +24,48 @@
   day: thursday
   start_time: 900
   end_time: 930
+- type: session
+  title: Session 1
+  speakers: ["Samuel Williams", "Tim Riley"]
+  day: thursday
+  start_time: 930
+  end_time: 1040
+- type: break
+  title: Morning Tea 🍵
+  description: ''
+  day: thursday
+  start_time: 1040
+  end_time: 1110
+- type: session
+  title: Session 2
+  speakers: ["Wiktoria Dalach", "Pat Allan"]
+  day: thursday
+  start_time: 1110
+  end_time: 1230
+- type: break
+  title: Lunch 🍽️
+  description: ''
+  day: thursday
+  start_time: 1230
+  end_time: 1330
+- type: session
+  title: Session 3
+  speakers: ["Igor Kapkov", "Julián Pinzón Eslava", "Prakriti Mateti"]
+  day: thursday
+  start_time: 1330
+  end_time: 1530
+- type: break
+  title: Afternoon Tea 🍰
+  description: ''
+  day: thursday
+  start_time: 1530
+  end_time: 1600
+- type: session
+  title: Session 4
+  speakers: ["Shaila Man", "Bianca Power"]
+  day: thursday
+  start_time: 1600
+  end_time: 1710
 - type: break
   title: Close
   description: ''
@@ -37,6 +79,48 @@
   day: friday
   start_time: 800
   end_time: 900
+- type: session
+  title: Session 1
+  speakers: ["Coraline Ada Ehmke ", "Yuji Yokoo"]
+  day: friday
+  start_time: 900
+  end_time: 1040
+- type: break
+  title: Morning Tea 🍵
+  description: ''
+  day: friday
+  start_time: 1040
+  end_time: 1115
+- type: session
+  title: Session 2
+  speakers: ["Geoffrey Donaldson", "Colleen Lavin"]
+  day: friday
+  start_time: 1115
+  end_time: 1230
+- type: break
+  title: Lunch 🍽️
+  description: ''
+  day: friday
+  start_time: 1230
+  end_time: 1330
+- type: session
+  title: Session 3
+  speakers: ["Hilary Stohs-Krause", "Jason Charnes"]
+  day: friday
+  start_time: 1330
+  end_time: 1530
+- type: break
+  title: Afternoon Tea 🍰
+  description: ''
+  day: friday
+  start_time: 1530
+  end_time: 1600
+- type: session
+  title: Session 4
+  speakers: ["Rhiana Heppenstall", "Nate Berkopec"]
+  day: friday
+  start_time: 1600
+  end_time: 1710
 - type: break
   title: Closing Remarks 🎤
   description: ''

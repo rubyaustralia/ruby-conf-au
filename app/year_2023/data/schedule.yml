@@ -81,7 +81,7 @@
   end_time: 900
 - type: session
   title: Session 1
-  speakers: ["Coraline Ada Ehmke ", "Yuji Yokoo"]
+  speakers: ["Coraline Ada Ehmke", "Yuji Yokoo"]
   day: friday
   start_time: 900
   end_time: 1040

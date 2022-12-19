@@ -4,9 +4,6 @@
       - names = Array(names)
       - speaker = @speakers.find(name: names.first)
       .speaker.d-flex.flex-row
-        .col-lg-3.col-md-4.mb-3.flex
-          .avatar.schedule-avatar
-            %img{ src: speaker.avatar_filename }
         .col-lg-12.event-container
           .info
             %h2.timeline-title= speaker.title

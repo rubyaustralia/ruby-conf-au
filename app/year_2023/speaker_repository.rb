@@ -6,7 +6,7 @@ module RubyConf
         end
   
         def find(name:)
-          speakers.find do |speaker|
+          speakers.find( proc { raise StandardError.new("Speaker #{name} could not be found") }) do |speaker|
             speaker.name.downcase == name.downcase
           end
         end

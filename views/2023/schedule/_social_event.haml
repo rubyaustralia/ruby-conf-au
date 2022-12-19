@@ -13,14 +13,5 @@
         %a{ href: event.location_link, target: '_blank' }
           %i.fa.fa-map-marker-alt
           = event.location_text
-      - if event.ticketed?
-        %p
-          %a{ href: event.ticket_link, target: '_blank' } Purchase a ticket
-      - elsif event.sponsor_link && event.sponsor_link.length > 0
-        %p.sponsor
-          Sponsored by
-          %br
-          %a{ href: event.sponsor_link, target: '_blank' }
-            %img{ src: "/2023/images/sponsors/#{event.sponsor}.png", width: '100%'}
 
 

@@ -12,7 +12,7 @@ Then you can run the following commands:
 $ gem install bundler
 $ bundle install
 $ yarn install
-$ yarn run webpack
+$ NODE_OPTIONS=--openssl-legacy-provider yarn build
 ```
 
 Then start the app with:
@@ -26,7 +26,7 @@ $ foreman start
 Assets are managed via Webpack, with each year in a separate directory within /assets. To compile:
 
 ```
-$ yarn run webpack
+$ NODE_OPTIONS=--openssl-legacy-provider yarn run webpack
 ```
 
 At this point in time there's no distinction between development and production asset generation, and there's no live-rebuilding of assets. Both of these would be nice though.

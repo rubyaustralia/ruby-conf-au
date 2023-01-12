@@ -26,7 +26,7 @@
   end_time: 930
 - type: session
   title: Session 1
-  speakers: ["Samuel Williams", "Tim Riley"]
+  speakers: ["Samuel Williams", "Yuji Yokoo"]
   day: thursday
   start_time: 930
   end_time: 1040
@@ -38,7 +38,7 @@
   end_time: 1110
 - type: session
   title: Session 2
-  speakers: ["Wiktoria Dalach", "Pat Allan"]
+  speakers: ["Hilary Stohs-Krause", "Pat Allan"]
   day: thursday
   start_time: 1110
   end_time: 1230
@@ -50,7 +50,7 @@
   end_time: 1330
 - type: session
   title: Session 3
-  speakers: ["Igor Kapkov", "Julián Pinzón Eslava", "Prakriti Mateti"]
+  speakers: ["Wiktoria Dalach", "Julián Pinzón Eslava", "Prakriti Mateti"]
   day: thursday
   start_time: 1330
   end_time: 1530
@@ -62,7 +62,7 @@
   end_time: 1600
 - type: session
   title: Session 4
-  speakers: ["Shaila Man", "Bianca Power"]
+  speakers: ["Shaila Man", "Nate Berkopec"]
   day: thursday
   start_time: 1600
   end_time: 1710
@@ -73,6 +73,8 @@
   start_time: 1730
   end_time: 1730
 
+
+
 - type: break
   title: Registration and Coffee 🎟️
   description: ""
@@ -81,7 +83,7 @@
   end_time: 900
 - type: session
   title: Session 1
-  speakers: ["Coraline Ada Ehmke", "Yuji Yokoo"]
+  speakers: ["Coraline Ada Ehmke", "Jemma Issroff"]
   day: friday
   start_time: 900
   end_time: 1040
@@ -93,7 +95,7 @@
   end_time: 1115
 - type: session
   title: Session 2
-  speakers: ["Geoffrey Donaldson", "Colleen Lavin"]
+  speakers: ["Fiona McCawley", "Tim Riley", "Colleen Lavin"]
   day: friday
   start_time: 1115
   end_time: 1230
@@ -105,7 +107,7 @@
   end_time: 1330
 - type: session
   title: Session 3
-  speakers: ["Hilary Stohs-Krause", "Jason Charnes"]
+  speakers: ["Geoffrey Donaldson", "Igor Kapkov", "Jason Charnes"]
   day: friday
   start_time: 1330
   end_time: 1530
@@ -117,7 +119,7 @@
   end_time: 1600
 - type: session
   title: Session 4
-  speakers: ["Rhiana Heppenstall", "Nate Berkopec"]
+  speakers: ["Rhiana Heppenstall", "Bianca Power"]
   day: friday
   start_time: 1600
   end_time: 1710
@@ -129,7 +131,7 @@
   end_time: 1730
 
 - type: social_event
-  title: Closing Games Night 🎲
+  title: Closing Night
   description: |
     Once we wrap up the conference, we'll continue the conversations just up the road at the Boat Builders Yard. Food and Drinks are included so come down and hang out with Ruby friends new and old.
   day: friday

@@ -3,7 +3,7 @@
     - event.speakers.each do |names|
       - names = Array(names)
       - speaker = @speakers.find(name: names.first)
-      .speaker.d-flex.flex-row
+      .speaker.d-flex.flex-row.w-100
         .col-lg-12.event-container
           .info
             %h2.timeline-title= speaker.title

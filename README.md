@@ -8,25 +8,25 @@ It is recommended that you use [asdf](https://asdf-vm.com/) to install the versi
 
 Then you can run the following commands:
 
-```
-$ gem install bundler
-$ bundle install
-$ yarn install
-$ yarn run webpack
+```bash
+gem install bundler
+bundle install
+yarn install
+NODE_OPTIONS=--openssl-legacy-provider yarn build
 ```
 
 Then start the app with:
 
-```
-$ foreman start
+```bash
+foreman start
 ```
 
 ### Assets
 
 Assets are managed via Webpack, with each year in a separate directory within /assets. To compile:
 
-```
-$ yarn run webpack
+```bash
+NODE_OPTIONS=--openssl-legacy-provider yarn run webpack
 ```
 
 At this point in time there's no distinction between development and production asset generation, and there's no live-rebuilding of assets. Both of these would be nice though.
@@ -39,7 +39,7 @@ The site is automatically deployed when master is pushed to Github.
 
 Copy previous year folders e.g. :
 
-```
+```bash
 app/year_2020
 assets/2020
 views/2020

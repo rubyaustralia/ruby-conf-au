@@ -89,8 +89,8 @@
   title: Morning Tea 🍵
   description: ''
   day: friday
-  start_time: 1040
-  end_time: 1115
+  start_time: 1030
+  end_time: 1100
 - type: session
   title: Session 2
   speakers: ["Fiona McCawley", "Tim Riley", "Colleen Lavin"]

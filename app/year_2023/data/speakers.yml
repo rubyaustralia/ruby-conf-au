@@ -177,14 +177,22 @@
       This talk demystifies negotiation and empowers the attendees to earn as much as their peers while staying true to their personality.
   type: invitation
 
-- name: Jason Charnes
-  title: The Rails Renaissance
-  bio: "Jason is a Ruby developer in humid Memphis, TN. He is a Staff Product Developer at Podia, a host on the Remote Ruby podcast, and an organizer of Southeast Ruby. Outside of writing Ruby, Jason spends his time learning how to parent and watching Memphis basketball."
-  twitter: jmcharnes
+- name: Sameera Gayan
+  title: Mentoring - For me or not for me, that is the question
+  bio: "After being a ruby developer for 12+ years, I've now moved to looking after developers (Engineering Manager). I still like to get my hands dirty with code and have many unfinished projects I started. Even though I'm secretly in love with how good VS code is, I'm painstakingly sticking with my VIM setup I built over time."
+  twitter: 
   pitch: |
-      Things have been bleak for Rails developers. People flocked to single-page JavaScript applications and microservices. They mocked Rails for being slow and declared It dead. Yikes.
+      Mentoring - For me or not for me, that is the question! 
 
-      Today, we're coming out of the dark ages into the Rails Renaissance. Let's look at, and celebrate, how we got here.
+      "Tell me and I forget, 
+      teach me and I remember, 
+      involve me and I learn."
+
+      Xunzi (Xun Kuang)
+
+      From the day you start as a Developer to the point you achieve your highest career goal your journey is about transformation and that like anything else relies on HELP. Being a good mentor/community contributor will change the lives of others in ways you never even think of.
+ 
+      Let me share a thing or two I learnt about being a mentor and helping the community over the years.
   type: invitation
 
 - name: Rhiana Heppenstall

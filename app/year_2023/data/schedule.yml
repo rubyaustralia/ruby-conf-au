@@ -5,8 +5,8 @@
   day: wednesday
   start_time: 1900
   end_time: 2130
-  sponsor: ' '
-  sponsor_link: '#'
+  sponsor: 'Assembly Four'
+  sponsor_link: 'https://assemblyfour.com/'
   image: /2023/images/kingpin.jpg
   ticket_link: ''
   location_text: Kingpin is located at Ground floor, Crown Melbourne - 8 Whiteman Street, Melbourne
@@ -135,8 +135,8 @@
   day: friday
   start_time: 1730
   end_time: 2130
-  sponsor: ' '
-  sponsor_link: '#'
+  sponsor: 'HotDoc'
+  sponsor_link: 'https://hotdoc.com.au/'
   image: /2023/images/boatbuilders-yard.jpg
   ticket_link: ''
   location_text: Boat Builders Yard, 23 S Wharf Promenade, South Wharf, Melbourne

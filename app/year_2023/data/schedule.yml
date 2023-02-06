@@ -1,7 +1,7 @@
 - type: social_event
-  title: Welcome Party 💃
+  title: Welcome Games Night - Sponsored by Assembly Four  🎮🕹🎈
   description: |
-    To kick things off we have organised unlimited games at Kingpin Crown for 2-hours to celebrate the start of the conference and the Ruby Community. Finger Food and drinks will be provided.
+    To kick things off, we have organised unlimited games at Kingpin Crown for 2 hours to celebrate the start of the conference and the Ruby Community. Finger food and drinks will be provided.
   day: wednesday
   start_time: 1900
   end_time: 2130
@@ -13,7 +13,7 @@
   location_link: https://g.page/KingpinBowlingCrown?share
 
 - type: break
-  title: Registration and Coffee 🎟️
+  title: Registration and Coffee 🎟️ ☕️
   description: ""
   day: thursday
   start_time: 800
@@ -129,7 +129,7 @@
   end_time: 1730
 
 - type: social_event
-  title: Closing Night
+  title: Closing Cocktail Party - Sponsored By HotDoc 🎉
   description: |
     Once we wrap up the conference, we'll continue the conversations just up the road at the Boat Builders Yard. Food and Drinks are included so come down and hang out with Ruby friends new and old.
   day: friday

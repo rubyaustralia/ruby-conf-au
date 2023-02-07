@@ -225,3 +225,13 @@
       
       I'm hoping by sharing my experiences you'll be able to gain some insight on how to help others, or yourself if you identify with what I've been saying a little too much.
   type: invitation
+
+- name: Michael Milewski
+  bio: "Michael is a developer keen on the people side of things. He loves pairing, and in particular with people new to writing software. He especially likes driving software out with tests and directing the evolution of the design. In his spare time he does a bit of running, camping and watching any one of his 4 kids excel above anything he ever managed to achieve."
+  twitter: saramic
+  type: mc
+
+- name: Selena Small
+  bio: "Selena is a full-stack software developer at Fresho! in Melbourne Australia. As a self-taught coder, she has become particularly passionate about testing and writing beautiful code. Coming from a management background, her late arrival to the software industry puts her in a perfect position to understand and help others learn to code. In her spare time, she is a nak muay ying, professional kickboxer."
+  twitter: selenasmall88 
+  type: mc

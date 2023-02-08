@@ -1,21 +1,18 @@
 .container-full
   .introduction
     .container
-      %h4 Our amazing speakers for our 2023 conference!
+      %h4 Our amazing speakers for RubyConf AU 2023:
       %h4 &nbsp;
-  .all-speakers.all
-    - @speakers.via_invite.each do |speaker|
-      = haml :'2023/_speaker', locals: { speaker: speaker }
+      .all-speakers.invitation
+        - @speakers.via_invite.each do |speaker|
+          = haml :'2023/_speaker', locals: { speaker: speaker }
+      .all-speakers.cfp
+        - @speakers.via_cfp.each do |speaker|
+          = haml :'2023/_speaker', locals: { speaker: speaker }
 
-    - @speakers.via_cfp.shuffle.each do |speaker|
-      = haml :'2023/_speaker', locals: { speaker: speaker }
-
-.container-full
-  .introduction
     .container
       %h4 And our superlative event MCs:
       %p These two presenters were with us at our last RubyConf AU back in 2020, and this year they have agreed to host! We know they will make everyone feel welcome while they make sure we stay on track, we know what's going on, and who's who on the stage!
-
-  .all-speakers.all
-    - @speakers.mcs.shuffle.each do |speaker|
-      = haml :'2023/_speaker', locals: { speaker: speaker }
+      .all-mcs
+        - @speakers.mcs.each do |speaker|
+          = haml :'2023/_speaker', locals: { speaker: speaker }

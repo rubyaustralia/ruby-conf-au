@@ -38,7 +38,7 @@
   end_time: 1110
 - type: session
   title: Session 2
-  speakers: ["Hilary Stohs-Krause", "Pat Allan"]
+  speakers: ["Shaila Man", "Pat Allan"]
   day: thursday
   start_time: 1110
   end_time: 1230
@@ -62,7 +62,7 @@
   end_time: 1600
 - type: session
   title: Session 4
-  speakers: ["Shaila Man", "Nate Berkopec"]
+  speakers: ["Hilary Stohs-Krause", "Nate Berkopec"]
   day: thursday
   start_time: 1600
   end_time: 1710
@@ -144,13 +144,13 @@
 - type: social_event
   title: Morning Coffee
   description: |
-    If you're still in town on Saturday morning, come down to MPavillion in the Queen Victoria Gardens (opposite the National Gallery Victoria) and relax with a morning coffee (or beverage / snack of your choice) and say goodbye for 2023. 
+    If you're still in town on Saturday morning, come down to MPavillion in the Queen Victoria Gardens (opposite the National Gallery Victoria) and relax with a morning coffee (or beverage / snack of your choice) and say goodbye for 2023.
 
-    This is an unstructured event open to all conference attendees, their guests and the general public. No coffee included. 
+    This is an unstructured event open to all conference attendees, their guests and the general public. No coffee included.
 
     Saturday 18th February, 10:30am-11:30am
 
-    https://mpavilion.org/visit/qvg/ 
+    https://mpavilion.org/visit/qvg/
   day: Saturday
   start_time: 1030
   end_time: 1130

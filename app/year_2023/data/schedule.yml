@@ -140,3 +140,19 @@
   ticket_link: ''
   location_text: Boat Builders Yard, 23 S Wharf Promenade, South Wharf, Melbourne
   location_link: https://goo.gl/maps/Bkm4WnC68h4iGCTD7
+
+- type: social_event
+  title: Morning Coffee
+  description: |
+    If you're still in town on Saturday morning, come down to MPavillion in the Queen Victoria Gardens (opposite the National Gallery Victoria) and relax with a morning coffee (or beverage / snack of your choice) and say goodbye for 2023. 
+
+    This is an unstructured event open to all conference attendees, their guests and the general public. No coffee included. 
+
+    Saturday 18th February, 10:30am-11:30am
+
+    https://mpavilion.org/visit/qvg/ 
+  day: Saturday
+  start_time: 1030
+  end_time: 1130
+  location_text: MPavillion in the Queen Victoria Gardens
+  location_link: https://goo.gl/maps/opb6WKFPMrMJFYZCA

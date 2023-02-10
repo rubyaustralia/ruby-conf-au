@@ -154,5 +154,9 @@
   day: Saturday
   start_time: 1030
   end_time: 1130
+  sponsor: ''
+  sponsor_link: ''
+  image: ''
+  ticket_link: ''
   location_text: MPavillion in the Queen Victoria Gardens
   location_link: https://goo.gl/maps/opb6WKFPMrMJFYZCA

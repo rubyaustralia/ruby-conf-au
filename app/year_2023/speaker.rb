@@ -55,11 +55,11 @@ module RubyConf
       end
 
       def bio
-        markdown_to_html data['bio']
+        markdown_to_html data['bio'], link_attributes: { target: "_blank" }
       end
 
       def pitch
-        markdown_to_html data['pitch']
+        markdown_to_html data['pitch'], link_attributes: { target: "_blank" }
       end
 
       def has_twitter?
@@ -98,14 +98,14 @@ module RubyConf
 
       attr_reader :data
 
-      def markdown
-        @markdown ||= Redcarpet::Markdown.new(Redcarpet::Render::HTML.new)
+      def markdown(link_attributes: {})
+        Redcarpet::Markdown.new(Redcarpet::Render::HTML.new(link_attributes: link_attributes))
       end
 
-      def markdown_to_html(raw)
+      def markdown_to_html(raw, link_attributes: {})
         return nil if raw.nil?
 
-        markdown.render(raw).strip.html_safe
+        markdown(link_attributes: link_attributes).render(raw).strip.html_safe
       end
     end
   end

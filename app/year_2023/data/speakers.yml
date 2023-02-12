@@ -145,14 +145,14 @@
   pitch: Having performant queries means nothing if your customers can't load them. Slow internet is a reality for many Aussies, especially in rural areas. This is even more challenging when building interactive data-visualisation tools. Learn how we adopted modern web tech to deliver, even when NBN doesn't.
 
 - name: Igor Kapkov
-  title: Testing in Production - there is a better way
-  bio: "Igor is the founder of Refactorly, a developer tool that helps teams move faster and with confidence. He is an experienced CTO who worked with governments, fintech, e-commerce and social networks, helping them scale. Former Homebrew Core Maintainer and active open-source contributor. Finalist of Finnies 2022 in 'Emerging Fintech Leader of the Year'."
+  title: "Testing in Production: there is a better way"
+  bio: '[Igor](https://igas.me/) ([he/him](https://pronouns.website/he/)) is the founder of [Visible Light](https://visiblelight.io/), a developer tool that helps teams move faster and with confidence. He is an experienced CTO who worked with governments, fintech, e-commerce and social networks, helping them scale. Former Homebrew Core Maintainer and active open-source contributor. Finalist of Finnies 2022 in "Emerging Fintech Leader of the Year".'
   twitter: igasgeek
-  pitch: Testing in Production is a common CI/CD practice nowadays. However, feature flags and canary deployments can only get you so far. This talk will walk you through the Branch By Abstraction pattern and the tools to give you confidence when shipping your code to production because we should be able to move fast and break nothing.
+  pitch: Testing in Production is a common CI/CD practice nowadays. However, feature flags and canary deployments can only get you so far. This talk will walk you through the [Branch By Abstraction](https://martinfowler.com/bliki/BranchByAbstraction.html) pattern and the tools to give you confidence when shipping your code to production because we should be able to move fast and break nothing.
 
 - name: Sameera Gayan
   title: Mentoring - For me or not for me, that is the question
-  bio: "After being a ruby developer for 12+ years, I've now moved to looking after developers (Engineering Manager). I still like to get my hands dirty with code and have many unfinished projects I started. Even though I'm secretly in love with how good VS code is, I'm painstakingly sticking with my VIM setup I built over time."
+  bio: "After being a Ruby developer for 12+ years, I've now moved to looking after developers (Engineering Manager). I still like to get my hands dirty with code and have many unfinished projects I started. Even though I'm secretly in love with how good VS Code is, I'm painstakingly sticking with my VIM setup I built over time."
   twitter: sameera207
   pitch: |
       Mentoring - For me or not for me, that is the question!
@@ -162,7 +162,7 @@
       involve me and I learn."
       &ndash; Xunzi (Xun Kuang)
 
-      From the day you start as a Developer to the point you achieve your highest career goal your journey is about transformation and that like anything else relies on HELP. Being a good mentor/community contributor will change the lives of others in ways you never even think of.
+      From the day you start as a Developer, to the point you achieve your highest career goal your journey is about transformation and that like anything else relies on HELP. Being a good mentor/community contributor will change the lives of others in ways you never even think of.
 
       Let me share a thing or two I learnt about being a mentor and helping the community over the years.
 

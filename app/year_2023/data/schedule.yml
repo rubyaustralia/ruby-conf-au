@@ -50,7 +50,7 @@
   end_time: 1330
 - type: session
   title: Session 3
-  speakers: ["Wiktoria Dalach", "Julián Pinzón Eslava", "Prakriti Mateti"]
+  speakers: ["Rhiana Heppenstall", "Julián Pinzón Eslava", "Prakriti Mateti"]
   day: thursday
   start_time: 1330
   end_time: 1530
@@ -117,7 +117,7 @@
   end_time: 1600
 - type: session
   title: Session 4
-  speakers: ["Rhiana Heppenstall", "Bianca Power"]
+  speakers: ["Wiktoria Dalach", "Bianca Power"]
   day: friday
   start_time: 1600
   end_time: 1710

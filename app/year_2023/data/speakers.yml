@@ -40,14 +40,35 @@
 
     To understand what we can (and perhaps should) do, we must understand what has been done already: this session will cast a critical eye on our industry, pointing out missteps and missed perspectives, as well as looking at what has been done elsewhere to make lasting, positive changes. With that foundation set, we will then talk through several recommendations on what meaningful action for software developers can be, as well as possible guidelines to help each other critique, share and refactor our actions to have even greater impact.
 
-- name: Wiktoria Dalach
-  title: Security Doesn't Have To Be a Nightmare
-  bio: "Wiktoria Dalach is a Software/Security Engineer, a writer an a youtuber. She has been building apps for nearly a decade now. She has organized over 30 workshops for Webmuses, a community she co-founded in 2012. She's a RailsGirls mentor. Her interests focus on creativity, art and cybersecurity."
-  twitter: wdalach
+- name: Rhiana Heppenstall
+  title: But, you don't look Autistic
+  bio: "Rhiana is a front end developer with a focus on accessible UX and design based in Melbourne. With a background in educational psychology Rhiana made the move to programming 10 years ago after attending a Rails Installfest. Combining her skill sets, Rhiana has a passion for making software the is easy for everyone to use and understand. When Rhiana isn't working you can often see her at a meetup or on the stage sharing her knowledge. Otherwise down at the local beach, park or zoo with her kids."
+  twitter: DevRhiana
   pitch: |
-      How to build secure products? After 9 years of coding, I moved to the security team where I discovered a better, more manageable approach to security.
+      Put yourself into the eyes of someone with autism… wait that's not how that goes, metaphors are hard. As someone who grew up in an autistic house, I knew we were different, but not why and what to do about it. After stumbling through life, here's what I'd like to share about autism. Wait, shoes!
 
-      From my talk, you will learn how to design with security in mind so that security isn't a blocker but an enabler for innovation.
+      An in depth look into autism and how people with autism function in the workplace.
+
+      This talk goes through:
+
+      Personal history and experiences
+
+      * I've been diagnosed for 15 years and majored psychology at university to learn more
+
+      How autism is diagnosed including criteria and levels of autism
+
+      * Including the history of autism
+      * Debunking some common myths and stereotypes
+
+      Strengths and weaknesses
+
+      * Real life min/maxing
+
+      Workplace consideration and accommodations
+
+      * Asking people what they need and believing them helps everyone
+
+      I'm hoping by sharing my experiences you'll be able to gain some insight on how to help others, or yourself if you identify with what I've been saying a little too much.
 
 - name: Julián Pinzón Eslava
   title: All you need is Rails (Engines) - Compartmentalising your Monolith
@@ -166,35 +187,14 @@
 
       Let me share a thing or two I learnt about being a mentor and helping the community over the years.
 
-- name: Rhiana Heppenstall
-  title: But, you don't look Autistic
-  bio: "Rhiana is a front end developer with a focus on accessible UX and design based in Melbourne. With a background in educational psychology Rhiana made the move to programming 10 years ago after attending a Rails Installfest. Combining her skill sets, Rhiana has a passion for making software the is easy for everyone to use and understand. When Rhiana isn't working you can often see her at a meetup or on the stage sharing her knowledge. Otherwise down at the local beach, park or zoo with her kids."
-  twitter: DevRhiana
+- name: Wiktoria Dalach
+  title: Security Doesn't Have To Be a Nightmare
+  bio: "Wiktoria Dalach is a Software/Security Engineer, a writer an a youtuber. She has been building apps for nearly a decade now. She has organized over 30 workshops for Webmuses, a community she co-founded in 2012. She's a RailsGirls mentor. Her interests focus on creativity, art and cybersecurity."
+  twitter: wdalach
   pitch: |
-      Put yourself into the eyes of someone with autism… wait that's not how that goes, metaphors are hard. As someone who grew up in an autistic house, I knew we were different, but not why and what to do about it. After stumbling through life, here's what I'd like to share about autism. Wait, shoes!
+      How to build secure products? After 9 years of coding, I moved to the security team where I discovered a better, more manageable approach to security.
 
-      An in depth look into autism and how people with autism function in the workplace.
-
-      This talk goes through:
-
-      Personal history and experiences
-
-      * I've been diagnosed for 15 years and majored psychology at university to learn more
-
-      How autism is diagnosed including criteria and levels of autism
-
-      * Including the history of autism
-      * Debunking some common myths and stereotypes
-
-      Strengths and weaknesses
-
-      * Real life min/maxing
-
-      Workplace consideration and accommodations
-
-      * Asking people what they need and believing them helps everyone
-
-      I'm hoping by sharing my experiences you'll be able to gain some insight on how to help others, or yourself if you identify with what I've been saying a little too much.
+      From my talk, you will learn how to design with security in mind so that security isn't a blocker but an enabler for innovation.
 
 - name: Bianca Power
   title: Ruby Makes My Brain Happy

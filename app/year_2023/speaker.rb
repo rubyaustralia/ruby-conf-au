@@ -78,6 +78,14 @@ module RubyConf
         data["twitter2"] && data["twitter2"].strip
       end
 
+      def has_mastodon?
+        !mastodon.nil? && mastodon.length > 0
+      end
+
+      def mastodon
+        data["mastodon"] && data["mastodon"].strip
+      end
+
       def is_keynote?
         data["pitch"].strip.downcase == 'keynote' || data["pitch"].nil?
       end

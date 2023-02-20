@@ -10,9 +10,10 @@
       - if speaker.pitch
         %h3= speaker.title
         .quote{ class: "highlight"}= speaker.pitch
-        - if speaker.has_video?
-          .video
-            %a{ href: speaker.video, target: '_blank' } 🎥 Watch Video
+      - if speaker.has_video?
+        .video
+          %a{ href: speaker.video, target: '_blank' } 🎥 Watch Video
+      %p.spacer
       .bio
         %h4.speaker-bio.mt-2
           About

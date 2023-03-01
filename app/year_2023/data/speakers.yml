@@ -4,7 +4,7 @@
   twitter: ioquatix
   pitch: The fiber scheduler presents new opportunities for building scalable and concurrent Ruby programs. However, Rails has traditionally been a request-per-process or request-per-thread framework. We will give a brief introduction to the fiber scheduler, and look at how we are evolving Rails and Ruby in general to take advantage of request-per-fiber using Falcon.
 #   type: invitation
-#   video: TBA
+  video: https://www.youtube.com/watch?v=9tOMD491mFY&list=PL9_jjLrTYxc0s-zA-RxRyb62tIcugZyG3&index=24
 
 - name: Yuji Yokoo
   title: Megaruby - mruby/c on Sega Mega Drive

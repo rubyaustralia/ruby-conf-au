@@ -102,6 +102,14 @@ module RubyConf
         data["video"]
       end
 
+      def has_notes?
+        !notes.nil? && notes.length > 0
+      end
+
+      def notes
+        markdown_to_html data["notes"]
+      end
+
       private
 
       attr_reader :data

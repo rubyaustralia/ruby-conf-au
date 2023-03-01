@@ -15,7 +15,8 @@
           %a{ href: speaker.video, target: '_blank' } 🎥 Watch Video
       - if speaker.has_notes?
         .notes
-          %a{ href: speaker.notes, target: '_blank' } 📓 Talk Notes
+          📓 Talk Notes:
+          = speaker.notes
       %p.spacer
       .bio
         %h4.speaker-bio.mt-2

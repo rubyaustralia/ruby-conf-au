@@ -5,6 +5,7 @@
   pitch: The fiber scheduler presents new opportunities for building scalable and concurrent Ruby programs. However, Rails has traditionally been a request-per-process or request-per-thread framework. We will give a brief introduction to the fiber scheduler, and look at how we are evolving Rails and Ruby in general to take advantage of request-per-fiber using Falcon.
 #   type: invitation
   video: https://www.youtube.com/watch?v=9tOMD491mFY&list=PL9_jjLrTYxc0s-zA-RxRyb62tIcugZyG3&index=24
+#   notes: |
 
 - name: Yuji Yokoo
   title: Megaruby - mruby/c on Sega Mega Drive
@@ -17,6 +18,7 @@
 
       This presentation will be delivered on a Mega Drive unit.
   video: https://www.youtube.com/watch?v=sz8tmrQtAUE&list=PL9_jjLrTYxc0s-zA-RxRyb62tIcugZyG3&index=1
+#   notes: |
 
 - name: Shaila Man
   title: Neurodiversity - Shifting the Paradigm from Silent Disability to Super Power
@@ -31,6 +33,8 @@
 
       Let's encourage more open conversations, and educate ourselves and our peers. Neurodiversity is not a disability - it's a super power from being wired differently. The benefits can be incredible when we become inclusive!
   video: https://www.youtube.com/watch?v=CsoB-kP3-J0&list=PL9_jjLrTYxc0s-zA-RxRyb62tIcugZyG3&index=4
+  notes: |
+      [Presentation (.pdf)](/2023/pdfs/Shaila%20Man%20-%20Neurodiversity%20Super%20Powers.pdf) | [Original file](https://drive.google.com/file/d/1lwJ5qm6FNqxL0swEQIy93MMd-9FLYLPT/)
 
 - name: Pat Allan
   title: Upgrading the Ruby Community
@@ -43,6 +47,8 @@
 
     To understand what we can (and perhaps should) do, we must understand what has been done already: this session will cast a critical eye on our industry, pointing out missteps and missed perspectives, as well as looking at what has been done elsewhere to make lasting, positive changes. With that foundation set, we will then talk through several recommendations on what meaningful action for software developers can be, as well as possible guidelines to help each other critique, share and refactor our actions to have even greater impact.
   video: https://www.youtube.com/watch?v=ml9wma3WL8c&list=PL9_jjLrTYxc0s-zA-RxRyb62tIcugZyG3&index=2
+  notes: |
+    [Notes and resources](https://gist.github.com/pat/34cabde895e7875206c02c98b7833191)
 
 - name: Rhiana Heppenstall
   title: But, you don't look Autistic
@@ -74,6 +80,8 @@
 
       I'm hoping by sharing my experiences you'll be able to gain some insight on how to help others, or yourself if you identify with what I've been saying a little too much.
   video: https://www.youtube.com/watch?v=i85MQxE9TR0&list=PL9_jjLrTYxc0s-zA-RxRyb62tIcugZyG3&index=7
+  notes: |
+      [Slides](https://slides.com/rhianaheppenstall/but-you-don-t-look-autistic)
 
 - name: Julián Pinzón Eslava
   title: All you need is Rails (Engines) - Compartmentalising your Monolith
@@ -90,6 +98,7 @@
 
       Not quite. In this talk you'll learn a whole new perspctive on Rails Engines; a much lighter and leaner way to use them that allow teams to break up their app into meaningful modules without losing the beauty of Rails' conventions. Sprinkle in the Packwerk Gem by Shopify for the perfect combo to scale your domain and your team.
   video: https://www.youtube.com/watch?v=StDoHXO8H6E&list=PL9_jjLrTYxc0s-zA-RxRyb62tIcugZyG3&index=5
+#   notes: |
 
 - name: Prakriti Mateti
   title: REACT to Imposter Syndrome
@@ -102,6 +111,7 @@
 
       In this talk I'll go over personal experiences with imposter syndrome and practical strategies I've developed that anyone can apply to banish imposter thoughts and prevent them from getting in the way of your success, career progression, mental health, and happiness at work. An easy to remember acronym (REACT) with 5 realistic steps you can take away and practice can help you create a more accurate representation of your performance. You can take these steps away for yourself, or if you are a people leader, use them to help coach your people through the confusing world of imposter syndrome.
   video: https://www.youtube.com/watch?v=Ee0QCyRuwCU&list=PL9_jjLrTYxc0s-zA-RxRyb62tIcugZyG3&index=6
+#   notes: |
 
 - name: Hilary Stohs-Krause
   title: How to Make Your Website Not Ugly - Basic UX for Programmers
@@ -114,6 +124,8 @@
 
       In this talk, we'll explore 10 of them together, using research and proven solutions to see how the impact as a whole for both clients and users is greater than the sum of its parts.
   video: https://www.youtube.com/watch?v=zkrRd5itj8w&list=PL9_jjLrTYxc0s-zA-RxRyb62tIcugZyG3&index=21
+  notes: |
+      [Basic UI/UX for programmers](https://drive.google.com/file/d/1fDX2kzbHCAC5yzR0-ue3X_68o7-TOKrP/view?usp=drivesdk)
 
 - name: Nate Berkopec
   title: How Puma Works
@@ -122,6 +134,7 @@
   pitch: Have you ever wondered how Puma (or other webservers) work? Let's explore the internals of how a pre-forking webserver like Puma buffers and processes requests, what Rack is and how Puma uses it to interact with Rails, and how Puma's multi-threaded and parallel design works in practice.
 #   type: invitation
   video: https://www.youtube.com/watch?v=SquGNt4FhY0&list=PL9_jjLrTYxc0s-zA-RxRyb62tIcugZyG3&index=3
+#   notes: |
 
 - name: Coraline Ada Ehmke
   title: The World Set Free
@@ -130,6 +143,7 @@
   pitch: In an age of algorithmic manipulation, surveillance capitalism, privacy erosion, rising fascism, and impending climate disaster, it's easy to fall prey to despair, to grimly accept our slide into an inevitable dystopian future. But there is another way. The philosophy of techno-optimism challenges us to imagine alternate futures in which technology helps promote broad social good. This talk applies a literary lens, by way of an early 20th century "future history" by H. G. Wells, to explore our evolving relationship with world-changing technologies, and help us imagine &mdash; and build toward &mdash; a future we can all not just survive in, but truly thrive in.
 #   type: invitation
   video: https://www.youtube.com/watch?v=SG759w1qfpI&list=PL9_jjLrTYxc0s-zA-RxRyb62tIcugZyG3&index=10
+#   notes: |
 
 - name: Jemma Issroff
   title: Implementing Object Shapes for CRuby
@@ -140,6 +154,7 @@
 
       If you're curious to learn more about Ruby internals, or how instance variables work, this talk is for you!
   video: https://www.youtube.com/watch?v=0lg9Y8gj3FI&list=PL9_jjLrTYxc0s-zA-RxRyb62tIcugZyG3&index=14
+#   notes: |
 
 - name: Fiona McCawley
   title: Encrypted Search Party
@@ -152,6 +167,7 @@
 
       ORE enables querying capabilities while still keeping data encrypted when in use. I'll be demonstrating ORE's capabilities using a toy ORE library that I have built in Ruby.
   video: https://www.youtube.com/watch?v=lp0k94sUwI8&list=PL9_jjLrTYxc0s-zA-RxRyb62tIcugZyG3&index=15
+#   notes: |
 
 - name: Tim Riley
   title: Hanami 2 - New Framework, New You
@@ -162,6 +178,7 @@
 
       Come along to discover what goes into building a new Hanami app, the principles that underpin the framework, and how they just might change the way you work with Ruby altogether.
   video: https://www.youtube.com/watch?v=-B9AbFsQOKo&list=PL9_jjLrTYxc0s-zA-RxRyb62tIcugZyG3&index=16
+#   notes: |
 
 - name: Colleen Lavin
   title: A People Pleaser's Guide to Salary Negotiation
@@ -172,6 +189,8 @@
 
       This talk demystifies negotiation and empowers the attendees to earn as much as their peers while staying true to their personality.
   video: https://www.youtube.com/watch?v=4EoMYQ6fmss&list=PL9_jjLrTYxc0s-zA-RxRyb62tIcugZyG3&index=17
+  notes: |
+      [A People Pleaser's Guide to Salary Negotiation (Australian stats)](https://docs.google.com/presentation/d/1M3diB5zejaBhzyPni6wkCLF5W2xncGv0CpjAvMVF-jo/edit)
 
 - name: Geoffrey Donaldson
   title: Aussie Internet - How we learned to stop fearing the NBN and love the SPA
@@ -179,6 +198,7 @@
   twitter: geoffreyd
   pitch: Having performant queries means nothing if your customers can't load them. Slow internet is a reality for many Aussies, especially in rural areas. This is even more challenging when building interactive data-visualisation tools. Learn how we adopted modern web tech to deliver, even when NBN doesn't.
   video: https://www.youtube.com/watch?v=EvT_hsTjgfg&list=PL9_jjLrTYxc0s-zA-RxRyb62tIcugZyG3&index=11
+#   notes: |
 
 - name: Igor Kapkov
   title: "Testing in Production: there is a better way"
@@ -186,6 +206,8 @@
   twitter: igasgeek
   pitch: Testing in Production is a common CI/CD practice nowadays. However, feature flags and canary deployments can only get you so far. This talk will walk you through the [Branch By Abstraction](https://martinfowler.com/bliki/BranchByAbstraction.html) pattern and the tools to give you confidence when shipping your code to production because we should be able to move fast and break nothing.
   video: https://www.youtube.com/watch?v=OWICpZ_8KJk&list=PL9_jjLrTYxc0s-zA-RxRyb62tIcugZyG3&index=18
+  notes: |
+      [Event - RubyConf AU 2023](https://igas.me/speaking)
 
 - name: Sameera Gayan
   title: Mentoring - For me or not for me, that is the question
@@ -203,6 +225,7 @@
 
       Let me share a thing or two I learnt about being a mentor and helping the community over the years.
   video: https://www.youtube.com/watch?v=uuLl8W1sz60&list=PL9_jjLrTYxc0s-zA-RxRyb62tIcugZyG3&index=19
+#   notes: |
 
 - name: Wiktoria Dalach
   title: Security Doesn't Have To Be a Nightmare
@@ -213,6 +236,8 @@
 
       From my talk, you will learn how to design with security in mind so that security isn't a blocker but an enabler for innovation.
   video: https://www.youtube.com/watch?v=-VuM4FMIgT4 &list=PL9_jjLrTYxc0s-zA-RxRyb62tIcugZyG3&index=13
+  notes: |
+      [Application Security Tips](https://www.wiktoriadalach.com/security/)
 
 - name: Bianca Power
   title: Ruby Makes My Brain Happy
@@ -227,6 +252,7 @@
 
       Implications for how we understand and work with our colleagues will be discussed - both those new to the industry and seasoned professionals, as well as how this can help us to understand ourselves as developers and lifelong learners.
   video: https://www.youtube.com/watch?v=VOJS_Jq_Eg4&list=PL9_jjLrTYxc0s-zA-RxRyb62tIcugZyG3&index=12
+#   notes: |
 
 - name: Selena Small
   bio: "Selena is a full-stack software developer at Fresho! in Melbourne Australia. As a self-taught coder, she has become particularly passionate about testing and writing beautiful code. Coming from a management background, her late arrival to the software industry puts her in a perfect position to understand and help others learn to code. In her spare time, she is a nak muay ying, professional kickboxer."

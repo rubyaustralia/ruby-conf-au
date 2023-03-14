@@ -6,7 +6,7 @@
 #   type: invitation
   video: https://www.youtube.com/watch?v=9tOMD491mFY&list=PL9_jjLrTYxc0s-zA-RxRyb62tIcugZyG3&index=24
   notes: |
-      [Presentation (.pdf)](/2023/pdfs/Samuel_Williams_Asynchronous_Rails.pdf) | [Related examples](https://github.com/ioquatix/rubykaigi-2022)
+      [Presentation (.pdf)](/2023/pdfs/Samuel_Williams_Asynchronous_Rails.pdf) [Keynote repo (.key)](https://github.com/ioquatix/presentations/tree/main/2023) | [Related examples](https://github.com/ioquatix/rubykaigi-2022)
 
 - name: Yuji Yokoo
   title: Megaruby - mruby/c on Sega Mega Drive

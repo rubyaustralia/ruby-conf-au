@@ -1,13 +1,13 @@
 GEM
   remote: https://rubygems.org/
   specs:
-    activesupport (6.1.7.1)
+    activesupport (6.1.7.3)
       concurrent-ruby (~> 1.0, >= 1.0.2)
       i18n (>= 1.6, < 2)
       minitest (>= 5.1)
       tzinfo (~> 2.0)
       zeitwerk (~> 2.3)
-    concurrent-ruby (1.1.10)
+    concurrent-ruby (1.2.2)
     createsend (5.1.0)
       hashie (~> 3.0)
       httparty (~> 0.14)
@@ -24,7 +24,7 @@ GEM
       concurrent-ruby (~> 1.0)
     json (2.5.1)
     mini_mime (1.1.2)
-    minitest (5.17.0)
+    minitest (5.18.0)
     multi_json (1.15.0)
     multi_xml (0.6.0)
     mustermann (2.0.2)
@@ -51,9 +51,9 @@ GEM
       tilt (~> 2.0)
     temple (0.8.2)
     tilt (2.0.11)
-    tzinfo (2.0.5)
+    tzinfo (2.0.6)
       concurrent-ruby (~> 1.0)
-    zeitwerk (2.6.6)
+    zeitwerk (2.6.7)
 
 PLATFORMS
   arm64-darwin-21

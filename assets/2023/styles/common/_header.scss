@@ -17,6 +17,20 @@
   color: #fafafa;
 }
 
+h2.header-banner {
+  font-size: 3.5rem;
+  color: $banner-color;
+  background: $banner-bg;
+  border: 0.6rem solid $banner-border;
+  border-radius: 1rem;
+  padding: 0.5rem 0.8rem;
+  display: inline-block;
+}
+
+h2.header-banner a {
+  color: $banner-link;
+}
+
 .nav-item.nav-link {
   font-family: $font;
   font-size: 0.85rem;

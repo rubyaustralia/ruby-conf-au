@@ -23,7 +23,7 @@
     "style-loader": "^3.2.1",
     "terser-webpack-plugin": "^5.3.6",
     "viewport-units-buggyfill": "^0.6.2",
-    "webpack": "^5.76.0",
+    "webpack": "^5.94.0",
     "webpack-cli": "^4.7.2",
     "webpack-manifest-plugin": "^4.0.2"
   },

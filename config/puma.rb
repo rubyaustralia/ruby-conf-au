@@ -16,9 +16,6 @@ threads min_threads_count, max_threads_count
 # Preload the app to boot the application before forking new workers
 preload_app!
 
-# Use the default rackup (config.ru) command
-rackup DefaultRackup
-
 # Specifies the `port` that Puma will listen on to receive requests; default is 3000.
 #
 port        ENV.fetch("PORT", 3000)

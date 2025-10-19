@@ -18,7 +18,7 @@ require_relative 'app/year_2024/app'
 module RubyConf
   class App < Sinatra::Application
     configure do
-      set :haml, :format => :html5
+      set :haml, :format => :html5, :escape_attrs => false, :escape_html => false
       set :views, File.join(Dir.pwd, 'views')
       set :root, File.join(Dir.pwd)
       set :public_folder, File.join(Dir.pwd, 'public')

@@ -6,7 +6,7 @@
   "author": "Ruby Australia",
   "license": "MIT",
   "engines": {
-    "node": "18.x"
+    "node": "22.x"
   },
   "devDependencies": {
     "autoprefixer": "^10.3.1",

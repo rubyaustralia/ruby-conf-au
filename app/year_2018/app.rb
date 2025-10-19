@@ -181,7 +181,8 @@ module RubyConf
       attr_reader :speakers
 
       def initialize(speakers:, **args)
-        super(args)
+        super(**args)
+
         @speakers = speakers
       end
 

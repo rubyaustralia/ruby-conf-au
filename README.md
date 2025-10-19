@@ -4,7 +4,7 @@
 
 If this is this first time you are running the app, you need Ruby, Node, and Yarn installed.
 
-It is recommended that you use [asdf](https://asdf-vm.com/) to install the versions that are specified in `.tool-versions`.
+It is recommended that you use [asdf](https://asdf-vm.com/) or [mise-en-place](https://github.com/jdx/mise) to install the versions that are specified in `.tool-versions`.
 
 Then you can run the following commands:
 
@@ -12,7 +12,7 @@ Then you can run the following commands:
 gem install bundler
 bundle install
 yarn install
-NODE_OPTIONS=--openssl-legacy-provider yarn build
+yarn build
 ```
 
 Then start the app with:
@@ -26,7 +26,7 @@ foreman start
 Assets are managed via Webpack, with each year in a separate directory within /assets. To compile:
 
 ```bash
-NODE_OPTIONS=--openssl-legacy-provider yarn run webpack
+yarn run webpack
 ```
 
 At this point in time there's no distinction between development and production asset generation, and there's no live-rebuilding of assets. Both of these would be nice though.

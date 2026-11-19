@@ -4,7 +4,7 @@ source "https://rubygems.org"
 
 ruby file: ".ruby-version"
 
-gem "activesupport", "~> 6.1", require: false
+gem "activesupport", "~> 8.0", require: false
 gem "createsend", "~> 5.1.0"
 gem "json"
 gem "haml"
